@@ -1,0 +1,203 @@
+\hypertarget{class_r_t_f_string}{\section{Класс R\-T\-F\-String}
+\label{class_r_t_f_string}\index{R\-T\-F\-String@{R\-T\-F\-String}}
+}
+
+
+{\ttfamily \#include $<$rtfstring.\-h$>$}
+
+
+
+Граф связей класса R\-T\-F\-String\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_r_t_f_string__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_r_t_f_string_a51863fc1577a626c5a4ccb15e6764073}{R\-T\-F\-String} (H\-M\-O\-D\-U\-L\-E hmod)
+\item 
+\hyperlink{class_r_t_f_string_a018b3244fc6039305ce5407936a9992e}{R\-T\-F\-String} (const \hyperlink{class_r_t_f_string}{R\-T\-F\-String} \&rhs)
+\item 
+\hyperlink{class_r_t_f_string_a63309fd7a3d4189fa2b6d2525d718d42}{$\sim$\-R\-T\-F\-String} ()
+\item 
+const \hyperlink{class_r_t_f_string}{R\-T\-F\-String} \& \hyperlink{class_r_t_f_string_a2e4c798c305f06b68fdbd5a5d91f0c8a}{operator=} (const \hyperlink{class_r_t_f_string}{R\-T\-F\-String} \&rhs)
+\item 
+void \hyperlink{class_r_t_f_string_aa011f163ea938fd7c24dc55001afa34b}{Set\-Text} (std\-::string title)
+\item 
+const std\-::string \& \hyperlink{class_r_t_f_string_a0847a69aa9573d5b298c2b181f98450c}{Get\-Text} () const 
+\item 
+void \hyperlink{class_r_t_f_string_af5be9c1a74068a8d1f805e093451be51}{Set\-Color} (C\-O\-L\-O\-R\-R\-E\-F clr)
+\item 
+void \hyperlink{class_r_t_f_string_ae7130e8d2df43ae9b821fe70804f1e4c}{Set\-Font} (const L\-O\-G\-F\-O\-N\-T $\ast$const plf)
+\item 
+B\-O\-O\-L \hyperlink{class_r_t_f_string_a63a4f84996a98bd0f1901eff5017fbb2}{Write} (H\-A\-N\-D\-L\-E h\-File) const 
+\item 
+B\-O\-O\-L \hyperlink{class_r_t_f_string_aa91f1cca43e34327c3ffabdd6c928871}{Read} (H\-A\-N\-D\-L\-E h\-File)
+\item 
+void \hyperlink{class_r_t_f_string_a1095cfa000481881825a6973506cdcc9}{Get\-Dimensions} (S\-I\-Z\-E \&size) const 
+\item 
+void \hyperlink{class_r_t_f_string_a8d9b2138da58d424b9bc8df251468b2e}{Set\-Orientation} (int degrees)
+\item 
+int \hyperlink{class_r_t_f_string_a04121663e4ab24711fe949750dc2b5ee}{Get\-Orientation} () const 
+\item 
+void \hyperlink{class_r_t_f_string_a45a11ee69611ed59989989b2d39133b8}{Draw} (H\-D\-C hdc, int x, int y) const 
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static std\-::string \hyperlink{class_r_t_f_string_a94673f221d744299393675f9b0e115b5}{Read\-String} (H\-A\-N\-D\-L\-E h\-File)
+\item 
+static B\-O\-O\-L \hyperlink{class_r_t_f_string_a15525dd2260dc2c4ba825a8b6db3db7a}{Write\-String} (H\-A\-N\-D\-L\-E h\-File, std\-::string the\-String)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{class_r_t_f_string_ade9f23f1498c4102691b4dcf03af5435}{str\-Title}
+\item 
+int \hyperlink{class_r_t_f_string_a56d829be2f4b7cf88f661d52c9d794ef}{orientation}
+\item 
+\hyperlink{class_c_formatted_text_draw}{C\-Formatted\-Text\-Draw} $\ast$ \hyperlink{class_r_t_f_string_af121473f7d2ca2939cae4dde99ad3506}{g\-\_\-\-Formatter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_r_t_f_string_a51863fc1577a626c5a4ccb15e6764073}{\index{R\-T\-F\-String@{R\-T\-F\-String}!R\-T\-F\-String@{R\-T\-F\-String}}
+\index{R\-T\-F\-String@{R\-T\-F\-String}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{R\-T\-F\-String}]{\setlength{\rightskip}{0pt plus 5cm}R\-T\-F\-String\-::\-R\-T\-F\-String (
+\begin{DoxyParamCaption}
+\item[{H\-M\-O\-D\-U\-L\-E}]{hmod}
+\end{DoxyParamCaption}
+)}}\label{class_r_t_f_string_a51863fc1577a626c5a4ccb15e6764073}
+\hypertarget{class_r_t_f_string_a018b3244fc6039305ce5407936a9992e}{\index{R\-T\-F\-String@{R\-T\-F\-String}!R\-T\-F\-String@{R\-T\-F\-String}}
+\index{R\-T\-F\-String@{R\-T\-F\-String}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{R\-T\-F\-String}]{\setlength{\rightskip}{0pt plus 5cm}R\-T\-F\-String\-::\-R\-T\-F\-String (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-T\-F\-String} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_r_t_f_string_a018b3244fc6039305ce5407936a9992e}
+\hypertarget{class_r_t_f_string_a63309fd7a3d4189fa2b6d2525d718d42}{\index{R\-T\-F\-String@{R\-T\-F\-String}!$\sim$\-R\-T\-F\-String@{$\sim$\-R\-T\-F\-String}}
+\index{$\sim$\-R\-T\-F\-String@{$\sim$\-R\-T\-F\-String}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{$\sim$\-R\-T\-F\-String}]{\setlength{\rightskip}{0pt plus 5cm}R\-T\-F\-String\-::$\sim$\-R\-T\-F\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_r_t_f_string_a63309fd7a3d4189fa2b6d2525d718d42}
+
+
+\subsection{Методы}
+\hypertarget{class_r_t_f_string_a45a11ee69611ed59989989b2d39133b8}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Draw@{Draw}}
+\index{Draw@{Draw}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-F\-String\-::\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const}}\label{class_r_t_f_string_a45a11ee69611ed59989989b2d39133b8}
+\hypertarget{class_r_t_f_string_a1095cfa000481881825a6973506cdcc9}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Get\-Dimensions@{Get\-Dimensions}}
+\index{Get\-Dimensions@{Get\-Dimensions}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Get\-Dimensions}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-F\-String\-::\-Get\-Dimensions (
+\begin{DoxyParamCaption}
+\item[{S\-I\-Z\-E \&}]{size}
+\end{DoxyParamCaption}
+) const}}\label{class_r_t_f_string_a1095cfa000481881825a6973506cdcc9}
+\hypertarget{class_r_t_f_string_a04121663e4ab24711fe949750dc2b5ee}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Get\-Orientation@{Get\-Orientation}}
+\index{Get\-Orientation@{Get\-Orientation}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Get\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}int R\-T\-F\-String\-::\-Get\-Orientation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_r_t_f_string_a04121663e4ab24711fe949750dc2b5ee}
+\hypertarget{class_r_t_f_string_a0847a69aa9573d5b298c2b181f98450c}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Get\-Text@{Get\-Text}}
+\index{Get\-Text@{Get\-Text}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Get\-Text}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string \& R\-T\-F\-String\-::\-Get\-Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_r_t_f_string_a0847a69aa9573d5b298c2b181f98450c}
+\hypertarget{class_r_t_f_string_a2e4c798c305f06b68fdbd5a5d91f0c8a}{\index{R\-T\-F\-String@{R\-T\-F\-String}!operator=@{operator=}}
+\index{operator=@{operator=}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf R\-T\-F\-String} \& R\-T\-F\-String\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\-T\-F\-String} \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{class_r_t_f_string_a2e4c798c305f06b68fdbd5a5d91f0c8a}
+\hypertarget{class_r_t_f_string_aa91f1cca43e34327c3ffabdd6c928871}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Read@{Read}}
+\index{Read@{Read}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L R\-T\-F\-String\-::\-Read (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+)}}\label{class_r_t_f_string_aa91f1cca43e34327c3ffabdd6c928871}
+\hypertarget{class_r_t_f_string_a94673f221d744299393675f9b0e115b5}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Read\-String@{Read\-String}}
+\index{Read\-String@{Read\-String}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Read\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string R\-T\-F\-String\-::\-Read\-String (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_r_t_f_string_a94673f221d744299393675f9b0e115b5}
+\hypertarget{class_r_t_f_string_af5be9c1a74068a8d1f805e093451be51}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Set\-Color@{Set\-Color}}
+\index{Set\-Color@{Set\-Color}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-F\-String\-::\-Set\-Color (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr}
+\end{DoxyParamCaption}
+)}}\label{class_r_t_f_string_af5be9c1a74068a8d1f805e093451be51}
+\hypertarget{class_r_t_f_string_ae7130e8d2df43ae9b821fe70804f1e4c}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Set\-Font@{Set\-Font}}
+\index{Set\-Font@{Set\-Font}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Set\-Font}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-F\-String\-::\-Set\-Font (
+\begin{DoxyParamCaption}
+\item[{const L\-O\-G\-F\-O\-N\-T $\ast$const}]{plf}
+\end{DoxyParamCaption}
+)}}\label{class_r_t_f_string_ae7130e8d2df43ae9b821fe70804f1e4c}
+\hypertarget{class_r_t_f_string_a8d9b2138da58d424b9bc8df251468b2e}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Set\-Orientation@{Set\-Orientation}}
+\index{Set\-Orientation@{Set\-Orientation}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Set\-Orientation}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-F\-String\-::\-Set\-Orientation (
+\begin{DoxyParamCaption}
+\item[{int}]{degrees}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_r_t_f_string_a8d9b2138da58d424b9bc8df251468b2e}
+\hypertarget{class_r_t_f_string_aa011f163ea938fd7c24dc55001afa34b}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Set\-Text@{Set\-Text}}
+\index{Set\-Text@{Set\-Text}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Set\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-F\-String\-::\-Set\-Text (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{title}
+\end{DoxyParamCaption}
+)}}\label{class_r_t_f_string_aa011f163ea938fd7c24dc55001afa34b}
+\hypertarget{class_r_t_f_string_a63a4f84996a98bd0f1901eff5017fbb2}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Write@{Write}}
+\index{Write@{Write}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L R\-T\-F\-String\-::\-Write (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+) const}}\label{class_r_t_f_string_a63a4f84996a98bd0f1901eff5017fbb2}
+\hypertarget{class_r_t_f_string_a15525dd2260dc2c4ba825a8b6db3db7a}{\index{R\-T\-F\-String@{R\-T\-F\-String}!Write\-String@{Write\-String}}
+\index{Write\-String@{Write\-String}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{Write\-String}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L R\-T\-F\-String\-::\-Write\-String (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File, }
+\item[{std\-::string}]{the\-String}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_r_t_f_string_a15525dd2260dc2c4ba825a8b6db3db7a}
+
+
+\subsection{Данные класса}
+\hypertarget{class_r_t_f_string_af121473f7d2ca2939cae4dde99ad3506}{\index{R\-T\-F\-String@{R\-T\-F\-String}!g\-\_\-\-Formatter@{g\-\_\-\-Formatter}}
+\index{g\-\_\-\-Formatter@{g\-\_\-\-Formatter}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{g\-\_\-\-Formatter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-Formatted\-Text\-Draw}$\ast$ R\-T\-F\-String\-::g\-\_\-\-Formatter\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_r_t_f_string_af121473f7d2ca2939cae4dde99ad3506}
+\hypertarget{class_r_t_f_string_a56d829be2f4b7cf88f661d52c9d794ef}{\index{R\-T\-F\-String@{R\-T\-F\-String}!orientation@{orientation}}
+\index{orientation@{orientation}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{orientation}]{\setlength{\rightskip}{0pt plus 5cm}int R\-T\-F\-String\-::orientation\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_r_t_f_string_a56d829be2f4b7cf88f661d52c9d794ef}
+\hypertarget{class_r_t_f_string_ade9f23f1498c4102691b4dcf03af5435}{\index{R\-T\-F\-String@{R\-T\-F\-String}!str\-Title@{str\-Title}}
+\index{str\-Title@{str\-Title}!RTFString@{R\-T\-F\-String}}
+\subsubsection[{str\-Title}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string R\-T\-F\-String\-::str\-Title\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_r_t_f_string_ade9f23f1498c4102691b4dcf03af5435}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{rtfstring_8h}{rtfstring.\-h}\item 
+src/\hyperlink{rtfstring_8cpp}{rtfstring.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,14 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$class_savable_item.html" title="SavableItem" alt="" coords="5,259,97,285"/>
+<area shape="rect" id="node2" href="$class_axis.html" title="Axis" alt="" coords="169,5,217,32"/>
+<area shape="rect" id="node3" href="$class_back_ground.html" title="BackGround" alt="" coords="145,56,240,83"/>
+<area shape="rect" id="node4" href="$class_border.html" title="Border" alt="" coords="163,107,223,133"/>
+<area shape="rect" id="node5" href="$class_digits.html" title="Digits" alt="" coords="165,157,220,184"/>
+<area shape="rect" id="node6" href="$class_grid_lines.html" title="GridLines" alt="" coords="154,208,231,235"/>
+<area shape="rect" id="node7" href="$class_label.html" title="Label" alt="" coords="166,259,219,285"/>
+<area shape="rect" id="node8" href="$class_legend.html" title="Legend" alt="" coords="161,309,225,336"/>
+<area shape="rect" id="node9" href="$class_profile_marks.html" title="ProfileMarks" alt="" coords="145,360,240,387"/>
+<area shape="rect" id="node10" href="$class_selection.html" title="Selection" alt="" coords="155,411,231,437"/>
+<area shape="rect" id="node11" href="$class_ticks.html" title="Ticks" alt="" coords="166,461,219,488"/>
+<area shape="rect" id="node12" href="$class_title.html" title="Title" alt="" coords="169,512,216,539"/>
+</map>

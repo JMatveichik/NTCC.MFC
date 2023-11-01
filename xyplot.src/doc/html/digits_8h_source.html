@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Исходный файл src/digits.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">digits.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="digits_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __DIGITS_H_INCLUDED__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __DIGITS_H_INCLUDED__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_savable_item_8h.html">SavableItem.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_axis.html">Axis</a>; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_x_y_plot.html">XYPlot</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_digits.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_digits.html">Digits</a> : <span class="keyword">public</span> <a class="code" href="class_savable_item.html">SavableItem</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_digits.html#acd329f27f77896fa7ce6c5e494beaa1c">Digits</a>(<a class="code" href="class_x_y_plot.html">XYPlot</a>* parent, <a class="code" href="class_axis.html">Axis</a>* <a class="code" href="class_digits.html#a40f4adf8eaf3b89b66adbbccc2099d5d">parentAxis</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_digits.html#a66e19468f256da28a103894f2ceb9cfe">~Digits</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#a7d4c1c32b27083457ef094bc7a27ec13">SetColor</a>(COLORREF color, BOOL bMajor = TRUE);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    COLORREF <a class="code" href="class_digits.html#a29d3f2ec295eeebb390bc1eb93b612af">GetColor</a>(BOOL bMajor = TRUE) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#ae6c4780ba7c4aba52efff6c8ab353f57">SetRect</a>(<span class="keywordtype">int</span> left, <span class="keywordtype">int</span> top, <span class="keywordtype">int</span> right, <span class="keywordtype">int</span> bottom);</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_digits.html#a3c4e4199c39cd5b61f7e9bc23dfb979a">   22</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_digits.html#a3c4e4199c39cd5b61f7e9bc23dfb979a">SetRect</a>(RECT <span class="keyword">self</span>) { <a class="code" href="class_digits.html#ae4aaf160c1fb1a64da858021e376f84b">m_self</a> = <span class="keyword">self</span>; }</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_digits.html#a6b4c60c397a2c8355dd0a0f31eed1929">   23</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_digits.html#a6b4c60c397a2c8355dd0a0f31eed1929">GetRect</a>(RECT &amp;<span class="keyword">self</span>)<span class="keyword"> const </span>{ <span class="keyword">self</span> = <a class="code" href="class_digits.html#ae4aaf160c1fb1a64da858021e376f84b">m_self</a>; }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#af74a68f96749f6caf6496b31dacb30e0">SetTemplate</a>(std::string strTemplate, BOOL bMajor = TRUE);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="class_digits.html#aa3072c531d0f83c34cf9e97a5504a43f">GetTemplate</a>(BOOL bMajor = TRUE) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#a06c7cf0b99ff10f9e5d623d62c98426d">SetFont</a>(<span class="keyword">const</span> LOGFONT&amp; lf, BOOL bMajor = TRUE);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#a8cdd43accc18a651207de6c1c8f438c4">GetFont</a>(LOGFONT&amp; lf, BOOL bMajor = TRUE) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_digits.html#a7641a9787d3b78bac0425e5597a3e5de">CalcRect</a>(HDC hDC, RECT&amp; rc) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_digits.html#a9b973868449945e26a10fe3953566d9d">   33</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_digits.html#a9b973868449945e26a10fe3953566d9d">EnableMajor</a>(BOOL enable) { <a class="code" href="class_digits.html#aaf6398adc6029e62a5b437575e1dc9df">m_enabledMajor</a> = enable; }</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_digits.html#a7c34d2810ef21b76b6a301f482b09df3">   34</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_digits.html#a7c34d2810ef21b76b6a301f482b09df3">EnableMinor</a>(BOOL enable) { <a class="code" href="class_digits.html#a3cd58217fb3282ac4e326c3aba8e5014">m_enabledMinor</a> = enable; }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_digits.html#a0f46d96f7792ffc099ddc4034bb8fe4a">   36</a></span>&#160;    <span class="keyword">inline</span> BOOL <a class="code" href="class_digits.html#a0f46d96f7792ffc099ddc4034bb8fe4a">IsEnabledMajor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_digits.html#aaf6398adc6029e62a5b437575e1dc9df">m_enabledMajor</a>; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_digits.html#af1060dd2a6333c9d1e36942ad5633546">   37</a></span>&#160;    <span class="keyword">inline</span> BOOL <a class="code" href="class_digits.html#af1060dd2a6333c9d1e36942ad5633546">IsEnabledMinor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_digits.html#a3cd58217fb3282ac4e326c3aba8e5014">m_enabledMinor</a>; }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_digits.html#a2a80cf9e4d366d03f4a0902af73af2bc">MaxItemLength</a>(HDC hdc, <span class="keywordtype">double</span> fmin, <span class="keywordtype">double</span> fmax) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_digits.html#a8779eafb228a0b7ea0565ebd3198e71c">   41</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_digits.html#a8779eafb228a0b7ea0565ebd3198e71c">SetRange</a>(<span class="keywordtype">double</span> fLower, <span class="keywordtype">double</span> fUpper) { <a class="code" href="class_digits.html#a086ddfadf3a92ce92096b65841b0a57e">m_fLower</a> = fLower; <a class="code" href="class_digits.html#aaadbe21fd0151547ad2aad4dadd82516">m_fUpper</a> = fUpper; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_digits.html#ac3ec93b9ed68317ab11ef3a61b69934d">   42</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_digits.html#ac3ec93b9ed68317ab11ef3a61b69934d">GetRange</a>(<span class="keywordtype">double</span>&amp; fLower, <span class="keywordtype">double</span>&amp; fUpper)<span class="keyword"> const </span>{ fLower = <a class="code" href="class_digits.html#a086ddfadf3a92ce92096b65841b0a57e">m_fLower</a>; fUpper = <a class="code" href="class_digits.html#aaadbe21fd0151547ad2aad4dadd82516">m_fUpper</a>; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#a3957bbf3699a85811cbbaa01a93fcc88">PreDraw</a>( HDC hdc );</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#ae652ae51841237c43ba06a7b7d5b9a89">OnDraw</a>( HDC hdc );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#a4a32dbae6da6819873e0fde7d963cc65">OptimizeTicks</a>(<span class="keywordtype">double</span> &amp;fmin, <span class="keywordtype">double</span> &amp;fmax, <span class="keywordtype">int</span> &amp;majorCount, <span class="keywordtype">int</span> &amp;minorCount);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> BOOL <a class="code" href="class_digits.html#ad516fc5b9c052a5b0b82469e645a5d0a">Write</a>(HANDLE hFile) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> BOOL <a class="code" href="class_digits.html#a8e4038efd3b350b447a1d509eaa5040e">Read</a>(HANDLE hFile);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#acfac4502fbb3122dbb0071af14b71d91">PushBackMajor</a>(std::string s);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#ac2f1179123ad83c98480e0ff8e55d12c">PushBackMinor</a>(std::string s);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#ab946e7f29024bc8fda41c286d96958aa">Beautify</a>(std::string&amp; s);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_digits.html#ae401969abc8fd75f520a00512716a581">Clear</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_digits.html#aaf6398adc6029e62a5b437575e1dc9df">   60</a></span>&#160;    BOOL    <a class="code" href="class_digits.html#aaf6398adc6029e62a5b437575e1dc9df">m_enabledMajor</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_digits.html#a3cd58217fb3282ac4e326c3aba8e5014">   61</a></span>&#160;    BOOL    <a class="code" href="class_digits.html#a3cd58217fb3282ac4e326c3aba8e5014">m_enabledMinor</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_digits.html#a6363bd7d08bcf1af1f631542007d576b">   63</a></span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="class_digits.html#a6363bd7d08bcf1af1f631542007d576b">offsetFromTicks</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_digits.html#ae4aaf160c1fb1a64da858021e376f84b">   65</a></span>&#160;    RECT <a class="code" href="class_digits.html#ae4aaf160c1fb1a64da858021e376f84b">m_self</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_digits.html#abbe65de11a5be175f825f2727212fe07">   67</a></span>&#160;    std::string <a class="code" href="class_digits.html#abbe65de11a5be175f825f2727212fe07">majorTemplate</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_digits.html#a6742b3cfd0643d81fea94f4b43bab302">   68</a></span>&#160;    std::string <a class="code" href="class_digits.html#a6742b3cfd0643d81fea94f4b43bab302">minorTemplate</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_digits.html#a8f37710ae3695963c053ac86907b53c5">   70</a></span>&#160;    std::vector&lt; std::string &gt; <a class="code" href="class_digits.html#a8f37710ae3695963c053ac86907b53c5">m_majorDigitsVector</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_digits.html#a2382cd829aa6469431b38f447d9570d8">   71</a></span>&#160;    std::vector&lt; std::string &gt; <a class="code" href="class_digits.html#a2382cd829aa6469431b38f447d9570d8">m_minorDigitsVector</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_digits.html#a086ddfadf3a92ce92096b65841b0a57e">   73</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_digits.html#a086ddfadf3a92ce92096b65841b0a57e">m_fLower</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_digits.html#aaadbe21fd0151547ad2aad4dadd82516">   74</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_digits.html#aaadbe21fd0151547ad2aad4dadd82516">m_fUpper</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_digits.html#ad072b45337ed3492f7798caa246344fe">   76</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_digits.html#ad072b45337ed3492f7798caa246344fe">nFontMinor</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_digits.html#a7e78c6880a781fef583b8ab06e214c2c">   77</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_digits.html#a7e78c6880a781fef583b8ab06e214c2c">nFontMajor</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_digits.html#ab100cdfd65503955b4d052085c47078a">   79</a></span>&#160;    COLORREF <a class="code" href="class_digits.html#ab100cdfd65503955b4d052085c47078a">crMinor</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_digits.html#ae1dbae5da268f81449d27800c19798e6">   80</a></span>&#160;    COLORREF <a class="code" href="class_digits.html#ae1dbae5da268f81449d27800c19798e6">crMajor</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_digits.html#a40f4adf8eaf3b89b66adbbccc2099d5d">   82</a></span>&#160;    <a class="code" href="class_axis.html">Axis</a>* <a class="code" href="class_digits.html#a40f4adf8eaf3b89b66adbbccc2099d5d">parentAxis</a>;   <span class="comment">//Ось которой принадлежат подписи к делениям</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_digits_html_acfac4502fbb3122dbb0071af14b71d91"><div class="ttname"><a href="class_digits.html#acfac4502fbb3122dbb0071af14b71d91">Digits::PushBackMajor</a></div><div class="ttdeci">void PushBackMajor(std::string s)</div><div class="ttdef"><b>Definition:</b> digits.cpp:229</div></div>
+<div class="ttc" id="class_digits_html_ab946e7f29024bc8fda41c286d96958aa"><div class="ttname"><a href="class_digits.html#ab946e7f29024bc8fda41c286d96958aa">Digits::Beautify</a></div><div class="ttdeci">void Beautify(std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> digits.cpp:291</div></div>
+<div class="ttc" id="class_digits_html_ae6c4780ba7c4aba52efff6c8ab353f57"><div class="ttname"><a href="class_digits.html#ae6c4780ba7c4aba52efff6c8ab353f57">Digits::SetRect</a></div><div class="ttdeci">void SetRect(int left, int top, int right, int bottom)</div><div class="ttdef"><b>Definition:</b> digits.cpp:84</div></div>
+<div class="ttc" id="class_digits_html_a6363bd7d08bcf1af1f631542007d576b"><div class="ttname"><a href="class_digits.html#a6363bd7d08bcf1af1f631542007d576b">Digits::offsetFromTicks</a></div><div class="ttdeci">int offsetFromTicks</div><div class="ttdef"><b>Definition:</b> digits.h:63</div></div>
+<div class="ttc" id="class_digits_html_ad516fc5b9c052a5b0b82469e645a5d0a"><div class="ttname"><a href="class_digits.html#ad516fc5b9c052a5b0b82469e645a5d0a">Digits::Write</a></div><div class="ttdeci">virtual BOOL Write(HANDLE hFile) const </div><div class="ttdef"><b>Definition:</b> digits.cpp:493</div></div>
+<div class="ttc" id="class_digits_html_af1060dd2a6333c9d1e36942ad5633546"><div class="ttname"><a href="class_digits.html#af1060dd2a6333c9d1e36942ad5633546">Digits::IsEnabledMinor</a></div><div class="ttdeci">BOOL IsEnabledMinor() const </div><div class="ttdef"><b>Definition:</b> digits.h:37</div></div>
+<div class="ttc" id="class_digits_html_a086ddfadf3a92ce92096b65841b0a57e"><div class="ttname"><a href="class_digits.html#a086ddfadf3a92ce92096b65841b0a57e">Digits::m_fLower</a></div><div class="ttdeci">double m_fLower</div><div class="ttdef"><b>Definition:</b> digits.h:73</div></div>
+<div class="ttc" id="class_digits_html_a0f46d96f7792ffc099ddc4034bb8fe4a"><div class="ttname"><a href="class_digits.html#a0f46d96f7792ffc099ddc4034bb8fe4a">Digits::IsEnabledMajor</a></div><div class="ttdeci">BOOL IsEnabledMajor() const </div><div class="ttdef"><b>Definition:</b> digits.h:36</div></div>
+<div class="ttc" id="class_digits_html_a7d4c1c32b27083457ef094bc7a27ec13"><div class="ttname"><a href="class_digits.html#a7d4c1c32b27083457ef094bc7a27ec13">Digits::SetColor</a></div><div class="ttdeci">void SetColor(COLORREF color, BOOL bMajor=TRUE)</div><div class="ttdef"><b>Definition:</b> digits.cpp:68</div></div>
+<div class="ttc" id="class_digits_html_a3cd58217fb3282ac4e326c3aba8e5014"><div class="ttname"><a href="class_digits.html#a3cd58217fb3282ac4e326c3aba8e5014">Digits::m_enabledMinor</a></div><div class="ttdeci">BOOL m_enabledMinor</div><div class="ttdef"><b>Definition:</b> digits.h:61</div></div>
+<div class="ttc" id="class_digits_html_a8e4038efd3b350b447a1d509eaa5040e"><div class="ttname"><a href="class_digits.html#a8e4038efd3b350b447a1d509eaa5040e">Digits::Read</a></div><div class="ttdeci">virtual BOOL Read(HANDLE hFile)</div><div class="ttdef"><b>Definition:</b> digits.cpp:533</div></div>
+<div class="ttc" id="class_digits_html_a6742b3cfd0643d81fea94f4b43bab302"><div class="ttname"><a href="class_digits.html#a6742b3cfd0643d81fea94f4b43bab302">Digits::minorTemplate</a></div><div class="ttdeci">std::string minorTemplate</div><div class="ttdef"><b>Definition:</b> digits.h:68</div></div>
+<div class="ttc" id="class_digits_html_a7e78c6880a781fef583b8ab06e214c2c"><div class="ttname"><a href="class_digits.html#a7e78c6880a781fef583b8ab06e214c2c">Digits::nFontMajor</a></div><div class="ttdeci">unsigned nFontMajor</div><div class="ttdef"><b>Definition:</b> digits.h:77</div></div>
+<div class="ttc" id="class_digits_html_a3957bbf3699a85811cbbaa01a93fcc88"><div class="ttname"><a href="class_digits.html#a3957bbf3699a85811cbbaa01a93fcc88">Digits::PreDraw</a></div><div class="ttdeci">void PreDraw(HDC hdc)</div><div class="ttdef"><b>Definition:</b> digits.cpp:314</div></div>
+<div class="ttc" id="class_digits_html_ae4aaf160c1fb1a64da858021e376f84b"><div class="ttname"><a href="class_digits.html#ae4aaf160c1fb1a64da858021e376f84b">Digits::m_self</a></div><div class="ttdeci">RECT m_self</div><div class="ttdef"><b>Definition:</b> digits.h:65</div></div>
+<div class="ttc" id="class_digits_html_ab100cdfd65503955b4d052085c47078a"><div class="ttname"><a href="class_digits.html#ab100cdfd65503955b4d052085c47078a">Digits::crMinor</a></div><div class="ttdeci">COLORREF crMinor</div><div class="ttdef"><b>Definition:</b> digits.h:79</div></div>
+<div class="ttc" id="class_digits_html"><div class="ttname"><a href="class_digits.html">Digits</a></div><div class="ttdef"><b>Definition:</b> digits.h:11</div></div>
+<div class="ttc" id="_savable_item_8h_html"><div class="ttname"><a href="_savable_item_8h.html">SavableItem.h</a></div></div>
+<div class="ttc" id="class_digits_html_a29d3f2ec295eeebb390bc1eb93b612af"><div class="ttname"><a href="class_digits.html#a29d3f2ec295eeebb390bc1eb93b612af">Digits::GetColor</a></div><div class="ttdeci">COLORREF GetColor(BOOL bMajor=TRUE) const </div><div class="ttdef"><b>Definition:</b> digits.cpp:76</div></div>
+<div class="ttc" id="class_digits_html_abbe65de11a5be175f825f2727212fe07"><div class="ttname"><a href="class_digits.html#abbe65de11a5be175f825f2727212fe07">Digits::majorTemplate</a></div><div class="ttdeci">std::string majorTemplate</div><div class="ttdef"><b>Definition:</b> digits.h:67</div></div>
+<div class="ttc" id="class_savable_item_html"><div class="ttname"><a href="class_savable_item.html">SavableItem</a></div><div class="ttdef"><b>Definition:</b> SavableItem.h:5</div></div>
+<div class="ttc" id="class_axis_html"><div class="ttname"><a href="class_axis.html">Axis</a></div><div class="ttdef"><b>Definition:</b> Axis.h:31</div></div>
+<div class="ttc" id="class_digits_html_a7641a9787d3b78bac0425e5597a3e5de"><div class="ttname"><a href="class_digits.html#a7641a9787d3b78bac0425e5597a3e5de">Digits::CalcRect</a></div><div class="ttdeci">int CalcRect(HDC hDC, RECT &amp;rc) const </div><div class="ttdef"><b>Definition:</b> digits.cpp:92</div></div>
+<div class="ttc" id="class_digits_html_a66e19468f256da28a103894f2ceb9cfe"><div class="ttname"><a href="class_digits.html#a66e19468f256da28a103894f2ceb9cfe">Digits::~Digits</a></div><div class="ttdeci">virtual ~Digits()</div><div class="ttdef"><b>Definition:</b> digits.cpp:63</div></div>
+<div class="ttc" id="class_digits_html_ad072b45337ed3492f7798caa246344fe"><div class="ttname"><a href="class_digits.html#ad072b45337ed3492f7798caa246344fe">Digits::nFontMinor</a></div><div class="ttdeci">unsigned nFontMinor</div><div class="ttdef"><b>Definition:</b> digits.h:76</div></div>
+<div class="ttc" id="class_digits_html_ac3ec93b9ed68317ab11ef3a61b69934d"><div class="ttname"><a href="class_digits.html#ac3ec93b9ed68317ab11ef3a61b69934d">Digits::GetRange</a></div><div class="ttdeci">void GetRange(double &amp;fLower, double &amp;fUpper) const </div><div class="ttdef"><b>Definition:</b> digits.h:42</div></div>
+<div class="ttc" id="class_digits_html_a40f4adf8eaf3b89b66adbbccc2099d5d"><div class="ttname"><a href="class_digits.html#a40f4adf8eaf3b89b66adbbccc2099d5d">Digits::parentAxis</a></div><div class="ttdeci">Axis * parentAxis</div><div class="ttdef"><b>Definition:</b> digits.h:82</div></div>
+<div class="ttc" id="class_digits_html_ae1dbae5da268f81449d27800c19798e6"><div class="ttname"><a href="class_digits.html#ae1dbae5da268f81449d27800c19798e6">Digits::crMajor</a></div><div class="ttdeci">COLORREF crMajor</div><div class="ttdef"><b>Definition:</b> digits.h:80</div></div>
+<div class="ttc" id="class_digits_html_ae401969abc8fd75f520a00512716a581"><div class="ttname"><a href="class_digits.html#ae401969abc8fd75f520a00512716a581">Digits::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> digits.cpp:255</div></div>
+<div class="ttc" id="class_digits_html_a2a80cf9e4d366d03f4a0902af73af2bc"><div class="ttname"><a href="class_digits.html#a2a80cf9e4d366d03f4a0902af73af2bc">Digits::MaxItemLength</a></div><div class="ttdeci">int MaxItemLength(HDC hdc, double fmin, double fmax) const </div><div class="ttdef"><b>Definition:</b> digits.cpp:261</div></div>
+<div class="ttc" id="class_digits_html_af74a68f96749f6caf6496b31dacb30e0"><div class="ttname"><a href="class_digits.html#af74a68f96749f6caf6496b31dacb30e0">Digits::SetTemplate</a></div><div class="ttdeci">void SetTemplate(std::string strTemplate, BOOL bMajor=TRUE)</div><div class="ttdef"><b>Definition:</b> digits.cpp:212</div></div>
+<div class="ttc" id="class_digits_html_a7c34d2810ef21b76b6a301f482b09df3"><div class="ttname"><a href="class_digits.html#a7c34d2810ef21b76b6a301f482b09df3">Digits::EnableMinor</a></div><div class="ttdeci">void EnableMinor(BOOL enable)</div><div class="ttdef"><b>Definition:</b> digits.h:34</div></div>
+<div class="ttc" id="class_digits_html_a8f37710ae3695963c053ac86907b53c5"><div class="ttname"><a href="class_digits.html#a8f37710ae3695963c053ac86907b53c5">Digits::m_majorDigitsVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_majorDigitsVector</div><div class="ttdef"><b>Definition:</b> digits.h:70</div></div>
+<div class="ttc" id="class_digits_html_aa3072c531d0f83c34cf9e97a5504a43f"><div class="ttname"><a href="class_digits.html#aa3072c531d0f83c34cf9e97a5504a43f">Digits::GetTemplate</a></div><div class="ttdeci">const std::string &amp; GetTemplate(BOOL bMajor=TRUE) const </div><div class="ttdef"><b>Definition:</b> digits.cpp:220</div></div>
+<div class="ttc" id="class_digits_html_a2382cd829aa6469431b38f447d9570d8"><div class="ttname"><a href="class_digits.html#a2382cd829aa6469431b38f447d9570d8">Digits::m_minorDigitsVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_minorDigitsVector</div><div class="ttdef"><b>Definition:</b> digits.h:71</div></div>
+<div class="ttc" id="class_digits_html_a6b4c60c397a2c8355dd0a0f31eed1929"><div class="ttname"><a href="class_digits.html#a6b4c60c397a2c8355dd0a0f31eed1929">Digits::GetRect</a></div><div class="ttdeci">void GetRect(RECT &amp;self) const </div><div class="ttdef"><b>Definition:</b> digits.h:23</div></div>
+<div class="ttc" id="class_digits_html_acd329f27f77896fa7ce6c5e494beaa1c"><div class="ttname"><a href="class_digits.html#acd329f27f77896fa7ce6c5e494beaa1c">Digits::Digits</a></div><div class="ttdeci">Digits(XYPlot *parent, Axis *parentAxis)</div><div class="ttdef"><b>Definition:</b> digits.cpp:19</div></div>
+<div class="ttc" id="class_digits_html_a8779eafb228a0b7ea0565ebd3198e71c"><div class="ttname"><a href="class_digits.html#a8779eafb228a0b7ea0565ebd3198e71c">Digits::SetRange</a></div><div class="ttdeci">void SetRange(double fLower, double fUpper)</div><div class="ttdef"><b>Definition:</b> digits.h:41</div></div>
+<div class="ttc" id="class_x_y_plot_html"><div class="ttname"><a href="class_x_y_plot.html">XYPlot</a></div><div class="ttdoc">Класс для работы с базой данных </div><div class="ttdef"><b>Definition:</b> main.h:25</div></div>
+<div class="ttc" id="class_digits_html_aaf6398adc6029e62a5b437575e1dc9df"><div class="ttname"><a href="class_digits.html#aaf6398adc6029e62a5b437575e1dc9df">Digits::m_enabledMajor</a></div><div class="ttdeci">BOOL m_enabledMajor</div><div class="ttdef"><b>Definition:</b> digits.h:60</div></div>
+<div class="ttc" id="class_digits_html_ae652ae51841237c43ba06a7b7d5b9a89"><div class="ttname"><a href="class_digits.html#ae652ae51841237c43ba06a7b7d5b9a89">Digits::OnDraw</a></div><div class="ttdeci">void OnDraw(HDC hdc)</div><div class="ttdef"><b>Definition:</b> digits.cpp:368</div></div>
+<div class="ttc" id="class_digits_html_ac2f1179123ad83c98480e0ff8e55d12c"><div class="ttname"><a href="class_digits.html#ac2f1179123ad83c98480e0ff8e55d12c">Digits::PushBackMinor</a></div><div class="ttdeci">void PushBackMinor(std::string s)</div><div class="ttdef"><b>Definition:</b> digits.cpp:242</div></div>
+<div class="ttc" id="class_digits_html_aaadbe21fd0151547ad2aad4dadd82516"><div class="ttname"><a href="class_digits.html#aaadbe21fd0151547ad2aad4dadd82516">Digits::m_fUpper</a></div><div class="ttdeci">double m_fUpper</div><div class="ttdef"><b>Definition:</b> digits.h:74</div></div>
+<div class="ttc" id="class_digits_html_a4a32dbae6da6819873e0fde7d963cc65"><div class="ttname"><a href="class_digits.html#a4a32dbae6da6819873e0fde7d963cc65">Digits::OptimizeTicks</a></div><div class="ttdeci">void OptimizeTicks(double &amp;fmin, double &amp;fmax, int &amp;majorCount, int &amp;minorCount)</div><div class="ttdef"><b>Definition:</b> digits.cpp:470</div></div>
+<div class="ttc" id="class_digits_html_a8cdd43accc18a651207de6c1c8f438c4"><div class="ttname"><a href="class_digits.html#a8cdd43accc18a651207de6c1c8f438c4">Digits::GetFont</a></div><div class="ttdeci">void GetFont(LOGFONT &amp;lf, BOOL bMajor=TRUE) const </div><div class="ttdef"><b>Definition:</b> digits.cpp:206</div></div>
+<div class="ttc" id="class_digits_html_a06c7cf0b99ff10f9e5d623d62c98426d"><div class="ttname"><a href="class_digits.html#a06c7cf0b99ff10f9e5d623d62c98426d">Digits::SetFont</a></div><div class="ttdeci">void SetFont(const LOGFONT &amp;lf, BOOL bMajor=TRUE)</div><div class="ttdef"><b>Definition:</b> digits.cpp:201</div></div>
+<div class="ttc" id="class_digits_html_a9b973868449945e26a10fe3953566d9d"><div class="ttname"><a href="class_digits.html#a9b973868449945e26a10fe3953566d9d">Digits::EnableMajor</a></div><div class="ttdeci">void EnableMajor(BOOL enable)</div><div class="ttdef"><b>Definition:</b> digits.h:33</div></div>
+<div class="ttc" id="class_digits_html_a3c4e4199c39cd5b61f7e9bc23dfb979a"><div class="ttname"><a href="class_digits.html#a3c4e4199c39cd5b61f7e9bc23dfb979a">Digits::SetRect</a></div><div class="ttdeci">void SetRect(RECT self)</div><div class="ttdef"><b>Definition:</b> digits.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

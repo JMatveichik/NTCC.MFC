@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['ondraw',['OnDraw',['../class_axis.html#a5120d60156ed20854085115bcfcab765',1,'Axis::OnDraw()'],['../class_back_ground.html#afe1f339143f5c35bce336c130debf60e',1,'BackGround::OnDraw()'],['../class_border.html#a5747393117829b21310b78c23b95b7e5',1,'Border::OnDraw()'],['../class_digits.html#ae652ae51841237c43ba06a7b7d5b9a89',1,'Digits::OnDraw()'],['../class_grid_lines.html#a839784fc12725e0705c751f8c9f466aa',1,'GridLines::OnDraw()'],['../class_label.html#aa5bdf8574236283b0e0329c5c366cf2f',1,'Label::OnDraw()'],['../class_legend.html#aff5b6aaef5b636e6276236ed65e8c1d8',1,'Legend::OnDraw()'],['../class_level_line.html#a24695922b2d4ae08dddec50be83800be',1,'LevelLine::OnDraw()'],['../class_x_y_plot.html#ac05cdbc99d5f25f01dd68a15ddea62f3',1,'XYPlot::OnDraw()'],['../class_profile_marks.html#aa7966667f1baa875bc2bd8db7d909a37',1,'ProfileMarks::OnDraw()'],['../class_plot_region.html#a508939830f7e43969b099c2836db5c4e',1,'PlotRegion::OnDraw()'],['../class_selection.html#ae15010a7dc9450f394a0823cd7a8053f',1,'Selection::OnDraw()'],['../class_ticks.html#a0bab06ae4f43f7f5e39f1e2e31f04045',1,'Ticks::OnDraw()'],['../class_title.html#aa1d4bfc873fa5d1c1132cfbde2744cc7',1,'Title::OnDraw()']]],
+  ['ontxcharformatchange',['OnTxCharFormatChange',['../class_c_formatted_text_draw.html#aa12d7dee46f52f789b6b2109008948c3',1,'CFormattedTextDraw']]],
+  ['ontxparaformatchange',['OnTxParaFormatChange',['../class_c_formatted_text_draw.html#a01a2da9e321236594b6f3fe8bb0ac310',1,'CFormattedTextDraw']]],
+  ['operator_20hpen',['operator HPEN',['../class_line_data.html#aaaddb4cdac3046ec53caa1e01e91369c',1,'LineData']]],
+  ['operator_20long',['operator long',['../classxyplot_1_1_plot_handle.html#a1fa0bcf721b1b346f7d96230098da3fe',1,'xyplot::PlotHandle']]],
+  ['operator_21',['operator!',['../classxyplot_1_1_plot_handle.html#afd66331f425ea57e0562dfb74a81177b',1,'xyplot::PlotHandle']]],
+  ['operator_21_3d',['operator!=',['../classxyplot_1_1_plot_handle.html#afa7e238ea63f7ab13f24a377aab21282',1,'xyplot::PlotHandle']]],
+  ['operator_26',['operator&amp;',['../classxyplot_1_1_plot_handle.html#a5372007842b00fea6760f0324ed3220e',1,'xyplot::PlotHandle']]],
+  ['operator_28_29',['operator()',['../struct_font_manager_1_1lf__less.html#a9198cbded26fc9c640971b69fb46a54e',1,'FontManager::lf_less::operator()()'],['../structprofile__less.html#ae4533859a9118e37e22c3c1179db7e98',1,'profile_less::operator()()']]],
+  ['operator_3d',['operator=',['../class_line_data.html#abb21b7f48aa99ace40cfdff6965fb9df',1,'LineData::operator=()'],['../class_r_t_f_string.html#a2e4c798c305f06b68fdbd5a5d91f0c8a',1,'RTFString::operator=()'],['../classxyplot_1_1_plot_handle.html#ab1fd6b3147239c1485a345dc2baadc05',1,'xyplot::PlotHandle::operator=()']]],
+  ['optimizeticks',['OptimizeTicks',['../class_digits.html#a4a32dbae6da6819873e0fde7d963cc65',1,'Digits']]]
+];

@@ -1,0 +1,14 @@
+# ignore all logs
+*.log
+*.sdf
+/.vs
+/bin
+/build
+*/debug
+*/release
+/packages
+/prof-uis
+/tools
+*/Win32
+*/x64
+*ipch

@@ -1,0 +1,25 @@
+<map id="src/selection.cpp" name="src/selection.cpp">
+<area shape="rect" id="node2" href="$stdafx_8h.html" title="stdafx.h" alt="" coords="583,229,651,256"/>
+<area shape="rect" id="node16" href="$selection_8h.html" title="selection.h" alt="" coords="1390,155,1475,181"/>
+<area shape="rect" id="node23" href="$linedata_8h.html" title="LineData.h" alt="" coords="1257,379,1341,405"/>
+<area shape="rect" id="node31" href="$lock_8h.html" title="lock.h" alt="" coords="1257,155,1315,181"/>
+<area shape="rect" id="node32" href="$legend_8h.html" title="legend.h" alt="" coords="2139,155,2209,181"/>
+<area shape="rect" id="node36" href="$main_8h.html" title="main.h" alt="" coords="1727,80,1789,107"/>
+<area shape="rect" id="node17" href="$group_8h.html" title="group.h" alt="" coords="1091,229,1156,256"/>
+<area shape="rect" id="node18" href="$profile_8h.html" title="profile.h" alt="" coords="1531,229,1598,256"/>
+<area shape="rect" id="node20" href="$_savable_item_8h.html" title="SavableItem.h" alt="" coords="2156,453,2259,480"/>
+<area shape="rect" id="node24" href="$xyplotconst_8h.html" title="Содержит константы и перечисляемые типы . " alt="" coords="1165,453,1273,480"/>
+<area shape="rect" id="node19" href="$_profile_marks_8h.html" title="ProfileMarks.h" alt="" coords="2155,379,2260,405"/>
+<area shape="rect" id="node22" href="$_axis_8h.html" title="Axis.h" alt="" coords="1749,304,1807,331"/>
+<area shape="rect" id="node25" href="$ticks_8h.html" title="Ticks.h" alt="" coords="1978,379,2042,405"/>
+<area shape="rect" id="node26" href="$digits_8h.html" title="Digits.h" alt="" coords="1518,379,1585,405"/>
+<area shape="rect" id="node27" href="$label_8h.html" title="Label.h" alt="" coords="2066,379,2130,405"/>
+<area shape="rect" id="node28" href="$_gridlines_8h.html" title="Gridlines.h" alt="" coords="1869,379,1953,405"/>
+<area shape="rect" id="node29" href="$_coord_converter_8h.html" title="CoordConverter.h" alt="" coords="1724,379,1845,405"/>
+<area shape="rect" id="node34" href="$_back_ground_fill_8h.html" title="BackGroundFill.h" alt="" coords="2487,229,2610,256"/>
+<area shape="rect" id="node35" href="$border_8h.html" title="Border.h" alt="" coords="2139,229,2209,256"/>
+<area shape="rect" id="node37" href="$xyplot_8h.html" title="xyplot.h" alt="" coords="1500,155,1568,181"/>
+<area shape="rect" id="node38" href="$title_8h.html" title="title.h" alt="" coords="2001,155,2056,181"/>
+<area shape="rect" id="node40" href="$_level_line_8h.html" title="LevelLine.h" alt="" coords="1333,229,1420,256"/>
+<area shape="rect" id="node41" href="$_regions_8h.html" title="Regions.h" alt="" coords="2234,155,2314,181"/>
+</map>

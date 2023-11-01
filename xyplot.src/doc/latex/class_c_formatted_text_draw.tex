@@ -1,0 +1,648 @@
+\hypertarget{class_c_formatted_text_draw}{\section{Класс C\-Formatted\-Text\-Draw}
+\label{class_c_formatted_text_draw}\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}}
+}
+
+
+{\ttfamily \#include $<$formattedtextdraw.\-h$>$}
+
+
+
+Граф наследования\-:C\-Formatted\-Text\-Draw\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_c_formatted_text_draw__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса C\-Formatted\-Text\-Draw\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_c_formatted_text_draw__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_formatted_text_draw_aeedb5def68e1033d3759b142f48cfb8f}{C\-Formatted\-Text\-Draw} (H\-M\-O\-D\-U\-L\-E \hyperlink{class_c_formatted_text_draw_addc46f2c8df18b9be24193ac2b7bd261}{hmod})
+\item 
+\hyperlink{class_c_formatted_text_draw_a73cc74e417ded249eb7c8ba5026e74d6}{$\sim$\-C\-Formatted\-Text\-Draw} ()
+\item 
+H\-R\-E\-S\-U\-L\-T S\-T\-D\-M\-E\-T\-H\-O\-D\-C\-A\-L\-L\-T\-Y\-P\-E \hyperlink{class_c_formatted_text_draw_a94685a982152d40e47bbd38faf3d983d}{Query\-Interface} (R\-E\-F\-I\-I\-D riid, void \-\_\-\-\_\-\-R\-P\-C\-\_\-\-F\-A\-R $\ast$\-\_\-\-\_\-\-R\-P\-C\-\_\-\-F\-A\-R $\ast$ppv\-Object)
+\item 
+U\-L\-O\-N\-G S\-T\-D\-M\-E\-T\-H\-O\-D\-C\-A\-L\-L\-T\-Y\-P\-E \hyperlink{class_c_formatted_text_draw_adcdbb385f1b4e88c1bdd8f769cc2ea18}{Add\-Ref} (void)
+\item 
+U\-L\-O\-N\-G S\-T\-D\-M\-E\-T\-H\-O\-D\-C\-A\-L\-L\-T\-Y\-P\-E \hyperlink{class_c_formatted_text_draw_a8c0482c9982ab17a5b1bc16e42dae745}{Release} (void)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a1b9dc72357c06a06f294d2e07bca4a18}{get\-\_\-\-Natural\-Height} (long Width, long $\ast$p\-Val)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_aa69166f66353dec9dc28b1e2e6f4c495}{get\-\_\-\-Natural\-Width} (long Height, long $\ast$p\-Val)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_aeda21fe76e87d85c6e6ae97f6d98c82c}{Create} ()
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_aa9d8d11773fb62728bbee88d441edfcf}{Draw} (void $\ast$hdc\-Draw, R\-E\-C\-T $\ast$prc)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_ae319a9932c1a75ad19619bea99acb2df}{get\-\_\-\-R\-T\-F\-Text} (B\-S\-T\-R $\ast$p\-Val)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_aa8f8860ff9c0d5e1dacee5023743256f}{put\-\_\-\-R\-T\-F\-Text} (B\-S\-T\-R new\-Val)
+\item 
+H\-D\-C \hyperlink{class_c_formatted_text_draw_a82e2088a0416fc8a2d0039e97108ef6b}{Tx\-Get\-D\-C} ()
+\item 
+I\-N\-T \hyperlink{class_c_formatted_text_draw_a583a4401f0c1d5a3e5bf02c6a0cfedbd}{Tx\-Release\-D\-C} (H\-D\-C hdc)
+\item 
+B\-O\-O\-L \hyperlink{class_c_formatted_text_draw_a8b31bc8979880017bac423fc7861e3c4}{Tx\-Show\-Scroll\-Bar} (I\-N\-T fn\-Bar, B\-O\-O\-L f\-Show)
+\item 
+B\-O\-O\-L \hyperlink{class_c_formatted_text_draw_af376f10597fba86173093d88ef231c72}{Tx\-Enable\-Scroll\-Bar} (I\-N\-T fu\-S\-B\-Flags, I\-N\-T fu\-Arrowflags)
+\item 
+B\-O\-O\-L \hyperlink{class_c_formatted_text_draw_af1539757775ca0235713e93f42274553}{Tx\-Set\-Scroll\-Range} (I\-N\-T fn\-Bar, L\-O\-N\-G n\-Min\-Pos, I\-N\-T n\-Max\-Pos, B\-O\-O\-L f\-Redraw)
+\item 
+B\-O\-O\-L \hyperlink{class_c_formatted_text_draw_abfad442af7f3e31dc59b6abc23c789a4}{Tx\-Set\-Scroll\-Pos} (I\-N\-T fn\-Bar, I\-N\-T n\-Pos, B\-O\-O\-L f\-Redraw)
+\item 
+void \hyperlink{class_c_formatted_text_draw_afe30ef4cb3f37c9875ca64a3484e8af3}{Tx\-Invalidate\-Rect} (L\-P\-C\-R\-E\-C\-T prc, B\-O\-O\-L f\-Mode)
+\item 
+void \hyperlink{class_c_formatted_text_draw_abdb3f55080c4bc55d7710059beb9e6d4}{Tx\-View\-Change} (B\-O\-O\-L f\-Update)
+\item 
+B\-O\-O\-L \hyperlink{class_c_formatted_text_draw_a14b064dc9ea9d0e12fb49355756339df}{Tx\-Create\-Caret} (H\-B\-I\-T\-M\-A\-P hbmp, I\-N\-T x\-Width, I\-N\-T y\-Height)
+\item 
+B\-O\-O\-L \hyperlink{class_c_formatted_text_draw_ab2559df2077f47c4483ba526727016e2}{Tx\-Show\-Caret} (B\-O\-O\-L f\-Show)
+\item 
+B\-O\-O\-L \hyperlink{class_c_formatted_text_draw_a0de9d25f5f37cb97c45323f8ebaff5a1}{Tx\-Set\-Caret\-Pos} (I\-N\-T x, I\-N\-T y)
+\item 
+B\-O\-O\-L \hyperlink{class_c_formatted_text_draw_a2cfee5142c0ccc914ab9e22be37021a1}{Tx\-Set\-Timer} (U\-I\-N\-T id\-Timer, U\-I\-N\-T u\-Timeout)
+\item 
+void \hyperlink{class_c_formatted_text_draw_acea0cb499a41c7a3b8471ccae713d0a2}{Tx\-Kill\-Timer} (U\-I\-N\-T id\-Timer)
+\item 
+void \hyperlink{class_c_formatted_text_draw_ab86cfe0bd348ba7e6dca937139bf594b}{Tx\-Scroll\-Window\-Ex} (I\-N\-T dx, I\-N\-T dy, L\-P\-C\-R\-E\-C\-T lprc\-Scroll, L\-P\-C\-R\-E\-C\-T lprc\-Clip, H\-R\-G\-N hrgn\-Update, L\-P\-R\-E\-C\-T lprc\-Update, U\-I\-N\-T fu\-Scroll)
+\item 
+void \hyperlink{class_c_formatted_text_draw_a44ef4a7a47a5be7d277d4b04e7e12a27}{Tx\-Set\-Capture} (B\-O\-O\-L f\-Capture)
+\item 
+void \hyperlink{class_c_formatted_text_draw_ae1f80562f0bb57e63f88ca07184a7290}{Tx\-Set\-Focus} ()
+\item 
+void \hyperlink{class_c_formatted_text_draw_ab1f8c8017864381e356371f36d7e6863}{Tx\-Set\-Cursor} (H\-C\-U\-R\-S\-O\-R hcur, B\-O\-O\-L f\-Text)
+\item 
+B\-O\-O\-L \hyperlink{class_c_formatted_text_draw_a5bbd1e639e6c48c33a6bfaa0d469e439}{Tx\-Screen\-To\-Client} (L\-P\-P\-O\-I\-N\-T lppt)
+\item 
+B\-O\-O\-L \hyperlink{class_c_formatted_text_draw_abb05d3c20125bb481a5256272d87b67f}{Tx\-Client\-To\-Screen} (L\-P\-P\-O\-I\-N\-T lppt)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a94abf3aa085118853e6fb343dc56dbd1}{Tx\-Activate} (L\-O\-N\-G $\ast$pl\-Old\-State)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a4f578fb1c8066bffccbe08661a58b3a9}{Tx\-Deactivate} (L\-O\-N\-G l\-New\-State)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a7d26debc0162611ce308b7472e816a0e}{Tx\-Get\-Client\-Rect} (L\-P\-R\-E\-C\-T prc)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a356e5054a4a70bfddebfa5456a51c0f2}{Tx\-Get\-View\-Inset} (L\-P\-R\-E\-C\-T prc)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a1b6bf84a20ce406266dcd59e05579faa}{Tx\-Get\-Char\-Format} (const C\-H\-A\-R\-F\-O\-R\-M\-A\-T\-W $\ast$$\ast$pp\-C\-F)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a9fcc615f0abc3edd55a5bc6eb07245c0}{Tx\-Get\-Para\-Format} (const P\-A\-R\-A\-F\-O\-R\-M\-A\-T $\ast$$\ast$pp\-P\-F)
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_c_formatted_text_draw_a87bf95137cb9c82cf3b5b184d7b499cd}{Tx\-Get\-Sys\-Color} (int n\-Index)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_aae9e30620f85cd0855da77eefab5c542}{Tx\-Get\-Back\-Style} (T\-X\-T\-B\-A\-C\-K\-S\-T\-Y\-L\-E $\ast$pstyle)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_ac16e3287c2da3f1d4af57d268339b3b0}{Tx\-Get\-Max\-Length} (D\-W\-O\-R\-D $\ast$plength)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a0d11953e055809df98a3354a7b48eff7}{Tx\-Get\-Scroll\-Bars} (D\-W\-O\-R\-D $\ast$pdw\-Scroll\-Bar)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_ac64a3d02efa70493ee449dace1fea36c}{Tx\-Get\-Password\-Char} (T\-C\-H\-A\-R $\ast$pch)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a45973a797c196a9d7cf02127d12e7a54}{Tx\-Get\-Accelerator\-Pos} (L\-O\-N\-G $\ast$pcp)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a9247dfc9e0cce9f1942c5b6c632ed78d}{Tx\-Get\-Extent} (L\-P\-S\-I\-Z\-E\-L lp\-Extent)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_aa12d7dee46f52f789b6b2109008948c3}{On\-Tx\-Char\-Format\-Change} (const C\-H\-A\-R\-F\-O\-R\-M\-A\-T\-W $\ast$pcf)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a01a2da9e321236594b6f3fe8bb0ac310}{On\-Tx\-Para\-Format\-Change} (const P\-A\-R\-A\-F\-O\-R\-M\-A\-T $\ast$ppf)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a43579a9dbb4bd8031cdf7dd1c5a2d008}{Tx\-Get\-Property\-Bits} (D\-W\-O\-R\-D dw\-Mask, D\-W\-O\-R\-D $\ast$pdw\-Bits)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a7d7aa1164fef848f8cc86084ff0d5947}{Tx\-Notify} (D\-W\-O\-R\-D i\-Notify, void $\ast$pv)
+\item 
+H\-I\-M\-C \hyperlink{class_c_formatted_text_draw_aeca2dd3918ef62d7f7c030f1a2add1dd}{Tx\-Imm\-Get\-Context} ()
+\item 
+void \hyperlink{class_c_formatted_text_draw_a677a0528e12025ac1d834ebb3fe17f4f}{Tx\-Imm\-Release\-Context} (H\-I\-M\-C himc)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a26d3e8e94e5ec00f2670737ad565bb50}{Tx\-Get\-Selection\-Bar\-Width} (L\-O\-N\-G $\ast$l\-Sel\-Bar\-Width)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a9ce824728f92e00b317b59d8b935d86e}{Set\-Text\-Color} (C\-O\-L\-O\-R\-R\-E\-F clr)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_ac3ff1149d0e0ac7da420bc71d1fc2be1}{Set\-Text\-Font} (H\-F\-O\-N\-T font)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a55723aacd9eea72087f4a8c1716c44e8}{Char\-Format\-From\-H\-F\-O\-N\-T} (C\-H\-A\-R\-F\-O\-R\-M\-A\-T2\-W $\ast$p\-C\-F, H\-F\-O\-N\-T h\-Font)
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_a84688cc43aa013fc01eab25bcf687809}{Init\-Default\-Char\-Format} ()
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_adf8e13c8ba939b994d4235b588a52177}{Init\-Default\-Para\-Format} ()
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{class_c_formatted_text_draw_aacdbc394944e8ca679c5de2e824496d5}{Create\-Text\-Services\-Object} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+R\-E\-C\-T \hyperlink{class_c_formatted_text_draw_ac12889a14954434340548415c24cd61c}{m\-\_\-rc\-Client}
+\item 
+R\-E\-C\-T \hyperlink{class_c_formatted_text_draw_a55dfce4f5f6ceebc265f50d39a3e3b18}{m\-\_\-rc\-View\-Inset}
+\item 
+S\-I\-Z\-E\-L \hyperlink{class_c_formatted_text_draw_a7a01811c4c6123bea7d639302b69a128}{m\-\_\-sizel\-Extent}
+\item 
+int \hyperlink{class_c_formatted_text_draw_af07e4ff84b148e4c1614782ec37b9b54}{n\-Pixels\-Per\-Inch\-X}
+\item 
+int \hyperlink{class_c_formatted_text_draw_aed39a1517760cfb53599780e231d481b}{n\-Pixels\-Per\-Inch\-Y}
+\item 
+C\-H\-A\-R\-F\-O\-R\-M\-A\-T2\-W $\ast$ \hyperlink{class_c_formatted_text_draw_add7687bda35106a487299a6bd945e0fe}{m\-\_\-p\-C\-F}
+\item 
+P\-A\-R\-A\-F\-O\-R\-M\-A\-T2 \hyperlink{class_c_formatted_text_draw_ae5c1b692255587fff873eb3cae1e30a0}{m\-\_\-\-P\-F}
+\item 
+D\-W\-O\-R\-D \hyperlink{class_c_formatted_text_draw_ae015d2a67f789b83b172077ca92fedba}{m\-\_\-dw\-Scrollbar}
+\item 
+D\-W\-O\-R\-D \hyperlink{class_c_formatted_text_draw_a4877370e9f9a97ca802f614601ca972c}{m\-\_\-dw\-Property\-Bits}
+\item 
+D\-W\-O\-R\-D \hyperlink{class_c_formatted_text_draw_a95e778f91604bec6f68d7933550910aa}{m\-\_\-dw\-Max\-Length}
+\item 
+\hyperlink{formattedtextdraw_8h_a38853a4ceee8d1a6fac128d822488cdc}{C\-O\-O\-K\-I\-E} \hyperlink{class_c_formatted_text_draw_ac3b581340c521c7f372bcce0792e3059}{m\-\_\-edit\-Cookie}
+\item 
+I\-Text\-Services $\ast$ \hyperlink{class_c_formatted_text_draw_a359702fb97b39932d0f4605f2324c1d3}{m\-\_\-sp\-Text\-Services}
+\item 
+B\-S\-T\-R \hyperlink{class_c_formatted_text_draw_ae25f82f2e2222357070087b218fcc849}{m\-\_\-\-R\-T\-F\-Text}
+\item 
+H\-M\-O\-D\-U\-L\-E \hyperlink{class_c_formatted_text_draw_addc46f2c8df18b9be24193ac2b7bd261}{hmod}
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_c_formatted_text_draw_aeedb5def68e1033d3759b142f48cfb8f}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}}
+\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{C\-Formatted\-Text\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}C\-Formatted\-Text\-Draw\-::\-C\-Formatted\-Text\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-M\-O\-D\-U\-L\-E}]{hmod}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_formatted_text_draw_aeedb5def68e1033d3759b142f48cfb8f}
+\hypertarget{class_c_formatted_text_draw_a73cc74e417ded249eb7c8ba5026e74d6}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!$\sim$\-C\-Formatted\-Text\-Draw@{$\sim$\-C\-Formatted\-Text\-Draw}}
+\index{$\sim$\-C\-Formatted\-Text\-Draw@{$\sim$\-C\-Formatted\-Text\-Draw}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{$\sim$\-C\-Formatted\-Text\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}C\-Formatted\-Text\-Draw\-::$\sim$\-C\-Formatted\-Text\-Draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a73cc74e417ded249eb7c8ba5026e74d6}
+
+
+\subsection{Методы}
+\hypertarget{class_c_formatted_text_draw_adcdbb385f1b4e88c1bdd8f769cc2ea18}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Add\-Ref@{Add\-Ref}}
+\index{Add\-Ref@{Add\-Ref}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Add\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}U\-L\-O\-N\-G S\-T\-D\-M\-E\-T\-H\-O\-D\-C\-A\-L\-L\-T\-Y\-P\-E C\-Formatted\-Text\-Draw\-::\-Add\-Ref (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_formatted_text_draw_adcdbb385f1b4e88c1bdd8f769cc2ea18}
+\hypertarget{class_c_formatted_text_draw_a55723aacd9eea72087f4a8c1716c44e8}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Char\-Format\-From\-H\-F\-O\-N\-T@{Char\-Format\-From\-H\-F\-O\-N\-T}}
+\index{Char\-Format\-From\-H\-F\-O\-N\-T@{Char\-Format\-From\-H\-F\-O\-N\-T}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Char\-Format\-From\-H\-F\-O\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Char\-Format\-From\-H\-F\-O\-N\-T (
+\begin{DoxyParamCaption}
+\item[{C\-H\-A\-R\-F\-O\-R\-M\-A\-T2\-W $\ast$}]{p\-C\-F, }
+\item[{H\-F\-O\-N\-T}]{h\-Font}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a55723aacd9eea72087f4a8c1716c44e8}
+\hypertarget{class_c_formatted_text_draw_aeda21fe76e87d85c6e6ae97f6d98c82c}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Create@{Create}}
+\index{Create@{Create}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_aeda21fe76e87d85c6e6ae97f6d98c82c}
+\hypertarget{class_c_formatted_text_draw_aacdbc394944e8ca679c5de2e824496d5}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Create\-Text\-Services\-Object@{Create\-Text\-Services\-Object}}
+\index{Create\-Text\-Services\-Object@{Create\-Text\-Services\-Object}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Create\-Text\-Services\-Object}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Create\-Text\-Services\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_aacdbc394944e8ca679c5de2e824496d5}
+\hypertarget{class_c_formatted_text_draw_aa9d8d11773fb62728bbee88d441edfcf}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Draw@{Draw}}
+\index{Draw@{Draw}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Draw}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Draw (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{hdc\-Draw, }
+\item[{R\-E\-C\-T $\ast$}]{prc}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_aa9d8d11773fb62728bbee88d441edfcf}
+\hypertarget{class_c_formatted_text_draw_a1b9dc72357c06a06f294d2e07bca4a18}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!get\-\_\-\-Natural\-Height@{get\-\_\-\-Natural\-Height}}
+\index{get\-\_\-\-Natural\-Height@{get\-\_\-\-Natural\-Height}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{get\-\_\-\-Natural\-Height}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::get\-\_\-\-Natural\-Height (
+\begin{DoxyParamCaption}
+\item[{long}]{Width, }
+\item[{long $\ast$}]{p\-Val}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a1b9dc72357c06a06f294d2e07bca4a18}
+\hypertarget{class_c_formatted_text_draw_aa69166f66353dec9dc28b1e2e6f4c495}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!get\-\_\-\-Natural\-Width@{get\-\_\-\-Natural\-Width}}
+\index{get\-\_\-\-Natural\-Width@{get\-\_\-\-Natural\-Width}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{get\-\_\-\-Natural\-Width}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::get\-\_\-\-Natural\-Width (
+\begin{DoxyParamCaption}
+\item[{long}]{Height, }
+\item[{long $\ast$}]{p\-Val}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_aa69166f66353dec9dc28b1e2e6f4c495}
+\hypertarget{class_c_formatted_text_draw_ae319a9932c1a75ad19619bea99acb2df}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!get\-\_\-\-R\-T\-F\-Text@{get\-\_\-\-R\-T\-F\-Text}}
+\index{get\-\_\-\-R\-T\-F\-Text@{get\-\_\-\-R\-T\-F\-Text}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{get\-\_\-\-R\-T\-F\-Text}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::get\-\_\-\-R\-T\-F\-Text (
+\begin{DoxyParamCaption}
+\item[{B\-S\-T\-R $\ast$}]{p\-Val}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_ae319a9932c1a75ad19619bea99acb2df}
+\hypertarget{class_c_formatted_text_draw_a84688cc43aa013fc01eab25bcf687809}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Init\-Default\-Char\-Format@{Init\-Default\-Char\-Format}}
+\index{Init\-Default\-Char\-Format@{Init\-Default\-Char\-Format}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Init\-Default\-Char\-Format}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Init\-Default\-Char\-Format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a84688cc43aa013fc01eab25bcf687809}
+\hypertarget{class_c_formatted_text_draw_adf8e13c8ba939b994d4235b588a52177}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Init\-Default\-Para\-Format@{Init\-Default\-Para\-Format}}
+\index{Init\-Default\-Para\-Format@{Init\-Default\-Para\-Format}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Init\-Default\-Para\-Format}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Init\-Default\-Para\-Format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_adf8e13c8ba939b994d4235b588a52177}
+\hypertarget{class_c_formatted_text_draw_aa12d7dee46f52f789b6b2109008948c3}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!On\-Tx\-Char\-Format\-Change@{On\-Tx\-Char\-Format\-Change}}
+\index{On\-Tx\-Char\-Format\-Change@{On\-Tx\-Char\-Format\-Change}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{On\-Tx\-Char\-Format\-Change}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-On\-Tx\-Char\-Format\-Change (
+\begin{DoxyParamCaption}
+\item[{const C\-H\-A\-R\-F\-O\-R\-M\-A\-T\-W $\ast$}]{pcf}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_aa12d7dee46f52f789b6b2109008948c3}
+\hypertarget{class_c_formatted_text_draw_a01a2da9e321236594b6f3fe8bb0ac310}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!On\-Tx\-Para\-Format\-Change@{On\-Tx\-Para\-Format\-Change}}
+\index{On\-Tx\-Para\-Format\-Change@{On\-Tx\-Para\-Format\-Change}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{On\-Tx\-Para\-Format\-Change}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-On\-Tx\-Para\-Format\-Change (
+\begin{DoxyParamCaption}
+\item[{const P\-A\-R\-A\-F\-O\-R\-M\-A\-T $\ast$}]{ppf}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a01a2da9e321236594b6f3fe8bb0ac310}
+\hypertarget{class_c_formatted_text_draw_aa8f8860ff9c0d5e1dacee5023743256f}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!put\-\_\-\-R\-T\-F\-Text@{put\-\_\-\-R\-T\-F\-Text}}
+\index{put\-\_\-\-R\-T\-F\-Text@{put\-\_\-\-R\-T\-F\-Text}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{put\-\_\-\-R\-T\-F\-Text}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::put\-\_\-\-R\-T\-F\-Text (
+\begin{DoxyParamCaption}
+\item[{B\-S\-T\-R}]{new\-Val}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_aa8f8860ff9c0d5e1dacee5023743256f}
+\hypertarget{class_c_formatted_text_draw_a94685a982152d40e47bbd38faf3d983d}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Query\-Interface@{Query\-Interface}}
+\index{Query\-Interface@{Query\-Interface}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Query\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T S\-T\-D\-M\-E\-T\-H\-O\-D\-C\-A\-L\-L\-T\-Y\-P\-E C\-Formatted\-Text\-Draw\-::\-Query\-Interface (
+\begin{DoxyParamCaption}
+\item[{R\-E\-F\-I\-I\-D}]{riid, }
+\item[{void \-\_\-\-\_\-\-R\-P\-C\-\_\-\-F\-A\-R $\ast$\-\_\-\-\_\-\-R\-P\-C\-\_\-\-F\-A\-R $\ast$}]{ppv\-Object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_formatted_text_draw_a94685a982152d40e47bbd38faf3d983d}
+\hypertarget{class_c_formatted_text_draw_a8c0482c9982ab17a5b1bc16e42dae745}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Release@{Release}}
+\index{Release@{Release}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}U\-L\-O\-N\-G S\-T\-D\-M\-E\-T\-H\-O\-D\-C\-A\-L\-L\-T\-Y\-P\-E C\-Formatted\-Text\-Draw\-::\-Release (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_c_formatted_text_draw_a8c0482c9982ab17a5b1bc16e42dae745}
+\hypertarget{class_c_formatted_text_draw_a9ce824728f92e00b317b59d8b935d86e}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Set\-Text\-Color@{Set\-Text\-Color}}
+\index{Set\-Text\-Color@{Set\-Text\-Color}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Set\-Text\-Color}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Set\-Text\-Color (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a9ce824728f92e00b317b59d8b935d86e}
+\hypertarget{class_c_formatted_text_draw_ac3ff1149d0e0ac7da420bc71d1fc2be1}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Set\-Text\-Font@{Set\-Text\-Font}}
+\index{Set\-Text\-Font@{Set\-Text\-Font}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Set\-Text\-Font}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Set\-Text\-Font (
+\begin{DoxyParamCaption}
+\item[{H\-F\-O\-N\-T}]{font}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_ac3ff1149d0e0ac7da420bc71d1fc2be1}
+\hypertarget{class_c_formatted_text_draw_a94abf3aa085118853e6fb343dc56dbd1}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Activate@{Tx\-Activate}}
+\index{Tx\-Activate@{Tx\-Activate}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Activate}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Activate (
+\begin{DoxyParamCaption}
+\item[{L\-O\-N\-G $\ast$}]{pl\-Old\-State}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a94abf3aa085118853e6fb343dc56dbd1}
+\hypertarget{class_c_formatted_text_draw_abb05d3c20125bb481a5256272d87b67f}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Client\-To\-Screen@{Tx\-Client\-To\-Screen}}
+\index{Tx\-Client\-To\-Screen@{Tx\-Client\-To\-Screen}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Client\-To\-Screen}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L C\-Formatted\-Text\-Draw\-::\-Tx\-Client\-To\-Screen (
+\begin{DoxyParamCaption}
+\item[{L\-P\-P\-O\-I\-N\-T}]{lppt}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_abb05d3c20125bb481a5256272d87b67f}
+\hypertarget{class_c_formatted_text_draw_a14b064dc9ea9d0e12fb49355756339df}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Create\-Caret@{Tx\-Create\-Caret}}
+\index{Tx\-Create\-Caret@{Tx\-Create\-Caret}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Create\-Caret}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L C\-Formatted\-Text\-Draw\-::\-Tx\-Create\-Caret (
+\begin{DoxyParamCaption}
+\item[{H\-B\-I\-T\-M\-A\-P}]{hbmp, }
+\item[{I\-N\-T}]{x\-Width, }
+\item[{I\-N\-T}]{y\-Height}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a14b064dc9ea9d0e12fb49355756339df}
+\hypertarget{class_c_formatted_text_draw_a4f578fb1c8066bffccbe08661a58b3a9}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Deactivate@{Tx\-Deactivate}}
+\index{Tx\-Deactivate@{Tx\-Deactivate}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Deactivate}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Deactivate (
+\begin{DoxyParamCaption}
+\item[{L\-O\-N\-G}]{l\-New\-State}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a4f578fb1c8066bffccbe08661a58b3a9}
+\hypertarget{class_c_formatted_text_draw_af376f10597fba86173093d88ef231c72}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Enable\-Scroll\-Bar@{Tx\-Enable\-Scroll\-Bar}}
+\index{Tx\-Enable\-Scroll\-Bar@{Tx\-Enable\-Scroll\-Bar}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Enable\-Scroll\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L C\-Formatted\-Text\-Draw\-::\-Tx\-Enable\-Scroll\-Bar (
+\begin{DoxyParamCaption}
+\item[{I\-N\-T}]{fu\-S\-B\-Flags, }
+\item[{I\-N\-T}]{fu\-Arrowflags}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_af376f10597fba86173093d88ef231c72}
+\hypertarget{class_c_formatted_text_draw_a45973a797c196a9d7cf02127d12e7a54}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Accelerator\-Pos@{Tx\-Get\-Accelerator\-Pos}}
+\index{Tx\-Get\-Accelerator\-Pos@{Tx\-Get\-Accelerator\-Pos}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Accelerator\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Accelerator\-Pos (
+\begin{DoxyParamCaption}
+\item[{L\-O\-N\-G $\ast$}]{pcp}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a45973a797c196a9d7cf02127d12e7a54}
+\hypertarget{class_c_formatted_text_draw_aae9e30620f85cd0855da77eefab5c542}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Back\-Style@{Tx\-Get\-Back\-Style}}
+\index{Tx\-Get\-Back\-Style@{Tx\-Get\-Back\-Style}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Back\-Style}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Back\-Style (
+\begin{DoxyParamCaption}
+\item[{T\-X\-T\-B\-A\-C\-K\-S\-T\-Y\-L\-E $\ast$}]{pstyle}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_aae9e30620f85cd0855da77eefab5c542}
+\hypertarget{class_c_formatted_text_draw_a1b6bf84a20ce406266dcd59e05579faa}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Char\-Format@{Tx\-Get\-Char\-Format}}
+\index{Tx\-Get\-Char\-Format@{Tx\-Get\-Char\-Format}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Char\-Format}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Char\-Format (
+\begin{DoxyParamCaption}
+\item[{const C\-H\-A\-R\-F\-O\-R\-M\-A\-T\-W $\ast$$\ast$}]{pp\-C\-F}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a1b6bf84a20ce406266dcd59e05579faa}
+\hypertarget{class_c_formatted_text_draw_a7d26debc0162611ce308b7472e816a0e}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Client\-Rect@{Tx\-Get\-Client\-Rect}}
+\index{Tx\-Get\-Client\-Rect@{Tx\-Get\-Client\-Rect}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Client\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Client\-Rect (
+\begin{DoxyParamCaption}
+\item[{L\-P\-R\-E\-C\-T}]{prc}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a7d26debc0162611ce308b7472e816a0e}
+\hypertarget{class_c_formatted_text_draw_a82e2088a0416fc8a2d0039e97108ef6b}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-D\-C@{Tx\-Get\-D\-C}}
+\index{Tx\-Get\-D\-C@{Tx\-Get\-D\-C}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-D\-C}]{\setlength{\rightskip}{0pt plus 5cm}H\-D\-C C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-D\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a82e2088a0416fc8a2d0039e97108ef6b}
+\hypertarget{class_c_formatted_text_draw_a9247dfc9e0cce9f1942c5b6c632ed78d}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Extent@{Tx\-Get\-Extent}}
+\index{Tx\-Get\-Extent@{Tx\-Get\-Extent}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Extent}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Extent (
+\begin{DoxyParamCaption}
+\item[{L\-P\-S\-I\-Z\-E\-L}]{lp\-Extent}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a9247dfc9e0cce9f1942c5b6c632ed78d}
+\hypertarget{class_c_formatted_text_draw_ac16e3287c2da3f1d4af57d268339b3b0}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Max\-Length@{Tx\-Get\-Max\-Length}}
+\index{Tx\-Get\-Max\-Length@{Tx\-Get\-Max\-Length}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Max\-Length}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Max\-Length (
+\begin{DoxyParamCaption}
+\item[{D\-W\-O\-R\-D $\ast$}]{plength}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_ac16e3287c2da3f1d4af57d268339b3b0}
+\hypertarget{class_c_formatted_text_draw_a9fcc615f0abc3edd55a5bc6eb07245c0}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Para\-Format@{Tx\-Get\-Para\-Format}}
+\index{Tx\-Get\-Para\-Format@{Tx\-Get\-Para\-Format}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Para\-Format}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Para\-Format (
+\begin{DoxyParamCaption}
+\item[{const P\-A\-R\-A\-F\-O\-R\-M\-A\-T $\ast$$\ast$}]{pp\-P\-F}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a9fcc615f0abc3edd55a5bc6eb07245c0}
+\hypertarget{class_c_formatted_text_draw_ac64a3d02efa70493ee449dace1fea36c}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Password\-Char@{Tx\-Get\-Password\-Char}}
+\index{Tx\-Get\-Password\-Char@{Tx\-Get\-Password\-Char}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Password\-Char}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Password\-Char (
+\begin{DoxyParamCaption}
+\item[{T\-C\-H\-A\-R $\ast$}]{pch}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_ac64a3d02efa70493ee449dace1fea36c}
+\hypertarget{class_c_formatted_text_draw_a43579a9dbb4bd8031cdf7dd1c5a2d008}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Property\-Bits@{Tx\-Get\-Property\-Bits}}
+\index{Tx\-Get\-Property\-Bits@{Tx\-Get\-Property\-Bits}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Property\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Property\-Bits (
+\begin{DoxyParamCaption}
+\item[{D\-W\-O\-R\-D}]{dw\-Mask, }
+\item[{D\-W\-O\-R\-D $\ast$}]{pdw\-Bits}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a43579a9dbb4bd8031cdf7dd1c5a2d008}
+\hypertarget{class_c_formatted_text_draw_a0d11953e055809df98a3354a7b48eff7}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Scroll\-Bars@{Tx\-Get\-Scroll\-Bars}}
+\index{Tx\-Get\-Scroll\-Bars@{Tx\-Get\-Scroll\-Bars}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Scroll\-Bars}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Scroll\-Bars (
+\begin{DoxyParamCaption}
+\item[{D\-W\-O\-R\-D $\ast$}]{pdw\-Scroll\-Bar}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a0d11953e055809df98a3354a7b48eff7}
+\hypertarget{class_c_formatted_text_draw_a26d3e8e94e5ec00f2670737ad565bb50}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Selection\-Bar\-Width@{Tx\-Get\-Selection\-Bar\-Width}}
+\index{Tx\-Get\-Selection\-Bar\-Width@{Tx\-Get\-Selection\-Bar\-Width}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Selection\-Bar\-Width}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Selection\-Bar\-Width (
+\begin{DoxyParamCaption}
+\item[{L\-O\-N\-G $\ast$}]{l\-Sel\-Bar\-Width}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a26d3e8e94e5ec00f2670737ad565bb50}
+\hypertarget{class_c_formatted_text_draw_a87bf95137cb9c82cf3b5b184d7b499cd}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-Sys\-Color@{Tx\-Get\-Sys\-Color}}
+\index{Tx\-Get\-Sys\-Color@{Tx\-Get\-Sys\-Color}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-Sys\-Color}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-Sys\-Color (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Index}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a87bf95137cb9c82cf3b5b184d7b499cd}
+\hypertarget{class_c_formatted_text_draw_a356e5054a4a70bfddebfa5456a51c0f2}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Get\-View\-Inset@{Tx\-Get\-View\-Inset}}
+\index{Tx\-Get\-View\-Inset@{Tx\-Get\-View\-Inset}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Get\-View\-Inset}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Get\-View\-Inset (
+\begin{DoxyParamCaption}
+\item[{L\-P\-R\-E\-C\-T}]{prc}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a356e5054a4a70bfddebfa5456a51c0f2}
+\hypertarget{class_c_formatted_text_draw_aeca2dd3918ef62d7f7c030f1a2add1dd}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Imm\-Get\-Context@{Tx\-Imm\-Get\-Context}}
+\index{Tx\-Imm\-Get\-Context@{Tx\-Imm\-Get\-Context}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Imm\-Get\-Context}]{\setlength{\rightskip}{0pt plus 5cm}H\-I\-M\-C C\-Formatted\-Text\-Draw\-::\-Tx\-Imm\-Get\-Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_aeca2dd3918ef62d7f7c030f1a2add1dd}
+\hypertarget{class_c_formatted_text_draw_a677a0528e12025ac1d834ebb3fe17f4f}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Imm\-Release\-Context@{Tx\-Imm\-Release\-Context}}
+\index{Tx\-Imm\-Release\-Context@{Tx\-Imm\-Release\-Context}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Imm\-Release\-Context}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Formatted\-Text\-Draw\-::\-Tx\-Imm\-Release\-Context (
+\begin{DoxyParamCaption}
+\item[{H\-I\-M\-C}]{himc}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a677a0528e12025ac1d834ebb3fe17f4f}
+\hypertarget{class_c_formatted_text_draw_afe30ef4cb3f37c9875ca64a3484e8af3}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Invalidate\-Rect@{Tx\-Invalidate\-Rect}}
+\index{Tx\-Invalidate\-Rect@{Tx\-Invalidate\-Rect}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Invalidate\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Formatted\-Text\-Draw\-::\-Tx\-Invalidate\-Rect (
+\begin{DoxyParamCaption}
+\item[{L\-P\-C\-R\-E\-C\-T}]{prc, }
+\item[{B\-O\-O\-L}]{f\-Mode}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_afe30ef4cb3f37c9875ca64a3484e8af3}
+\hypertarget{class_c_formatted_text_draw_acea0cb499a41c7a3b8471ccae713d0a2}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Kill\-Timer@{Tx\-Kill\-Timer}}
+\index{Tx\-Kill\-Timer@{Tx\-Kill\-Timer}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Kill\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Formatted\-Text\-Draw\-::\-Tx\-Kill\-Timer (
+\begin{DoxyParamCaption}
+\item[{U\-I\-N\-T}]{id\-Timer}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_acea0cb499a41c7a3b8471ccae713d0a2}
+\hypertarget{class_c_formatted_text_draw_a7d7aa1164fef848f8cc86084ff0d5947}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Notify@{Tx\-Notify}}
+\index{Tx\-Notify@{Tx\-Notify}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Notify}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Notify (
+\begin{DoxyParamCaption}
+\item[{D\-W\-O\-R\-D}]{i\-Notify, }
+\item[{void $\ast$}]{pv}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a7d7aa1164fef848f8cc86084ff0d5947}
+\hypertarget{class_c_formatted_text_draw_a583a4401f0c1d5a3e5bf02c6a0cfedbd}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Release\-D\-C@{Tx\-Release\-D\-C}}
+\index{Tx\-Release\-D\-C@{Tx\-Release\-D\-C}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Release\-D\-C}]{\setlength{\rightskip}{0pt plus 5cm}I\-N\-T C\-Formatted\-Text\-Draw\-::\-Tx\-Release\-D\-C (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a583a4401f0c1d5a3e5bf02c6a0cfedbd}
+\hypertarget{class_c_formatted_text_draw_a5bbd1e639e6c48c33a6bfaa0d469e439}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Screen\-To\-Client@{Tx\-Screen\-To\-Client}}
+\index{Tx\-Screen\-To\-Client@{Tx\-Screen\-To\-Client}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Screen\-To\-Client}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L C\-Formatted\-Text\-Draw\-::\-Tx\-Screen\-To\-Client (
+\begin{DoxyParamCaption}
+\item[{L\-P\-P\-O\-I\-N\-T}]{lppt}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a5bbd1e639e6c48c33a6bfaa0d469e439}
+\hypertarget{class_c_formatted_text_draw_ab86cfe0bd348ba7e6dca937139bf594b}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Scroll\-Window\-Ex@{Tx\-Scroll\-Window\-Ex}}
+\index{Tx\-Scroll\-Window\-Ex@{Tx\-Scroll\-Window\-Ex}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Scroll\-Window\-Ex}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Formatted\-Text\-Draw\-::\-Tx\-Scroll\-Window\-Ex (
+\begin{DoxyParamCaption}
+\item[{I\-N\-T}]{dx, }
+\item[{I\-N\-T}]{dy, }
+\item[{L\-P\-C\-R\-E\-C\-T}]{lprc\-Scroll, }
+\item[{L\-P\-C\-R\-E\-C\-T}]{lprc\-Clip, }
+\item[{H\-R\-G\-N}]{hrgn\-Update, }
+\item[{L\-P\-R\-E\-C\-T}]{lprc\-Update, }
+\item[{U\-I\-N\-T}]{fu\-Scroll}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_ab86cfe0bd348ba7e6dca937139bf594b}
+\hypertarget{class_c_formatted_text_draw_a44ef4a7a47a5be7d277d4b04e7e12a27}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Set\-Capture@{Tx\-Set\-Capture}}
+\index{Tx\-Set\-Capture@{Tx\-Set\-Capture}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Set\-Capture}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Formatted\-Text\-Draw\-::\-Tx\-Set\-Capture (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{f\-Capture}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a44ef4a7a47a5be7d277d4b04e7e12a27}
+\hypertarget{class_c_formatted_text_draw_a0de9d25f5f37cb97c45323f8ebaff5a1}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Set\-Caret\-Pos@{Tx\-Set\-Caret\-Pos}}
+\index{Tx\-Set\-Caret\-Pos@{Tx\-Set\-Caret\-Pos}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Set\-Caret\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L C\-Formatted\-Text\-Draw\-::\-Tx\-Set\-Caret\-Pos (
+\begin{DoxyParamCaption}
+\item[{I\-N\-T}]{x, }
+\item[{I\-N\-T}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a0de9d25f5f37cb97c45323f8ebaff5a1}
+\hypertarget{class_c_formatted_text_draw_ab1f8c8017864381e356371f36d7e6863}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Set\-Cursor@{Tx\-Set\-Cursor}}
+\index{Tx\-Set\-Cursor@{Tx\-Set\-Cursor}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Set\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Formatted\-Text\-Draw\-::\-Tx\-Set\-Cursor (
+\begin{DoxyParamCaption}
+\item[{H\-C\-U\-R\-S\-O\-R}]{hcur, }
+\item[{B\-O\-O\-L}]{f\-Text}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_ab1f8c8017864381e356371f36d7e6863}
+\hypertarget{class_c_formatted_text_draw_ae1f80562f0bb57e63f88ca07184a7290}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Set\-Focus@{Tx\-Set\-Focus}}
+\index{Tx\-Set\-Focus@{Tx\-Set\-Focus}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Set\-Focus}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Formatted\-Text\-Draw\-::\-Tx\-Set\-Focus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_ae1f80562f0bb57e63f88ca07184a7290}
+\hypertarget{class_c_formatted_text_draw_abfad442af7f3e31dc59b6abc23c789a4}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Set\-Scroll\-Pos@{Tx\-Set\-Scroll\-Pos}}
+\index{Tx\-Set\-Scroll\-Pos@{Tx\-Set\-Scroll\-Pos}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Set\-Scroll\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L C\-Formatted\-Text\-Draw\-::\-Tx\-Set\-Scroll\-Pos (
+\begin{DoxyParamCaption}
+\item[{I\-N\-T}]{fn\-Bar, }
+\item[{I\-N\-T}]{n\-Pos, }
+\item[{B\-O\-O\-L}]{f\-Redraw}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_abfad442af7f3e31dc59b6abc23c789a4}
+\hypertarget{class_c_formatted_text_draw_af1539757775ca0235713e93f42274553}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Set\-Scroll\-Range@{Tx\-Set\-Scroll\-Range}}
+\index{Tx\-Set\-Scroll\-Range@{Tx\-Set\-Scroll\-Range}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Set\-Scroll\-Range}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L C\-Formatted\-Text\-Draw\-::\-Tx\-Set\-Scroll\-Range (
+\begin{DoxyParamCaption}
+\item[{I\-N\-T}]{fn\-Bar, }
+\item[{L\-O\-N\-G}]{n\-Min\-Pos, }
+\item[{I\-N\-T}]{n\-Max\-Pos, }
+\item[{B\-O\-O\-L}]{f\-Redraw}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_af1539757775ca0235713e93f42274553}
+\hypertarget{class_c_formatted_text_draw_a2cfee5142c0ccc914ab9e22be37021a1}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Set\-Timer@{Tx\-Set\-Timer}}
+\index{Tx\-Set\-Timer@{Tx\-Set\-Timer}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Set\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L C\-Formatted\-Text\-Draw\-::\-Tx\-Set\-Timer (
+\begin{DoxyParamCaption}
+\item[{U\-I\-N\-T}]{id\-Timer, }
+\item[{U\-I\-N\-T}]{u\-Timeout}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a2cfee5142c0ccc914ab9e22be37021a1}
+\hypertarget{class_c_formatted_text_draw_ab2559df2077f47c4483ba526727016e2}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Show\-Caret@{Tx\-Show\-Caret}}
+\index{Tx\-Show\-Caret@{Tx\-Show\-Caret}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Show\-Caret}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L C\-Formatted\-Text\-Draw\-::\-Tx\-Show\-Caret (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{f\-Show}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_ab2559df2077f47c4483ba526727016e2}
+\hypertarget{class_c_formatted_text_draw_a8b31bc8979880017bac423fc7861e3c4}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-Show\-Scroll\-Bar@{Tx\-Show\-Scroll\-Bar}}
+\index{Tx\-Show\-Scroll\-Bar@{Tx\-Show\-Scroll\-Bar}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-Show\-Scroll\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L C\-Formatted\-Text\-Draw\-::\-Tx\-Show\-Scroll\-Bar (
+\begin{DoxyParamCaption}
+\item[{I\-N\-T}]{fn\-Bar, }
+\item[{B\-O\-O\-L}]{f\-Show}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_a8b31bc8979880017bac423fc7861e3c4}
+\hypertarget{class_c_formatted_text_draw_abdb3f55080c4bc55d7710059beb9e6d4}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!Tx\-View\-Change@{Tx\-View\-Change}}
+\index{Tx\-View\-Change@{Tx\-View\-Change}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{Tx\-View\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void C\-Formatted\-Text\-Draw\-::\-Tx\-View\-Change (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{f\-Update}
+\end{DoxyParamCaption}
+)}}\label{class_c_formatted_text_draw_abdb3f55080c4bc55d7710059beb9e6d4}
+
+
+\subsection{Данные класса}
+\hypertarget{class_c_formatted_text_draw_addc46f2c8df18b9be24193ac2b7bd261}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!hmod@{hmod}}
+\index{hmod@{hmod}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{hmod}]{\setlength{\rightskip}{0pt plus 5cm}H\-M\-O\-D\-U\-L\-E C\-Formatted\-Text\-Draw\-::hmod}}\label{class_c_formatted_text_draw_addc46f2c8df18b9be24193ac2b7bd261}
+\hypertarget{class_c_formatted_text_draw_a95e778f91604bec6f68d7933550910aa}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!m\-\_\-dw\-Max\-Length@{m\-\_\-dw\-Max\-Length}}
+\index{m\-\_\-dw\-Max\-Length@{m\-\_\-dw\-Max\-Length}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{m\-\_\-dw\-Max\-Length}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D C\-Formatted\-Text\-Draw\-::m\-\_\-dw\-Max\-Length}}\label{class_c_formatted_text_draw_a95e778f91604bec6f68d7933550910aa}
+\hypertarget{class_c_formatted_text_draw_a4877370e9f9a97ca802f614601ca972c}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!m\-\_\-dw\-Property\-Bits@{m\-\_\-dw\-Property\-Bits}}
+\index{m\-\_\-dw\-Property\-Bits@{m\-\_\-dw\-Property\-Bits}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{m\-\_\-dw\-Property\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D C\-Formatted\-Text\-Draw\-::m\-\_\-dw\-Property\-Bits}}\label{class_c_formatted_text_draw_a4877370e9f9a97ca802f614601ca972c}
+\hypertarget{class_c_formatted_text_draw_ae015d2a67f789b83b172077ca92fedba}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!m\-\_\-dw\-Scrollbar@{m\-\_\-dw\-Scrollbar}}
+\index{m\-\_\-dw\-Scrollbar@{m\-\_\-dw\-Scrollbar}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{m\-\_\-dw\-Scrollbar}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D C\-Formatted\-Text\-Draw\-::m\-\_\-dw\-Scrollbar}}\label{class_c_formatted_text_draw_ae015d2a67f789b83b172077ca92fedba}
+\hypertarget{class_c_formatted_text_draw_ac3b581340c521c7f372bcce0792e3059}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!m\-\_\-edit\-Cookie@{m\-\_\-edit\-Cookie}}
+\index{m\-\_\-edit\-Cookie@{m\-\_\-edit\-Cookie}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{m\-\_\-edit\-Cookie}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-O\-O\-K\-I\-E} C\-Formatted\-Text\-Draw\-::m\-\_\-edit\-Cookie}}\label{class_c_formatted_text_draw_ac3b581340c521c7f372bcce0792e3059}
+\hypertarget{class_c_formatted_text_draw_add7687bda35106a487299a6bd945e0fe}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!m\-\_\-p\-C\-F@{m\-\_\-p\-C\-F}}
+\index{m\-\_\-p\-C\-F@{m\-\_\-p\-C\-F}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{m\-\_\-p\-C\-F}]{\setlength{\rightskip}{0pt plus 5cm}C\-H\-A\-R\-F\-O\-R\-M\-A\-T2\-W$\ast$ C\-Formatted\-Text\-Draw\-::m\-\_\-p\-C\-F}}\label{class_c_formatted_text_draw_add7687bda35106a487299a6bd945e0fe}
+\hypertarget{class_c_formatted_text_draw_ae5c1b692255587fff873eb3cae1e30a0}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!m\-\_\-\-P\-F@{m\-\_\-\-P\-F}}
+\index{m\-\_\-\-P\-F@{m\-\_\-\-P\-F}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{m\-\_\-\-P\-F}]{\setlength{\rightskip}{0pt plus 5cm}P\-A\-R\-A\-F\-O\-R\-M\-A\-T2 C\-Formatted\-Text\-Draw\-::m\-\_\-\-P\-F}}\label{class_c_formatted_text_draw_ae5c1b692255587fff873eb3cae1e30a0}
+\hypertarget{class_c_formatted_text_draw_ac12889a14954434340548415c24cd61c}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!m\-\_\-rc\-Client@{m\-\_\-rc\-Client}}
+\index{m\-\_\-rc\-Client@{m\-\_\-rc\-Client}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{m\-\_\-rc\-Client}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T C\-Formatted\-Text\-Draw\-::m\-\_\-rc\-Client}}\label{class_c_formatted_text_draw_ac12889a14954434340548415c24cd61c}
+\hypertarget{class_c_formatted_text_draw_a55dfce4f5f6ceebc265f50d39a3e3b18}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!m\-\_\-rc\-View\-Inset@{m\-\_\-rc\-View\-Inset}}
+\index{m\-\_\-rc\-View\-Inset@{m\-\_\-rc\-View\-Inset}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{m\-\_\-rc\-View\-Inset}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T C\-Formatted\-Text\-Draw\-::m\-\_\-rc\-View\-Inset}}\label{class_c_formatted_text_draw_a55dfce4f5f6ceebc265f50d39a3e3b18}
+\hypertarget{class_c_formatted_text_draw_ae25f82f2e2222357070087b218fcc849}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!m\-\_\-\-R\-T\-F\-Text@{m\-\_\-\-R\-T\-F\-Text}}
+\index{m\-\_\-\-R\-T\-F\-Text@{m\-\_\-\-R\-T\-F\-Text}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{m\-\_\-\-R\-T\-F\-Text}]{\setlength{\rightskip}{0pt plus 5cm}B\-S\-T\-R C\-Formatted\-Text\-Draw\-::m\-\_\-\-R\-T\-F\-Text}}\label{class_c_formatted_text_draw_ae25f82f2e2222357070087b218fcc849}
+\hypertarget{class_c_formatted_text_draw_a7a01811c4c6123bea7d639302b69a128}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!m\-\_\-sizel\-Extent@{m\-\_\-sizel\-Extent}}
+\index{m\-\_\-sizel\-Extent@{m\-\_\-sizel\-Extent}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{m\-\_\-sizel\-Extent}]{\setlength{\rightskip}{0pt plus 5cm}S\-I\-Z\-E\-L C\-Formatted\-Text\-Draw\-::m\-\_\-sizel\-Extent}}\label{class_c_formatted_text_draw_a7a01811c4c6123bea7d639302b69a128}
+\hypertarget{class_c_formatted_text_draw_a359702fb97b39932d0f4605f2324c1d3}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!m\-\_\-sp\-Text\-Services@{m\-\_\-sp\-Text\-Services}}
+\index{m\-\_\-sp\-Text\-Services@{m\-\_\-sp\-Text\-Services}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{m\-\_\-sp\-Text\-Services}]{\setlength{\rightskip}{0pt plus 5cm}I\-Text\-Services$\ast$ C\-Formatted\-Text\-Draw\-::m\-\_\-sp\-Text\-Services}}\label{class_c_formatted_text_draw_a359702fb97b39932d0f4605f2324c1d3}
+\hypertarget{class_c_formatted_text_draw_af07e4ff84b148e4c1614782ec37b9b54}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!n\-Pixels\-Per\-Inch\-X@{n\-Pixels\-Per\-Inch\-X}}
+\index{n\-Pixels\-Per\-Inch\-X@{n\-Pixels\-Per\-Inch\-X}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{n\-Pixels\-Per\-Inch\-X}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Formatted\-Text\-Draw\-::n\-Pixels\-Per\-Inch\-X}}\label{class_c_formatted_text_draw_af07e4ff84b148e4c1614782ec37b9b54}
+\hypertarget{class_c_formatted_text_draw_aed39a1517760cfb53599780e231d481b}{\index{C\-Formatted\-Text\-Draw@{C\-Formatted\-Text\-Draw}!n\-Pixels\-Per\-Inch\-Y@{n\-Pixels\-Per\-Inch\-Y}}
+\index{n\-Pixels\-Per\-Inch\-Y@{n\-Pixels\-Per\-Inch\-Y}!CFormattedTextDraw@{C\-Formatted\-Text\-Draw}}
+\subsubsection[{n\-Pixels\-Per\-Inch\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int C\-Formatted\-Text\-Draw\-::n\-Pixels\-Per\-Inch\-Y}}\label{class_c_formatted_text_draw_aed39a1517760cfb53599780e231d481b}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{formattedtextdraw_8h}{formattedtextdraw.\-h}\item 
+src/\hyperlink{_formatted_text_draw_8cpp}{Formatted\-Text\-Draw.\-cpp}\end{DoxyCompactItemize}

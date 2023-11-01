@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Исходный файл src/linedata.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">linedata.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="linedata_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __LINEDATA_H_INCLUDED__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __LINEDATA_H_INCLUDED__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="xyplotconst_8h.html">.\xyplotconst.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_line_data.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_line_data.html">LineData</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//  static enum { SOLID, DASH, DOT, DASHDOT, DASHDOTDOT, CUSTOM };</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaa24fd149f57d8f62d24ffb01013324720">   11</a></span>&#160;    <span class="keyword">enum</span> { <a class="code" href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3">ROUND</a>, <a class="code" href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaa396289cd387c745e869339a2c24aedb3">FLAT</a>, <a class="code" href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaa24fd149f57d8f62d24ffb01013324720">SQUARE</a> };</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_line_data.html#af4d6ef9378681b4dd72ccac52c8f4e47">LineData</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_line_data.html#af4d6ef9378681b4dd72ccac52c8f4e47">LineData</a>(COLORREF clr, </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordtype">int</span> nWidth, </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordtype">int</span> nType, </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordtype">int</span> nEndCaps = <a class="code" href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3">ROUND</a> , </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            std::string strTemplate = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_line_data.html#a4125b467a9d8d880027c36f8a04ec188">   20</a></span>&#160;    <a class="code" href="class_line_data.html#a4125b467a9d8d880027c36f8a04ec188">LineData</a>(<span class="keyword">const</span> <a class="code" href="class_line_data.html">LineData</a>&amp; rhs) { *<span class="keyword">this</span> = rhs; };</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_line_data.html#a8cb45a237eeea2c7c49a8344286e8ab4">~LineData</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_line_data.html">LineData</a>&amp; <a class="code" href="class_line_data.html#abb21b7f48aa99ace40cfdff6965fb9df">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_line_data.html">LineData</a>&amp; rhs);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_line_data.html#a4590c5b7fb46b8f9194e34ba67642b09">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line_data.html#a4590c5b7fb46b8f9194e34ba67642b09">SetColor</a>( COLORREF color ) { <a class="code" href="class_line_data.html#a641038e14c82d7641df6b1f2e1fd7590">m_color</a> = color; <a class="code" href="class_line_data.html#aeb4bfdd0dc43e28b44efe5726b3b7621">CreatePen</a>(); }</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_line_data.html#a207269015f81f59b4dbc32bd402f5d2c">   26</a></span>&#160;    COLORREF <a class="code" href="class_line_data.html#a207269015f81f59b4dbc32bd402f5d2c">GetColor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_line_data.html#a641038e14c82d7641df6b1f2e1fd7590">m_color</a>; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_line_data.html#ad60bf3e430a63d31c086c393178c01c5">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line_data.html#ad60bf3e430a63d31c086c393178c01c5">SetWidth</a>( <span class="keywordtype">int</span> nWidth ) { <a class="code" href="class_line_data.html#a2f510fa43948464d6764fc3e117b5006">m_width</a> = nWidth; <a class="code" href="class_line_data.html#aeb4bfdd0dc43e28b44efe5726b3b7621">CreatePen</a>(); }</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_line_data.html#a3fcb7592c8bca72b953fda51b0432d75">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_line_data.html#a3fcb7592c8bca72b953fda51b0432d75">GetWidth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_line_data.html#a2f510fa43948464d6764fc3e117b5006">m_width</a>; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_line_data.html#af1c04fa13836884d9cb64e8fc3387370">SetType</a>( <span class="keywordtype">int</span> nType );</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_line_data.html#af15a08103fa48085eb4ad0ab4888988f">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_line_data.html#af15a08103fa48085eb4ad0ab4888988f">GetType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_line_data.html#a67b36139f7b94ec45cbb434cf597ec09">m_type</a>; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_line_data.html#a992ddca82ec4472929a7cf7c613a3619">   34</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line_data.html#a992ddca82ec4472929a7cf7c613a3619">SetEndCaps</a>( <span class="keywordtype">int</span> nEndCaps ) { <a class="code" href="class_line_data.html#a671e8aa8a421242fd1a16bf7759220fa">m_endCaps</a> = nEndCaps; <a class="code" href="class_line_data.html#aeb4bfdd0dc43e28b44efe5726b3b7621">CreatePen</a>(); }</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_line_data.html#ae6cfbcfa7fd82a8a4d4df981cef33f01">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_line_data.html#ae6cfbcfa7fd82a8a4d4df981cef33f01">GetEndCaps</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_line_data.html#a671e8aa8a421242fd1a16bf7759220fa">m_endCaps</a>; }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line_data.html#a8ecfe5b4b82f1d4b0d67c1e773b60246">SetTemplate</a>( std::string strTemplate);</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_line_data.html#abee244a667b9543d42eb1170fff9682d">   38</a></span>&#160;    std::string&amp; <a class="code" href="class_line_data.html#abee244a667b9543d42eb1170fff9682d">GetTemplate</a>() { <span class="keywordflow">return</span> <a class="code" href="class_line_data.html#ab1383399938d3d85c3f3b1caa488f322">m_template</a>; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_line_data.html#aaaddb4cdac3046ec53caa1e01e91369c">   40</a></span>&#160;    <span class="keyword">operator</span> HPEN () { <span class="keywordflow">return</span> <a class="code" href="class_line_data.html#a2774a276fe32645f8d0b44a3032fbf48">m_pen</a>; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_line_data.html#a29bc4b864d24ccd29f2edd397f546670">   41</a></span>&#160;    HPEN <a class="code" href="class_line_data.html#a29bc4b864d24ccd29f2edd397f546670">GetPen</a>() { <span class="keywordflow">return</span> <a class="code" href="class_line_data.html#a2774a276fe32645f8d0b44a3032fbf48">m_pen</a>; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    BOOL <a class="code" href="class_line_data.html#a849c0984d5faba99bb2fa351d6a30801">Write</a>(HANDLE hFile) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    BOOL <a class="code" href="class_line_data.html#a06d80ee01d05207cf4470dc37662a733">Read</a>(HANDLE hFile);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_line_data.html#a67b36139f7b94ec45cbb434cf597ec09">   47</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="class_line_data.html#a67b36139f7b94ec45cbb434cf597ec09">m_type</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_line_data.html#a2f510fa43948464d6764fc3e117b5006">   48</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="class_line_data.html#a2f510fa43948464d6764fc3e117b5006">m_width</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_line_data.html#a671e8aa8a421242fd1a16bf7759220fa">   49</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="class_line_data.html#a671e8aa8a421242fd1a16bf7759220fa">m_endCaps</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_line_data.html#a641038e14c82d7641df6b1f2e1fd7590">   50</a></span>&#160;    COLORREF <a class="code" href="class_line_data.html#a641038e14c82d7641df6b1f2e1fd7590">m_color</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_line_data.html#ab1383399938d3d85c3f3b1caa488f322">   51</a></span>&#160;    std::string <a class="code" href="class_line_data.html#ab1383399938d3d85c3f3b1caa488f322">m_template</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_line_data.html#a2774a276fe32645f8d0b44a3032fbf48">   52</a></span>&#160;    HPEN <a class="code" href="class_line_data.html#a2774a276fe32645f8d0b44a3032fbf48">m_pen</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_line_data.html#a19e0f6bc94691eee641daf9a12e37cb0">   54</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="class_line_data.html#a19e0f6bc94691eee641daf9a12e37cb0">DASHTEMPLATE</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_line_data.html#aabe10496e27e0f52cf6487551c4cb134">   55</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="class_line_data.html#aabe10496e27e0f52cf6487551c4cb134">DOTTEMPLATE</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_line_data.html#aa8a68011b56ff20d76323e1d38929699">   56</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="class_line_data.html#aa8a68011b56ff20d76323e1d38929699">DASHDOTTEMPLATE</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_line_data.html#ada248a7a1094de4b553f165ebafb8e9f">   57</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="class_line_data.html#ada248a7a1094de4b553f165ebafb8e9f">DASHDOTDOTTEMPLATE</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line_data.html#a95fa94b2614d7058386f82e7c3a2a96d">UpdateLineTemplate</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_line_data.html#aeb4bfdd0dc43e28b44efe5726b3b7621">CreatePen</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_line_data_html_ab1383399938d3d85c3f3b1caa488f322"><div class="ttname"><a href="class_line_data.html#ab1383399938d3d85c3f3b1caa488f322">LineData::m_template</a></div><div class="ttdeci">std::string m_template</div><div class="ttdef"><b>Definition:</b> linedata.h:51</div></div>
+<div class="ttc" id="class_line_data_html_a641038e14c82d7641df6b1f2e1fd7590"><div class="ttname"><a href="class_line_data.html#a641038e14c82d7641df6b1f2e1fd7590">LineData::m_color</a></div><div class="ttdeci">COLORREF m_color</div><div class="ttdef"><b>Definition:</b> linedata.h:50</div></div>
+<div class="ttc" id="class_line_data_html_aeb4bfdd0dc43e28b44efe5726b3b7621"><div class="ttname"><a href="class_line_data.html#aeb4bfdd0dc43e28b44efe5726b3b7621">LineData::CreatePen</a></div><div class="ttdeci">void CreatePen()</div><div class="ttdef"><b>Definition:</b> linedata.cpp:225</div></div>
+<div class="ttc" id="class_line_data_html_af15a08103fa48085eb4ad0ab4888988f"><div class="ttname"><a href="class_line_data.html#af15a08103fa48085eb4ad0ab4888988f">LineData::GetType</a></div><div class="ttdeci">int GetType() const </div><div class="ttdef"><b>Definition:</b> linedata.h:32</div></div>
+<div class="ttc" id="class_line_data_html_a4590c5b7fb46b8f9194e34ba67642b09"><div class="ttname"><a href="class_line_data.html#a4590c5b7fb46b8f9194e34ba67642b09">LineData::SetColor</a></div><div class="ttdeci">void SetColor(COLORREF color)</div><div class="ttdef"><b>Definition:</b> linedata.h:25</div></div>
+<div class="ttc" id="class_line_data_html_a4125b467a9d8d880027c36f8a04ec188"><div class="ttname"><a href="class_line_data.html#a4125b467a9d8d880027c36f8a04ec188">LineData::LineData</a></div><div class="ttdeci">LineData(const LineData &amp;rhs)</div><div class="ttdef"><b>Definition:</b> linedata.h:20</div></div>
+<div class="ttc" id="class_line_data_html_a207269015f81f59b4dbc32bd402f5d2c"><div class="ttname"><a href="class_line_data.html#a207269015f81f59b4dbc32bd402f5d2c">LineData::GetColor</a></div><div class="ttdeci">COLORREF GetColor() const </div><div class="ttdef"><b>Definition:</b> linedata.h:26</div></div>
+<div class="ttc" id="class_line_data_html_a19e0f6bc94691eee641daf9a12e37cb0"><div class="ttname"><a href="class_line_data.html#a19e0f6bc94691eee641daf9a12e37cb0">LineData::DASHTEMPLATE</a></div><div class="ttdeci">static std::string DASHTEMPLATE</div><div class="ttdef"><b>Definition:</b> linedata.h:54</div></div>
+<div class="ttc" id="class_line_data_html_a95fa94b2614d7058386f82e7c3a2a96d"><div class="ttname"><a href="class_line_data.html#a95fa94b2614d7058386f82e7c3a2a96d">LineData::UpdateLineTemplate</a></div><div class="ttdeci">void UpdateLineTemplate()</div><div class="ttdef"><b>Definition:</b> linedata.cpp:206</div></div>
+<div class="ttc" id="class_line_data_html_aa8a68011b56ff20d76323e1d38929699"><div class="ttname"><a href="class_line_data.html#aa8a68011b56ff20d76323e1d38929699">LineData::DASHDOTTEMPLATE</a></div><div class="ttdeci">static std::string DASHDOTTEMPLATE</div><div class="ttdef"><b>Definition:</b> linedata.h:56</div></div>
+<div class="ttc" id="class_line_data_html_a29bc4b864d24ccd29f2edd397f546670"><div class="ttname"><a href="class_line_data.html#a29bc4b864d24ccd29f2edd397f546670">LineData::GetPen</a></div><div class="ttdeci">HPEN GetPen()</div><div class="ttdef"><b>Definition:</b> linedata.h:41</div></div>
+<div class="ttc" id="class_line_data_html"><div class="ttname"><a href="class_line_data.html">LineData</a></div><div class="ttdef"><b>Definition:</b> linedata.h:7</div></div>
+<div class="ttc" id="class_line_data_html_af2e2ee6851256e24a12203eda9402beaa396289cd387c745e869339a2c24aedb3"><div class="ttname"><a href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaa396289cd387c745e869339a2c24aedb3">LineData::FLAT</a></div><div class="ttdef"><b>Definition:</b> linedata.h:11</div></div>
+<div class="ttc" id="class_line_data_html_a2774a276fe32645f8d0b44a3032fbf48"><div class="ttname"><a href="class_line_data.html#a2774a276fe32645f8d0b44a3032fbf48">LineData::m_pen</a></div><div class="ttdeci">HPEN m_pen</div><div class="ttdef"><b>Definition:</b> linedata.h:52</div></div>
+<div class="ttc" id="class_line_data_html_abee244a667b9543d42eb1170fff9682d"><div class="ttname"><a href="class_line_data.html#abee244a667b9543d42eb1170fff9682d">LineData::GetTemplate</a></div><div class="ttdeci">std::string &amp; GetTemplate()</div><div class="ttdef"><b>Definition:</b> linedata.h:38</div></div>
+<div class="ttc" id="class_line_data_html_a671e8aa8a421242fd1a16bf7759220fa"><div class="ttname"><a href="class_line_data.html#a671e8aa8a421242fd1a16bf7759220fa">LineData::m_endCaps</a></div><div class="ttdeci">int m_endCaps</div><div class="ttdef"><b>Definition:</b> linedata.h:49</div></div>
+<div class="ttc" id="class_line_data_html_aabe10496e27e0f52cf6487551c4cb134"><div class="ttname"><a href="class_line_data.html#aabe10496e27e0f52cf6487551c4cb134">LineData::DOTTEMPLATE</a></div><div class="ttdeci">static std::string DOTTEMPLATE</div><div class="ttdef"><b>Definition:</b> linedata.h:55</div></div>
+<div class="ttc" id="class_line_data_html_abb21b7f48aa99ace40cfdff6965fb9df"><div class="ttname"><a href="class_line_data.html#abb21b7f48aa99ace40cfdff6965fb9df">LineData::operator=</a></div><div class="ttdeci">const LineData &amp; operator=(const LineData &amp;rhs)</div><div class="ttdef"><b>Definition:</b> linedata.cpp:68</div></div>
+<div class="ttc" id="class_line_data_html_a8ecfe5b4b82f1d4b0d67c1e773b60246"><div class="ttname"><a href="class_line_data.html#a8ecfe5b4b82f1d4b0d67c1e773b60246">LineData::SetTemplate</a></div><div class="ttdeci">void SetTemplate(std::string strTemplate)</div><div class="ttdef"><b>Definition:</b> linedata.cpp:198</div></div>
+<div class="ttc" id="class_line_data_html_a849c0984d5faba99bb2fa351d6a30801"><div class="ttname"><a href="class_line_data.html#a849c0984d5faba99bb2fa351d6a30801">LineData::Write</a></div><div class="ttdeci">BOOL Write(HANDLE hFile) const </div><div class="ttdef"><b>Definition:</b> linedata.cpp:90</div></div>
+<div class="ttc" id="class_line_data_html_af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3"><div class="ttname"><a href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3">LineData::ROUND</a></div><div class="ttdef"><b>Definition:</b> linedata.h:11</div></div>
+<div class="ttc" id="class_line_data_html_a67b36139f7b94ec45cbb434cf597ec09"><div class="ttname"><a href="class_line_data.html#a67b36139f7b94ec45cbb434cf597ec09">LineData::m_type</a></div><div class="ttdeci">int m_type</div><div class="ttdef"><b>Definition:</b> linedata.h:47</div></div>
+<div class="ttc" id="class_line_data_html_ae6cfbcfa7fd82a8a4d4df981cef33f01"><div class="ttname"><a href="class_line_data.html#ae6cfbcfa7fd82a8a4d4df981cef33f01">LineData::GetEndCaps</a></div><div class="ttdeci">int GetEndCaps() const </div><div class="ttdef"><b>Definition:</b> linedata.h:35</div></div>
+<div class="ttc" id="class_line_data_html_af4d6ef9378681b4dd72ccac52c8f4e47"><div class="ttname"><a href="class_line_data.html#af4d6ef9378681b4dd72ccac52c8f4e47">LineData::LineData</a></div><div class="ttdeci">LineData()</div><div class="ttdef"><b>Definition:</b> linedata.cpp:44</div></div>
+<div class="ttc" id="class_line_data_html_ad60bf3e430a63d31c086c393178c01c5"><div class="ttname"><a href="class_line_data.html#ad60bf3e430a63d31c086c393178c01c5">LineData::SetWidth</a></div><div class="ttdeci">void SetWidth(int nWidth)</div><div class="ttdef"><b>Definition:</b> linedata.h:28</div></div>
+<div class="ttc" id="class_line_data_html_af2e2ee6851256e24a12203eda9402beaa24fd149f57d8f62d24ffb01013324720"><div class="ttname"><a href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaa24fd149f57d8f62d24ffb01013324720">LineData::SQUARE</a></div><div class="ttdef"><b>Definition:</b> linedata.h:11</div></div>
+<div class="ttc" id="class_line_data_html_ada248a7a1094de4b553f165ebafb8e9f"><div class="ttname"><a href="class_line_data.html#ada248a7a1094de4b553f165ebafb8e9f">LineData::DASHDOTDOTTEMPLATE</a></div><div class="ttdeci">static std::string DASHDOTDOTTEMPLATE</div><div class="ttdef"><b>Definition:</b> linedata.h:57</div></div>
+<div class="ttc" id="xyplotconst_8h_html"><div class="ttname"><a href="xyplotconst_8h.html">xyplotconst.h</a></div><div class="ttdoc">Содержит константы и перечисляемые типы . </div></div>
+<div class="ttc" id="class_line_data_html_a2f510fa43948464d6764fc3e117b5006"><div class="ttname"><a href="class_line_data.html#a2f510fa43948464d6764fc3e117b5006">LineData::m_width</a></div><div class="ttdeci">int m_width</div><div class="ttdef"><b>Definition:</b> linedata.h:48</div></div>
+<div class="ttc" id="class_line_data_html_a8cb45a237eeea2c7c49a8344286e8ab4"><div class="ttname"><a href="class_line_data.html#a8cb45a237eeea2c7c49a8344286e8ab4">LineData::~LineData</a></div><div class="ttdeci">~LineData()</div><div class="ttdef"><b>Definition:</b> linedata.cpp:85</div></div>
+<div class="ttc" id="class_line_data_html_a3fcb7592c8bca72b953fda51b0432d75"><div class="ttname"><a href="class_line_data.html#a3fcb7592c8bca72b953fda51b0432d75">LineData::GetWidth</a></div><div class="ttdeci">int GetWidth() const </div><div class="ttdef"><b>Definition:</b> linedata.h:29</div></div>
+<div class="ttc" id="class_line_data_html_a992ddca82ec4472929a7cf7c613a3619"><div class="ttname"><a href="class_line_data.html#a992ddca82ec4472929a7cf7c613a3619">LineData::SetEndCaps</a></div><div class="ttdeci">void SetEndCaps(int nEndCaps)</div><div class="ttdef"><b>Definition:</b> linedata.h:34</div></div>
+<div class="ttc" id="class_line_data_html_a06d80ee01d05207cf4470dc37662a733"><div class="ttname"><a href="class_line_data.html#a06d80ee01d05207cf4470dc37662a733">LineData::Read</a></div><div class="ttdeci">BOOL Read(HANDLE hFile)</div><div class="ttdef"><b>Definition:</b> linedata.cpp:122</div></div>
+<div class="ttc" id="class_line_data_html_af1c04fa13836884d9cb64e8fc3387370"><div class="ttname"><a href="class_line_data.html#af1c04fa13836884d9cb64e8fc3387370">LineData::SetType</a></div><div class="ttdeci">int SetType(int nType)</div><div class="ttdef"><b>Definition:</b> linedata.cpp:184</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

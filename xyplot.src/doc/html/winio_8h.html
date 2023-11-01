@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Файл src/winio.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл winio.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="winio_8h__dep__incl.png" border="0" usemap="#src_2winio_8hdep" alt=""/></div>
+<map name="src_2winio_8hdep" id="src_2winio_8hdep">
+<area shape="rect" id="node2" href="dnp__checkout_8cpp.html" title="src/dnp_checkout.cpp" alt="" coords="5,80,156,107"/></map>
+</div>
+</div>
+<p><a href="winio_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtag_phys32_struct.html">tagPhys32Struct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtag_port32_struct.html">tagPort32Struct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:abbbd8a89665aaacb41492d56572a8407"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#abbbd8a89665aaacb41492d56572a8407">WINIO_H</a></td></tr>
+<tr class="separator:abbbd8a89665aaacb41492d56572a8407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d4ef916ac5deac0e011755c2473ac8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a>&#160;&#160;&#160;0x00008010</td></tr>
+<tr class="separator:ab9d4ef916ac5deac0e011755c2473ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7fe7ab62fb9702c7cc84b5c547300e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a>&#160;&#160;&#160;0x810</td></tr>
+<tr class="separator:a4d7fe7ab62fb9702c7cc84b5c547300e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292fec23ce40c401f164ad293a6ea1a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a292fec23ce40c401f164ad293a6ea1a3">IOCTL_WINIO_MAPPHYSTOLIN</a></td></tr>
+<tr class="separator:a292fec23ce40c401f164ad293a6ea1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa032074f56fd050573203641a3819ea7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#aa032074f56fd050573203641a3819ea7">IOCTL_WINIO_UNMAPPHYSADDR</a></td></tr>
+<tr class="separator:aa032074f56fd050573203641a3819ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83d09887ff9eebc25d3a8296a31ac9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#af83d09887ff9eebc25d3a8296a31ac9a">IOCTL_WINIO_WRITEPORT</a></td></tr>
+<tr class="separator:af83d09887ff9eebc25d3a8296a31ac9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99bccd69f36e0f4565bb3a723ec3dee2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a99bccd69f36e0f4565bb3a723ec3dee2">IOCTL_WINIO_READPORT</a></td></tr>
+<tr class="separator:a99bccd69f36e0f4565bb3a723ec3dee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d4ef916ac5deac0e011755c2473ac8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winio_8h.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a>&#160;&#160;&#160;0x00008010</td></tr>
+<tr class="separator:ab9d4ef916ac5deac0e011755c2473ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7fe7ab62fb9702c7cc84b5c547300e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winio_8h.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a>&#160;&#160;&#160;0x810</td></tr>
+<tr class="separator:a4d7fe7ab62fb9702c7cc84b5c547300e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292fec23ce40c401f164ad293a6ea1a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winio_8h.html#a292fec23ce40c401f164ad293a6ea1a3">IOCTL_WINIO_MAPPHYSTOLIN</a></td></tr>
+<tr class="separator:a292fec23ce40c401f164ad293a6ea1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa032074f56fd050573203641a3819ea7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winio_8h.html#aa032074f56fd050573203641a3819ea7">IOCTL_WINIO_UNMAPPHYSADDR</a></td></tr>
+<tr class="separator:aa032074f56fd050573203641a3819ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83d09887ff9eebc25d3a8296a31ac9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winio_8h.html#af83d09887ff9eebc25d3a8296a31ac9a">IOCTL_WINIO_WRITEPORT</a></td></tr>
+<tr class="separator:af83d09887ff9eebc25d3a8296a31ac9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99bccd69f36e0f4565bb3a723ec3dee2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winio_8h.html#a99bccd69f36e0f4565bb3a723ec3dee2">IOCTL_WINIO_READPORT</a></td></tr>
+<tr class="separator:a99bccd69f36e0f4565bb3a723ec3dee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:abe9b904cd194e411f2fc719a1530abe7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structtag_phys32_struct.html">tagPhys32Struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winio_8h.html#abe9b904cd194e411f2fc719a1530abe7">Phys32Struct</a></td></tr>
+<tr class="separator:abe9b904cd194e411f2fc719a1530abe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76f800e761cfbbfedd3498c265b2557"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structtag_port32_struct.html">tagPort32Struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="winio_8h.html#ae76f800e761cfbbfedd3498c265b2557">Port32Struct</a></td></tr>
+<tr class="separator:ae76f800e761cfbbfedd3498c265b2557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a class="anchor" id="ab9d4ef916ac5deac0e011755c2473ac8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILE_DEVICE_WINIO&#160;&#160;&#160;0x00008010</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9d4ef916ac5deac0e011755c2473ac8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILE_DEVICE_WINIO&#160;&#160;&#160;0x00008010</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a292fec23ce40c401f164ad293a6ea1a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_WINIO_MAPPHYSTOLIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">CTL_CODE(<a class="code" href="dnp__checkout_8cpp.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a>,  \</div>
+<div class="line">                                  <a class="code" href="dnp__checkout_8cpp.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a>,      \</div>
+<div class="line">                                  METHOD_BUFFERED,        \</div>
+<div class="line">                                  FILE_ANY_ACCESS)</div>
+<div class="ttc" id="dnp__checkout_8cpp_html_a4d7fe7ab62fb9702c7cc84b5c547300e"><div class="ttname"><a href="dnp__checkout_8cpp.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a></div><div class="ttdeci">#define WINIO_IOCTL_INDEX</div></div>
+<div class="ttc" id="dnp__checkout_8cpp_html_ab9d4ef916ac5deac0e011755c2473ac8"><div class="ttname"><a href="dnp__checkout_8cpp.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a></div><div class="ttdeci">#define FILE_DEVICE_WINIO</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a292fec23ce40c401f164ad293a6ea1a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_WINIO_MAPPHYSTOLIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">CTL_CODE(<a class="code" href="winio_8h.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a>,  \</div>
+<div class="line">                                  <a class="code" href="winio_8h.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a>,      \</div>
+<div class="line">                                  METHOD_BUFFERED,        \</div>
+<div class="line">                                  FILE_ANY_ACCESS)</div>
+<div class="ttc" id="winio_8h_html_ab9d4ef916ac5deac0e011755c2473ac8"><div class="ttname"><a href="winio_8h.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a></div><div class="ttdeci">#define FILE_DEVICE_WINIO</div><div class="ttdef"><b>Definition:</b> winio.h:8</div></div>
+<div class="ttc" id="winio_8h_html_a4d7fe7ab62fb9702c7cc84b5c547300e"><div class="ttname"><a href="winio_8h.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a></div><div class="ttdeci">#define WINIO_IOCTL_INDEX</div><div class="ttdef"><b>Definition:</b> winio.h:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a99bccd69f36e0f4565bb3a723ec3dee2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_WINIO_READPORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">CTL_CODE(<a class="code" href="dnp__checkout_8cpp.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a>,  \</div>
+<div class="line">                                  <a class="code" href="dnp__checkout_8cpp.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a> + 3,   \</div>
+<div class="line">                                  METHOD_BUFFERED,         \</div>
+<div class="line">                                  FILE_ANY_ACCESS)</div>
+<div class="ttc" id="dnp__checkout_8cpp_html_a4d7fe7ab62fb9702c7cc84b5c547300e"><div class="ttname"><a href="dnp__checkout_8cpp.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a></div><div class="ttdeci">#define WINIO_IOCTL_INDEX</div></div>
+<div class="ttc" id="dnp__checkout_8cpp_html_ab9d4ef916ac5deac0e011755c2473ac8"><div class="ttname"><a href="dnp__checkout_8cpp.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a></div><div class="ttdeci">#define FILE_DEVICE_WINIO</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a99bccd69f36e0f4565bb3a723ec3dee2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_WINIO_READPORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">CTL_CODE(<a class="code" href="winio_8h.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a>,  \</div>
+<div class="line">                                  <a class="code" href="winio_8h.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a> + 3,   \</div>
+<div class="line">                                  METHOD_BUFFERED,         \</div>
+<div class="line">                                  FILE_ANY_ACCESS)</div>
+<div class="ttc" id="winio_8h_html_ab9d4ef916ac5deac0e011755c2473ac8"><div class="ttname"><a href="winio_8h.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a></div><div class="ttdeci">#define FILE_DEVICE_WINIO</div><div class="ttdef"><b>Definition:</b> winio.h:8</div></div>
+<div class="ttc" id="winio_8h_html_a4d7fe7ab62fb9702c7cc84b5c547300e"><div class="ttname"><a href="winio_8h.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a></div><div class="ttdeci">#define WINIO_IOCTL_INDEX</div><div class="ttdef"><b>Definition:</b> winio.h:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa032074f56fd050573203641a3819ea7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_WINIO_UNMAPPHYSADDR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">CTL_CODE(<a class="code" href="winio_8h.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a>,  \</div>
+<div class="line">                                  <a class="code" href="winio_8h.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a> + 1,  \</div>
+<div class="line">                                  METHOD_BUFFERED,        \</div>
+<div class="line">                                  FILE_ANY_ACCESS)</div>
+<div class="ttc" id="winio_8h_html_ab9d4ef916ac5deac0e011755c2473ac8"><div class="ttname"><a href="winio_8h.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a></div><div class="ttdeci">#define FILE_DEVICE_WINIO</div><div class="ttdef"><b>Definition:</b> winio.h:8</div></div>
+<div class="ttc" id="winio_8h_html_a4d7fe7ab62fb9702c7cc84b5c547300e"><div class="ttname"><a href="winio_8h.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a></div><div class="ttdeci">#define WINIO_IOCTL_INDEX</div><div class="ttdef"><b>Definition:</b> winio.h:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa032074f56fd050573203641a3819ea7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_WINIO_UNMAPPHYSADDR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">CTL_CODE(<a class="code" href="dnp__checkout_8cpp.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a>,  \</div>
+<div class="line">                                  <a class="code" href="dnp__checkout_8cpp.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a> + 1,  \</div>
+<div class="line">                                  METHOD_BUFFERED,        \</div>
+<div class="line">                                  FILE_ANY_ACCESS)</div>
+<div class="ttc" id="dnp__checkout_8cpp_html_a4d7fe7ab62fb9702c7cc84b5c547300e"><div class="ttname"><a href="dnp__checkout_8cpp.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a></div><div class="ttdeci">#define WINIO_IOCTL_INDEX</div></div>
+<div class="ttc" id="dnp__checkout_8cpp_html_ab9d4ef916ac5deac0e011755c2473ac8"><div class="ttname"><a href="dnp__checkout_8cpp.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a></div><div class="ttdeci">#define FILE_DEVICE_WINIO</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af83d09887ff9eebc25d3a8296a31ac9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_WINIO_WRITEPORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">CTL_CODE(<a class="code" href="winio_8h.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a>,  \</div>
+<div class="line">                                  <a class="code" href="winio_8h.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a> + 2,   \</div>
+<div class="line">                                  METHOD_BUFFERED,         \</div>
+<div class="line">                                  FILE_ANY_ACCESS)</div>
+<div class="ttc" id="winio_8h_html_ab9d4ef916ac5deac0e011755c2473ac8"><div class="ttname"><a href="winio_8h.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a></div><div class="ttdeci">#define FILE_DEVICE_WINIO</div><div class="ttdef"><b>Definition:</b> winio.h:8</div></div>
+<div class="ttc" id="winio_8h_html_a4d7fe7ab62fb9702c7cc84b5c547300e"><div class="ttname"><a href="winio_8h.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a></div><div class="ttdeci">#define WINIO_IOCTL_INDEX</div><div class="ttdef"><b>Definition:</b> winio.h:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af83d09887ff9eebc25d3a8296a31ac9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_WINIO_WRITEPORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">CTL_CODE(<a class="code" href="dnp__checkout_8cpp.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a>,  \</div>
+<div class="line">                                  <a class="code" href="dnp__checkout_8cpp.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a> + 2,   \</div>
+<div class="line">                                  METHOD_BUFFERED,         \</div>
+<div class="line">                                  FILE_ANY_ACCESS)</div>
+<div class="ttc" id="dnp__checkout_8cpp_html_a4d7fe7ab62fb9702c7cc84b5c547300e"><div class="ttname"><a href="dnp__checkout_8cpp.html#a4d7fe7ab62fb9702c7cc84b5c547300e">WINIO_IOCTL_INDEX</a></div><div class="ttdeci">#define WINIO_IOCTL_INDEX</div></div>
+<div class="ttc" id="dnp__checkout_8cpp_html_ab9d4ef916ac5deac0e011755c2473ac8"><div class="ttname"><a href="dnp__checkout_8cpp.html#ab9d4ef916ac5deac0e011755c2473ac8">FILE_DEVICE_WINIO</a></div><div class="ttdeci">#define FILE_DEVICE_WINIO</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="abbbd8a89665aaacb41492d56572a8407"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WINIO_H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4d7fe7ab62fb9702c7cc84b5c547300e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WINIO_IOCTL_INDEX&#160;&#160;&#160;0x810</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4d7fe7ab62fb9702c7cc84b5c547300e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WINIO_IOCTL_INDEX&#160;&#160;&#160;0x810</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a class="anchor" id="abe9b904cd194e411f2fc719a1530abe7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structtag_phys32_struct.html">tagPhys32Struct</a> Phys32Struct</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae76f800e761cfbbfedd3498c265b2557"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structtag_port32_struct.html">tagPort32Struct</a> Port32Struct</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

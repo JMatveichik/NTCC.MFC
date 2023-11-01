@@ -1,0 +1,343 @@
+\hypertarget{class_legend}{\section{Класс Legend}
+\label{class_legend}\index{Legend@{Legend}}
+}
+
+
+{\ttfamily \#include $<$legend.\-h$>$}
+
+
+
+Граф наследования\-:Legend\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_legend__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Legend\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_legend__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_legend_a4f7f9fbc734a17fcec1aac7d1a8fadd1}{Legend} (\hyperlink{class_x_y_plot}{X\-Y\-Plot} $\ast$parent)
+\item 
+virtual \hyperlink{class_legend_a115704c32c3ebb783c3ebdd9b2d42f94}{$\sim$\-Legend} ()
+\item 
+B\-O\-O\-L \hyperlink{class_legend_a0897a355c053f7f6cdf1402e3efc47db}{Is\-Enabled} () const 
+\item 
+void \hyperlink{class_legend_a54ddf99906fffb8c980460a2b83af3b3}{Enable} (B\-O\-O\-L enable)
+\item 
+B\-O\-O\-L \hyperlink{class_legend_ad9203ba4dd99cff8f06bfe67a83d177b}{Is\-Hidden} () const 
+\item 
+void \hyperlink{class_legend_ac0d117f614faf8abc3a0c6662298e331}{Hide} (B\-O\-O\-L hide)
+\item 
+void \hyperlink{class_legend_a1b6519b466a61a4c41b21c3bbf3d5143}{Set\-Align} (int align)
+\item 
+int \hyperlink{class_legend_a047bb7503a5efcca94fbf869b535979c}{Get\-Align} () const 
+\item 
+void \hyperlink{class_legend_a5c9f1626236b331c440ee630e32e2543}{Set\-Rect} (const R\-E\-C\-T \&self)
+\item 
+void \hyperlink{class_legend_a49b632e529f71ebc6ff9ed337eb46820}{Set\-Rect} (int left, int top, int right, int bottom)
+\item 
+void \hyperlink{class_legend_a1e5d3d80a9db05979396b7f7d8aaeb24}{Get\-Rect} (R\-E\-C\-T \&self) const 
+\item 
+void \hyperlink{class_legend_aaaac5b1cc325b70ed985b5e671219be2}{Set\-Cell\-Size} (int width, int height)
+\item 
+void \hyperlink{class_legend_aa85e5a1690d0b39faa1b93d67027c33d}{Get\-Cell\-Size} (int \&width, int \&height) const 
+\item 
+void \hyperlink{class_legend_a24fa9da3d1d681d0b668cdbe246852bf}{Set\-Line\-Length} (int length)
+\item 
+int \hyperlink{class_legend_ad2d3feab72270972696612a660c36c80}{Get\-Line\-Length} () const 
+\item 
+void \hyperlink{class_legend_a9f1846fd3945025e00c257b30eb83308}{Set\-Font} (const L\-O\-G\-F\-O\-N\-T $\ast$plf)
+\item 
+void \hyperlink{class_legend_abf18606ec15b245411814d483bf6c84b}{Pre\-Draw} (H\-D\-C hdc, R\-E\-C\-T $\ast$ptotal)
+\item 
+void \hyperlink{class_legend_aff5b6aaef5b636e6276236ed65e8c1d8}{On\-Draw} (H\-D\-C hdc)
+\item 
+\hyperlink{profile_8h_ab564cd67657a739c9e5a6caa0ce0dafa}{P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y} \hyperlink{class_legend_afc3e60bb5661a763719cdd2a70065fc5}{Hit\-Test} (const P\-O\-I\-N\-T \&pt\-Hit)
+\item 
+B\-O\-O\-L \hyperlink{class_legend_ac455ef2bd4f20e8889898f02e6c0cc80}{Point\-In\-Rect} (const P\-O\-I\-N\-T \&pt)
+\item 
+virtual B\-O\-O\-L \hyperlink{class_legend_a93f2a8366a6c5df1b99d4ba2805928b4}{Write} (H\-A\-N\-D\-L\-E h\-File) const 
+\item 
+virtual B\-O\-O\-L \hyperlink{class_legend_a881509fdd919ed3a30ca822a5edb1114}{Read} (H\-A\-N\-D\-L\-E h\-File)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_legend_ae74cfd587be862b4e655bdee5ea08810}{Clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_legend_a63abb8f699af6d3506bc7c8ded4037e0}{m\-\_\-\-Legend\-Offset}
+\item 
+\hyperlink{class_r_t_f_string}{R\-T\-F\-String} $\ast$ \hyperlink{class_legend_ac52c5c0196d7bddcfab650383f3c88b0}{m\-\_\-basic\-Estr}
+\item 
+std\-::set$<$ \hyperlink{class_profile}{Profile} $\ast$, \hyperlink{structprofile__less}{profile\-\_\-less} $>$ \hyperlink{class_legend_a418c058072c59c8d2c491852ef3f143b}{profiles}
+\item 
+const \hyperlink{class_x_y_plot}{X\-Y\-Plot} \& \hyperlink{class_legend_ad033e64a43cceb124ce7b626bdfb695b}{plot}
+\item 
+\hyperlink{class_border}{Border} \hyperlink{class_legend_ae32f4bc2a9d78cfa069cb242f88cc8f4}{border}
+\item 
+\hyperlink{class_back_ground}{Back\-Ground} \hyperlink{class_legend_a484eefc380044280c4d44642985293e2}{back\-Ground}
+\item 
+B\-O\-O\-L \hyperlink{class_legend_a59cedd9de67888759ff39d3fd7c5be45}{m\-\_\-enabled}
+\item 
+B\-O\-O\-L \hyperlink{class_legend_a7d66848a4111a6a2c0b1fce8ced7d334}{m\-\_\-hidden}
+\item 
+int \hyperlink{class_legend_a144934b57a8e04a335e6f0d8a39eeb84}{m\-\_\-align}
+\item 
+R\-E\-C\-T \hyperlink{class_legend_a501285ae1b14654e5ae6a03f7ed4685f}{m\-\_\-self}
+\item 
+int \hyperlink{class_legend_ac20e23ef899c49a723227dadc21852d0}{m\-\_\-n\-Lines\-Count}
+\item 
+int \hyperlink{class_legend_a618f51c269707325f1d5a9b20f5544cb}{m\-\_\-cell\-Width}
+\item 
+int \hyperlink{class_legend_ae505590bc82b4c57bc1af903855490a5}{m\-\_\-cell\-Height}
+\item 
+int \hyperlink{class_legend_aa5fe3f497876f93e38faa9b248a36fb3}{m\-\_\-line\-Length}
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_legend_a4f7f9fbc734a17fcec1aac7d1a8fadd1}{\index{Legend@{Legend}!Legend@{Legend}}
+\index{Legend@{Legend}!Legend@{Legend}}
+\subsubsection[{Legend}]{\setlength{\rightskip}{0pt plus 5cm}Legend\-::\-Legend (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-Y\-Plot} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}}\label{class_legend_a4f7f9fbc734a17fcec1aac7d1a8fadd1}
+\hypertarget{class_legend_a115704c32c3ebb783c3ebdd9b2d42f94}{\index{Legend@{Legend}!$\sim$\-Legend@{$\sim$\-Legend}}
+\index{$\sim$\-Legend@{$\sim$\-Legend}!Legend@{Legend}}
+\subsubsection[{$\sim$\-Legend}]{\setlength{\rightskip}{0pt plus 5cm}Legend\-::$\sim$\-Legend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_legend_a115704c32c3ebb783c3ebdd9b2d42f94}
+
+
+\subsection{Методы}
+\hypertarget{class_legend_ae74cfd587be862b4e655bdee5ea08810}{\index{Legend@{Legend}!Clear@{Clear}}
+\index{Clear@{Clear}!Legend@{Legend}}
+\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_ae74cfd587be862b4e655bdee5ea08810}
+\hypertarget{class_legend_a54ddf99906fffb8c980460a2b83af3b3}{\index{Legend@{Legend}!Enable@{Enable}}
+\index{Enable@{Enable}!Legend@{Legend}}
+\subsubsection[{Enable}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Enable (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_a54ddf99906fffb8c980460a2b83af3b3}
+\hypertarget{class_legend_a047bb7503a5efcca94fbf869b535979c}{\index{Legend@{Legend}!Get\-Align@{Get\-Align}}
+\index{Get\-Align@{Get\-Align}!Legend@{Legend}}
+\subsubsection[{Get\-Align}]{\setlength{\rightskip}{0pt plus 5cm}int Legend\-::\-Get\-Align (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_a047bb7503a5efcca94fbf869b535979c}
+\hypertarget{class_legend_aa85e5a1690d0b39faa1b93d67027c33d}{\index{Legend@{Legend}!Get\-Cell\-Size@{Get\-Cell\-Size}}
+\index{Get\-Cell\-Size@{Get\-Cell\-Size}!Legend@{Legend}}
+\subsubsection[{Get\-Cell\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Get\-Cell\-Size (
+\begin{DoxyParamCaption}
+\item[{int \&}]{width, }
+\item[{int \&}]{height}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_aa85e5a1690d0b39faa1b93d67027c33d}
+\hypertarget{class_legend_ad2d3feab72270972696612a660c36c80}{\index{Legend@{Legend}!Get\-Line\-Length@{Get\-Line\-Length}}
+\index{Get\-Line\-Length@{Get\-Line\-Length}!Legend@{Legend}}
+\subsubsection[{Get\-Line\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int Legend\-::\-Get\-Line\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_ad2d3feab72270972696612a660c36c80}
+\hypertarget{class_legend_a1e5d3d80a9db05979396b7f7d8aaeb24}{\index{Legend@{Legend}!Get\-Rect@{Get\-Rect}}
+\index{Get\-Rect@{Get\-Rect}!Legend@{Legend}}
+\subsubsection[{Get\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Get\-Rect (
+\begin{DoxyParamCaption}
+\item[{R\-E\-C\-T \&}]{self}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_a1e5d3d80a9db05979396b7f7d8aaeb24}
+\hypertarget{class_legend_ac0d117f614faf8abc3a0c6662298e331}{\index{Legend@{Legend}!Hide@{Hide}}
+\index{Hide@{Hide}!Legend@{Legend}}
+\subsubsection[{Hide}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Hide (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{hide}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_ac0d117f614faf8abc3a0c6662298e331}
+\hypertarget{class_legend_afc3e60bb5661a763719cdd2a70065fc5}{\index{Legend@{Legend}!Hit\-Test@{Hit\-Test}}
+\index{Hit\-Test@{Hit\-Test}!Legend@{Legend}}
+\subsubsection[{Hit\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y} Legend\-::\-Hit\-Test (
+\begin{DoxyParamCaption}
+\item[{const P\-O\-I\-N\-T \&}]{pt\-Hit}
+\end{DoxyParamCaption}
+)}}\label{class_legend_afc3e60bb5661a763719cdd2a70065fc5}
+\hypertarget{class_legend_a0897a355c053f7f6cdf1402e3efc47db}{\index{Legend@{Legend}!Is\-Enabled@{Is\-Enabled}}
+\index{Is\-Enabled@{Is\-Enabled}!Legend@{Legend}}
+\subsubsection[{Is\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Legend\-::\-Is\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_a0897a355c053f7f6cdf1402e3efc47db}
+\hypertarget{class_legend_ad9203ba4dd99cff8f06bfe67a83d177b}{\index{Legend@{Legend}!Is\-Hidden@{Is\-Hidden}}
+\index{Is\-Hidden@{Is\-Hidden}!Legend@{Legend}}
+\subsubsection[{Is\-Hidden}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Legend\-::\-Is\-Hidden (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_ad9203ba4dd99cff8f06bfe67a83d177b}
+\hypertarget{class_legend_aff5b6aaef5b636e6276236ed65e8c1d8}{\index{Legend@{Legend}!On\-Draw@{On\-Draw}}
+\index{On\-Draw@{On\-Draw}!Legend@{Legend}}
+\subsubsection[{On\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-On\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc}
+\end{DoxyParamCaption}
+)}}\label{class_legend_aff5b6aaef5b636e6276236ed65e8c1d8}
+\hypertarget{class_legend_ac455ef2bd4f20e8889898f02e6c0cc80}{\index{Legend@{Legend}!Point\-In\-Rect@{Point\-In\-Rect}}
+\index{Point\-In\-Rect@{Point\-In\-Rect}!Legend@{Legend}}
+\subsubsection[{Point\-In\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Legend\-::\-Point\-In\-Rect (
+\begin{DoxyParamCaption}
+\item[{const P\-O\-I\-N\-T \&}]{pt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_ac455ef2bd4f20e8889898f02e6c0cc80}
+\hypertarget{class_legend_abf18606ec15b245411814d483bf6c84b}{\index{Legend@{Legend}!Pre\-Draw@{Pre\-Draw}}
+\index{Pre\-Draw@{Pre\-Draw}!Legend@{Legend}}
+\subsubsection[{Pre\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Pre\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc, }
+\item[{R\-E\-C\-T $\ast$}]{ptotal}
+\end{DoxyParamCaption}
+)}}\label{class_legend_abf18606ec15b245411814d483bf6c84b}
+\hypertarget{class_legend_a881509fdd919ed3a30ca822a5edb1114}{\index{Legend@{Legend}!Read@{Read}}
+\index{Read@{Read}!Legend@{Legend}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Legend\-::\-Read (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_legend_a881509fdd919ed3a30ca822a5edb1114}
+
+
+Замещает \hyperlink{class_savable_item_a7eadd16b2cb0652091cc15f596a00fb2}{Savable\-Item}.
+
+\hypertarget{class_legend_a1b6519b466a61a4c41b21c3bbf3d5143}{\index{Legend@{Legend}!Set\-Align@{Set\-Align}}
+\index{Set\-Align@{Set\-Align}!Legend@{Legend}}
+\subsubsection[{Set\-Align}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Set\-Align (
+\begin{DoxyParamCaption}
+\item[{int}]{align}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_a1b6519b466a61a4c41b21c3bbf3d5143}
+\hypertarget{class_legend_aaaac5b1cc325b70ed985b5e671219be2}{\index{Legend@{Legend}!Set\-Cell\-Size@{Set\-Cell\-Size}}
+\index{Set\-Cell\-Size@{Set\-Cell\-Size}!Legend@{Legend}}
+\subsubsection[{Set\-Cell\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Set\-Cell\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_aaaac5b1cc325b70ed985b5e671219be2}
+\hypertarget{class_legend_a9f1846fd3945025e00c257b30eb83308}{\index{Legend@{Legend}!Set\-Font@{Set\-Font}}
+\index{Set\-Font@{Set\-Font}!Legend@{Legend}}
+\subsubsection[{Set\-Font}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Set\-Font (
+\begin{DoxyParamCaption}
+\item[{const L\-O\-G\-F\-O\-N\-T $\ast$}]{plf}
+\end{DoxyParamCaption}
+)}}\label{class_legend_a9f1846fd3945025e00c257b30eb83308}
+\hypertarget{class_legend_a24fa9da3d1d681d0b668cdbe246852bf}{\index{Legend@{Legend}!Set\-Line\-Length@{Set\-Line\-Length}}
+\index{Set\-Line\-Length@{Set\-Line\-Length}!Legend@{Legend}}
+\subsubsection[{Set\-Line\-Length}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Set\-Line\-Length (
+\begin{DoxyParamCaption}
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_a24fa9da3d1d681d0b668cdbe246852bf}
+\hypertarget{class_legend_a5c9f1626236b331c440ee630e32e2543}{\index{Legend@{Legend}!Set\-Rect@{Set\-Rect}}
+\index{Set\-Rect@{Set\-Rect}!Legend@{Legend}}
+\subsubsection[{Set\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Set\-Rect (
+\begin{DoxyParamCaption}
+\item[{const R\-E\-C\-T \&}]{self}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_legend_a5c9f1626236b331c440ee630e32e2543}
+\hypertarget{class_legend_a49b632e529f71ebc6ff9ed337eb46820}{\index{Legend@{Legend}!Set\-Rect@{Set\-Rect}}
+\index{Set\-Rect@{Set\-Rect}!Legend@{Legend}}
+\subsubsection[{Set\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void Legend\-::\-Set\-Rect (
+\begin{DoxyParamCaption}
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom}
+\end{DoxyParamCaption}
+)}}\label{class_legend_a49b632e529f71ebc6ff9ed337eb46820}
+\hypertarget{class_legend_a93f2a8366a6c5df1b99d4ba2805928b4}{\index{Legend@{Legend}!Write@{Write}}
+\index{Write@{Write}!Legend@{Legend}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Legend\-::\-Write (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_legend_a93f2a8366a6c5df1b99d4ba2805928b4}
+
+
+Замещает \hyperlink{class_savable_item_a0da511a4854f515096f8f9b498f64158}{Savable\-Item}.
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_legend_a484eefc380044280c4d44642985293e2}{\index{Legend@{Legend}!back\-Ground@{back\-Ground}}
+\index{back\-Ground@{back\-Ground}!Legend@{Legend}}
+\subsubsection[{back\-Ground}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Back\-Ground} Legend\-::back\-Ground\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_a484eefc380044280c4d44642985293e2}
+\hypertarget{class_legend_ae32f4bc2a9d78cfa069cb242f88cc8f4}{\index{Legend@{Legend}!border@{border}}
+\index{border@{border}!Legend@{Legend}}
+\subsubsection[{border}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Border} Legend\-::border\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_ae32f4bc2a9d78cfa069cb242f88cc8f4}
+\hypertarget{class_legend_a144934b57a8e04a335e6f0d8a39eeb84}{\index{Legend@{Legend}!m\-\_\-align@{m\-\_\-align}}
+\index{m\-\_\-align@{m\-\_\-align}!Legend@{Legend}}
+\subsubsection[{m\-\_\-align}]{\setlength{\rightskip}{0pt plus 5cm}int Legend\-::m\-\_\-align\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_a144934b57a8e04a335e6f0d8a39eeb84}
+\hypertarget{class_legend_ac52c5c0196d7bddcfab650383f3c88b0}{\index{Legend@{Legend}!m\-\_\-basic\-Estr@{m\-\_\-basic\-Estr}}
+\index{m\-\_\-basic\-Estr@{m\-\_\-basic\-Estr}!Legend@{Legend}}
+\subsubsection[{m\-\_\-basic\-Estr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-T\-F\-String}$\ast$ Legend\-::m\-\_\-basic\-Estr\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_ac52c5c0196d7bddcfab650383f3c88b0}
+\hypertarget{class_legend_ae505590bc82b4c57bc1af903855490a5}{\index{Legend@{Legend}!m\-\_\-cell\-Height@{m\-\_\-cell\-Height}}
+\index{m\-\_\-cell\-Height@{m\-\_\-cell\-Height}!Legend@{Legend}}
+\subsubsection[{m\-\_\-cell\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int Legend\-::m\-\_\-cell\-Height\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_ae505590bc82b4c57bc1af903855490a5}
+\hypertarget{class_legend_a618f51c269707325f1d5a9b20f5544cb}{\index{Legend@{Legend}!m\-\_\-cell\-Width@{m\-\_\-cell\-Width}}
+\index{m\-\_\-cell\-Width@{m\-\_\-cell\-Width}!Legend@{Legend}}
+\subsubsection[{m\-\_\-cell\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int Legend\-::m\-\_\-cell\-Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_a618f51c269707325f1d5a9b20f5544cb}
+\hypertarget{class_legend_a59cedd9de67888759ff39d3fd7c5be45}{\index{Legend@{Legend}!m\-\_\-enabled@{m\-\_\-enabled}}
+\index{m\-\_\-enabled@{m\-\_\-enabled}!Legend@{Legend}}
+\subsubsection[{m\-\_\-enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Legend\-::m\-\_\-enabled\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_a59cedd9de67888759ff39d3fd7c5be45}
+\hypertarget{class_legend_a7d66848a4111a6a2c0b1fce8ced7d334}{\index{Legend@{Legend}!m\-\_\-hidden@{m\-\_\-hidden}}
+\index{m\-\_\-hidden@{m\-\_\-hidden}!Legend@{Legend}}
+\subsubsection[{m\-\_\-hidden}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Legend\-::m\-\_\-hidden\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_a7d66848a4111a6a2c0b1fce8ced7d334}
+\hypertarget{class_legend_a63abb8f699af6d3506bc7c8ded4037e0}{\index{Legend@{Legend}!m\-\_\-\-Legend\-Offset@{m\-\_\-\-Legend\-Offset}}
+\index{m\-\_\-\-Legend\-Offset@{m\-\_\-\-Legend\-Offset}!Legend@{Legend}}
+\subsubsection[{m\-\_\-\-Legend\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}int Legend\-::m\-\_\-\-Legend\-Offset\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_a63abb8f699af6d3506bc7c8ded4037e0}
+\hypertarget{class_legend_aa5fe3f497876f93e38faa9b248a36fb3}{\index{Legend@{Legend}!m\-\_\-line\-Length@{m\-\_\-line\-Length}}
+\index{m\-\_\-line\-Length@{m\-\_\-line\-Length}!Legend@{Legend}}
+\subsubsection[{m\-\_\-line\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int Legend\-::m\-\_\-line\-Length\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_aa5fe3f497876f93e38faa9b248a36fb3}
+\hypertarget{class_legend_ac20e23ef899c49a723227dadc21852d0}{\index{Legend@{Legend}!m\-\_\-n\-Lines\-Count@{m\-\_\-n\-Lines\-Count}}
+\index{m\-\_\-n\-Lines\-Count@{m\-\_\-n\-Lines\-Count}!Legend@{Legend}}
+\subsubsection[{m\-\_\-n\-Lines\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Legend\-::m\-\_\-n\-Lines\-Count\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_ac20e23ef899c49a723227dadc21852d0}
+\hypertarget{class_legend_a501285ae1b14654e5ae6a03f7ed4685f}{\index{Legend@{Legend}!m\-\_\-self@{m\-\_\-self}}
+\index{m\-\_\-self@{m\-\_\-self}!Legend@{Legend}}
+\subsubsection[{m\-\_\-self}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T Legend\-::m\-\_\-self\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_a501285ae1b14654e5ae6a03f7ed4685f}
+\hypertarget{class_legend_ad033e64a43cceb124ce7b626bdfb695b}{\index{Legend@{Legend}!plot@{plot}}
+\index{plot@{plot}!Legend@{Legend}}
+\subsubsection[{plot}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf X\-Y\-Plot}\& Legend\-::plot\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_ad033e64a43cceb124ce7b626bdfb695b}
+\hypertarget{class_legend_a418c058072c59c8d2c491852ef3f143b}{\index{Legend@{Legend}!profiles@{profiles}}
+\index{profiles@{profiles}!Legend@{Legend}}
+\subsubsection[{profiles}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<${\bf Profile}$\ast$, {\bf profile\-\_\-less}$>$ Legend\-::profiles\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_legend_a418c058072c59c8d2c491852ef3f143b}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{legend_8h}{legend.\-h}\item 
+src/\hyperlink{legend_8cpp}{legend.\-cpp}\end{DoxyCompactItemize}

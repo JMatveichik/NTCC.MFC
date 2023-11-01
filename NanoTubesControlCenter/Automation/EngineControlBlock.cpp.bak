@@ -1,0 +1,502 @@
+#include "StdAfx.h"
+#include "EngineControlBlock.h"
+#include "CommandManager.h"
+
+#include "..\ah_errors.h"
+#include "..\ah_xml.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW	
+#endif
+
+EngineControlBlock::EngineControlBlock() :
+IdentifiedPhysDevice("ARTECH", "WORM-001"),
+DOUT_CHANNELS_COUNT(3),
+DIN_CHANNELS_COUNT(16)
+{
+	//адреса регистров для аналоговых выходов
+	rngAO.push_back(MEASSURE_RANGE_INFO(0, "Угол опережения зажигания", "0.5°", 0, 80));
+	aoutRegs.push_back(17);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(1, "Позиция серво", "", 0, 250));
+	aoutRegs.push_back(18);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(2, "Время впрыска", "мкс", 0, 30000));
+	aoutRegs.push_back(19);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(3, "Время старта",  "10 мс", 0, 800));
+	aoutRegs.push_back(27);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(4, "Коэффициент производительности форсунки #1",  "", 0, 5000));
+	aoutRegs.push_back(29);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(5, "Коэффициент производительности форсунки #2",  "", 0, 5000));
+	aoutRegs.push_back(40);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(6, "Настройка фильтра ДД",  "", 0, 63));
+	aoutRegs.push_back(52);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(7, "Коэффициент усиления ДД",  "", 128, 191));
+	aoutRegs.push_back(53);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(8, "Постоянная времени ДД",  "", 192, 223));
+	aoutRegs.push_back(54);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(9, "Выбор канала ДД",  "", 224, 225));
+	aoutRegs.push_back(55);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(10, "Предварительный делитель ДД",  "", 226, 255));
+	aoutRegs.push_back(56);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(11, "Резерв 1",  "", 0, 65535));
+	aoutRegs.push_back(59);
+
+	rngAO.push_back(MEASSURE_RANGE_INFO(12, "Резерв 2",  "", 0, 65535));
+	aoutRegs.push_back(60);
+
+	AOUT_CHANNELS_COUNT = 	(int)aoutRegs.size();
+	
+	//адреса регистров для аналоговых входов
+	rngAI.push_back(MEASSURE_RANGE_INFO(0, "Скорость вращения вала (усредненные)", "об/мин", 0, 5000));
+	ainRegs.push_back(45);
+
+	rngAI.push_back(MEASSURE_RANGE_INFO(1, "Датчик кислорода", "", 0, 50));
+	ainRegs.push_back(23);
+
+	rngAI.push_back(MEASSURE_RANGE_INFO(2, "Расход воздуха", "16кг/ч", 0, 3044));
+	ainRegs.push_back(44);
+
+	rngAI.push_back(MEASSURE_RANGE_INFO(3, "Температура воздуха",  "16°С", 0, 2080));
+	ainRegs.push_back(25);
+
+	rngAI.push_back(MEASSURE_RANGE_INFO(4, "Температура двигателя",  "16°С", 0, 2080));
+	ainRegs.push_back(26);
+
+	rngAI.push_back(MEASSURE_RANGE_INFO(5, "Расчетное время впрыска #1",  "мкс", 0, 65535));
+	ainRegs.push_back(42);
+
+	rngAI.push_back(MEASSURE_RANGE_INFO(6, "Расчетное время впрыска #2",  "мкс", 0, 65535));
+	ainRegs.push_back(43);
+
+	rngAI.push_back(MEASSURE_RANGE_INFO(7, "Скорость вращения вала (мгновенный)", "об/мин", 0, 5000));
+	ainRegs.push_back(14);
+
+	rngAI.push_back(MEASSURE_RANGE_INFO(8, "Напряжение ДД (канал 1)", "В", 0, 4095));
+	ainRegs.push_back(57);
+
+	rngAI.push_back(MEASSURE_RANGE_INFO(9, "Напряжение ДД (канал 2)", "В", 0, 4095));
+	ainRegs.push_back(58);
+
+	AIN_CHANNELS_COUNT = (int)ainRegs.size();
+
+
+	//адреса регистров для цифровых выходов
+	//doutRegs.push_back(36);
+	doutCmds.push_back( std::make_pair(3, 2)   );
+	doutCmds.push_back( std::make_pair(41, 40) );
+	doutCmds.push_back( std::make_pair(43, 42) );
+
+
+	dataAO.assign(AOUT_CHANNELS_COUNT, 0.0);
+	dataAI.assign(AIN_CHANNELS_COUNT, 0.0);
+}
+
+EngineControlBlock::~EngineControlBlock(void)
+{
+/*	for (std::vector<LPMEASSURE_RANGE_INFO>::iterator it = rngAO.begin(); it != rngAO.end(); ++it )
+		delete (*it);
+
+	for (std::vector<LPMEASSURE_RANGE_INFO>::iterator it = rngAI.begin(); it != rngAI.end(); ++it )
+		delete (*it);
+		*/
+}
+
+EngineControlBlock* EngineControlBlock::CreateFromXML(IXMLDOMNode* pNode, UINT& error)
+{
+	auto_ptr<EngineControlBlock> obj ( new EngineControlBlock() );
+
+	if( !obj->CreateFromXMLNode(pNode) )
+	{
+		AppErrorsHelper::Instance().GetLastError(error);
+		return NULL;
+	}
+
+	error = DCE_OK;
+	return obj.release();
+}
+
+bool EngineControlBlock::CreateFromXMLNode(IXMLDOMNode* pNode)
+{
+	if ( !IdentifiedPhysDevice::CreateFromXMLNode(pNode) )
+		return false;
+
+	std::strstream str;
+	AppErrorsHelper& err = AppErrorsHelper::Instance();
+	const AppXMLHelper& appXML = appXML.Instance();
+
+	std::string sAtr;
+	if (!appXML.GetNodeAttributeByName(pNode, "PORT", sAtr))
+	{
+		str << "Port number for device not set (tag <PORT>)" << std::ends;
+		err.SetLastError(DCE_PORT_NUMBER_NOT_SET, str.str() );
+		return false;	
+	}
+
+	int port =  atoi(sAtr.c_str());
+	CommandManager* pMan = CommandManager::GetCommandManager(port);
+	if ( pMan == NULL )
+	{
+		str << "Command manager assigned with port COM" << (int)port << " not found" << std::ends;
+		err.SetLastError( DCE_PORT_NOT_AVAILABLE, str.str() );
+		return false;
+	}
+	portNo = port;
+
+	if ( !appXML.GetNodeAttributeByName(pNode, "ADDRESS", sAtr) )
+	{
+		str << "Address must be set for this device type" << std::ends;		
+		err.SetLastError(DCE_DEVICE_ADDRESS_NOT_SET, str.str() );
+		return false;
+	}
+
+	int adr = atoi(sAtr.c_str() );
+	devAdr = adr;	
+
+	if (! OnPrepareDevice( ) )
+		return false;	
+
+	return true;
+}
+
+void EngineControlBlock::ControlProc()
+{
+	ReadChannels();
+
+	UpdateChannelsStateDI();
+}
+
+bool EngineControlBlock::OnPrepareDevice()
+{
+	CHECKCMDMANAGER(pMan, portNo);
+
+	MODBUS_SERIAL_COMMAND cmd;
+	cmd.pSender		 = this;
+	cmd.slaveAddress = devAdr;
+	cmd.regCount	 = 1; 
+	cmd.func		 = 0x03;	
+
+	for (int ch = 0; ch < AOUT_CHANNELS_COUNT; ch++ )
+	{
+		cmd.regAddress   = aoutRegs[ch];
+		if ( !pMan->SendCommand(&cmd, false) )
+		{
+			std::strstream str;
+			AppErrorsHelper& err = AppErrorsHelper::Instance();
+
+			str << "Device prepare failed." << std::ends;		
+			err.SetLastError(DCE_MODULE_NOT_RESPOND, str.str() );
+			return false;
+		}
+
+		dataAO[ch] = (double)cmd.response[0];
+	}
+
+	return true;
+}
+
+
+///////////////////////////////////////////////////
+//Реализация интерфейса IDigitalInput
+
+//Получить число дискретных входов
+int EngineControlBlock::GetChannelsCountDI() const
+{
+	return DIN_CHANNELS_COUNT;
+}
+
+//Обновить состояния дискретных входов
+bool EngineControlBlock::UpdateChannelsStateDI() const
+{
+	CHECKCMDMANAGER(pMan, portNo);
+
+	//
+	MODBUS_SERIAL_COMMAND cmd;
+	cmd.pSender		 = this;
+	cmd.slaveAddress = devAdr;
+	cmd.regCount	 = 1; 
+	cmd.regAddress   = 0x20; //32 регистр
+	cmd.func		 = 0x03;
+	cmd.response[0]  = 0;
+
+	 
+	if ( !pMan->SendCommand(&cmd, false) )
+		return false;
+
+	unsigned short msk1 = cmd.response[0];		
+
+	cmd.regAddress   = 0x25; //37 регистр
+	if ( !pMan->SendCommand(&cmd, false) )
+		return false;
+
+	unsigned short msk2 = cmd.response[0];		
+	
+	unsigned short msk = msk2 << 8; 
+	msk |= msk1;
+
+	std::bitset<16> st(msk);
+	dinChState = st;
+
+	return true;
+}
+
+//Прочитать состояние одного дискретного входа
+bool EngineControlBlock::GetChannelStateDI(unsigned char ch, bool update) const
+{
+	if (update)
+		UpdateChannelsStateDI();
+
+	return dinChState.test( ch );
+}
+
+//Получение общего числа цифровых выходов 
+int EngineControlBlock::GetChannelsCountDO() const
+{
+	return DOUT_CHANNELS_COUNT;
+}
+
+//Обновить текущее состояния дискретных выходов	
+bool EngineControlBlock::UpdateChannelsStateDO() const
+{
+	return true;
+}
+
+//Получить состояние цифрового выхода
+bool EngineControlBlock::GetChannelStateDO(unsigned char ch, bool update) const
+{
+	return doutChState.test( ch );
+}
+
+//Установить состояние цифрового выхода 
+bool  EngineControlBlock::SetChannelStateDO(unsigned char ch, bool enable)
+{
+	if ( ch < 0 || ch >= DOUT_CHANNELS_COUNT )
+		return false;
+
+	CHECKCMDMANAGER(pMan, portNo);
+
+	//
+	MODBUS_SERIAL_COMMAND cmd;
+	cmd.pSender		 = this;
+	cmd.slaveAddress = devAdr;
+	cmd.regCount	 = 1; 
+	cmd.regAddress   = 0x24; //36 регистр
+	cmd.func		 = 0x06;
+	cmd.response[0]  = enable ? doutCmds[ch].first : doutCmds[ch].second;
+
+	if ( !pMan->SendCommand(&cmd, false) )
+		return false;
+
+	Sleep(75);
+
+	//должен произойти сброс в 0
+	cmd.func		 = 0x03;
+	cmd.response[0]  = 0x00;
+
+	if ( !pMan->SendCommand(&cmd, false) )
+		return false;
+
+	//проверяем произошел ли сброс 
+	if ( cmd.response[0] != 0x00)
+		return false;
+
+	doutChState.set(ch, enable);
+
+	return false;
+}
+
+//////////////////////////////////////////////////////////////////////////
+//interface IAnalogInput
+//Получение общего числа аналоговых входов
+int EngineControlBlock::GetChannelsCountAI() const
+{
+	return AIN_CHANNELS_COUNT;
+}
+
+//Получение данных со всех аналоговых входов (выполняется запрос на чтение данных)
+void EngineControlBlock::ReadChannels(double* data/*  = NULL*/) const
+{
+	
+	
+	for(int i = 0; i < AIN_CHANNELS_COUNT; i++)
+	{
+		//Lock();
+		dataAI[i] = ReadChannel(i);
+		//Unlock();
+	}
+
+	if (data != NULL) 
+	{
+		Lock();
+		memcpy(data, dataAI.data(), sizeof(double)*AIN_CHANNELS_COUNT);
+		Unlock();
+	}
+	
+
+	
+}
+
+//Получение данных с одного из аналоговых входов (выполняется запрос на чтение данных)
+double  EngineControlBlock::ReadChannel(unsigned char ch)  const
+{
+	if ( ch < 0 || ch >= AIN_CHANNELS_COUNT )
+		return 0.0;
+
+	CHECKCMDMANAGER(pMan, portNo);
+
+	//
+	MODBUS_SERIAL_COMMAND cmd;
+	memset(&cmd, 0, sizeof(MODBUS_SERIAL_COMMAND));
+	cmd.pSender		 = this;
+	cmd.slaveAddress = devAdr;
+	cmd.regCount	 = 1; 
+	cmd.regAddress   = ainRegs[ch];
+	cmd.func		 = 0x03;	
+
+	if ( !pMan->SendCommand(&cmd, false) )
+		return false;
+	
+	double val = cmd.response[0];
+
+	return val;
+}
+
+// Получение данных из буфера для одного из аналоговых входов 
+// (запрос на чтение данных не выполняется)
+double  EngineControlBlock::GetChannelData(unsigned char ch)  const
+{
+	double val = 0.0;
+	//Lock();
+	
+	val = dataAI[ch];
+
+	//Unlock();
+	return val;
+}
+
+//Получить  информацию об измеряемом диапазоне канала
+void EngineControlBlock::GetInputRangeInfo(unsigned char ch, LPMEASSURE_RANGE_INFO lpmci) const
+{
+	if ( ch < 0 || ch >= AIN_CHANNELS_COUNT )
+		return;
+
+	*lpmci = rngAI[ch];
+}
+
+//Установить  диапазон  аналогового входа
+bool EngineControlBlock::SetInputRange(unsigned char ch, unsigned char range)
+{
+	return false;
+}
+
+//Получить все возможные  диапазоны  измерения
+void EngineControlBlock::EnumInputRanges(unsigned char ch, std::vector<MEASSURE_RANGE_INFO>& rngs) const
+{
+	rngs.clear();
+	
+	if ( ch < 0 || ch >= AIN_CHANNELS_COUNT )
+		return;
+
+	rngs.push_back(rngAI[ch]);
+}
+
+//////////////////////////////////////////////////////////////////////////
+/// IAnalogOutput
+//Получение общего числа аналоговых выходов 
+int EngineControlBlock::GetChannelsCountAO() const
+{
+	return AOUT_CHANNELS_COUNT;
+}
+
+//Записать данные в аналоговый выход 
+double  EngineControlBlock::WriteToChannel(unsigned char ch, double val)
+{
+	CHECKCMDMANAGER(pMan, portNo);
+	
+	if ( ch < 0 || ch >= AIN_CHANNELS_COUNT )
+		return 0.0;
+
+	double oldVal = dataAO[ch];
+	//
+	MODBUS_SERIAL_COMMAND cmd;
+	cmd.pSender		 = this;
+	cmd.slaveAddress = devAdr;
+	cmd.regCount	 = 1; 
+	cmd.regAddress   = aoutRegs[ch];
+	cmd.func		 = 0x06;	
+
+	unsigned short v = (unsigned short)val;
+	cmd.response[0] = v;
+
+	if ( !pMan->SendCommand(&cmd, false) )
+		return false;
+
+	dataAO[ch] = val;	
+	return oldVal;
+}
+
+//Записать данные во все каналы
+void EngineControlBlock::WriteToAllChannels(const std::vector<double>& vals)
+{
+
+}
+
+//Получить последнее записанное в аналоговый выход значение 
+double EngineControlBlock::GetChannelStateAO (unsigned char ch) const
+{
+	double val = 0.0;
+	Lock();
+
+	val = dataAO[ch];
+
+	Unlock();
+	return val;
+}
+
+//Получить выходной диапазон канала 
+void EngineControlBlock::GetMinMax(unsigned char ch, double& minOut, double& maxOut) const
+{
+	if (ch < 0 || ch > AOUT_CHANNELS_COUNT)
+	{
+		minOut = maxOut = 0;
+		return;
+	}
+
+	minOut = rngAO[ch].mins;
+	maxOut = rngAO[ch].maxs;
+}
+
+//Получить  информацию об диапазоне канала
+void EngineControlBlock::GetOutputRangeInfo(unsigned char ch, LPMEASSURE_RANGE_INFO lpmci) const
+{
+	if (ch < 0 || ch > AOUT_CHANNELS_COUNT)
+		return;
+
+	*lpmci = rngAO[ch];
+}
+
+//Установить  диапазон  аналогового выхода
+bool EngineControlBlock::SetOutputRange(unsigned char ch, unsigned char range)
+{
+	return false;
+}	
+
+//Получить все возможные  диапазоны  
+void EngineControlBlock::EnumOutputRanges(unsigned char ch, std::vector<MEASSURE_RANGE_INFO>& rngs) const
+{
+	rngs.clear();	
+
+	if (ch < 0 || ch > AOUT_CHANNELS_COUNT)
+		return;
+
+	rngs.push_back(rngAO[ch]);
+}

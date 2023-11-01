@@ -1,0 +1,131 @@
+\hypertarget{group__gr_output_data}{\section{Функции для работы с данными.}
+\label{group__gr_output_data}\index{Функции для работы с данными.@{Функции для работы с данными.}}
+}
+
+
+Данный набор функций обеспечивает задание физических координат профилей.  
+
+
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L \hyperlink{group__gr_output_data_ga95d2b2960c45eb6368a9d1039bacdc0d}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Set\-Data} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile, const double $\ast$\hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{px}, const double $\ast$\hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{py}, unsigned \hyperlink{namespacexyplot_a0e8516aaf446c174c28a4327a27dd9ce}{size})
+\begin{DoxyCompactList}\small\item\em Установить данные для профиля \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_data_ga6557de664a4b3b7fb8fd7ab2c9d736b9}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Get\-Data} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile, double $\ast$\hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{px}, double $\ast$\hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{py}, unsigned $\ast$\hyperlink{namespacexyplot_a0e8516aaf446c174c28a4327a27dd9ce}{size})
+\begin{DoxyCompactList}\small\item\em Копирует данные профиля в массивы \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_data_ga21b8bd6024247b085e6c047ce4f6e763}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Append\-Data} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile, const double $\ast$\hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{px}, const double $\ast$\hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{py}, unsigned \hyperlink{namespacexyplot_a0e8516aaf446c174c28a4327a27dd9ce}{size})
+\begin{DoxyCompactList}\small\item\em Дописать данные для профиля \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Данный набор функций обеспечивает задание физических координат профилей. 
+
+\subsection{Функции}
+\hypertarget{group__gr_output_data_ga21b8bd6024247b085e6c047ce4f6e763}{\index{Функции для работы с данными.@{Функции для работы с данными.}!Append\-Data@{Append\-Data}}
+\index{Append\-Data@{Append\-Data}!Функции для работы с данными.@{Функции для работы с данными.}}
+\subsubsection[{Append\-Data}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Append\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-P\-R\-O\-F\-I\-L\-E} \&}]{h\-Profile, }
+\item[{const double $\ast$}]{px, }
+\item[{const double $\ast$}]{py, }
+\item[{unsigned}]{size}
+\end{DoxyParamCaption}
+)}}\label{group__gr_output_data_ga21b8bd6024247b085e6c047ce4f6e763}
+
+
+Дописать данные для профиля 
+
+Функция дописывает данные содержащиеся в массивах px и py для профиля. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика содержащий профиль \\
+\hline
+\mbox{\tt in}  & {\em h\-Profile} & дескриптор профиля \\
+\hline
+ & {\em px} & указатель на массив данных, содержащий координаты профиля по оси X \\
+\hline
+ & {\em py} & указатель на массив данных, содержащий координаты профиля по оси Y \\
+\hline
+ & {\em size} & количество точек дописываемых из массивов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если удалось дописать данные для профиля 
+
+false если не удалось дописать данные для профиля 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Прим.}
+Размеры массивов px и py должны быть одинаковыми. 
+\end{DoxyRemark}
+\hypertarget{group__gr_output_data_ga6557de664a4b3b7fb8fd7ab2c9d736b9}{\index{Функции для работы с данными.@{Функции для работы с данными.}!Get\-Data@{Get\-Data}}
+\index{Get\-Data@{Get\-Data}!Функции для работы с данными.@{Функции для работы с данными.}}
+\subsubsection[{Get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Get\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-P\-R\-O\-F\-I\-L\-E} \&}]{h\-Profile, }
+\item[{double $\ast$}]{px, }
+\item[{double $\ast$}]{py, }
+\item[{unsigned $\ast$}]{size}
+\end{DoxyParamCaption}
+)}}\label{group__gr_output_data_ga6557de664a4b3b7fb8fd7ab2c9d736b9}
+
+
+Копирует данные профиля в массивы 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика содержащий группу профилей \\
+\hline
+\mbox{\tt in}  & {\em h\-Profile} & дескриптор профиля из которого копируются данные \\
+\hline
+\mbox{\tt out}  & {\em px} & указатель на массив данных, содержащий координаты профиля по оси X \\
+\hline
+\mbox{\tt out}  & {\em py} & указатель на массив данных, содержащий координаты профиля по оси Y \\
+\hline
+\mbox{\tt out}  & {\em size} & размер масивов данных px и py \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если удалось получить данные для профиля 
+
+false если не удалось получить данные для профиля 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Прим.}
+Для определения необходимых размеров массивов необходимо вызвать функцию с параметрами px = N\-U\-L\-L и py = N\-U\-L\-L. 
+\end{DoxyRemark}
+\hypertarget{group__gr_output_data_ga95d2b2960c45eb6368a9d1039bacdc0d}{\index{Функции для работы с данными.@{Функции для работы с данными.}!Set\-Data@{Set\-Data}}
+\index{Set\-Data@{Set\-Data}!Функции для работы с данными.@{Функции для работы с данными.}}
+\subsubsection[{Set\-Data}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Set\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-P\-R\-O\-F\-I\-L\-E} \&}]{h\-Profile, }
+\item[{const double $\ast$}]{px, }
+\item[{const double $\ast$}]{py, }
+\item[{unsigned}]{size}
+\end{DoxyParamCaption}
+)}}\label{group__gr_output_data_ga95d2b2960c45eb6368a9d1039bacdc0d}
+
+
+Установить данные для профиля 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика содержащий группу профилей \\
+\hline
+\mbox{\tt in}  & {\em h\-Profile} & дескриптор профиля для которого задаются данные \\
+\hline
+ & {\em px} & указатель на массив данных, содержащий координаты профиля по оси X \\
+\hline
+ & {\em py} & указатель на массив данных, содержащий координаты профиля по оси Y \\
+\hline
+ & {\em size} & размер масивов данных px и py \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если удалось задать данные для профиля 
+
+false если не удалось задать данные для профиля 
+\end{DoxyReturn}
+\begin{DoxyRemark}{Прим.}
+Размеры массивов px и py должны быть одинаковыми. 
+\end{DoxyRemark}

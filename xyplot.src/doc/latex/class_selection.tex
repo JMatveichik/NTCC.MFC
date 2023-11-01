@@ -1,0 +1,363 @@
+\hypertarget{class_selection}{\section{Класс Selection}
+\label{class_selection}\index{Selection@{Selection}}
+}
+
+
+{\ttfamily \#include $<$selection.\-h$>$}
+
+
+
+Граф наследования\-:Selection\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_selection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Selection\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_selection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_selection_a1185435bed19519a7b69ef70c679ce70}{Selection} (\hyperlink{class_x_y_plot}{X\-Y\-Plot} $\ast$p\-Plot)
+\item 
+virtual \hyperlink{class_selection_a1860ec524d11c03de8c10a9354319839}{$\sim$\-Selection} ()
+\item 
+B\-O\-O\-L \hyperlink{class_selection_afe20319deb65c06229a512f4be84ccd3}{Select} (long I\-D, long index)
+\item 
+virtual B\-O\-O\-L \hyperlink{class_selection_a1212e14a73f62170020d426c1a3ee5e9}{Write} (H\-A\-N\-D\-L\-E h\-File) const 
+\item 
+virtual B\-O\-O\-L \hyperlink{class_selection_a4cf1ce6c3fb26f950075a17c25341110}{Read} (H\-A\-N\-D\-L\-E h\-File)
+\item 
+long \hyperlink{class_selection_a87021f153bfecc0479530578a3f39f00}{Get\-Selection} () const 
+\item 
+D\-W\-O\-R\-D \hyperlink{class_selection_a0cf4568ea7c9860937d931146e8b99ae}{Get\-Mode} () const 
+\item 
+D\-W\-O\-R\-D \hyperlink{class_selection_ab0583b6c9cca3ccfee73e3ce587419da}{Set\-Mode} (D\-W\-O\-R\-D dw\-Type)
+\item 
+void \hyperlink{class_selection_a75530f8982bd489083764cbfff9eefb3}{Set\-Notify\-Message\-I\-D} (long l\-Notify\-Msg)
+\item 
+void \hyperlink{class_selection_a9e371db3bdd7a9330f83c427a4bcbf0e}{Set\-Flash\-Speed} (\hyperlink{namespacexyplot_aef2fa49b82f49b1152511044149c60bb}{xyplot\-::\-F\-L\-A\-S\-H\-\_\-\-S\-P\-E\-E\-D} fs)
+\item 
+\hyperlink{namespacexyplot_aef2fa49b82f49b1152511044149c60bb}{xyplot\-::\-F\-L\-A\-S\-H\-\_\-\-S\-P\-E\-E\-D} \hyperlink{class_selection_acc2eec1158e3379e211994a5b3cb0dba}{Get\-Flash\-Speed} () const 
+\item 
+void \hyperlink{class_selection_abb12cb9336545b1aa4ec1361e08ab5dc}{Resolve\-Plot\-Hit\-Test} (const \hyperlink{selection_8h_adeea1a4ab82509fdc1235948c4efeef6}{L\-P\-P\-L\-O\-T\-H\-I\-T\-T\-E\-S\-T\-R\-E\-S\-U\-L\-T} lpht)
+\item 
+void \hyperlink{class_selection_a6af1ac7d7f4a22596146c2942d83f15f}{Resolve\-Key\-Press} (long code)
+\item 
+void \hyperlink{class_selection_ae15010a7dc9450f394a0823cd7a8053f}{On\-Draw} (H\-D\-C hdc, const R\-E\-C\-T rc)
+\item 
+long \hyperlink{class_selection_a1961c6f204a1bece5bf33e380c8653bf}{Create\-Group} ()
+\item 
+long \hyperlink{class_selection_a3d3d974a0ecc9336522ddee10271a1f5}{Delete\-Group} (long group)
+\item 
+long \hyperlink{class_selection_a29137faa8c9270396be41051cef15d69}{Find\-Group} (long profile)
+\item 
+long \hyperlink{class_selection_a6048c9afc7c6f5f20af089dd1ca9bb29}{Add\-Profile} (long group, long profile)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_selection_a240bf3226d6ab1de5e9a958c8940cad7}{Set\-Flash\-State} (B\-O\-O\-L visible)
+\item 
+void \hyperlink{class_selection_a90033e720a75b54bf8623df01dc16241}{Run\-Flash\-Routine} ()
+\item 
+void \hyperlink{class_selection_a7a04270c06607b5fae8a182d39bdf301}{Stop\-Flash\-Routine} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned long \-\_\-\-\_\-stdcall \hyperlink{class_selection_a768b30225e90c1973f3cd895a6ca9709}{fn\-Flash\-Proc} (L\-P\-V\-O\-I\-D lp\-Param)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_x_y_plot}{X\-Y\-Plot} \& \hyperlink{class_selection_a5446aca339af493b9853e1d8791747ee}{plot}
+\item 
+\hyperlink{class_profile_group_map}{Profile\-Group\-Map} \hyperlink{class_selection_a9969ae2dd3dfc1de2ff22851f23ca701}{profile\-Group\-Map}
+\item 
+\hyperlink{profile_8h_ab564cd67657a739c9e5a6caa0ce0dafa}{P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y} \hyperlink{class_selection_aad8ed405574d4eaa7c71ea6ab74f921f}{active\-Profile}
+\item 
+long \hyperlink{class_selection_a3f157e54d3bf571bb58f0ab278311d1f}{active\-Group}
+\item 
+long \hyperlink{class_selection_ae2e8fd632fbdf5ad8222271d861dee3e}{l\-Notify\-Message}
+\item 
+unsigned \hyperlink{class_selection_aae0adc2fbecf906fe191f37db02865d9}{selected\-Point\-Ind}
+\item 
+\hyperlink{class_axis}{Axis} $\ast$ \hyperlink{class_selection_a0e9d894fc2d3922fa13b9bab29c0868b}{active\-Axis}
+\item 
+\hyperlink{namespacexyplot_aef2fa49b82f49b1152511044149c60bb}{xyplot\-::\-F\-L\-A\-S\-H\-\_\-\-S\-P\-E\-E\-D} \hyperlink{class_selection_ae8158cf33f08749711665081d33a5eee}{m\-\_\-fs}
+\item 
+\hyperlink{class_line_data}{Line\-Data} \hyperlink{class_selection_a931c1dc1ae09a247eddb870ae860258e}{marker\-Line}
+\item 
+D\-W\-O\-R\-D \hyperlink{class_selection_abcefb6532a3336dbdb704524ca603f09}{dw\-Selection\-Type}
+\item 
+P\-O\-I\-N\-T \hyperlink{class_selection_a2ba4d3b1be1be25852a81ae8d8b85464}{pt\-Sel}
+\item 
+double \hyperlink{class_selection_a55bbd4862d833205e258d2a51256e161}{phys\-Sel\-Point\-X}
+\item 
+double \hyperlink{class_selection_ae34c8ddfe73abfaaeec3b99bb649f802}{phys\-Sel\-Point\-Y}
+\item 
+unsigned \hyperlink{class_selection_afe67da14987a0c10aa1f401b4a8210f6}{ellipse\-Radius}
+\item 
+H\-A\-N\-D\-L\-E \hyperlink{class_selection_aed45afe1b41abebe3f7d22d8b5574ad3}{flash\-Thread}
+\item 
+H\-A\-N\-D\-L\-E \hyperlink{class_selection_a996d255f46e4aa8d039d17db81026e4e}{ev\-Run\-Flash}
+\item 
+H\-A\-N\-D\-L\-E \hyperlink{class_selection_a6453d01aeabe2bd18582b71566e84dcc}{ev\-Quit\-Flash}
+\item 
+C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N \hyperlink{class_selection_a54afa22854b7ac434dd571dc3d7c4274}{cs}
+\item 
+unsigned \hyperlink{class_selection_a2720b0396cc2819b3740be7eac6b11db}{duration\-Hide}
+\item 
+unsigned \hyperlink{class_selection_a283a7ada8e395e08faeb745a9f9104bf}{duration\-Show}
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_selection_a1185435bed19519a7b69ef70c679ce70}{\index{Selection@{Selection}!Selection@{Selection}}
+\index{Selection@{Selection}!Selection@{Selection}}
+\subsubsection[{Selection}]{\setlength{\rightskip}{0pt plus 5cm}Selection\-::\-Selection (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-Y\-Plot} $\ast$}]{p\-Plot}
+\end{DoxyParamCaption}
+)}}\label{class_selection_a1185435bed19519a7b69ef70c679ce70}
+\hypertarget{class_selection_a1860ec524d11c03de8c10a9354319839}{\index{Selection@{Selection}!$\sim$\-Selection@{$\sim$\-Selection}}
+\index{$\sim$\-Selection@{$\sim$\-Selection}!Selection@{Selection}}
+\subsubsection[{$\sim$\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}Selection\-::$\sim$\-Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_selection_a1860ec524d11c03de8c10a9354319839}
+
+
+\subsection{Методы}
+\hypertarget{class_selection_a6048c9afc7c6f5f20af089dd1ca9bb29}{\index{Selection@{Selection}!Add\-Profile@{Add\-Profile}}
+\index{Add\-Profile@{Add\-Profile}!Selection@{Selection}}
+\subsubsection[{Add\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}long Selection\-::\-Add\-Profile (
+\begin{DoxyParamCaption}
+\item[{long}]{group, }
+\item[{long}]{profile}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_selection_a6048c9afc7c6f5f20af089dd1ca9bb29}
+\hypertarget{class_selection_a1961c6f204a1bece5bf33e380c8653bf}{\index{Selection@{Selection}!Create\-Group@{Create\-Group}}
+\index{Create\-Group@{Create\-Group}!Selection@{Selection}}
+\subsubsection[{Create\-Group}]{\setlength{\rightskip}{0pt plus 5cm}long Selection\-::\-Create\-Group (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_selection_a1961c6f204a1bece5bf33e380c8653bf}
+\hypertarget{class_selection_a3d3d974a0ecc9336522ddee10271a1f5}{\index{Selection@{Selection}!Delete\-Group@{Delete\-Group}}
+\index{Delete\-Group@{Delete\-Group}!Selection@{Selection}}
+\subsubsection[{Delete\-Group}]{\setlength{\rightskip}{0pt plus 5cm}long Selection\-::\-Delete\-Group (
+\begin{DoxyParamCaption}
+\item[{long}]{group}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_selection_a3d3d974a0ecc9336522ddee10271a1f5}
+\hypertarget{class_selection_a29137faa8c9270396be41051cef15d69}{\index{Selection@{Selection}!Find\-Group@{Find\-Group}}
+\index{Find\-Group@{Find\-Group}!Selection@{Selection}}
+\subsubsection[{Find\-Group}]{\setlength{\rightskip}{0pt plus 5cm}long Selection\-::\-Find\-Group (
+\begin{DoxyParamCaption}
+\item[{long}]{profile}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_selection_a29137faa8c9270396be41051cef15d69}
+\hypertarget{class_selection_a768b30225e90c1973f3cd895a6ca9709}{\index{Selection@{Selection}!fn\-Flash\-Proc@{fn\-Flash\-Proc}}
+\index{fn\-Flash\-Proc@{fn\-Flash\-Proc}!Selection@{Selection}}
+\subsubsection[{fn\-Flash\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D W\-I\-N\-A\-P\-I Selection\-::fn\-Flash\-Proc (
+\begin{DoxyParamCaption}
+\item[{L\-P\-V\-O\-I\-D}]{lp\-Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_selection_a768b30225e90c1973f3cd895a6ca9709}
+\hypertarget{class_selection_acc2eec1158e3379e211994a5b3cb0dba}{\index{Selection@{Selection}!Get\-Flash\-Speed@{Get\-Flash\-Speed}}
+\index{Get\-Flash\-Speed@{Get\-Flash\-Speed}!Selection@{Selection}}
+\subsubsection[{Get\-Flash\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-L\-A\-S\-H\-\_\-\-S\-P\-E\-E\-D} Selection\-::\-Get\-Flash\-Speed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_selection_acc2eec1158e3379e211994a5b3cb0dba}
+\hypertarget{class_selection_a0cf4568ea7c9860937d931146e8b99ae}{\index{Selection@{Selection}!Get\-Mode@{Get\-Mode}}
+\index{Get\-Mode@{Get\-Mode}!Selection@{Selection}}
+\subsubsection[{Get\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D Selection\-::\-Get\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_selection_a0cf4568ea7c9860937d931146e8b99ae}
+\hypertarget{class_selection_a87021f153bfecc0479530578a3f39f00}{\index{Selection@{Selection}!Get\-Selection@{Get\-Selection}}
+\index{Get\-Selection@{Get\-Selection}!Selection@{Selection}}
+\subsubsection[{Get\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}long Selection\-::\-Get\-Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_selection_a87021f153bfecc0479530578a3f39f00}
+\hypertarget{class_selection_ae15010a7dc9450f394a0823cd7a8053f}{\index{Selection@{Selection}!On\-Draw@{On\-Draw}}
+\index{On\-Draw@{On\-Draw}!Selection@{Selection}}
+\subsubsection[{On\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Selection\-::\-On\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc, }
+\item[{const R\-E\-C\-T}]{rc}
+\end{DoxyParamCaption}
+)}}\label{class_selection_ae15010a7dc9450f394a0823cd7a8053f}
+\hypertarget{class_selection_a4cf1ce6c3fb26f950075a17c25341110}{\index{Selection@{Selection}!Read@{Read}}
+\index{Read@{Read}!Selection@{Selection}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Selection\-::\-Read (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_selection_a4cf1ce6c3fb26f950075a17c25341110}
+
+
+Замещает \hyperlink{class_savable_item_a7eadd16b2cb0652091cc15f596a00fb2}{Savable\-Item}.
+
+\hypertarget{class_selection_a6af1ac7d7f4a22596146c2942d83f15f}{\index{Selection@{Selection}!Resolve\-Key\-Press@{Resolve\-Key\-Press}}
+\index{Resolve\-Key\-Press@{Resolve\-Key\-Press}!Selection@{Selection}}
+\subsubsection[{Resolve\-Key\-Press}]{\setlength{\rightskip}{0pt plus 5cm}void Selection\-::\-Resolve\-Key\-Press (
+\begin{DoxyParamCaption}
+\item[{long}]{code}
+\end{DoxyParamCaption}
+)}}\label{class_selection_a6af1ac7d7f4a22596146c2942d83f15f}
+\hypertarget{class_selection_abb12cb9336545b1aa4ec1361e08ab5dc}{\index{Selection@{Selection}!Resolve\-Plot\-Hit\-Test@{Resolve\-Plot\-Hit\-Test}}
+\index{Resolve\-Plot\-Hit\-Test@{Resolve\-Plot\-Hit\-Test}!Selection@{Selection}}
+\subsubsection[{Resolve\-Plot\-Hit\-Test}]{\setlength{\rightskip}{0pt plus 5cm}void Selection\-::\-Resolve\-Plot\-Hit\-Test (
+\begin{DoxyParamCaption}
+\item[{const {\bf L\-P\-P\-L\-O\-T\-H\-I\-T\-T\-E\-S\-T\-R\-E\-S\-U\-L\-T}}]{lpht}
+\end{DoxyParamCaption}
+)}}\label{class_selection_abb12cb9336545b1aa4ec1361e08ab5dc}
+\hypertarget{class_selection_a90033e720a75b54bf8623df01dc16241}{\index{Selection@{Selection}!Run\-Flash\-Routine@{Run\-Flash\-Routine}}
+\index{Run\-Flash\-Routine@{Run\-Flash\-Routine}!Selection@{Selection}}
+\subsubsection[{Run\-Flash\-Routine}]{\setlength{\rightskip}{0pt plus 5cm}void Selection\-::\-Run\-Flash\-Routine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a90033e720a75b54bf8623df01dc16241}
+\hypertarget{class_selection_afe20319deb65c06229a512f4be84ccd3}{\index{Selection@{Selection}!Select@{Select}}
+\index{Select@{Select}!Selection@{Selection}}
+\subsubsection[{Select}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Selection\-::\-Select (
+\begin{DoxyParamCaption}
+\item[{long}]{I\-D, }
+\item[{long}]{index}
+\end{DoxyParamCaption}
+)}}\label{class_selection_afe20319deb65c06229a512f4be84ccd3}
+\hypertarget{class_selection_a9e371db3bdd7a9330f83c427a4bcbf0e}{\index{Selection@{Selection}!Set\-Flash\-Speed@{Set\-Flash\-Speed}}
+\index{Set\-Flash\-Speed@{Set\-Flash\-Speed}!Selection@{Selection}}
+\subsubsection[{Set\-Flash\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Selection\-::\-Set\-Flash\-Speed (
+\begin{DoxyParamCaption}
+\item[{{\bf xyplot\-::\-F\-L\-A\-S\-H\-\_\-\-S\-P\-E\-E\-D}}]{fs}
+\end{DoxyParamCaption}
+)}}\label{class_selection_a9e371db3bdd7a9330f83c427a4bcbf0e}
+\hypertarget{class_selection_a240bf3226d6ab1de5e9a958c8940cad7}{\index{Selection@{Selection}!Set\-Flash\-State@{Set\-Flash\-State}}
+\index{Set\-Flash\-State@{Set\-Flash\-State}!Selection@{Selection}}
+\subsubsection[{Set\-Flash\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Selection\-::\-Set\-Flash\-State (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{visible}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a240bf3226d6ab1de5e9a958c8940cad7}
+\hypertarget{class_selection_ab0583b6c9cca3ccfee73e3ce587419da}{\index{Selection@{Selection}!Set\-Mode@{Set\-Mode}}
+\index{Set\-Mode@{Set\-Mode}!Selection@{Selection}}
+\subsubsection[{Set\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D Selection\-::\-Set\-Mode (
+\begin{DoxyParamCaption}
+\item[{D\-W\-O\-R\-D}]{dw\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_selection_ab0583b6c9cca3ccfee73e3ce587419da}
+\hypertarget{class_selection_a75530f8982bd489083764cbfff9eefb3}{\index{Selection@{Selection}!Set\-Notify\-Message\-I\-D@{Set\-Notify\-Message\-I\-D}}
+\index{Set\-Notify\-Message\-I\-D@{Set\-Notify\-Message\-I\-D}!Selection@{Selection}}
+\subsubsection[{Set\-Notify\-Message\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}void Selection\-::\-Set\-Notify\-Message\-I\-D (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Notify\-Msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_selection_a75530f8982bd489083764cbfff9eefb3}
+\hypertarget{class_selection_a7a04270c06607b5fae8a182d39bdf301}{\index{Selection@{Selection}!Stop\-Flash\-Routine@{Stop\-Flash\-Routine}}
+\index{Stop\-Flash\-Routine@{Stop\-Flash\-Routine}!Selection@{Selection}}
+\subsubsection[{Stop\-Flash\-Routine}]{\setlength{\rightskip}{0pt plus 5cm}void Selection\-::\-Stop\-Flash\-Routine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a7a04270c06607b5fae8a182d39bdf301}
+\hypertarget{class_selection_a1212e14a73f62170020d426c1a3ee5e9}{\index{Selection@{Selection}!Write@{Write}}
+\index{Write@{Write}!Selection@{Selection}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Selection\-::\-Write (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_selection_a1212e14a73f62170020d426c1a3ee5e9}
+
+
+Замещает \hyperlink{class_savable_item_a0da511a4854f515096f8f9b498f64158}{Savable\-Item}.
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_selection_a0e9d894fc2d3922fa13b9bab29c0868b}{\index{Selection@{Selection}!active\-Axis@{active\-Axis}}
+\index{active\-Axis@{active\-Axis}!Selection@{Selection}}
+\subsubsection[{active\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}$\ast$ Selection\-::active\-Axis\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a0e9d894fc2d3922fa13b9bab29c0868b}
+\hypertarget{class_selection_a3f157e54d3bf571bb58f0ab278311d1f}{\index{Selection@{Selection}!active\-Group@{active\-Group}}
+\index{active\-Group@{active\-Group}!Selection@{Selection}}
+\subsubsection[{active\-Group}]{\setlength{\rightskip}{0pt plus 5cm}long Selection\-::active\-Group\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a3f157e54d3bf571bb58f0ab278311d1f}
+\hypertarget{class_selection_aad8ed405574d4eaa7c71ea6ab74f921f}{\index{Selection@{Selection}!active\-Profile@{active\-Profile}}
+\index{active\-Profile@{active\-Profile}!Selection@{Selection}}
+\subsubsection[{active\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y} Selection\-::active\-Profile\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_aad8ed405574d4eaa7c71ea6ab74f921f}
+\hypertarget{class_selection_a54afa22854b7ac434dd571dc3d7c4274}{\index{Selection@{Selection}!cs@{cs}}
+\index{cs@{cs}!Selection@{Selection}}
+\subsubsection[{cs}]{\setlength{\rightskip}{0pt plus 5cm}C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N Selection\-::cs\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}}\label{class_selection_a54afa22854b7ac434dd571dc3d7c4274}
+\hypertarget{class_selection_a2720b0396cc2819b3740be7eac6b11db}{\index{Selection@{Selection}!duration\-Hide@{duration\-Hide}}
+\index{duration\-Hide@{duration\-Hide}!Selection@{Selection}}
+\subsubsection[{duration\-Hide}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Selection\-::duration\-Hide\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a2720b0396cc2819b3740be7eac6b11db}
+\hypertarget{class_selection_a283a7ada8e395e08faeb745a9f9104bf}{\index{Selection@{Selection}!duration\-Show@{duration\-Show}}
+\index{duration\-Show@{duration\-Show}!Selection@{Selection}}
+\subsubsection[{duration\-Show}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Selection\-::duration\-Show\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a283a7ada8e395e08faeb745a9f9104bf}
+\hypertarget{class_selection_abcefb6532a3336dbdb704524ca603f09}{\index{Selection@{Selection}!dw\-Selection\-Type@{dw\-Selection\-Type}}
+\index{dw\-Selection\-Type@{dw\-Selection\-Type}!Selection@{Selection}}
+\subsubsection[{dw\-Selection\-Type}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D Selection\-::dw\-Selection\-Type\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_abcefb6532a3336dbdb704524ca603f09}
+\hypertarget{class_selection_afe67da14987a0c10aa1f401b4a8210f6}{\index{Selection@{Selection}!ellipse\-Radius@{ellipse\-Radius}}
+\index{ellipse\-Radius@{ellipse\-Radius}!Selection@{Selection}}
+\subsubsection[{ellipse\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Selection\-::ellipse\-Radius\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_afe67da14987a0c10aa1f401b4a8210f6}
+\hypertarget{class_selection_a6453d01aeabe2bd18582b71566e84dcc}{\index{Selection@{Selection}!ev\-Quit\-Flash@{ev\-Quit\-Flash}}
+\index{ev\-Quit\-Flash@{ev\-Quit\-Flash}!Selection@{Selection}}
+\subsubsection[{ev\-Quit\-Flash}]{\setlength{\rightskip}{0pt plus 5cm}H\-A\-N\-D\-L\-E Selection\-::ev\-Quit\-Flash\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a6453d01aeabe2bd18582b71566e84dcc}
+\hypertarget{class_selection_a996d255f46e4aa8d039d17db81026e4e}{\index{Selection@{Selection}!ev\-Run\-Flash@{ev\-Run\-Flash}}
+\index{ev\-Run\-Flash@{ev\-Run\-Flash}!Selection@{Selection}}
+\subsubsection[{ev\-Run\-Flash}]{\setlength{\rightskip}{0pt plus 5cm}H\-A\-N\-D\-L\-E Selection\-::ev\-Run\-Flash\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a996d255f46e4aa8d039d17db81026e4e}
+\hypertarget{class_selection_aed45afe1b41abebe3f7d22d8b5574ad3}{\index{Selection@{Selection}!flash\-Thread@{flash\-Thread}}
+\index{flash\-Thread@{flash\-Thread}!Selection@{Selection}}
+\subsubsection[{flash\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}H\-A\-N\-D\-L\-E Selection\-::flash\-Thread\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_aed45afe1b41abebe3f7d22d8b5574ad3}
+\hypertarget{class_selection_ae2e8fd632fbdf5ad8222271d861dee3e}{\index{Selection@{Selection}!l\-Notify\-Message@{l\-Notify\-Message}}
+\index{l\-Notify\-Message@{l\-Notify\-Message}!Selection@{Selection}}
+\subsubsection[{l\-Notify\-Message}]{\setlength{\rightskip}{0pt plus 5cm}long Selection\-::l\-Notify\-Message\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_ae2e8fd632fbdf5ad8222271d861dee3e}
+\hypertarget{class_selection_ae8158cf33f08749711665081d33a5eee}{\index{Selection@{Selection}!m\-\_\-fs@{m\-\_\-fs}}
+\index{m\-\_\-fs@{m\-\_\-fs}!Selection@{Selection}}
+\subsubsection[{m\-\_\-fs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf xyplot\-::\-F\-L\-A\-S\-H\-\_\-\-S\-P\-E\-E\-D} Selection\-::m\-\_\-fs\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_ae8158cf33f08749711665081d33a5eee}
+\hypertarget{class_selection_a931c1dc1ae09a247eddb870ae860258e}{\index{Selection@{Selection}!marker\-Line@{marker\-Line}}
+\index{marker\-Line@{marker\-Line}!Selection@{Selection}}
+\subsubsection[{marker\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data} Selection\-::marker\-Line\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a931c1dc1ae09a247eddb870ae860258e}
+\hypertarget{class_selection_a55bbd4862d833205e258d2a51256e161}{\index{Selection@{Selection}!phys\-Sel\-Point\-X@{phys\-Sel\-Point\-X}}
+\index{phys\-Sel\-Point\-X@{phys\-Sel\-Point\-X}!Selection@{Selection}}
+\subsubsection[{phys\-Sel\-Point\-X}]{\setlength{\rightskip}{0pt plus 5cm}double Selection\-::phys\-Sel\-Point\-X\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a55bbd4862d833205e258d2a51256e161}
+\hypertarget{class_selection_ae34c8ddfe73abfaaeec3b99bb649f802}{\index{Selection@{Selection}!phys\-Sel\-Point\-Y@{phys\-Sel\-Point\-Y}}
+\index{phys\-Sel\-Point\-Y@{phys\-Sel\-Point\-Y}!Selection@{Selection}}
+\subsubsection[{phys\-Sel\-Point\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double Selection\-::phys\-Sel\-Point\-Y\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_ae34c8ddfe73abfaaeec3b99bb649f802}
+\hypertarget{class_selection_a5446aca339af493b9853e1d8791747ee}{\index{Selection@{Selection}!plot@{plot}}
+\index{plot@{plot}!Selection@{Selection}}
+\subsubsection[{plot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-Y\-Plot}\& Selection\-::plot\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a5446aca339af493b9853e1d8791747ee}
+\hypertarget{class_selection_a9969ae2dd3dfc1de2ff22851f23ca701}{\index{Selection@{Selection}!profile\-Group\-Map@{profile\-Group\-Map}}
+\index{profile\-Group\-Map@{profile\-Group\-Map}!Selection@{Selection}}
+\subsubsection[{profile\-Group\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Profile\-Group\-Map} Selection\-::profile\-Group\-Map\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a9969ae2dd3dfc1de2ff22851f23ca701}
+\hypertarget{class_selection_a2ba4d3b1be1be25852a81ae8d8b85464}{\index{Selection@{Selection}!pt\-Sel@{pt\-Sel}}
+\index{pt\-Sel@{pt\-Sel}!Selection@{Selection}}
+\subsubsection[{pt\-Sel}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-I\-N\-T Selection\-::pt\-Sel\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_a2ba4d3b1be1be25852a81ae8d8b85464}
+\hypertarget{class_selection_aae0adc2fbecf906fe191f37db02865d9}{\index{Selection@{Selection}!selected\-Point\-Ind@{selected\-Point\-Ind}}
+\index{selected\-Point\-Ind@{selected\-Point\-Ind}!Selection@{Selection}}
+\subsubsection[{selected\-Point\-Ind}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Selection\-::selected\-Point\-Ind\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_selection_aae0adc2fbecf906fe191f37db02865d9}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{selection_8h}{selection.\-h}\item 
+src/\hyperlink{selection_8cpp}{selection.\-cpp}\end{DoxyCompactItemize}

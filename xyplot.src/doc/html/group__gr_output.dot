@@ -1,0 +1,15 @@
+digraph "Функции для работы с профилями и группами."
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node2 [label="Функции для\l работы линиями\l уровней.",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__gr_lvl_ex.html",tooltip="Создания экземпляра линии уровня "];
+  Node1 [label="Функции для\l работы со свойствами\l профиля.",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__gr_prof_ex.html"];
+  Node4 [label="Конструкторы\l класса.",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__gr_construct.html"];
+  Node3 [label="Функции для\l работы регионами.",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__gr_rgn_ex.html"];
+  Node0 [label="Функции для\l работы с профилями\l и группами.",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node0->Node1 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+}

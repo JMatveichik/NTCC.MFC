@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="HTML Help Files">
+      <UniqueIdentifier>{b93649b8-e91f-4fab-9d94-d4679c44e778}</UniqueIdentifier>
+      <Extensions>hhp;hhc;hhk;gif;jpg</Extensions>
+    </Filter>
+    <Filter Include="HTML Help Topics">
+      <UniqueIdentifier>{36ed31b6-8040-49b7-a662-86725fe877c3}</UniqueIdentifier>
+      <Extensions>htm;html</Extensions>
+    </Filter>
+    <Filter Include="Automation">
+      <UniqueIdentifier>{fec27469-f908-493b-94be-02ee7923642f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{91827136-1078-469a-b007-1a8ecb1d28d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OBA">
+      <UniqueIdentifier>{65d08eaa-28af-435a-8651-d039de1ee99d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialogs">
+      <UniqueIdentifier>{7b01496a-8181-4cb4-8e4e-cde682232dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{39ae3c4d-40bc-459f-a454-5cced9f74ab6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DLGs\ExtControls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FSDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FSDocItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FSView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NanoTubesControlCenter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\BaseFlowController.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\BonerGasAnaliser.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\CommandManager.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\Converters.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\DataCollector.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\DataSrc.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\DeviceFactory.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\DevicesEmulators.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\MessageLog.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\ModbusTCPConnection.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\Omega.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\OwenTPM201.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\PhysDevice.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\Serial.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\TimedControl.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\Timers.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\UDPListener.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\WatchDogs.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\IconListBox.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="OBA\obascripter.cpp">
+      <Filter>OBA</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\ADAM4000Series.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\ADAM6000Series.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="FSLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PopupMessageWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\PowercomUPS.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="DLGs\AutoCalcSizeDialog.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DLGs\AutoHideDialog.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DLGs\DataSrcViewDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DLGs\LoadingProrgessDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DLGs\OutputDSControlDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DLGs\UserDataEditDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DLGs\UserLogonDlg.cpp">
+      <Filter>Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\LogCtrl.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_errors.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_images.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_msgprovider.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_project.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_scripts.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_xml.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_users.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_loadcfg.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_chem.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_sms.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xyplot\XYPlotWrapper.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\OwenSIM2.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\InfracarGasAnalyser.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\NTCCDataClient.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\NTCCDataSrv.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\IsmatecPump.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\EngineControlBlock.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\filters.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_network.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\FlexKraftPS.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\v_pid.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\KulonMini.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\EASunInvertor.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="ah_fonts.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Automation\BatteryMeassureUnit.cpp">
+      <Filter>Automation</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlConfiguredObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FSDocItem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DLGs\ExtControls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FSDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FSView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NanoTubesControlCenter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\BaseFlowController.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\BonerGasAnaliser.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\commandmanager.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\ContainersExt.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\Converters.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\DataCollector.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\DataSrc.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\DeviceFactory.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\DevicesEmulators.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\MessageLog.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\ModbusTCPConnection.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\Omega.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\OwenTPM201.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\PhysDevice.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\Serial.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\TimedControl.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\Timers.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\UDPListener.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\WatchDogs.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\IconListBox.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="OBA\obaerrormsg.h">
+      <Filter>OBA</Filter>
+    </ClInclude>
+    <ClInclude Include="OBA\obascripter.h">
+      <Filter>OBA</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\ADAM4000Series.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\ADAM6000Series.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="FSLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PopupMessageWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="winmessages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\PowercomUPS.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="DLGs\AutoCalcSizeDialog.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="DLGs\AutoHideDialog.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="DLGs\DataSrcViewDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="DLGs\LoadingProrgessDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="DLGs\OutputDSControlDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="DLGs\UserDataEditDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="DLGs\UserLogonDlg.h">
+      <Filter>Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiplusd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\LogCtrl.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="singletone.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_xml.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_errors.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_images.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_msgprovider.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_project.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_scripts.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_users.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_loadcfg.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_chem.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_sms.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xyplot\XYPlotWrapper.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\OwenSIM2.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\InfracarGasAnalyser.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\NTCCDataClient.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\NTCCDataSrv.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\IsmatecPump.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\EngineControlBlock.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\filters.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xyplot\xyplotconst.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\FlexKraftPS.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\v_pid.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\KulonMini.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\EASunInvertor.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="ah_fonts.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Automation\BatteryMeassureUnit.h">
+      <Filter>Automation</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlConfiguredObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\arrow.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Baner.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="hlp\Images\Bullet.gif">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cross.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\helpsel.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_BLUE_PROGRESS.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_BLUE_PROGRESS_V2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_DARK_BLUE_PROGRESS.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_EXT_2007_PROGRESS_BORDER.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_EXT_2007_PROGRESS_MAIN.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_GREEN_PROGRESS.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_ORANGE_PROGRESS.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_ORANGE_PROGRESS_V2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\info.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\link.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\move.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\NanoTubesControlCenter.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\NanoTubesControlCenter.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\NanoTubesControlCenterDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\nesw.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ns.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\nwse.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\pen.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\scriptstoolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Splash.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\text.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TreeCtrlImages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\unavail.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\up.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\we.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="hlp\NanoTubesControlCenter.hhc">
+      <Filter>HTML Help Files</Filter>
+    </None>
+    <None Include="hlp\NanoTubesControlCenter.hhk">
+      <Filter>HTML Help Files</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_color.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_fileopen.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_filesave.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_find.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_font.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_newtypedlg.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_print.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_printdlg.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_printsetup.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidd_replace.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidp_default.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidw_dockbar_top.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidw_preview_bar.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidw_status_bar.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\afx_hidw_toolbar.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_app_about.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_app_exit.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_context_help.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_clear.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_clear_all.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_copy.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_cut.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_find.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_paste.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_redo.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_repeat.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_replace.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_edit_undo.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_close.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_mru_file1.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_new.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_open.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_page_setup.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_print.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_print_preview.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_print_setup.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_save.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_save_as.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_file_send_mail.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_help_index.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_help_using.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_ht_caption.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_ht_nowhere.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_next_pane.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_prev_pane.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_close.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_maximize.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_minimize.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_move.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_nextwindow.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_prevwindow.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_restore.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_size.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_sc_tasklist.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_view_ruler.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_view_status_bar.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_view_toolbar.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_all.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_arrange.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_cascade.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_new.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_split.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_tile.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_tile_horz.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hid_window_tile_vert.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\hidr_doc1type.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\main_index.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\menu_edit.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\menu_file.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\menu_help.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\menu_view.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\menu_window.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="hlp\scrollbars.htm">
+      <Filter>HTML Help Topics</Filter>
+    </None>
+    <None Include="res\IDB_AQUA_PROGRESS.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_GRAY_PROGRESS.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_MAGENTA_PROGRESS.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_RED_PROGRESS.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\IDB_VIOLET_PROGRESS.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\grAdministrators.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\grOperators.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\grTechnologists.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\grUsers.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\warning.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\On_16x16_v3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Off_16x16_v3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursors_red\we.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursors_red\arrow.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursors_red\link.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursors_red\move.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursors_red\nesw.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursors_red\ns.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursors_red\nwse.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursors_red\up.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\error.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\check.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\checks.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\presets.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\id_plot_.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\id_plot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NanoTubesControlCenter.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hlp\NanoTubesControlCenter.hhp">
+      <Filter>HTML Help Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

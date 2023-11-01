@@ -1,0 +1,748 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Класс xyplot::XYPlotManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacexyplot.html">xyplot</a></li><li class="navelem"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html">XYPlotManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="classxyplot_1_1_x_y_plot_manager-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс xyplot::XYPlotManager</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс-обертка для работы с 2D графикой  
+ <a href="classxyplot_1_1_x_y_plot_manager.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_x_y_plot_wrapper_8h_source.html">XYPlotWrapper.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ad9528d6181d8935cc7ad9c1d34671bc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html#ad9528d6181d8935cc7ad9c1d34671bc8">GetLastError</a> () const </td></tr>
+<tr class="memdesc:ad9528d6181d8935cc7ad9c1d34671bc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения кода последней ошибки  <a href="#ad9528d6181d8935cc7ad9c1d34671bc8">Подробнее...</a><br/></td></tr>
+<tr class="separator:ad9528d6181d8935cc7ad9c1d34671bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756b2e15fad862294eabbf6781ff8034"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html#a756b2e15fad862294eabbf6781ff8034">TranslateError</a> (int code) const </td></tr>
+<tr class="memdesc:a756b2e15fad862294eabbf6781ff8034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расшифровывает код ошибки  <a href="#a756b2e15fad862294eabbf6781ff8034">Подробнее...</a><br/></td></tr>
+<tr class="separator:a756b2e15fad862294eabbf6781ff8034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga894a76ee9162ccae431581ed25c5029f"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group1.html#ga894a76ee9162ccae431581ed25c5029f">Initialize</a> (const char *pszDllPath, HWND hwndParent=NULL)</td></tr>
+<tr class="memdesc:ga894a76ee9162ccae431581ed25c5029f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Данная функция инициализирует класса-обертку.  <a href="group__group1.html#ga894a76ee9162ccae431581ed25c5029f">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga894a76ee9162ccae431581ed25c5029f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga056dc5f3c798c3c3f38d2ac9d4051ecb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group1.html#ga056dc5f3c798c3c3f38d2ac9d4051ecb">CreatePlot</a> (HWND hwndParent)</td></tr>
+<tr class="memdesc:ga056dc5f3c798c3c3f38d2ac9d4051ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания экземпляра 2D графики. В случае если неудалось создать экземпляр функция генерирует исключение <a class="el" href="classxyplot_1_1_x_y_plot_request_failure.html" title="Класс ошибки завершения запроса для графика ">XYPlotRequestFailure</a>.  <a href="group__group1.html#ga056dc5f3c798c3c3f38d2ac9d4051ecb">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga056dc5f3c798c3c3f38d2ac9d4051ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1d4729bae2ddfd134d72fcab62930d5"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group1.html#gaa1d4729bae2ddfd134d72fcab62930d5">DestroyPlot</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot)</td></tr>
+<tr class="memdesc:gaa1d4729bae2ddfd134d72fcab62930d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция удаления экземпляра 2D графики.  <a href="group__group1.html#gaa1d4729bae2ddfd134d72fcab62930d5">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaa1d4729bae2ddfd134d72fcab62930d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8a430da4df94af8575d388064f21df"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html#a3e8a430da4df94af8575d388064f21df">CopyToClipboard</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, unsigned width, unsigned height, unsigned dpi)</td></tr>
+<tr class="memdesc:a3e8a430da4df94af8575d388064f21df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция копирует текущее содержимое экзкемпляра 2D графики в буфер обмена в виде изображения.  <a href="#a3e8a430da4df94af8575d388064f21df">Подробнее...</a><br/></td></tr>
+<tr class="separator:a3e8a430da4df94af8575d388064f21df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056c90eb93b99097d2514177b0b993b5"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html#a056c90eb93b99097d2514177b0b993b5">DrawToBitmap</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, HBITMAP &amp;hBitmap, bool bDrawWindowBG, bool bDrawClientBG)</td></tr>
+<tr class="memdesc:a056c90eb93b99097d2514177b0b993b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция копирует текущее содержимое экзкемпляра 2D в буфер битовую карту.  <a href="#a056c90eb93b99097d2514177b0b993b5">Подробнее...</a><br/></td></tr>
+<tr class="separator:a056c90eb93b99097d2514177b0b993b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9425d25c34fc173ef0367a2ef9eb74"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html#a1c9425d25c34fc173ef0367a2ef9eb74">RunDialog</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot)</td></tr>
+<tr class="memdesc:a1c9425d25c34fc173ef0367a2ef9eb74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывает диалог настроек экземпляра 2D графики .  <a href="#a1c9425d25c34fc173ef0367a2ef9eb74">Подробнее...</a><br/></td></tr>
+<tr class="separator:a1c9425d25c34fc173ef0367a2ef9eb74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86742bc6603db4141caaee586872e5df"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_properties.html#ga86742bc6603db4141caaee586872e5df">RegRestoreDefaults</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot)</td></tr>
+<tr class="memdesc:ga86742bc6603db4141caaee586872e5df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция сбрасывает настройки экземпляра 2D графики в настройки по умолчанию.  <a href="group__gr_properties.html#ga86742bc6603db4141caaee586872e5df">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga86742bc6603db4141caaee586872e5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24942314b181fa7f547629d15577589d"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_properties.html#ga24942314b181fa7f547629d15577589d">RegLoadSettings</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, const char *pszKey, const char *pszValue)</td></tr>
+<tr class="memdesc:ga24942314b181fa7f547629d15577589d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция загружает настройки экземпляра 2D графики из реестра.  <a href="group__gr_properties.html#ga24942314b181fa7f547629d15577589d">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga24942314b181fa7f547629d15577589d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07f14ff8585116fcf19f7421a0c9e64f"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_properties.html#ga07f14ff8585116fcf19f7421a0c9e64f">RegSaveSettings</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, const char *pszKey, const char *pszValue)</td></tr>
+<tr class="memdesc:ga07f14ff8585116fcf19f7421a0c9e64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция сохраняет настройки экземпляра 2D графики в реестре.  <a href="group__gr_properties.html#ga07f14ff8585116fcf19f7421a0c9e64f">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga07f14ff8585116fcf19f7421a0c9e64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8c0d039a585af0356d553ba7a76f152"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_properties.html#gaa8c0d039a585af0356d553ba7a76f152">SaveProperties</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, const char *pszFileName)</td></tr>
+<tr class="memdesc:gaa8c0d039a585af0356d553ba7a76f152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция сохраняет настройки экземпляра 2D графики в файле.  <a href="group__gr_properties.html#gaa8c0d039a585af0356d553ba7a76f152">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaa8c0d039a585af0356d553ba7a76f152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga569a657dccc96f9087dde44794712848"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_properties.html#ga569a657dccc96f9087dde44794712848">LoadProperties</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, const char *pszFileName)</td></tr>
+<tr class="memdesc:ga569a657dccc96f9087dde44794712848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция загружает настройки экземпляра 2D графики из файла.  <a href="group__gr_properties.html#ga569a657dccc96f9087dde44794712848">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga569a657dccc96f9087dde44794712848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7851d700a43f68d0738617ee01afdd73"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_select.html#ga7851d700a43f68d0738617ee01afdd73">Select</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;hProfile, unsigned nIndex)</td></tr>
+<tr class="memdesc:ga7851d700a43f68d0738617ee01afdd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливает выделение указанного профиля.  <a href="group__gr_select.html#ga7851d700a43f68d0738617ee01afdd73">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga7851d700a43f68d0738617ee01afdd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga155570b64a87c676f3cf023ad8ed42a1"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_select.html#ga155570b64a87c676f3cf023ad8ed42a1">Select</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_g_r_o_u_p.html">HGROUP</a> &amp;hGroup, unsigned nIndex)</td></tr>
+<tr class="memdesc:ga155570b64a87c676f3cf023ad8ed42a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция устанавливает выделение указанной группы профилей.  <a href="group__gr_select.html#ga155570b64a87c676f3cf023ad8ed42a1">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga155570b64a87c676f3cf023ad8ed42a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcf35c2c2d175cd20d607a05b069fa42"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_select.html#gadcf35c2c2d175cd20d607a05b069fa42">SetSelectionMode</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, int mode)</td></tr>
+<tr class="memdesc:gadcf35c2c2d175cd20d607a05b069fa42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задает режим выделения для профилей и групп профилей  <a href="group__gr_select.html#gadcf35c2c2d175cd20d607a05b069fa42">Подробнее...</a><br/></td></tr>
+<tr class="separator:gadcf35c2c2d175cd20d607a05b069fa42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e7cc28041a0ca7df37af0a4ebd126a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_select.html#ga0e7cc28041a0ca7df37af0a4ebd126a4">GetSelectionMode</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot) const </td></tr>
+<tr class="memdesc:ga0e7cc28041a0ca7df37af0a4ebd126a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция возвращает текущий режим выделения для профилей и групп профилей  <a href="group__gr_select.html#ga0e7cc28041a0ca7df37af0a4ebd126a4">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga0e7cc28041a0ca7df37af0a4ebd126a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae329866f17329d4f26be83d566cdeecd"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_select.html#gae329866f17329d4f26be83d566cdeecd">SetFlashSpeed</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, int speed)</td></tr>
+<tr class="memdesc:gae329866f17329d4f26be83d566cdeecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задает частоту мерцания профиля либо группы профилей в режиме выделения SM_FLASH.  <a href="group__gr_select.html#gae329866f17329d4f26be83d566cdeecd">Подробнее...</a><br/></td></tr>
+<tr class="separator:gae329866f17329d4f26be83d566cdeecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7231a3949a367bc02164dc0705e4fa0"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html#ab7231a3949a367bc02164dc0705e4fa0">SetRedraw</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, BOOL bRedraw=TRUE)</td></tr>
+<tr class="memdesc:ab7231a3949a367bc02164dc0705e4fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция разрешает либо запрещает перерисовку экземпляра 2D графики  <a href="#ab7231a3949a367bc02164dc0705e4fa0">Подробнее...</a><br/></td></tr>
+<tr class="separator:ab7231a3949a367bc02164dc0705e4fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac086b543fc9cab773b6807c2420ce739"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#gac086b543fc9cab773b6807c2420ce739">SetAxisRange</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> axis, double dMin, double dMax)</td></tr>
+<tr class="memdesc:gac086b543fc9cab773b6807c2420ce739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задает диапазон значений оси экземпляра 2D графики.  <a href="group__gr_elements.html#gac086b543fc9cab773b6807c2420ce739">Подробнее...</a><br/></td></tr>
+<tr class="separator:gac086b543fc9cab773b6807c2420ce739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga086a2c52f7ad3bddbe9269228fd0977a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga086a2c52f7ad3bddbe9269228fd0977a">GetAxisRange</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> axis, double &amp;dMin, double &amp;dMax) const </td></tr>
+<tr class="memdesc:ga086a2c52f7ad3bddbe9269228fd0977a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения диапазона значений оси экземпляра 2D графики.  <a href="group__gr_elements.html#ga086a2c52f7ad3bddbe9269228fd0977a">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga086a2c52f7ad3bddbe9269228fd0977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga854706a96f0c8cfba9db24dc3f4bb54f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga854706a96f0c8cfba9db24dc3f4bb54f">GetString</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> item, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> subitem) const </td></tr>
+<tr class="memdesc:ga854706a96f0c8cfba9db24dc3f4bb54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения строки элемента 2D графики.  <a href="group__gr_elements.html#ga854706a96f0c8cfba9db24dc3f4bb54f">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga854706a96f0c8cfba9db24dc3f4bb54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga765727fbc082d07df181ba5bacb230f3"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga765727fbc082d07df181ba5bacb230f3">SetString</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> item, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> subitem, const char *pszString)</td></tr>
+<tr class="memdesc:ga765727fbc082d07df181ba5bacb230f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задания строки элемента 2D графики.  <a href="group__gr_elements.html#ga765727fbc082d07df181ba5bacb230f3">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga765727fbc082d07df181ba5bacb230f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02ac169b6968c5e778fdb120cfa2cbb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga02ac169b6968c5e778fdb120cfa2cbb5">GetLong</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> item, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> subitem) const </td></tr>
+<tr class="separator:ga02ac169b6968c5e778fdb120cfa2cbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa92b59ee49654f44a139658e0e2e4af4"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#gaa92b59ee49654f44a139658e0e2e4af4">SetLong</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> item, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> subitem, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> value)</td></tr>
+<tr class="memdesc:gaa92b59ee49654f44a139658e0e2e4af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задания целочисленного значения связанного с элементом 2D графики.  <a href="group__gr_elements.html#gaa92b59ee49654f44a139658e0e2e4af4">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaa92b59ee49654f44a139658e0e2e4af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc94c084a9d1e27c112606bac9ed6505"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#gabc94c084a9d1e27c112606bac9ed6505">GetDouble</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> item, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> subitem) const </td></tr>
+<tr class="separator:gabc94c084a9d1e27c112606bac9ed6505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada6cc7904e60ca04d109118293b01265"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#gada6cc7904e60ca04d109118293b01265">SetDouble</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> item, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> subitem, double value)</td></tr>
+<tr class="memdesc:gada6cc7904e60ca04d109118293b01265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задания значения с плавающей точкой связанного с элементом 2D графики.  <a href="group__gr_elements.html#gada6cc7904e60ca04d109118293b01265">Подробнее...</a><br/></td></tr>
+<tr class="separator:gada6cc7904e60ca04d109118293b01265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga760b95b60afd9044a598128f49d475e8"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga760b95b60afd9044a598128f49d475e8">EnableItem</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> item, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> subitem, BOOL enabled)</td></tr>
+<tr class="memdesc:ga760b95b60afd9044a598128f49d475e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция включения/отключения элемента 2D графики.  <a href="group__gr_elements.html#ga760b95b60afd9044a598128f49d475e8">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga760b95b60afd9044a598128f49d475e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46fa280afeab028fa4e2e71d574648da"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga46fa280afeab028fa4e2e71d574648da">IsEnabled</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> item, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> subitem) const </td></tr>
+<tr class="memdesc:ga46fa280afeab028fa4e2e71d574648da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция возвращает флаг состояния элемента 2D графики (включен/выключен).  <a href="group__gr_elements.html#ga46fa280afeab028fa4e2e71d574648da">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga46fa280afeab028fa4e2e71d574648da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19d975aa81ed28631a89cb6cfabf80a1"><td class="memItemLeft" align="right" valign="top">COLORREF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga19d975aa81ed28631a89cb6cfabf80a1">GetColor</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> item, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> subitem) const </td></tr>
+<tr class="memdesc:ga19d975aa81ed28631a89cb6cfabf80a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция включения/отключения элемента 2D графики.  <a href="group__gr_elements.html#ga19d975aa81ed28631a89cb6cfabf80a1">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga19d975aa81ed28631a89cb6cfabf80a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea19b965d3f247481ccb5090901d9b33"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#gaea19b965d3f247481ccb5090901d9b33">SetColor</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> item, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> subitem, COLORREF color)</td></tr>
+<tr class="memdesc:gaea19b965d3f247481ccb5090901d9b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задания цвета элемента 2D графики.  <a href="group__gr_elements.html#gaea19b965d3f247481ccb5090901d9b33">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaea19b965d3f247481ccb5090901d9b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94d466cf2a727291630053fb46796a7b"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga94d466cf2a727291630053fb46796a7b">SetFont</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> item, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> subitem, const LOGFONT *font)</td></tr>
+<tr class="memdesc:ga94d466cf2a727291630053fb46796a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задания шрифта элемента 2D графики.  <a href="group__gr_elements.html#ga94d466cf2a727291630053fb46796a7b">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga94d466cf2a727291630053fb46796a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b66f2af6d72e28697ea2404362bcd08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#ga0b66f2af6d72e28697ea2404362bcd08">CreateProfile</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, const char *name, COLORREF color, int width, int lineType=<a class="el" href="namespacexyplot.html#a3d67107a3da8dc1ef0114ab0352e01eda50f3326c8ff8eb69d629156dfe2e268a">xyplot::PLS_SOLID</a>, const char *szLineTemplate=0, BOOL visible=TRUE, BOOL showmarks=FALSE, const <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> xParentAxis=<a class="el" href="namespacexyplot.html#aab624afb50724c293bffe01fff26c9c2ae9a92ae30b1ebc969b6a7256f1511924">xyplot::PI_AXIS_BOTTOM</a>, const <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> yParentAxis=<a class="el" href="namespacexyplot.html#aab624afb50724c293bffe01fff26c9c2a5cab3df16a4e44f280dec6a0108dc09d">xyplot::PI_AXIS_LEFT</a>)</td></tr>
+<tr class="memdesc:ga0b66f2af6d72e28697ea2404362bcd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создания экземпляра профиля  <a href="group__gr_output.html#ga0b66f2af6d72e28697ea2404362bcd08">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga0b66f2af6d72e28697ea2404362bcd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5a7b664a3f8dbc02402bd1a8926b4c6"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#gaa5a7b664a3f8dbc02402bd1a8926b4c6">DeleteProfile</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;hProfile)</td></tr>
+<tr class="memdesc:gaa5a7b664a3f8dbc02402bd1a8926b4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление экземпляра профиля  <a href="group__gr_output.html#gaa5a7b664a3f8dbc02402bd1a8926b4c6">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaa5a7b664a3f8dbc02402bd1a8926b4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9973935dcf6968295717ca9e8e832c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classxyplot_1_1_h_g_r_o_u_p.html">HGROUP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#gaa9973935dcf6968295717ca9e8e832c0">CreateGroup</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot)</td></tr>
+<tr class="memdesc:gaa9973935dcf6968295717ca9e8e832c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание группы профилей  <a href="group__gr_output.html#gaa9973935dcf6968295717ca9e8e832c0">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaa9973935dcf6968295717ca9e8e832c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae089459d5fab87f702abe1ac196906dc"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#gae089459d5fab87f702abe1ac196906dc">DeleteGroup</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_g_r_o_u_p.html">HGROUP</a> &amp;hGroup)</td></tr>
+<tr class="memdesc:gae089459d5fab87f702abe1ac196906dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление группы профилей  <a href="group__gr_output.html#gae089459d5fab87f702abe1ac196906dc">Подробнее...</a><br/></td></tr>
+<tr class="separator:gae089459d5fab87f702abe1ac196906dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e52043c4085813433a831d07687ebc9"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#ga8e52043c4085813433a831d07687ebc9">BindProfileToGroup</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_g_r_o_u_p.html">HGROUP</a> &amp;hGroup, <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;hProfile)</td></tr>
+<tr class="memdesc:ga8e52043c4085813433a831d07687ebc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавление профиля к группе  <a href="group__gr_output.html#ga8e52043c4085813433a831d07687ebc9">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga8e52043c4085813433a831d07687ebc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab01278bbb9ea9612d30f3cbe4c7805df"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#gab01278bbb9ea9612d30f3cbe4c7805df">GetProfileList</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, std::vector&lt; <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &gt; &amp;hProfiles)</td></tr>
+<tr class="separator:gab01278bbb9ea9612d30f3cbe4c7805df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95d2b2960c45eb6368a9d1039bacdc0d"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output_data.html#ga95d2b2960c45eb6368a9d1039bacdc0d">SetData</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;hProfile, const double *<a class="el" href="namespacexyplot.html#aa88522a2f4371e38891cac7b5bc3e4aa">px</a>, const double *<a class="el" href="namespacexyplot.html#adc56454d6bac520db8907c6a206d3040">py</a>, unsigned <a class="el" href="namespacexyplot.html#a0e8516aaf446c174c28a4327a27dd9ce">size</a>)</td></tr>
+<tr class="memdesc:ga95d2b2960c45eb6368a9d1039bacdc0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить данные для профиля  <a href="group__gr_output_data.html#ga95d2b2960c45eb6368a9d1039bacdc0d">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga95d2b2960c45eb6368a9d1039bacdc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6557de664a4b3b7fb8fd7ab2c9d736b9"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output_data.html#ga6557de664a4b3b7fb8fd7ab2c9d736b9">GetData</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;hProfile, double *<a class="el" href="namespacexyplot.html#aa88522a2f4371e38891cac7b5bc3e4aa">px</a>, double *<a class="el" href="namespacexyplot.html#adc56454d6bac520db8907c6a206d3040">py</a>, unsigned *<a class="el" href="namespacexyplot.html#a0e8516aaf446c174c28a4327a27dd9ce">size</a>)</td></tr>
+<tr class="memdesc:ga6557de664a4b3b7fb8fd7ab2c9d736b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Копирует данные профиля в массивы  <a href="group__gr_output_data.html#ga6557de664a4b3b7fb8fd7ab2c9d736b9">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga6557de664a4b3b7fb8fd7ab2c9d736b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21b8bd6024247b085e6c047ce4f6e763"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output_data.html#ga21b8bd6024247b085e6c047ce4f6e763">AppendData</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;hProfile, const double *<a class="el" href="namespacexyplot.html#aa88522a2f4371e38891cac7b5bc3e4aa">px</a>, const double *<a class="el" href="namespacexyplot.html#adc56454d6bac520db8907c6a206d3040">py</a>, unsigned <a class="el" href="namespacexyplot.html#a0e8516aaf446c174c28a4327a27dd9ce">size</a>)</td></tr>
+<tr class="memdesc:ga21b8bd6024247b085e6c047ce4f6e763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дописать данные для профиля  <a href="group__gr_output_data.html#ga21b8bd6024247b085e6c047ce4f6e763">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga21b8bd6024247b085e6c047ce4f6e763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3030074790ed5ddf22f2776226bd5442"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_prof_ex.html#ga3030074790ed5ddf22f2776226bd5442">GetSelectedProfile</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot) const </td></tr>
+<tr class="memdesc:ga3030074790ed5ddf22f2776226bd5442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить текущий выделенный профиль  <a href="group__gr_prof_ex.html#ga3030074790ed5ddf22f2776226bd5442">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga3030074790ed5ddf22f2776226bd5442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafda2be977c03f1a2a5e2a35d4117feb"><td class="memItemLeft" align="right" valign="top">COLORREF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_prof_ex.html#gaafda2be977c03f1a2a5e2a35d4117feb">GetColor</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;hProfile) const </td></tr>
+<tr class="memdesc:gaafda2be977c03f1a2a5e2a35d4117feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить цвет профиля  <a href="group__gr_prof_ex.html#gaafda2be977c03f1a2a5e2a35d4117feb">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaafda2be977c03f1a2a5e2a35d4117feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd75f7d7f166418aac31753a4a1bc59c"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_prof_ex.html#gadd75f7d7f166418aac31753a4a1bc59c">SetColor</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;hProfile, COLORREF color)</td></tr>
+<tr class="memdesc:gadd75f7d7f166418aac31753a4a1bc59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задать цвет профиля  <a href="group__gr_prof_ex.html#gadd75f7d7f166418aac31753a4a1bc59c">Подробнее...</a><br/></td></tr>
+<tr class="separator:gadd75f7d7f166418aac31753a4a1bc59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2ee73286c657c5cf07963143e74246d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classxyplot_1_1_h_l_e_v_e_l.html">HLEVEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_lvl_ex.html#gaf2ee73286c657c5cf07963143e74246d">CreateLevel</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> axis, double val, const char *pszTitle, COLORREF clr, int width)</td></tr>
+<tr class="memdesc:gaf2ee73286c657c5cf07963143e74246d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создания экземпляра линии уровня  <a href="group__gr_lvl_ex.html#gaf2ee73286c657c5cf07963143e74246d">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaf2ee73286c657c5cf07963143e74246d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f2d9a5228e0b865b6bcc3b3d0929819"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_lvl_ex.html#ga1f2d9a5228e0b865b6bcc3b3d0929819">DeleteLevel</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_l_e_v_e_l.html">HLEVEL</a> &amp;hLevel)</td></tr>
+<tr class="memdesc:ga1f2d9a5228e0b865b6bcc3b3d0929819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление линии уровня  <a href="group__gr_lvl_ex.html#ga1f2d9a5228e0b865b6bcc3b3d0929819">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga1f2d9a5228e0b865b6bcc3b3d0929819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae55f0c1003d6676c068b3c621c42c156"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_lvl_ex.html#gae55f0c1003d6676c068b3c621c42c156">SetLevel</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_l_e_v_e_l.html">HLEVEL</a> &amp;hLevel, double value)</td></tr>
+<tr class="memdesc:gae55f0c1003d6676c068b3c621c42c156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задание нового значения линии уровня  <a href="group__gr_lvl_ex.html#gae55f0c1003d6676c068b3c621c42c156">Подробнее...</a><br/></td></tr>
+<tr class="separator:gae55f0c1003d6676c068b3c621c42c156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7505d9ffcaedba6a7b8861b537e3eb23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n.html">HPLOTREGION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_rgn_ex.html#ga7505d9ffcaedba6a7b8861b537e3eb23">CreateRegion</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> axisX, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> axisY, double xFrom, double xTo, double yFrom, double yTo, const char *pszTitle)</td></tr>
+<tr class="memdesc:ga7505d9ffcaedba6a7b8861b537e3eb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создания экземпляра региона  <a href="group__gr_rgn_ex.html#ga7505d9ffcaedba6a7b8861b537e3eb23">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga7505d9ffcaedba6a7b8861b537e3eb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga752b100470bc7e465f283a957c67a24d"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_rgn_ex.html#ga752b100470bc7e465f283a957c67a24d">DeleteRegion</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n.html">HPLOTREGION</a> &amp;hRegion)</td></tr>
+<tr class="memdesc:ga752b100470bc7e465f283a957c67a24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление региона  <a href="group__gr_rgn_ex.html#ga752b100470bc7e465f283a957c67a24d">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga752b100470bc7e465f283a957c67a24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e9c9b0cf069c241d4b3349ef7eec32b"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_rgn_ex.html#ga8e9c9b0cf069c241d4b3349ef7eec32b">SetRegion</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n.html">HPLOTREGION</a> &amp;hRegion, double xFrom, double xTo, double yFrom, double yTo)</td></tr>
+<tr class="memdesc:ga8e9c9b0cf069c241d4b3349ef7eec32b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задание новых границ региона  <a href="group__gr_rgn_ex.html#ga8e9c9b0cf069c241d4b3349ef7eec32b">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga8e9c9b0cf069c241d4b3349ef7eec32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402bc06e3eb7f165e3c1415d691df3b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html#a402bc06e3eb7f165e3c1415d691df3b3">~XYPlotManager</a> ()</td></tr>
+<tr class="memdesc:a402bc06e3eb7f165e3c1415d691df3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор класса обертки  <a href="#a402bc06e3eb7f165e3c1415d691df3b3">Подробнее...</a><br/></td></tr>
+<tr class="separator:a402bc06e3eb7f165e3c1415d691df3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:abfde221555f11c692969986174781780"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classxyplot_1_1_x_y_plot_manager.html">XYPlotManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html#abfde221555f11c692969986174781780">Instance</a> ()</td></tr>
+<tr class="memdesc:abfde221555f11c692969986174781780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция доступа к единственному экземпляру класса Класс <a class="el" href="classxyplot_1_1_x_y_plot_manager.html" title="Класс-обертка для работы с 2D графикой ">XYPlotManager</a> является сингелтоном т.е. существует единственный экземпляр объекта данного класса. Доступ к нему осуществляется при помощи данной функции.  <a href="#abfde221555f11c692969986174781780">Подробнее...</a><br/></td></tr>
+<tr class="separator:abfde221555f11c692969986174781780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:gafc0df2010690907aa3a1503ebb90345c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_construct.html#gafc0df2010690907aa3a1503ebb90345c">XYPlotManager</a> ()</td></tr>
+<tr class="memdesc:gafc0df2010690907aa3a1503ebb90345c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по усмолчанию  <a href="group__gr_construct.html#gafc0df2010690907aa3a1503ebb90345c">Подробнее...</a><br/></td></tr>
+<tr class="separator:gafc0df2010690907aa3a1503ebb90345c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3eea4a6ab361a23f4fa7e7aa69758cd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_construct.html#ga3eea4a6ab361a23f4fa7e7aa69758cd0">XYPlotManager</a> (const <a class="el" href="classxyplot_1_1_x_y_plot_manager.html">XYPlotManager</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ga3eea4a6ab361a23f4fa7e7aa69758cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования  <a href="group__gr_construct.html#ga3eea4a6ab361a23f4fa7e7aa69758cd0">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga3eea4a6ab361a23f4fa7e7aa69758cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a1ddc519fd38e08cba67f11f4d2fad942"><td class="memItemLeft" align="right" valign="top">HMODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html#a1ddc519fd38e08cba67f11f4d2fad942">m_hDllInstance</a></td></tr>
+<tr class="memdesc:a1ddc519fd38e08cba67f11f4d2fad942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дескриптор модуля  <a href="#a1ddc519fd38e08cba67f11f4d2fad942">Подробнее...</a><br/></td></tr>
+<tr class="separator:a1ddc519fd38e08cba67f11f4d2fad942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac842be5823171dc50111c6c4c62f1311"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html#ac842be5823171dc50111c6c4c62f1311">m_nLastError</a></td></tr>
+<tr class="memdesc:ac842be5823171dc50111c6c4c62f1311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код последней ошибки  <a href="#ac842be5823171dc50111c6c4c62f1311">Подробнее...</a><br/></td></tr>
+<tr class="separator:ac842be5823171dc50111c6c4c62f1311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c9ea3fa9c04a9f11e5efbbf45484a77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a8c5635641ba2648c95a8b29c01393f78">xyplot::LPFNINITIALIZE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga4c9ea3fa9c04a9f11e5efbbf45484a77">m_lpfnInitialize</a></td></tr>
+<tr class="memdesc:ga4c9ea3fa9c04a9f11e5efbbf45484a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию Initialize в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga4c9ea3fa9c04a9f11e5efbbf45484a77">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga4c9ea3fa9c04a9f11e5efbbf45484a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cdc9837f474268e30378babb487589c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a0c97b982a01a1c43f6900a274d295b11">xyplot::LPFNFINALIZE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga9cdc9837f474268e30378babb487589c">m_lpfnFinalize</a></td></tr>
+<tr class="memdesc:ga9cdc9837f474268e30378babb487589c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию Finalize в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga9cdc9837f474268e30378babb487589c">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga9cdc9837f474268e30378babb487589c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa98936db9e4efece553498398bc6d097"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#ab78664aa6b50a88a556408cdcb0fedde">xyplot::LPFNADDPROFILE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gaa98936db9e4efece553498398bc6d097">m_lpfnAddProfile</a></td></tr>
+<tr class="memdesc:gaa98936db9e4efece553498398bc6d097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию AddProfile в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gaa98936db9e4efece553498398bc6d097">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaa98936db9e4efece553498398bc6d097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7966fea312b93dc5a52ba8f913fcc835"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#af6412b804e2c4c568501d1a6e84358cd">xyplot::LPFNDELETEPROFILE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga7966fea312b93dc5a52ba8f913fcc835">m_lpfnDeleteProfile</a></td></tr>
+<tr class="memdesc:ga7966fea312b93dc5a52ba8f913fcc835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию DeleteProfile в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga7966fea312b93dc5a52ba8f913fcc835">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga7966fea312b93dc5a52ba8f913fcc835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12cbf5f4c39f57265eb98fa148e9150a"><td class="memItemLeft" align="right" valign="top">xyplot::LPFNSETDATA&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga12cbf5f4c39f57265eb98fa148e9150a">m_lpfnSetData</a></td></tr>
+<tr class="memdesc:ga12cbf5f4c39f57265eb98fa148e9150a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию SetData в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga12cbf5f4c39f57265eb98fa148e9150a">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga12cbf5f4c39f57265eb98fa148e9150a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf08ccb9c45b77898ac5a5c024b7b6268"><td class="memItemLeft" align="right" valign="top">xyplot::LPFNGETDATA&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gaf08ccb9c45b77898ac5a5c024b7b6268">m_lpfnGetData</a></td></tr>
+<tr class="memdesc:gaf08ccb9c45b77898ac5a5c024b7b6268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию GetData в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gaf08ccb9c45b77898ac5a5c024b7b6268">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaf08ccb9c45b77898ac5a5c024b7b6268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3dfb9dbb2d423d2e6b64fe0d0fcbb8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a159121ca25d59ecb75770f0fbeea2515">xyplot::LPFNAPPENDDATA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gab3dfb9dbb2d423d2e6b64fe0d0fcbb8e">m_lpfnAppendData</a></td></tr>
+<tr class="memdesc:gab3dfb9dbb2d423d2e6b64fe0d0fcbb8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию AppendData в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gab3dfb9dbb2d423d2e6b64fe0d0fcbb8e">Подробнее...</a><br/></td></tr>
+<tr class="separator:gab3dfb9dbb2d423d2e6b64fe0d0fcbb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94e766d64a4b9d8d435702a2244540b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a9bb3deed6ff9723181f09eb590fdf7dd">xyplot::LPFNSETSTRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga94e766d64a4b9d8d435702a2244540b6">m_lpfnSetString</a></td></tr>
+<tr class="memdesc:ga94e766d64a4b9d8d435702a2244540b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию SetString в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga94e766d64a4b9d8d435702a2244540b6">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga94e766d64a4b9d8d435702a2244540b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fdef4b5c9b15682453368367ebb808a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#ae11ea8cd7e895887b754555f31b0adf3">xyplot::LPFNGETSTRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga8fdef4b5c9b15682453368367ebb808a">m_lpfnGetString</a></td></tr>
+<tr class="memdesc:ga8fdef4b5c9b15682453368367ebb808a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию GetString в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga8fdef4b5c9b15682453368367ebb808a">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga8fdef4b5c9b15682453368367ebb808a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e25ad5afee76a5ea6402649490afa33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#ac41175dc795758950c58e18d1660faa5">xyplot::LPFNSETCOLOR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga9e25ad5afee76a5ea6402649490afa33">m_lpfnSetColor</a></td></tr>
+<tr class="memdesc:ga9e25ad5afee76a5ea6402649490afa33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию SetColor в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga9e25ad5afee76a5ea6402649490afa33">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga9e25ad5afee76a5ea6402649490afa33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea89de1aabb85ec0bc1744be6c4b8c0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a0f7f51503a885f8e1b24c25973b1fc1d">xyplot::LPFNGETCOLOR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gaea89de1aabb85ec0bc1744be6c4b8c0e">m_lpfnGetColor</a></td></tr>
+<tr class="memdesc:gaea89de1aabb85ec0bc1744be6c4b8c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию GetColor в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gaea89de1aabb85ec0bc1744be6c4b8c0e">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaea89de1aabb85ec0bc1744be6c4b8c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20972e1ead3d8fc4ae624436c7c562e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a28e8fe476dccb830b8c9557e0f802263">xyplot::LPFNSETFONT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga20972e1ead3d8fc4ae624436c7c562e5">m_lpfnSetFont</a></td></tr>
+<tr class="memdesc:ga20972e1ead3d8fc4ae624436c7c562e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию SetFont в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga20972e1ead3d8fc4ae624436c7c562e5">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga20972e1ead3d8fc4ae624436c7c562e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf490a07c7be98e17bef527c3f4f7403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a6baf918a5bfe565a879b9d4fe5ef1124">xyplot::LPFNSETLONG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gaaf490a07c7be98e17bef527c3f4f7403">m_lpfnSetLong</a></td></tr>
+<tr class="memdesc:gaaf490a07c7be98e17bef527c3f4f7403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию SetLong в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gaaf490a07c7be98e17bef527c3f4f7403">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaaf490a07c7be98e17bef527c3f4f7403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad700a337b94bdc880881e059f50c6169"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a7fdb8fd61356e30fc76cd5a02266dbf7">xyplot::LPFNGETLONG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gad700a337b94bdc880881e059f50c6169">m_lpfnGetLong</a></td></tr>
+<tr class="memdesc:gad700a337b94bdc880881e059f50c6169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию GetLong в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gad700a337b94bdc880881e059f50c6169">Подробнее...</a><br/></td></tr>
+<tr class="separator:gad700a337b94bdc880881e059f50c6169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f974cec0445d2921f6e039830b27942"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#acc2b15a223e822003ec2f51071dd16b2">xyplot::LPFNSETDOUBLE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga1f974cec0445d2921f6e039830b27942">m_lpfnSetDouble</a></td></tr>
+<tr class="memdesc:ga1f974cec0445d2921f6e039830b27942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию SetDouble в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga1f974cec0445d2921f6e039830b27942">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga1f974cec0445d2921f6e039830b27942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1a94a046cfcf628aa6692941a206adc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#ada339f0f5dd59a8edbeb5462b404b412">xyplot::LPFNGETDOUBLE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gac1a94a046cfcf628aa6692941a206adc">m_lpfnGetDouble</a></td></tr>
+<tr class="memdesc:gac1a94a046cfcf628aa6692941a206adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию GetDouble в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gac1a94a046cfcf628aa6692941a206adc">Подробнее...</a><br/></td></tr>
+<tr class="separator:gac1a94a046cfcf628aa6692941a206adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fdbebbf63a4c3cd16bbf660614f18c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a2b24ec8edd78c631d7576e9e0804bd3b">xyplot::LPFNISENABLED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga2fdbebbf63a4c3cd16bbf660614f18c0">m_lpfnIsEnabled</a></td></tr>
+<tr class="memdesc:ga2fdbebbf63a4c3cd16bbf660614f18c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию IsEnabled в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga2fdbebbf63a4c3cd16bbf660614f18c0">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga2fdbebbf63a4c3cd16bbf660614f18c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga421533a2bc619d310d3d15ea0e711e2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#adc713064c472b328718bae52d4a28eb5">xyplot::LPFNENABLEITEM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga421533a2bc619d310d3d15ea0e711e2e">m_lpfnEnableItem</a></td></tr>
+<tr class="memdesc:ga421533a2bc619d310d3d15ea0e711e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию EnableItem в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga421533a2bc619d310d3d15ea0e711e2e">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga421533a2bc619d310d3d15ea0e711e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74b37df4630a8a23c0751467389449c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a097f19903e90904e363a37bd0418d16b">xyplot::LPFNSAVEPROPERTIES</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga74b37df4630a8a23c0751467389449c7">m_lpfnSaveProperties</a></td></tr>
+<tr class="memdesc:ga74b37df4630a8a23c0751467389449c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию SaveProperties в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga74b37df4630a8a23c0751467389449c7">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga74b37df4630a8a23c0751467389449c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13af71d79b02970b7d7c78d148b7fb3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a5fcef3c2ef35e0f543cb6e0489566a41">xyplot::LPFNLOADPROPERTIES</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga13af71d79b02970b7d7c78d148b7fb3e">m_lpfnLoadProperties</a></td></tr>
+<tr class="memdesc:ga13af71d79b02970b7d7c78d148b7fb3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию LoadProperties в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga13af71d79b02970b7d7c78d148b7fb3e">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga13af71d79b02970b7d7c78d148b7fb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4be55c9f4df8ac61fd6735edfe546eb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a8a0a6d08dd052f79805399d35f400536">xyplot::LPFNSELECT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga4be55c9f4df8ac61fd6735edfe546eb6">m_lpfnSelect</a></td></tr>
+<tr class="memdesc:ga4be55c9f4df8ac61fd6735edfe546eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию Select в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga4be55c9f4df8ac61fd6735edfe546eb6">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga4be55c9f4df8ac61fd6735edfe546eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3365cbe41762a81c38364e87871cf33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#accdc65e18386127090607d48d4d6ef55">xyplot::LPFNGETSELECTION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gab3365cbe41762a81c38364e87871cf33">m_lpfnGetSelection</a></td></tr>
+<tr class="memdesc:gab3365cbe41762a81c38364e87871cf33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию GetSelection в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gab3365cbe41762a81c38364e87871cf33">Подробнее...</a><br/></td></tr>
+<tr class="separator:gab3365cbe41762a81c38364e87871cf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa80069b8151f0ac44feb1d2c822cf37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a64a77ea08258ed9ffc0bf7ffda3da7a4">xyplot::LPFNCOPYTOCLIPBOARD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gaaa80069b8151f0ac44feb1d2c822cf37">m_lpfnCopyToClipboard</a></td></tr>
+<tr class="memdesc:gaaa80069b8151f0ac44feb1d2c822cf37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию CopyToClipboard в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gaaa80069b8151f0ac44feb1d2c822cf37">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaaa80069b8151f0ac44feb1d2c822cf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac78dbe52f4384dce76714ab7af98d53f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#abe5bcbe4527096dba3cee83119449785">xyplot::LPFNDRAWTOBITMAP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gac78dbe52f4384dce76714ab7af98d53f">m_lpfnDrawToBitmap</a></td></tr>
+<tr class="memdesc:gac78dbe52f4384dce76714ab7af98d53f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию DrawToBitmap в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gac78dbe52f4384dce76714ab7af98d53f">Подробнее...</a><br/></td></tr>
+<tr class="separator:gac78dbe52f4384dce76714ab7af98d53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe7e6b9cda98ce4ad3e328a195b21883"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#ab1a3054ba818e5b40da27a562af9714c">xyplot::LPFNCREATEGROUP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gafe7e6b9cda98ce4ad3e328a195b21883">m_lpfnCreateGroup</a></td></tr>
+<tr class="memdesc:gafe7e6b9cda98ce4ad3e328a195b21883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию CreateGroup в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gafe7e6b9cda98ce4ad3e328a195b21883">Подробнее...</a><br/></td></tr>
+<tr class="separator:gafe7e6b9cda98ce4ad3e328a195b21883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0503dbf4de0b55a29652e1266f5d6ef4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a17ee39c2695e1c7c78048d0672744524">xyplot::LPFNDELETEGROUP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga0503dbf4de0b55a29652e1266f5d6ef4">m_lpfnDeleteGroup</a></td></tr>
+<tr class="memdesc:ga0503dbf4de0b55a29652e1266f5d6ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию DeleteGroup в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga0503dbf4de0b55a29652e1266f5d6ef4">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga0503dbf4de0b55a29652e1266f5d6ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf868f86e6094025ea6e21f6f0ba4140c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#ae721ca071f1b5292073d3e831c8b1150">xyplot::LPFNBINDPROFILE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gaf868f86e6094025ea6e21f6f0ba4140c">m_lpfnBindProfile</a></td></tr>
+<tr class="memdesc:gaf868f86e6094025ea6e21f6f0ba4140c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию BindProfile в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gaf868f86e6094025ea6e21f6f0ba4140c">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaf868f86e6094025ea6e21f6f0ba4140c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e30180703300607ed08653d0a7861eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a6dfacb1414fefdad54092cb9264eb4b1">xyplot::LPFNGETPROFLIST</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga7e30180703300607ed08653d0a7861eb">m_lpfnGetProfileList</a></td></tr>
+<tr class="memdesc:ga7e30180703300607ed08653d0a7861eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию GetProfileList в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga7e30180703300607ed08653d0a7861eb">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga7e30180703300607ed08653d0a7861eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4eb7d852474ae198afe0c1b67b38d63c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a4b16720b36f41b782b9c112b406d9698">xyplot::LPFNREGRESTOREDEFAULTS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga4eb7d852474ae198afe0c1b67b38d63c">m_lpfnRegRestoreDefaults</a></td></tr>
+<tr class="memdesc:ga4eb7d852474ae198afe0c1b67b38d63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию RegRestoreDefaults.  <a href="group__gr_func_pointers.html#ga4eb7d852474ae198afe0c1b67b38d63c">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga4eb7d852474ae198afe0c1b67b38d63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada86eb509b8fb88edc54dd634a198db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a2f14b7c1bf6f824f039dd8cafcd19f20">xyplot::LPFNREGLOADSETTINGS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gada86eb509b8fb88edc54dd634a198db6">m_lpfnRegLoadSettings</a></td></tr>
+<tr class="memdesc:gada86eb509b8fb88edc54dd634a198db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию RegLoadSettings в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gada86eb509b8fb88edc54dd634a198db6">Подробнее...</a><br/></td></tr>
+<tr class="separator:gada86eb509b8fb88edc54dd634a198db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb18df7cd092a71ad121f55d047da5dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a852637cd21abfcac7de9635bbd175db7">xyplot::LPFNREGSAVESETTINGS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gacb18df7cd092a71ad121f55d047da5dc">m_lpfnRegSaveSettings</a></td></tr>
+<tr class="memdesc:gacb18df7cd092a71ad121f55d047da5dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию RegSaveSettings в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gacb18df7cd092a71ad121f55d047da5dc">Подробнее...</a><br/></td></tr>
+<tr class="separator:gacb18df7cd092a71ad121f55d047da5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ee84aa8c78971f94a8abb1bd5ed9558"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a63fcd576a6d31af2655357ffa3ea7b74">xyplot::LPFNRUNDIALOG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga6ee84aa8c78971f94a8abb1bd5ed9558">m_lpfnRunDialog</a></td></tr>
+<tr class="memdesc:ga6ee84aa8c78971f94a8abb1bd5ed9558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию RunDialog в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga6ee84aa8c78971f94a8abb1bd5ed9558">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga6ee84aa8c78971f94a8abb1bd5ed9558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccaf69dea4abee8034cf3d7e4164ac3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a0aaffe16c53538a1e712cdc6caef070f">xyplot::LPFNADDREGION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gaccaf69dea4abee8034cf3d7e4164ac3d">m_lpfnAddRegion</a></td></tr>
+<tr class="memdesc:gaccaf69dea4abee8034cf3d7e4164ac3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию AddRegion в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gaccaf69dea4abee8034cf3d7e4164ac3d">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaccaf69dea4abee8034cf3d7e4164ac3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf02bf6794063914ee9dbe34fb0d29c0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#ad184f4d62ca85e471cef796c79dd0b4c">xyplot::LPFNDELETEREGION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gaf02bf6794063914ee9dbe34fb0d29c0e">m_lpfnDeleteRegion</a></td></tr>
+<tr class="memdesc:gaf02bf6794063914ee9dbe34fb0d29c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию DeleteRegion в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gaf02bf6794063914ee9dbe34fb0d29c0e">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaf02bf6794063914ee9dbe34fb0d29c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae81937286e2936ec1f24abfd7334c364"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a048931557c2d0bfaa041629319bb118d">xyplot::LPFNSETREGION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gae81937286e2936ec1f24abfd7334c364">m_lpfnSetRegion</a></td></tr>
+<tr class="memdesc:gae81937286e2936ec1f24abfd7334c364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию SetRegion в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gae81937286e2936ec1f24abfd7334c364">Подробнее...</a><br/></td></tr>
+<tr class="separator:gae81937286e2936ec1f24abfd7334c364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62b0b0bd4d99cf0d395c6ebe713fadfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#acfe1c4a6bf88e4c101cae03f31602993">xyplot::LPFNADDLEVEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga62b0b0bd4d99cf0d395c6ebe713fadfa">m_lpfnAddLevel</a></td></tr>
+<tr class="memdesc:ga62b0b0bd4d99cf0d395c6ebe713fadfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию AddLevel в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga62b0b0bd4d99cf0d395c6ebe713fadfa">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga62b0b0bd4d99cf0d395c6ebe713fadfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadeccbf45813bb1f7ffcb85fb1679b371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a96f2d0955d7feb162b2730e65398ed64">xyplot::LPFNDELETELEVEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#gadeccbf45813bb1f7ffcb85fb1679b371">m_lpfnDeleteLevel</a></td></tr>
+<tr class="memdesc:gadeccbf45813bb1f7ffcb85fb1679b371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию DeleteLevel в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#gadeccbf45813bb1f7ffcb85fb1679b371">Подробнее...</a><br/></td></tr>
+<tr class="separator:gadeccbf45813bb1f7ffcb85fb1679b371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87f88da036cf4c05533e8f913d608ff7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#ae4a8b61fef16cdd55e9491d30f602509">xyplot::LPFNSETLEVEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_func_pointers.html#ga87f88da036cf4c05533e8f913d608ff7">m_lpfnSetLevel</a></td></tr>
+<tr class="memdesc:ga87f88da036cf4c05533e8f913d608ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на функцию SetLevel в модуле m_hDllInstance.  <a href="group__gr_func_pointers.html#ga87f88da036cf4c05533e8f913d608ff7">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga87f88da036cf4c05533e8f913d608ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс-обертка для работы с 2D графикой </p>
+<p>Класс-обертка для работы с объектами отображения 2D графики. Данный класс предоставляет инструменты создания, манипуляции и уничтожение объектов 2D графики. Класс является сингелтоном , т.е. существует только один экземпляр данного класса, доступ к которому осуществляется через статическую функцию <b>Instance</b>. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a402bc06e3eb7f165e3c1415d691df3b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xyplot::XYPlotManager::~XYPlotManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Деструктор класса обертки </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a3e8a430da4df94af8575d388064f21df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::CopyToClipboard </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>dpi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция копирует текущее содержимое экзкемпляра 2D графики в буфер обмена в виде изображения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">width</td><td>- ширина результирующего изображения в пикселях </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">height</td><td>- высота результирующего изображения в пикселях </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">dpi</td><td>- разрешение изображения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае если копирование прошло успешно; </dd>
+<dd>
+false - в случае если не удалось скопировать экземпляр в буфер обмена. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a056c90eb93b99097d2514177b0b993b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::DrawToBitmap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HBITMAP &amp;&#160;</td>
+          <td class="paramname"><em>hBitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bDrawWindowBG</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bDrawClientBG</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция копирует текущее содержимое экзкемпляра 2D в буфер битовую карту. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">hBitmap</td><td>- дескриптор битовой карты </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">bDrawWindowBG</td><td>- флаг отрисовки фона окна </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">bDrawClientBG</td><td>- флаг отрисовки фона клиентской части </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае если копирование прошло успешно; </dd>
+<dd>
+false - в случае если не удалось скопировать экземпляр в буфер обмена. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad9528d6181d8935cc7ad9c1d34671bc8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xyplot::XYPlotManager::GetLastError </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения кода последней ошибки </p>
+<dl class="section return"><dt>Возвращает</dt><dd>целочисленный код последней ошибки </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abfde221555f11c692969986174781780"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html">XYPlotManager</a> &amp; XYPlotManager::Instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция доступа к единственному экземпляру класса Класс <a class="el" href="classxyplot_1_1_x_y_plot_manager.html" title="Класс-обертка для работы с 2D графикой ">XYPlotManager</a> является сингелтоном т.е. существует единственный экземпляр объекта данного класса. Доступ к нему осуществляется при помощи данной функции. </p>
+<div class="fragment"><div class="line"><a class="code" href="group__gr_construct.html#gafc0df2010690907aa3a1503ebb90345c">XYPlotManager</a>&amp; pm = <a class="code" href="classxyplot_1_1_x_y_plot_manager.html#abfde221555f11c692969986174781780">XYPlotManager::Instance</a>();</div>
+</div><!-- fragment --> <dl class="section return"><dt>Возвращает</dt><dd>Ссылка на экземпляр </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1c9425d25c34fc173ef0367a2ef9eb74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::RunDialog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вызывает диалог настроек экземпляра 2D графики . </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае если запуск диалога прошел успешно; </dd>
+<dd>
+false - в случае если не удалось запустить диалог настроек. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab7231a3949a367bc02164dc0705e4fa0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::SetRedraw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bRedraw</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция разрешает либо запрещает перерисовку экземпляра 2D графики </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">bRedraw</td><td>- флаг разрешения отрисовки если bRedraw = TRUE окно обновляется после каждой операции. В случае если bRedraw = FALSE окно не обновляется до того момента вызова функции с параметром bRedraw = TRUE <div class="fragment"><div class="line"><a class="code" href="group__gr_construct.html#gafc0df2010690907aa3a1503ebb90345c">XYPlotManager</a>&amp; pm = <a class="code" href="classxyplot_1_1_x_y_plot_manager.html#abfde221555f11c692969986174781780">XYPlotManager::Instance</a>();</div>
+<div class="line"><span class="keywordtype">double</span>* pdX = NULL;</div>
+<div class="line"><span class="keywordtype">double</span>* pdY = NULL;</div>
+<div class="line">HPLOT hPlot = ...;<span class="comment">//Получить дескриптор 2D графики</span></div>
+<div class="line">pm.SetRedraw(hPlot, FALSE); </div>
+<div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; nProfileCount; i++)</div>
+<div class="line">{</div>
+<div class="line">        <span class="comment">//получить данные для профиля</span></div>
+<div class="line">     ...</div>
+<div class="line">    HPROFILE hProf = ...;<span class="comment">//получить дескриптор профиля</span></div>
+<div class="line">    <span class="comment">//установить данные профиля</span></div>
+<div class="line">    pm.SetData(hPlot, hProf, pdX, pdY, nSize);</div>
+<div class="line">    ...<span class="comment">//прочие операции</span></div>
+<div class="line">}</div>
+<div class="line">pm.SetRedraw(hPlot, TRUE);</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a756b2e15fad862294eabbf6781ff8034"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string XYPlotManager::TranslateError </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Расшифровывает код ошибки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>- Код ошибки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает строковое описание ошибки </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a1ddc519fd38e08cba67f11f4d2fad942"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HMODULE xyplot::XYPlotManager::m_hDllInstance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дескриптор модуля </p>
+
+</div>
+</div>
+<a class="anchor" id="ac842be5823171dc50111c6c4c62f1311"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int xyplot::XYPlotManager::m_nLastError</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Код последней ошибки </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="_x_y_plot_wrapper_8h_source.html">XYPlotWrapper.h</a></li>
+<li>src/<a class="el" href="_x_y_plot_wrapper_8cpp.html">XYPlotWrapper.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

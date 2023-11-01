@@ -1,0 +1,840 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Файл src/XYPlotWrapper.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл XYPlotWrapper.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="stdafx_8h_source.html">StdAfx.h</a>&quot;</code><br/>
+<code>#include &lt;assert.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="_x_y_plot_wrapper_8h_source.html">xyplotwrapper.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для XYPlotWrapper.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_x_y_plot_wrapper_8cpp__incl.png" border="0" usemap="#src_2_x_y_plot_wrapper_8cpp" alt=""/></div>
+<map name="src_2_x_y_plot_wrapper_8cpp" id="src_2_x_y_plot_wrapper_8cpp">
+<area shape="rect" id="node2" href="stdafx_8h.html" title="StdAfx.h" alt="" coords="585,80,657,107"/><area shape="rect" id="node16" href="_x_y_plot_wrapper_8h.html" title="xyplotwrapper.h" alt="" coords="1067,80,1181,107"/><area shape="rect" id="node19" href="xyplotconst_8h.html" title="Содержит константы и перечисляемые типы . " alt="" coords="1330,155,1430,181"/></map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a252528a143fd7aceafc47dbb1d7eb0bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a252528a143fd7aceafc47dbb1d7eb0bd">XYFUNNAME_INITIALIZE</a>&#160;&#160;&#160;&quot;_Initialize@8&quot;</td></tr>
+<tr class="separator:a252528a143fd7aceafc47dbb1d7eb0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abb0f0620719cf9f0887766ec620640"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a4abb0f0620719cf9f0887766ec620640">XYFUNNAME_FINALIZE</a>&#160;&#160;&#160;&quot;_Finalize@4&quot;</td></tr>
+<tr class="separator:a4abb0f0620719cf9f0887766ec620640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ff2c82465ddf7221fb73a3cfd11435"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a78ff2c82465ddf7221fb73a3cfd11435">XYFUNNAME_ADDPROFILE</a>&#160;&#160;&#160;&quot;_AddProfile@44&quot;</td></tr>
+<tr class="separator:a78ff2c82465ddf7221fb73a3cfd11435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec6dda7346a117cc30b943f5ed276ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#adec6dda7346a117cc30b943f5ed276ff">XYFUNNAME_DELPROFILE</a>&#160;&#160;&#160;&quot;_DeleteProfile@8&quot;</td></tr>
+<tr class="separator:adec6dda7346a117cc30b943f5ed276ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea29e743b570056496cada2765ccf31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#afea29e743b570056496cada2765ccf31">XYFUNNAME_SETDATA</a>&#160;&#160;&#160;&quot;_SetData@20&quot;</td></tr>
+<tr class="separator:afea29e743b570056496cada2765ccf31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3313d076da08fd2cb5d5178ea6c276"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a0c3313d076da08fd2cb5d5178ea6c276">XYFUNNAME_GETDATA</a>&#160;&#160;&#160;&quot;_GetData@20&quot;</td></tr>
+<tr class="separator:a0c3313d076da08fd2cb5d5178ea6c276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5553e28381052a296408b775862494"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#acd5553e28381052a296408b775862494">XYFUNNAME_APPENDDATA</a>&#160;&#160;&#160;&quot;_AppendData@20&quot;</td></tr>
+<tr class="separator:acd5553e28381052a296408b775862494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67f23d50603f18699f12474fee58540"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#ac67f23d50603f18699f12474fee58540">XYFUNNAME_SETPROFCLR</a>&#160;&#160;&#160;&quot;_SetProfileColor@12&quot;</td></tr>
+<tr class="separator:ac67f23d50603f18699f12474fee58540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c60e44c97f3bd1072cf8e5fb404d257"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a5c60e44c97f3bd1072cf8e5fb404d257">XYFUNNAME_GETPROFCLR</a>&#160;&#160;&#160;&quot;_GetProfileColor@12&quot;</td></tr>
+<tr class="separator:a5c60e44c97f3bd1072cf8e5fb404d257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61fb2f59a4c3f2125ec725c642644b28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a61fb2f59a4c3f2125ec725c642644b28">XYFUNNAME_SETPROFSTL</a>&#160;&#160;&#160;&quot;_ChangeProfileStyle@24&quot;</td></tr>
+<tr class="separator:a61fb2f59a4c3f2125ec725c642644b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52fc6f69c8228e99a7ddfc5b85a528f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a52fc6f69c8228e99a7ddfc5b85a528f4">XYFUNNAME_ENABLEMARK</a>&#160;&#160;&#160;&quot;_EnablePointsMarker@12&quot;</td></tr>
+<tr class="separator:a52fc6f69c8228e99a7ddfc5b85a528f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af181d7cc4a62a02fb22b97a45711dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a3af181d7cc4a62a02fb22b97a45711dd">XYFUNNAME_SETSTRING</a>&#160;&#160;&#160;&quot;_SetString@16&quot;</td></tr>
+<tr class="separator:a3af181d7cc4a62a02fb22b97a45711dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066816b11dbf13937ab34f50ee29f088"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a066816b11dbf13937ab34f50ee29f088">XYFUNNAME_GETSTRING</a>&#160;&#160;&#160;&quot;_GetString@20&quot;</td></tr>
+<tr class="separator:a066816b11dbf13937ab34f50ee29f088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c9b7af410a225f0b128641e1a832a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#af1c9b7af410a225f0b128641e1a832a6">XYFUNNAME_SETCOLOR</a>&#160;&#160;&#160;&quot;_SetColor@16&quot;</td></tr>
+<tr class="separator:af1c9b7af410a225f0b128641e1a832a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192d28ab1d275c7c39ca9dfebc72adae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a192d28ab1d275c7c39ca9dfebc72adae">XYFUNNAME_GETCOLOR</a>&#160;&#160;&#160;&quot;_GetColor@16&quot;</td></tr>
+<tr class="separator:a192d28ab1d275c7c39ca9dfebc72adae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c569dcba4bdacea35726582fa96e601"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a9c569dcba4bdacea35726582fa96e601">XYFUNNAME_SETLONG</a>&#160;&#160;&#160;&quot;_SetLong@16&quot;</td></tr>
+<tr class="separator:a9c569dcba4bdacea35726582fa96e601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a9dd065d2388c9187f0a4ebfd145af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#ab6a9dd065d2388c9187f0a4ebfd145af">XYFUNNAME_GETLONG</a>&#160;&#160;&#160;&quot;_GetLong@16&quot;</td></tr>
+<tr class="separator:ab6a9dd065d2388c9187f0a4ebfd145af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ba686323c626e56c6d38b8f3f58f7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#ab4ba686323c626e56c6d38b8f3f58f7d">XYFUNNAME_SETDOUBLE</a>&#160;&#160;&#160;&quot;_SetDouble@20&quot;</td></tr>
+<tr class="separator:ab4ba686323c626e56c6d38b8f3f58f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ac4c16bf83b8fe5f62b88fe27ee2e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a58ac4c16bf83b8fe5f62b88fe27ee2e1">XYFUNNAME_GETDOUBLE</a>&#160;&#160;&#160;&quot;_GetDouble@16&quot;</td></tr>
+<tr class="separator:a58ac4c16bf83b8fe5f62b88fe27ee2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439d99d395124cd04edcd50361718d29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a439d99d395124cd04edcd50361718d29">XYFUNNAME_SETSELMODE</a>&#160;&#160;&#160;&quot;_SetSelectionMode@8&quot;</td></tr>
+<tr class="separator:a439d99d395124cd04edcd50361718d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76edfa54df7c0ae192b91c946bc644b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#af76edfa54df7c0ae192b91c946bc644b">XYFUNNAME_GETSELMODE</a>&#160;&#160;&#160;&quot;_GetSelectionMode@8&quot;</td></tr>
+<tr class="separator:af76edfa54df7c0ae192b91c946bc644b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352920d229cc47499fac35e92832c687"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a352920d229cc47499fac35e92832c687">XYFUNNAME_ISENABLED</a>&#160;&#160;&#160;&quot;_IsEnabled@16&quot;</td></tr>
+<tr class="separator:a352920d229cc47499fac35e92832c687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4613840cef6eb4e363591b6f01111d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#acf4613840cef6eb4e363591b6f01111d">XYFUNNAME_SETAXRANGE</a>&#160;&#160;&#160;&quot;_SetAxisRange@24&quot;</td></tr>
+<tr class="separator:acf4613840cef6eb4e363591b6f01111d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6203513c42a6e48129c89cc72b9869f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a6203513c42a6e48129c89cc72b9869f1">XYFUNNAME_GETAXRANGE</a>&#160;&#160;&#160;&quot;_GetAxisRange@16&quot;</td></tr>
+<tr class="separator:a6203513c42a6e48129c89cc72b9869f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3bf2c76643d850119abb5a966344ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a7e3bf2c76643d850119abb5a966344ed">XYFUNNAME_GETMARKPOS</a>&#160;&#160;&#160;&quot;_GetMarkerPos@12&quot;</td></tr>
+<tr class="separator:a7e3bf2c76643d850119abb5a966344ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b77bfc1ca5f7c7d45c51171631b4f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a15b77bfc1ca5f7c7d45c51171631b4f6">XYFUNNAME_SETMARKPOS</a>&#160;&#160;&#160;&quot;_SetMarkerPos@20&quot;</td></tr>
+<tr class="separator:a15b77bfc1ca5f7c7d45c51171631b4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b853cbf3bcbf955b0d9ca32df6a7e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a71b853cbf3bcbf955b0d9ca32df6a7e3">XYFUNNAME_GETSELPROF</a>&#160;&#160;&#160;&quot;_GetSelection@8&quot;</td></tr>
+<tr class="separator:a71b853cbf3bcbf955b0d9ca32df6a7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4474f2bb962162acc59a3614eeef1af3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a4474f2bb962162acc59a3614eeef1af3">XYFUNNAME_SETFLASH</a>&#160;&#160;&#160;&quot;_SetFlashSpeed@8&quot;</td></tr>
+<tr class="separator:a4474f2bb962162acc59a3614eeef1af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad775264d5de5ba0bbf7dc159ba164691"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#ad775264d5de5ba0bbf7dc159ba164691">XYFUNNAME_CLIPCOPY</a>&#160;&#160;&#160;&quot;_CopyToClipboard@16&quot;</td></tr>
+<tr class="separator:ad775264d5de5ba0bbf7dc159ba164691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f23b70c02cf20079b020f57a6d25e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a07f23b70c02cf20079b020f57a6d25e7">XYFUNNAME_SETREDRAW</a>&#160;&#160;&#160;&quot;_SetRedraw@8&quot;</td></tr>
+<tr class="separator:a07f23b70c02cf20079b020f57a6d25e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25d2ff026e8b0c4251451ac1294f0553"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a25d2ff026e8b0c4251451ac1294f0553">XYFUNNAME_CREATEGRP</a>&#160;&#160;&#160;&quot;_CreateGroup@8&quot;</td></tr>
+<tr class="separator:a25d2ff026e8b0c4251451ac1294f0553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a064c9e7fc51029109ba633fbf730d89e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a064c9e7fc51029109ba633fbf730d89e">XYFUNNAME_DELETEGRP</a>&#160;&#160;&#160;&quot;_DeleteGroup@8&quot;</td></tr>
+<tr class="separator:a064c9e7fc51029109ba633fbf730d89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077ff7262d42452c5bc002cd0deededd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a077ff7262d42452c5bc002cd0deededd">XYFUNNAME_BINDPROF</a>&#160;&#160;&#160;&quot;_BindProfile@12&quot;</td></tr>
+<tr class="separator:a077ff7262d42452c5bc002cd0deededd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b607db381efa7b04ad58cee067f37e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a61b607db381efa7b04ad58cee067f37e">XYFUNNAME_GETPROFLIST</a>&#160;&#160;&#160;&quot;_GetProfileList@12&quot;</td></tr>
+<tr class="separator:a61b607db381efa7b04ad58cee067f37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadbf9043dcfd385b0023aa091a1608d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#adadbf9043dcfd385b0023aa091a1608d">XYFUNNAME_SAVEPROP</a>&#160;&#160;&#160;&quot;_SaveProperties@8&quot;</td></tr>
+<tr class="separator:adadbf9043dcfd385b0023aa091a1608d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22019629474a2d676ddec8c327ded1eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a22019629474a2d676ddec8c327ded1eb">XYFUNNAME_LOADPROP</a>&#160;&#160;&#160;&quot;_LoadProperties@8&quot;</td></tr>
+<tr class="separator:a22019629474a2d676ddec8c327ded1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2fc9e3179cf7acf1eca8bfa7de209e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#aa2fc9e3179cf7acf1eca8bfa7de209e5">XYFUNNAME_REGRESTORE</a>&#160;&#160;&#160;&quot;_RegRestoreDefaults@4&quot;</td></tr>
+<tr class="separator:aa2fc9e3179cf7acf1eca8bfa7de209e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c4983d9ba41c0f878730c25dfabb93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a15c4983d9ba41c0f878730c25dfabb93">XYFUNNAME_REGLOAD</a>&#160;&#160;&#160;&quot;_RegLoadSettings@12&quot;</td></tr>
+<tr class="separator:a15c4983d9ba41c0f878730c25dfabb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee55614ebeaaca43aaa53e46dae9a58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#abee55614ebeaaca43aaa53e46dae9a58">XYFUNNAME_REGSAVE</a>&#160;&#160;&#160;&quot;_RegSaveSettings@12&quot;</td></tr>
+<tr class="separator:abee55614ebeaaca43aaa53e46dae9a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab0ef861d3f0a34458ba7d4db5b8e806"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#aab0ef861d3f0a34458ba7d4db5b8e806">XYFUNNAME_RUNDIALOG</a>&#160;&#160;&#160;&quot;_RunDialog@4&quot;</td></tr>
+<tr class="separator:aab0ef861d3f0a34458ba7d4db5b8e806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983383093d3cd2baeb49a4e937526b10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a983383093d3cd2baeb49a4e937526b10">XYFUNNAME_ADDLEVEL</a>&#160;&#160;&#160;&quot;_AddLevel@32&quot;</td></tr>
+<tr class="separator:a983383093d3cd2baeb49a4e937526b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efcad0a50934838aa47b175a6402692"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a5efcad0a50934838aa47b175a6402692">XYFUNNAME_DELLEVEL</a>&#160;&#160;&#160;&quot;_DeleteLevel@8&quot;</td></tr>
+<tr class="separator:a5efcad0a50934838aa47b175a6402692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74aa83441f48a9c9d52ddba226894b14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a74aa83441f48a9c9d52ddba226894b14">XYFUNNAME_SETLEVEL</a>&#160;&#160;&#160;&quot;_SetLevel@16&quot;</td></tr>
+<tr class="separator:a74aa83441f48a9c9d52ddba226894b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589e0582fdf933d74f98aff31c731ebc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a589e0582fdf933d74f98aff31c731ebc">XYFUNNAME_ADDREGION</a>&#160;&#160;&#160;&quot;_AddRegion@52&quot;</td></tr>
+<tr class="separator:a589e0582fdf933d74f98aff31c731ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88705042c2fc0af99081ccd4d7c528e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a88705042c2fc0af99081ccd4d7c528e5">XYFUNNAME_DELREGION</a>&#160;&#160;&#160;&quot;_DeleteRegion@8&quot;</td></tr>
+<tr class="separator:a88705042c2fc0af99081ccd4d7c528e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4f8710da448fbac84b93f432619016"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a8e4f8710da448fbac84b93f432619016">XYFUNNAME_SETREGION</a>&#160;&#160;&#160;&quot;_SetRegion@40&quot;</td></tr>
+<tr class="separator:a8e4f8710da448fbac84b93f432619016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914fbfd63604bf2c7ce6c96e0aa00d67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a914fbfd63604bf2c7ce6c96e0aa00d67">XYFUNNAME_SETFONT</a>&#160;&#160;&#160;&quot;_SetFont@16&quot;</td></tr>
+<tr class="separator:a914fbfd63604bf2c7ce6c96e0aa00d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2fbdc940f95bef5703542833c681e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a4b2fbdc940f95bef5703542833c681e2">XYFUNNAME_ENITEM</a>&#160;&#160;&#160;&quot;_EnableItem@16&quot;</td></tr>
+<tr class="separator:a4b2fbdc940f95bef5703542833c681e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dfabc7fc2e5269fabc6e274c2ee1cb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#a6dfabc7fc2e5269fabc6e274c2ee1cb2">XYFUNNAME_FLASHPROF</a>&#160;&#160;&#160;&quot;_Select@12&quot;</td></tr>
+<tr class="separator:a6dfabc7fc2e5269fabc6e274c2ee1cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8075572da1f7f7812add277f44484e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#ade8075572da1f7f7812add277f44484e">XYFUNNAME_DRAWTOBITMAP</a>&#160;&#160;&#160;&quot;_DrawToBitmap@16&quot;</td></tr>
+<tr class="separator:ade8075572da1f7f7812add277f44484e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8b23e1e2dcdc572bc03d73a6c543ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8cpp.html#abc8b23e1e2dcdc572bc03d73a6c543ab">CHECK_FUNCTION_POINTER</a>(a)&#160;&#160;&#160;if (!(a)) return FALSE;</td></tr>
+<tr class="separator:abc8b23e1e2dcdc572bc03d73a6c543ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a class="anchor" id="abc8b23e1e2dcdc572bc03d73a6c543ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK_FUNCTION_POINTER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;if (!(a)) return FALSE;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a983383093d3cd2baeb49a4e937526b10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_ADDLEVEL&#160;&#160;&#160;&quot;_AddLevel@32&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a78ff2c82465ddf7221fb73a3cfd11435"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_ADDPROFILE&#160;&#160;&#160;&quot;_AddProfile@44&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a589e0582fdf933d74f98aff31c731ebc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_ADDREGION&#160;&#160;&#160;&quot;_AddRegion@52&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd5553e28381052a296408b775862494"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_APPENDDATA&#160;&#160;&#160;&quot;_AppendData@20&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a077ff7262d42452c5bc002cd0deededd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_BINDPROF&#160;&#160;&#160;&quot;_BindProfile@12&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad775264d5de5ba0bbf7dc159ba164691"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_CLIPCOPY&#160;&#160;&#160;&quot;_CopyToClipboard@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a25d2ff026e8b0c4251451ac1294f0553"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_CREATEGRP&#160;&#160;&#160;&quot;_CreateGroup@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a064c9e7fc51029109ba633fbf730d89e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_DELETEGRP&#160;&#160;&#160;&quot;_DeleteGroup@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5efcad0a50934838aa47b175a6402692"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_DELLEVEL&#160;&#160;&#160;&quot;_DeleteLevel@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adec6dda7346a117cc30b943f5ed276ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_DELPROFILE&#160;&#160;&#160;&quot;_DeleteProfile@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88705042c2fc0af99081ccd4d7c528e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_DELREGION&#160;&#160;&#160;&quot;_DeleteRegion@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade8075572da1f7f7812add277f44484e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_DRAWTOBITMAP&#160;&#160;&#160;&quot;_DrawToBitmap@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a52fc6f69c8228e99a7ddfc5b85a528f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_ENABLEMARK&#160;&#160;&#160;&quot;_EnablePointsMarker@12&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4b2fbdc940f95bef5703542833c681e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_ENITEM&#160;&#160;&#160;&quot;_EnableItem@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4abb0f0620719cf9f0887766ec620640"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_FINALIZE&#160;&#160;&#160;&quot;_Finalize@4&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6dfabc7fc2e5269fabc6e274c2ee1cb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_FLASHPROF&#160;&#160;&#160;&quot;_Select@12&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6203513c42a6e48129c89cc72b9869f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_GETAXRANGE&#160;&#160;&#160;&quot;_GetAxisRange@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a192d28ab1d275c7c39ca9dfebc72adae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_GETCOLOR&#160;&#160;&#160;&quot;_GetColor@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0c3313d076da08fd2cb5d5178ea6c276"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_GETDATA&#160;&#160;&#160;&quot;_GetData@20&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a58ac4c16bf83b8fe5f62b88fe27ee2e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_GETDOUBLE&#160;&#160;&#160;&quot;_GetDouble@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6a9dd065d2388c9187f0a4ebfd145af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_GETLONG&#160;&#160;&#160;&quot;_GetLong@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e3bf2c76643d850119abb5a966344ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_GETMARKPOS&#160;&#160;&#160;&quot;_GetMarkerPos@12&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c60e44c97f3bd1072cf8e5fb404d257"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_GETPROFCLR&#160;&#160;&#160;&quot;_GetProfileColor@12&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a61b607db381efa7b04ad58cee067f37e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_GETPROFLIST&#160;&#160;&#160;&quot;_GetProfileList@12&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af76edfa54df7c0ae192b91c946bc644b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_GETSELMODE&#160;&#160;&#160;&quot;_GetSelectionMode@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a71b853cbf3bcbf955b0d9ca32df6a7e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_GETSELPROF&#160;&#160;&#160;&quot;_GetSelection@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a066816b11dbf13937ab34f50ee29f088"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_GETSTRING&#160;&#160;&#160;&quot;_GetString@20&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a252528a143fd7aceafc47dbb1d7eb0bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_INITIALIZE&#160;&#160;&#160;&quot;_Initialize@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a352920d229cc47499fac35e92832c687"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_ISENABLED&#160;&#160;&#160;&quot;_IsEnabled@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a22019629474a2d676ddec8c327ded1eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_LOADPROP&#160;&#160;&#160;&quot;_LoadProperties@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a15c4983d9ba41c0f878730c25dfabb93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_REGLOAD&#160;&#160;&#160;&quot;_RegLoadSettings@12&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa2fc9e3179cf7acf1eca8bfa7de209e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_REGRESTORE&#160;&#160;&#160;&quot;_RegRestoreDefaults@4&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abee55614ebeaaca43aaa53e46dae9a58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_REGSAVE&#160;&#160;&#160;&quot;_RegSaveSettings@12&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aab0ef861d3f0a34458ba7d4db5b8e806"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_RUNDIALOG&#160;&#160;&#160;&quot;_RunDialog@4&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adadbf9043dcfd385b0023aa091a1608d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SAVEPROP&#160;&#160;&#160;&quot;_SaveProperties@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf4613840cef6eb4e363591b6f01111d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETAXRANGE&#160;&#160;&#160;&quot;_SetAxisRange@24&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af1c9b7af410a225f0b128641e1a832a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETCOLOR&#160;&#160;&#160;&quot;_SetColor@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afea29e743b570056496cada2765ccf31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETDATA&#160;&#160;&#160;&quot;_SetData@20&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab4ba686323c626e56c6d38b8f3f58f7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETDOUBLE&#160;&#160;&#160;&quot;_SetDouble@20&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4474f2bb962162acc59a3614eeef1af3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETFLASH&#160;&#160;&#160;&quot;_SetFlashSpeed@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a914fbfd63604bf2c7ce6c96e0aa00d67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETFONT&#160;&#160;&#160;&quot;_SetFont@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a74aa83441f48a9c9d52ddba226894b14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETLEVEL&#160;&#160;&#160;&quot;_SetLevel@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9c569dcba4bdacea35726582fa96e601"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETLONG&#160;&#160;&#160;&quot;_SetLong@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a15b77bfc1ca5f7c7d45c51171631b4f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETMARKPOS&#160;&#160;&#160;&quot;_SetMarkerPos@20&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac67f23d50603f18699f12474fee58540"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETPROFCLR&#160;&#160;&#160;&quot;_SetProfileColor@12&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a61fb2f59a4c3f2125ec725c642644b28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETPROFSTL&#160;&#160;&#160;&quot;_ChangeProfileStyle@24&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a07f23b70c02cf20079b020f57a6d25e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETREDRAW&#160;&#160;&#160;&quot;_SetRedraw@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e4f8710da448fbac84b93f432619016"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETREGION&#160;&#160;&#160;&quot;_SetRegion@40&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a439d99d395124cd04edcd50361718d29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETSELMODE&#160;&#160;&#160;&quot;_SetSelectionMode@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3af181d7cc4a62a02fb22b97a45711dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYFUNNAME_SETSTRING&#160;&#160;&#160;&quot;_SetString@16&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

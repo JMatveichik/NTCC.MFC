@@ -1,0 +1,640 @@
+#include "stdafx.h"
+#include "WatchDogs.h"
+
+#include "..\\ah_errors.h"
+#include "..\\ah_msgprovider.h"
+#include "..\\ah_xml.h"
+#include "..\\ah_scripts.h"
+
+
+using namespace std;
+
+#ifdef _DEBUG
+#define new DEBUG_NEW	
+#endif
+
+/****************************************************************/
+/*              Класс WatchDog									*/
+/****************************************************************/
+
+//инициализация хранилища всех сторожевых объектов
+std::map<std::string, BaseWatchDog*> BaseWatchDog::watchDogs; 
+
+BaseWatchDog::BaseWatchDog() : 
+m_pListenDS(NULL),  m_bListenState (true), m_nWaitOnSet(5000), m_nCounter(0), m_bStopOnSet(false), m_nConfirmTime(0)
+{
+
+}
+
+//Деструктор
+BaseWatchDog::~BaseWatchDog()
+{
+	
+}
+
+std::string BaseWatchDog::Name() const
+{
+	return m_sID;
+}
+
+bool BaseWatchDog::AddWatchDog(BaseWatchDog* pWD)
+{
+	strstream str;
+	string id = pWD->Name();
+	if ( id.empty() )
+	{
+		AppErrorsHelper::Instance().SetLastError(DSCE_EMPTY_PARAMETR, "Пустой идентификатор сторожевого объекта");
+		return false;
+	}
+
+	map<string, BaseWatchDog*>::const_iterator fnd;
+	fnd =  watchDogs.find( id );
+
+	if ( fnd != watchDogs.end() )
+	{
+		str << "Watchdog with name (" << id.c_str() <<") already exist" << std::ends;
+		AppErrorsHelper::Instance().SetLastError(DSCE_DUPLICATE_NAME, str.str() );
+		return false;
+	}
+
+	return watchDogs.insert( std::make_pair(id, pWD) ).second; 
+}
+
+
+const BaseWatchDog* BaseWatchDog::GetWatchDog(std::string name)
+{
+	map<std::string, BaseWatchDog*>::const_iterator fnd;
+	fnd =  watchDogs.find( name );
+
+	if ( fnd == watchDogs.end() )
+		return NULL;
+	else
+		return (*fnd).second;
+}
+
+void BaseWatchDog::ClearAll()
+{
+	for(std::map<std::string, BaseWatchDog*>::iterator it = watchDogs.begin(); it != watchDogs.end(); ++it )
+	{
+		(*it).second->Stop();
+		delete (*it).second;
+	}
+
+	watchDogs.clear();
+}
+
+//создание источника данных из XML узла
+bool BaseWatchDog::CreateFromXMLNode(IXMLDOMNode* pNode)
+{
+	//<WATCHDOG TYPE="WDDOUT" NAME="id" LDS="dsID" LSTATE="1" LINTERVAL = "250" DSOUTID="dsDOUT" SETSTATE="1" STOPONSET="0">
+	std::string sAtr;
+	AppErrorsHelper& err = AppErrorsHelper::Instance();
+	strstream str;
+
+	const AppXMLHelper& appXML = appXML.Instance();
+
+	//Имя сторожевого объекта
+	if ( !appXML.GetNodeAttributeByName( pNode, "NAME", sAtr) || sAtr.length() == 0 )
+	{
+		err.SetLastError(WDCE_NAME_NOT_SET, "Name not set for watchdog object");		
+		return false;
+	}
+	std::string name = sAtr;
+
+	//Имя источника данных для прослушивания  
+	if ( !appXML.GetNodeAttributeByName( pNode, "LDS", sAtr) || sAtr.length() == 0 )
+	{
+		err.SetLastError(WDCE_LISTEN_DS_NOT_SET, "Listen data source not set");
+		return NULL;
+	}
+	std::string listenDSName = sAtr;
+
+	//Состояние источника данных для прослушивания
+	bool blistenState = HIGH_STATE; 
+	if ( appXML.GetNodeAttributeByName( pNode, "LSTATE", sAtr) )
+		blistenState = atoi(sAtr.c_str()) > 0;
+
+	//Интервал прослушивания прослушивания
+	int listenInterval = MINDELAY; 
+	if ( appXML.GetNodeAttributeByName( pNode, "LINTERVAL", sAtr) )
+		listenInterval = atoi(sAtr.c_str());
+
+
+	m_bStopOnSet = false;
+	if ( appXML.GetNodeAttributeByName( pNode, "STOPONSET", sAtr) )
+		m_bStopOnSet = atoi(sAtr.c_str()) > 0;
+
+	//Остановка прослушивания при срабатывании
+	int nWaitOnSet = 5000; 
+	if ( appXML.GetNodeAttributeByName( pNode, "WAITONSET", sAtr) )
+		nWaitOnSet = atoi(sAtr.c_str());
+
+	//Остановка прослушивания при срабатывании
+	int ConfirmCount = 0; 
+	if ( appXML.GetNodeAttributeByName( pNode, "CONFIRM", sAtr) )
+		ConfirmCount = atoi(sAtr.c_str());
+
+	m_nConfirmTime  = ConfirmCount;
+	
+	return BaseWatchDog::Create(name, listenDSName, blistenState, nWaitOnSet, listenInterval);
+}
+
+
+bool BaseWatchDog::Create(std::string sID, std::string sListenDSID, bool bListenState,  int nWaitOnSet/* = false*/, unsigned int updateInterval/* = MINDELAY*/)
+{
+	AppErrorsHelper& err = AppErrorsHelper::Instance();
+	std::strstream str;
+
+	//уже создан (задан прослушивыемый источник данных)
+	if (m_pListenDS != NULL)
+	{
+		str << "Watchdog object already in use" << ends;
+		err.SetLastError(WDCE_ALREADY_USED, str.str());
+		return false;	
+	}
+
+	//ID должен быть уникальным
+	if ( watchDogs.find( sID) != watchDogs.end() )
+	{
+		str << "Duplicate name. Watchdog object [ "<< sID.c_str() <<" ] already exist" << ends;
+		err.SetLastError(WDCE_DUPLICATE_ID, str.str());
+		return false;	
+	}
+
+	m_sID = sID;
+
+	//Ищем источник данных
+	m_pListenDS = dynamic_cast<const DiscreteDataSrc*>(DataSrc::GetDataSource(sListenDSID));
+
+	//дискретный источник данных должен существовать
+	if (m_pListenDS == NULL)
+	{
+		str << "Listen  discrete data source object [ "<< sListenDSID.c_str() <<" ] not found" << ends;
+		err.SetLastError(WDCE_LISTEN_DS_NOT_FOUND, str.str());
+		return false;
+	}
+
+	m_bListenState = bListenState;	
+
+	//запоминаем текущее состояние источника данных
+	m_bPrevState = m_pListenDS->IsEnabled();
+
+	//устанавливаем флаг останова при срабатывании
+	m_nWaitOnSet = nWaitOnSet;
+
+	//запускаем прослушивание немедленно если интервал 
+	//обновления больше минимального
+	if ( updateInterval >= MINDELAY )
+		Start(updateInterval);
+
+	return true;
+}
+
+void BaseWatchDog::ControlState()
+{
+
+	OnListenStateSet();
+}
+
+void BaseWatchDog::LogEvent(std::strstream& out)
+{
+	out << "Default event log function called for class \"" << typeid(this).name() << "\"" << std::ends;	
+}
+
+bool BaseWatchDog::Start(unsigned int nInterval)
+{
+	if (m_pListenDS == NULL)
+		return false;	//еще не создан
+
+	return TimedControl::Start(nInterval);
+}
+
+
+void BaseWatchDog::ControlProc()
+{
+	if (m_nCounter > 0)
+	{
+		m_nCounter--;
+		return;
+	}
+
+	bool curState = m_pListenDS->IsEnabled();
+	bool changeState = (m_bPrevState != curState);
+
+	//при условии установления прослушиваемого источника данных в заданное состояние
+	if ( changeState && ( m_bListenState == curState) )
+	{
+		//подтверждаем изменение состояния
+		if ( !ConfirmStateChanges() )
+			return;
+
+		//Вызываем внутренний обработчик
+		ControlState();
+
+		//Вызываем присоединенные обработчик
+		evOnWatchDogSet(m_pListenDS);
+
+		//если задан флаг остановки после срабатывания
+		if ( m_bStopOnSet )
+		{
+			::SetEvent(m_hStopEvent);
+			return;
+		}
+		
+		//m_bPrevState = !m_bListenState;
+		
+		//если установлен флаг ожидания
+		if ( m_nWaitOnSet > 0 )
+		{
+			m_nCounter = m_nWaitOnSet / GetInterval();
+		}
+		
+		//return;
+	}
+
+	//запоминаем новое состояние
+	m_bPrevState = curState;
+}
+
+bool BaseWatchDog::ConfirmStateChanges() const
+{
+	int nCount = int( double(m_nConfirmTime) / GetInterval() );
+	if (nCount == 0)
+		nCount++;
+
+	for (int i = 0; i < nCount; i++)
+	{
+		::Sleep( GetInterval() );
+
+		bool curState = m_pListenDS->IsEnabled();
+
+		if ( curState != m_bListenState )
+			return false;
+	}
+	return true;
+}
+
+/************************************************************************/
+/*                                                                      */
+/************************************************************************/
+
+//Конструктор
+WatchDogDO::WatchDogDO()
+{
+}
+
+//Деструктор
+WatchDogDO::~WatchDogDO()
+{
+}
+
+
+WatchDogDO* WatchDogDO::CreateFromXML(IXMLDOMNode* pNode, UINT& error)
+{
+	auto_ptr<WatchDogDO> obj ( new WatchDogDO() );
+
+	if( !obj->CreateFromXMLNode(pNode) )
+	{
+		AppErrorsHelper::Instance().GetLastError(error);
+		return NULL;
+	}
+
+	error = DSCE_OK;
+	return obj.release();
+}
+
+bool WatchDogDO::CreateFromXMLNode(IXMLDOMNode* pNode)
+{
+	if ( !BaseWatchDog::CreateFromXMLNode(pNode) )
+		return false;
+
+	std::string sAtr;
+	std::strstream str;
+	AppErrorsHelper& err = AppErrorsHelper::Instance();
+	const AppXMLHelper& appXML = AppXMLHelper::Instance();
+
+	CComPtr<IXMLDOMNodeList> pItems;
+	HRESULT hr = pNode->selectNodes(CComBSTR("ITEM"), &pItems);
+
+	long lItems;	
+
+	pItems->get_length(&lItems);
+	pItems->reset();
+
+	if ( lItems == 0 )
+	{
+		str << "Empty item list" << std::ends;
+		err.SetLastError(WDCE_OUTPUT_DS_NOT_SET, str.str());		
+		return false;		
+	}
+
+	for(int i = 0; i < lItems; i++)
+	{
+		CComPtr<IXMLDOMNode> pDSItem;
+		pItems->get_item(i, &pDSItem);
+
+		if ( !appXML.GetNodeAttributeByName( pDSItem, "DSID", sAtr) )
+		{
+			str << "Output data source name not set" << std::ends;
+			err.SetLastError(WDCE_OUTPUT_DS_NOT_SET, str.str());		
+			return false;		
+		}
+
+		DataSrc* pDS = DataSrc::GetDataSource(sAtr.c_str());
+		if (pDS == NULL)
+		{
+			str << "Data source with name [" << sAtr.c_str() << "] not found" << std::ends;
+			err.SetLastError(WDCE_OUTPUT_DS_NOT_FOUND, str.str());		
+			return false;		
+		}
+
+		DiscreteOutputDataSrc* pDODS = dynamic_cast<DiscreteOutputDataSrc*>(pDS);
+		if (pDODS == NULL)
+		{
+			str << "Data source with name [" << sAtr.c_str() << "] not discrete output" << std::ends;
+			err.SetLastError(WDCE_OUTPUT_DS_INVALID_TYPE, str.str());		
+			return false;		
+		}
+
+		bool st = false;
+		if ( !appXML.GetNodeAttributeByName( pDSItem, "STATE", sAtr) )
+		{
+			str << "State for data source [" << pDS->Name().c_str() << "] not set" << std::ends;
+			err.SetLastError(WDCE_ATTRIBUTE_NOT_SET, str.str());		
+			return false;		
+		}
+
+		st = atoi(sAtr.c_str()) > 0;
+
+		m_vDSOut.push_back( std::make_pair(pDODS, st) );
+
+	}
+
+	return true;
+}
+
+bool WatchDogDO::Create(std::string sID, std::string sListenDSID, bool bListenState, std::string sOutputDSID, bool bOutState, int nWaitOnSet/* = false*/, unsigned int updateInterval/* = MINDELAY*/)
+{
+	AppErrorsHelper& err = AppErrorsHelper::Instance();
+	std::strstream str;
+	
+// 	Ищем источник данных
+// 		m_pOutDS = dynamic_cast<const DiscreteOutputDataSrc*>(DataSrc::GetDataSource(sOutputDSID));
+// 	
+// 		if ( m_pOutDS == NULL )
+// 		{
+// 			str << "Output data source object [ " << sOutputDSID << " ] not found" << ends;
+// 			err.SetLastError(WDCE_OUTPUT_DS_NOT_FOUND, str.str() );
+// 			return false; 
+// 		}
+// 	
+// 		
+// 		m_bOutState = bOutState;
+
+	return BaseWatchDog::Create(sID, sListenDSID, bListenState, nWaitOnSet, updateInterval);
+}
+
+void WatchDogDO::LogEvent(std::strstream& out)
+{
+	
+//	out << "Сработал сторожевой объект [ " << m_sID.c_str() << " ]\n" << "Причина : ИД [ " << m_pListenDS->Name() << "] установился в состояние [ " << m_bListenState << " ].\n";
+//	out << "Действие : ИД [ " << m_pOutDS->Name() << "] переключен в состояние [ " << m_bOutState << " ]." << std::ends;
+
+	
+// 	if ( !m_pOutDS->CanChangeStateTo(m_bOutState) )
+// 		out << "Результат : ИД [ " << m_pOutDS->Name() << "] не может быть переключен в состояние  [ " << m_bOutState << " ].\n" << std::ends;			
+	
+}
+
+void WatchDogDO::OnListenStateSet()
+{
+	//При срабатывании устанавливаем все заданные выходные ИД в заданное состояние
+	//const_cast<DiscreteOutputDataSrc*>( m_pOutDS )->Enable( m_bOutState );
+	std::strstream str;
+	str << "WATCHDOG: [" << Name().c_str() << "] " << " REASON: ["<< m_pListenDS->Name().c_str() << "] change state to ["<< m_bListenState << "]" << endl;
+
+	for (std::vector< std::pair<DiscreteOutputDataSrc*, bool> >::iterator it = m_vDSOut.begin(); it !=  m_vDSOut.end(); ++it)
+	{
+		DiscreteOutputDataSrc* pDS = (*it).first;
+		bool st = (*it).second;
+		pDS->Enable(st);
+
+		str << "\tSwitch [" << pDS->Name().c_str() << "] " << " to  ["<< st << "]" << endl;
+	}	 
+	str << ends;
+
+	DataSrc::LogMessage( str.str() );
+}
+
+
+//////////////////////////////////////////////////////////////////////////
+///
+
+//Конструктор
+WatchDogScriptControl::WatchDogScriptControl()
+{
+
+}
+
+	//Деструктор
+WatchDogScriptControl::~WatchDogScriptControl()
+{
+
+}
+
+WatchDogScriptControl* WatchDogScriptControl::CreateFromXML(IXMLDOMNode* pNode, UINT& error)
+{
+	auto_ptr<WatchDogScriptControl> obj ( new WatchDogScriptControl() );
+
+	if( !obj->CreateFromXMLNode(pNode) )
+	{
+		AppErrorsHelper::Instance().GetLastError(error);
+		return NULL;
+	}
+
+	error = DSCE_OK;
+	return obj.release();
+}
+
+bool WatchDogScriptControl::CreateFromXMLNode(IXMLDOMNode* pNode)
+{
+	if ( !BaseWatchDog::CreateFromXMLNode(pNode) )
+		return false;
+	
+	std::string sAtr;
+	AppErrorsHelper& err = AppErrorsHelper::Instance();
+	std::strstream str;
+
+	const AppXMLHelper& appXML = AppXMLHelper::Instance();
+
+	//Имя управляющего алгоритма для реакции на срабатывание 
+	if ( !appXML.GetNodeAttributeByName( pNode, "SCRIPT", sAtr) || sAtr.length() != 0 )
+	{
+		err.SetLastError(WDCE_SCRIPT_NOT_SET, "Output data source not set");
+		return false;
+	}
+	std::string scriptName = sAtr.c_str();
+
+	
+	//Имя источника данных для реакции на срабатывание 
+	if ( !appXML.GetNodeAttributeByName( pNode, "SCRIPT", sAtr) || sAtr.length() != 0 )
+	{
+		err.SetLastError(WDCE_SCRIPT_NOT_SET, "Output data source not set");
+		return false;
+	}
+	std::string sScriptName = sAtr.c_str();
+	
+	
+	//Ищем скрипт
+	SCRIPTINFO si;
+	AppOBAScriptsHelper::Instance().GetScriptInfo(sScriptName, si); 
+
+	if ( si.name.empty() || si.path.empty())
+	{
+		str << "Script [ " << sScriptName << " ] not found" << ends;
+		err.SetLastError(WDCE_SCRIPT_NOT_FOUND, str.str() );
+		return false; 
+	}
+
+	//Состояние в которое переключается выходной ИД при срабатывании
+	bool bRun = HIGH_STATE; 
+	if ( appXML.GetNodeAttributeByName( pNode, "SETSTATE", sAtr) )
+		bRun = atoi(sAtr.c_str()) > 0;
+
+	m_sScriptName = sScriptName;
+	m_bRun = bRun;
+
+	return true;
+}
+
+bool WatchDogScriptControl::Create(std::string sID, std::string sListenDSID, bool bListenState, std::string sScriptName, bool bRun/* = true*/, int nWaitOnSet/* = false*/, unsigned int updateInterval/* = MINDELAY*/)
+{
+	AppErrorsHelper& err = AppErrorsHelper::Instance();
+	std::strstream str;
+	
+	//Ищем скрипт
+	SCRIPTINFO si;
+	AppOBAScriptsHelper::Instance().GetScriptInfo(sScriptName, si); 
+
+	if ( si.name.empty() || si.path.empty())
+	{
+		str << "Script [ " << sScriptName << " ] not found" << ends;
+		err.SetLastError(WDCE_SCRIPT_NOT_FOUND, str.str() );
+		return false; 
+	}
+
+	m_sScriptName = sScriptName;
+	m_bRun = bRun;
+	
+	return BaseWatchDog::Create(sID, sListenDSID, bListenState, nWaitOnSet, updateInterval);	
+}
+
+
+void WatchDogScriptControl::OnListenStateSet()
+{
+	std::strstream str;
+
+	str << "Сработал сторожевой объект [ " << m_sID.c_str() << " ]\n" << "Причина : ИД [ " << m_pListenDS->Name() << "] установился в состояние [ " << m_bListenState << " ].\n";
+	if ( m_bRun )
+	{
+		str << "Действие : скрипт  [ " << m_sScriptName.c_str() << "] будет запущен "<< std::ends;
+		AppMessagesProviderHelper::Instance().ShowMessage(str.str(), COutMessage::MSG_WARNING);
+
+		AppOBAScriptsHelper::Instance().RunScript(m_sScriptName);
+	}
+	else
+	{
+		str << "Действие : скрипт  [ " << m_sScriptName.c_str() << "] будет остановлен "<< std::ends;
+		AppMessagesProviderHelper::Instance().ShowMessage(str.str(), COutMessage::MSG_WARNING);
+
+		AppOBAScriptsHelper::Instance().TerminateScript(m_sScriptName);
+	}
+}
+
+
+
+//Конструктор
+WatchDogSystemShutdown::WatchDogSystemShutdown ()
+{
+}
+
+//Деструктор
+WatchDogSystemShutdown::~WatchDogSystemShutdown ()
+{
+
+}
+
+//создание источника данных из XML узла
+bool WatchDogSystemShutdown::CreateFromXMLNode(IXMLDOMNode* pNode)
+{
+	if ( !BaseWatchDog::CreateFromXMLNode(pNode) )
+		return false;
+
+	std::string sAtr;
+	AppErrorsHelper& err = AppErrorsHelper::Instance();
+	std::strstream str;
+
+	const AppXMLHelper& appXML = AppXMLHelper::Instance();
+
+	//закрывать только приложение
+	m_bSystemShutDown = false;
+
+	if ( appXML.GetNodeAttributeByName( pNode, "SYSTEM", sAtr) || sAtr.length() != 0 )
+		m_bSystemShutDown = atoi(sAtr.c_str()) > 0;
+
+	return true;	
+}
+
+WatchDogSystemShutdown* WatchDogSystemShutdown::CreateFromXML(IXMLDOMNode* pNode, UINT& error)
+{
+	auto_ptr<WatchDogSystemShutdown> obj ( new WatchDogSystemShutdown() );
+
+	if( !obj->CreateFromXMLNode(pNode) )
+	{
+		AppErrorsHelper::Instance().GetLastError(error);
+		return NULL;
+	}
+
+	error = DSCE_OK;
+	return obj.release();
+
+}
+
+//Вызывается в случае переключения прослушиваемого ИД в заданное состояние
+void WatchDogSystemShutdown::OnListenStateSet()
+{
+	if ( m_bSystemShutDown ) 
+	{
+		//ExitWindowsEx (EWX_SHUTDOWN, 0);
+
+		HANDLE hToken; 
+		TOKEN_PRIVILEGES tkp; 
+
+		// Get a token for this process. 
+
+		if (!OpenProcessToken(GetCurrentProcess(), TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, &hToken)) 
+			return ; 
+
+		// Get the LUID for the shutdown privilege.
+		LookupPrivilegeValue(NULL, SE_SHUTDOWN_NAME, &tkp.Privileges[0].Luid); 
+
+		tkp.PrivilegeCount = 1;  // one privilege to set    
+		tkp.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED; 
+
+		// Get the shutdown privilege for this process. 
+
+		AdjustTokenPrivileges(hToken, FALSE, &tkp, 0,  (PTOKEN_PRIVILEGES)NULL, 0); 
+
+		if (GetLastError() != ERROR_SUCCESS) 
+			return; 
+
+		// Shut down the system and force all applications to close. 
+		if ( !ExitWindowsEx(EWX_SHUTDOWN | EWX_FORCE, 0) ) 
+			return; 
+	}
+	else 
+	{
+		CWnd * pWnd = ::AfxGetApp()->m_pMainWnd;
+		pWnd->PostMessage(WM_CLOSE, 0, 0);
+	}
+}

@@ -1,0 +1,21 @@
+<map id="src/label.h" name="src/label.h">
+<area shape="rect" id="node2" href="$main_8h.html" title="src/main.h" alt="" coords="410,304,493,331"/>
+<area shape="rect" id="node4" href="$label_8cpp.html" title="src/label.cpp" alt="" coords="1227,379,1323,405"/>
+<area shape="rect" id="node13" href="$_axis_8h.html" title="src/Axis.h" alt="" coords="865,80,947,107"/>
+<area shape="rect" id="node3" href="$_axis_8cpp.html" title="src/Axis.cpp" alt="" coords="941,379,1036,405"/>
+<area shape="rect" id="node5" href="$legend_8cpp.html" title="src/legend.cpp" alt="" coords="151,379,258,405"/>
+<area shape="rect" id="node6" href="$_level_line_8cpp.html" title="src/LevelLine.cpp" alt="" coords="1061,379,1183,405"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="437,379,535,405"/>
+<area shape="rect" id="node8" href="$profile_8cpp.html" title="src/profile.cpp" alt="" coords="815,379,917,405"/>
+<area shape="rect" id="node9" href="$_regions_8cpp.html" title="src/Regions.cpp" alt="" coords="559,379,675,405"/>
+<area shape="rect" id="node10" href="$selection_8cpp.html" title="src/selection.cpp" alt="" coords="5,379,127,405"/>
+<area shape="rect" id="node11" href="$title_8cpp.html" title="src/title.cpp" alt="" coords="699,379,790,405"/>
+<area shape="rect" id="node12" href="$_x_y_plot_d_l_l_8cpp.html" title="src/XYPlotDLL.cpp" alt="" coords="282,379,413,405"/>
+<area shape="rect" id="node14" href="$profile_8h.html" title="src/profile.h" alt="" coords="443,155,532,181"/>
+<area shape="rect" id="node17" href="$_coord_converter_8cpp.html" title="src/CoordConverter.cpp" alt="" coords="607,155,765,181"/>
+<area shape="rect" id="node18" href="$digits_8cpp.html" title="src/digits.cpp" alt="" coords="789,155,889,181"/>
+<area shape="rect" id="node19" href="$_gridlines_8cpp.html" title="src/Gridlines.cpp" alt="" coords="914,155,1034,181"/>
+<area shape="rect" id="node20" href="$ticks_8cpp.html" title="src/ticks.cpp" alt="" coords="1160,155,1257,181"/>
+<area shape="rect" id="node15" href="$legend_8h.html" title="src/legend.h" alt="" coords="274,229,367,256"/>
+<area shape="rect" id="node16" href="$selection_8h.html" title="src/selection.h" alt="" coords="143,229,250,256"/>
+</map>

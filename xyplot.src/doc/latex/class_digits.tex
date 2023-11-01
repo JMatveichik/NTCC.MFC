@@ -1,0 +1,403 @@
+\hypertarget{class_digits}{\section{Класс Digits}
+\label{class_digits}\index{Digits@{Digits}}
+}
+
+
+{\ttfamily \#include $<$digits.\-h$>$}
+
+
+
+Граф наследования\-:Digits\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_digits__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Digits\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_digits__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_digits_acd329f27f77896fa7ce6c5e494beaa1c}{Digits} (\hyperlink{class_x_y_plot}{X\-Y\-Plot} $\ast$parent, \hyperlink{class_axis}{Axis} $\ast$\hyperlink{class_digits_a40f4adf8eaf3b89b66adbbccc2099d5d}{parent\-Axis})
+\item 
+virtual \hyperlink{class_digits_a66e19468f256da28a103894f2ceb9cfe}{$\sim$\-Digits} ()
+\item 
+void \hyperlink{class_digits_a7d4c1c32b27083457ef094bc7a27ec13}{Set\-Color} (C\-O\-L\-O\-R\-R\-E\-F color, B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_digits_a29d3f2ec295eeebb390bc1eb93b612af}{Get\-Color} (B\-O\-O\-L b\-Major=T\-R\-U\-E) const 
+\item 
+void \hyperlink{class_digits_ae6c4780ba7c4aba52efff6c8ab353f57}{Set\-Rect} (int left, int top, int right, int bottom)
+\item 
+void \hyperlink{class_digits_a3c4e4199c39cd5b61f7e9bc23dfb979a}{Set\-Rect} (R\-E\-C\-T self)
+\item 
+void \hyperlink{class_digits_a6b4c60c397a2c8355dd0a0f31eed1929}{Get\-Rect} (R\-E\-C\-T \&self) const 
+\item 
+void \hyperlink{class_digits_af74a68f96749f6caf6496b31dacb30e0}{Set\-Template} (std\-::string str\-Template, B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+const std\-::string \& \hyperlink{class_digits_aa3072c531d0f83c34cf9e97a5504a43f}{Get\-Template} (B\-O\-O\-L b\-Major=T\-R\-U\-E) const 
+\item 
+void \hyperlink{class_digits_a06c7cf0b99ff10f9e5d623d62c98426d}{Set\-Font} (const L\-O\-G\-F\-O\-N\-T \&lf, B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+void \hyperlink{class_digits_a8cdd43accc18a651207de6c1c8f438c4}{Get\-Font} (L\-O\-G\-F\-O\-N\-T \&lf, B\-O\-O\-L b\-Major=T\-R\-U\-E) const 
+\item 
+int \hyperlink{class_digits_a7641a9787d3b78bac0425e5597a3e5de}{Calc\-Rect} (H\-D\-C h\-D\-C, R\-E\-C\-T \&rc) const 
+\item 
+void \hyperlink{class_digits_a9b973868449945e26a10fe3953566d9d}{Enable\-Major} (B\-O\-O\-L enable)
+\item 
+void \hyperlink{class_digits_a7c34d2810ef21b76b6a301f482b09df3}{Enable\-Minor} (B\-O\-O\-L enable)
+\item 
+B\-O\-O\-L \hyperlink{class_digits_a0f46d96f7792ffc099ddc4034bb8fe4a}{Is\-Enabled\-Major} () const 
+\item 
+B\-O\-O\-L \hyperlink{class_digits_af1060dd2a6333c9d1e36942ad5633546}{Is\-Enabled\-Minor} () const 
+\item 
+int \hyperlink{class_digits_a2a80cf9e4d366d03f4a0902af73af2bc}{Max\-Item\-Length} (H\-D\-C hdc, double fmin, double fmax) const 
+\item 
+void \hyperlink{class_digits_a8779eafb228a0b7ea0565ebd3198e71c}{Set\-Range} (double f\-Lower, double f\-Upper)
+\item 
+void \hyperlink{class_digits_ac3ec93b9ed68317ab11ef3a61b69934d}{Get\-Range} (double \&f\-Lower, double \&f\-Upper) const 
+\item 
+void \hyperlink{class_digits_a3957bbf3699a85811cbbaa01a93fcc88}{Pre\-Draw} (H\-D\-C hdc)
+\item 
+void \hyperlink{class_digits_ae652ae51841237c43ba06a7b7d5b9a89}{On\-Draw} (H\-D\-C hdc)
+\item 
+void \hyperlink{class_digits_a4a32dbae6da6819873e0fde7d963cc65}{Optimize\-Ticks} (double \&fmin, double \&fmax, int \&major\-Count, int \&minor\-Count)
+\item 
+virtual B\-O\-O\-L \hyperlink{class_digits_ad516fc5b9c052a5b0b82469e645a5d0a}{Write} (H\-A\-N\-D\-L\-E h\-File) const 
+\item 
+virtual B\-O\-O\-L \hyperlink{class_digits_a8e4038efd3b350b447a1d509eaa5040e}{Read} (H\-A\-N\-D\-L\-E h\-File)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_digits_acfac4502fbb3122dbb0071af14b71d91}{Push\-Back\-Major} (std\-::string s)
+\item 
+void \hyperlink{class_digits_ac2f1179123ad83c98480e0ff8e55d12c}{Push\-Back\-Minor} (std\-::string s)
+\item 
+void \hyperlink{class_digits_ab946e7f29024bc8fda41c286d96958aa}{Beautify} (std\-::string \&s)
+\item 
+void \hyperlink{class_digits_ae401969abc8fd75f520a00512716a581}{Clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L \hyperlink{class_digits_aaf6398adc6029e62a5b437575e1dc9df}{m\-\_\-enabled\-Major}
+\item 
+B\-O\-O\-L \hyperlink{class_digits_a3cd58217fb3282ac4e326c3aba8e5014}{m\-\_\-enabled\-Minor}
+\item 
+int \hyperlink{class_digits_a6363bd7d08bcf1af1f631542007d576b}{offset\-From\-Ticks}
+\item 
+R\-E\-C\-T \hyperlink{class_digits_ae4aaf160c1fb1a64da858021e376f84b}{m\-\_\-self}
+\item 
+std\-::string \hyperlink{class_digits_abbe65de11a5be175f825f2727212fe07}{major\-Template}
+\item 
+std\-::string \hyperlink{class_digits_a6742b3cfd0643d81fea94f4b43bab302}{minor\-Template}
+\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{class_digits_a8f37710ae3695963c053ac86907b53c5}{m\-\_\-major\-Digits\-Vector}
+\item 
+std\-::vector$<$ std\-::string $>$ \hyperlink{class_digits_a2382cd829aa6469431b38f447d9570d8}{m\-\_\-minor\-Digits\-Vector}
+\item 
+double \hyperlink{class_digits_a086ddfadf3a92ce92096b65841b0a57e}{m\-\_\-f\-Lower}
+\item 
+double \hyperlink{class_digits_aaadbe21fd0151547ad2aad4dadd82516}{m\-\_\-f\-Upper}
+\item 
+unsigned \hyperlink{class_digits_ad072b45337ed3492f7798caa246344fe}{n\-Font\-Minor}
+\item 
+unsigned \hyperlink{class_digits_a7e78c6880a781fef583b8ab06e214c2c}{n\-Font\-Major}
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_digits_ab100cdfd65503955b4d052085c47078a}{cr\-Minor}
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_digits_ae1dbae5da268f81449d27800c19798e6}{cr\-Major}
+\item 
+\hyperlink{class_axis}{Axis} $\ast$ \hyperlink{class_digits_a40f4adf8eaf3b89b66adbbccc2099d5d}{parent\-Axis}
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_digits_acd329f27f77896fa7ce6c5e494beaa1c}{\index{Digits@{Digits}!Digits@{Digits}}
+\index{Digits@{Digits}!Digits@{Digits}}
+\subsubsection[{Digits}]{\setlength{\rightskip}{0pt plus 5cm}Digits\-::\-Digits (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-Y\-Plot} $\ast$}]{parent, }
+\item[{{\bf Axis} $\ast$}]{parent\-Axis}
+\end{DoxyParamCaption}
+)}}\label{class_digits_acd329f27f77896fa7ce6c5e494beaa1c}
+\hypertarget{class_digits_a66e19468f256da28a103894f2ceb9cfe}{\index{Digits@{Digits}!$\sim$\-Digits@{$\sim$\-Digits}}
+\index{$\sim$\-Digits@{$\sim$\-Digits}!Digits@{Digits}}
+\subsubsection[{$\sim$\-Digits}]{\setlength{\rightskip}{0pt plus 5cm}Digits\-::$\sim$\-Digits (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_digits_a66e19468f256da28a103894f2ceb9cfe}
+
+
+\subsection{Методы}
+\hypertarget{class_digits_ab946e7f29024bc8fda41c286d96958aa}{\index{Digits@{Digits}!Beautify@{Beautify}}
+\index{Beautify@{Beautify}!Digits@{Digits}}
+\subsubsection[{Beautify}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Beautify (
+\begin{DoxyParamCaption}
+\item[{std\-::string \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_ab946e7f29024bc8fda41c286d96958aa}
+\hypertarget{class_digits_a7641a9787d3b78bac0425e5597a3e5de}{\index{Digits@{Digits}!Calc\-Rect@{Calc\-Rect}}
+\index{Calc\-Rect@{Calc\-Rect}!Digits@{Digits}}
+\subsubsection[{Calc\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}int Digits\-::\-Calc\-Rect (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{h\-D\-C, }
+\item[{R\-E\-C\-T \&}]{rc}
+\end{DoxyParamCaption}
+) const}}\label{class_digits_a7641a9787d3b78bac0425e5597a3e5de}
+\hypertarget{class_digits_ae401969abc8fd75f520a00512716a581}{\index{Digits@{Digits}!Clear@{Clear}}
+\index{Clear@{Clear}!Digits@{Digits}}
+\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_ae401969abc8fd75f520a00512716a581}
+\hypertarget{class_digits_a9b973868449945e26a10fe3953566d9d}{\index{Digits@{Digits}!Enable\-Major@{Enable\-Major}}
+\index{Enable\-Major@{Enable\-Major}!Digits@{Digits}}
+\subsubsection[{Enable\-Major}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Enable\-Major (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_digits_a9b973868449945e26a10fe3953566d9d}
+\hypertarget{class_digits_a7c34d2810ef21b76b6a301f482b09df3}{\index{Digits@{Digits}!Enable\-Minor@{Enable\-Minor}}
+\index{Enable\-Minor@{Enable\-Minor}!Digits@{Digits}}
+\subsubsection[{Enable\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Enable\-Minor (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_digits_a7c34d2810ef21b76b6a301f482b09df3}
+\hypertarget{class_digits_a29d3f2ec295eeebb390bc1eb93b612af}{\index{Digits@{Digits}!Get\-Color@{Get\-Color}}
+\index{Get\-Color@{Get\-Color}!Digits@{Digits}}
+\subsubsection[{Get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F Digits\-::\-Get\-Color (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_digits_a29d3f2ec295eeebb390bc1eb93b612af}
+\hypertarget{class_digits_a8cdd43accc18a651207de6c1c8f438c4}{\index{Digits@{Digits}!Get\-Font@{Get\-Font}}
+\index{Get\-Font@{Get\-Font}!Digits@{Digits}}
+\subsubsection[{Get\-Font}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Get\-Font (
+\begin{DoxyParamCaption}
+\item[{L\-O\-G\-F\-O\-N\-T \&}]{lf, }
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_digits_a8cdd43accc18a651207de6c1c8f438c4}
+\hypertarget{class_digits_ac3ec93b9ed68317ab11ef3a61b69934d}{\index{Digits@{Digits}!Get\-Range@{Get\-Range}}
+\index{Get\-Range@{Get\-Range}!Digits@{Digits}}
+\subsubsection[{Get\-Range}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Get\-Range (
+\begin{DoxyParamCaption}
+\item[{double \&}]{f\-Lower, }
+\item[{double \&}]{f\-Upper}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_digits_ac3ec93b9ed68317ab11ef3a61b69934d}
+\hypertarget{class_digits_a6b4c60c397a2c8355dd0a0f31eed1929}{\index{Digits@{Digits}!Get\-Rect@{Get\-Rect}}
+\index{Get\-Rect@{Get\-Rect}!Digits@{Digits}}
+\subsubsection[{Get\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Get\-Rect (
+\begin{DoxyParamCaption}
+\item[{R\-E\-C\-T \&}]{self}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_digits_a6b4c60c397a2c8355dd0a0f31eed1929}
+\hypertarget{class_digits_aa3072c531d0f83c34cf9e97a5504a43f}{\index{Digits@{Digits}!Get\-Template@{Get\-Template}}
+\index{Get\-Template@{Get\-Template}!Digits@{Digits}}
+\subsubsection[{Get\-Template}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string \& Digits\-::\-Get\-Template (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const}}\label{class_digits_aa3072c531d0f83c34cf9e97a5504a43f}
+\hypertarget{class_digits_a0f46d96f7792ffc099ddc4034bb8fe4a}{\index{Digits@{Digits}!Is\-Enabled\-Major@{Is\-Enabled\-Major}}
+\index{Is\-Enabled\-Major@{Is\-Enabled\-Major}!Digits@{Digits}}
+\subsubsection[{Is\-Enabled\-Major}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Digits\-::\-Is\-Enabled\-Major (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_digits_a0f46d96f7792ffc099ddc4034bb8fe4a}
+\hypertarget{class_digits_af1060dd2a6333c9d1e36942ad5633546}{\index{Digits@{Digits}!Is\-Enabled\-Minor@{Is\-Enabled\-Minor}}
+\index{Is\-Enabled\-Minor@{Is\-Enabled\-Minor}!Digits@{Digits}}
+\subsubsection[{Is\-Enabled\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Digits\-::\-Is\-Enabled\-Minor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_digits_af1060dd2a6333c9d1e36942ad5633546}
+\hypertarget{class_digits_a2a80cf9e4d366d03f4a0902af73af2bc}{\index{Digits@{Digits}!Max\-Item\-Length@{Max\-Item\-Length}}
+\index{Max\-Item\-Length@{Max\-Item\-Length}!Digits@{Digits}}
+\subsubsection[{Max\-Item\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int Digits\-::\-Max\-Item\-Length (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc, }
+\item[{double}]{fmin, }
+\item[{double}]{fmax}
+\end{DoxyParamCaption}
+) const}}\label{class_digits_a2a80cf9e4d366d03f4a0902af73af2bc}
+\hypertarget{class_digits_ae652ae51841237c43ba06a7b7d5b9a89}{\index{Digits@{Digits}!On\-Draw@{On\-Draw}}
+\index{On\-Draw@{On\-Draw}!Digits@{Digits}}
+\subsubsection[{On\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-On\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc}
+\end{DoxyParamCaption}
+)}}\label{class_digits_ae652ae51841237c43ba06a7b7d5b9a89}
+\hypertarget{class_digits_a4a32dbae6da6819873e0fde7d963cc65}{\index{Digits@{Digits}!Optimize\-Ticks@{Optimize\-Ticks}}
+\index{Optimize\-Ticks@{Optimize\-Ticks}!Digits@{Digits}}
+\subsubsection[{Optimize\-Ticks}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Optimize\-Ticks (
+\begin{DoxyParamCaption}
+\item[{double \&}]{fmin, }
+\item[{double \&}]{fmax, }
+\item[{int \&}]{major\-Count, }
+\item[{int \&}]{minor\-Count}
+\end{DoxyParamCaption}
+)}}\label{class_digits_a4a32dbae6da6819873e0fde7d963cc65}
+\hypertarget{class_digits_a3957bbf3699a85811cbbaa01a93fcc88}{\index{Digits@{Digits}!Pre\-Draw@{Pre\-Draw}}
+\index{Pre\-Draw@{Pre\-Draw}!Digits@{Digits}}
+\subsubsection[{Pre\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Pre\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc}
+\end{DoxyParamCaption}
+)}}\label{class_digits_a3957bbf3699a85811cbbaa01a93fcc88}
+\hypertarget{class_digits_acfac4502fbb3122dbb0071af14b71d91}{\index{Digits@{Digits}!Push\-Back\-Major@{Push\-Back\-Major}}
+\index{Push\-Back\-Major@{Push\-Back\-Major}!Digits@{Digits}}
+\subsubsection[{Push\-Back\-Major}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Push\-Back\-Major (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_acfac4502fbb3122dbb0071af14b71d91}
+\hypertarget{class_digits_ac2f1179123ad83c98480e0ff8e55d12c}{\index{Digits@{Digits}!Push\-Back\-Minor@{Push\-Back\-Minor}}
+\index{Push\-Back\-Minor@{Push\-Back\-Minor}!Digits@{Digits}}
+\subsubsection[{Push\-Back\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Push\-Back\-Minor (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_ac2f1179123ad83c98480e0ff8e55d12c}
+\hypertarget{class_digits_a8e4038efd3b350b447a1d509eaa5040e}{\index{Digits@{Digits}!Read@{Read}}
+\index{Read@{Read}!Digits@{Digits}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Digits\-::\-Read (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_digits_a8e4038efd3b350b447a1d509eaa5040e}
+
+
+Замещает \hyperlink{class_savable_item_a7eadd16b2cb0652091cc15f596a00fb2}{Savable\-Item}.
+
+\hypertarget{class_digits_a7d4c1c32b27083457ef094bc7a27ec13}{\index{Digits@{Digits}!Set\-Color@{Set\-Color}}
+\index{Set\-Color@{Set\-Color}!Digits@{Digits}}
+\subsubsection[{Set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Set\-Color (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{color, }
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{class_digits_a7d4c1c32b27083457ef094bc7a27ec13}
+\hypertarget{class_digits_a06c7cf0b99ff10f9e5d623d62c98426d}{\index{Digits@{Digits}!Set\-Font@{Set\-Font}}
+\index{Set\-Font@{Set\-Font}!Digits@{Digits}}
+\subsubsection[{Set\-Font}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Set\-Font (
+\begin{DoxyParamCaption}
+\item[{const L\-O\-G\-F\-O\-N\-T \&}]{lf, }
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{class_digits_a06c7cf0b99ff10f9e5d623d62c98426d}
+\hypertarget{class_digits_a8779eafb228a0b7ea0565ebd3198e71c}{\index{Digits@{Digits}!Set\-Range@{Set\-Range}}
+\index{Set\-Range@{Set\-Range}!Digits@{Digits}}
+\subsubsection[{Set\-Range}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Set\-Range (
+\begin{DoxyParamCaption}
+\item[{double}]{f\-Lower, }
+\item[{double}]{f\-Upper}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_digits_a8779eafb228a0b7ea0565ebd3198e71c}
+\hypertarget{class_digits_ae6c4780ba7c4aba52efff6c8ab353f57}{\index{Digits@{Digits}!Set\-Rect@{Set\-Rect}}
+\index{Set\-Rect@{Set\-Rect}!Digits@{Digits}}
+\subsubsection[{Set\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Set\-Rect (
+\begin{DoxyParamCaption}
+\item[{int}]{left, }
+\item[{int}]{top, }
+\item[{int}]{right, }
+\item[{int}]{bottom}
+\end{DoxyParamCaption}
+)}}\label{class_digits_ae6c4780ba7c4aba52efff6c8ab353f57}
+\hypertarget{class_digits_a3c4e4199c39cd5b61f7e9bc23dfb979a}{\index{Digits@{Digits}!Set\-Rect@{Set\-Rect}}
+\index{Set\-Rect@{Set\-Rect}!Digits@{Digits}}
+\subsubsection[{Set\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Set\-Rect (
+\begin{DoxyParamCaption}
+\item[{R\-E\-C\-T}]{self}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_digits_a3c4e4199c39cd5b61f7e9bc23dfb979a}
+\hypertarget{class_digits_af74a68f96749f6caf6496b31dacb30e0}{\index{Digits@{Digits}!Set\-Template@{Set\-Template}}
+\index{Set\-Template@{Set\-Template}!Digits@{Digits}}
+\subsubsection[{Set\-Template}]{\setlength{\rightskip}{0pt plus 5cm}void Digits\-::\-Set\-Template (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{str\-Template, }
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{class_digits_af74a68f96749f6caf6496b31dacb30e0}
+\hypertarget{class_digits_ad516fc5b9c052a5b0b82469e645a5d0a}{\index{Digits@{Digits}!Write@{Write}}
+\index{Write@{Write}!Digits@{Digits}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Digits\-::\-Write (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_digits_ad516fc5b9c052a5b0b82469e645a5d0a}
+
+
+Замещает \hyperlink{class_savable_item_a0da511a4854f515096f8f9b498f64158}{Savable\-Item}.
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_digits_ae1dbae5da268f81449d27800c19798e6}{\index{Digits@{Digits}!cr\-Major@{cr\-Major}}
+\index{cr\-Major@{cr\-Major}!Digits@{Digits}}
+\subsubsection[{cr\-Major}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F Digits\-::cr\-Major\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_ae1dbae5da268f81449d27800c19798e6}
+\hypertarget{class_digits_ab100cdfd65503955b4d052085c47078a}{\index{Digits@{Digits}!cr\-Minor@{cr\-Minor}}
+\index{cr\-Minor@{cr\-Minor}!Digits@{Digits}}
+\subsubsection[{cr\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F Digits\-::cr\-Minor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_ab100cdfd65503955b4d052085c47078a}
+\hypertarget{class_digits_aaf6398adc6029e62a5b437575e1dc9df}{\index{Digits@{Digits}!m\-\_\-enabled\-Major@{m\-\_\-enabled\-Major}}
+\index{m\-\_\-enabled\-Major@{m\-\_\-enabled\-Major}!Digits@{Digits}}
+\subsubsection[{m\-\_\-enabled\-Major}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Digits\-::m\-\_\-enabled\-Major\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_aaf6398adc6029e62a5b437575e1dc9df}
+\hypertarget{class_digits_a3cd58217fb3282ac4e326c3aba8e5014}{\index{Digits@{Digits}!m\-\_\-enabled\-Minor@{m\-\_\-enabled\-Minor}}
+\index{m\-\_\-enabled\-Minor@{m\-\_\-enabled\-Minor}!Digits@{Digits}}
+\subsubsection[{m\-\_\-enabled\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Digits\-::m\-\_\-enabled\-Minor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_a3cd58217fb3282ac4e326c3aba8e5014}
+\hypertarget{class_digits_a086ddfadf3a92ce92096b65841b0a57e}{\index{Digits@{Digits}!m\-\_\-f\-Lower@{m\-\_\-f\-Lower}}
+\index{m\-\_\-f\-Lower@{m\-\_\-f\-Lower}!Digits@{Digits}}
+\subsubsection[{m\-\_\-f\-Lower}]{\setlength{\rightskip}{0pt plus 5cm}double Digits\-::m\-\_\-f\-Lower\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_a086ddfadf3a92ce92096b65841b0a57e}
+\hypertarget{class_digits_aaadbe21fd0151547ad2aad4dadd82516}{\index{Digits@{Digits}!m\-\_\-f\-Upper@{m\-\_\-f\-Upper}}
+\index{m\-\_\-f\-Upper@{m\-\_\-f\-Upper}!Digits@{Digits}}
+\subsubsection[{m\-\_\-f\-Upper}]{\setlength{\rightskip}{0pt plus 5cm}double Digits\-::m\-\_\-f\-Upper\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_aaadbe21fd0151547ad2aad4dadd82516}
+\hypertarget{class_digits_a8f37710ae3695963c053ac86907b53c5}{\index{Digits@{Digits}!m\-\_\-major\-Digits\-Vector@{m\-\_\-major\-Digits\-Vector}}
+\index{m\-\_\-major\-Digits\-Vector@{m\-\_\-major\-Digits\-Vector}!Digits@{Digits}}
+\subsubsection[{m\-\_\-major\-Digits\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::string $>$ Digits\-::m\-\_\-major\-Digits\-Vector\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_a8f37710ae3695963c053ac86907b53c5}
+\hypertarget{class_digits_a2382cd829aa6469431b38f447d9570d8}{\index{Digits@{Digits}!m\-\_\-minor\-Digits\-Vector@{m\-\_\-minor\-Digits\-Vector}}
+\index{m\-\_\-minor\-Digits\-Vector@{m\-\_\-minor\-Digits\-Vector}!Digits@{Digits}}
+\subsubsection[{m\-\_\-minor\-Digits\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::string $>$ Digits\-::m\-\_\-minor\-Digits\-Vector\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_a2382cd829aa6469431b38f447d9570d8}
+\hypertarget{class_digits_ae4aaf160c1fb1a64da858021e376f84b}{\index{Digits@{Digits}!m\-\_\-self@{m\-\_\-self}}
+\index{m\-\_\-self@{m\-\_\-self}!Digits@{Digits}}
+\subsubsection[{m\-\_\-self}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T Digits\-::m\-\_\-self\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_ae4aaf160c1fb1a64da858021e376f84b}
+\hypertarget{class_digits_abbe65de11a5be175f825f2727212fe07}{\index{Digits@{Digits}!major\-Template@{major\-Template}}
+\index{major\-Template@{major\-Template}!Digits@{Digits}}
+\subsubsection[{major\-Template}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Digits\-::major\-Template\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_abbe65de11a5be175f825f2727212fe07}
+\hypertarget{class_digits_a6742b3cfd0643d81fea94f4b43bab302}{\index{Digits@{Digits}!minor\-Template@{minor\-Template}}
+\index{minor\-Template@{minor\-Template}!Digits@{Digits}}
+\subsubsection[{minor\-Template}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Digits\-::minor\-Template\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_a6742b3cfd0643d81fea94f4b43bab302}
+\hypertarget{class_digits_a7e78c6880a781fef583b8ab06e214c2c}{\index{Digits@{Digits}!n\-Font\-Major@{n\-Font\-Major}}
+\index{n\-Font\-Major@{n\-Font\-Major}!Digits@{Digits}}
+\subsubsection[{n\-Font\-Major}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Digits\-::n\-Font\-Major\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_a7e78c6880a781fef583b8ab06e214c2c}
+\hypertarget{class_digits_ad072b45337ed3492f7798caa246344fe}{\index{Digits@{Digits}!n\-Font\-Minor@{n\-Font\-Minor}}
+\index{n\-Font\-Minor@{n\-Font\-Minor}!Digits@{Digits}}
+\subsubsection[{n\-Font\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Digits\-::n\-Font\-Minor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_ad072b45337ed3492f7798caa246344fe}
+\hypertarget{class_digits_a6363bd7d08bcf1af1f631542007d576b}{\index{Digits@{Digits}!offset\-From\-Ticks@{offset\-From\-Ticks}}
+\index{offset\-From\-Ticks@{offset\-From\-Ticks}!Digits@{Digits}}
+\subsubsection[{offset\-From\-Ticks}]{\setlength{\rightskip}{0pt plus 5cm}int Digits\-::offset\-From\-Ticks\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_a6363bd7d08bcf1af1f631542007d576b}
+\hypertarget{class_digits_a40f4adf8eaf3b89b66adbbccc2099d5d}{\index{Digits@{Digits}!parent\-Axis@{parent\-Axis}}
+\index{parent\-Axis@{parent\-Axis}!Digits@{Digits}}
+\subsubsection[{parent\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}$\ast$ Digits\-::parent\-Axis\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_digits_a40f4adf8eaf3b89b66adbbccc2099d5d}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{digits_8h}{digits.\-h}\item 
+src/\hyperlink{digits_8cpp}{digits.\-cpp}\end{DoxyCompactItemize}

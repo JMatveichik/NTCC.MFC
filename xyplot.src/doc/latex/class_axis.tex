@@ -1,0 +1,774 @@
+\hypertarget{class_axis}{\section{Класс Axis}
+\label{class_axis}\index{Axis@{Axis}}
+}
+
+
+{\ttfamily \#include $<$Axis.\-h$>$}
+
+
+
+Граф наследования\-:Axis\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_axis__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Axis\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_axis__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_axis_abd42f819acb0ecb2875d7c5c0f6a90a2}{Axis} (\hyperlink{class_x_y_plot}{X\-Y\-Plot} $\ast$parent)
+\item 
+virtual \hyperlink{class_axis_a675ffe75a5e61a9e4f60bb79749d5e0c}{$\sim$\-Axis} ()
+\item 
+B\-O\-O\-L \hyperlink{class_axis_ad51bb24a3f0aa2a15b3d7255a4ad925d}{Create} (\hyperlink{class_x_y_plot}{X\-Y\-Plot} $\ast$\hyperlink{class_axis_a5bb30599723134e0d1250d6028a62575}{parent\-Plot}, int \hyperlink{class_axis_a12acb583f5bf5f386dc0ea78fa4461aa}{id}, unsigned long l\-Styles, const char $\ast$str\-Title=N\-U\-L\-L, double d\-Min=0.\-0, double d\-Max=1.\-0)
+\item 
+virtual B\-O\-O\-L \hyperlink{class_axis_a895ec09817b379201fe2db2cd1e715aa}{Write} (H\-A\-N\-D\-L\-E h\-File) const 
+\item 
+virtual B\-O\-O\-L \hyperlink{class_axis_af403dc4181f1681d321f190bd74268ff}{Read} (H\-A\-N\-D\-L\-E h\-File)
+\item 
+B\-O\-O\-L \hyperlink{class_axis_a5c2b061f2d01872e9cda6e6be0c82f56}{Attach\-Profile} (\hyperlink{class_profile}{Profile} $\ast$prof)
+\item 
+B\-O\-O\-L \hyperlink{class_axis_a06230b1705046a15a4dddd3252a72691}{Detach\-Profile} (\hyperlink{class_profile}{Profile} $\ast$prof)
+\item 
+int \hyperlink{class_axis_ab169f9ad45fa8f790e24ee52f7a03996}{Get\-I\-D} () const 
+\item 
+S\-I\-Z\-E \hyperlink{class_axis_aac35b067fa0786b741627059741e53d3}{Get\-Size} () const 
+\item 
+int \hyperlink{class_axis_a62a3fedb305053a9cccde8cd34f73637}{Length} () const 
+\item 
+B\-O\-O\-L \hyperlink{class_axis_a3d3b29ba4d46db3ad1725566e4995e90}{Is\-Time\-History} () const 
+\item 
+B\-O\-O\-L \hyperlink{class_axis_aea4e6174866d246a5edc2a7b18cf72a4}{Point\-In\-Rect} (const P\-O\-I\-N\-T \&pt)
+\item 
+\hyperlink{class_line_data}{Line\-Data} \& \hyperlink{class_axis_a37d47434eb57a24e0bee36ac4314edfc}{Get\-Line} ()
+\item 
+void \hyperlink{class_axis_aa0ddf34c5b437423f1f85c51a54d5239}{Set\-Line} (const \hyperlink{class_line_data}{Line\-Data} \&\hyperlink{class_axis_a68817bcf5ea38ff2d81698175ae9c6ee}{line})
+\item 
+\hyperlink{class_line_data}{Line\-Data} \& \hyperlink{class_axis_a8500f77c11f6ebef7af8d41050c4f2c1}{Get\-Grid\-Line} (B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+void \hyperlink{class_axis_abba8f8d055ffcc6f3a3660d4adb57374}{Set\-Grid\-Line} (const \hyperlink{class_line_data}{Line\-Data} \&\hyperlink{class_axis_a68817bcf5ea38ff2d81698175ae9c6ee}{line}, B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+\hyperlink{class_line_data}{Line\-Data} \& \hyperlink{class_axis_a0f12d8e5e59f15a716ef1c2e89b1ff8c}{Get\-Ticks\-Line} (B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+void \hyperlink{class_axis_a94241668c2515bf0750cafd53bcb1a42}{Set\-Ticks\-Line} (const \hyperlink{class_line_data}{Line\-Data} \&\hyperlink{class_axis_a68817bcf5ea38ff2d81698175ae9c6ee}{line}, B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+D\-W\-O\-R\-D \hyperlink{class_axis_a1b3b93b1d47ab3ca2ec8b906fee6834b}{Set\-Style} (D\-W\-O\-R\-D \hyperlink{class_axis_a9b318f5e15215edb80d3a2bdabc11d44}{dw\-Style}, B\-O\-O\-L b\-Update=T\-R\-U\-E)
+\item 
+D\-W\-O\-R\-D \hyperlink{class_axis_ac4dc48e8a0ac1cdb24a24f5d45639951}{Modify\-Style} (D\-W\-O\-R\-D \hyperlink{class_axis_a9b318f5e15215edb80d3a2bdabc11d44}{dw\-Style}, B\-O\-O\-L b\-Add=T\-R\-U\-E, B\-O\-O\-L b\-Update=T\-R\-U\-E)
+\item 
+D\-W\-O\-R\-D \hyperlink{class_axis_a6d6b201a4cce9a6beb8c7055864041ef}{Get\-Style} () const 
+\item 
+B\-O\-O\-L \hyperlink{class_axis_aaf7ef6cc19a70108d2d86f563b8e822b}{Is\-Auto\-Scaled} () const 
+\item 
+B\-O\-O\-L \hyperlink{class_axis_a53dc750e1923bf84666d5b7f6c47609e}{Is\-Logarithmic} () const 
+\item 
+const std\-::vector$<$ P\-O\-I\-N\-T $>$ \& \hyperlink{class_axis_a66f64f1eb719f41512b4ac5cf049a7d2}{Get\-Major\-Ticks\-Pos} () const 
+\item 
+const std\-::vector$<$ P\-O\-I\-N\-T $>$ \& \hyperlink{class_axis_a4ed3bd789234570a2dfe659dcf0767b0}{Get\-Minor\-Ticks\-Pos} () const 
+\item 
+const std\-::vector$<$ double $>$ \& \hyperlink{class_axis_a2fe9d0e77dbe887d715d51f88941867f}{Get\-Major\-Ticks\-Values} () const 
+\item 
+const std\-::vector$<$ double $>$ \& \hyperlink{class_axis_ae278ff239a05ef1d7b76bb37e752dccf}{Get\-Minor\-Ticks\-Values} () const 
+\item 
+B\-O\-O\-L \hyperlink{class_axis_af51a2bb9da1f6c7e66134f39a22230bf}{Get\-Nearest\-Tick} (double \&val, P\-O\-I\-N\-T \&pt) const 
+\item 
+const int \hyperlink{class_axis_afa1b9b35e0561aeb36160c9ac1a2cdd9}{Get\-Ticks\-Offset} () const 
+\item 
+void \hyperlink{class_axis_a9430cb1b9468318b6c05a1c525d74fee}{Set\-Rect} (H\-D\-C h\-D\-C, R\-E\-C\-T rect)
+\item 
+void \hyperlink{class_axis_a381310504b09d64757c6575ac7cc2568}{Set\-Label} (std\-::string text)
+\item 
+const std\-::string \& \hyperlink{class_axis_a50eb89d6c720ecaac77d169454b12ed3}{Get\-Label} () const 
+\item 
+void \hyperlink{class_axis_aa99167d49da06387caa9ce3f53a41b83}{Set\-Label\-Font} (const L\-O\-G\-F\-O\-N\-T $\ast$const plf)
+\item 
+void \hyperlink{class_axis_adcc942ad32c71008b7f489f235a7a045}{Set\-Label\-Color} (C\-O\-L\-O\-R\-R\-E\-F clr)
+\item 
+void \hyperlink{class_axis_a6845dc4a3ab9bc86d8a26e195dad3bb6}{Enable\-Label} (B\-O\-O\-L enable)
+\item 
+B\-O\-O\-L \hyperlink{class_axis_a62b2e2157e201529baeab644300e4086}{Is\-Label\-Enabled} () const 
+\item 
+void \hyperlink{class_axis_ac82ca2f6125fd9842fc966472b30451b}{Set\-Major\-Ticks\-Length} (int length)
+\item 
+int \hyperlink{class_axis_a2bdab5744cb822411a9d7b98bea2ebd9}{Get\-Major\-Ticks\-Length} () const 
+\item 
+void \hyperlink{class_axis_af7612d81af3d140aef6d2c1560f308a7}{Set\-Minor\-Ticks\-Length} (int length)
+\item 
+int \hyperlink{class_axis_a2b383e7848e4d9284f0b37fcc55c1a5d}{Get\-Minor\-Ticks\-Length} () const 
+\item 
+void \hyperlink{class_axis_a59d9701163a36d83d19bd8723ced15c0}{Set\-Major\-Ticks\-Count} (int count)
+\item 
+int \hyperlink{class_axis_a5b56804af56f19924afb2fdaa5002a5e}{Get\-Major\-Ticks\-Count} () const 
+\item 
+void \hyperlink{class_axis_aaff875d18713ea68dea6375852814a34}{Set\-Minor\-Ticks\-Count} (int count)
+\item 
+int \hyperlink{class_axis_a8b4b13b1a23c57eb38e195460ecefafc}{Get\-Minor\-Ticks\-Count} () const 
+\item 
+void \hyperlink{class_axis_a7a6d9bb7ea73f134a7bcdc7839f2fea9}{Enable\-Major\-Ticks} (B\-O\-O\-L enable)
+\item 
+B\-O\-O\-L \hyperlink{class_axis_a49f99f12afbbe0c3d1feaced4a7ebcc2}{Is\-Major\-Ticks\-Enabled} () const 
+\item 
+void \hyperlink{class_axis_a51e4e998fdafb039b153824494ec1a64}{Enable\-Minor\-Ticks} (B\-O\-O\-L enable)
+\item 
+B\-O\-O\-L \hyperlink{class_axis_acb61ef0cfad74adcec76c0c3291fc98f}{Is\-Minor\-Ticks\-Enabled} () const 
+\item 
+unsigned long \hyperlink{class_axis_a87b08c86575f337d4d09a0b563c76288}{Get\-Ticks\-Style} () const 
+\item 
+void \hyperlink{class_axis_abbabc70a25f14345308300c67d50e177}{Set\-Ticks\-Style} (unsigned long style)
+\item 
+void \hyperlink{class_axis_ab23b8dbd121a233ebdabe77122a9c583}{Enable\-Major\-Grid\-Lines} (B\-O\-O\-L enable)
+\item 
+B\-O\-O\-L \hyperlink{class_axis_a6f037d316ea2e575f8f29fca4beea8ea}{Is\-Major\-Grid\-Lines\-Enabled} () const 
+\item 
+void \hyperlink{class_axis_a9d36b6a9039e776fa5e91856fd58eb1b}{Enable\-Minor\-Grid\-Lines} (B\-O\-O\-L enable)
+\item 
+B\-O\-O\-L \hyperlink{class_axis_a46bb27f688cf602a183d0e35e60d3aa8}{Is\-Minor\-Grid\-Lines\-Enabled} () const 
+\item 
+void \hyperlink{class_axis_a44245d3776209f0010cf91990b171699}{Set\-Digits\-Color} (C\-O\-L\-O\-R\-R\-E\-F color, B\-O\-O\-L b\-Major)
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_axis_a6391e8f6e81eca01de870c0bbaeeb78f}{Get\-Digits\-Color} (B\-O\-O\-L b\-Major) const 
+\item 
+void \hyperlink{class_axis_aa5baf897c0a1d088ccc673dceba5bb66}{Set\-Digits\-Format} (std\-::string str\-Template, B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+const std\-::string \& \hyperlink{class_axis_ad5126fa60e11694e569e382c27d53741}{Get\-Digits\-Format} (B\-O\-O\-L b\-Major=T\-R\-U\-E) const 
+\item 
+void \hyperlink{class_axis_a710bfe0545ca9ff2053115ca71618a2d}{Set\-Digits\-Font} (const L\-O\-G\-F\-O\-N\-T \&lf, B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+void \hyperlink{class_axis_a3381bac80fdd67426366275d1e611877}{Get\-Digits\-Font} (L\-O\-G\-F\-O\-N\-T \&lf, B\-O\-O\-L b\-Major=T\-R\-U\-E) const 
+\item 
+void \hyperlink{class_axis_ae87d5b9b022bd8c885be4dc460c74a4a}{Enable\-Major\-Digits} (B\-O\-O\-L enable)
+\item 
+void \hyperlink{class_axis_ab6fc5e053579e7b6d5df8ffcb30a173f}{Enable\-Minor\-Digits} (B\-O\-O\-L enable)
+\item 
+B\-O\-O\-L \hyperlink{class_axis_ac3ad10e78c202f3d2f2e4c230a3c1fb3}{Is\-Major\-Digits\-Enabled} () const 
+\item 
+B\-O\-O\-L \hyperlink{class_axis_ab69ae039859200fce16725ea180fb829}{Is\-Minor\-Digits\-Enabled} () const 
+\item 
+void \hyperlink{class_axis_a41ec122237943357fc410f7e65541642}{Set\-Range} (double d\-Min, double d\-Max)
+\item 
+void \hyperlink{class_axis_ac64b96cb7b9a98cc4987caf370e1092c}{Get\-Range} (double \&d\-Min, double \&d\-Max) const 
+\item 
+R\-E\-C\-T \hyperlink{class_axis_a070bb4d5171d26d50a13f195f035476d}{Pre\-Draw} (H\-D\-C h\-D\-C, R\-E\-C\-T rect)
+\item 
+void \hyperlink{class_axis_a5120d60156ed20854085115bcfcab765}{On\-Draw} (H\-D\-C h\-D\-C)
+\item 
+void \hyperlink{class_axis_adff2ec412daaec9d055f0129e0a9117f}{Get\-Client\-Rect} (R\-E\-C\-T \&rect) const 
+\item 
+void \hyperlink{class_axis_a54b571ff70bfca89a515496c0ded3138}{Get\-Limits} (\hyperlink{_coord_converter_8h_aabd54ff6676737c3cae490e3a2363bc4}{L\-P\-A\-X\-I\-S\-L\-I\-M\-I\-T\-S} lpal) const 
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_x_y_plot}{X\-Y\-Plot} $\ast$ \hyperlink{class_axis_a5bb30599723134e0d1250d6028a62575}{parent\-Plot}
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_axis_a12acb583f5bf5f386dc0ea78fa4461aa}{id}
+\item 
+\hyperlink{class_label}{Label} $\ast$ \hyperlink{class_axis_a28f164cd1a8b77ee7431ade1ee39bc61}{p\-Label}
+\item 
+\hyperlink{class_line_data}{Line\-Data} \hyperlink{class_axis_a68817bcf5ea38ff2d81698175ae9c6ee}{line}
+\item 
+\hyperlink{class_ticks}{Ticks} $\ast$ \hyperlink{class_axis_adee9b22eca2aa3d9be3c7a2f9e71039b}{p\-Ticks}
+\item 
+\hyperlink{class_digits}{Digits} $\ast$ \hyperlink{class_axis_a33bc678ecaf1bda4a3a94c4dab678ac9}{p\-Digits}
+\item 
+\hyperlink{class_grid_lines}{Grid\-Lines} $\ast$ \hyperlink{class_axis_a56a2fcc5091fd6eca3cd6b80764616bb}{p\-Grid\-Lines}
+\item 
+double \hyperlink{class_axis_adb0e6da2c0521df03e3e7d820d73af82}{range\-Min}
+\item 
+double \hyperlink{class_axis_a02853da582831baaa9ebc1289d86ad35}{range\-Max}
+\item 
+B\-O\-O\-L \hyperlink{class_axis_ae7205720d8bede3b74fab7dd54968d56}{auto\-Scale}
+\item 
+R\-E\-C\-T \hyperlink{class_axis_a50bf5f208bbca7d528ca52e62b7928e9}{rc\-Self}
+\item 
+D\-W\-O\-R\-D \hyperlink{class_axis_a9b318f5e15215edb80d3a2bdabc11d44}{dw\-Style}
+\item 
+std\-::set$<$ \hyperlink{class_profile}{Profile} $\ast$ $>$ \hyperlink{class_axis_a4ce6ac30f1b60e366e6a608b30750d9c}{attached\-Profiles}
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_axis_abd42f819acb0ecb2875d7c5c0f6a90a2}{\index{Axis@{Axis}!Axis@{Axis}}
+\index{Axis@{Axis}!Axis@{Axis}}
+\subsubsection[{Axis}]{\setlength{\rightskip}{0pt plus 5cm}Axis\-::\-Axis (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-Y\-Plot} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}}\label{class_axis_abd42f819acb0ecb2875d7c5c0f6a90a2}
+\hypertarget{class_axis_a675ffe75a5e61a9e4f60bb79749d5e0c}{\index{Axis@{Axis}!$\sim$\-Axis@{$\sim$\-Axis}}
+\index{$\sim$\-Axis@{$\sim$\-Axis}!Axis@{Axis}}
+\subsubsection[{$\sim$\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}Axis\-::$\sim$\-Axis (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_axis_a675ffe75a5e61a9e4f60bb79749d5e0c}
+
+
+\subsection{Методы}
+\hypertarget{class_axis_a5c2b061f2d01872e9cda6e6be0c82f56}{\index{Axis@{Axis}!Attach\-Profile@{Attach\-Profile}}
+\index{Attach\-Profile@{Attach\-Profile}!Axis@{Axis}}
+\subsubsection[{Attach\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Attach\-Profile (
+\begin{DoxyParamCaption}
+\item[{{\bf Profile} $\ast$}]{prof}
+\end{DoxyParamCaption}
+)}}\label{class_axis_a5c2b061f2d01872e9cda6e6be0c82f56}
+\hypertarget{class_axis_ad51bb24a3f0aa2a15b3d7255a4ad925d}{\index{Axis@{Axis}!Create@{Create}}
+\index{Create@{Create}!Axis@{Axis}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Create (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-Y\-Plot} $\ast$}]{parent\-Plot, }
+\item[{int}]{id, }
+\item[{unsigned long}]{l\-Styles, }
+\item[{const char $\ast$}]{str\-Title = {\ttfamily NULL}, }
+\item[{double}]{d\-Min = {\ttfamily 0.0}, }
+\item[{double}]{d\-Max = {\ttfamily 1.0}}
+\end{DoxyParamCaption}
+)}}\label{class_axis_ad51bb24a3f0aa2a15b3d7255a4ad925d}
+\hypertarget{class_axis_a06230b1705046a15a4dddd3252a72691}{\index{Axis@{Axis}!Detach\-Profile@{Detach\-Profile}}
+\index{Detach\-Profile@{Detach\-Profile}!Axis@{Axis}}
+\subsubsection[{Detach\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Detach\-Profile (
+\begin{DoxyParamCaption}
+\item[{{\bf Profile} $\ast$}]{prof}
+\end{DoxyParamCaption}
+)}}\label{class_axis_a06230b1705046a15a4dddd3252a72691}
+\hypertarget{class_axis_a6845dc4a3ab9bc86d8a26e195dad3bb6}{\index{Axis@{Axis}!Enable\-Label@{Enable\-Label}}
+\index{Enable\-Label@{Enable\-Label}!Axis@{Axis}}
+\subsubsection[{Enable\-Label}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Enable\-Label (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a6845dc4a3ab9bc86d8a26e195dad3bb6}
+\hypertarget{class_axis_ae87d5b9b022bd8c885be4dc460c74a4a}{\index{Axis@{Axis}!Enable\-Major\-Digits@{Enable\-Major\-Digits}}
+\index{Enable\-Major\-Digits@{Enable\-Major\-Digits}!Axis@{Axis}}
+\subsubsection[{Enable\-Major\-Digits}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Enable\-Major\-Digits (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_ae87d5b9b022bd8c885be4dc460c74a4a}
+\hypertarget{class_axis_ab23b8dbd121a233ebdabe77122a9c583}{\index{Axis@{Axis}!Enable\-Major\-Grid\-Lines@{Enable\-Major\-Grid\-Lines}}
+\index{Enable\-Major\-Grid\-Lines@{Enable\-Major\-Grid\-Lines}!Axis@{Axis}}
+\subsubsection[{Enable\-Major\-Grid\-Lines}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Enable\-Major\-Grid\-Lines (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_ab23b8dbd121a233ebdabe77122a9c583}
+\hypertarget{class_axis_a7a6d9bb7ea73f134a7bcdc7839f2fea9}{\index{Axis@{Axis}!Enable\-Major\-Ticks@{Enable\-Major\-Ticks}}
+\index{Enable\-Major\-Ticks@{Enable\-Major\-Ticks}!Axis@{Axis}}
+\subsubsection[{Enable\-Major\-Ticks}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Enable\-Major\-Ticks (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a7a6d9bb7ea73f134a7bcdc7839f2fea9}
+\hypertarget{class_axis_ab6fc5e053579e7b6d5df8ffcb30a173f}{\index{Axis@{Axis}!Enable\-Minor\-Digits@{Enable\-Minor\-Digits}}
+\index{Enable\-Minor\-Digits@{Enable\-Minor\-Digits}!Axis@{Axis}}
+\subsubsection[{Enable\-Minor\-Digits}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Enable\-Minor\-Digits (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_ab6fc5e053579e7b6d5df8ffcb30a173f}
+\hypertarget{class_axis_a9d36b6a9039e776fa5e91856fd58eb1b}{\index{Axis@{Axis}!Enable\-Minor\-Grid\-Lines@{Enable\-Minor\-Grid\-Lines}}
+\index{Enable\-Minor\-Grid\-Lines@{Enable\-Minor\-Grid\-Lines}!Axis@{Axis}}
+\subsubsection[{Enable\-Minor\-Grid\-Lines}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Enable\-Minor\-Grid\-Lines (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a9d36b6a9039e776fa5e91856fd58eb1b}
+\hypertarget{class_axis_a51e4e998fdafb039b153824494ec1a64}{\index{Axis@{Axis}!Enable\-Minor\-Ticks@{Enable\-Minor\-Ticks}}
+\index{Enable\-Minor\-Ticks@{Enable\-Minor\-Ticks}!Axis@{Axis}}
+\subsubsection[{Enable\-Minor\-Ticks}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Enable\-Minor\-Ticks (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a51e4e998fdafb039b153824494ec1a64}
+\hypertarget{class_axis_adff2ec412daaec9d055f0129e0a9117f}{\index{Axis@{Axis}!Get\-Client\-Rect@{Get\-Client\-Rect}}
+\index{Get\-Client\-Rect@{Get\-Client\-Rect}!Axis@{Axis}}
+\subsubsection[{Get\-Client\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Get\-Client\-Rect (
+\begin{DoxyParamCaption}
+\item[{R\-E\-C\-T \&}]{rect}
+\end{DoxyParamCaption}
+) const}}\label{class_axis_adff2ec412daaec9d055f0129e0a9117f}
+\hypertarget{class_axis_a6391e8f6e81eca01de870c0bbaeeb78f}{\index{Axis@{Axis}!Get\-Digits\-Color@{Get\-Digits\-Color}}
+\index{Get\-Digits\-Color@{Get\-Digits\-Color}!Axis@{Axis}}
+\subsubsection[{Get\-Digits\-Color}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F Axis\-::\-Get\-Digits\-Color (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{b\-Major}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a6391e8f6e81eca01de870c0bbaeeb78f}
+\hypertarget{class_axis_a3381bac80fdd67426366275d1e611877}{\index{Axis@{Axis}!Get\-Digits\-Font@{Get\-Digits\-Font}}
+\index{Get\-Digits\-Font@{Get\-Digits\-Font}!Axis@{Axis}}
+\subsubsection[{Get\-Digits\-Font}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Get\-Digits\-Font (
+\begin{DoxyParamCaption}
+\item[{L\-O\-G\-F\-O\-N\-T \&}]{lf, }
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a3381bac80fdd67426366275d1e611877}
+\hypertarget{class_axis_ad5126fa60e11694e569e382c27d53741}{\index{Axis@{Axis}!Get\-Digits\-Format@{Get\-Digits\-Format}}
+\index{Get\-Digits\-Format@{Get\-Digits\-Format}!Axis@{Axis}}
+\subsubsection[{Get\-Digits\-Format}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string\& Axis\-::\-Get\-Digits\-Format (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_ad5126fa60e11694e569e382c27d53741}
+\hypertarget{class_axis_a8500f77c11f6ebef7af8d41050c4f2c1}{\index{Axis@{Axis}!Get\-Grid\-Line@{Get\-Grid\-Line}}
+\index{Get\-Grid\-Line@{Get\-Grid\-Line}!Axis@{Axis}}
+\subsubsection[{Get\-Grid\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data}\& Axis\-::\-Get\-Grid\-Line (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a8500f77c11f6ebef7af8d41050c4f2c1}
+\hypertarget{class_axis_ab169f9ad45fa8f790e24ee52f7a03996}{\index{Axis@{Axis}!Get\-I\-D@{Get\-I\-D}}
+\index{Get\-I\-D@{Get\-I\-D}!Axis@{Axis}}
+\subsubsection[{Get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Axis\-::\-Get\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_ab169f9ad45fa8f790e24ee52f7a03996}
+\hypertarget{class_axis_a50eb89d6c720ecaac77d169454b12ed3}{\index{Axis@{Axis}!Get\-Label@{Get\-Label}}
+\index{Get\-Label@{Get\-Label}!Axis@{Axis}}
+\subsubsection[{Get\-Label}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string\& Axis\-::\-Get\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a50eb89d6c720ecaac77d169454b12ed3}
+\hypertarget{class_axis_a54b571ff70bfca89a515496c0ded3138}{\index{Axis@{Axis}!Get\-Limits@{Get\-Limits}}
+\index{Get\-Limits@{Get\-Limits}!Axis@{Axis}}
+\subsubsection[{Get\-Limits}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Get\-Limits (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-P\-A\-X\-I\-S\-L\-I\-M\-I\-T\-S}}]{lpal}
+\end{DoxyParamCaption}
+) const}}\label{class_axis_a54b571ff70bfca89a515496c0ded3138}
+\hypertarget{class_axis_a37d47434eb57a24e0bee36ac4314edfc}{\index{Axis@{Axis}!Get\-Line@{Get\-Line}}
+\index{Get\-Line@{Get\-Line}!Axis@{Axis}}
+\subsubsection[{Get\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data}\& Axis\-::\-Get\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a37d47434eb57a24e0bee36ac4314edfc}
+\hypertarget{class_axis_a5b56804af56f19924afb2fdaa5002a5e}{\index{Axis@{Axis}!Get\-Major\-Ticks\-Count@{Get\-Major\-Ticks\-Count}}
+\index{Get\-Major\-Ticks\-Count@{Get\-Major\-Ticks\-Count}!Axis@{Axis}}
+\subsubsection[{Get\-Major\-Ticks\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Axis\-::\-Get\-Major\-Ticks\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a5b56804af56f19924afb2fdaa5002a5e}
+\hypertarget{class_axis_a2bdab5744cb822411a9d7b98bea2ebd9}{\index{Axis@{Axis}!Get\-Major\-Ticks\-Length@{Get\-Major\-Ticks\-Length}}
+\index{Get\-Major\-Ticks\-Length@{Get\-Major\-Ticks\-Length}!Axis@{Axis}}
+\subsubsection[{Get\-Major\-Ticks\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int Axis\-::\-Get\-Major\-Ticks\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a2bdab5744cb822411a9d7b98bea2ebd9}
+\hypertarget{class_axis_a66f64f1eb719f41512b4ac5cf049a7d2}{\index{Axis@{Axis}!Get\-Major\-Ticks\-Pos@{Get\-Major\-Ticks\-Pos}}
+\index{Get\-Major\-Ticks\-Pos@{Get\-Major\-Ticks\-Pos}!Axis@{Axis}}
+\subsubsection[{Get\-Major\-Ticks\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<$P\-O\-I\-N\-T$>$\& Axis\-::\-Get\-Major\-Ticks\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a66f64f1eb719f41512b4ac5cf049a7d2}
+\hypertarget{class_axis_a2fe9d0e77dbe887d715d51f88941867f}{\index{Axis@{Axis}!Get\-Major\-Ticks\-Values@{Get\-Major\-Ticks\-Values}}
+\index{Get\-Major\-Ticks\-Values@{Get\-Major\-Ticks\-Values}!Axis@{Axis}}
+\subsubsection[{Get\-Major\-Ticks\-Values}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<$double$>$\& Axis\-::\-Get\-Major\-Ticks\-Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a2fe9d0e77dbe887d715d51f88941867f}
+\hypertarget{class_axis_a8b4b13b1a23c57eb38e195460ecefafc}{\index{Axis@{Axis}!Get\-Minor\-Ticks\-Count@{Get\-Minor\-Ticks\-Count}}
+\index{Get\-Minor\-Ticks\-Count@{Get\-Minor\-Ticks\-Count}!Axis@{Axis}}
+\subsubsection[{Get\-Minor\-Ticks\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Axis\-::\-Get\-Minor\-Ticks\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a8b4b13b1a23c57eb38e195460ecefafc}
+\hypertarget{class_axis_a2b383e7848e4d9284f0b37fcc55c1a5d}{\index{Axis@{Axis}!Get\-Minor\-Ticks\-Length@{Get\-Minor\-Ticks\-Length}}
+\index{Get\-Minor\-Ticks\-Length@{Get\-Minor\-Ticks\-Length}!Axis@{Axis}}
+\subsubsection[{Get\-Minor\-Ticks\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int Axis\-::\-Get\-Minor\-Ticks\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a2b383e7848e4d9284f0b37fcc55c1a5d}
+\hypertarget{class_axis_a4ed3bd789234570a2dfe659dcf0767b0}{\index{Axis@{Axis}!Get\-Minor\-Ticks\-Pos@{Get\-Minor\-Ticks\-Pos}}
+\index{Get\-Minor\-Ticks\-Pos@{Get\-Minor\-Ticks\-Pos}!Axis@{Axis}}
+\subsubsection[{Get\-Minor\-Ticks\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<$P\-O\-I\-N\-T$>$\& Axis\-::\-Get\-Minor\-Ticks\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a4ed3bd789234570a2dfe659dcf0767b0}
+\hypertarget{class_axis_ae278ff239a05ef1d7b76bb37e752dccf}{\index{Axis@{Axis}!Get\-Minor\-Ticks\-Values@{Get\-Minor\-Ticks\-Values}}
+\index{Get\-Minor\-Ticks\-Values@{Get\-Minor\-Ticks\-Values}!Axis@{Axis}}
+\subsubsection[{Get\-Minor\-Ticks\-Values}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<$double$>$\& Axis\-::\-Get\-Minor\-Ticks\-Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_ae278ff239a05ef1d7b76bb37e752dccf}
+\hypertarget{class_axis_af51a2bb9da1f6c7e66134f39a22230bf}{\index{Axis@{Axis}!Get\-Nearest\-Tick@{Get\-Nearest\-Tick}}
+\index{Get\-Nearest\-Tick@{Get\-Nearest\-Tick}!Axis@{Axis}}
+\subsubsection[{Get\-Nearest\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Get\-Nearest\-Tick (
+\begin{DoxyParamCaption}
+\item[{double \&}]{val, }
+\item[{P\-O\-I\-N\-T \&}]{pt}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_af51a2bb9da1f6c7e66134f39a22230bf}
+\hypertarget{class_axis_ac64b96cb7b9a98cc4987caf370e1092c}{\index{Axis@{Axis}!Get\-Range@{Get\-Range}}
+\index{Get\-Range@{Get\-Range}!Axis@{Axis}}
+\subsubsection[{Get\-Range}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Get\-Range (
+\begin{DoxyParamCaption}
+\item[{double \&}]{d\-Min, }
+\item[{double \&}]{d\-Max}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_ac64b96cb7b9a98cc4987caf370e1092c}
+\hypertarget{class_axis_aac35b067fa0786b741627059741e53d3}{\index{Axis@{Axis}!Get\-Size@{Get\-Size}}
+\index{Get\-Size@{Get\-Size}!Axis@{Axis}}
+\subsubsection[{Get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}S\-I\-Z\-E Axis\-::\-Get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_axis_aac35b067fa0786b741627059741e53d3}
+\hypertarget{class_axis_a6d6b201a4cce9a6beb8c7055864041ef}{\index{Axis@{Axis}!Get\-Style@{Get\-Style}}
+\index{Get\-Style@{Get\-Style}!Axis@{Axis}}
+\subsubsection[{Get\-Style}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D Axis\-::\-Get\-Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a6d6b201a4cce9a6beb8c7055864041ef}
+\hypertarget{class_axis_a0f12d8e5e59f15a716ef1c2e89b1ff8c}{\index{Axis@{Axis}!Get\-Ticks\-Line@{Get\-Ticks\-Line}}
+\index{Get\-Ticks\-Line@{Get\-Ticks\-Line}!Axis@{Axis}}
+\subsubsection[{Get\-Ticks\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data}\& Axis\-::\-Get\-Ticks\-Line (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a0f12d8e5e59f15a716ef1c2e89b1ff8c}
+\hypertarget{class_axis_afa1b9b35e0561aeb36160c9ac1a2cdd9}{\index{Axis@{Axis}!Get\-Ticks\-Offset@{Get\-Ticks\-Offset}}
+\index{Get\-Ticks\-Offset@{Get\-Ticks\-Offset}!Axis@{Axis}}
+\subsubsection[{Get\-Ticks\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}const int Axis\-::\-Get\-Ticks\-Offset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_afa1b9b35e0561aeb36160c9ac1a2cdd9}
+\hypertarget{class_axis_a87b08c86575f337d4d09a0b563c76288}{\index{Axis@{Axis}!Get\-Ticks\-Style@{Get\-Ticks\-Style}}
+\index{Get\-Ticks\-Style@{Get\-Ticks\-Style}!Axis@{Axis}}
+\subsubsection[{Get\-Ticks\-Style}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Axis\-::\-Get\-Ticks\-Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a87b08c86575f337d4d09a0b563c76288}
+\hypertarget{class_axis_aaf7ef6cc19a70108d2d86f563b8e822b}{\index{Axis@{Axis}!Is\-Auto\-Scaled@{Is\-Auto\-Scaled}}
+\index{Is\-Auto\-Scaled@{Is\-Auto\-Scaled}!Axis@{Axis}}
+\subsubsection[{Is\-Auto\-Scaled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Is\-Auto\-Scaled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_aaf7ef6cc19a70108d2d86f563b8e822b}
+\hypertarget{class_axis_a62b2e2157e201529baeab644300e4086}{\index{Axis@{Axis}!Is\-Label\-Enabled@{Is\-Label\-Enabled}}
+\index{Is\-Label\-Enabled@{Is\-Label\-Enabled}!Axis@{Axis}}
+\subsubsection[{Is\-Label\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Is\-Label\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a62b2e2157e201529baeab644300e4086}
+\hypertarget{class_axis_a53dc750e1923bf84666d5b7f6c47609e}{\index{Axis@{Axis}!Is\-Logarithmic@{Is\-Logarithmic}}
+\index{Is\-Logarithmic@{Is\-Logarithmic}!Axis@{Axis}}
+\subsubsection[{Is\-Logarithmic}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Is\-Logarithmic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a53dc750e1923bf84666d5b7f6c47609e}
+\hypertarget{class_axis_ac3ad10e78c202f3d2f2e4c230a3c1fb3}{\index{Axis@{Axis}!Is\-Major\-Digits\-Enabled@{Is\-Major\-Digits\-Enabled}}
+\index{Is\-Major\-Digits\-Enabled@{Is\-Major\-Digits\-Enabled}!Axis@{Axis}}
+\subsubsection[{Is\-Major\-Digits\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Is\-Major\-Digits\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_ac3ad10e78c202f3d2f2e4c230a3c1fb3}
+\hypertarget{class_axis_a6f037d316ea2e575f8f29fca4beea8ea}{\index{Axis@{Axis}!Is\-Major\-Grid\-Lines\-Enabled@{Is\-Major\-Grid\-Lines\-Enabled}}
+\index{Is\-Major\-Grid\-Lines\-Enabled@{Is\-Major\-Grid\-Lines\-Enabled}!Axis@{Axis}}
+\subsubsection[{Is\-Major\-Grid\-Lines\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Is\-Major\-Grid\-Lines\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a6f037d316ea2e575f8f29fca4beea8ea}
+\hypertarget{class_axis_a49f99f12afbbe0c3d1feaced4a7ebcc2}{\index{Axis@{Axis}!Is\-Major\-Ticks\-Enabled@{Is\-Major\-Ticks\-Enabled}}
+\index{Is\-Major\-Ticks\-Enabled@{Is\-Major\-Ticks\-Enabled}!Axis@{Axis}}
+\subsubsection[{Is\-Major\-Ticks\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Is\-Major\-Ticks\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a49f99f12afbbe0c3d1feaced4a7ebcc2}
+\hypertarget{class_axis_ab69ae039859200fce16725ea180fb829}{\index{Axis@{Axis}!Is\-Minor\-Digits\-Enabled@{Is\-Minor\-Digits\-Enabled}}
+\index{Is\-Minor\-Digits\-Enabled@{Is\-Minor\-Digits\-Enabled}!Axis@{Axis}}
+\subsubsection[{Is\-Minor\-Digits\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Is\-Minor\-Digits\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_ab69ae039859200fce16725ea180fb829}
+\hypertarget{class_axis_a46bb27f688cf602a183d0e35e60d3aa8}{\index{Axis@{Axis}!Is\-Minor\-Grid\-Lines\-Enabled@{Is\-Minor\-Grid\-Lines\-Enabled}}
+\index{Is\-Minor\-Grid\-Lines\-Enabled@{Is\-Minor\-Grid\-Lines\-Enabled}!Axis@{Axis}}
+\subsubsection[{Is\-Minor\-Grid\-Lines\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Is\-Minor\-Grid\-Lines\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a46bb27f688cf602a183d0e35e60d3aa8}
+\hypertarget{class_axis_acb61ef0cfad74adcec76c0c3291fc98f}{\index{Axis@{Axis}!Is\-Minor\-Ticks\-Enabled@{Is\-Minor\-Ticks\-Enabled}}
+\index{Is\-Minor\-Ticks\-Enabled@{Is\-Minor\-Ticks\-Enabled}!Axis@{Axis}}
+\subsubsection[{Is\-Minor\-Ticks\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Is\-Minor\-Ticks\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_acb61ef0cfad74adcec76c0c3291fc98f}
+\hypertarget{class_axis_a3d3b29ba4d46db3ad1725566e4995e90}{\index{Axis@{Axis}!Is\-Time\-History@{Is\-Time\-History}}
+\index{Is\-Time\-History@{Is\-Time\-History}!Axis@{Axis}}
+\subsubsection[{Is\-Time\-History}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Is\-Time\-History (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a3d3b29ba4d46db3ad1725566e4995e90}
+\hypertarget{class_axis_a62a3fedb305053a9cccde8cd34f73637}{\index{Axis@{Axis}!Length@{Length}}
+\index{Length@{Length}!Axis@{Axis}}
+\subsubsection[{Length}]{\setlength{\rightskip}{0pt plus 5cm}int Axis\-::\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_axis_a62a3fedb305053a9cccde8cd34f73637}
+\hypertarget{class_axis_ac4dc48e8a0ac1cdb24a24f5d45639951}{\index{Axis@{Axis}!Modify\-Style@{Modify\-Style}}
+\index{Modify\-Style@{Modify\-Style}!Axis@{Axis}}
+\subsubsection[{Modify\-Style}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D Axis\-::\-Modify\-Style (
+\begin{DoxyParamCaption}
+\item[{D\-W\-O\-R\-D}]{dw\-Style, }
+\item[{B\-O\-O\-L}]{b\-Add = {\ttfamily TRUE}, }
+\item[{B\-O\-O\-L}]{b\-Update = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{class_axis_ac4dc48e8a0ac1cdb24a24f5d45639951}
+\hypertarget{class_axis_a5120d60156ed20854085115bcfcab765}{\index{Axis@{Axis}!On\-Draw@{On\-Draw}}
+\index{On\-Draw@{On\-Draw}!Axis@{Axis}}
+\subsubsection[{On\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-On\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{h\-D\-C}
+\end{DoxyParamCaption}
+)}}\label{class_axis_a5120d60156ed20854085115bcfcab765}
+\hypertarget{class_axis_aea4e6174866d246a5edc2a7b18cf72a4}{\index{Axis@{Axis}!Point\-In\-Rect@{Point\-In\-Rect}}
+\index{Point\-In\-Rect@{Point\-In\-Rect}!Axis@{Axis}}
+\subsubsection[{Point\-In\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Point\-In\-Rect (
+\begin{DoxyParamCaption}
+\item[{const P\-O\-I\-N\-T \&}]{pt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_aea4e6174866d246a5edc2a7b18cf72a4}
+\hypertarget{class_axis_a070bb4d5171d26d50a13f195f035476d}{\index{Axis@{Axis}!Pre\-Draw@{Pre\-Draw}}
+\index{Pre\-Draw@{Pre\-Draw}!Axis@{Axis}}
+\subsubsection[{Pre\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T Axis\-::\-Pre\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{h\-D\-C, }
+\item[{R\-E\-C\-T}]{rect}
+\end{DoxyParamCaption}
+)}}\label{class_axis_a070bb4d5171d26d50a13f195f035476d}
+\hypertarget{class_axis_af403dc4181f1681d321f190bd74268ff}{\index{Axis@{Axis}!Read@{Read}}
+\index{Read@{Read}!Axis@{Axis}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Read (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_axis_af403dc4181f1681d321f190bd74268ff}
+
+
+Замещает \hyperlink{class_savable_item_a7eadd16b2cb0652091cc15f596a00fb2}{Savable\-Item}.
+
+\hypertarget{class_axis_a44245d3776209f0010cf91990b171699}{\index{Axis@{Axis}!Set\-Digits\-Color@{Set\-Digits\-Color}}
+\index{Set\-Digits\-Color@{Set\-Digits\-Color}!Axis@{Axis}}
+\subsubsection[{Set\-Digits\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Digits\-Color (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{color, }
+\item[{B\-O\-O\-L}]{b\-Major}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a44245d3776209f0010cf91990b171699}
+\hypertarget{class_axis_a710bfe0545ca9ff2053115ca71618a2d}{\index{Axis@{Axis}!Set\-Digits\-Font@{Set\-Digits\-Font}}
+\index{Set\-Digits\-Font@{Set\-Digits\-Font}!Axis@{Axis}}
+\subsubsection[{Set\-Digits\-Font}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Digits\-Font (
+\begin{DoxyParamCaption}
+\item[{const L\-O\-G\-F\-O\-N\-T \&}]{lf, }
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a710bfe0545ca9ff2053115ca71618a2d}
+\hypertarget{class_axis_aa5baf897c0a1d088ccc673dceba5bb66}{\index{Axis@{Axis}!Set\-Digits\-Format@{Set\-Digits\-Format}}
+\index{Set\-Digits\-Format@{Set\-Digits\-Format}!Axis@{Axis}}
+\subsubsection[{Set\-Digits\-Format}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Digits\-Format (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{str\-Template, }
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_aa5baf897c0a1d088ccc673dceba5bb66}
+\hypertarget{class_axis_abba8f8d055ffcc6f3a3660d4adb57374}{\index{Axis@{Axis}!Set\-Grid\-Line@{Set\-Grid\-Line}}
+\index{Set\-Grid\-Line@{Set\-Grid\-Line}!Axis@{Axis}}
+\subsubsection[{Set\-Grid\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Grid\-Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf Line\-Data} \&}]{line, }
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_abba8f8d055ffcc6f3a3660d4adb57374}
+\hypertarget{class_axis_a381310504b09d64757c6575ac7cc2568}{\index{Axis@{Axis}!Set\-Label@{Set\-Label}}
+\index{Set\-Label@{Set\-Label}!Axis@{Axis}}
+\subsubsection[{Set\-Label}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Label (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a381310504b09d64757c6575ac7cc2568}
+\hypertarget{class_axis_adcc942ad32c71008b7f489f235a7a045}{\index{Axis@{Axis}!Set\-Label\-Color@{Set\-Label\-Color}}
+\index{Set\-Label\-Color@{Set\-Label\-Color}!Axis@{Axis}}
+\subsubsection[{Set\-Label\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Label\-Color (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_adcc942ad32c71008b7f489f235a7a045}
+\hypertarget{class_axis_aa99167d49da06387caa9ce3f53a41b83}{\index{Axis@{Axis}!Set\-Label\-Font@{Set\-Label\-Font}}
+\index{Set\-Label\-Font@{Set\-Label\-Font}!Axis@{Axis}}
+\subsubsection[{Set\-Label\-Font}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Label\-Font (
+\begin{DoxyParamCaption}
+\item[{const L\-O\-G\-F\-O\-N\-T $\ast$const}]{plf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_aa99167d49da06387caa9ce3f53a41b83}
+\hypertarget{class_axis_aa0ddf34c5b437423f1f85c51a54d5239}{\index{Axis@{Axis}!Set\-Line@{Set\-Line}}
+\index{Set\-Line@{Set\-Line}!Axis@{Axis}}
+\subsubsection[{Set\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf Line\-Data} \&}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_aa0ddf34c5b437423f1f85c51a54d5239}
+\hypertarget{class_axis_a59d9701163a36d83d19bd8723ced15c0}{\index{Axis@{Axis}!Set\-Major\-Ticks\-Count@{Set\-Major\-Ticks\-Count}}
+\index{Set\-Major\-Ticks\-Count@{Set\-Major\-Ticks\-Count}!Axis@{Axis}}
+\subsubsection[{Set\-Major\-Ticks\-Count}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Major\-Ticks\-Count (
+\begin{DoxyParamCaption}
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a59d9701163a36d83d19bd8723ced15c0}
+\hypertarget{class_axis_ac82ca2f6125fd9842fc966472b30451b}{\index{Axis@{Axis}!Set\-Major\-Ticks\-Length@{Set\-Major\-Ticks\-Length}}
+\index{Set\-Major\-Ticks\-Length@{Set\-Major\-Ticks\-Length}!Axis@{Axis}}
+\subsubsection[{Set\-Major\-Ticks\-Length}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Major\-Ticks\-Length (
+\begin{DoxyParamCaption}
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_ac82ca2f6125fd9842fc966472b30451b}
+\hypertarget{class_axis_aaff875d18713ea68dea6375852814a34}{\index{Axis@{Axis}!Set\-Minor\-Ticks\-Count@{Set\-Minor\-Ticks\-Count}}
+\index{Set\-Minor\-Ticks\-Count@{Set\-Minor\-Ticks\-Count}!Axis@{Axis}}
+\subsubsection[{Set\-Minor\-Ticks\-Count}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Minor\-Ticks\-Count (
+\begin{DoxyParamCaption}
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_aaff875d18713ea68dea6375852814a34}
+\hypertarget{class_axis_af7612d81af3d140aef6d2c1560f308a7}{\index{Axis@{Axis}!Set\-Minor\-Ticks\-Length@{Set\-Minor\-Ticks\-Length}}
+\index{Set\-Minor\-Ticks\-Length@{Set\-Minor\-Ticks\-Length}!Axis@{Axis}}
+\subsubsection[{Set\-Minor\-Ticks\-Length}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Minor\-Ticks\-Length (
+\begin{DoxyParamCaption}
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_af7612d81af3d140aef6d2c1560f308a7}
+\hypertarget{class_axis_a41ec122237943357fc410f7e65541642}{\index{Axis@{Axis}!Set\-Range@{Set\-Range}}
+\index{Set\-Range@{Set\-Range}!Axis@{Axis}}
+\subsubsection[{Set\-Range}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Range (
+\begin{DoxyParamCaption}
+\item[{double}]{d\-Min, }
+\item[{double}]{d\-Max}
+\end{DoxyParamCaption}
+)}}\label{class_axis_a41ec122237943357fc410f7e65541642}
+\hypertarget{class_axis_a9430cb1b9468318b6c05a1c525d74fee}{\index{Axis@{Axis}!Set\-Rect@{Set\-Rect}}
+\index{Set\-Rect@{Set\-Rect}!Axis@{Axis}}
+\subsubsection[{Set\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Rect (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{h\-D\-C, }
+\item[{R\-E\-C\-T}]{rect}
+\end{DoxyParamCaption}
+)}}\label{class_axis_a9430cb1b9468318b6c05a1c525d74fee}
+\hypertarget{class_axis_a1b3b93b1d47ab3ca2ec8b906fee6834b}{\index{Axis@{Axis}!Set\-Style@{Set\-Style}}
+\index{Set\-Style@{Set\-Style}!Axis@{Axis}}
+\subsubsection[{Set\-Style}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D Axis\-::\-Set\-Style (
+\begin{DoxyParamCaption}
+\item[{D\-W\-O\-R\-D}]{dw\-Style, }
+\item[{B\-O\-O\-L}]{b\-Update = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{class_axis_a1b3b93b1d47ab3ca2ec8b906fee6834b}
+\hypertarget{class_axis_a94241668c2515bf0750cafd53bcb1a42}{\index{Axis@{Axis}!Set\-Ticks\-Line@{Set\-Ticks\-Line}}
+\index{Set\-Ticks\-Line@{Set\-Ticks\-Line}!Axis@{Axis}}
+\subsubsection[{Set\-Ticks\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Ticks\-Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf Line\-Data} \&}]{line, }
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_a94241668c2515bf0750cafd53bcb1a42}
+\hypertarget{class_axis_abbabc70a25f14345308300c67d50e177}{\index{Axis@{Axis}!Set\-Ticks\-Style@{Set\-Ticks\-Style}}
+\index{Set\-Ticks\-Style@{Set\-Ticks\-Style}!Axis@{Axis}}
+\subsubsection[{Set\-Ticks\-Style}]{\setlength{\rightskip}{0pt plus 5cm}void Axis\-::\-Set\-Ticks\-Style (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{style}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_axis_abbabc70a25f14345308300c67d50e177}
+\hypertarget{class_axis_a895ec09817b379201fe2db2cd1e715aa}{\index{Axis@{Axis}!Write@{Write}}
+\index{Write@{Write}!Axis@{Axis}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::\-Write (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_axis_a895ec09817b379201fe2db2cd1e715aa}
+
+
+Замещает \hyperlink{class_savable_item_a0da511a4854f515096f8f9b498f64158}{Savable\-Item}.
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_axis_a4ce6ac30f1b60e366e6a608b30750d9c}{\index{Axis@{Axis}!attached\-Profiles@{attached\-Profiles}}
+\index{attached\-Profiles@{attached\-Profiles}!Axis@{Axis}}
+\subsubsection[{attached\-Profiles}]{\setlength{\rightskip}{0pt plus 5cm}std\-::set$<$ {\bf Profile}$\ast$ $>$ Axis\-::attached\-Profiles\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_a4ce6ac30f1b60e366e6a608b30750d9c}
+\hypertarget{class_axis_ae7205720d8bede3b74fab7dd54968d56}{\index{Axis@{Axis}!auto\-Scale@{auto\-Scale}}
+\index{auto\-Scale@{auto\-Scale}!Axis@{Axis}}
+\subsubsection[{auto\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Axis\-::auto\-Scale\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_ae7205720d8bede3b74fab7dd54968d56}
+\hypertarget{class_axis_a9b318f5e15215edb80d3a2bdabc11d44}{\index{Axis@{Axis}!dw\-Style@{dw\-Style}}
+\index{dw\-Style@{dw\-Style}!Axis@{Axis}}
+\subsubsection[{dw\-Style}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D Axis\-::dw\-Style\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_a9b318f5e15215edb80d3a2bdabc11d44}
+\hypertarget{class_axis_a12acb583f5bf5f386dc0ea78fa4461aa}{\index{Axis@{Axis}!id@{id}}
+\index{id@{id}!Axis@{Axis}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}int Axis\-::id\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_a12acb583f5bf5f386dc0ea78fa4461aa}
+\hypertarget{class_axis_a68817bcf5ea38ff2d81698175ae9c6ee}{\index{Axis@{Axis}!line@{line}}
+\index{line@{line}!Axis@{Axis}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data} Axis\-::line\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_a68817bcf5ea38ff2d81698175ae9c6ee}
+\hypertarget{class_axis_a5bb30599723134e0d1250d6028a62575}{\index{Axis@{Axis}!parent\-Plot@{parent\-Plot}}
+\index{parent\-Plot@{parent\-Plot}!Axis@{Axis}}
+\subsubsection[{parent\-Plot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-Y\-Plot}$\ast$ Axis\-::parent\-Plot}}\label{class_axis_a5bb30599723134e0d1250d6028a62575}
+\hypertarget{class_axis_a33bc678ecaf1bda4a3a94c4dab678ac9}{\index{Axis@{Axis}!p\-Digits@{p\-Digits}}
+\index{p\-Digits@{p\-Digits}!Axis@{Axis}}
+\subsubsection[{p\-Digits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Digits}$\ast$ Axis\-::p\-Digits\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_a33bc678ecaf1bda4a3a94c4dab678ac9}
+\hypertarget{class_axis_a56a2fcc5091fd6eca3cd6b80764616bb}{\index{Axis@{Axis}!p\-Grid\-Lines@{p\-Grid\-Lines}}
+\index{p\-Grid\-Lines@{p\-Grid\-Lines}!Axis@{Axis}}
+\subsubsection[{p\-Grid\-Lines}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Grid\-Lines}$\ast$ Axis\-::p\-Grid\-Lines\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_a56a2fcc5091fd6eca3cd6b80764616bb}
+\hypertarget{class_axis_a28f164cd1a8b77ee7431ade1ee39bc61}{\index{Axis@{Axis}!p\-Label@{p\-Label}}
+\index{p\-Label@{p\-Label}!Axis@{Axis}}
+\subsubsection[{p\-Label}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Label}$\ast$ Axis\-::p\-Label\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_a28f164cd1a8b77ee7431ade1ee39bc61}
+\hypertarget{class_axis_adee9b22eca2aa3d9be3c7a2f9e71039b}{\index{Axis@{Axis}!p\-Ticks@{p\-Ticks}}
+\index{p\-Ticks@{p\-Ticks}!Axis@{Axis}}
+\subsubsection[{p\-Ticks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ticks}$\ast$ Axis\-::p\-Ticks\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_adee9b22eca2aa3d9be3c7a2f9e71039b}
+\hypertarget{class_axis_a02853da582831baaa9ebc1289d86ad35}{\index{Axis@{Axis}!range\-Max@{range\-Max}}
+\index{range\-Max@{range\-Max}!Axis@{Axis}}
+\subsubsection[{range\-Max}]{\setlength{\rightskip}{0pt plus 5cm}double Axis\-::range\-Max\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_a02853da582831baaa9ebc1289d86ad35}
+\hypertarget{class_axis_adb0e6da2c0521df03e3e7d820d73af82}{\index{Axis@{Axis}!range\-Min@{range\-Min}}
+\index{range\-Min@{range\-Min}!Axis@{Axis}}
+\subsubsection[{range\-Min}]{\setlength{\rightskip}{0pt plus 5cm}double Axis\-::range\-Min\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_adb0e6da2c0521df03e3e7d820d73af82}
+\hypertarget{class_axis_a50bf5f208bbca7d528ca52e62b7928e9}{\index{Axis@{Axis}!rc\-Self@{rc\-Self}}
+\index{rc\-Self@{rc\-Self}!Axis@{Axis}}
+\subsubsection[{rc\-Self}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T Axis\-::rc\-Self\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_axis_a50bf5f208bbca7d528ca52e62b7928e9}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_axis_8h}{Axis.\-h}\item 
+src/\hyperlink{_axis_8cpp}{Axis.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,426 @@
+\hypertarget{classxyplot_1_1_x_y_plot_manager}{\section{Класс xyplot\-:\-:X\-Y\-Plot\-Manager}
+\label{classxyplot_1_1_x_y_plot_manager}\index{xyplot\-::\-X\-Y\-Plot\-Manager@{xyplot\-::\-X\-Y\-Plot\-Manager}}
+}
+
+
+Класс-\/обертка для работы с 2\-D графикой  
+
+
+
+
+{\ttfamily \#include $<$X\-Y\-Plot\-Wrapper.\-h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classxyplot_1_1_x_y_plot_manager_ad9528d6181d8935cc7ad9c1d34671bc8}{Get\-Last\-Error} () const 
+\begin{DoxyCompactList}\small\item\em Функция получения кода последней ошибки \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classxyplot_1_1_x_y_plot_manager_a756b2e15fad862294eabbf6781ff8034}{Translate\-Error} (int code) const 
+\begin{DoxyCompactList}\small\item\em Расшифровывает код ошибки \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__group1_ga894a76ee9162ccae431581ed25c5029f}{Initialize} (const char $\ast$psz\-Dll\-Path, H\-W\-N\-D hwnd\-Parent=N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em Данная функция инициализирует класса-\/обертку. \end{DoxyCompactList}\item 
+\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \hyperlink{group__group1_ga056dc5f3c798c3c3f38d2ac9d4051ecb}{Create\-Plot} (H\-W\-N\-D hwnd\-Parent)
+\begin{DoxyCompactList}\small\item\em Функция создания экземпляра 2\-D графики. В случае если неудалось создать экземпляр функция генерирует исключение \hyperlink{classxyplot_1_1_x_y_plot_request_failure}{X\-Y\-Plot\-Request\-Failure}. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__group1_gaa1d4729bae2ddfd134d72fcab62930d5}{Destroy\-Plot} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot)
+\begin{DoxyCompactList}\small\item\em Функция удаления экземпляра 2\-D графики. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{classxyplot_1_1_x_y_plot_manager_a3e8a430da4df94af8575d388064f21df}{Copy\-To\-Clipboard} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, unsigned width, unsigned height, unsigned dpi)
+\begin{DoxyCompactList}\small\item\em Функция копирует текущее содержимое экзкемпляра 2\-D графики в буфер обмена в виде изображения. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{classxyplot_1_1_x_y_plot_manager_a056c90eb93b99097d2514177b0b993b5}{Draw\-To\-Bitmap} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, H\-B\-I\-T\-M\-A\-P \&h\-Bitmap, bool b\-Draw\-Window\-B\-G, bool b\-Draw\-Client\-B\-G)
+\begin{DoxyCompactList}\small\item\em Функция копирует текущее содержимое экзкемпляра 2\-D в буфер битовую карту. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{classxyplot_1_1_x_y_plot_manager_a1c9425d25c34fc173ef0367a2ef9eb74}{Run\-Dialog} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot)
+\begin{DoxyCompactList}\small\item\em Функция вызывает диалог настроек экземпляра 2\-D графики . \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_properties_ga86742bc6603db4141caaee586872e5df}{Reg\-Restore\-Defaults} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot)
+\begin{DoxyCompactList}\small\item\em Функция сбрасывает настройки экземпляра 2\-D графики в настройки по умолчанию. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_properties_ga24942314b181fa7f547629d15577589d}{Reg\-Load\-Settings} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, const char $\ast$psz\-Key, const char $\ast$psz\-Value)
+\begin{DoxyCompactList}\small\item\em Функция загружает настройки экземпляра 2\-D графики из реестра. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_properties_ga07f14ff8585116fcf19f7421a0c9e64f}{Reg\-Save\-Settings} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, const char $\ast$psz\-Key, const char $\ast$psz\-Value)
+\begin{DoxyCompactList}\small\item\em Функция сохраняет настройки экземпляра 2\-D графики в реестре. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_properties_gaa8c0d039a585af0356d553ba7a76f152}{Save\-Properties} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, const char $\ast$psz\-File\-Name)
+\begin{DoxyCompactList}\small\item\em Функция сохраняет настройки экземпляра 2\-D графики в файле. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_properties_ga569a657dccc96f9087dde44794712848}{Load\-Properties} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, const char $\ast$psz\-File\-Name)
+\begin{DoxyCompactList}\small\item\em Функция загружает настройки экземпляра 2\-D графики из файла. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_select_ga7851d700a43f68d0738617ee01afdd73}{Select} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile, unsigned n\-Index)
+\begin{DoxyCompactList}\small\item\em Функция устанавливает выделение указанного профиля. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_select_ga155570b64a87c676f3cf023ad8ed42a1}{Select} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_g_r_o_u_p}{H\-G\-R\-O\-U\-P} \&h\-Group, unsigned n\-Index)
+\begin{DoxyCompactList}\small\item\em Функция устанавливает выделение указанной группы профилей. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_select_gadcf35c2c2d175cd20d607a05b069fa42}{Set\-Selection\-Mode} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, int mode)
+\begin{DoxyCompactList}\small\item\em Функция задает режим выделения для профилей и групп профилей \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} \hyperlink{group__gr_select_ga0e7cc28041a0ca7df37af0a4ebd126a4}{Get\-Selection\-Mode} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot) const 
+\begin{DoxyCompactList}\small\item\em Функция возвращает текущий режим выделения для профилей и групп профилей \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_select_gae329866f17329d4f26be83d566cdeecd}{Set\-Flash\-Speed} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, int speed)
+\begin{DoxyCompactList}\small\item\em Функция задает частоту мерцания профиля либо группы профилей в режиме выделения S\-M\-\_\-\-F\-L\-A\-S\-H. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{classxyplot_1_1_x_y_plot_manager_ab7231a3949a367bc02164dc0705e4fa0}{Set\-Redraw} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, B\-O\-O\-L b\-Redraw=T\-R\-U\-E)
+\begin{DoxyCompactList}\small\item\em Функция разрешает либо запрещает перерисовку экземпляра 2\-D графики \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_elements_gac086b543fc9cab773b6807c2420ce739}{Set\-Axis\-Range} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} axis, double d\-Min, double d\-Max)
+\begin{DoxyCompactList}\small\item\em Функция задает диапазон значений оси экземпляра 2\-D графики. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_elements_ga086a2c52f7ad3bddbe9269228fd0977a}{Get\-Axis\-Range} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} axis, double \&d\-Min, double \&d\-Max) const 
+\begin{DoxyCompactList}\small\item\em Функция получения диапазона значений оси экземпляра 2\-D графики. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{group__gr_elements_ga854706a96f0c8cfba9db24dc3f4bb54f}{Get\-String} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} item, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} subitem) const 
+\begin{DoxyCompactList}\small\item\em Функция получения строки элемента 2\-D графики. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_elements_ga765727fbc082d07df181ba5bacb230f3}{Set\-String} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} item, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} subitem, const char $\ast$psz\-String)
+\begin{DoxyCompactList}\small\item\em Функция задания строки элемента 2\-D графики. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} \hyperlink{group__gr_elements_ga02ac169b6968c5e778fdb120cfa2cbb5}{Get\-Long} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} item, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} subitem) const 
+\item 
+B\-O\-O\-L \hyperlink{group__gr_elements_gaa92b59ee49654f44a139658e0e2e4af4}{Set\-Long} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} item, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} subitem, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} value)
+\begin{DoxyCompactList}\small\item\em Функция задания целочисленного значения связанного с элементом 2\-D графики. \end{DoxyCompactList}\item 
+double \hyperlink{group__gr_elements_gabc94c084a9d1e27c112606bac9ed6505}{Get\-Double} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} item, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} subitem) const 
+\item 
+B\-O\-O\-L \hyperlink{group__gr_elements_gada6cc7904e60ca04d109118293b01265}{Set\-Double} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} item, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} subitem, double value)
+\begin{DoxyCompactList}\small\item\em Функция задания значения с плавающей точкой связанного с элементом 2\-D графики. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_elements_ga760b95b60afd9044a598128f49d475e8}{Enable\-Item} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} item, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} subitem, B\-O\-O\-L enabled)
+\begin{DoxyCompactList}\small\item\em Функция включения/отключения элемента 2\-D графики. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_elements_ga46fa280afeab028fa4e2e71d574648da}{Is\-Enabled} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} item, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} subitem) const 
+\begin{DoxyCompactList}\small\item\em Функция возвращает флаг состояния элемента 2\-D графики (включен/выключен). \end{DoxyCompactList}\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{group__gr_elements_ga19d975aa81ed28631a89cb6cfabf80a1}{Get\-Color} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} item, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} subitem) const 
+\begin{DoxyCompactList}\small\item\em Функция включения/отключения элемента 2\-D графики. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_elements_gaea19b965d3f247481ccb5090901d9b33}{Set\-Color} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} item, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} subitem, C\-O\-L\-O\-R\-R\-E\-F color)
+\begin{DoxyCompactList}\small\item\em Функция задания цвета элемента 2\-D графики. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_elements_ga94d466cf2a727291630053fb46796a7b}{Set\-Font} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} item, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} subitem, const L\-O\-G\-F\-O\-N\-T $\ast$font)
+\begin{DoxyCompactList}\small\item\em Функция задания шрифта элемента 2\-D графики. \end{DoxyCompactList}\item 
+\hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \hyperlink{group__gr_output_ga0b66f2af6d72e28697ea2404362bcd08}{Create\-Profile} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, const char $\ast$name, C\-O\-L\-O\-R\-R\-E\-F color, int width, int line\-Type=\hyperlink{namespacexyplot_a3d67107a3da8dc1ef0114ab0352e01eda50f3326c8ff8eb69d629156dfe2e268a}{xyplot\-::\-P\-L\-S\-\_\-\-S\-O\-L\-I\-D}, const char $\ast$sz\-Line\-Template=0, B\-O\-O\-L visible=T\-R\-U\-E, B\-O\-O\-L showmarks=F\-A\-L\-S\-E, const \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} x\-Parent\-Axis=\hyperlink{namespacexyplot_aab624afb50724c293bffe01fff26c9c2ae9a92ae30b1ebc969b6a7256f1511924}{xyplot\-::\-P\-I\-\_\-\-A\-X\-I\-S\-\_\-\-B\-O\-T\-T\-O\-M}, const \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} y\-Parent\-Axis=\hyperlink{namespacexyplot_aab624afb50724c293bffe01fff26c9c2a5cab3df16a4e44f280dec6a0108dc09d}{xyplot\-::\-P\-I\-\_\-\-A\-X\-I\-S\-\_\-\-L\-E\-F\-T})
+\begin{DoxyCompactList}\small\item\em Создания экземпляра профиля \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_gaa5a7b664a3f8dbc02402bd1a8926b4c6}{Delete\-Profile} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile)
+\begin{DoxyCompactList}\small\item\em Удаление экземпляра профиля \end{DoxyCompactList}\item 
+\hyperlink{classxyplot_1_1_h_g_r_o_u_p}{H\-G\-R\-O\-U\-P} \hyperlink{group__gr_output_gaa9973935dcf6968295717ca9e8e832c0}{Create\-Group} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot)
+\begin{DoxyCompactList}\small\item\em Создание группы профилей \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_gae089459d5fab87f702abe1ac196906dc}{Delete\-Group} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_g_r_o_u_p}{H\-G\-R\-O\-U\-P} \&h\-Group)
+\begin{DoxyCompactList}\small\item\em Удаление группы профилей \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_ga8e52043c4085813433a831d07687ebc9}{Bind\-Profile\-To\-Group} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_g_r_o_u_p}{H\-G\-R\-O\-U\-P} \&h\-Group, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile)
+\begin{DoxyCompactList}\small\item\em Добавление профиля к группе \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_gab01278bbb9ea9612d30f3cbe4c7805df}{Get\-Profile\-List} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, std\-::vector$<$ \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} $>$ \&h\-Profiles)
+\item 
+B\-O\-O\-L \hyperlink{group__gr_output_data_ga95d2b2960c45eb6368a9d1039bacdc0d}{Set\-Data} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile, const double $\ast$\hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{px}, const double $\ast$\hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{py}, unsigned \hyperlink{namespacexyplot_a0e8516aaf446c174c28a4327a27dd9ce}{size})
+\begin{DoxyCompactList}\small\item\em Установить данные для профиля \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_data_ga6557de664a4b3b7fb8fd7ab2c9d736b9}{Get\-Data} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile, double $\ast$\hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{px}, double $\ast$\hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{py}, unsigned $\ast$\hyperlink{namespacexyplot_a0e8516aaf446c174c28a4327a27dd9ce}{size})
+\begin{DoxyCompactList}\small\item\em Копирует данные профиля в массивы \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_data_ga21b8bd6024247b085e6c047ce4f6e763}{Append\-Data} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile, const double $\ast$\hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{px}, const double $\ast$\hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{py}, unsigned \hyperlink{namespacexyplot_a0e8516aaf446c174c28a4327a27dd9ce}{size})
+\begin{DoxyCompactList}\small\item\em Дописать данные для профиля \end{DoxyCompactList}\item 
+\hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \hyperlink{group__gr_prof_ex_ga3030074790ed5ddf22f2776226bd5442}{Get\-Selected\-Profile} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot) const 
+\begin{DoxyCompactList}\small\item\em Получить текущий выделенный профиль \end{DoxyCompactList}\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{group__gr_prof_ex_gaafda2be977c03f1a2a5e2a35d4117feb}{Get\-Color} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile) const 
+\begin{DoxyCompactList}\small\item\em Получить цвет профиля \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_prof_ex_gadd75f7d7f166418aac31753a4a1bc59c}{Set\-Color} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile, C\-O\-L\-O\-R\-R\-E\-F color)
+\begin{DoxyCompactList}\small\item\em Задать цвет профиля \end{DoxyCompactList}\item 
+\hyperlink{classxyplot_1_1_h_l_e_v_e_l}{H\-L\-E\-V\-E\-L} \hyperlink{group__gr_lvl_ex_gaf2ee73286c657c5cf07963143e74246d}{Create\-Level} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} axis, double val, const char $\ast$psz\-Title, C\-O\-L\-O\-R\-R\-E\-F clr, int width)
+\begin{DoxyCompactList}\small\item\em Создания экземпляра линии уровня \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_lvl_ex_ga1f2d9a5228e0b865b6bcc3b3d0929819}{Delete\-Level} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_l_e_v_e_l}{H\-L\-E\-V\-E\-L} \&h\-Level)
+\begin{DoxyCompactList}\small\item\em Удаление линии уровня \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_lvl_ex_gae55f0c1003d6676c068b3c621c42c156}{Set\-Level} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_l_e_v_e_l}{H\-L\-E\-V\-E\-L} \&h\-Level, double value)
+\begin{DoxyCompactList}\small\item\em Задание нового значения линии уровня \end{DoxyCompactList}\item 
+\hyperlink{classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n}{H\-P\-L\-O\-T\-R\-E\-G\-I\-O\-N} \hyperlink{group__gr_rgn_ex_ga7505d9ffcaedba6a7b8861b537e3eb23}{Create\-Region} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} axis\-X, \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{long} axis\-Y, double x\-From, double x\-To, double y\-From, double y\-To, const char $\ast$psz\-Title)
+\begin{DoxyCompactList}\small\item\em Создания экземпляра региона \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_rgn_ex_ga752b100470bc7e465f283a957c67a24d}{Delete\-Region} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n}{H\-P\-L\-O\-T\-R\-E\-G\-I\-O\-N} \&h\-Region)
+\begin{DoxyCompactList}\small\item\em Удаление региона \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_rgn_ex_ga8e9c9b0cf069c241d4b3349ef7eec32b}{Set\-Region} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n}{H\-P\-L\-O\-T\-R\-E\-G\-I\-O\-N} \&h\-Region, double x\-From, double x\-To, double y\-From, double y\-To)
+\begin{DoxyCompactList}\small\item\em Задание новых границ региона \end{DoxyCompactList}\item 
+\hyperlink{classxyplot_1_1_x_y_plot_manager_a402bc06e3eb7f165e3c1415d691df3b3}{$\sim$\-X\-Y\-Plot\-Manager} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса обертки \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classxyplot_1_1_x_y_plot_manager}{X\-Y\-Plot\-Manager} \& \hyperlink{classxyplot_1_1_x_y_plot_manager_abfde221555f11c692969986174781780}{Instance} ()
+\begin{DoxyCompactList}\small\item\em Функция доступа к единственному экземпляру класса Класс \hyperlink{classxyplot_1_1_x_y_plot_manager}{X\-Y\-Plot\-Manager} является сингелтоном т.\-е. существует единственный экземпляр объекта данного класса. Доступ к нему осуществляется при помощи данной функции. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__gr_construct_gafc0df2010690907aa3a1503ebb90345c}{X\-Y\-Plot\-Manager} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по усмолчанию \end{DoxyCompactList}\item 
+\hyperlink{group__gr_construct_ga3eea4a6ab361a23f4fa7e7aa69758cd0}{X\-Y\-Plot\-Manager} (const \hyperlink{classxyplot_1_1_x_y_plot_manager}{X\-Y\-Plot\-Manager} \&rhs)
+\begin{DoxyCompactList}\small\item\em Конструктор копирования \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+H\-M\-O\-D\-U\-L\-E \hyperlink{classxyplot_1_1_x_y_plot_manager_a1ddc519fd38e08cba67f11f4d2fad942}{m\-\_\-h\-Dll\-Instance}
+\begin{DoxyCompactList}\small\item\em Дескриптор модуля \end{DoxyCompactList}\item 
+int \hyperlink{classxyplot_1_1_x_y_plot_manager_ac842be5823171dc50111c6c4c62f1311}{m\-\_\-n\-Last\-Error}
+\begin{DoxyCompactList}\small\item\em Код последней ошибки \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a8c5635641ba2648c95a8b29c01393f78}{xyplot\-::\-L\-P\-F\-N\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E} \hyperlink{group__gr_func_pointers_ga4c9ea3fa9c04a9f11e5efbbf45484a77}{m\-\_\-lpfn\-Initialize}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Initialize в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a0c97b982a01a1c43f6900a274d295b11}{xyplot\-::\-L\-P\-F\-N\-F\-I\-N\-A\-L\-I\-Z\-E} \hyperlink{group__gr_func_pointers_ga9cdc9837f474268e30378babb487589c}{m\-\_\-lpfn\-Finalize}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Finalize в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_ab78664aa6b50a88a556408cdcb0fedde}{xyplot\-::\-L\-P\-F\-N\-A\-D\-D\-P\-R\-O\-F\-I\-L\-E} \hyperlink{group__gr_func_pointers_gaa98936db9e4efece553498398bc6d097}{m\-\_\-lpfn\-Add\-Profile}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Add\-Profile в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_af6412b804e2c4c568501d1a6e84358cd}{xyplot\-::\-L\-P\-F\-N\-D\-E\-L\-E\-T\-E\-P\-R\-O\-F\-I\-L\-E} \hyperlink{group__gr_func_pointers_ga7966fea312b93dc5a52ba8f913fcc835}{m\-\_\-lpfn\-Delete\-Profile}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Delete\-Profile в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-D\-A\-T\-A \hyperlink{group__gr_func_pointers_ga12cbf5f4c39f57265eb98fa148e9150a}{m\-\_\-lpfn\-Set\-Data}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Set\-Data в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-D\-A\-T\-A \hyperlink{group__gr_func_pointers_gaf08ccb9c45b77898ac5a5c024b7b6268}{m\-\_\-lpfn\-Get\-Data}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Get\-Data в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a159121ca25d59ecb75770f0fbeea2515}{xyplot\-::\-L\-P\-F\-N\-A\-P\-P\-E\-N\-D\-D\-A\-T\-A} \hyperlink{group__gr_func_pointers_gab3dfb9dbb2d423d2e6b64fe0d0fcbb8e}{m\-\_\-lpfn\-Append\-Data}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Append\-Data в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a9bb3deed6ff9723181f09eb590fdf7dd}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-S\-T\-R\-I\-N\-G} \hyperlink{group__gr_func_pointers_ga94e766d64a4b9d8d435702a2244540b6}{m\-\_\-lpfn\-Set\-String}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Set\-String в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_ae11ea8cd7e895887b754555f31b0adf3}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-S\-T\-R\-I\-N\-G} \hyperlink{group__gr_func_pointers_ga8fdef4b5c9b15682453368367ebb808a}{m\-\_\-lpfn\-Get\-String}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Get\-String в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_ac41175dc795758950c58e18d1660faa5}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-C\-O\-L\-O\-R} \hyperlink{group__gr_func_pointers_ga9e25ad5afee76a5ea6402649490afa33}{m\-\_\-lpfn\-Set\-Color}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Set\-Color в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a0f7f51503a885f8e1b24c25973b1fc1d}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-C\-O\-L\-O\-R} \hyperlink{group__gr_func_pointers_gaea89de1aabb85ec0bc1744be6c4b8c0e}{m\-\_\-lpfn\-Get\-Color}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Get\-Color в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a28e8fe476dccb830b8c9557e0f802263}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-F\-O\-N\-T} \hyperlink{group__gr_func_pointers_ga20972e1ead3d8fc4ae624436c7c562e5}{m\-\_\-lpfn\-Set\-Font}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Set\-Font в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a6baf918a5bfe565a879b9d4fe5ef1124}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-L\-O\-N\-G} \hyperlink{group__gr_func_pointers_gaaf490a07c7be98e17bef527c3f4f7403}{m\-\_\-lpfn\-Set\-Long}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Set\-Long в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a7fdb8fd61356e30fc76cd5a02266dbf7}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-L\-O\-N\-G} \hyperlink{group__gr_func_pointers_gad700a337b94bdc880881e059f50c6169}{m\-\_\-lpfn\-Get\-Long}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Get\-Long в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_acc2b15a223e822003ec2f51071dd16b2}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-D\-O\-U\-B\-L\-E} \hyperlink{group__gr_func_pointers_ga1f974cec0445d2921f6e039830b27942}{m\-\_\-lpfn\-Set\-Double}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Set\-Double в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_ada339f0f5dd59a8edbeb5462b404b412}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-D\-O\-U\-B\-L\-E} \hyperlink{group__gr_func_pointers_gac1a94a046cfcf628aa6692941a206adc}{m\-\_\-lpfn\-Get\-Double}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Get\-Double в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a2b24ec8edd78c631d7576e9e0804bd3b}{xyplot\-::\-L\-P\-F\-N\-I\-S\-E\-N\-A\-B\-L\-E\-D} \hyperlink{group__gr_func_pointers_ga2fdbebbf63a4c3cd16bbf660614f18c0}{m\-\_\-lpfn\-Is\-Enabled}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Is\-Enabled в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_adc713064c472b328718bae52d4a28eb5}{xyplot\-::\-L\-P\-F\-N\-E\-N\-A\-B\-L\-E\-I\-T\-E\-M} \hyperlink{group__gr_func_pointers_ga421533a2bc619d310d3d15ea0e711e2e}{m\-\_\-lpfn\-Enable\-Item}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Enable\-Item в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a097f19903e90904e363a37bd0418d16b}{xyplot\-::\-L\-P\-F\-N\-S\-A\-V\-E\-P\-R\-O\-P\-E\-R\-T\-I\-E\-S} \hyperlink{group__gr_func_pointers_ga74b37df4630a8a23c0751467389449c7}{m\-\_\-lpfn\-Save\-Properties}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Save\-Properties в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a5fcef3c2ef35e0f543cb6e0489566a41}{xyplot\-::\-L\-P\-F\-N\-L\-O\-A\-D\-P\-R\-O\-P\-E\-R\-T\-I\-E\-S} \hyperlink{group__gr_func_pointers_ga13af71d79b02970b7d7c78d148b7fb3e}{m\-\_\-lpfn\-Load\-Properties}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Load\-Properties в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a8a0a6d08dd052f79805399d35f400536}{xyplot\-::\-L\-P\-F\-N\-S\-E\-L\-E\-C\-T} \hyperlink{group__gr_func_pointers_ga4be55c9f4df8ac61fd6735edfe546eb6}{m\-\_\-lpfn\-Select}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Select в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_accdc65e18386127090607d48d4d6ef55}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-S\-E\-L\-E\-C\-T\-I\-O\-N} \hyperlink{group__gr_func_pointers_gab3365cbe41762a81c38364e87871cf33}{m\-\_\-lpfn\-Get\-Selection}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Get\-Selection в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a64a77ea08258ed9ffc0bf7ffda3da7a4}{xyplot\-::\-L\-P\-F\-N\-C\-O\-P\-Y\-T\-O\-C\-L\-I\-P\-B\-O\-A\-R\-D} \hyperlink{group__gr_func_pointers_gaaa80069b8151f0ac44feb1d2c822cf37}{m\-\_\-lpfn\-Copy\-To\-Clipboard}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Copy\-To\-Clipboard в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_abe5bcbe4527096dba3cee83119449785}{xyplot\-::\-L\-P\-F\-N\-D\-R\-A\-W\-T\-O\-B\-I\-T\-M\-A\-P} \hyperlink{group__gr_func_pointers_gac78dbe52f4384dce76714ab7af98d53f}{m\-\_\-lpfn\-Draw\-To\-Bitmap}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Draw\-To\-Bitmap в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_ab1a3054ba818e5b40da27a562af9714c}{xyplot\-::\-L\-P\-F\-N\-C\-R\-E\-A\-T\-E\-G\-R\-O\-U\-P} \hyperlink{group__gr_func_pointers_gafe7e6b9cda98ce4ad3e328a195b21883}{m\-\_\-lpfn\-Create\-Group}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Create\-Group в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a17ee39c2695e1c7c78048d0672744524}{xyplot\-::\-L\-P\-F\-N\-D\-E\-L\-E\-T\-E\-G\-R\-O\-U\-P} \hyperlink{group__gr_func_pointers_ga0503dbf4de0b55a29652e1266f5d6ef4}{m\-\_\-lpfn\-Delete\-Group}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Delete\-Group в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_ae721ca071f1b5292073d3e831c8b1150}{xyplot\-::\-L\-P\-F\-N\-B\-I\-N\-D\-P\-R\-O\-F\-I\-L\-E} \hyperlink{group__gr_func_pointers_gaf868f86e6094025ea6e21f6f0ba4140c}{m\-\_\-lpfn\-Bind\-Profile}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Bind\-Profile в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a6dfacb1414fefdad54092cb9264eb4b1}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-P\-R\-O\-F\-L\-I\-S\-T} \hyperlink{group__gr_func_pointers_ga7e30180703300607ed08653d0a7861eb}{m\-\_\-lpfn\-Get\-Profile\-List}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Get\-Profile\-List в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a4b16720b36f41b782b9c112b406d9698}{xyplot\-::\-L\-P\-F\-N\-R\-E\-G\-R\-E\-S\-T\-O\-R\-E\-D\-E\-F\-A\-U\-L\-T\-S} \hyperlink{group__gr_func_pointers_ga4eb7d852474ae198afe0c1b67b38d63c}{m\-\_\-lpfn\-Reg\-Restore\-Defaults}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Reg\-Restore\-Defaults. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a2f14b7c1bf6f824f039dd8cafcd19f20}{xyplot\-::\-L\-P\-F\-N\-R\-E\-G\-L\-O\-A\-D\-S\-E\-T\-T\-I\-N\-G\-S} \hyperlink{group__gr_func_pointers_gada86eb509b8fb88edc54dd634a198db6}{m\-\_\-lpfn\-Reg\-Load\-Settings}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Reg\-Load\-Settings в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a852637cd21abfcac7de9635bbd175db7}{xyplot\-::\-L\-P\-F\-N\-R\-E\-G\-S\-A\-V\-E\-S\-E\-T\-T\-I\-N\-G\-S} \hyperlink{group__gr_func_pointers_gacb18df7cd092a71ad121f55d047da5dc}{m\-\_\-lpfn\-Reg\-Save\-Settings}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Reg\-Save\-Settings в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a63fcd576a6d31af2655357ffa3ea7b74}{xyplot\-::\-L\-P\-F\-N\-R\-U\-N\-D\-I\-A\-L\-O\-G} \hyperlink{group__gr_func_pointers_ga6ee84aa8c78971f94a8abb1bd5ed9558}{m\-\_\-lpfn\-Run\-Dialog}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Run\-Dialog в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a0aaffe16c53538a1e712cdc6caef070f}{xyplot\-::\-L\-P\-F\-N\-A\-D\-D\-R\-E\-G\-I\-O\-N} \hyperlink{group__gr_func_pointers_gaccaf69dea4abee8034cf3d7e4164ac3d}{m\-\_\-lpfn\-Add\-Region}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Add\-Region в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_ad184f4d62ca85e471cef796c79dd0b4c}{xyplot\-::\-L\-P\-F\-N\-D\-E\-L\-E\-T\-E\-R\-E\-G\-I\-O\-N} \hyperlink{group__gr_func_pointers_gaf02bf6794063914ee9dbe34fb0d29c0e}{m\-\_\-lpfn\-Delete\-Region}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Delete\-Region в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a048931557c2d0bfaa041629319bb118d}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-R\-E\-G\-I\-O\-N} \hyperlink{group__gr_func_pointers_gae81937286e2936ec1f24abfd7334c364}{m\-\_\-lpfn\-Set\-Region}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Set\-Region в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_acfe1c4a6bf88e4c101cae03f31602993}{xyplot\-::\-L\-P\-F\-N\-A\-D\-D\-L\-E\-V\-E\-L} \hyperlink{group__gr_func_pointers_ga62b0b0bd4d99cf0d395c6ebe713fadfa}{m\-\_\-lpfn\-Add\-Level}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Add\-Level в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_a96f2d0955d7feb162b2730e65398ed64}{xyplot\-::\-L\-P\-F\-N\-D\-E\-L\-E\-T\-E\-L\-E\-V\-E\-L} \hyperlink{group__gr_func_pointers_gadeccbf45813bb1f7ffcb85fb1679b371}{m\-\_\-lpfn\-Delete\-Level}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Delete\-Level в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\item 
+\hyperlink{namespacexyplot_ae4a8b61fef16cdd55e9491d30f602509}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-L\-E\-V\-E\-L} \hyperlink{group__gr_func_pointers_ga87f88da036cf4c05533e8f913d608ff7}{m\-\_\-lpfn\-Set\-Level}
+\begin{DoxyCompactList}\small\item\em Указатель на функцию Set\-Level в модуле m\-\_\-h\-Dll\-Instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс-\/обертка для работы с 2\-D графикой 
+
+Класс-\/обертка для работы с объектами отображения 2\-D графики. Данный класс предоставляет инструменты создания, манипуляции и уничтожение объектов 2\-D графики. Класс является сингелтоном , т.\-е. существует только один экземпляр данного класса, доступ к которому осуществляется через статическую функцию {\bfseries Instance}. 
+
+\subsection{Конструктор(ы)}
+\hypertarget{classxyplot_1_1_x_y_plot_manager_a402bc06e3eb7f165e3c1415d691df3b3}{\index{xyplot\-::\-X\-Y\-Plot\-Manager@{xyplot\-::\-X\-Y\-Plot\-Manager}!$\sim$\-X\-Y\-Plot\-Manager@{$\sim$\-X\-Y\-Plot\-Manager}}
+\index{$\sim$\-X\-Y\-Plot\-Manager@{$\sim$\-X\-Y\-Plot\-Manager}!xyplot::XYPlotManager@{xyplot\-::\-X\-Y\-Plot\-Manager}}
+\subsubsection[{$\sim$\-X\-Y\-Plot\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}xyplot\-::\-X\-Y\-Plot\-Manager\-::$\sim$\-X\-Y\-Plot\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classxyplot_1_1_x_y_plot_manager_a402bc06e3eb7f165e3c1415d691df3b3}
+
+
+Деструктор класса обертки 
+
+
+
+\subsection{Методы}
+\hypertarget{classxyplot_1_1_x_y_plot_manager_a3e8a430da4df94af8575d388064f21df}{\index{xyplot\-::\-X\-Y\-Plot\-Manager@{xyplot\-::\-X\-Y\-Plot\-Manager}!Copy\-To\-Clipboard@{Copy\-To\-Clipboard}}
+\index{Copy\-To\-Clipboard@{Copy\-To\-Clipboard}!xyplot::XYPlotManager@{xyplot\-::\-X\-Y\-Plot\-Manager}}
+\subsubsection[{Copy\-To\-Clipboard}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Copy\-To\-Clipboard (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{unsigned}]{width, }
+\item[{unsigned}]{height, }
+\item[{unsigned}]{dpi}
+\end{DoxyParamCaption}
+)}}\label{classxyplot_1_1_x_y_plot_manager_a3e8a430da4df94af8575d388064f21df}
+
+
+Функция копирует текущее содержимое экзкемпляра 2\-D графики в буфер обмена в виде изображения. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+ & {\em width} & -\/ ширина результирующего изображения в пикселях \\
+\hline
+ & {\em height} & -\/ высота результирующего изображения в пикселях \\
+\hline
+ & {\em dpi} & -\/ разрешение изображения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если копирование прошло успешно; 
+
+false -\/ в случае если не удалось скопировать экземпляр в буфер обмена. 
+\end{DoxyReturn}
+\hypertarget{classxyplot_1_1_x_y_plot_manager_a056c90eb93b99097d2514177b0b993b5}{\index{xyplot\-::\-X\-Y\-Plot\-Manager@{xyplot\-::\-X\-Y\-Plot\-Manager}!Draw\-To\-Bitmap@{Draw\-To\-Bitmap}}
+\index{Draw\-To\-Bitmap@{Draw\-To\-Bitmap}!xyplot::XYPlotManager@{xyplot\-::\-X\-Y\-Plot\-Manager}}
+\subsubsection[{Draw\-To\-Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Draw\-To\-Bitmap (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{H\-B\-I\-T\-M\-A\-P \&}]{h\-Bitmap, }
+\item[{bool}]{b\-Draw\-Window\-B\-G, }
+\item[{bool}]{b\-Draw\-Client\-B\-G}
+\end{DoxyParamCaption}
+)}}\label{classxyplot_1_1_x_y_plot_manager_a056c90eb93b99097d2514177b0b993b5}
+
+
+Функция копирует текущее содержимое экзкемпляра 2\-D в буфер битовую карту. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+ & {\em h\-Bitmap} & -\/ дескриптор битовой карты \\
+\hline
+ & {\em b\-Draw\-Window\-B\-G} & -\/ флаг отрисовки фона окна \\
+\hline
+ & {\em b\-Draw\-Client\-B\-G} & -\/ флаг отрисовки фона клиентской части \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если копирование прошло успешно; 
+
+false -\/ в случае если не удалось скопировать экземпляр в буфер обмена. 
+\end{DoxyReturn}
+\hypertarget{classxyplot_1_1_x_y_plot_manager_ad9528d6181d8935cc7ad9c1d34671bc8}{\index{xyplot\-::\-X\-Y\-Plot\-Manager@{xyplot\-::\-X\-Y\-Plot\-Manager}!Get\-Last\-Error@{Get\-Last\-Error}}
+\index{Get\-Last\-Error@{Get\-Last\-Error}!xyplot::XYPlotManager@{xyplot\-::\-X\-Y\-Plot\-Manager}}
+\subsubsection[{Get\-Last\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Get\-Last\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classxyplot_1_1_x_y_plot_manager_ad9528d6181d8935cc7ad9c1d34671bc8}
+
+
+Функция получения кода последней ошибки 
+
+\begin{DoxyReturn}{Возвращает}
+целочисленный код последней ошибки 
+\end{DoxyReturn}
+\hypertarget{classxyplot_1_1_x_y_plot_manager_abfde221555f11c692969986174781780}{\index{xyplot\-::\-X\-Y\-Plot\-Manager@{xyplot\-::\-X\-Y\-Plot\-Manager}!Instance@{Instance}}
+\index{Instance@{Instance}!xyplot::XYPlotManager@{xyplot\-::\-X\-Y\-Plot\-Manager}}
+\subsubsection[{Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-Y\-Plot\-Manager} \& X\-Y\-Plot\-Manager\-::\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classxyplot_1_1_x_y_plot_manager_abfde221555f11c692969986174781780}
+
+
+Функция доступа к единственному экземпляру класса Класс \hyperlink{classxyplot_1_1_x_y_plot_manager}{X\-Y\-Plot\-Manager} является сингелтоном т.\-е. существует единственный экземпляр объекта данного класса. Доступ к нему осуществляется при помощи данной функции. 
+
+
+\begin{DoxyCode}
+\hyperlink{group__gr_construct_gafc0df2010690907aa3a1503ebb90345c}{XYPlotManager}& pm = \hyperlink{classxyplot_1_1_x_y_plot_manager_abfde221555f11c692969986174781780}{XYPlotManager::Instance}();
+\end{DoxyCode}
+ \begin{DoxyReturn}{Возвращает}
+Ссылка на экземпляр 
+\end{DoxyReturn}
+\hypertarget{classxyplot_1_1_x_y_plot_manager_a1c9425d25c34fc173ef0367a2ef9eb74}{\index{xyplot\-::\-X\-Y\-Plot\-Manager@{xyplot\-::\-X\-Y\-Plot\-Manager}!Run\-Dialog@{Run\-Dialog}}
+\index{Run\-Dialog@{Run\-Dialog}!xyplot::XYPlotManager@{xyplot\-::\-X\-Y\-Plot\-Manager}}
+\subsubsection[{Run\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Run\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot}
+\end{DoxyParamCaption}
+)}}\label{classxyplot_1_1_x_y_plot_manager_a1c9425d25c34fc173ef0367a2ef9eb74}
+
+
+Функция вызывает диалог настроек экземпляра 2\-D графики . 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если запуск диалога прошел успешно; 
+
+false -\/ в случае если не удалось запустить диалог настроек. 
+\end{DoxyReturn}
+\hypertarget{classxyplot_1_1_x_y_plot_manager_ab7231a3949a367bc02164dc0705e4fa0}{\index{xyplot\-::\-X\-Y\-Plot\-Manager@{xyplot\-::\-X\-Y\-Plot\-Manager}!Set\-Redraw@{Set\-Redraw}}
+\index{Set\-Redraw@{Set\-Redraw}!xyplot::XYPlotManager@{xyplot\-::\-X\-Y\-Plot\-Manager}}
+\subsubsection[{Set\-Redraw}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Set\-Redraw (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{B\-O\-O\-L}]{b\-Redraw = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{classxyplot_1_1_x_y_plot_manager_ab7231a3949a367bc02164dc0705e4fa0}
+
+
+Функция разрешает либо запрещает перерисовку экземпляра 2\-D графики 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+ & {\em b\-Redraw} & -\/ флаг разрешения отрисовки если b\-Redraw = T\-R\-U\-E окно обновляется после каждой операции. В случае если b\-Redraw = F\-A\-L\-S\-E окно не обновляется до того момента вызова функции с параметром b\-Redraw = T\-R\-U\-E 
+\begin{DoxyCode}
+\hyperlink{group__gr_construct_gafc0df2010690907aa3a1503ebb90345c}{XYPlotManager}& pm = \hyperlink{classxyplot_1_1_x_y_plot_manager_abfde221555f11c692969986174781780}{XYPlotManager::Instance}();
+\textcolor{keywordtype}{double}* pdX = NULL;
+\textcolor{keywordtype}{double}* pdY = NULL;
+HPLOT hPlot = ...;\textcolor{comment}{//Получить дескриптор 2D графики}
+pm.SetRedraw(hPlot, FALSE); 
+\textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < nProfileCount; i++)
+\{
+        \textcolor{comment}{//получить данные для профиля}
+     ...
+    HPROFILE hProf = ...;\textcolor{comment}{//получить дескриптор профиля}
+    \textcolor{comment}{//установить данные профиля}
+    pm.SetData(hPlot, hProf, pdX, pdY, nSize);
+    ...\textcolor{comment}{//прочие операции}
+\}
+pm.SetRedraw(hPlot, TRUE);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\hypertarget{classxyplot_1_1_x_y_plot_manager_a756b2e15fad862294eabbf6781ff8034}{\index{xyplot\-::\-X\-Y\-Plot\-Manager@{xyplot\-::\-X\-Y\-Plot\-Manager}!Translate\-Error@{Translate\-Error}}
+\index{Translate\-Error@{Translate\-Error}!xyplot::XYPlotManager@{xyplot\-::\-X\-Y\-Plot\-Manager}}
+\subsubsection[{Translate\-Error}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string X\-Y\-Plot\-Manager\-::\-Translate\-Error (
+\begin{DoxyParamCaption}
+\item[{int}]{code}
+\end{DoxyParamCaption}
+) const}}\label{classxyplot_1_1_x_y_plot_manager_a756b2e15fad862294eabbf6781ff8034}
+
+
+Расшифровывает код ошибки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em code} & -\/ Код ошибки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Возвращает строковое описание ошибки 
+\end{DoxyReturn}
+
+
+\subsection{Данные класса}
+\hypertarget{classxyplot_1_1_x_y_plot_manager_a1ddc519fd38e08cba67f11f4d2fad942}{\index{xyplot\-::\-X\-Y\-Plot\-Manager@{xyplot\-::\-X\-Y\-Plot\-Manager}!m\-\_\-h\-Dll\-Instance@{m\-\_\-h\-Dll\-Instance}}
+\index{m\-\_\-h\-Dll\-Instance@{m\-\_\-h\-Dll\-Instance}!xyplot::XYPlotManager@{xyplot\-::\-X\-Y\-Plot\-Manager}}
+\subsubsection[{m\-\_\-h\-Dll\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}H\-M\-O\-D\-U\-L\-E xyplot\-::\-X\-Y\-Plot\-Manager\-::m\-\_\-h\-Dll\-Instance\hspace{0.3cm}{\ttfamily [protected]}}}\label{classxyplot_1_1_x_y_plot_manager_a1ddc519fd38e08cba67f11f4d2fad942}
+
+
+Дескриптор модуля 
+
+\hypertarget{classxyplot_1_1_x_y_plot_manager_ac842be5823171dc50111c6c4c62f1311}{\index{xyplot\-::\-X\-Y\-Plot\-Manager@{xyplot\-::\-X\-Y\-Plot\-Manager}!m\-\_\-n\-Last\-Error@{m\-\_\-n\-Last\-Error}}
+\index{m\-\_\-n\-Last\-Error@{m\-\_\-n\-Last\-Error}!xyplot::XYPlotManager@{xyplot\-::\-X\-Y\-Plot\-Manager}}
+\subsubsection[{m\-\_\-n\-Last\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int xyplot\-::\-X\-Y\-Plot\-Manager\-::m\-\_\-n\-Last\-Error\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}}\label{classxyplot_1_1_x_y_plot_manager_ac842be5823171dc50111c6c4c62f1311}
+
+
+Код последней ошибки 
+
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_x_y_plot_wrapper_8h}{X\-Y\-Plot\-Wrapper.\-h}\item 
+src/\hyperlink{_x_y_plot_wrapper_8cpp}{X\-Y\-Plot\-Wrapper.\-cpp}\end{DoxyCompactItemize}

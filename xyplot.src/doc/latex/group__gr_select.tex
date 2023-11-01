@@ -1,0 +1,158 @@
+\hypertarget{group__gr_select}{\section{Функции для работы с выделением}
+\label{group__gr_select}\index{Функции для работы с выделением@{Функции для работы с выделением}}
+}
+
+
+Данный набор функций обеспечивает  
+
+
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L \hyperlink{group__gr_select_ga7851d700a43f68d0738617ee01afdd73}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Select} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile, unsigned n\-Index)
+\begin{DoxyCompactList}\small\item\em Функция устанавливает выделение указанного профиля. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_select_ga155570b64a87c676f3cf023ad8ed42a1}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Select} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_g_r_o_u_p}{H\-G\-R\-O\-U\-P} \&h\-Group, unsigned n\-Index)
+\begin{DoxyCompactList}\small\item\em Функция устанавливает выделение указанной группы профилей. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_select_gadcf35c2c2d175cd20d607a05b069fa42}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Set\-Selection\-Mode} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, int mode)
+\begin{DoxyCompactList}\small\item\em Функция задает режим выделения для профилей и групп профилей \end{DoxyCompactList}\item 
+long \hyperlink{group__gr_select_ga0e7cc28041a0ca7df37af0a4ebd126a4}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Get\-Selection\-Mode} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot) const 
+\begin{DoxyCompactList}\small\item\em Функция возвращает текущий режим выделения для профилей и групп профилей \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_select_gae329866f17329d4f26be83d566cdeecd}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Set\-Flash\-Speed} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, int speed)
+\begin{DoxyCompactList}\small\item\em Функция задает частоту мерцания профиля либо группы профилей в режиме выделения S\-M\-\_\-\-F\-L\-A\-S\-H. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Данный набор функций обеспечивает 
+
+\subsection{Функции}
+\hypertarget{group__gr_select_ga0e7cc28041a0ca7df37af0a4ebd126a4}{\index{Функции для работы с выделением@{Функции для работы с выделением}!Get\-Selection\-Mode@{Get\-Selection\-Mode}}
+\index{Get\-Selection\-Mode@{Get\-Selection\-Mode}!Функции для работы с выделением@{Функции для работы с выделением}}
+\subsubsection[{Get\-Selection\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-Manager\-::\-Get\-Selection\-Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot}
+\end{DoxyParamCaption}
+) const}}\label{group__gr_select_ga0e7cc28041a0ca7df37af0a4ebd126a4}
+
+
+Функция возвращает текущий режим выделения для профилей и групп профилей 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+S\-M\-\_\-\-N\-O\-N\-E = -\/1 -\/ нет выделения 
+
+S\-M\-\_\-\-F\-L\-A\-S\-H = 0 -\/ выделение мерцанием 
+
+S\-M\-\_\-\-V\-T\-R\-A\-C\-E = 1 -\/ вертикальная трассировка 
+
+S\-M\-\_\-\-H\-T\-R\-A\-C\-E = 2 -\/ горизонтальная трассировка 
+
+S\-M\-\_\-\-T\-R\-A\-C\-E = 3 -\/ полная трассировка 
+\end{DoxyReturn}
+\hypertarget{group__gr_select_ga7851d700a43f68d0738617ee01afdd73}{\index{Функции для работы с выделением@{Функции для работы с выделением}!Select@{Select}}
+\index{Select@{Select}!Функции для работы с выделением@{Функции для работы с выделением}}
+\subsubsection[{Select}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Select (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-P\-R\-O\-F\-I\-L\-E} \&}]{h\-Profile, }
+\item[{unsigned}]{n\-Index}
+\end{DoxyParamCaption}
+)}}\label{group__gr_select_ga7851d700a43f68d0738617ee01afdd73}
+
+
+Функция устанавливает выделение указанного профиля. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+\mbox{\tt in}  & {\em h\-Profile} & -\/ дескриптор профиля \\
+\hline
+ & {\em n\-Index} & -\/ индекс в массиве данных \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если выделение профиля прошло успешно; 
+
+false -\/ в случае если не удалось выделить профиль. 
+\end{DoxyReturn}
+\hypertarget{group__gr_select_ga155570b64a87c676f3cf023ad8ed42a1}{\index{Функции для работы с выделением@{Функции для работы с выделением}!Select@{Select}}
+\index{Select@{Select}!Функции для работы с выделением@{Функции для работы с выделением}}
+\subsubsection[{Select}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Select (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-G\-R\-O\-U\-P} \&}]{h\-Group, }
+\item[{unsigned}]{n\-Index}
+\end{DoxyParamCaption}
+)}}\label{group__gr_select_ga155570b64a87c676f3cf023ad8ed42a1}
+
+
+Функция устанавливает выделение указанной группы профилей. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+ & {\em h\-Group} & -\/ дескриптор группы профилей \\
+\hline
+ & {\em n\-Index} & -\/ индекс в массиве данных \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если выделение группы профилей прошло успешно; 
+
+false -\/ в случае если не удалось выделить группу профилей. 
+\end{DoxyReturn}
+\hypertarget{group__gr_select_gae329866f17329d4f26be83d566cdeecd}{\index{Функции для работы с выделением@{Функции для работы с выделением}!Set\-Flash\-Speed@{Set\-Flash\-Speed}}
+\index{Set\-Flash\-Speed@{Set\-Flash\-Speed}!Функции для работы с выделением@{Функции для работы с выделением}}
+\subsubsection[{Set\-Flash\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Set\-Flash\-Speed (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{int}]{speed}
+\end{DoxyParamCaption}
+)}}\label{group__gr_select_gae329866f17329d4f26be83d566cdeecd}
+
+
+Функция задает частоту мерцания профиля либо группы профилей в режиме выделения S\-M\-\_\-\-F\-L\-A\-S\-H. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+ & {\em speed} & -\/ режим выделения один из \begin{DoxyItemize}
+\item F\-L\-S\-\_\-\-N\-O\-\_\-\-F\-L\-A\-S\-H = 0 \item F\-L\-S\-\_\-\-V\-E\-R\-Y\-\_\-\-S\-L\-O\-W = 1 \item F\-L\-S\-\_\-\-S\-L\-O\-W = 2 \item F\-L\-S\-\_\-\-N\-O\-R\-M\-A\-L = 3 \item F\-L\-S\-\_\-\-F\-A\-S\-T = 4 \item F\-L\-S\-\_\-\-V\-E\-R\-Y\-\_\-\-F\-A\-S\-T = 5 \item F\-L\-S\-\_\-\-E\-X\-T\-R\-E\-M\-E = 6 \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если удалось установить частоту мерцания; 
+
+false -\/ в случае если не удалось установить частоту мерцания. 
+\end{DoxyReturn}
+\hypertarget{group__gr_select_gadcf35c2c2d175cd20d607a05b069fa42}{\index{Функции для работы с выделением@{Функции для работы с выделением}!Set\-Selection\-Mode@{Set\-Selection\-Mode}}
+\index{Set\-Selection\-Mode@{Set\-Selection\-Mode}!Функции для работы с выделением@{Функции для работы с выделением}}
+\subsubsection[{Set\-Selection\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Set\-Selection\-Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)}}\label{group__gr_select_gadcf35c2c2d175cd20d607a05b069fa42}
+
+
+Функция задает режим выделения для профилей и групп профилей 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+ & {\em mode} & -\/ режим выделения один из S\-M\-\_\-\-N\-O\-N\-E = -\/1 -\/ нет выделения S\-M\-\_\-\-F\-L\-A\-S\-H = 0 -\/ выделение мерцанием S\-M\-\_\-\-V\-T\-R\-A\-C\-E = 1 -\/ вертикальная трассировка S\-M\-\_\-\-H\-T\-R\-A\-C\-E = 2 -\/ горизонтальная трассировка S\-M\-\_\-\-T\-R\-A\-C\-E = 3 -\/ полная трассировка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если удалось установить режим выделения; 
+
+false -\/ в случае если не удалось установить выделение. 
+\end{DoxyReturn}

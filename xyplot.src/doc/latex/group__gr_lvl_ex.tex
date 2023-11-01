@@ -1,0 +1,110 @@
+\hypertarget{group__gr_lvl_ex}{\section{Линии уровней.}
+\label{group__gr_lvl_ex}\index{Линии уровней.@{Линии уровней.}}
+}
+
+
+Функции для работы линиями уровней.  
+
+
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxyplot_1_1_h_l_e_v_e_l}{H\-L\-E\-V\-E\-L} \hyperlink{group__gr_lvl_ex_gaf2ee73286c657c5cf07963143e74246d}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Create\-Level} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, long axis, double val, const char $\ast$psz\-Title, C\-O\-L\-O\-R\-R\-E\-F clr, int width)
+\begin{DoxyCompactList}\small\item\em Создания экземпляра линии уровня \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_lvl_ex_ga1f2d9a5228e0b865b6bcc3b3d0929819}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Delete\-Level} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_l_e_v_e_l}{H\-L\-E\-V\-E\-L} \&h\-Level)
+\begin{DoxyCompactList}\small\item\em Удаление линии уровня \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_lvl_ex_gae55f0c1003d6676c068b3c621c42c156}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Set\-Level} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_l_e_v_e_l}{H\-L\-E\-V\-E\-L} \&h\-Level, double value)
+\begin{DoxyCompactList}\small\item\em Задание нового значения линии уровня \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Функции для работы линиями уровней. Создание, удаление и изменение положения экземпляра линии уровня 
+
+\subsection{Функции}
+\hypertarget{group__gr_lvl_ex_gaf2ee73286c657c5cf07963143e74246d}{\index{Линии уровней.@{Линии уровней.}!Create\-Level@{Create\-Level}}
+\index{Create\-Level@{Create\-Level}!Линии уровней.@{Линии уровней.}}
+\subsubsection[{Create\-Level}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\-L\-E\-V\-E\-L} X\-Y\-Plot\-Manager\-::\-Create\-Level (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf long}}]{axis, }
+\item[{double}]{val, }
+\item[{const char $\ast$}]{psz\-Title, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr, }
+\item[{int}]{width}
+\end{DoxyParamCaption}
+)}}\label{group__gr_lvl_ex_gaf2ee73286c657c5cf07963143e74246d}
+
+
+Создания экземпляра линии уровня 
+
+L\-E\-V\-E\-L\-S.
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика для которого создается профиль \\
+\hline
+ & {\em axis} & ось, для которой создается линия уровня \\
+\hline
+ & {\em val} & значение уровня в физических единицах \\
+\hline
+ & {\em psz\-Title} & подпись линии уровня \\
+\hline
+ & {\em clr} & цвет линии \\
+\hline
+ & {\em width} & толщина линии в пикселях \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+дескриптор экземпляра линии уровня 
+\end{DoxyReturn}
+\hypertarget{group__gr_lvl_ex_ga1f2d9a5228e0b865b6bcc3b3d0929819}{\index{Линии уровней.@{Линии уровней.}!Delete\-Level@{Delete\-Level}}
+\index{Delete\-Level@{Delete\-Level}!Линии уровней.@{Линии уровней.}}
+\subsubsection[{Delete\-Level}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Delete\-Level (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-L\-E\-V\-E\-L} \&}]{h\-Level}
+\end{DoxyParamCaption}
+)}}\label{group__gr_lvl_ex_ga1f2d9a5228e0b865b6bcc3b3d0929819}
+
+
+Удаление линии уровня 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика содержащий группу профилей \\
+\hline
+ & {\em h\-Level} & дескриптор линии уровня \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если линия уровня удалена 
+
+false если линия уровня не удалена 
+\end{DoxyReturn}
+\hypertarget{group__gr_lvl_ex_gae55f0c1003d6676c068b3c621c42c156}{\index{Линии уровней.@{Линии уровней.}!Set\-Level@{Set\-Level}}
+\index{Set\-Level@{Set\-Level}!Линии уровней.@{Линии уровней.}}
+\subsubsection[{Set\-Level}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Set\-Level (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-L\-E\-V\-E\-L} \&}]{h\-Level, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{group__gr_lvl_ex_gae55f0c1003d6676c068b3c621c42c156}
+
+
+Задание нового значения линии уровня 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика содержащий группу профилей \\
+\hline
+ & {\em h\-Level} & дескриптор линии уровня \\
+\hline
+ & {\em value} & новое значение уровня \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если новое значение линия уровня задано 
+
+false если новое значение линия уровня не задано 
+\end{DoxyReturn}

@@ -1,0 +1,880 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Класс LineData</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="#pro-static-attribs">Статические защищенные данные</a> &#124;
+<a href="class_line_data-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс LineData</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="linedata_8h_source.html">linedata.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:af2e2ee6851256e24a12203eda9402bea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3">ROUND</a>, 
+<a class="el" href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaa396289cd387c745e869339a2c24aedb3">FLAT</a>, 
+<a class="el" href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaa24fd149f57d8f62d24ffb01013324720">SQUARE</a>
+ }</td></tr>
+<tr class="separator:af2e2ee6851256e24a12203eda9402bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:af4d6ef9378681b4dd72ccac52c8f4e47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#af4d6ef9378681b4dd72ccac52c8f4e47">LineData</a> ()</td></tr>
+<tr class="separator:af4d6ef9378681b4dd72ccac52c8f4e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b85808f69d4f6cfe3741bbfcd65da6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#ac9b85808f69d4f6cfe3741bbfcd65da6">LineData</a> (COLORREF clr, int nWidth, int nType, int nEndCaps=<a class="el" href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3">ROUND</a>, std::string strTemplate=&quot;&quot;)</td></tr>
+<tr class="separator:ac9b85808f69d4f6cfe3741bbfcd65da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4125b467a9d8d880027c36f8a04ec188"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a4125b467a9d8d880027c36f8a04ec188">LineData</a> (const <a class="el" href="class_line_data.html">LineData</a> &amp;rhs)</td></tr>
+<tr class="separator:a4125b467a9d8d880027c36f8a04ec188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb45a237eeea2c7c49a8344286e8ab4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a8cb45a237eeea2c7c49a8344286e8ab4">~LineData</a> ()</td></tr>
+<tr class="separator:a8cb45a237eeea2c7c49a8344286e8ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb21b7f48aa99ace40cfdff6965fb9df"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#abb21b7f48aa99ace40cfdff6965fb9df">operator=</a> (const <a class="el" href="class_line_data.html">LineData</a> &amp;rhs)</td></tr>
+<tr class="separator:abb21b7f48aa99ace40cfdff6965fb9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4590c5b7fb46b8f9194e34ba67642b09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a4590c5b7fb46b8f9194e34ba67642b09">SetColor</a> (COLORREF color)</td></tr>
+<tr class="separator:a4590c5b7fb46b8f9194e34ba67642b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207269015f81f59b4dbc32bd402f5d2c"><td class="memItemLeft" align="right" valign="top">COLORREF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a207269015f81f59b4dbc32bd402f5d2c">GetColor</a> () const </td></tr>
+<tr class="separator:a207269015f81f59b4dbc32bd402f5d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60bf3e430a63d31c086c393178c01c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#ad60bf3e430a63d31c086c393178c01c5">SetWidth</a> (int nWidth)</td></tr>
+<tr class="separator:ad60bf3e430a63d31c086c393178c01c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcb7592c8bca72b953fda51b0432d75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a3fcb7592c8bca72b953fda51b0432d75">GetWidth</a> () const </td></tr>
+<tr class="separator:a3fcb7592c8bca72b953fda51b0432d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c04fa13836884d9cb64e8fc3387370"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#af1c04fa13836884d9cb64e8fc3387370">SetType</a> (int nType)</td></tr>
+<tr class="separator:af1c04fa13836884d9cb64e8fc3387370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15a08103fa48085eb4ad0ab4888988f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#af15a08103fa48085eb4ad0ab4888988f">GetType</a> () const </td></tr>
+<tr class="separator:af15a08103fa48085eb4ad0ab4888988f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992ddca82ec4472929a7cf7c613a3619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a992ddca82ec4472929a7cf7c613a3619">SetEndCaps</a> (int nEndCaps)</td></tr>
+<tr class="separator:a992ddca82ec4472929a7cf7c613a3619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6cfbcfa7fd82a8a4d4df981cef33f01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#ae6cfbcfa7fd82a8a4d4df981cef33f01">GetEndCaps</a> () const </td></tr>
+<tr class="separator:ae6cfbcfa7fd82a8a4d4df981cef33f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ecfe5b4b82f1d4b0d67c1e773b60246"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a8ecfe5b4b82f1d4b0d67c1e773b60246">SetTemplate</a> (std::string strTemplate)</td></tr>
+<tr class="separator:a8ecfe5b4b82f1d4b0d67c1e773b60246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee244a667b9543d42eb1170fff9682d"><td class="memItemLeft" align="right" valign="top">std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#abee244a667b9543d42eb1170fff9682d">GetTemplate</a> ()</td></tr>
+<tr class="separator:abee244a667b9543d42eb1170fff9682d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaddb4cdac3046ec53caa1e01e91369c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#aaaddb4cdac3046ec53caa1e01e91369c">operator HPEN</a> ()</td></tr>
+<tr class="separator:aaaddb4cdac3046ec53caa1e01e91369c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bc4b864d24ccd29f2edd397f546670"><td class="memItemLeft" align="right" valign="top">HPEN&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a29bc4b864d24ccd29f2edd397f546670">GetPen</a> ()</td></tr>
+<tr class="separator:a29bc4b864d24ccd29f2edd397f546670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849c0984d5faba99bb2fa351d6a30801"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a849c0984d5faba99bb2fa351d6a30801">Write</a> (HANDLE hFile) const </td></tr>
+<tr class="separator:a849c0984d5faba99bb2fa351d6a30801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d80ee01d05207cf4470dc37662a733"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a06d80ee01d05207cf4470dc37662a733">Read</a> (HANDLE hFile)</td></tr>
+<tr class="separator:a06d80ee01d05207cf4470dc37662a733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a95fa94b2614d7058386f82e7c3a2a96d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a95fa94b2614d7058386f82e7c3a2a96d">UpdateLineTemplate</a> ()</td></tr>
+<tr class="separator:a95fa94b2614d7058386f82e7c3a2a96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4bfdd0dc43e28b44efe5726b3b7621"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#aeb4bfdd0dc43e28b44efe5726b3b7621">CreatePen</a> ()</td></tr>
+<tr class="separator:aeb4bfdd0dc43e28b44efe5726b3b7621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a67b36139f7b94ec45cbb434cf597ec09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a67b36139f7b94ec45cbb434cf597ec09">m_type</a></td></tr>
+<tr class="separator:a67b36139f7b94ec45cbb434cf597ec09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f510fa43948464d6764fc3e117b5006"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a2f510fa43948464d6764fc3e117b5006">m_width</a></td></tr>
+<tr class="separator:a2f510fa43948464d6764fc3e117b5006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671e8aa8a421242fd1a16bf7759220fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a671e8aa8a421242fd1a16bf7759220fa">m_endCaps</a></td></tr>
+<tr class="separator:a671e8aa8a421242fd1a16bf7759220fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641038e14c82d7641df6b1f2e1fd7590"><td class="memItemLeft" align="right" valign="top">COLORREF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a641038e14c82d7641df6b1f2e1fd7590">m_color</a></td></tr>
+<tr class="separator:a641038e14c82d7641df6b1f2e1fd7590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1383399938d3d85c3f3b1caa488f322"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#ab1383399938d3d85c3f3b1caa488f322">m_template</a></td></tr>
+<tr class="separator:ab1383399938d3d85c3f3b1caa488f322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2774a276fe32645f8d0b44a3032fbf48"><td class="memItemLeft" align="right" valign="top">HPEN&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a2774a276fe32645f8d0b44a3032fbf48">m_pen</a></td></tr>
+<tr class="separator:a2774a276fe32645f8d0b44a3032fbf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Статические защищенные данные</h2></td></tr>
+<tr class="memitem:a19e0f6bc94691eee641daf9a12e37cb0"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#a19e0f6bc94691eee641daf9a12e37cb0">DASHTEMPLATE</a> = &quot;35 20&quot;</td></tr>
+<tr class="separator:a19e0f6bc94691eee641daf9a12e37cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabe10496e27e0f52cf6487551c4cb134"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#aabe10496e27e0f52cf6487551c4cb134">DOTTEMPLATE</a> = &quot;2 2&quot;</td></tr>
+<tr class="separator:aabe10496e27e0f52cf6487551c4cb134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a68011b56ff20d76323e1d38929699"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#aa8a68011b56ff20d76323e1d38929699">DASHDOTTEMPLATE</a> = &quot;35 20 7 20&quot;</td></tr>
+<tr class="separator:aa8a68011b56ff20d76323e1d38929699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada248a7a1094de4b553f165ebafb8e9f"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_line_data.html#ada248a7a1094de4b553f165ebafb8e9f">DASHDOTDOTTEMPLATE</a> = &quot;35 20 7 15 7 20&quot;</td></tr>
+<tr class="separator:ada248a7a1094de4b553f165ebafb8e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Перечисления</h2>
+<a class="anchor" id="af2e2ee6851256e24a12203eda9402bea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><em><a class="anchor" id="af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3"></a>ROUND</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="af2e2ee6851256e24a12203eda9402beaa396289cd387c745e869339a2c24aedb3"></a>FLAT</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="af2e2ee6851256e24a12203eda9402beaa24fd149f57d8f62d24ffb01013324720"></a>SQUARE</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="af4d6ef9378681b4dd72ccac52c8f4e47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineData::LineData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac9b85808f69d4f6cfe3741bbfcd65da6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineData::LineData </td>
+          <td>(</td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>clr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nEndCaps</em> = <code><a class="el" href="class_line_data.html#af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3">ROUND</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>strTemplate</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4125b467a9d8d880027c36f8a04ec188"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineData::LineData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8cb45a237eeea2c7c49a8344286e8ab4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineData::~LineData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="aeb4bfdd0dc43e28b44efe5726b3b7621"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineData::CreatePen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a207269015f81f59b4dbc32bd402f5d2c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">COLORREF LineData::GetColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae6cfbcfa7fd82a8a4d4df981cef33f01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LineData::GetEndCaps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29bc4b864d24ccd29f2edd397f546670"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HPEN LineData::GetPen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abee244a667b9543d42eb1170fff9682d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string&amp; LineData::GetTemplate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af15a08103fa48085eb4ad0ab4888988f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LineData::GetType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3fcb7592c8bca72b953fda51b0432d75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LineData::GetWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaaddb4cdac3046ec53caa1e01e91369c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LineData::operator HPEN </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abb21b7f48aa99ace40cfdff6965fb9df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_line_data.html">LineData</a> &amp; LineData::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a06d80ee01d05207cf4470dc37662a733"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL LineData::Read </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4590c5b7fb46b8f9194e34ba67642b09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineData::SetColor </td>
+          <td>(</td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a992ddca82ec4472929a7cf7c613a3619"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineData::SetEndCaps </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nEndCaps</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ecfe5b4b82f1d4b0d67c1e773b60246"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineData::SetTemplate </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>strTemplate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af1c04fa13836884d9cb64e8fc3387370"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LineData::SetType </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad60bf3e430a63d31c086c393178c01c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineData::SetWidth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nWidth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a95fa94b2614d7058386f82e7c3a2a96d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineData::UpdateLineTemplate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a849c0984d5faba99bb2fa351d6a30801"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL LineData::Write </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="ada248a7a1094de4b553f165ebafb8e9f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string LineData::DASHDOTDOTTEMPLATE = &quot;35 20 7 15 7 20&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8a68011b56ff20d76323e1d38929699"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string LineData::DASHDOTTEMPLATE = &quot;35 20 7 20&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a19e0f6bc94691eee641daf9a12e37cb0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string LineData::DASHTEMPLATE = &quot;35 20&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aabe10496e27e0f52cf6487551c4cb134"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string LineData::DOTTEMPLATE = &quot;2 2&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a641038e14c82d7641df6b1f2e1fd7590"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">COLORREF LineData::m_color</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a671e8aa8a421242fd1a16bf7759220fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LineData::m_endCaps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2774a276fe32645f8d0b44a3032fbf48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HPEN LineData::m_pen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab1383399938d3d85c3f3b1caa488f322"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string LineData::m_template</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a67b36139f7b94ec45cbb434cf597ec09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LineData::m_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2f510fa43948464d6764fc3e117b5006"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LineData::m_width</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="linedata_8h_source.html">linedata.h</a></li>
+<li>src/<a class="el" href="linedata_8cpp.html">linedata.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

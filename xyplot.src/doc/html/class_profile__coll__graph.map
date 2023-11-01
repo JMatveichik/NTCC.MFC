@@ -1,0 +1,20 @@
+<map id="Profile" name="Profile">
+<area shape="rect" id="node2" href="$class_line_data.html" title="LineData" alt="" coords="1091,273,1165,300"/>
+<area shape="rect" id="node5" href="$class_axis.html" title="Axis" alt="" coords="784,376,832,403"/>
+<area shape="rect" id="node14" href="$class_border.html" title="Border" alt="" coords="421,376,481,403"/>
+<area shape="rect" id="node16" href="$class_selection.html" title="Selection" alt="" coords="943,600,1019,627"/>
+<area shape="rect" id="node18" href="$class_ticks.html" title="Ticks" alt="" coords="768,511,821,537"/>
+<area shape="rect" id="node20" href="$class_grid_lines.html" title="GridLines" alt="" coords="1136,511,1213,537"/>
+<area shape="rect" id="node3" href="$class_profile_marks.html" title="ProfileMarks" alt="" coords="1517,324,1611,351"/>
+<area shape="rect" id="node4" href="$class_savable_item.html" title="SavableItem" alt="" coords="658,184,750,211"/>
+<area shape="rect" id="node7" href="$class_title.html" title="Title" alt="" coords="293,273,339,300"/>
+<area shape="rect" id="node13" href="$class_back_ground.html" title="BackGround" alt="" coords="158,376,253,403"/>
+<area shape="rect" id="node15" href="$class_legend.html" title="Legend" alt="" coords="221,600,285,627"/>
+<area shape="rect" id="node19" href="$class_digits.html" title="Digits" alt="" coords="930,511,985,537"/>
+<area shape="rect" id="node21" href="$class_label.html" title="Label" alt="" coords="677,273,731,300"/>
+<area shape="rect" id="node6" href="$class_x_y_plot.html" title="Класс для работы с базой данных " alt="" coords="412,511,473,537"/>
+<area shape="rect" id="node8" href="$class_r_t_f_string.html" title="RTFString" alt="" coords="149,184,229,211"/>
+<area shape="rect" id="node9" href="$class_c_formatted_text_draw.html" title="CFormattedTextDraw" alt="" coords="117,95,261,121"/>
+<area shape="rect" id="node12" href="$structtag_c_o_o_k_i_e.html" title="tagCOOKIE" alt="" coords="283,5,373,32"/>
+<area shape="rect" id="node17" href="$class_profile_group_map.html" title="ProfileGroupMap" alt="" coords="1238,511,1357,537"/>
+</map>

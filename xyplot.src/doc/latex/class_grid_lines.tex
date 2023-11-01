@@ -1,0 +1,182 @@
+\hypertarget{class_grid_lines}{\section{Класс Grid\-Lines}
+\label{class_grid_lines}\index{Grid\-Lines@{Grid\-Lines}}
+}
+
+
+{\ttfamily \#include $<$Gridlines.\-h$>$}
+
+
+
+Граф наследования\-:Grid\-Lines\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_grid_lines__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Grid\-Lines\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_grid_lines__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_grid_lines_a8b75ba08cc39e81740ccc456875f15f7}{Grid\-Lines} (\hyperlink{class_axis}{Axis} $\ast$\hyperlink{class_grid_lines_a1e3ebb07403f525c882731bb1662b234}{parent\-Axis})
+\item 
+virtual \hyperlink{class_grid_lines_afc1d1925713bf15c1f031d41a901016b}{$\sim$\-Grid\-Lines} ()
+\item 
+void \hyperlink{class_grid_lines_acefec88256cbb7dc4982e65666add9bb}{Enable\-Major} (B\-O\-O\-L enable=T\-R\-U\-E)
+\item 
+B\-O\-O\-L \hyperlink{class_grid_lines_a1208cfa5117f703ed785eba8c7ecae00}{Is\-Major\-Enabled} () const 
+\item 
+void \hyperlink{class_grid_lines_ab72907a0dcdb11acfeb473fb4c573939}{Enable\-Minor} (B\-O\-O\-L enable)
+\item 
+B\-O\-O\-L \hyperlink{class_grid_lines_af6a52af538900e6ec6cd6eb53ffa6d29}{Is\-Minor\-Enabled} () const 
+\item 
+\hyperlink{class_line_data}{Line\-Data} \& \hyperlink{class_grid_lines_a996a81d74b11f797745a3913b7c12293}{Get\-Line} (B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+void \hyperlink{class_grid_lines_a420d336ed2892850bf5aab748d0fe406}{Set\-Line} (const \hyperlink{class_line_data}{Line\-Data} \&line, B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+void \hyperlink{class_grid_lines_a839784fc12725e0705c751f8c9f466aa}{On\-Draw} (H\-D\-C hdc)
+\item 
+virtual B\-O\-O\-L \hyperlink{class_grid_lines_af41e725b2af5e093e5307e2096c2c4c7}{Write} (H\-A\-N\-D\-L\-E h\-File) const 
+\item 
+virtual B\-O\-O\-L \hyperlink{class_grid_lines_aecc543959e2bfa9c45345257433a3110}{Read} (H\-A\-N\-D\-L\-E h\-File)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_axis}{Axis} $\ast$ \hyperlink{class_grid_lines_a1e3ebb07403f525c882731bb1662b234}{parent\-Axis}
+\item 
+\hyperlink{class_line_data}{Line\-Data} $\ast$ \hyperlink{class_grid_lines_a3e368e27515f01143f5470b65c9f2a52}{line\-Major}
+\item 
+\hyperlink{class_line_data}{Line\-Data} $\ast$ \hyperlink{class_grid_lines_a72d2d255547ee192ff15609a254994fe}{line\-Minor}
+\item 
+B\-O\-O\-L \hyperlink{class_grid_lines_ad32092e3573f3fd24c3b1190f35034aa}{enabled\-Major}
+\item 
+B\-O\-O\-L \hyperlink{class_grid_lines_ae7f5d84d6a6b353e22fd251a20ac33f5}{enabled\-Minor}
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_grid_lines_a8b75ba08cc39e81740ccc456875f15f7}{\index{Grid\-Lines@{Grid\-Lines}!Grid\-Lines@{Grid\-Lines}}
+\index{Grid\-Lines@{Grid\-Lines}!GridLines@{Grid\-Lines}}
+\subsubsection[{Grid\-Lines}]{\setlength{\rightskip}{0pt plus 5cm}Grid\-Lines\-::\-Grid\-Lines (
+\begin{DoxyParamCaption}
+\item[{{\bf Axis} $\ast$}]{parent\-Axis}
+\end{DoxyParamCaption}
+)}}\label{class_grid_lines_a8b75ba08cc39e81740ccc456875f15f7}
+\hypertarget{class_grid_lines_afc1d1925713bf15c1f031d41a901016b}{\index{Grid\-Lines@{Grid\-Lines}!$\sim$\-Grid\-Lines@{$\sim$\-Grid\-Lines}}
+\index{$\sim$\-Grid\-Lines@{$\sim$\-Grid\-Lines}!GridLines@{Grid\-Lines}}
+\subsubsection[{$\sim$\-Grid\-Lines}]{\setlength{\rightskip}{0pt plus 5cm}Grid\-Lines\-::$\sim$\-Grid\-Lines (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_grid_lines_afc1d1925713bf15c1f031d41a901016b}
+
+
+\subsection{Методы}
+\hypertarget{class_grid_lines_acefec88256cbb7dc4982e65666add9bb}{\index{Grid\-Lines@{Grid\-Lines}!Enable\-Major@{Enable\-Major}}
+\index{Enable\-Major@{Enable\-Major}!GridLines@{Grid\-Lines}}
+\subsubsection[{Enable\-Major}]{\setlength{\rightskip}{0pt plus 5cm}void Grid\-Lines\-::\-Enable\-Major (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid_lines_acefec88256cbb7dc4982e65666add9bb}
+\hypertarget{class_grid_lines_ab72907a0dcdb11acfeb473fb4c573939}{\index{Grid\-Lines@{Grid\-Lines}!Enable\-Minor@{Enable\-Minor}}
+\index{Enable\-Minor@{Enable\-Minor}!GridLines@{Grid\-Lines}}
+\subsubsection[{Enable\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}void Grid\-Lines\-::\-Enable\-Minor (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid_lines_ab72907a0dcdb11acfeb473fb4c573939}
+\hypertarget{class_grid_lines_a996a81d74b11f797745a3913b7c12293}{\index{Grid\-Lines@{Grid\-Lines}!Get\-Line@{Get\-Line}}
+\index{Get\-Line@{Get\-Line}!GridLines@{Grid\-Lines}}
+\subsubsection[{Get\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data} \& Grid\-Lines\-::\-Get\-Line (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{class_grid_lines_a996a81d74b11f797745a3913b7c12293}
+\hypertarget{class_grid_lines_a1208cfa5117f703ed785eba8c7ecae00}{\index{Grid\-Lines@{Grid\-Lines}!Is\-Major\-Enabled@{Is\-Major\-Enabled}}
+\index{Is\-Major\-Enabled@{Is\-Major\-Enabled}!GridLines@{Grid\-Lines}}
+\subsubsection[{Is\-Major\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Grid\-Lines\-::\-Is\-Major\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid_lines_a1208cfa5117f703ed785eba8c7ecae00}
+\hypertarget{class_grid_lines_af6a52af538900e6ec6cd6eb53ffa6d29}{\index{Grid\-Lines@{Grid\-Lines}!Is\-Minor\-Enabled@{Is\-Minor\-Enabled}}
+\index{Is\-Minor\-Enabled@{Is\-Minor\-Enabled}!GridLines@{Grid\-Lines}}
+\subsubsection[{Is\-Minor\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Grid\-Lines\-::\-Is\-Minor\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_grid_lines_af6a52af538900e6ec6cd6eb53ffa6d29}
+\hypertarget{class_grid_lines_a839784fc12725e0705c751f8c9f466aa}{\index{Grid\-Lines@{Grid\-Lines}!On\-Draw@{On\-Draw}}
+\index{On\-Draw@{On\-Draw}!GridLines@{Grid\-Lines}}
+\subsubsection[{On\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Grid\-Lines\-::\-On\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc}
+\end{DoxyParamCaption}
+)}}\label{class_grid_lines_a839784fc12725e0705c751f8c9f466aa}
+\hypertarget{class_grid_lines_aecc543959e2bfa9c45345257433a3110}{\index{Grid\-Lines@{Grid\-Lines}!Read@{Read}}
+\index{Read@{Read}!GridLines@{Grid\-Lines}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Grid\-Lines\-::\-Read (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_grid_lines_aecc543959e2bfa9c45345257433a3110}
+
+
+Замещает \hyperlink{class_savable_item_a7eadd16b2cb0652091cc15f596a00fb2}{Savable\-Item}.
+
+\hypertarget{class_grid_lines_a420d336ed2892850bf5aab748d0fe406}{\index{Grid\-Lines@{Grid\-Lines}!Set\-Line@{Set\-Line}}
+\index{Set\-Line@{Set\-Line}!GridLines@{Grid\-Lines}}
+\subsubsection[{Set\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Grid\-Lines\-::\-Set\-Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf Line\-Data} \&}]{line, }
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{class_grid_lines_a420d336ed2892850bf5aab748d0fe406}
+\hypertarget{class_grid_lines_af41e725b2af5e093e5307e2096c2c4c7}{\index{Grid\-Lines@{Grid\-Lines}!Write@{Write}}
+\index{Write@{Write}!GridLines@{Grid\-Lines}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Grid\-Lines\-::\-Write (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_grid_lines_af41e725b2af5e093e5307e2096c2c4c7}
+
+
+Замещает \hyperlink{class_savable_item_a0da511a4854f515096f8f9b498f64158}{Savable\-Item}.
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_grid_lines_ad32092e3573f3fd24c3b1190f35034aa}{\index{Grid\-Lines@{Grid\-Lines}!enabled\-Major@{enabled\-Major}}
+\index{enabled\-Major@{enabled\-Major}!GridLines@{Grid\-Lines}}
+\subsubsection[{enabled\-Major}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Grid\-Lines\-::enabled\-Major\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_grid_lines_ad32092e3573f3fd24c3b1190f35034aa}
+\hypertarget{class_grid_lines_ae7f5d84d6a6b353e22fd251a20ac33f5}{\index{Grid\-Lines@{Grid\-Lines}!enabled\-Minor@{enabled\-Minor}}
+\index{enabled\-Minor@{enabled\-Minor}!GridLines@{Grid\-Lines}}
+\subsubsection[{enabled\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Grid\-Lines\-::enabled\-Minor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_grid_lines_ae7f5d84d6a6b353e22fd251a20ac33f5}
+\hypertarget{class_grid_lines_a3e368e27515f01143f5470b65c9f2a52}{\index{Grid\-Lines@{Grid\-Lines}!line\-Major@{line\-Major}}
+\index{line\-Major@{line\-Major}!GridLines@{Grid\-Lines}}
+\subsubsection[{line\-Major}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data}$\ast$ Grid\-Lines\-::line\-Major\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_grid_lines_a3e368e27515f01143f5470b65c9f2a52}
+\hypertarget{class_grid_lines_a72d2d255547ee192ff15609a254994fe}{\index{Grid\-Lines@{Grid\-Lines}!line\-Minor@{line\-Minor}}
+\index{line\-Minor@{line\-Minor}!GridLines@{Grid\-Lines}}
+\subsubsection[{line\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data}$\ast$ Grid\-Lines\-::line\-Minor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_grid_lines_a72d2d255547ee192ff15609a254994fe}
+\hypertarget{class_grid_lines_a1e3ebb07403f525c882731bb1662b234}{\index{Grid\-Lines@{Grid\-Lines}!parent\-Axis@{parent\-Axis}}
+\index{parent\-Axis@{parent\-Axis}!GridLines@{Grid\-Lines}}
+\subsubsection[{parent\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}$\ast$ Grid\-Lines\-::parent\-Axis\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_grid_lines_a1e3ebb07403f525c882731bb1662b234}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_gridlines_8h}{Gridlines.\-h}\item 
+src/\hyperlink{_gridlines_8cpp}{Gridlines.\-cpp}\end{DoxyCompactItemize}

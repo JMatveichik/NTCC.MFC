@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Класс RTFString</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_r_t_f_string-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс RTFString</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="rtfstring_8h_source.html">rtfstring.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса RTFString:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_r_t_f_string__coll__graph.png" border="0" usemap="#_r_t_f_string_coll__map" alt="Collaboration graph"/></div>
+<map name="_r_t_f_string_coll__map" id="_r_t_f_string_coll__map">
+<area shape="rect" id="node2" href="class_c_formatted_text_draw.html" title="CFormattedTextDraw" alt="" coords="104,95,248,121"/><area shape="rect" id="node5" href="structtag_c_o_o_k_i_e.html" title="tagCOOKIE" alt="" coords="269,5,360,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a51863fc1577a626c5a4ccb15e6764073"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a51863fc1577a626c5a4ccb15e6764073">RTFString</a> (HMODULE hmod)</td></tr>
+<tr class="separator:a51863fc1577a626c5a4ccb15e6764073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018b3244fc6039305ce5407936a9992e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a018b3244fc6039305ce5407936a9992e">RTFString</a> (const <a class="el" href="class_r_t_f_string.html">RTFString</a> &amp;rhs)</td></tr>
+<tr class="separator:a018b3244fc6039305ce5407936a9992e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63309fd7a3d4189fa2b6d2525d718d42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a63309fd7a3d4189fa2b6d2525d718d42">~RTFString</a> ()</td></tr>
+<tr class="separator:a63309fd7a3d4189fa2b6d2525d718d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4c798c305f06b68fdbd5a5d91f0c8a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_r_t_f_string.html">RTFString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a2e4c798c305f06b68fdbd5a5d91f0c8a">operator=</a> (const <a class="el" href="class_r_t_f_string.html">RTFString</a> &amp;rhs)</td></tr>
+<tr class="separator:a2e4c798c305f06b68fdbd5a5d91f0c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa011f163ea938fd7c24dc55001afa34b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#aa011f163ea938fd7c24dc55001afa34b">SetText</a> (std::string title)</td></tr>
+<tr class="separator:aa011f163ea938fd7c24dc55001afa34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0847a69aa9573d5b298c2b181f98450c"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a0847a69aa9573d5b298c2b181f98450c">GetText</a> () const </td></tr>
+<tr class="separator:a0847a69aa9573d5b298c2b181f98450c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5be9c1a74068a8d1f805e093451be51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#af5be9c1a74068a8d1f805e093451be51">SetColor</a> (COLORREF clr)</td></tr>
+<tr class="separator:af5be9c1a74068a8d1f805e093451be51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7130e8d2df43ae9b821fe70804f1e4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#ae7130e8d2df43ae9b821fe70804f1e4c">SetFont</a> (const LOGFONT *const plf)</td></tr>
+<tr class="separator:ae7130e8d2df43ae9b821fe70804f1e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a4f84996a98bd0f1901eff5017fbb2"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a63a4f84996a98bd0f1901eff5017fbb2">Write</a> (HANDLE hFile) const </td></tr>
+<tr class="separator:a63a4f84996a98bd0f1901eff5017fbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91f1cca43e34327c3ffabdd6c928871"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#aa91f1cca43e34327c3ffabdd6c928871">Read</a> (HANDLE hFile)</td></tr>
+<tr class="separator:aa91f1cca43e34327c3ffabdd6c928871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1095cfa000481881825a6973506cdcc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a1095cfa000481881825a6973506cdcc9">GetDimensions</a> (SIZE &amp;size) const </td></tr>
+<tr class="separator:a1095cfa000481881825a6973506cdcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9b2138da58d424b9bc8df251468b2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a8d9b2138da58d424b9bc8df251468b2e">SetOrientation</a> (int degrees)</td></tr>
+<tr class="separator:a8d9b2138da58d424b9bc8df251468b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04121663e4ab24711fe949750dc2b5ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a04121663e4ab24711fe949750dc2b5ee">GetOrientation</a> () const </td></tr>
+<tr class="separator:a04121663e4ab24711fe949750dc2b5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a11ee69611ed59989989b2d39133b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a45a11ee69611ed59989989b2d39133b8">Draw</a> (HDC hdc, int x, int y) const </td></tr>
+<tr class="separator:a45a11ee69611ed59989989b2d39133b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a94673f221d744299393675f9b0e115b5"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a94673f221d744299393675f9b0e115b5">ReadString</a> (HANDLE hFile)</td></tr>
+<tr class="separator:a94673f221d744299393675f9b0e115b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15525dd2260dc2c4ba825a8b6db3db7a"><td class="memItemLeft" align="right" valign="top">static BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a15525dd2260dc2c4ba825a8b6db3db7a">WriteString</a> (HANDLE hFile, std::string theString)</td></tr>
+<tr class="separator:a15525dd2260dc2c4ba825a8b6db3db7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:ade9f23f1498c4102691b4dcf03af5435"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#ade9f23f1498c4102691b4dcf03af5435">strTitle</a></td></tr>
+<tr class="separator:ade9f23f1498c4102691b4dcf03af5435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d829be2f4b7cf88f661d52c9d794ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#a56d829be2f4b7cf88f661d52c9d794ef">orientation</a></td></tr>
+<tr class="separator:a56d829be2f4b7cf88f661d52c9d794ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af121473f7d2ca2939cae4dde99ad3506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_formatted_text_draw.html">CFormattedTextDraw</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_f_string.html#af121473f7d2ca2939cae4dde99ad3506">g_Formatter</a></td></tr>
+<tr class="separator:af121473f7d2ca2939cae4dde99ad3506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a51863fc1577a626c5a4ccb15e6764073"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RTFString::RTFString </td>
+          <td>(</td>
+          <td class="paramtype">HMODULE&#160;</td>
+          <td class="paramname"><em>hmod</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a018b3244fc6039305ce5407936a9992e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RTFString::RTFString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_r_t_f_string.html">RTFString</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63309fd7a3d4189fa2b6d2525d718d42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RTFString::~RTFString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a45a11ee69611ed59989989b2d39133b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RTFString::Draw </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hdc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1095cfa000481881825a6973506cdcc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RTFString::GetDimensions </td>
+          <td>(</td>
+          <td class="paramtype">SIZE &amp;&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04121663e4ab24711fe949750dc2b5ee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RTFString::GetOrientation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0847a69aa9573d5b298c2b181f98450c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; RTFString::GetText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e4c798c305f06b68fdbd5a5d91f0c8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_r_t_f_string.html">RTFString</a> &amp; RTFString::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_r_t_f_string.html">RTFString</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa91f1cca43e34327c3ffabdd6c928871"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL RTFString::Read </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94673f221d744299393675f9b0e115b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string RTFString::ReadString </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af5be9c1a74068a8d1f805e093451be51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RTFString::SetColor </td>
+          <td>(</td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>clr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae7130e8d2df43ae9b821fe70804f1e4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RTFString::SetFont </td>
+          <td>(</td>
+          <td class="paramtype">const LOGFONT *const&#160;</td>
+          <td class="paramname"><em>plf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d9b2138da58d424b9bc8df251468b2e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RTFString::SetOrientation </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>degrees</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa011f163ea938fd7c24dc55001afa34b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RTFString::SetText </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>title</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63a4f84996a98bd0f1901eff5017fbb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL RTFString::Write </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a15525dd2260dc2c4ba825a8b6db3db7a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL RTFString::WriteString </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>theString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="af121473f7d2ca2939cae4dde99ad3506"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_formatted_text_draw.html">CFormattedTextDraw</a>* RTFString::g_Formatter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a56d829be2f4b7cf88f661d52c9d794ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RTFString::orientation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade9f23f1498c4102691b4dcf03af5435"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string RTFString::strTitle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="rtfstring_8h_source.html">rtfstring.h</a></li>
+<li>src/<a class="el" href="rtfstring_8cpp.html">rtfstring.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

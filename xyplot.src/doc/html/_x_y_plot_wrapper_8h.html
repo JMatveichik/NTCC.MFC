@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Файл src/XYPlotWrapper.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл XYPlotWrapper.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;windef.h&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+<code>#include &lt;stdexcept&gt;</code><br/>
+<code>#include &quot;<a class="el" href="xyplotconst_8h_source.html">xyplotconst.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для XYPlotWrapper.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="_x_y_plot_wrapper_8h__incl.png" border="0" usemap="#src_2_x_y_plot_wrapper_8h" alt=""/></div>
+<map name="src_2_x_y_plot_wrapper_8h" id="src_2_x_y_plot_wrapper_8h">
+<area shape="rect" id="node6" href="xyplotconst_8h.html" title="Содержит константы и перечисляемые типы . " alt="" coords="362,80,462,107"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="_x_y_plot_wrapper_8h__dep__incl.png" border="0" usemap="#src_2_x_y_plot_wrapper_8hdep" alt=""/></div>
+<map name="src_2_x_y_plot_wrapper_8hdep" id="src_2_x_y_plot_wrapper_8hdep">
+<area shape="rect" id="node2" href="_x_y_plot_wrapper_8cpp.html" title="src/XYPlotWrapper.cpp" alt="" coords="5,80,163,107"/></map>
+</div>
+</div>
+<p><a href="_x_y_plot_wrapper_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_manager.html">xyplot::XYPlotManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс-обертка для работы с 2D графикой  <a href="classxyplot_1_1_x_y_plot_manager.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_plot_handle.html">xyplot::PlotHandle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Базовый класс дескрипторов 2D графики  <a href="classxyplot_1_1_plot_handle.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">xyplot::HPLOT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс дескриптора 2D графики  <a href="classxyplot_1_1_h_p_l_o_t.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_a_l_l___p_l_o_t_s__.html">xyplot::ALL_PLOTS_</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс дескриптор для всех экземпляров 2D графики  <a href="classxyplot_1_1_a_l_l___p_l_o_t_s__.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">xyplot::HPROFILE</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс дескриптора профиля  <a href="classxyplot_1_1_h_p_r_o_f_i_l_e.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_a_l_l___p_r_o_f_i_l_e_s.html">xyplot::ALL_PROFILES</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс дескриптор для всех профилей 2D графики  <a href="classxyplot_1_1_a_l_l___p_r_o_f_i_l_e_s.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_i_n_v_a_l_i_d___p_r_o_f_i_l_e.html">xyplot::INVALID_PROFILE</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс дескриптор пустого профиля 2D графики  <a href="classxyplot_1_1_i_n_v_a_l_i_d___p_r_o_f_i_l_e.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_h_g_r_o_u_p.html">xyplot::HGROUP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс дескриптора группы профилей  <a href="classxyplot_1_1_h_g_r_o_u_p.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_i_n_v_a_l_i_d___g_r_o_u_p.html">xyplot::INVALID_GROUP</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс дескриптор пустой группы профилей 2D графики  <a href="classxyplot_1_1_i_n_v_a_l_i_d___g_r_o_u_p.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n.html">xyplot::HPLOTREGION</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс дескриптора региона  <a href="classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_a_l_l___r_e_g_i_o_n_s__.html">xyplot::ALL_REGIONS_</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс дескриптор всех регионов  <a href="classxyplot_1_1_a_l_l___r_e_g_i_o_n_s__.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_h_l_e_v_e_l.html">xyplot::HLEVEL</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс дескриптор линий уровня  <a href="classxyplot_1_1_h_l_e_v_e_l.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_error.html">xyplot::XYPlotError</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс ошибки времени исполнения для графика  <a href="classxyplot_1_1_x_y_plot_error.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_x_y_plot_request_failure.html">xyplot::XYPlotRequestFailure</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс ошибки завершения запроса для графика  <a href="classxyplot_1_1_x_y_plot_request_failure.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacexyplot"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html">xyplot</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:aba6cc8b3b62f2540637745c385e17016"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a>&#160;&#160;&#160;__stdcall</td></tr>
+<tr class="separator:aba6cc8b3b62f2540637745c385e17016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967d661c7915a0c61e4d7281d85b91d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8h.html#a967d661c7915a0c61e4d7281d85b91d6">ALL_PLOTS</a>&#160;&#160;&#160;ALL_PLOTS_()</td></tr>
+<tr class="separator:a967d661c7915a0c61e4d7281d85b91d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1676db91cb9f8f3197d8c49203f0264a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_wrapper_8h.html#a1676db91cb9f8f3197d8c49203f0264a">ALL_REGIONS</a>&#160;&#160;&#160;ALL_REGIONS_()</td></tr>
+<tr class="separator:a1676db91cb9f8f3197d8c49203f0264a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a8c5635641ba2648c95a8b29c01393f78"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a8c5635641ba2648c95a8b29c01393f78">xyplot::LPFNINITIALIZE</a> )(HWND hwndMain, long *lPlotID)</td></tr>
+<tr class="separator:a8c5635641ba2648c95a8b29c01393f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c97b982a01a1c43f6900a274d295b11"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a0c97b982a01a1c43f6900a274d295b11">xyplot::LPFNFINALIZE</a> )(long lPlotID)</td></tr>
+<tr class="separator:a0c97b982a01a1c43f6900a274d295b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78664aa6b50a88a556408cdcb0fedde"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#ab78664aa6b50a88a556408cdcb0fedde">xyplot::LPFNADDPROFILE</a> )(long lPlotID, const char *name, COLORREF color, int width, int linetype, const char *pszTemplate, BOOL bVisible, BOOL bDataMarks, long XAxis, long YAxis, long *lProfileID)</td></tr>
+<tr class="separator:ab78664aa6b50a88a556408cdcb0fedde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6412b804e2c4c568501d1a6e84358cd"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#af6412b804e2c4c568501d1a6e84358cd">xyplot::LPFNDELETEPROFILE</a> )(long lPlotID, long lProfileID)</td></tr>
+<tr class="separator:af6412b804e2c4c568501d1a6e84358cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f2e7672aa877ee74f4ab91e6a97a88"><td class="memItemLeft" align="right" valign="top">typedef long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a37f2e7672aa877ee74f4ab91e6a97a88">xyplot::lProfileID</a></td></tr>
+<tr class="separator:a37f2e7672aa877ee74f4ab91e6a97a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88522a2f4371e38891cac7b5bc3e4aa"><td class="memItemLeft" align="right" valign="top">typedef long const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#aa88522a2f4371e38891cac7b5bc3e4aa">xyplot::px</a></td></tr>
+<tr class="separator:aa88522a2f4371e38891cac7b5bc3e4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc56454d6bac520db8907c6a206d3040"><td class="memItemLeft" align="right" valign="top">typedef long const double <br class="typebreak"/>
+const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#adc56454d6bac520db8907c6a206d3040">xyplot::py</a></td></tr>
+<tr class="separator:adc56454d6bac520db8907c6a206d3040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e8516aaf446c174c28a4327a27dd9ce"><td class="memItemLeft" align="right" valign="top">typedef long const double <br class="typebreak"/>
+const double unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a0e8516aaf446c174c28a4327a27dd9ce">xyplot::size</a></td></tr>
+<tr class="separator:a0e8516aaf446c174c28a4327a27dd9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159121ca25d59ecb75770f0fbeea2515"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a159121ca25d59ecb75770f0fbeea2515">xyplot::LPFNAPPENDDATA</a> )(long lPlotID, long lProfileID, const double *px, const double *py, unsigned size)</td></tr>
+<tr class="separator:a159121ca25d59ecb75770f0fbeea2515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb3deed6ff9723181f09eb590fdf7dd"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a9bb3deed6ff9723181f09eb590fdf7dd">xyplot::LPFNSETSTRING</a> )(long lPlotID, long item, long subitem, const char *pszString)</td></tr>
+<tr class="separator:a9bb3deed6ff9723181f09eb590fdf7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11ea8cd7e895887b754555f31b0adf3"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#ae11ea8cd7e895887b754555f31b0adf3">xyplot::LPFNGETSTRING</a> )(long lPlotID, long item, long subitem, long *buflen, char *pszBuffer)</td></tr>
+<tr class="separator:ae11ea8cd7e895887b754555f31b0adf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41175dc795758950c58e18d1660faa5"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#ac41175dc795758950c58e18d1660faa5">xyplot::LPFNSETCOLOR</a> )(long lPlotID, long item, long subitem, COLORREF color)</td></tr>
+<tr class="separator:ac41175dc795758950c58e18d1660faa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7f51503a885f8e1b24c25973b1fc1d"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a0f7f51503a885f8e1b24c25973b1fc1d">xyplot::LPFNGETCOLOR</a> )(long lPlotID, long item, long subitem, COLORREF *pColor)</td></tr>
+<tr class="separator:a0f7f51503a885f8e1b24c25973b1fc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6baf918a5bfe565a879b9d4fe5ef1124"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a6baf918a5bfe565a879b9d4fe5ef1124">xyplot::LPFNSETLONG</a> )(long lPlotID, long item, long subitem, long value)</td></tr>
+<tr class="separator:a6baf918a5bfe565a879b9d4fe5ef1124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fdb8fd61356e30fc76cd5a02266dbf7"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a7fdb8fd61356e30fc76cd5a02266dbf7">xyplot::LPFNGETLONG</a> )(long lPlotID, long item, long subitem, long *value)</td></tr>
+<tr class="separator:a7fdb8fd61356e30fc76cd5a02266dbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc2b15a223e822003ec2f51071dd16b2"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#acc2b15a223e822003ec2f51071dd16b2">xyplot::LPFNSETDOUBLE</a> )(long lPlotID, long item, long subitem, double value)</td></tr>
+<tr class="separator:acc2b15a223e822003ec2f51071dd16b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada339f0f5dd59a8edbeb5462b404b412"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#ada339f0f5dd59a8edbeb5462b404b412">xyplot::LPFNGETDOUBLE</a> )(long lPlotID, long item, long subitem, double *value)</td></tr>
+<tr class="separator:ada339f0f5dd59a8edbeb5462b404b412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e8fe476dccb830b8c9557e0f802263"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a28e8fe476dccb830b8c9557e0f802263">xyplot::LPFNSETFONT</a> )(long lPlotID, long item, long subitem, const LOGFONT *plf)</td></tr>
+<tr class="separator:a28e8fe476dccb830b8c9557e0f802263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b24ec8edd78c631d7576e9e0804bd3b"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a2b24ec8edd78c631d7576e9e0804bd3b">xyplot::LPFNISENABLED</a> )(long lPlotID, long item, long subitem, BOOL *enabled)</td></tr>
+<tr class="separator:a2b24ec8edd78c631d7576e9e0804bd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc713064c472b328718bae52d4a28eb5"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#adc713064c472b328718bae52d4a28eb5">xyplot::LPFNENABLEITEM</a> )(long lPlotID, long item, long subitem, BOOL enable)</td></tr>
+<tr class="separator:adc713064c472b328718bae52d4a28eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0a6d08dd052f79805399d35f400536"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a8a0a6d08dd052f79805399d35f400536">xyplot::LPFNSELECT</a> )(long lPlotID, long lProfileID, long index)</td></tr>
+<tr class="separator:a8a0a6d08dd052f79805399d35f400536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accdc65e18386127090607d48d4d6ef55"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#accdc65e18386127090607d48d4d6ef55">xyplot::LPFNGETSELECTION</a> )(long lPlotID, long *pID)</td></tr>
+<tr class="separator:accdc65e18386127090607d48d4d6ef55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097f19903e90904e363a37bd0418d16b"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a097f19903e90904e363a37bd0418d16b">xyplot::LPFNSAVEPROPERTIES</a> )(long lPlotID, const char *pszFileName)</td></tr>
+<tr class="separator:a097f19903e90904e363a37bd0418d16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcef3c2ef35e0f543cb6e0489566a41"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a5fcef3c2ef35e0f543cb6e0489566a41">xyplot::LPFNLOADPROPERTIES</a> )(long lPlotID, const char *pszFileName)</td></tr>
+<tr class="separator:a5fcef3c2ef35e0f543cb6e0489566a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a77ea08258ed9ffc0bf7ffda3da7a4"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a64a77ea08258ed9ffc0bf7ffda3da7a4">xyplot::LPFNCOPYTOCLIPBOARD</a> )(long lPlotID, unsigned width, unsigned height, unsigned dpi)</td></tr>
+<tr class="separator:a64a77ea08258ed9ffc0bf7ffda3da7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5bcbe4527096dba3cee83119449785"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#abe5bcbe4527096dba3cee83119449785">xyplot::LPFNDRAWTOBITMAP</a> )(long lPlotID, HBITMAP &amp;hBitmap, bool bDrawWindowBG, bool bDrawClientBG)</td></tr>
+<tr class="separator:abe5bcbe4527096dba3cee83119449785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a3054ba818e5b40da27a562af9714c"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#ab1a3054ba818e5b40da27a562af9714c">xyplot::LPFNCREATEGROUP</a> )(long lPlotID, long *plGroupID)</td></tr>
+<tr class="separator:ab1a3054ba818e5b40da27a562af9714c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ee39c2695e1c7c78048d0672744524"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a17ee39c2695e1c7c78048d0672744524">xyplot::LPFNDELETEGROUP</a> )(long lPlotID, long lGroupID)</td></tr>
+<tr class="separator:a17ee39c2695e1c7c78048d0672744524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae721ca071f1b5292073d3e831c8b1150"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#ae721ca071f1b5292073d3e831c8b1150">xyplot::LPFNBINDPROFILE</a> )(long lPlotID, long lGroupID, long lProfileID)</td></tr>
+<tr class="separator:ae721ca071f1b5292073d3e831c8b1150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dfacb1414fefdad54092cb9264eb4b1"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a6dfacb1414fefdad54092cb9264eb4b1">xyplot::LPFNGETPROFLIST</a> )(long lPlotID, long *lSize, long *lProfileIDs)</td></tr>
+<tr class="separator:a6dfacb1414fefdad54092cb9264eb4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b16720b36f41b782b9c112b406d9698"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a4b16720b36f41b782b9c112b406d9698">xyplot::LPFNREGRESTOREDEFAULTS</a> )(long lPlotID)</td></tr>
+<tr class="separator:a4b16720b36f41b782b9c112b406d9698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f14b7c1bf6f824f039dd8cafcd19f20"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a2f14b7c1bf6f824f039dd8cafcd19f20">xyplot::LPFNREGLOADSETTINGS</a> )(long lPlotID, const char *pszKeyName, const char *pszValue)</td></tr>
+<tr class="separator:a2f14b7c1bf6f824f039dd8cafcd19f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852637cd21abfcac7de9635bbd175db7"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a852637cd21abfcac7de9635bbd175db7">xyplot::LPFNREGSAVESETTINGS</a> )(long lPlotID, const char *pszKeyName, const char *pszValue)</td></tr>
+<tr class="separator:a852637cd21abfcac7de9635bbd175db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63fcd576a6d31af2655357ffa3ea7b74"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a63fcd576a6d31af2655357ffa3ea7b74">xyplot::LPFNRUNDIALOG</a> )(long lPlotID)</td></tr>
+<tr class="separator:a63fcd576a6d31af2655357ffa3ea7b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aaffe16c53538a1e712cdc6caef070f"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a0aaffe16c53538a1e712cdc6caef070f">xyplot::LPFNADDREGION</a> )(long lPlotID, long AxisX, long AxisY, double xFrom, double xTo, double yFrom, double yTo, const char *pszTitle, long *lRegionID)</td></tr>
+<tr class="separator:a0aaffe16c53538a1e712cdc6caef070f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad184f4d62ca85e471cef796c79dd0b4c"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#ad184f4d62ca85e471cef796c79dd0b4c">xyplot::LPFNDELETEREGION</a> )(long lPlotID, long lRegionID)</td></tr>
+<tr class="separator:ad184f4d62ca85e471cef796c79dd0b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048931557c2d0bfaa041629319bb118d"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a048931557c2d0bfaa041629319bb118d">xyplot::LPFNSETREGION</a> )(long lPlotID, long lRegionID, double x1, double x2, double y1, double y2)</td></tr>
+<tr class="separator:a048931557c2d0bfaa041629319bb118d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe1c4a6bf88e4c101cae03f31602993"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#acfe1c4a6bf88e4c101cae03f31602993">xyplot::LPFNADDLEVEL</a> )(long lPlotID, long axis, double value, const char *pszTitle, COLORREF clr, int width, long *lLevelID)</td></tr>
+<tr class="separator:acfe1c4a6bf88e4c101cae03f31602993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f2d0955d7feb162b2730e65398ed64"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a96f2d0955d7feb162b2730e65398ed64">xyplot::LPFNDELETELEVEL</a> )(long lPlotID, long lLevelID)</td></tr>
+<tr class="separator:a96f2d0955d7feb162b2730e65398ed64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a8b61fef16cdd55e9491d30f602509"><td class="memItemLeft" align="right" valign="top">typedef long(<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#ae4a8b61fef16cdd55e9491d30f602509">xyplot::LPFNSETLEVEL</a> )(long lPlotID, long lLevelID, double value)</td></tr>
+<tr class="separator:ae4a8b61fef16cdd55e9491d30f602509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a27bc71b0bdfac09495e7e531d8a918c5"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">xyplot::long</a> (<a class="el" href="_x_y_plot_wrapper_8h.html#aba6cc8b3b62f2540637745c385e17016">XYPLOTFN</a> *LPFNSETDATA)(long lPlotID</td></tr>
+<tr class="separator:a27bc71b0bdfac09495e7e531d8a918c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a class="anchor" id="a967d661c7915a0c61e4d7281d85b91d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ALL_PLOTS&#160;&#160;&#160;ALL_PLOTS_()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1676db91cb9f8f3197d8c49203f0264a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ALL_REGIONS&#160;&#160;&#160;ALL_REGIONS_()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba6cc8b3b62f2540637745c385e17016"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XYPLOTFN&#160;&#160;&#160;__stdcall</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

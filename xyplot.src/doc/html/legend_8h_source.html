@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Исходный файл src/legend.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">legend.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="legend_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __LEGEND_H_INCLUDED__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __LEGEND_H_INCLUDED__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_savable_item_8h.html">SavableItem.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_back_ground_fill_8h.html">BackGroundFill.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="border_8h.html">Border.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="profile_8h.html">profile.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_r_t_f_string.html">RTFString</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_x_y_plot.html">XYPlot</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structprofile__less.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structprofile__less.html">profile_less</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structprofile__less.html#ae4533859a9118e37e22c3c1179db7e98">   19</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structprofile__less.html#ae4533859a9118e37e22c3c1179db7e98">operator()</a>(<span class="keyword">const</span> <a class="code" href="class_profile.html">Profile</a>* lhs, <span class="keyword">const</span> <a class="code" href="class_profile.html">Profile</a>* rhs) { <span class="keywordflow">return</span> strcmp(lhs-&gt;<a class="code" href="class_profile.html#aa6baeea130f07d7027117d1663619251">GetName</a>().c_str(), rhs-&gt;<a class="code" href="class_profile.html#aa6baeea130f07d7027117d1663619251">GetName</a>().c_str()) &lt; 0; }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_legend.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_legend.html">Legend</a> : <span class="keyword">public</span> <a class="code" href="class_savable_item.html">SavableItem</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_legend.html#a4f7f9fbc734a17fcec1aac7d1a8fadd1">Legend</a>(<a class="code" href="class_x_y_plot.html">XYPlot</a>* parent);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_legend.html#a115704c32c3ebb783c3ebdd9b2d42f94">~Legend</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_legend.html#a0897a355c053f7f6cdf1402e3efc47db">   28</a></span>&#160;    <span class="keyword">inline</span> BOOL <a class="code" href="class_legend.html#a0897a355c053f7f6cdf1402e3efc47db">IsEnabled</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_legend.html#a59cedd9de67888759ff39d3fd7c5be45">m_enabled</a>; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_legend.html#a54ddf99906fffb8c980460a2b83af3b3">   29</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_legend.html#a54ddf99906fffb8c980460a2b83af3b3">Enable</a>(BOOL enable) { <a class="code" href="class_legend.html#a59cedd9de67888759ff39d3fd7c5be45">m_enabled</a> = enable; }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_legend.html#ad9203ba4dd99cff8f06bfe67a83d177b">   31</a></span>&#160;    <span class="keyword">inline</span> BOOL <a class="code" href="class_legend.html#ad9203ba4dd99cff8f06bfe67a83d177b">IsHidden</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_legend.html#a7d66848a4111a6a2c0b1fce8ced7d334">m_hidden</a>; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_legend.html#ac0d117f614faf8abc3a0c6662298e331">   32</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_legend.html#ac0d117f614faf8abc3a0c6662298e331">Hide</a>(BOOL hide) { <a class="code" href="class_legend.html#a7d66848a4111a6a2c0b1fce8ced7d334">m_hidden</a> = hide;  }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_legend.html#a1b6519b466a61a4c41b21c3bbf3d5143">   34</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_legend.html#a1b6519b466a61a4c41b21c3bbf3d5143">SetAlign</a>(<span class="keywordtype">int</span> align) { <a class="code" href="class_legend.html#a144934b57a8e04a335e6f0d8a39eeb84">m_align</a> = align; }</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_legend.html#a047bb7503a5efcca94fbf869b535979c">   35</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="class_legend.html#a047bb7503a5efcca94fbf869b535979c">GetAlign</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_legend.html#a144934b57a8e04a335e6f0d8a39eeb84">m_align</a>; }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_legend.html#a5c9f1626236b331c440ee630e32e2543">   37</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_legend.html#a5c9f1626236b331c440ee630e32e2543">SetRect</a>(<span class="keyword">const</span> RECT&amp; <span class="keyword">self</span>) { <a class="code" href="class_legend.html#a501285ae1b14654e5ae6a03f7ed4685f">m_self</a> = <span class="keyword">self</span>; }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_legend.html#a5c9f1626236b331c440ee630e32e2543">SetRect</a>(<span class="keywordtype">int</span> left, <span class="keywordtype">int</span> top, <span class="keywordtype">int</span> right, <span class="keywordtype">int</span> bottom);</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_legend.html#a1e5d3d80a9db05979396b7f7d8aaeb24">   39</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_legend.html#a1e5d3d80a9db05979396b7f7d8aaeb24">GetRect</a>(RECT&amp; <span class="keyword">self</span>)<span class="keyword"> const </span>{ <span class="keyword">self</span> = <a class="code" href="class_legend.html#a501285ae1b14654e5ae6a03f7ed4685f">m_self</a>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_legend.html#aaaac5b1cc325b70ed985b5e671219be2">   41</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_legend.html#aaaac5b1cc325b70ed985b5e671219be2">SetCellSize</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height) { <a class="code" href="class_legend.html#a618f51c269707325f1d5a9b20f5544cb">m_cellWidth</a> = width; <a class="code" href="class_legend.html#ae505590bc82b4c57bc1af903855490a5">m_cellHeight</a> = height; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_legend.html#aa85e5a1690d0b39faa1b93d67027c33d">   42</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_legend.html#aa85e5a1690d0b39faa1b93d67027c33d">GetCellSize</a>(<span class="keywordtype">int</span> &amp;width, <span class="keywordtype">int</span> &amp;height)<span class="keyword"> const </span>{ width = <a class="code" href="class_legend.html#a618f51c269707325f1d5a9b20f5544cb">m_cellWidth</a>; height = <a class="code" href="class_legend.html#ae505590bc82b4c57bc1af903855490a5">m_cellHeight</a>; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_legend.html#a24fa9da3d1d681d0b668cdbe246852bf">   44</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_legend.html#a24fa9da3d1d681d0b668cdbe246852bf">SetLineLength</a>(<span class="keywordtype">int</span> length) { <a class="code" href="class_legend.html#aa5fe3f497876f93e38faa9b248a36fb3">m_lineLength</a> = length; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_legend.html#ad2d3feab72270972696612a660c36c80">   45</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="class_legend.html#ad2d3feab72270972696612a660c36c80">GetLineLength</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_legend.html#aa5fe3f497876f93e38faa9b248a36fb3">m_lineLength</a>; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_legend.html#a9f1846fd3945025e00c257b30eb83308">SetFont</a>(<span class="keyword">const</span> LOGFONT* plf);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_legend.html#abf18606ec15b245411814d483bf6c84b">PreDraw</a>(HDC hdc, RECT *ptotal);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_legend.html#aff5b6aaef5b636e6276236ed65e8c1d8">OnDraw</a>(HDC hdc);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="profile_8h.html#ab564cd67657a739c9e5a6caa0ce0dafa">PROFILE_KEY</a> <a class="code" href="class_legend.html#afc3e60bb5661a763719cdd2a70065fc5">HitTest</a>(<span class="keyword">const</span> POINT&amp; ptHit);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_legend.html#ac455ef2bd4f20e8889898f02e6c0cc80">   54</a></span>&#160;    BOOL <a class="code" href="class_legend.html#ac455ef2bd4f20e8889898f02e6c0cc80">PointInRect</a>(<span class="keyword">const</span> POINT&amp; pt) { <span class="keywordflow">return</span> PtInRect(&amp;<a class="code" href="class_legend.html#a501285ae1b14654e5ae6a03f7ed4685f">m_self</a>, pt); };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> BOOL <a class="code" href="class_legend.html#a93f2a8366a6c5df1b99d4ba2805928b4">Write</a>(HANDLE hFile) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> BOOL <a class="code" href="class_legend.html#a881509fdd919ed3a30ca822a5edb1114">Read</a>(HANDLE hFile);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_legend.html#ae74cfd587be862b4e655bdee5ea08810">Clear</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_legend.html#a63abb8f699af6d3506bc7c8ded4037e0">   62</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_legend.html#a63abb8f699af6d3506bc7c8ded4037e0">m_LegendOffset</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_legend.html#ac52c5c0196d7bddcfab650383f3c88b0">   64</a></span>&#160;    <a class="code" href="class_r_t_f_string.html">RTFString</a>* <a class="code" href="class_legend.html#ac52c5c0196d7bddcfab650383f3c88b0">m_basicEstr</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_legend.html#a418c058072c59c8d2c491852ef3f143b">   66</a></span>&#160;    std::set&lt;Profile*, profile_less&gt; <a class="code" href="class_legend.html#a418c058072c59c8d2c491852ef3f143b">profiles</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_legend.html#ad033e64a43cceb124ce7b626bdfb695b">   68</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_x_y_plot.html">XYPlot</a>&amp; <a class="code" href="class_legend.html#ad033e64a43cceb124ce7b626bdfb695b">plot</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_legend.html#ae32f4bc2a9d78cfa069cb242f88cc8f4">   70</a></span>&#160;    <a class="code" href="class_border.html">Border</a>      <a class="code" href="class_legend.html#ae32f4bc2a9d78cfa069cb242f88cc8f4">border</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_legend.html#a484eefc380044280c4d44642985293e2">   71</a></span>&#160;    <a class="code" href="class_back_ground.html">BackGround</a>  <a class="code" href="class_legend.html#a484eefc380044280c4d44642985293e2">backGround</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_legend.html#a59cedd9de67888759ff39d3fd7c5be45">   73</a></span>&#160;    BOOL <a class="code" href="class_legend.html#a59cedd9de67888759ff39d3fd7c5be45">m_enabled</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_legend.html#a7d66848a4111a6a2c0b1fce8ced7d334">   74</a></span>&#160;    BOOL <a class="code" href="class_legend.html#a7d66848a4111a6a2c0b1fce8ced7d334">m_hidden</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_legend.html#a144934b57a8e04a335e6f0d8a39eeb84">   76</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_legend.html#a144934b57a8e04a335e6f0d8a39eeb84">m_align</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_legend.html#a501285ae1b14654e5ae6a03f7ed4685f">   77</a></span>&#160;    RECT <a class="code" href="class_legend.html#a501285ae1b14654e5ae6a03f7ed4685f">m_self</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_legend.html#ac20e23ef899c49a723227dadc21852d0">   78</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_legend.html#ac20e23ef899c49a723227dadc21852d0">m_nLinesCount</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_legend.html#a618f51c269707325f1d5a9b20f5544cb">   80</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_legend.html#a618f51c269707325f1d5a9b20f5544cb">m_cellWidth</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_legend.html#ae505590bc82b4c57bc1af903855490a5">   81</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_legend.html#ae505590bc82b4c57bc1af903855490a5">m_cellHeight</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_legend.html#aa5fe3f497876f93e38faa9b248a36fb3">   82</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_legend.html#aa5fe3f497876f93e38faa9b248a36fb3">m_lineLength</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_r_t_f_string_html"><div class="ttname"><a href="class_r_t_f_string.html">RTFString</a></div><div class="ttdef"><b>Definition:</b> rtfstring.h:7</div></div>
+<div class="ttc" id="class_legend_html_ac52c5c0196d7bddcfab650383f3c88b0"><div class="ttname"><a href="class_legend.html#ac52c5c0196d7bddcfab650383f3c88b0">Legend::m_basicEstr</a></div><div class="ttdeci">RTFString * m_basicEstr</div><div class="ttdef"><b>Definition:</b> legend.h:64</div></div>
+<div class="ttc" id="class_legend_html_a0897a355c053f7f6cdf1402e3efc47db"><div class="ttname"><a href="class_legend.html#a0897a355c053f7f6cdf1402e3efc47db">Legend::IsEnabled</a></div><div class="ttdeci">BOOL IsEnabled() const </div><div class="ttdef"><b>Definition:</b> legend.h:28</div></div>
+<div class="ttc" id="class_legend_html_a7d66848a4111a6a2c0b1fce8ced7d334"><div class="ttname"><a href="class_legend.html#a7d66848a4111a6a2c0b1fce8ced7d334">Legend::m_hidden</a></div><div class="ttdeci">BOOL m_hidden</div><div class="ttdef"><b>Definition:</b> legend.h:74</div></div>
+<div class="ttc" id="class_legend_html_ad2d3feab72270972696612a660c36c80"><div class="ttname"><a href="class_legend.html#ad2d3feab72270972696612a660c36c80">Legend::GetLineLength</a></div><div class="ttdeci">int GetLineLength() const </div><div class="ttdef"><b>Definition:</b> legend.h:45</div></div>
+<div class="ttc" id="class_legend_html"><div class="ttname"><a href="class_legend.html">Legend</a></div><div class="ttdef"><b>Definition:</b> legend.h:22</div></div>
+<div class="ttc" id="class_legend_html_a93f2a8366a6c5df1b99d4ba2805928b4"><div class="ttname"><a href="class_legend.html#a93f2a8366a6c5df1b99d4ba2805928b4">Legend::Write</a></div><div class="ttdeci">virtual BOOL Write(HANDLE hFile) const </div><div class="ttdef"><b>Definition:</b> legend.cpp:224</div></div>
+<div class="ttc" id="class_legend_html_a59cedd9de67888759ff39d3fd7c5be45"><div class="ttname"><a href="class_legend.html#a59cedd9de67888759ff39d3fd7c5be45">Legend::m_enabled</a></div><div class="ttdeci">BOOL m_enabled</div><div class="ttdef"><b>Definition:</b> legend.h:73</div></div>
+<div class="ttc" id="class_legend_html_a501285ae1b14654e5ae6a03f7ed4685f"><div class="ttname"><a href="class_legend.html#a501285ae1b14654e5ae6a03f7ed4685f">Legend::m_self</a></div><div class="ttdeci">RECT m_self</div><div class="ttdef"><b>Definition:</b> legend.h:77</div></div>
+<div class="ttc" id="class_legend_html_aaaac5b1cc325b70ed985b5e671219be2"><div class="ttname"><a href="class_legend.html#aaaac5b1cc325b70ed985b5e671219be2">Legend::SetCellSize</a></div><div class="ttdeci">void SetCellSize(int width, int height)</div><div class="ttdef"><b>Definition:</b> legend.h:41</div></div>
+<div class="ttc" id="class_legend_html_afc3e60bb5661a763719cdd2a70065fc5"><div class="ttname"><a href="class_legend.html#afc3e60bb5661a763719cdd2a70065fc5">Legend::HitTest</a></div><div class="ttdeci">PROFILE_KEY HitTest(const POINT &amp;ptHit)</div><div class="ttdef"><b>Definition:</b> legend.cpp:200</div></div>
+<div class="ttc" id="class_profile_html"><div class="ttname"><a href="class_profile.html">Profile</a></div><div class="ttdef"><b>Definition:</b> profile.h:18</div></div>
+<div class="ttc" id="class_back_ground_html"><div class="ttname"><a href="class_back_ground.html">BackGround</a></div><div class="ttdef"><b>Definition:</b> BackGroundFill.h:5</div></div>
+<div class="ttc" id="profile_8h_html_ab564cd67657a739c9e5a6caa0ce0dafa"><div class="ttname"><a href="profile_8h.html#ab564cd67657a739c9e5a6caa0ce0dafa">PROFILE_KEY</a></div><div class="ttdeci">LONG_PTR PROFILE_KEY</div><div class="ttdef"><b>Definition:</b> profile.h:10</div></div>
+<div class="ttc" id="class_legend_html_ae32f4bc2a9d78cfa069cb242f88cc8f4"><div class="ttname"><a href="class_legend.html#ae32f4bc2a9d78cfa069cb242f88cc8f4">Legend::border</a></div><div class="ttdeci">Border border</div><div class="ttdef"><b>Definition:</b> legend.h:70</div></div>
+<div class="ttc" id="class_legend_html_a1b6519b466a61a4c41b21c3bbf3d5143"><div class="ttname"><a href="class_legend.html#a1b6519b466a61a4c41b21c3bbf3d5143">Legend::SetAlign</a></div><div class="ttdeci">void SetAlign(int align)</div><div class="ttdef"><b>Definition:</b> legend.h:34</div></div>
+<div class="ttc" id="class_legend_html_a618f51c269707325f1d5a9b20f5544cb"><div class="ttname"><a href="class_legend.html#a618f51c269707325f1d5a9b20f5544cb">Legend::m_cellWidth</a></div><div class="ttdeci">int m_cellWidth</div><div class="ttdef"><b>Definition:</b> legend.h:80</div></div>
+<div class="ttc" id="class_legend_html_ae505590bc82b4c57bc1af903855490a5"><div class="ttname"><a href="class_legend.html#ae505590bc82b4c57bc1af903855490a5">Legend::m_cellHeight</a></div><div class="ttdeci">int m_cellHeight</div><div class="ttdef"><b>Definition:</b> legend.h:81</div></div>
+<div class="ttc" id="class_legend_html_abf18606ec15b245411814d483bf6c84b"><div class="ttname"><a href="class_legend.html#abf18606ec15b245411814d483bf6c84b">Legend::PreDraw</a></div><div class="ttdeci">void PreDraw(HDC hdc, RECT *ptotal)</div><div class="ttdef"><b>Definition:</b> legend.cpp:64</div></div>
+<div class="ttc" id="structprofile__less_html_ae4533859a9118e37e22c3c1179db7e98"><div class="ttname"><a href="structprofile__less.html#ae4533859a9118e37e22c3c1179db7e98">profile_less::operator()</a></div><div class="ttdeci">bool operator()(const Profile *lhs, const Profile *rhs)</div><div class="ttdef"><b>Definition:</b> legend.h:19</div></div>
+<div class="ttc" id="_savable_item_8h_html"><div class="ttname"><a href="_savable_item_8h.html">SavableItem.h</a></div></div>
+<div class="ttc" id="_back_ground_fill_8h_html"><div class="ttname"><a href="_back_ground_fill_8h.html">BackGroundFill.h</a></div></div>
+<div class="ttc" id="class_legend_html_a9f1846fd3945025e00c257b30eb83308"><div class="ttname"><a href="class_legend.html#a9f1846fd3945025e00c257b30eb83308">Legend::SetFont</a></div><div class="ttdeci">void SetFont(const LOGFONT *plf)</div><div class="ttdef"><b>Definition:</b> legend.cpp:59</div></div>
+<div class="ttc" id="class_legend_html_ad9203ba4dd99cff8f06bfe67a83d177b"><div class="ttname"><a href="class_legend.html#ad9203ba4dd99cff8f06bfe67a83d177b">Legend::IsHidden</a></div><div class="ttdeci">BOOL IsHidden() const </div><div class="ttdef"><b>Definition:</b> legend.h:31</div></div>
+<div class="ttc" id="class_savable_item_html"><div class="ttname"><a href="class_savable_item.html">SavableItem</a></div><div class="ttdef"><b>Definition:</b> SavableItem.h:5</div></div>
+<div class="ttc" id="class_legend_html_a4f7f9fbc734a17fcec1aac7d1a8fadd1"><div class="ttname"><a href="class_legend.html#a4f7f9fbc734a17fcec1aac7d1a8fadd1">Legend::Legend</a></div><div class="ttdeci">Legend(XYPlot *parent)</div><div class="ttdef"><b>Definition:</b> legend.cpp:15</div></div>
+<div class="ttc" id="class_legend_html_a418c058072c59c8d2c491852ef3f143b"><div class="ttname"><a href="class_legend.html#a418c058072c59c8d2c491852ef3f143b">Legend::profiles</a></div><div class="ttdeci">std::set&lt; Profile *, profile_less &gt; profiles</div><div class="ttdef"><b>Definition:</b> legend.h:66</div></div>
+<div class="ttc" id="class_legend_html_a047bb7503a5efcca94fbf869b535979c"><div class="ttname"><a href="class_legend.html#a047bb7503a5efcca94fbf869b535979c">Legend::GetAlign</a></div><div class="ttdeci">int GetAlign() const </div><div class="ttdef"><b>Definition:</b> legend.h:35</div></div>
+<div class="ttc" id="class_legend_html_aff5b6aaef5b636e6276236ed65e8c1d8"><div class="ttname"><a href="class_legend.html#aff5b6aaef5b636e6276236ed65e8c1d8">Legend::OnDraw</a></div><div class="ttdeci">void OnDraw(HDC hdc)</div><div class="ttdef"><b>Definition:</b> legend.cpp:142</div></div>
+<div class="ttc" id="class_legend_html_a24fa9da3d1d681d0b668cdbe246852bf"><div class="ttname"><a href="class_legend.html#a24fa9da3d1d681d0b668cdbe246852bf">Legend::SetLineLength</a></div><div class="ttdeci">void SetLineLength(int length)</div><div class="ttdef"><b>Definition:</b> legend.h:44</div></div>
+<div class="ttc" id="class_legend_html_ac455ef2bd4f20e8889898f02e6c0cc80"><div class="ttname"><a href="class_legend.html#ac455ef2bd4f20e8889898f02e6c0cc80">Legend::PointInRect</a></div><div class="ttdeci">BOOL PointInRect(const POINT &amp;pt)</div><div class="ttdef"><b>Definition:</b> legend.h:54</div></div>
+<div class="ttc" id="class_legend_html_aa5fe3f497876f93e38faa9b248a36fb3"><div class="ttname"><a href="class_legend.html#aa5fe3f497876f93e38faa9b248a36fb3">Legend::m_lineLength</a></div><div class="ttdeci">int m_lineLength</div><div class="ttdef"><b>Definition:</b> legend.h:82</div></div>
+<div class="ttc" id="class_legend_html_a115704c32c3ebb783c3ebdd9b2d42f94"><div class="ttname"><a href="class_legend.html#a115704c32c3ebb783c3ebdd9b2d42f94">Legend::~Legend</a></div><div class="ttdeci">virtual ~Legend()</div><div class="ttdef"><b>Definition:</b> legend.cpp:38</div></div>
+<div class="ttc" id="structprofile__less_html"><div class="ttname"><a href="structprofile__less.html">profile_less</a></div><div class="ttdef"><b>Definition:</b> legend.h:17</div></div>
+<div class="ttc" id="class_profile_html_aa6baeea130f07d7027117d1663619251"><div class="ttname"><a href="class_profile.html#aa6baeea130f07d7027117d1663619251">Profile::GetName</a></div><div class="ttdeci">const std::string &amp; GetName() const </div><div class="ttdef"><b>Definition:</b> profile.h:36</div></div>
+<div class="ttc" id="class_legend_html_a144934b57a8e04a335e6f0d8a39eeb84"><div class="ttname"><a href="class_legend.html#a144934b57a8e04a335e6f0d8a39eeb84">Legend::m_align</a></div><div class="ttdeci">int m_align</div><div class="ttdef"><b>Definition:</b> legend.h:76</div></div>
+<div class="ttc" id="class_border_html"><div class="ttname"><a href="class_border.html">Border</a></div><div class="ttdef"><b>Definition:</b> border.h:7</div></div>
+<div class="ttc" id="class_legend_html_a484eefc380044280c4d44642985293e2"><div class="ttname"><a href="class_legend.html#a484eefc380044280c4d44642985293e2">Legend::backGround</a></div><div class="ttdeci">BackGround backGround</div><div class="ttdef"><b>Definition:</b> legend.h:71</div></div>
+<div class="ttc" id="class_legend_html_ae74cfd587be862b4e655bdee5ea08810"><div class="ttname"><a href="class_legend.html#ae74cfd587be862b4e655bdee5ea08810">Legend::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> legend.cpp:46</div></div>
+<div class="ttc" id="profile_8h_html"><div class="ttname"><a href="profile_8h.html">profile.h</a></div></div>
+<div class="ttc" id="border_8h_html"><div class="ttname"><a href="border_8h.html">border.h</a></div></div>
+<div class="ttc" id="class_x_y_plot_html"><div class="ttname"><a href="class_x_y_plot.html">XYPlot</a></div><div class="ttdoc">Класс для работы с базой данных </div><div class="ttdef"><b>Definition:</b> main.h:25</div></div>
+<div class="ttc" id="class_legend_html_ac20e23ef899c49a723227dadc21852d0"><div class="ttname"><a href="class_legend.html#ac20e23ef899c49a723227dadc21852d0">Legend::m_nLinesCount</a></div><div class="ttdeci">int m_nLinesCount</div><div class="ttdef"><b>Definition:</b> legend.h:78</div></div>
+<div class="ttc" id="class_legend_html_a5c9f1626236b331c440ee630e32e2543"><div class="ttname"><a href="class_legend.html#a5c9f1626236b331c440ee630e32e2543">Legend::SetRect</a></div><div class="ttdeci">void SetRect(const RECT &amp;self)</div><div class="ttdef"><b>Definition:</b> legend.h:37</div></div>
+<div class="ttc" id="class_legend_html_a1e5d3d80a9db05979396b7f7d8aaeb24"><div class="ttname"><a href="class_legend.html#a1e5d3d80a9db05979396b7f7d8aaeb24">Legend::GetRect</a></div><div class="ttdeci">void GetRect(RECT &amp;self) const </div><div class="ttdef"><b>Definition:</b> legend.h:39</div></div>
+<div class="ttc" id="class_legend_html_ac0d117f614faf8abc3a0c6662298e331"><div class="ttname"><a href="class_legend.html#ac0d117f614faf8abc3a0c6662298e331">Legend::Hide</a></div><div class="ttdeci">void Hide(BOOL hide)</div><div class="ttdef"><b>Definition:</b> legend.h:32</div></div>
+<div class="ttc" id="class_legend_html_ad033e64a43cceb124ce7b626bdfb695b"><div class="ttname"><a href="class_legend.html#ad033e64a43cceb124ce7b626bdfb695b">Legend::plot</a></div><div class="ttdeci">const XYPlot &amp; plot</div><div class="ttdef"><b>Definition:</b> legend.h:68</div></div>
+<div class="ttc" id="class_legend_html_a54ddf99906fffb8c980460a2b83af3b3"><div class="ttname"><a href="class_legend.html#a54ddf99906fffb8c980460a2b83af3b3">Legend::Enable</a></div><div class="ttdeci">void Enable(BOOL enable)</div><div class="ttdef"><b>Definition:</b> legend.h:29</div></div>
+<div class="ttc" id="class_legend_html_aa85e5a1690d0b39faa1b93d67027c33d"><div class="ttname"><a href="class_legend.html#aa85e5a1690d0b39faa1b93d67027c33d">Legend::GetCellSize</a></div><div class="ttdeci">void GetCellSize(int &amp;width, int &amp;height) const </div><div class="ttdef"><b>Definition:</b> legend.h:42</div></div>
+<div class="ttc" id="class_legend_html_a881509fdd919ed3a30ca822a5edb1114"><div class="ttname"><a href="class_legend.html#a881509fdd919ed3a30ca822a5edb1114">Legend::Read</a></div><div class="ttdeci">virtual BOOL Read(HANDLE hFile)</div><div class="ttdef"><b>Definition:</b> legend.cpp:245</div></div>
+<div class="ttc" id="class_legend_html_a63abb8f699af6d3506bc7c8ded4037e0"><div class="ttname"><a href="class_legend.html#a63abb8f699af6d3506bc7c8ded4037e0">Legend::m_LegendOffset</a></div><div class="ttdeci">int m_LegendOffset</div><div class="ttdef"><b>Definition:</b> legend.h:62</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

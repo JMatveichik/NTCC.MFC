@@ -1,0 +1,676 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\NanoTubesControlCenter.ico"
+IDR_NANOTUBESCC_TYPE    ICON                    "res\\NanoTubesControlCenterDoc.ico"
+IDR_NANOTUBESPROJECT_TYPE ICON                    "res\\NanoTubesControlCenterDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TREE_NET            BITMAP                  "res\\TreeCtrlImages.bmp"
+IDB_PROGRESS_BORDER     BITMAP                  "res\\IDB_EXT_2007_PROGRESS_BORDER.bmp"
+IDB_AQUA_PROGRESS       BITMAP                  "res\\IDB_AQUA_PROGRESS.bmp"
+IDB_BLUE_PROGRESS       BITMAP                  "res\\IDB_BLUE_PROGRESS.bmp"
+IDB_DARK_BLUE_PROGRESS  BITMAP                  "res\\IDB_DARK_BLUE_PROGRESS.bmp"
+IDB_OFFICE2007_PROGRESS BITMAP                  "res\\IDB_EXT_2007_PROGRESS_MAIN.bmp"
+IDB_GRAY_PROGRESS       BITMAP                  "res\\IDB_GRAY_PROGRESS.bmp"
+IDB_GREEN_PROGRESS      BITMAP                  "res\\IDB_GREEN_PROGRESS.bmp"
+IDB_MAGENTA_PROGRESS    BITMAP                  "res\\IDB_MAGENTA_PROGRESS.bmp"
+IDB_ORANGE_PROGRESS     BITMAP                  "res\\IDB_ORANGE_PROGRESS.bmp"
+IDB_RED_PROGRESS        BITMAP                  "res\\IDB_RED_PROGRESS.bmp"
+IDB_VIOLETE_PROGRESS    BITMAP                  "res\\IDB_VIOLET_PROGRESS.bmp"
+IDB_BITMAP_SPLASH       BITMAP                  "res\\Splash.bmp"
+IDB_BANER               BITMAP                  "res\\Baner.bmp"
+IDR_DS_VIEW_TOOL_BAR    BITMAP                  "res\\toolbar1.bmp"
+IDR_SCRIPTS_TOOL_BAR    BITMAP                  "res\\scriptstoolbar.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DS_VIEW_DLG DIALOGEX 0, 0, 159, 77
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+FONT 10, "Segoe UI", 400, 0, 0xCC
+BEGIN
+    CONTROL         "",IDC_DS_VIEW_TOOL_BAR,"ProfUIS-ControlBar",0x2034,7,7,145,13
+    CONTROL         "",IDC_DS_TREE_GRID,"ProfUIS-ScrollItemWindow",WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_TABSTOP,7,25,145,45
+END
+
+IDD_SCRIPTS_DLG DIALOGEX 0, 0, 317, 260
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SCRIPTS_TOOL_BAR,"ProfUIS-ControlBar",0x2034,7,7,303,16
+    LISTBOX         IDC_LIST_SCRIPTS,7,28,115,210,LBS_OWNERDRAWVARIABLE | LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_SCRIPT_TEXT,"RichEdit20A",ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,128,28,181,210
+END
+
+IDD_DS_OUTPUT_DLG DIALOGEX 0, 0, 334, 23
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 12, "Segoe UI", 400, 0, 0xCC
+BEGIN
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "About NanoTubes Control Center"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NanoTubesControlCenter Version 1.0",IDC_STATIC,40,10,93,18,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010-2012",IDC_STATIC,37,40,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_LOADINGDLG DIALOGEX 0, 0, 387, 263
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_THICKFRAME
+CAPTION "System initialization"
+FONT 10, "Segoe UI", 400, 0, 0xCC
+BEGIN
+    CONTROL         "",IDC_COMMON_PROGRESS,"msctls_progress32",PBS_SMOOTH,7,17,373,6
+    PUSHBUTTON      "Continue",IDOK,321,240,59,16,WS_DISABLED
+    PUSHBUTTON      "Analyze",IDCANCEL,250,240,60,16,WS_DISABLED
+    CONTROL         "Ignore configuration errors",IDC_CHK_IGNORE_ERROR,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,7,246,145,10
+    CONTROL         "",IDC_GRID,"ProfUIS-ScrollItemWindow",WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_GROUP | WS_TABSTOP,7,26,373,160
+    CONTROL         166,IDC_BANER,"Static",SS_BITMAP,7,187,217,53
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,185,372,1
+    LTEXT           "",IDC_TEXT,228,186,152,52
+    CTEXT           "Current Step",IDC_STEP_INFO,7,3,373,8
+END
+
+IDD_USER_LOGIN DIALOGEX 0, 0, 158, 152
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Авторизация"
+FONT 14, "Segoe UI", 400, 0, 0xCC
+BEGIN
+    PUSHBUTTON      "Имя пользователя",IDC_BTN_USERS,7,6,144,20,BS_NOTIFY
+    EDITTEXT        IDC_ED_PASSWORD,7,28,144,12,ES_CENTER | ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "7",IDC_BTN_NUM7,7,47,32,24,NOT WS_TABSTOP
+    PUSHBUTTON      "8",IDC_BTN_NUM8,44,47,32,24,NOT WS_TABSTOP
+    PUSHBUTTON      "9",IDC_BTN_NUM9,81,47,32,24,NOT WS_TABSTOP
+    PUSHBUTTON      "Del",IDC_BTN_NUM_DEL,119,47,32,24,NOT WS_TABSTOP
+    PUSHBUTTON      "4",IDC_BTN_NUM4,7,72,32,24,NOT WS_TABSTOP
+    PUSHBUTTON      "5",IDC_BTN_NUM5,44,72,32,24,NOT WS_TABSTOP
+    PUSHBUTTON      "6",IDC_BTN_NUM6,81,72,32,24,NOT WS_TABSTOP
+    PUSHBUTTON      "Clear",IDC_BTN_NUM_CLEAR,119,72,32,24,NOT WS_TABSTOP
+    PUSHBUTTON      "1",IDC_BTN_NUM1,7,97,32,24,NOT WS_TABSTOP
+    PUSHBUTTON      "2",IDC_BTN_NUM2,44,97,32,24,NOT WS_TABSTOP
+    PUSHBUTTON      "3",IDC_BTN_NUM3,81,97,32,24,NOT WS_TABSTOP
+    PUSHBUTTON      "Enter",IDC_BTN_NUM_ENTER,119,97,32,48,NOT WS_TABSTOP
+    PUSHBUTTON      "0",IDC_BTN_NUM0,7,122,106,24,NOT WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,101,7,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,101,7,50,14,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DS_VIEW_DLG, DIALOG
+    BEGIN
+    END
+
+    IDD_SCRIPTS_DLG, DIALOG
+    BEGIN
+        HORZGUIDE, 28
+        HORZGUIDE, 238
+    END
+
+    IDD_DS_OUTPUT_DLG, DIALOG
+    BEGIN
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_LOADINGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 380
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+        HORZGUIDE, 14
+        HORZGUIDE, 26
+        HORZGUIDE, 186
+        HORZGUIDE, 240
+    END
+
+    IDD_USER_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_DS_VIEW_TOOL_BAR TOOLBAR 32, 32
+BEGIN
+    BUTTON      ID_DS_USER_LAYOUT
+    BUTTON      ID_DS_BY_DEVICE_LAYOUT
+    BUTTON      ID_DS_BY_TYPE_LAYOUT
+    BUTTON      ID_DS_BY_SCRIPT_LAYOUT
+END
+
+IDR_SCRIPTS_TOOL_BAR TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_SCRIPT_OPEN
+    BUTTON      ID_SCRIPT_SAVE
+    BUTTON      ID_SCRIPT_SAVE_ALL
+    SEPARATOR
+    BUTTON      ID_SCRIPT_RUN
+    BUTTON      ID_SCRIPT_STOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CUR_WE              CURSOR                  "res\\cursors_red\\we.cur"
+IDC_CUR_ARROW           CURSOR                  "res\\cursors_red\\arrow.cur"
+IDC_CUR_LINK            CURSOR                  "res\\cursors_red\\link.cur"
+IDC_CUR_MOVE            CURSOR                  "res\\cursors_red\\move.cur"
+IDC_CUR_NESW            CURSOR                  "res\\cursors_red\\nesw.cur"
+IDC_CUR_NS              CURSOR                  "res\\cursors_red\\ns.cur"
+IDC_CUR_NWSE            CURSOR                  "res\\cursors_red\\nwse.cur"
+IDC_CURS_UP             CURSOR                  "res\\cursors_red\\up.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_DS_POPUP_MENU MENU
+BEGIN
+    POPUP "__DS_CONEXT_MEU__"
+    BEGIN
+        MENUITEM "View dynamic",                ID_VIEW_DYNAMIC
+    END
+END
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About NanoTubesControlCenter...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "H",            ID_SHOW_HINT,           VIRTKEY, SHIFT, ALT, NOINVERT
+    "M",            ID_VIEW_MENUBAR,        ASCII,  ALT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F10,         ID_VIEW_LOG_BAR,        VIRTKEY, NOINVERT
+    VK_F11,         ID_VIEW_UI_LOOK_BAR,    VIRTKEY, NOINVERT
+    VK_F3,          ID_VIEW_LOAD_RESULTS,   VIRTKEY, NOINVERT
+    VK_F3,          ID_VIEW_CONFIG,         VIRTKEY, ALT, NOINVERT
+    VK_F4,          ID_APP_EXIT,            VIRTKEY, ALT, NOINVERT
+    VK_F7,          ID_VIEW_DEBUG_WND,      VIRTKEY, NOINVERT
+    VK_F8,          ID_ADD_USER,            VIRTKEY, NOINVERT
+    VK_F9,          ID_LOCK_APP,            VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_MENUBAR         "Show / hide the Menubar\nShow / hide the Menubar"
+END
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDS_CONFIG_LOAD_FAILED  "System initialization failure. Unable to proceed."
+    IDS_SCRIPT_CHECK1       "Processing script '%s'..."
+    IDS_SCRIPT_CHECK2       "Script file '%s' was not found"
+    IDS_SCRIPT_CHECK3       "Identifier '%s' is not registered as valid data source"
+    IDS_SCRIPT_CHECK4       "\tdefined in line #%d '%s'\n"
+    IDS_SCRIPT_CHECK5       "Recursion warning : script '%s' calls itself"
+    IDS_SCRIPT_CHECK0       "Potential script recursion warning"
+    IDS_APP_CLOSE_FAILURE   "The control program cannot be stopped right now"
+    IDS_CHEM_CHECK0         "Species <%s> was not found in thermal database file"
+    IDS_APP_CLOSE_PERMISIONS 
+                            "Only administrtor or technologist can close the application"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Nano Tubes Control Center"
+    IDR_NANOTUBESCC_TYPE    "\nNanoTubesCC Output Shema\noutshema\nNTCC Output Shema Files (*.outs)\n.outs\nNTCC.OutputSchemaDocument\nNTCC.OutputSchemaDocument"
+    IDR_NANOTUBESPROJECT_TYPE 
+                            "\nNanoTubesCC Project\nproject\nNTCC Project Files (*.nprj)\n.nprj\nNTCC.ProjectDocument\nNTCC.ProjectDocument"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "NanoTubesControlCenter"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SCRIPT_RUN_PERMITIONS "Недостаточно прав для выполнения операции"
+    IDS_APP_CLOSE_WITH_ACTIVE_SCRIPTS 
+                            "Имеются активные управляющие алгоритмы. Желаете прервать их работу и закрыть приложение?"
+    ID_VIEW_UI_LOOK_BAR     "Show or hide the UI Theme Switcher toolbar\nToggle UI Theme Switcher ToolBar"
+    ID_VIEW_PROP_WND        "Окно свойств объектов"
+END
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_ERRORS         ICON                    "res\\error.ico"
+IDI_ICON_INFO           ICON                    "res\\info.ico"
+IDI_ICON_WARNING        ICON                    "res\\warning.ico"
+IDI_GROUP_ADMINS        ICON                    "res\\grAdministrators.ico"
+IDI_GROUP_TECHNOLOGISTS ICON                    "res\\grTechnologists.ico"
+IDI_GROUP_OPERATORS     ICON                    "res\\grOperators.ico"
+IDI_GROUP_USERS         ICON                    "res\\grUsers.ico"
+IDI_APPLY               ICON                    "res\\check.ico"
+IDI_APPLY_ALL           ICON                    "res\\checks.ico"
+IDI_PRESETS             ICON                    "res\\presets.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ON_16x16_V3         BITMAP                  "res\\On_16x16_v3.bmp"
+IDB_OFF_16x16_V3        BITMAP                  "res\\Off_16x16_v3.bmp"
+IDR_PLOT_TOOLBAR        BITMAP                  "res\\id_plot.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AUTOCALC_SIZE DIALOG 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,129,26,50,16
+END
+
+IDD_ADD_APP_USER DIALOGEX 0, 0, 156, 183
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Новый пользователь"
+FONT 14, "Segoe UI", 400, 0, 0xCC
+BEGIN
+    EDITTEXT        IDC_ED_ULOGIN,7,16,142,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_UNAME,7,42,142,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CMB_UGROUP,7,68,142,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ED_UPHONE,7,91,142,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_UPASS,7,116,142,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ED_UPASSCONFIRM,7,142,142,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Добавить",IDOK,7,163,50,14
+    PUSHBUTTON      "Отменить",IDCANCEL,99,163,50,14
+    LTEXT           "Логин",IDC_STATIC,7,6,142,9
+    LTEXT           "Имя",IDC_STATIC,7,33,142,8
+    LTEXT           "Группа",IDC_STATIC,7,58,23,8
+    LTEXT           "Пароль",IDC_STATIC,7,107,25,8
+    LTEXT           "Подтверждение пароля",IDC_STATIC,7,133,77,8
+    LTEXT           "Номер телефона (+7xxxxxxxxx)",IDC_STATIC,7,82,98,8
+END
+
+IDD_PLOT DIALOGEX 0, 0, 595, 344
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Динакмика изменений"
+FONT 9, "Segoe UI", 400, 0, 0xCC
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,245,37,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,245,19,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_XAXIS_MIN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP,42,306,505,21
+    CONTROL         "",IDC_XAXIS_MAX,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP,42,325,505,19
+    CONTROL         "",IDC_YAXIS_MAX,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | 0x600,0,21,19,283
+    CONTROL         "",IDC_YAXIS_MIN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | 0x600,23,21,19,283
+    CONTROL         "Custom2",IDC_PLOT_TOOLBAR,"ProfUIS-ControlBar",0x2034,0,0,595,19
+    CONTROL         "",IDC_PLOT_PLACEHOLDER,"Static",SS_BLACKFRAME | SS_NOTIFY | WS_TABSTOP,42,21,505,283
+    CONTROL         "",IDC_YAXIS_MAX2,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | TBS_TOP,576,21,19,283
+    CONTROL         "",IDC_YAXIS_MIN2,"msctls_trackbar32",TBS_AUTOTICKS | TBS_VERT | TBS_TOP,550,21,19,283
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_AUTOCALC_SIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_ADD_APP_USER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_PLOT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 553
+        VERTGUIDE, 42
+        VERTGUIDE, 547
+        HORZGUIDE, 21
+        HORZGUIDE, 304
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_PLOT_TOOLBAR TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_SHOW_LEGEND
+    BUTTON      ID_SHOW_REGIONS
+    BUTTON      ID_SHOW_CHEKPOINTS
+    BUTTON      ID_USEAXIS_SLIDER
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\NanoTubesControlCenter.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ADD_APP_USER DLGINIT
+BEGIN
+    IDC_CMB_UGROUP, 0x403, 15, 0
+0xe4c0, 0xe8ec, 0xe8ed, 0xf2f1, 0xe0f0, 0xeef2, 0xfbf0, "\000" 
+    IDC_CMB_UGROUP, 0x403, 10, 0
+0xe5d2, 0xedf5, 0xebee, 0xe3ee, 0x00e8, 
+    IDC_CMB_UGROUP, 0x403, 11, 0
+0xefce, 0xf0e5, 0xf2e0, 0xf0ee, 0x20fb, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    ID_SHOW_LEGEND          "Показать/скрыть легенду "
+    ID_SHOW_REGIONS         "Показать/скрыть регионы"
+    ID_SHOW_CHEKPOINTS      "Показать/скрыть контрольные точки"
+    ID_USEAXIS_SLIDER       "Показать/скрыть слайдеры осей"
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1251)
+#include "res\NanoTubesControlCenter.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

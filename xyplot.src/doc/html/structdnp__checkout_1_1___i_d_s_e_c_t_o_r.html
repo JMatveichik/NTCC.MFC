@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Структура dnp_checkout::_IDSECTOR</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacednp__checkout.html">dnp_checkout</a></li><li class="navelem"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html">_IDSECTOR</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура dnp_checkout::_IDSECTOR</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a5b2e7e0550acb8a5f1789f38be813b8e"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a5b2e7e0550acb8a5f1789f38be813b8e">wGenConfig</a></td></tr>
+<tr class="separator:a5b2e7e0550acb8a5f1789f38be813b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af997deb5495006bb3d45f86e5d315ee8"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#af997deb5495006bb3d45f86e5d315ee8">wNumCyls</a></td></tr>
+<tr class="separator:af997deb5495006bb3d45f86e5d315ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad610ba0d11d7f159c2baa19cf3d4ee2"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#aad610ba0d11d7f159c2baa19cf3d4ee2">wReserved</a></td></tr>
+<tr class="separator:aad610ba0d11d7f159c2baa19cf3d4ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8014d3e75713d9f3d11d93a5334cdc"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a5d8014d3e75713d9f3d11d93a5334cdc">wNumHeads</a></td></tr>
+<tr class="separator:a5d8014d3e75713d9f3d11d93a5334cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eea43f5a3648e5873940fa0c623af50"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a2eea43f5a3648e5873940fa0c623af50">wBytesPerTrack</a></td></tr>
+<tr class="separator:a2eea43f5a3648e5873940fa0c623af50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69920d172f58526dda2ed02a2b7d33e"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#ad69920d172f58526dda2ed02a2b7d33e">wBytesPerSector</a></td></tr>
+<tr class="separator:ad69920d172f58526dda2ed02a2b7d33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac987056a21d435ae42e638f67f2f84ba"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#ac987056a21d435ae42e638f67f2f84ba">wSectorsPerTrack</a></td></tr>
+<tr class="separator:ac987056a21d435ae42e638f67f2f84ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b3afb04cf2de431fbf5fe0ae2d992e0"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a8b3afb04cf2de431fbf5fe0ae2d992e0">wVendorUnique</a> [3]</td></tr>
+<tr class="separator:a8b3afb04cf2de431fbf5fe0ae2d992e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a588ac894cadbe33be3d6fafe3eece2bb"><td class="memItemLeft" align="right" valign="top">CHAR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a588ac894cadbe33be3d6fafe3eece2bb">sSerialNumber</a> [20]</td></tr>
+<tr class="separator:a588ac894cadbe33be3d6fafe3eece2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a2d3fdb4b858b34409017de2e3eb3b"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#ae5a2d3fdb4b858b34409017de2e3eb3b">wBufferType</a></td></tr>
+<tr class="separator:ae5a2d3fdb4b858b34409017de2e3eb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d6028622dbd707d17e2b3ba3cb6c0b"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a85d6028622dbd707d17e2b3ba3cb6c0b">wBufferSize</a></td></tr>
+<tr class="separator:a85d6028622dbd707d17e2b3ba3cb6c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790f42f5c0ace8a5bb39a671df8a634c"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a790f42f5c0ace8a5bb39a671df8a634c">wECCSize</a></td></tr>
+<tr class="separator:a790f42f5c0ace8a5bb39a671df8a634c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b942358d2fc3044f06adc9b5cc2df2b"><td class="memItemLeft" align="right" valign="top">CHAR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a0b942358d2fc3044f06adc9b5cc2df2b">sFirmwareRev</a> [8]</td></tr>
+<tr class="separator:a0b942358d2fc3044f06adc9b5cc2df2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac2b59cfda99a4c48a4d7ab78895666"><td class="memItemLeft" align="right" valign="top">CHAR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a2ac2b59cfda99a4c48a4d7ab78895666">sModelNumber</a> [40]</td></tr>
+<tr class="separator:a2ac2b59cfda99a4c48a4d7ab78895666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98efb1b320bfa3f80ec0ea97a5862779"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a98efb1b320bfa3f80ec0ea97a5862779">wMoreVendorUnique</a></td></tr>
+<tr class="separator:a98efb1b320bfa3f80ec0ea97a5862779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c76f00a72c9ee0becac2583c9812b0"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a16c76f00a72c9ee0becac2583c9812b0">wDoubleWordIO</a></td></tr>
+<tr class="separator:a16c76f00a72c9ee0becac2583c9812b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3faff5e016129a27894ad20906ebeb30"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a3faff5e016129a27894ad20906ebeb30">wCapabilities</a></td></tr>
+<tr class="separator:a3faff5e016129a27894ad20906ebeb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15af60180b1b2bc6713447fa8a251fa"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#af15af60180b1b2bc6713447fa8a251fa">wReserved1</a></td></tr>
+<tr class="separator:af15af60180b1b2bc6713447fa8a251fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9faa28a72369c8a61c13e80c111c42"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a4a9faa28a72369c8a61c13e80c111c42">wPIOTiming</a></td></tr>
+<tr class="separator:a4a9faa28a72369c8a61c13e80c111c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582b79e28d2b8c9f6fee2c85994f5826"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a582b79e28d2b8c9f6fee2c85994f5826">wDMATiming</a></td></tr>
+<tr class="separator:a582b79e28d2b8c9f6fee2c85994f5826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae734db9fe78882ace23993d11b5ad5ad"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#ae734db9fe78882ace23993d11b5ad5ad">wBS</a></td></tr>
+<tr class="separator:ae734db9fe78882ace23993d11b5ad5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b647305a6961e9ee0c70d56757990a"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a80b647305a6961e9ee0c70d56757990a">wNumCurrentCyls</a></td></tr>
+<tr class="separator:a80b647305a6961e9ee0c70d56757990a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf194e38aca907e7602621713b129693"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#adf194e38aca907e7602621713b129693">wNumCurrentHeads</a></td></tr>
+<tr class="separator:adf194e38aca907e7602621713b129693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc2c43790f5c0e85137f52fbc73e54b"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a7fc2c43790f5c0e85137f52fbc73e54b">wNumCurrentSectorsPerTrack</a></td></tr>
+<tr class="separator:a7fc2c43790f5c0e85137f52fbc73e54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4132f6c675c2ee03a2e736099c8d5b6"><td class="memItemLeft" align="right" valign="top">ULONG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#ab4132f6c675c2ee03a2e736099c8d5b6">ulCurrentSectorCapacity</a></td></tr>
+<tr class="separator:ab4132f6c675c2ee03a2e736099c8d5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528c87d98538b3b02280faa23ffc87d5"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a528c87d98538b3b02280faa23ffc87d5">wMultSectorStuff</a></td></tr>
+<tr class="separator:a528c87d98538b3b02280faa23ffc87d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9970b6af98047b0f2cfc93a4d56c9524"><td class="memItemLeft" align="right" valign="top">ULONG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a9970b6af98047b0f2cfc93a4d56c9524">ulTotalAddressableSectors</a></td></tr>
+<tr class="separator:a9970b6af98047b0f2cfc93a4d56c9524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39390ca7766d5d05875660ff3e88b21"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#aa39390ca7766d5d05875660ff3e88b21">wSingleWordDMA</a></td></tr>
+<tr class="separator:aa39390ca7766d5d05875660ff3e88b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d6ba628bc86914417e43bce8655f02"><td class="memItemLeft" align="right" valign="top">USHORT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a15d6ba628bc86914417e43bce8655f02">wMultiWordDMA</a></td></tr>
+<tr class="separator:a15d6ba628bc86914417e43bce8655f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6391daa2b5fa37a87e1d73ba76afea93"><td class="memItemLeft" align="right" valign="top">BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html#a6391daa2b5fa37a87e1d73ba76afea93">bReserved</a> [128]</td></tr>
+<tr class="separator:a6391daa2b5fa37a87e1d73ba76afea93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a6391daa2b5fa37a87e1d73ba76afea93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BYTE dnp_checkout::_IDSECTOR::bReserved[128]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0b942358d2fc3044f06adc9b5cc2df2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR dnp_checkout::_IDSECTOR::sFirmwareRev[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ac2b59cfda99a4c48a4d7ab78895666"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR dnp_checkout::_IDSECTOR::sModelNumber[40]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a588ac894cadbe33be3d6fafe3eece2bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHAR dnp_checkout::_IDSECTOR::sSerialNumber[20]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab4132f6c675c2ee03a2e736099c8d5b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ULONG dnp_checkout::_IDSECTOR::ulCurrentSectorCapacity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9970b6af98047b0f2cfc93a4d56c9524"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ULONG dnp_checkout::_IDSECTOR::ulTotalAddressableSectors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae734db9fe78882ace23993d11b5ad5ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wBS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a85d6028622dbd707d17e2b3ba3cb6c0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wBufferSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae5a2d3fdb4b858b34409017de2e3eb3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wBufferType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad69920d172f58526dda2ed02a2b7d33e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wBytesPerSector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2eea43f5a3648e5873940fa0c623af50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wBytesPerTrack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3faff5e016129a27894ad20906ebeb30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wCapabilities</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a582b79e28d2b8c9f6fee2c85994f5826"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wDMATiming</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a16c76f00a72c9ee0becac2583c9812b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wDoubleWordIO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a790f42f5c0ace8a5bb39a671df8a634c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wECCSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b2e7e0550acb8a5f1789f38be813b8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wGenConfig</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a98efb1b320bfa3f80ec0ea97a5862779"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wMoreVendorUnique</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a15d6ba628bc86914417e43bce8655f02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wMultiWordDMA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a528c87d98538b3b02280faa23ffc87d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wMultSectorStuff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a80b647305a6961e9ee0c70d56757990a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wNumCurrentCyls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adf194e38aca907e7602621713b129693"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wNumCurrentHeads</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7fc2c43790f5c0e85137f52fbc73e54b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wNumCurrentSectorsPerTrack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af997deb5495006bb3d45f86e5d315ee8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wNumCyls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5d8014d3e75713d9f3d11d93a5334cdc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wNumHeads</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a9faa28a72369c8a61c13e80c111c42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wPIOTiming</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad610ba0d11d7f159c2baa19cf3d4ee2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wReserved</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af15af60180b1b2bc6713447fa8a251fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wReserved1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac987056a21d435ae42e638f67f2f84ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wSectorsPerTrack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa39390ca7766d5d05875660ff3e88b21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wSingleWordDMA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b3afb04cf2de431fbf5fe0ae2d992e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USHORT dnp_checkout::_IDSECTOR::wVendorUnique[3]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>src/<a class="el" href="dnp__checkout_8cpp.html">dnp_checkout.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

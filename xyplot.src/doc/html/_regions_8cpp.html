@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Файл src/Regions.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Файл Regions.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="stdafx_8h_source.html">StdAfx.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_regions_8h_source.html">regions.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="rtfstring_8h_source.html">rtfstring.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_coord_converter_8h_source.html">CoordConverter.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для Regions.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_regions_8cpp__incl.png" border="0" usemap="#src_2_regions_8cpp" alt=""/></div>
+<map name="src_2_regions_8cpp" id="src_2_regions_8cpp">
+<area shape="rect" id="node2" href="stdafx_8h.html" title="StdAfx.h" alt="" coords="571,229,643,256"/><area shape="rect" id="node16" href="_regions_8h.html" title="regions.h" alt="" coords="2215,155,2289,181"/><area shape="rect" id="node23" href="rtfstring_8h.html" title="rtfstring.h" alt="" coords="2365,80,2441,107"/><area shape="rect" id="node24" href="_coord_converter_8h.html" title="CoordConverter.h" alt="" coords="1998,379,2119,405"/><area shape="rect" id="node25" href="main_8h.html" title="main.h" alt="" coords="1876,80,1937,107"/><area shape="rect" id="node17" href="border_8h.html" title="border.h" alt="" coords="1964,229,2033,256"/><area shape="rect" id="node22" href="_back_ground_fill_8h.html" title="BackGroundFill.h" alt="" coords="2165,229,2288,256"/><area shape="rect" id="node18" href="linedata_8h.html" title="linedata.h" alt="" coords="1359,379,1438,405"/><area shape="rect" id="node20" href="_savable_item_8h.html" title="SavableItem.h" alt="" coords="2145,453,2247,480"/><area shape="rect" id="node19" href="xyplotconst_8h.html" title="Содержит константы и перечисляемые типы . " alt="" coords="1023,453,1131,480"/><area shape="rect" id="node26" href="xyplot_8h.html" title="xyplot.h" alt="" coords="1058,155,1126,181"/><area shape="rect" id="node27" href="digits_8h.html" title="digits.h" alt="" coords="1775,379,1839,405"/><area shape="rect" id="node28" href="label_8h.html" title="label.h" alt="" coords="1914,379,1974,405"/><area shape="rect" id="node29" href="legend_8h.html" title="legend.h" alt="" coords="1834,155,1905,181"/><area shape="rect" id="node31" href="profile_8h.html" title="profile.h" alt="" coords="1392,229,1459,256"/><area shape="rect" id="node33" href="_axis_8h.html" title="Axis.h" alt="" coords="1628,304,1687,331"/><area shape="rect" id="node34" href="ticks_8h.html" title="Ticks.h" alt="" coords="1463,379,1527,405"/><area shape="rect" id="node37" href="title_8h.html" title="title.h" alt="" coords="2435,155,2490,181"/><area shape="rect" id="node39" href="group_8h.html" title="group.h" alt="" coords="1089,229,1154,256"/><area shape="rect" id="node40" href="lock_8h.html" title="lock.h" alt="" coords="2031,155,2089,181"/><area shape="rect" id="node41" href="selection_8h.html" title="selection.h" alt="" coords="1323,155,1408,181"/><area shape="rect" id="node42" href="_level_line_8h.html" title="LevelLine.h" alt="" coords="1230,229,1317,256"/><area shape="rect" id="node32" href="_profile_marks_8h.html" title="ProfileMarks.h" alt="" coords="2143,379,2249,405"/><area shape="rect" id="node35" href="_gridlines_8h.html" title="Gridlines.h" alt="" coords="1602,379,1686,405"/></map>
+</div>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,779 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Функции для работы с элементами графика</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Функции для работы с элементами графика</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Данный набор функций обеспечивает работу с получением и заданием свойств элементов графика.  
+<a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:gac086b543fc9cab773b6807c2420ce739"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#gac086b543fc9cab773b6807c2420ce739">xyplot::XYPlotManager::SetAxisRange</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long axis, double dMin, double dMax)</td></tr>
+<tr class="memdesc:gac086b543fc9cab773b6807c2420ce739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задает диапазон значений оси экземпляра 2D графики.  <a href="#gac086b543fc9cab773b6807c2420ce739">Подробнее...</a><br/></td></tr>
+<tr class="separator:gac086b543fc9cab773b6807c2420ce739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga086a2c52f7ad3bddbe9269228fd0977a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga086a2c52f7ad3bddbe9269228fd0977a">xyplot::XYPlotManager::GetAxisRange</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long axis, double &amp;dMin, double &amp;dMax) const </td></tr>
+<tr class="memdesc:ga086a2c52f7ad3bddbe9269228fd0977a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения диапазона значений оси экземпляра 2D графики.  <a href="#ga086a2c52f7ad3bddbe9269228fd0977a">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga086a2c52f7ad3bddbe9269228fd0977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga854706a96f0c8cfba9db24dc3f4bb54f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga854706a96f0c8cfba9db24dc3f4bb54f">xyplot::XYPlotManager::GetString</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long item, long subitem) const </td></tr>
+<tr class="memdesc:ga854706a96f0c8cfba9db24dc3f4bb54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения строки элемента 2D графики.  <a href="#ga854706a96f0c8cfba9db24dc3f4bb54f">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga854706a96f0c8cfba9db24dc3f4bb54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga765727fbc082d07df181ba5bacb230f3"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga765727fbc082d07df181ba5bacb230f3">xyplot::XYPlotManager::SetString</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long item, long subitem, const char *pszString)</td></tr>
+<tr class="memdesc:ga765727fbc082d07df181ba5bacb230f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задания строки элемента 2D графики.  <a href="#ga765727fbc082d07df181ba5bacb230f3">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga765727fbc082d07df181ba5bacb230f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02ac169b6968c5e778fdb120cfa2cbb5"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga02ac169b6968c5e778fdb120cfa2cbb5">xyplot::XYPlotManager::GetLong</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long item, long subitem) const </td></tr>
+<tr class="separator:ga02ac169b6968c5e778fdb120cfa2cbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa92b59ee49654f44a139658e0e2e4af4"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#gaa92b59ee49654f44a139658e0e2e4af4">xyplot::XYPlotManager::SetLong</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long item, long subitem, long value)</td></tr>
+<tr class="memdesc:gaa92b59ee49654f44a139658e0e2e4af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задания целочисленного значения связанного с элементом 2D графики.  <a href="#gaa92b59ee49654f44a139658e0e2e4af4">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaa92b59ee49654f44a139658e0e2e4af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc94c084a9d1e27c112606bac9ed6505"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#gabc94c084a9d1e27c112606bac9ed6505">xyplot::XYPlotManager::GetDouble</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long item, long subitem) const </td></tr>
+<tr class="separator:gabc94c084a9d1e27c112606bac9ed6505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada6cc7904e60ca04d109118293b01265"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#gada6cc7904e60ca04d109118293b01265">xyplot::XYPlotManager::SetDouble</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long item, long subitem, double value)</td></tr>
+<tr class="memdesc:gada6cc7904e60ca04d109118293b01265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задания значения с плавающей точкой связанного с элементом 2D графики.  <a href="#gada6cc7904e60ca04d109118293b01265">Подробнее...</a><br/></td></tr>
+<tr class="separator:gada6cc7904e60ca04d109118293b01265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga760b95b60afd9044a598128f49d475e8"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga760b95b60afd9044a598128f49d475e8">xyplot::XYPlotManager::EnableItem</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long item, long subitem, BOOL enabled)</td></tr>
+<tr class="memdesc:ga760b95b60afd9044a598128f49d475e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция включения/отключения элемента 2D графики.  <a href="#ga760b95b60afd9044a598128f49d475e8">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga760b95b60afd9044a598128f49d475e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46fa280afeab028fa4e2e71d574648da"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga46fa280afeab028fa4e2e71d574648da">xyplot::XYPlotManager::IsEnabled</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long item, long subitem) const </td></tr>
+<tr class="memdesc:ga46fa280afeab028fa4e2e71d574648da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция возвращает флаг состояния элемента 2D графики (включен/выключен).  <a href="#ga46fa280afeab028fa4e2e71d574648da">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga46fa280afeab028fa4e2e71d574648da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19d975aa81ed28631a89cb6cfabf80a1"><td class="memItemLeft" align="right" valign="top">COLORREF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga19d975aa81ed28631a89cb6cfabf80a1">xyplot::XYPlotManager::GetColor</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long item, long subitem) const </td></tr>
+<tr class="memdesc:ga19d975aa81ed28631a89cb6cfabf80a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция включения/отключения элемента 2D графики.  <a href="#ga19d975aa81ed28631a89cb6cfabf80a1">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga19d975aa81ed28631a89cb6cfabf80a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea19b965d3f247481ccb5090901d9b33"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#gaea19b965d3f247481ccb5090901d9b33">xyplot::XYPlotManager::SetColor</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long item, long subitem, COLORREF color)</td></tr>
+<tr class="memdesc:gaea19b965d3f247481ccb5090901d9b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задания цвета элемента 2D графики.  <a href="#gaea19b965d3f247481ccb5090901d9b33">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaea19b965d3f247481ccb5090901d9b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94d466cf2a727291630053fb46796a7b"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_elements.html#ga94d466cf2a727291630053fb46796a7b">xyplot::XYPlotManager::SetFont</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, long item, long subitem, const LOGFONT *font)</td></tr>
+<tr class="memdesc:ga94d466cf2a727291630053fb46796a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция задания шрифта элемента 2D графики.  <a href="#ga94d466cf2a727291630053fb46796a7b">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga94d466cf2a727291630053fb46796a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<p>Данный набор функций обеспечивает работу с получением и заданием свойств элементов графика. </p>
+<h2 class="groupheader">Функции</h2>
+<a class="anchor" id="ga760b95b60afd9044a598128f49d475e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::EnableItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enabled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция включения/отключения элемента 2D графики. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">item</td><td>- идентификатор элемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">subitem</td><td>- идентификатор подэлемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">enabled</td><td>- флаг включения подэлемента 2D графики </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае если удалось переключить состояние элемента; </dd>
+<dd>
+false - в случае если не удалось установить значение с плавающей точкой элемента. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga086a2c52f7ad3bddbe9269228fd0977a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::GetAxisRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>dMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>dMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения диапазона значений оси экземпляра 2D графики. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">axis</td><td>- идентификатор оси <ul>
+<li>PI_AXIS_LEFT = 6 </li>
+<li>PI_AXIS_RIGHT = 7 </li>
+<li>PI_AXIS_TOP = 8 </li>
+<li>PI_AXIS_BOTTOM = 9 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dMin</td><td>- начальное значение диапазона </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dMax</td><td>- конечное значение диапазона </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga19d975aa81ed28631a89cb6cfabf80a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">COLORREF XYPlotManager::GetColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>subitem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция включения/отключения элемента 2D графики. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">item</td><td>- идентификатор элемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">subitem</td><td>- идентификатор подэлемента 2D графики </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>текущий цвет элемента 2D графики. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gabc94c084a9d1e27c112606bac9ed6505"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double XYPlotManager::GetDouble </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>subitem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Функция задания значения с плавающей точкой связанного с элементом 2D графики. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">item</td><td>- идентификатор элемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">subitem</td><td>- идентификатор подэлемента 2D графики </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>значения с плавающей точкой связанное с подэлементом 2D графики. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga02ac169b6968c5e778fdb120cfa2cbb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long XYPlotManager::GetLong </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>subitem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Функция получения целочисленного значения связанного с элементом 2D графики. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">item</td><td>- идентификатор элемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">subitem</td><td>- идентификатор подэлемента 2D графики </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>целочисленное значения связанное с подэлементом 2D графики. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga854706a96f0c8cfba9db24dc3f4bb54f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string XYPlotManager::GetString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>subitem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения строки элемента 2D графики. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">item</td><td>- идентификатор элемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">subitem</td><td>- идентификатор подэлемента 2D графики </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>строку связанную с подэлементом 2D графики. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga46fa280afeab028fa4e2e71d574648da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::IsEnabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>subitem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция возвращает флаг состояния элемента 2D графики (включен/выключен). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">item</td><td>- идентификатор элемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">subitem</td><td>- идентификатор подэлемента 2D графики </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае если элемент экземпляра графики включен; </dd>
+<dd>
+false - в случае если элемент экземпляра графики выключен. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac086b543fc9cab773b6807c2420ce739"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::SetAxisRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция задает диапазон значений оси экземпляра 2D графики. </p>
+<p>Данная функция работает только в случае если для оси не задан режим автоматического масштабирования. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">axis</td><td>- идентификатор оси <ul>
+<li>PI_AXIS_LEFT = 6 </li>
+<li>PI_AXIS_RIGHT = 7 </li>
+<li>PI_AXIS_TOP = 8 </li>
+<li>PI_AXIS_BOTTOM = 9 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">dMin</td><td>- начальное значение диапазона </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">dMax</td><td>- конечное значение диапазона </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaea19b965d3f247481ccb5090901d9b33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::SetColor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция задания цвета элемента 2D графики. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">item</td><td>- идентификатор элемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">subitem</td><td>- идентификатор подэлемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">color</td><td>- новый цвет подэлемента 2D графики </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае если удалось задать цвет элемента; </dd>
+<dd>
+false - в случае если не удалось задать цвет элемента. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gada6cc7904e60ca04d109118293b01265"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::SetDouble </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция задания значения с плавающей точкой связанного с элементом 2D графики. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">item</td><td>- идентификатор элемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">subitem</td><td>- идентификатор подэлемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">value</td><td>- с плавающей точкой значения связанное с подэлементом 2D графики. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае если удалось установить значение с плавающей точкой элемента;<br/>
+false - в случае если не удалось установить значение с плавающей точкой элемента. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga94d466cf2a727291630053fb46796a7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::SetFont </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LOGFONT *&#160;</td>
+          <td class="paramname"><em>font</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция задания шрифта элемента 2D графики. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">item</td><td>- идентификатор элемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">subitem</td><td>- идентификатор подэлемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">font</td><td>- указатель на новый шрифт подэлемента 2D графики </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае если удалось задать шрифт элемента; </dd>
+<dd>
+false - в случае если не удалось задать шрифт элемента. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa92b59ee49654f44a139658e0e2e4af4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::SetLong </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция задания целочисленного значения связанного с элементом 2D графики. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">item</td><td>- идентификатор элемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">subitem</td><td>- идентификатор подэлемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">value</td><td>- целочисленное значения связанное с подэлементом 2D графики. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае если удалось установить цедлочисленное значение элемента;<br/>
+false - в случае если не удалось установить значение элемента. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga765727fbc082d07df181ba5bacb230f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::SetString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция задания строки элемента 2D графики. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>- дескриптор экземпляра 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">item</td><td>- идентификатор элемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">subitem</td><td>- идентификатор подэлемента 2D графики </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">pszString</td><td>- строка для подэлемента 2D графики. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае если удалось установить строку элемента;<br/>
+false - в случае если не удалось установить строку элемента. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

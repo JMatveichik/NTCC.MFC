@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Исходный файл src/formattedtextdraw.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">formattedtextdraw.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="formattedtextdraw_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Feel free to use this code in your own applications.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// The Author does not guarantee anything about this code.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Author : Yves Maurer</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// FormattedTextDraw.h : Declaration of the CFormattedTextDraw</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef __FORMATTEDTEXTDRAW_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="formattedtextdraw_8h.html#ab2fe99b6e712d0b414dabf83e4d0589e">   10</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __FORMATTEDTEXTDRAW_H_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//#include &quot;..\resource.h&quot;       // main symbols</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// be sure to link this project with riched20.lib</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//#include &lt;richedit.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;imm.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;textserv.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;tom.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef LY_PER_INCH</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="formattedtextdraw_8h.html#a1da3477e6c101a76552245a8d4097d86">   22</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LY_PER_INCH   1440</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="formattedtextdraw_8h.html#a65952c04ddd27af8f3f7fcc589a7cfc0">   23</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HOST_BORDER 0</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//class ITextServices;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//class ITextDocument;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structtag_c_o_o_k_i_e.html">   29</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structtag_c_o_o_k_i_e.html">tagCOOKIE</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structtag_c_o_o_k_i_e.html#a073cde0733e715713f502fc437acb043">   31</a></span>&#160;    BSTR    <a class="code" href="structtag_c_o_o_k_i_e.html#a073cde0733e715713f502fc437acb043">bstrText</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structtag_c_o_o_k_i_e.html#aca6f0d6c1300f2aa0bc3ba9fbf27c5aa">   32</a></span>&#160;    DWORD   <a class="code" href="structtag_c_o_o_k_i_e.html#aca6f0d6c1300f2aa0bc3ba9fbf27c5aa">dwSize</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structtag_c_o_o_k_i_e.html#a3391326801633c7405a797dc91613724">   33</a></span>&#160;    DWORD   <a class="code" href="structtag_c_o_o_k_i_e.html#a3391326801633c7405a797dc91613724">dwCount</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <a class="code" href="formattedtextdraw_8h.html#a38853a4ceee8d1a6fac128d822488cdc">COOKIE</a>, *<a class="code" href="formattedtextdraw_8h.html#aebb082d918b764b78e3329ec5733573a">PCOOKIE</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// IFormatttedTextDraw</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">interface </span>IFormattedTextDraw</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ~IFormattedTextDraw() {};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="formattedtextdraw_8h.html#acbdbb8b6975cbae55b0dfbc218204fd9">get_NaturalHeight</a>(<span class="keywordtype">long</span> Width, <span class="comment">/*[out, retval]*/</span> <span class="keywordtype">long</span> *pVal) = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="formattedtextdraw_8h.html#a1af068ca3a479e5e3d24fcb54ea14935">get_NaturalWidth</a>(<span class="keywordtype">long</span> Height, <span class="comment">/*[out, retval]*/</span> <span class="keywordtype">long</span> *pVal) = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="formattedtextdraw_8h.html#a15a4f3caefbbf5a76738a14b1827981a">Create</a>() = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="formattedtextdraw_8h.html#a9ee4f7326322aa47d1b9ac90d72cc914">Draw</a>(<span class="keywordtype">void</span> *hdcDraw, RECT *prc) = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="formattedtextdraw_8h.html#a234112bab174593a80a23caef16aeb10">get_RTFText</a>(<span class="comment">/*[out, retval]*/</span> BSTR *pVal) = 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="formattedtextdraw_8h.html#aab99f44fe55e1bb46fadd19347652f50">put_RTFText</a>(<span class="comment">/*[in]*/</span> BSTR newVal) = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// COM-like functions</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> ULONG STDMETHODCALLTYPE <a class="code" href="formattedtextdraw_8h.html#a5d607274228eedfeab292338b7862c58">AddRef</a>(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> ULONG STDMETHODCALLTYPE <a class="code" href="formattedtextdraw_8h.html#af46803f5ff41019bcd512c4185514f10">Release</a>(<span class="keywordtype">void</span>) = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// CFormattedTextDraw</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_formatted_text_draw.html">CFormattedTextDraw</a> : </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">public</span> ITextHost,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">public</span> IFormattedTextDraw</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#aeedb5def68e1033d3759b142f48cfb8f">   62</a></span>&#160;    <a class="code" href="class_c_formatted_text_draw.html#aeedb5def68e1033d3759b142f48cfb8f">CFormattedTextDraw</a>(HMODULE <a class="code" href="class_c_formatted_text_draw.html#addc46f2c8df18b9be24193ac2b7bd261">hmod</a>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        this-&gt;hmod = <a class="code" href="class_c_formatted_text_draw.html#addc46f2c8df18b9be24193ac2b7bd261">hmod</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        HDC hdcScreen;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_c_formatted_text_draw.html#ae25f82f2e2222357070087b218fcc849">m_RTFText</a> = NULL;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        hdcScreen = GetDC(NULL);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="class_c_formatted_text_draw.html#af07e4ff84b148e4c1614782ec37b9b54">nPixelsPerInchX</a> = GetDeviceCaps(hdcScreen, LOGPIXELSX);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="class_c_formatted_text_draw.html#aed39a1517760cfb53599780e231d481b">nPixelsPerInchY</a> = GetDeviceCaps(hdcScreen, LOGPIXELSY);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        ReleaseDC(NULL, hdcScreen);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        SetRectEmpty(&amp;<a class="code" href="class_c_formatted_text_draw.html#ac12889a14954434340548415c24cd61c">m_rcClient</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        SetRectEmpty(&amp;<a class="code" href="class_c_formatted_text_draw.html#a55dfce4f5f6ceebc265f50d39a3e3b18">m_rcViewInset</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="class_c_formatted_text_draw.html#add7687bda35106a487299a6bd945e0fe">m_pCF</a> = (CHARFORMAT2W*) malloc(<span class="keyword">sizeof</span>(CHARFORMAT2W));</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="class_c_formatted_text_draw.html#a84688cc43aa013fc01eab25bcf687809">InitDefaultCharFormat</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="class_c_formatted_text_draw.html#adf8e13c8ba939b994d4235b588a52177">InitDefaultParaFormat</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="class_c_formatted_text_draw.html#a359702fb97b39932d0f4605f2324c1d3">m_spTextServices</a> = NULL;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">//m_spTextDocument = NULL;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="class_c_formatted_text_draw.html#a4877370e9f9a97ca802f614601ca972c">m_dwPropertyBits</a> = TXTBIT_RICHTEXT | TXTBIT_MULTILINE | TXTBIT_WORDWRAP | TXTBIT_USECURRENTBKG;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="class_c_formatted_text_draw.html#ae015d2a67f789b83b172077ca92fedba">m_dwScrollbar</a> = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="class_c_formatted_text_draw.html#a95e778f91604bec6f68d7933550910aa">m_dwMaxLength</a> = INFINITE;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_c_formatted_text_draw.html#a73cc74e417ded249eb7c8ba5026e74d6">~CFormattedTextDraw</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">// Minimal COM functionality</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#a94685a982152d40e47bbd38faf3d983d">   92</a></span>&#160;    HRESULT STDMETHODCALLTYPE <a class="code" href="class_c_formatted_text_draw.html#a94685a982152d40e47bbd38faf3d983d">QueryInterface</a>( </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">/* [in] */</span> REFIID riid,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">/* [iid_is][out] */</span> <span class="keywordtype">void</span> __RPC_FAR *__RPC_FAR *ppvObject)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        *ppvObject = NULL;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> S_FALSE;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#adcdbb385f1b4e88c1bdd8f769cc2ea18">  100</a></span>&#160;    ULONG STDMETHODCALLTYPE <a class="code" href="class_c_formatted_text_draw.html#adcdbb385f1b4e88c1bdd8f769cc2ea18">AddRef</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#a8c0482c9982ab17a5b1bc16e42dae745">  105</a></span>&#160;    ULONG STDMETHODCALLTYPE <a class="code" href="class_c_formatted_text_draw.html#a8c0482c9982ab17a5b1bc16e42dae745">Release</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">// IFormattedTextDraw</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a1b9dc72357c06a06f294d2e07bca4a18">get_NaturalHeight</a>(<span class="keywordtype">long</span> Width, <span class="comment">/*[out, retval]*/</span> <span class="keywordtype">long</span> *pVal);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#aa69166f66353dec9dc28b1e2e6f4c495">get_NaturalWidth</a>(<span class="keywordtype">long</span> Height, <span class="comment">/*[out, retval]*/</span> <span class="keywordtype">long</span> *pVal);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#aeda21fe76e87d85c6e6ae97f6d98c82c">Create</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#aa9d8d11773fb62728bbee88d441edfcf">Draw</a>(<span class="keywordtype">void</span> *hdcDraw, RECT *prc);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#ae319a9932c1a75ad19619bea99acb2df">get_RTFText</a>(<span class="comment">/*[out, retval]*/</span> BSTR *pVal);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#aa8f8860ff9c0d5e1dacee5023743256f">put_RTFText</a>(<span class="comment">/*[in]*/</span> BSTR newVal);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">// ITextHost</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    HDC <a class="code" href="class_c_formatted_text_draw.html#a82e2088a0416fc8a2d0039e97108ef6b">TxGetDC</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    INT <a class="code" href="class_c_formatted_text_draw.html#a583a4401f0c1d5a3e5bf02c6a0cfedbd">TxReleaseDC</a>(HDC hdc);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    BOOL <a class="code" href="class_c_formatted_text_draw.html#a8b31bc8979880017bac423fc7861e3c4">TxShowScrollBar</a>(INT fnBar, BOOL fShow);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    BOOL <a class="code" href="class_c_formatted_text_draw.html#af376f10597fba86173093d88ef231c72">TxEnableScrollBar</a>(INT fuSBFlags, INT fuArrowflags);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    BOOL <a class="code" href="class_c_formatted_text_draw.html#af1539757775ca0235713e93f42274553">TxSetScrollRange</a>(INT fnBar, LONG nMinPos, INT nMaxPos, BOOL fRedraw);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    BOOL <a class="code" href="class_c_formatted_text_draw.html#abfad442af7f3e31dc59b6abc23c789a4">TxSetScrollPos</a>(INT fnBar, INT nPos, BOOL fRedraw);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_formatted_text_draw.html#afe30ef4cb3f37c9875ca64a3484e8af3">TxInvalidateRect</a>(LPCRECT prc, BOOL fMode);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_formatted_text_draw.html#abdb3f55080c4bc55d7710059beb9e6d4">TxViewChange</a>(BOOL fUpdate);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    BOOL <a class="code" href="class_c_formatted_text_draw.html#a14b064dc9ea9d0e12fb49355756339df">TxCreateCaret</a>(HBITMAP hbmp, INT xWidth, INT yHeight);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    BOOL <a class="code" href="class_c_formatted_text_draw.html#ab2559df2077f47c4483ba526727016e2">TxShowCaret</a>(BOOL fShow);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    BOOL <a class="code" href="class_c_formatted_text_draw.html#a0de9d25f5f37cb97c45323f8ebaff5a1">TxSetCaretPos</a>(INT x, INT y);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    BOOL <a class="code" href="class_c_formatted_text_draw.html#a2cfee5142c0ccc914ab9e22be37021a1">TxSetTimer</a>(UINT idTimer, UINT uTimeout);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_formatted_text_draw.html#acea0cb499a41c7a3b8471ccae713d0a2">TxKillTimer</a>(UINT idTimer);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_formatted_text_draw.html#ab86cfe0bd348ba7e6dca937139bf594b">TxScrollWindowEx</a>(INT dx, INT dy, LPCRECT lprcScroll, LPCRECT lprcClip, HRGN hrgnUpdate, LPRECT lprcUpdate, UINT fuScroll);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_formatted_text_draw.html#a44ef4a7a47a5be7d277d4b04e7e12a27">TxSetCapture</a>(BOOL fCapture);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_formatted_text_draw.html#ae1f80562f0bb57e63f88ca07184a7290">TxSetFocus</a>();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_formatted_text_draw.html#ab1f8c8017864381e356371f36d7e6863">TxSetCursor</a>(HCURSOR hcur, BOOL fText);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    BOOL <a class="code" href="class_c_formatted_text_draw.html#a5bbd1e639e6c48c33a6bfaa0d469e439">TxScreenToClient</a>(LPPOINT lppt);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    BOOL <a class="code" href="class_c_formatted_text_draw.html#abb05d3c20125bb481a5256272d87b67f">TxClientToScreen</a>(LPPOINT lppt);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a94abf3aa085118853e6fb343dc56dbd1">TxActivate</a>(LONG * plOldState);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a4f578fb1c8066bffccbe08661a58b3a9">TxDeactivate</a>(LONG lNewState);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a7d26debc0162611ce308b7472e816a0e">TxGetClientRect</a>(LPRECT prc);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a356e5054a4a70bfddebfa5456a51c0f2">TxGetViewInset</a>(LPRECT prc);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a1b6bf84a20ce406266dcd59e05579faa">TxGetCharFormat</a>(<span class="keyword">const</span> CHARFORMATW **ppCF);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a9fcc615f0abc3edd55a5bc6eb07245c0">TxGetParaFormat</a>(<span class="keyword">const</span> PARAFORMAT **ppPF);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    COLORREF <a class="code" href="class_c_formatted_text_draw.html#a87bf95137cb9c82cf3b5b184d7b499cd">TxGetSysColor</a>(<span class="keywordtype">int</span> nIndex);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#aae9e30620f85cd0855da77eefab5c542">TxGetBackStyle</a>(TXTBACKSTYLE *pstyle);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#ac16e3287c2da3f1d4af57d268339b3b0">TxGetMaxLength</a>(DWORD *plength);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a0d11953e055809df98a3354a7b48eff7">TxGetScrollBars</a>(DWORD *pdwScrollBar);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#ac64a3d02efa70493ee449dace1fea36c">TxGetPasswordChar</a>(TCHAR *pch);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a45973a797c196a9d7cf02127d12e7a54">TxGetAcceleratorPos</a>(LONG *pcp);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a9247dfc9e0cce9f1942c5b6c632ed78d">TxGetExtent</a>(LPSIZEL lpExtent);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#aa12d7dee46f52f789b6b2109008948c3">OnTxCharFormatChange</a>(<span class="keyword">const</span> CHARFORMATW * pcf);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a01a2da9e321236594b6f3fe8bb0ac310">OnTxParaFormatChange</a>(<span class="keyword">const</span> PARAFORMAT * ppf);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a43579a9dbb4bd8031cdf7dd1c5a2d008">TxGetPropertyBits</a>(DWORD dwMask, DWORD *pdwBits);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a7d7aa1164fef848f8cc86084ff0d5947">TxNotify</a>(DWORD iNotify, <span class="keywordtype">void</span> *pv);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    HIMC <a class="code" href="class_c_formatted_text_draw.html#aeca2dd3918ef62d7f7c030f1a2add1dd">TxImmGetContext</a>();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_formatted_text_draw.html#a677a0528e12025ac1d834ebb3fe17f4f">TxImmReleaseContext</a>(HIMC himc);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a26d3e8e94e5ec00f2670737ad565bb50">TxGetSelectionBarWidth</a>(LONG *lSelBarWidth);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">// Custom functions</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a9ce824728f92e00b317b59d8b935d86e">SetTextColor</a>(COLORREF clr);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#ac3ff1149d0e0ac7da420bc71d1fc2be1">SetTextFont</a>(HFONT font);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a55723aacd9eea72087f4a8c1716c44e8">CharFormatFromHFONT</a>(CHARFORMAT2W* pCF, HFONT hFont);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#a84688cc43aa013fc01eab25bcf687809">InitDefaultCharFormat</a>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#adf8e13c8ba939b994d4235b588a52177">InitDefaultParaFormat</a>();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    HRESULT <a class="code" href="class_c_formatted_text_draw.html#aacdbc394944e8ca679c5de2e824496d5">CreateTextServicesObject</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">// Variables</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#ac12889a14954434340548415c24cd61c">  169</a></span>&#160;    RECT            <a class="code" href="class_c_formatted_text_draw.html#ac12889a14954434340548415c24cd61c">m_rcClient</a>;         <span class="comment">// Client Rect</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#a55dfce4f5f6ceebc265f50d39a3e3b18">  170</a></span>&#160;    RECT            <a class="code" href="class_c_formatted_text_draw.html#a55dfce4f5f6ceebc265f50d39a3e3b18">m_rcViewInset</a>;      <span class="comment">// view rect inset</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#a7a01811c4c6123bea7d639302b69a128">  171</a></span>&#160;    SIZEL           <a class="code" href="class_c_formatted_text_draw.html#a7a01811c4c6123bea7d639302b69a128">m_sizelExtent</a>;      <span class="comment">// Extent array</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#af07e4ff84b148e4c1614782ec37b9b54">  173</a></span>&#160;    <span class="keywordtype">int</span>             <a class="code" href="class_c_formatted_text_draw.html#af07e4ff84b148e4c1614782ec37b9b54">nPixelsPerInchX</a>;    <span class="comment">// Pixels per logical inch along width</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#aed39a1517760cfb53599780e231d481b">  174</a></span>&#160;    <span class="keywordtype">int</span>             <a class="code" href="class_c_formatted_text_draw.html#aed39a1517760cfb53599780e231d481b">nPixelsPerInchY</a>;    <span class="comment">// Pixels per logical inch along height</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#add7687bda35106a487299a6bd945e0fe">  176</a></span>&#160;    CHARFORMAT2W    *<a class="code" href="class_c_formatted_text_draw.html#add7687bda35106a487299a6bd945e0fe">m_pCF</a>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#ae5c1b692255587fff873eb3cae1e30a0">  177</a></span>&#160;    PARAFORMAT2     <a class="code" href="class_c_formatted_text_draw.html#ae5c1b692255587fff873eb3cae1e30a0">m_PF</a>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#ae015d2a67f789b83b172077ca92fedba">  178</a></span>&#160;    DWORD           <a class="code" href="class_c_formatted_text_draw.html#ae015d2a67f789b83b172077ca92fedba">m_dwScrollbar</a>;      <span class="comment">// Scroll bar style</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#a4877370e9f9a97ca802f614601ca972c">  179</a></span>&#160;    DWORD           <a class="code" href="class_c_formatted_text_draw.html#a4877370e9f9a97ca802f614601ca972c">m_dwPropertyBits</a>;   <span class="comment">// Property bits</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#a95e778f91604bec6f68d7933550910aa">  180</a></span>&#160;    DWORD           <a class="code" href="class_c_formatted_text_draw.html#a95e778f91604bec6f68d7933550910aa">m_dwMaxLength</a>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#ac3b581340c521c7f372bcce0792e3059">  181</a></span>&#160;    <a class="code" href="structtag_c_o_o_k_i_e.html">COOKIE</a>          <a class="code" href="class_c_formatted_text_draw.html#ac3b581340c521c7f372bcce0792e3059">m_editCookie</a>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#a359702fb97b39932d0f4605f2324c1d3">  183</a></span>&#160;    ITextServices   *<a class="code" href="class_c_formatted_text_draw.html#a359702fb97b39932d0f4605f2324c1d3">m_spTextServices</a>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="comment">//ITextDocument *m_spTextDocument;</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#ae25f82f2e2222357070087b218fcc849">  185</a></span>&#160;    BSTR            <a class="code" href="class_c_formatted_text_draw.html#ae25f82f2e2222357070087b218fcc849">m_RTFText</a>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="class_c_formatted_text_draw.html#addc46f2c8df18b9be24193ac2b7bd261">  187</a></span>&#160;    HMODULE <a class="code" href="class_c_formatted_text_draw.html#addc46f2c8df18b9be24193ac2b7bd261">hmod</a>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;};</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif //__FORMATTEDTEXTDRAW_H_</span></div>
+<div class="ttc" id="structtag_c_o_o_k_i_e_html_a073cde0733e715713f502fc437acb043"><div class="ttname"><a href="structtag_c_o_o_k_i_e.html#a073cde0733e715713f502fc437acb043">tagCOOKIE::bstrText</a></div><div class="ttdeci">BSTR bstrText</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:31</div></div>
+<div class="ttc" id="structtag_c_o_o_k_i_e_html_a3391326801633c7405a797dc91613724"><div class="ttname"><a href="structtag_c_o_o_k_i_e.html#a3391326801633c7405a797dc91613724">tagCOOKIE::dwCount</a></div><div class="ttdeci">DWORD dwCount</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:33</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_aa9d8d11773fb62728bbee88d441edfcf"><div class="ttname"><a href="class_c_formatted_text_draw.html#aa9d8d11773fb62728bbee88d441edfcf">CFormattedTextDraw::Draw</a></div><div class="ttdeci">HRESULT Draw(void *hdcDraw, RECT *prc)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:137</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_abb05d3c20125bb481a5256272d87b67f"><div class="ttname"><a href="class_c_formatted_text_draw.html#abb05d3c20125bb481a5256272d87b67f">CFormattedTextDraw::TxClientToScreen</a></div><div class="ttdeci">BOOL TxClientToScreen(LPPOINT lppt)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:299</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_af07e4ff84b148e4c1614782ec37b9b54"><div class="ttname"><a href="class_c_formatted_text_draw.html#af07e4ff84b148e4c1614782ec37b9b54">CFormattedTextDraw::nPixelsPerInchX</a></div><div class="ttdeci">int nPixelsPerInchX</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:173</div></div>
+<div class="ttc" id="formattedtextdraw_8h_html_a15a4f3caefbbf5a76738a14b1827981a"><div class="ttname"><a href="formattedtextdraw_8h.html#a15a4f3caefbbf5a76738a14b1827981a">Create</a></div><div class="ttdeci">virtual HRESULT Create()=0</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a2cfee5142c0ccc914ab9e22be37021a1"><div class="ttname"><a href="class_c_formatted_text_draw.html#a2cfee5142c0ccc914ab9e22be37021a1">CFormattedTextDraw::TxSetTimer</a></div><div class="ttdeci">BOOL TxSetTimer(UINT idTimer, UINT uTimeout)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:269</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a9247dfc9e0cce9f1942c5b6c632ed78d"><div class="ttname"><a href="class_c_formatted_text_draw.html#a9247dfc9e0cce9f1942c5b6c632ed78d">CFormattedTextDraw::TxGetExtent</a></div><div class="ttdeci">HRESULT TxGetExtent(LPSIZEL lpExtent)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:372</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a14b064dc9ea9d0e12fb49355756339df"><div class="ttname"><a href="class_c_formatted_text_draw.html#a14b064dc9ea9d0e12fb49355756339df">CFormattedTextDraw::TxCreateCaret</a></div><div class="ttdeci">BOOL TxCreateCaret(HBITMAP hbmp, INT xWidth, INT yHeight)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:254</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_aeda21fe76e87d85c6e6ae97f6d98c82c"><div class="ttname"><a href="class_c_formatted_text_draw.html#aeda21fe76e87d85c6e6ae97f6d98c82c">CFormattedTextDraw::Create</a></div><div class="ttdeci">HRESULT Create()</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:155</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_addc46f2c8df18b9be24193ac2b7bd261"><div class="ttname"><a href="class_c_formatted_text_draw.html#addc46f2c8df18b9be24193ac2b7bd261">CFormattedTextDraw::hmod</a></div><div class="ttdeci">HMODULE hmod</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:187</div></div>
+<div class="ttc" id="formattedtextdraw_8h_html_af46803f5ff41019bcd512c4185514f10"><div class="ttname"><a href="formattedtextdraw_8h.html#af46803f5ff41019bcd512c4185514f10">Release</a></div><div class="ttdeci">virtual ULONG STDMETHODCALLTYPE Release(void)=0</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a26d3e8e94e5ec00f2670737ad565bb50"><div class="ttname"><a href="class_c_formatted_text_draw.html#a26d3e8e94e5ec00f2670737ad565bb50">CFormattedTextDraw::TxGetSelectionBarWidth</a></div><div class="ttdeci">HRESULT TxGetSelectionBarWidth(LONG *lSelBarWidth)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:409</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_aeca2dd3918ef62d7f7c030f1a2add1dd"><div class="ttname"><a href="class_c_formatted_text_draw.html#aeca2dd3918ef62d7f7c030f1a2add1dd">CFormattedTextDraw::TxImmGetContext</a></div><div class="ttdeci">HIMC TxImmGetContext()</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:400</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ae25f82f2e2222357070087b218fcc849"><div class="ttname"><a href="class_c_formatted_text_draw.html#ae25f82f2e2222357070087b218fcc849">CFormattedTextDraw::m_RTFText</a></div><div class="ttdeci">BSTR m_RTFText</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:185</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_aa8f8860ff9c0d5e1dacee5023743256f"><div class="ttname"><a href="class_c_formatted_text_draw.html#aa8f8860ff9c0d5e1dacee5023743256f">CFormattedTextDraw::put_RTFText</a></div><div class="ttdeci">HRESULT put_RTFText(BSTR newVal)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:69</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a0de9d25f5f37cb97c45323f8ebaff5a1"><div class="ttname"><a href="class_c_formatted_text_draw.html#a0de9d25f5f37cb97c45323f8ebaff5a1">CFormattedTextDraw::TxSetCaretPos</a></div><div class="ttdeci">BOOL TxSetCaretPos(INT x, INT y)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:264</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_adcdbb385f1b4e88c1bdd8f769cc2ea18"><div class="ttname"><a href="class_c_formatted_text_draw.html#adcdbb385f1b4e88c1bdd8f769cc2ea18">CFormattedTextDraw::AddRef</a></div><div class="ttdeci">ULONG STDMETHODCALLTYPE AddRef(void)</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:100</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_aae9e30620f85cd0855da77eefab5c542"><div class="ttname"><a href="class_c_formatted_text_draw.html#aae9e30620f85cd0855da77eefab5c542">CFormattedTextDraw::TxGetBackStyle</a></div><div class="ttdeci">HRESULT TxGetBackStyle(TXTBACKSTYLE *pstyle)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:343</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a7a01811c4c6123bea7d639302b69a128"><div class="ttname"><a href="class_c_formatted_text_draw.html#a7a01811c4c6123bea7d639302b69a128">CFormattedTextDraw::m_sizelExtent</a></div><div class="ttdeci">SIZEL m_sizelExtent</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:171</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a356e5054a4a70bfddebfa5456a51c0f2"><div class="ttname"><a href="class_c_formatted_text_draw.html#a356e5054a4a70bfddebfa5456a51c0f2">CFormattedTextDraw::TxGetViewInset</a></div><div class="ttdeci">HRESULT TxGetViewInset(LPRECT prc)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:320</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a0d11953e055809df98a3354a7b48eff7"><div class="ttname"><a href="class_c_formatted_text_draw.html#a0d11953e055809df98a3354a7b48eff7">CFormattedTextDraw::TxGetScrollBars</a></div><div class="ttdeci">HRESULT TxGetScrollBars(DWORD *pdwScrollBar)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:355</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_adf8e13c8ba939b994d4235b588a52177"><div class="ttname"><a href="class_c_formatted_text_draw.html#adf8e13c8ba939b994d4235b588a52177">CFormattedTextDraw::InitDefaultParaFormat</a></div><div class="ttdeci">HRESULT InitDefaultParaFormat()</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:481</div></div>
+<div class="ttc" id="formattedtextdraw_8h_html_acbdbb8b6975cbae55b0dfbc218204fd9"><div class="ttname"><a href="formattedtextdraw_8h.html#acbdbb8b6975cbae55b0dfbc218204fd9">get_NaturalHeight</a></div><div class="ttdeci">virtual HRESULT get_NaturalHeight(long Width, long *pVal)=0</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_aa12d7dee46f52f789b6b2109008948c3"><div class="ttname"><a href="class_c_formatted_text_draw.html#aa12d7dee46f52f789b6b2109008948c3">CFormattedTextDraw::OnTxCharFormatChange</a></div><div class="ttdeci">HRESULT OnTxCharFormatChange(const CHARFORMATW *pcf)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:377</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a95e778f91604bec6f68d7933550910aa"><div class="ttname"><a href="class_c_formatted_text_draw.html#a95e778f91604bec6f68d7933550910aa">CFormattedTextDraw::m_dwMaxLength</a></div><div class="ttdeci">DWORD m_dwMaxLength</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:180</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ac3ff1149d0e0ac7da420bc71d1fc2be1"><div class="ttname"><a href="class_c_formatted_text_draw.html#ac3ff1149d0e0ac7da420bc71d1fc2be1">CFormattedTextDraw::SetTextFont</a></div><div class="ttdeci">HRESULT SetTextFont(HFONT font)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:117</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a5bbd1e639e6c48c33a6bfaa0d469e439"><div class="ttname"><a href="class_c_formatted_text_draw.html#a5bbd1e639e6c48c33a6bfaa0d469e439">CFormattedTextDraw::TxScreenToClient</a></div><div class="ttdeci">BOOL TxScreenToClient(LPPOINT lppt)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:294</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_af376f10597fba86173093d88ef231c72"><div class="ttname"><a href="class_c_formatted_text_draw.html#af376f10597fba86173093d88ef231c72">CFormattedTextDraw::TxEnableScrollBar</a></div><div class="ttdeci">BOOL TxEnableScrollBar(INT fuSBFlags, INT fuArrowflags)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:231</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ac16e3287c2da3f1d4af57d268339b3b0"><div class="ttname"><a href="class_c_formatted_text_draw.html#ac16e3287c2da3f1d4af57d268339b3b0">CFormattedTextDraw::TxGetMaxLength</a></div><div class="ttdeci">HRESULT TxGetMaxLength(DWORD *plength)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:349</div></div>
+<div class="ttc" id="formattedtextdraw_8h_html_aebb082d918b764b78e3329ec5733573a"><div class="ttname"><a href="formattedtextdraw_8h.html#aebb082d918b764b78e3329ec5733573a">PCOOKIE</a></div><div class="ttdeci">struct tagCOOKIE * PCOOKIE</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a44ef4a7a47a5be7d277d4b04e7e12a27"><div class="ttname"><a href="class_c_formatted_text_draw.html#a44ef4a7a47a5be7d277d4b04e7e12a27">CFormattedTextDraw::TxSetCapture</a></div><div class="ttdeci">void TxSetCapture(BOOL fCapture)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:282</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_abdb3f55080c4bc55d7710059beb9e6d4"><div class="ttname"><a href="class_c_formatted_text_draw.html#abdb3f55080c4bc55d7710059beb9e6d4">CFormattedTextDraw::TxViewChange</a></div><div class="ttdeci">void TxViewChange(BOOL fUpdate)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:250</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ae1f80562f0bb57e63f88ca07184a7290"><div class="ttname"><a href="class_c_formatted_text_draw.html#ae1f80562f0bb57e63f88ca07184a7290">CFormattedTextDraw::TxSetFocus</a></div><div class="ttdeci">void TxSetFocus()</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:286</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ac3b581340c521c7f372bcce0792e3059"><div class="ttname"><a href="class_c_formatted_text_draw.html#ac3b581340c521c7f372bcce0792e3059">CFormattedTextDraw::m_editCookie</a></div><div class="ttdeci">COOKIE m_editCookie</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:181</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_abfad442af7f3e31dc59b6abc23c789a4"><div class="ttname"><a href="class_c_formatted_text_draw.html#abfad442af7f3e31dc59b6abc23c789a4">CFormattedTextDraw::TxSetScrollPos</a></div><div class="ttdeci">BOOL TxSetScrollPos(INT fnBar, INT nPos, BOOL fRedraw)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:241</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ac12889a14954434340548415c24cd61c"><div class="ttname"><a href="class_c_formatted_text_draw.html#ac12889a14954434340548415c24cd61c">CFormattedTextDraw::m_rcClient</a></div><div class="ttdeci">RECT m_rcClient</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:169</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a1b6bf84a20ce406266dcd59e05579faa"><div class="ttname"><a href="class_c_formatted_text_draw.html#a1b6bf84a20ce406266dcd59e05579faa">CFormattedTextDraw::TxGetCharFormat</a></div><div class="ttdeci">HRESULT TxGetCharFormat(const CHARFORMATW **ppCF)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:326</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a55dfce4f5f6ceebc265f50d39a3e3b18"><div class="ttname"><a href="class_c_formatted_text_draw.html#a55dfce4f5f6ceebc265f50d39a3e3b18">CFormattedTextDraw::m_rcViewInset</a></div><div class="ttdeci">RECT m_rcViewInset</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:170</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ae5c1b692255587fff873eb3cae1e30a0"><div class="ttname"><a href="class_c_formatted_text_draw.html#ae5c1b692255587fff873eb3cae1e30a0">CFormattedTextDraw::m_PF</a></div><div class="ttdeci">PARAFORMAT2 m_PF</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:177</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_afe30ef4cb3f37c9875ca64a3484e8af3"><div class="ttname"><a href="class_c_formatted_text_draw.html#afe30ef4cb3f37c9875ca64a3484e8af3">CFormattedTextDraw::TxInvalidateRect</a></div><div class="ttdeci">void TxInvalidateRect(LPCRECT prc, BOOL fMode)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:246</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a94685a982152d40e47bbd38faf3d983d"><div class="ttname"><a href="class_c_formatted_text_draw.html#a94685a982152d40e47bbd38faf3d983d">CFormattedTextDraw::QueryInterface</a></div><div class="ttdeci">HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void __RPC_FAR *__RPC_FAR *ppvObject)</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:92</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a7d26debc0162611ce308b7472e816a0e"><div class="ttname"><a href="class_c_formatted_text_draw.html#a7d26debc0162611ce308b7472e816a0e">CFormattedTextDraw::TxGetClientRect</a></div><div class="ttdeci">HRESULT TxGetClientRect(LPRECT prc)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:314</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a1b9dc72357c06a06f294d2e07bca4a18"><div class="ttname"><a href="class_c_formatted_text_draw.html#a1b9dc72357c06a06f294d2e07bca4a18">CFormattedTextDraw::get_NaturalHeight</a></div><div class="ttdeci">HRESULT get_NaturalHeight(long Width, long *pVal)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:187</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a9ce824728f92e00b317b59d8b935d86e"><div class="ttname"><a href="class_c_formatted_text_draw.html#a9ce824728f92e00b317b59d8b935d86e">CFormattedTextDraw::SetTextColor</a></div><div class="ttdeci">HRESULT SetTextColor(COLORREF clr)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:97</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a4877370e9f9a97ca802f614601ca972c"><div class="ttname"><a href="class_c_formatted_text_draw.html#a4877370e9f9a97ca802f614601ca972c">CFormattedTextDraw::m_dwPropertyBits</a></div><div class="ttdeci">DWORD m_dwPropertyBits</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:179</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a82e2088a0416fc8a2d0039e97108ef6b"><div class="ttname"><a href="class_c_formatted_text_draw.html#a82e2088a0416fc8a2d0039e97108ef6b">CFormattedTextDraw::TxGetDC</a></div><div class="ttdeci">HDC TxGetDC()</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:216</div></div>
+<div class="ttc" id="formattedtextdraw_8h_html_a234112bab174593a80a23caef16aeb10"><div class="ttname"><a href="formattedtextdraw_8h.html#a234112bab174593a80a23caef16aeb10">get_RTFText</a></div><div class="ttdeci">virtual HRESULT get_RTFText(BSTR *pVal)=0</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_aa69166f66353dec9dc28b1e2e6f4c495"><div class="ttname"><a href="class_c_formatted_text_draw.html#aa69166f66353dec9dc28b1e2e6f4c495">CFormattedTextDraw::get_NaturalWidth</a></div><div class="ttdeci">HRESULT get_NaturalWidth(long Height, long *pVal)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:160</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a94abf3aa085118853e6fb343dc56dbd1"><div class="ttname"><a href="class_c_formatted_text_draw.html#a94abf3aa085118853e6fb343dc56dbd1">CFormattedTextDraw::TxActivate</a></div><div class="ttdeci">HRESULT TxActivate(LONG *plOldState)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:304</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a84688cc43aa013fc01eab25bcf687809"><div class="ttname"><a href="class_c_formatted_text_draw.html#a84688cc43aa013fc01eab25bcf687809">CFormattedTextDraw::InitDefaultCharFormat</a></div><div class="ttdeci">HRESULT InitDefaultCharFormat()</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:476</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a8c0482c9982ab17a5b1bc16e42dae745"><div class="ttname"><a href="class_c_formatted_text_draw.html#a8c0482c9982ab17a5b1bc16e42dae745">CFormattedTextDraw::Release</a></div><div class="ttdeci">ULONG STDMETHODCALLTYPE Release(void)</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:105</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a73cc74e417ded249eb7c8ba5026e74d6"><div class="ttname"><a href="class_c_formatted_text_draw.html#a73cc74e417ded249eb7c8ba5026e74d6">CFormattedTextDraw::~CFormattedTextDraw</a></div><div class="ttdeci">~CFormattedTextDraw()</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:51</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ac64a3d02efa70493ee449dace1fea36c"><div class="ttname"><a href="class_c_formatted_text_draw.html#ac64a3d02efa70493ee449dace1fea36c">CFormattedTextDraw::TxGetPasswordChar</a></div><div class="ttdeci">HRESULT TxGetPasswordChar(TCHAR *pch)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:361</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_acea0cb499a41c7a3b8471ccae713d0a2"><div class="ttname"><a href="class_c_formatted_text_draw.html#acea0cb499a41c7a3b8471ccae713d0a2">CFormattedTextDraw::TxKillTimer</a></div><div class="ttdeci">void TxKillTimer(UINT idTimer)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:274</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a9fcc615f0abc3edd55a5bc6eb07245c0"><div class="ttname"><a href="class_c_formatted_text_draw.html#a9fcc615f0abc3edd55a5bc6eb07245c0">CFormattedTextDraw::TxGetParaFormat</a></div><div class="ttdeci">HRESULT TxGetParaFormat(const PARAFORMAT **ppPF)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:332</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a359702fb97b39932d0f4605f2324c1d3"><div class="ttname"><a href="class_c_formatted_text_draw.html#a359702fb97b39932d0f4605f2324c1d3">CFormattedTextDraw::m_spTextServices</a></div><div class="ttdeci">ITextServices * m_spTextServices</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:183</div></div>
+<div class="ttc" id="formattedtextdraw_8h_html_a5d607274228eedfeab292338b7862c58"><div class="ttname"><a href="formattedtextdraw_8h.html#a5d607274228eedfeab292338b7862c58">AddRef</a></div><div class="ttdeci">virtual ULONG STDMETHODCALLTYPE AddRef(void)=0</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_aacdbc394944e8ca679c5de2e824496d5"><div class="ttname"><a href="class_c_formatted_text_draw.html#aacdbc394944e8ca679c5de2e824496d5">CFormattedTextDraw::CreateTextServicesObject</a></div><div class="ttdeci">HRESULT CreateTextServicesObject()</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:494</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_aeedb5def68e1033d3759b142f48cfb8f"><div class="ttname"><a href="class_c_formatted_text_draw.html#aeedb5def68e1033d3759b142f48cfb8f">CFormattedTextDraw::CFormattedTextDraw</a></div><div class="ttdeci">CFormattedTextDraw(HMODULE hmod)</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:62</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a87bf95137cb9c82cf3b5b184d7b499cd"><div class="ttname"><a href="class_c_formatted_text_draw.html#a87bf95137cb9c82cf3b5b184d7b499cd">CFormattedTextDraw::TxGetSysColor</a></div><div class="ttdeci">COLORREF TxGetSysColor(int nIndex)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:338</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a583a4401f0c1d5a3e5bf02c6a0cfedbd"><div class="ttname"><a href="class_c_formatted_text_draw.html#a583a4401f0c1d5a3e5bf02c6a0cfedbd">CFormattedTextDraw::TxReleaseDC</a></div><div class="ttdeci">INT TxReleaseDC(HDC hdc)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:221</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a677a0528e12025ac1d834ebb3fe17f4f"><div class="ttname"><a href="class_c_formatted_text_draw.html#a677a0528e12025ac1d834ebb3fe17f4f">CFormattedTextDraw::TxImmReleaseContext</a></div><div class="ttdeci">void TxImmReleaseContext(HIMC himc)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:405</div></div>
+<div class="ttc" id="structtag_c_o_o_k_i_e_html"><div class="ttname"><a href="structtag_c_o_o_k_i_e.html">tagCOOKIE</a></div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:29</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a8b31bc8979880017bac423fc7861e3c4"><div class="ttname"><a href="class_c_formatted_text_draw.html#a8b31bc8979880017bac423fc7861e3c4">CFormattedTextDraw::TxShowScrollBar</a></div><div class="ttdeci">BOOL TxShowScrollBar(INT fnBar, BOOL fShow)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:226</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ab1f8c8017864381e356371f36d7e6863"><div class="ttname"><a href="class_c_formatted_text_draw.html#ab1f8c8017864381e356371f36d7e6863">CFormattedTextDraw::TxSetCursor</a></div><div class="ttdeci">void TxSetCursor(HCURSOR hcur, BOOL fText)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:290</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html"><div class="ttname"><a href="class_c_formatted_text_draw.html">CFormattedTextDraw</a></div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:57</div></div>
+<div class="ttc" id="formattedtextdraw_8h_html_a9ee4f7326322aa47d1b9ac90d72cc914"><div class="ttname"><a href="formattedtextdraw_8h.html#a9ee4f7326322aa47d1b9ac90d72cc914">Draw</a></div><div class="ttdeci">virtual HRESULT Draw(void *hdcDraw, RECT *prc)=0</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ae015d2a67f789b83b172077ca92fedba"><div class="ttname"><a href="class_c_formatted_text_draw.html#ae015d2a67f789b83b172077ca92fedba">CFormattedTextDraw::m_dwScrollbar</a></div><div class="ttdeci">DWORD m_dwScrollbar</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:178</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ab2559df2077f47c4483ba526727016e2"><div class="ttname"><a href="class_c_formatted_text_draw.html#ab2559df2077f47c4483ba526727016e2">CFormattedTextDraw::TxShowCaret</a></div><div class="ttdeci">BOOL TxShowCaret(BOOL fShow)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:259</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_add7687bda35106a487299a6bd945e0fe"><div class="ttname"><a href="class_c_formatted_text_draw.html#add7687bda35106a487299a6bd945e0fe">CFormattedTextDraw::m_pCF</a></div><div class="ttdeci">CHARFORMAT2W * m_pCF</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:176</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a45973a797c196a9d7cf02127d12e7a54"><div class="ttname"><a href="class_c_formatted_text_draw.html#a45973a797c196a9d7cf02127d12e7a54">CFormattedTextDraw::TxGetAcceleratorPos</a></div><div class="ttdeci">HRESULT TxGetAcceleratorPos(LONG *pcp)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:366</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a55723aacd9eea72087f4a8c1716c44e8"><div class="ttname"><a href="class_c_formatted_text_draw.html#a55723aacd9eea72087f4a8c1716c44e8">CFormattedTextDraw::CharFormatFromHFONT</a></div><div class="ttdeci">HRESULT CharFormatFromHFONT(CHARFORMAT2W *pCF, HFONT hFont)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:418</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_af1539757775ca0235713e93f42274553"><div class="ttname"><a href="class_c_formatted_text_draw.html#af1539757775ca0235713e93f42274553">CFormattedTextDraw::TxSetScrollRange</a></div><div class="ttdeci">BOOL TxSetScrollRange(INT fnBar, LONG nMinPos, INT nMaxPos, BOOL fRedraw)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:236</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a4f578fb1c8066bffccbe08661a58b3a9"><div class="ttname"><a href="class_c_formatted_text_draw.html#a4f578fb1c8066bffccbe08661a58b3a9">CFormattedTextDraw::TxDeactivate</a></div><div class="ttdeci">HRESULT TxDeactivate(LONG lNewState)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:309</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a7d7aa1164fef848f8cc86084ff0d5947"><div class="ttname"><a href="class_c_formatted_text_draw.html#a7d7aa1164fef848f8cc86084ff0d5947">CFormattedTextDraw::TxNotify</a></div><div class="ttdeci">HRESULT TxNotify(DWORD iNotify, void *pv)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:395</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_aed39a1517760cfb53599780e231d481b"><div class="ttname"><a href="class_c_formatted_text_draw.html#aed39a1517760cfb53599780e231d481b">CFormattedTextDraw::nPixelsPerInchY</a></div><div class="ttdeci">int nPixelsPerInchY</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:174</div></div>
+<div class="ttc" id="structtag_c_o_o_k_i_e_html_aca6f0d6c1300f2aa0bc3ba9fbf27c5aa"><div class="ttname"><a href="structtag_c_o_o_k_i_e.html#aca6f0d6c1300f2aa0bc3ba9fbf27c5aa">tagCOOKIE::dwSize</a></div><div class="ttdeci">DWORD dwSize</div><div class="ttdef"><b>Definition:</b> formattedtextdraw.h:32</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ab86cfe0bd348ba7e6dca937139bf594b"><div class="ttname"><a href="class_c_formatted_text_draw.html#ab86cfe0bd348ba7e6dca937139bf594b">CFormattedTextDraw::TxScrollWindowEx</a></div><div class="ttdeci">void TxScrollWindowEx(INT dx, INT dy, LPCRECT lprcScroll, LPCRECT lprcClip, HRGN hrgnUpdate, LPRECT lprcUpdate, UINT fuScroll)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:278</div></div>
+<div class="ttc" id="formattedtextdraw_8h_html_a1af068ca3a479e5e3d24fcb54ea14935"><div class="ttname"><a href="formattedtextdraw_8h.html#a1af068ca3a479e5e3d24fcb54ea14935">get_NaturalWidth</a></div><div class="ttdeci">virtual HRESULT get_NaturalWidth(long Height, long *pVal)=0</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a43579a9dbb4bd8031cdf7dd1c5a2d008"><div class="ttname"><a href="class_c_formatted_text_draw.html#a43579a9dbb4bd8031cdf7dd1c5a2d008">CFormattedTextDraw::TxGetPropertyBits</a></div><div class="ttdeci">HRESULT TxGetPropertyBits(DWORD dwMask, DWORD *pdwBits)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:389</div></div>
+<div class="ttc" id="formattedtextdraw_8h_html_aab99f44fe55e1bb46fadd19347652f50"><div class="ttname"><a href="formattedtextdraw_8h.html#aab99f44fe55e1bb46fadd19347652f50">put_RTFText</a></div><div class="ttdeci">virtual HRESULT put_RTFText(BSTR newVal)=0</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_ae319a9932c1a75ad19619bea99acb2df"><div class="ttname"><a href="class_c_formatted_text_draw.html#ae319a9932c1a75ad19619bea99acb2df">CFormattedTextDraw::get_RTFText</a></div><div class="ttdeci">HRESULT get_RTFText(BSTR *pVal)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:63</div></div>
+<div class="ttc" id="formattedtextdraw_8h_html_a38853a4ceee8d1a6fac128d822488cdc"><div class="ttname"><a href="formattedtextdraw_8h.html#a38853a4ceee8d1a6fac128d822488cdc">COOKIE</a></div><div class="ttdeci">struct tagCOOKIE COOKIE</div></div>
+<div class="ttc" id="class_c_formatted_text_draw_html_a01a2da9e321236594b6f3fe8bb0ac310"><div class="ttname"><a href="class_c_formatted_text_draw.html#a01a2da9e321236594b6f3fe8bb0ac310">CFormattedTextDraw::OnTxParaFormatChange</a></div><div class="ttdeci">HRESULT OnTxParaFormatChange(const PARAFORMAT *ppf)</div><div class="ttdef"><b>Definition:</b> FormattedTextDraw.cpp:383</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

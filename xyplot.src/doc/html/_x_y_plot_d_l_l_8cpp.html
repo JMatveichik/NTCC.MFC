@@ -1,0 +1,1909 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Файл src/XYPlotDLL.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл XYPlotDLL.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="stdafx_8h_source.html">stdafx.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="main_8h_source.html">Main.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="global_8h_source.html">Global.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="xyplot_8h_source.html">xyplot.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dnp__checkout_8h_source.html">.\dnp_checkout.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для XYPlotDLL.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_x_y_plot_d_l_l_8cpp__incl.png" border="0" usemap="#src_2_x_y_plot_d_l_l_8cpp" alt=""/></div>
+<map name="src_2_x_y_plot_d_l_l_8cpp" id="src_2_x_y_plot_d_l_l_8cpp">
+<area shape="rect" id="node2" href="stdafx_8h.html" title="stdafx.h" alt="" coords="573,229,641,256"/><area shape="rect" id="node16" href="main_8h.html" title="Main.h" alt="" coords="1899,80,1960,107"/><area shape="rect" id="node17" href="xyplot_8h.html" title="xyplot.h" alt="" coords="2409,155,2477,181"/><area shape="rect" id="node42" href="global_8h.html" title="Global.h" alt="" coords="2489,80,2559,107"/><area shape="rect" id="node45" href="dnp__checkout_8h.html" title=".\\dnp_checkout.h" alt="" coords="2584,80,2707,107"/><area shape="rect" id="node19" href="border_8h.html" title="border.h" alt="" coords="2200,229,2269,256"/><area shape="rect" id="node23" href="digits_8h.html" title="digits.h" alt="" coords="1207,379,1271,405"/><area shape="rect" id="node24" href="label_8h.html" title="label.h" alt="" coords="1753,379,1813,405"/><area shape="rect" id="node25" href="legend_8h.html" title="legend.h" alt="" coords="1857,155,1927,181"/><area shape="rect" id="node27" href="_back_ground_fill_8h.html" title="BackGroundFill.h" alt="" coords="2293,229,2416,256"/><area shape="rect" id="node28" href="profile_8h.html" title="profile.h" alt="" coords="1381,229,1448,256"/><area shape="rect" id="node30" href="_axis_8h.html" title="Axis.h" alt="" coords="1499,304,1557,331"/><area shape="rect" id="node31" href="ticks_8h.html" title="Ticks.h" alt="" coords="1664,379,1728,405"/><area shape="rect" id="node35" href="title_8h.html" title="title.h" alt="" coords="2330,155,2385,181"/><area shape="rect" id="node37" href="group_8h.html" title="group.h" alt="" coords="1090,229,1155,256"/><area shape="rect" id="node38" href="lock_8h.html" title="lock.h" alt="" coords="2054,155,2111,181"/><area shape="rect" id="node39" href="selection_8h.html" title="selection.h" alt="" coords="1573,155,1659,181"/><area shape="rect" id="node40" href="_level_line_8h.html" title="LevelLine.h" alt="" coords="2038,229,2125,256"/><area shape="rect" id="node41" href="_regions_8h.html" title="Regions.h" alt="" coords="2175,155,2255,181"/><area shape="rect" id="node18" href="xyplotconst_8h.html" title="Содержит константы и перечисляемые типы . " alt="" coords="2338,453,2438,480"/><area shape="rect" id="node20" href="linedata_8h.html" title="linedata.h" alt="" coords="2119,379,2198,405"/><area shape="rect" id="node21" href="_savable_item_8h.html" title="SavableItem.h" alt="" coords="1838,453,1941,480"/><area shape="rect" id="node29" href="_profile_marks_8h.html" title="ProfileMarks.h" alt="" coords="1837,379,1942,405"/><area shape="rect" id="node32" href="_gridlines_8h.html" title="Gridlines.h" alt="" coords="1346,379,1430,405"/><area shape="rect" id="node33" href="_coord_converter_8h.html" title="CoordConverter.h" alt="" coords="1454,379,1575,405"/></map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a4ff0d5358fc517bc449fc02f8666a84a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a4ff0d5358fc517bc449fc02f8666a84a">_DLL_MASTER_</a></td></tr>
+<tr class="separator:a4ff0d5358fc517bc449fc02f8666a84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9328b764d96ee4e5a0041f7c331e672"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#ab9328b764d96ee4e5a0041f7c331e672">DNP_SOFTWARE_NAME</a>&#160;&#160;&#160;&quot;xyplot&quot;</td></tr>
+<tr class="separator:ab9328b764d96ee4e5a0041f7c331e672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ff0f29db7a177e29a36aba258a366f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a54ff0f29db7a177e29a36aba258a366f">DNP_SOFTWARE_CRC</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:a54ff0f29db7a177e29a36aba258a366f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e12b3ce98bdd2c54fdcc1469a2848f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#ad6e12b3ce98bdd2c54fdcc1469a2848f">DECLARE_PLOT_PTR</a>(p_p, id)</td></tr>
+<tr class="separator:ad6e12b3ce98bdd2c54fdcc1469a2848f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77f4259ec84c59f8939b216f052f1c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#af77f4259ec84c59f8939b216f052f1c7">EXTFUNNAME</a>&#160;&#160;&#160;&quot;_Run@8&quot;</td></tr>
+<tr class="separator:af77f4259ec84c59f8939b216f052f1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a288420bcdb0a9e934d7bc7cb7d0666df"><td class="memItemLeft" align="right" valign="top">typedef PlotMap::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a288420bcdb0a9e934d7bc7cb7d0666df">PlotMapIterator</a></td></tr>
+<tr class="separator:a288420bcdb0a9e934d7bc7cb7d0666df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01398b6372c2359f69445b81a934df6c"><td class="memItemLeft" align="right" valign="top">typedef long(__stdcall *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a01398b6372c2359f69445b81a934df6c">LPFNDIALOG</a> )(HWND hwndMain, long ID)</td></tr>
+<tr class="memdesc:a01398b6372c2359f69445b81a934df6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Properties dialog.  <a href="#a01398b6372c2359f69445b81a934df6c">Подробнее...</a><br/></td></tr>
+<tr class="separator:a01398b6372c2359f69445b81a934df6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a5222b4443e50c3c651f5a0b21501951a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dnp__checkout_8h.html#a977b5d8da270dd0e5276014103770e5c">BEGIN_CHECKOUT_MAP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a5222b4443e50c3c651f5a0b21501951a">CHECKOUT_FUNCT</a> (<a class="el" href="_x_y_plot_d_l_l_8cpp.html#aae6371cb3ad1476586379384da073bc9">AddProfile</a>) CHECKOUT_FUNCT(<a class="el" href="_x_y_plot_d_l_l_8cpp.html#a0cc6b8c571b6516a70896b8b1e3c7b4e">SetData</a>) CHECKOUT_FUNCT(<a class="el" href="_x_y_plot_d_l_l_8cpp.html#adbba5ea299a4015da9cd81e2b8d20b1c">AppendData</a>) CHECKOUT_FUNCT(<a class="el" href="_x_y_plot_d_l_l_8cpp.html#aa83764ab4fa9eda268d89809392f225d">SetString</a>) CHECKOUT_FUNCT(<a class="el" href="_x_y_plot_d_l_l_8cpp.html#a81b7f2768075626f595a96cae2147960">Initialize</a>) CHECKOUT_FUNCT(<a class="el" href="_x_y_plot_d_l_l_8cpp.html#aad105a85da70d7f994ce91cf49ee651a">SaveProperties</a>) CHECKOUT_FUNCT(<a class="el" href="_x_y_plot_d_l_l_8cpp.html#ad061d4fa2e95c9b0096bf284857f0f2b">LoadProperties</a>) CHECKOUT_FUNCT(<a class="el" href="_x_y_plot_d_l_l_8cpp.html#a706f1cabd2adf05de177fe6e687bbac8">RegLoadSettings</a>) CHECKOUT_FUNCT(<a class="el" href="_x_y_plot_d_l_l_8cpp.html#a6f8229c073f225d1249ad1ea93ac60e6">RegSaveSettings</a>) <a class="el" href="dnp__checkout_8h.html#a6910f518b4a13168b2b8e68dd0fc3775">END_CHECKOUT_MAP</a> typedef map&lt; long</td></tr>
+<tr class="separator:a5222b4443e50c3c651f5a0b21501951a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d0624ec51d372d99293e7950dc314b"><td class="memItemLeft" align="right" valign="top">BOOL WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#aa1d0624ec51d372d99293e7950dc314b">DllMain</a> (HINSTANCE hInstance, DWORD reason, LPVOID Reserved)</td></tr>
+<tr class="separator:aa1d0624ec51d372d99293e7950dc314b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b7f2768075626f595a96cae2147960"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a81b7f2768075626f595a96cae2147960">Initialize</a> (HWND hwndMain, long *lPlotID)</td></tr>
+<tr class="separator:a81b7f2768075626f595a96cae2147960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e37c42d767a6ad4f7e219b0eec78850"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a2e37c42d767a6ad4f7e219b0eec78850">Finalize</a> (long lPlotID)</td></tr>
+<tr class="separator:a2e37c42d767a6ad4f7e219b0eec78850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6371cb3ad1476586379384da073bc9"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#aae6371cb3ad1476586379384da073bc9">AddProfile</a> (long lPlotID, const char *name, COLORREF color, int width, int linetype, const char *line_template, BOOL bVisible, BOOL bMarked, BOOL bottom_axis, BOOL left_axis, long *<a class="el" href="namespacexyplot.html#a37f2e7672aa877ee74f4ab91e6a97a88">lProfileID</a>)</td></tr>
+<tr class="separator:aae6371cb3ad1476586379384da073bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46238f8b969ccfe871c153ea699be94e"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a46238f8b969ccfe871c153ea699be94e">DeleteProfile</a> (long lPlotID, long <a class="el" href="namespacexyplot.html#a37f2e7672aa877ee74f4ab91e6a97a88">lProfileID</a>)</td></tr>
+<tr class="separator:a46238f8b969ccfe871c153ea699be94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc6b8c571b6516a70896b8b1e3c7b4e"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a0cc6b8c571b6516a70896b8b1e3c7b4e">SetData</a> (long lPlotID, long <a class="el" href="namespacexyplot.html#a37f2e7672aa877ee74f4ab91e6a97a88">lProfileID</a>, const double *<a class="el" href="namespacexyplot.html#aa88522a2f4371e38891cac7b5bc3e4aa">px</a>, const double *<a class="el" href="namespacexyplot.html#adc56454d6bac520db8907c6a206d3040">py</a>, unsigned <a class="el" href="namespacexyplot.html#a0e8516aaf446c174c28a4327a27dd9ce">size</a>)</td></tr>
+<tr class="separator:a0cc6b8c571b6516a70896b8b1e3c7b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbba5ea299a4015da9cd81e2b8d20b1c"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#adbba5ea299a4015da9cd81e2b8d20b1c">AppendData</a> (long lPlotID, long <a class="el" href="namespacexyplot.html#a37f2e7672aa877ee74f4ab91e6a97a88">lProfileID</a>, const double *<a class="el" href="namespacexyplot.html#aa88522a2f4371e38891cac7b5bc3e4aa">px</a>, const double *<a class="el" href="namespacexyplot.html#adc56454d6bac520db8907c6a206d3040">py</a>, int <a class="el" href="namespacexyplot.html#a0e8516aaf446c174c28a4327a27dd9ce">size</a>)</td></tr>
+<tr class="separator:adbba5ea299a4015da9cd81e2b8d20b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9aa38efb059fb10224260274d354b4"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a9e9aa38efb059fb10224260274d354b4">GetData</a> (long lPlotID, long <a class="el" href="namespacexyplot.html#a37f2e7672aa877ee74f4ab91e6a97a88">lProfileID</a>, double *<a class="el" href="namespacexyplot.html#aa88522a2f4371e38891cac7b5bc3e4aa">px</a>, double *<a class="el" href="namespacexyplot.html#adc56454d6bac520db8907c6a206d3040">py</a>, unsigned *<a class="el" href="namespacexyplot.html#a0e8516aaf446c174c28a4327a27dd9ce">size</a>)</td></tr>
+<tr class="separator:a9e9aa38efb059fb10224260274d354b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83764ab4fa9eda268d89809392f225d"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#aa83764ab4fa9eda268d89809392f225d">SetString</a> (long lPlotID, long item, long subitem, const char *pszString)</td></tr>
+<tr class="separator:aa83764ab4fa9eda268d89809392f225d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7a6714e09e867218073b0283732fc9"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a9f7a6714e09e867218073b0283732fc9">GetString</a> (long lPlotID, long item, long subitem, int *buf_size, char *buf)</td></tr>
+<tr class="separator:a9f7a6714e09e867218073b0283732fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f219945e470f047464d1866a2b216ad"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a4f219945e470f047464d1866a2b216ad">SetFont</a> (long lPlotID, long item, long subitem, const LOGFONT *plf)</td></tr>
+<tr class="separator:a4f219945e470f047464d1866a2b216ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a139cf75a1f80f90a626e77fdb57557d2"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a139cf75a1f80f90a626e77fdb57557d2">SetColor</a> (long lPlotID, long item, long subitem, COLORREF color)</td></tr>
+<tr class="separator:a139cf75a1f80f90a626e77fdb57557d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaccc1042f580e1f5f4f148317c94f1e1"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#aaccc1042f580e1f5f4f148317c94f1e1">GetColor</a> (long lPlotID, long item, long subitem, COLORREF *color)</td></tr>
+<tr class="separator:aaccc1042f580e1f5f4f148317c94f1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa4f45200ac0065713e3a166718124b"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a0aa4f45200ac0065713e3a166718124b">SetLong</a> (long lPlotID, long item, long subitem, int value)</td></tr>
+<tr class="separator:a0aa4f45200ac0065713e3a166718124b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c8d66d83578bb794feff7d3318fe4a3"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a5c8d66d83578bb794feff7d3318fe4a3">GetLong</a> (long lPlotID, long item, long subitem, int *value)</td></tr>
+<tr class="separator:a5c8d66d83578bb794feff7d3318fe4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c89ff00ea3bf265847cdfff06ff9e3b"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a9c89ff00ea3bf265847cdfff06ff9e3b">SetDouble</a> (long lPlotID, long item, long subitem, double value)</td></tr>
+<tr class="separator:a9c89ff00ea3bf265847cdfff06ff9e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23debca1298fdad515a0a521ba73e55d"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a23debca1298fdad515a0a521ba73e55d">GetDouble</a> (long lPlotID, long item, long subitem, double *value)</td></tr>
+<tr class="separator:a23debca1298fdad515a0a521ba73e55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03f1bf5072ee2877d988add515bd863"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#ab03f1bf5072ee2877d988add515bd863">EnableItem</a> (long lPlotID, long item, long subitem, BOOL enabled)</td></tr>
+<tr class="separator:ab03f1bf5072ee2877d988add515bd863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf02df353a201f8907a0ca5495aba12"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#adaf02df353a201f8907a0ca5495aba12">IsEnabled</a> (long lPlotID, long item, long subitem, BOOL *enabled)</td></tr>
+<tr class="separator:adaf02df353a201f8907a0ca5495aba12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad105a85da70d7f994ce91cf49ee651a"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#aad105a85da70d7f994ce91cf49ee651a">SaveProperties</a> (long lPlotID, const char *fileName)</td></tr>
+<tr class="separator:aad105a85da70d7f994ce91cf49ee651a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad061d4fa2e95c9b0096bf284857f0f2b"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#ad061d4fa2e95c9b0096bf284857f0f2b">LoadProperties</a> (long lPlotID, const char *fileName)</td></tr>
+<tr class="separator:ad061d4fa2e95c9b0096bf284857f0f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74db87febb8f14f2899086381bf1f061"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a74db87febb8f14f2899086381bf1f061">SetRedraw</a> (long lPlotID, BOOL bRedraw)</td></tr>
+<tr class="separator:a74db87febb8f14f2899086381bf1f061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3137e2e7c681155064400ee1f1fc5f88"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a3137e2e7c681155064400ee1f1fc5f88">RegRestoreDefaults</a> (long lPlotID)</td></tr>
+<tr class="separator:a3137e2e7c681155064400ee1f1fc5f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706f1cabd2adf05de177fe6e687bbac8"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a706f1cabd2adf05de177fe6e687bbac8">RegLoadSettings</a> (long lPlotID, const char *keyString, const char *pszValue)</td></tr>
+<tr class="separator:a706f1cabd2adf05de177fe6e687bbac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8229c073f225d1249ad1ea93ac60e6"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a6f8229c073f225d1249ad1ea93ac60e6">RegSaveSettings</a> (long lPlotID, const char *keyString, const char *pszValue)</td></tr>
+<tr class="separator:a6f8229c073f225d1249ad1ea93ac60e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e3099efae69f74f551b9b70439af2a"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#ab4e3099efae69f74f551b9b70439af2a">RunDialog</a> (long lPlotID)</td></tr>
+<tr class="separator:ab4e3099efae69f74f551b9b70439af2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9ea1c34fa04298e2fc74482d007c27"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a3b9ea1c34fa04298e2fc74482d007c27">AddRegion</a> (long lPlotID, long AxisX, long AxisY, double xFrom, double xTo, double yFrom, double yTo, const char *pszTitle, long *lRegionID)</td></tr>
+<tr class="memdesc:a3b9ea1c34fa04298e2fc74482d007c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Region functions.  <a href="#a3b9ea1c34fa04298e2fc74482d007c27">Подробнее...</a><br/></td></tr>
+<tr class="separator:a3b9ea1c34fa04298e2fc74482d007c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8eb9534706a7d1ebff9ef6bf27ceaf8"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#ac8eb9534706a7d1ebff9ef6bf27ceaf8">DeleteRegion</a> (long lPlotID, long lRegionID)</td></tr>
+<tr class="separator:ac8eb9534706a7d1ebff9ef6bf27ceaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84df15f1b9a46adb6236ae5d0001297f"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a84df15f1b9a46adb6236ae5d0001297f">SetRegion</a> (long lPlotID, long lRegionID, double x1, double x2, double y1, double y2)</td></tr>
+<tr class="separator:a84df15f1b9a46adb6236ae5d0001297f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c387a7d272cc612d5c3a4fc9b78fbd3"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a1c387a7d272cc612d5c3a4fc9b78fbd3">AddLevel</a> (long lPlotID, long axis, double value, const char *pszTitle, COLORREF clr, int width, long *lLevelID)</td></tr>
+<tr class="memdesc:a1c387a7d272cc612d5c3a4fc9b78fbd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Level functions.  <a href="#a1c387a7d272cc612d5c3a4fc9b78fbd3">Подробнее...</a><br/></td></tr>
+<tr class="separator:a1c387a7d272cc612d5c3a4fc9b78fbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adab95d3ceb77ca4ef980739b8532fc11"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#adab95d3ceb77ca4ef980739b8532fc11">DeleteLevel</a> (long lPlotID, long lLevelID)</td></tr>
+<tr class="separator:adab95d3ceb77ca4ef980739b8532fc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e30fb5b34e16eb56743a27c2cc3ccf2"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a6e30fb5b34e16eb56743a27c2cc3ccf2">SetLevel</a> (long lPlotID, long lLevelID, double value)</td></tr>
+<tr class="separator:a6e30fb5b34e16eb56743a27c2cc3ccf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20604deebe56066b9b411296b019dd9b"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a20604deebe56066b9b411296b019dd9b">CreateGroup</a> (long lPlotID, long *pGroupID)</td></tr>
+<tr class="separator:a20604deebe56066b9b411296b019dd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a155cdba05f3c9d0271f0961dc8ecf89a"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a155cdba05f3c9d0271f0961dc8ecf89a">DeleteGroup</a> (long lPlotID, long pGroupID)</td></tr>
+<tr class="separator:a155cdba05f3c9d0271f0961dc8ecf89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cde02e098c04b10e7f2cd107799bdbe"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a7cde02e098c04b10e7f2cd107799bdbe">BindProfile</a> (long lPlotID, long lGroupID, long <a class="el" href="namespacexyplot.html#a37f2e7672aa877ee74f4ab91e6a97a88">lProfileID</a>)</td></tr>
+<tr class="separator:a7cde02e098c04b10e7f2cd107799bdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5375f3f7a122ccf2bbba4bf8a64e5aa"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#ad5375f3f7a122ccf2bbba4bf8a64e5aa">GetProfileList</a> (long lPlotID, long *lSize, long *lProfileIDs)</td></tr>
+<tr class="separator:ad5375f3f7a122ccf2bbba4bf8a64e5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1018225c802c6676822db9ea7b91827"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#aa1018225c802c6676822db9ea7b91827">Select</a> (long lPlotID, long ID, long index)</td></tr>
+<tr class="separator:aa1018225c802c6676822db9ea7b91827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66e96f59730de6a9a79dd95ef306f1d"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#ad66e96f59730de6a9a79dd95ef306f1d">GetSelection</a> (long lPlotID, long *ID)</td></tr>
+<tr class="separator:ad66e96f59730de6a9a79dd95ef306f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b3a536866d6624c5fa3431bde8a2f3"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#aa1b3a536866d6624c5fa3431bde8a2f3">SetFlashSpeed</a> (long lPlotID, int speed)</td></tr>
+<tr class="separator:aa1b3a536866d6624c5fa3431bde8a2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a969c4b5530d0dceae9aa9b0c7df7c0"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a0a969c4b5530d0dceae9aa9b0c7df7c0">DrawToBitmap</a> (long lPlotID, HBITMAP hBmp, bool bDrawWindowBG, bool bDrawClientBG)</td></tr>
+<tr class="separator:a0a969c4b5530d0dceae9aa9b0c7df7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650de28816a313cb7882fdf45a01e0ac"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a650de28816a313cb7882fdf45a01e0ac">DDBToDIB</a> (HBITMAP bitmap, DWORD dwCompression, HPALETTE hPal, int dpi)</td></tr>
+<tr class="separator:a650de28816a313cb7882fdf45a01e0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac795f865af02ef622cd5e545d7be6f48"><td class="memItemLeft" align="right" valign="top">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#ac795f865af02ef622cd5e545d7be6f48">CopyToClipboard</a> (long lPlotID, int width, int height, int dpi)</td></tr>
+<tr class="separator:ac795f865af02ef622cd5e545d7be6f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a34c6acc43ed098b0709912b9eccf5844"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dnp__checkout_8h.html#a977b5d8da270dd0e5276014103770e5c">BEGIN_CHECKOUT_MAP</a> <a class="el" href="class_x_y_plot.html">XYPlot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a34c6acc43ed098b0709912b9eccf5844">PlotMap</a></td></tr>
+<tr class="separator:a34c6acc43ed098b0709912b9eccf5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed942eb7c77016622c07ca186b83be77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a34c6acc43ed098b0709912b9eccf5844">PlotMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#aed942eb7c77016622c07ca186b83be77">g_plotmap</a></td></tr>
+<tr class="separator:aed942eb7c77016622c07ca186b83be77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6a3e60247dde90c44c75c8de1c03bd"><td class="memItemLeft" align="right" valign="top">CRITICAL_SECTION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a6d6a3e60247dde90c44c75c8de1c03bd">g_cs</a></td></tr>
+<tr class="separator:a6d6a3e60247dde90c44c75c8de1c03bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b3982ecc4e318c3b3c9865ce1c8558"><td class="memItemLeft" align="right" valign="top">HMODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a89b3982ecc4e318c3b3c9865ce1c8558">g_hmod</a></td></tr>
+<tr class="separator:a89b3982ecc4e318c3b3c9865ce1c8558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a class="anchor" id="a4ff0d5358fc517bc449fc02f8666a84a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DLL_MASTER_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad6e12b3ce98bdd2c54fdcc1469a2848f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_PLOT_PTR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p_p, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">id&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">EnterCriticalSection(&amp;<a class="code" href="_x_y_plot_d_l_l_8cpp.html#a6d6a3e60247dde90c44c75c8de1c03bd">g_cs</a>); <a class="code" href="_x_y_plot_d_l_l_8cpp.html#a288420bcdb0a9e934d7bc7cb7d0666df">\</a></div>
+<div class="line"><a class="code" href="_x_y_plot_d_l_l_8cpp.html#a288420bcdb0a9e934d7bc7cb7d0666df">	PlotMapIterator</a> piter_ = <a class="code" href="_x_y_plot_d_l_l_8cpp.html#aed942eb7c77016622c07ca186b83be77">g_plotmap</a>.find(<span class="keywordtype">id</span>); \</div>
+<div class="line">    if (piter_ == <a class="code" href="_x_y_plot_d_l_l_8cpp.html#aed942eb7c77016622c07ca186b83be77">g_plotmap</a>.end()) { LeaveCriticalSection(&amp;<a class="code" href="_x_y_plot_d_l_l_8cpp.html#a6d6a3e60247dde90c44c75c8de1c03bd">g_cs</a>); <span class="keywordflow">return</span> <a class="code" href="namespacexyplot.html#a34a620a8620b0cc4adb1c825ebfb6fe6a4c454c87b7993c8273c376caca29ad7e">PE_INVALID_PLOT</a>; } \</div>
+<div class="line">    XYPlot* p_p = piter_-&gt;second; LeaveCriticalSection(&amp;<a class="code" href="_x_y_plot_d_l_l_8cpp.html#a6d6a3e60247dde90c44c75c8de1c03bd">g_cs</a>);</div>
+<div class="ttc" id="namespacexyplot_html_a34a620a8620b0cc4adb1c825ebfb6fe6a4c454c87b7993c8273c376caca29ad7e"><div class="ttname"><a href="namespacexyplot.html#a34a620a8620b0cc4adb1c825ebfb6fe6a4c454c87b7993c8273c376caca29ad7e">xyplot::PE_INVALID_PLOT</a></div><div class="ttdef"><b>Definition:</b> xyplotconst.h:20</div></div>
+<div class="ttc" id="_x_y_plot_d_l_l_8cpp_html_aed942eb7c77016622c07ca186b83be77"><div class="ttname"><a href="_x_y_plot_d_l_l_8cpp.html#aed942eb7c77016622c07ca186b83be77">g_plotmap</a></div><div class="ttdeci">PlotMap g_plotmap</div><div class="ttdef"><b>Definition:</b> XYPlotDLL.cpp:34</div></div>
+<div class="ttc" id="_x_y_plot_d_l_l_8cpp_html_a288420bcdb0a9e934d7bc7cb7d0666df"><div class="ttname"><a href="_x_y_plot_d_l_l_8cpp.html#a288420bcdb0a9e934d7bc7cb7d0666df">PlotMapIterator</a></div><div class="ttdeci">PlotMap::iterator PlotMapIterator</div><div class="ttdef"><b>Definition:</b> XYPlotDLL.cpp:33</div></div>
+<div class="ttc" id="_x_y_plot_d_l_l_8cpp_html_a6d6a3e60247dde90c44c75c8de1c03bd"><div class="ttname"><a href="_x_y_plot_d_l_l_8cpp.html#a6d6a3e60247dde90c44c75c8de1c03bd">g_cs</a></div><div class="ttdeci">CRITICAL_SECTION g_cs</div><div class="ttdef"><b>Definition:</b> XYPlotDLL.cpp:35</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a54ff0f29db7a177e29a36aba258a366f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DNP_SOFTWARE_CRC&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9328b764d96ee4e5a0041f7c331e672"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DNP_SOFTWARE_NAME&#160;&#160;&#160;&quot;xyplot&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af77f4259ec84c59f8939b216f052f1c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXTFUNNAME&#160;&#160;&#160;&quot;_Run@8&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Типы</h2>
+<a class="anchor" id="a01398b6372c2359f69445b81a934df6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef long(__stdcall * LPFNDIALOG)(HWND hwndMain, long ID)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Properties dialog. </p>
+
+</div>
+</div>
+<a class="anchor" id="a288420bcdb0a9e934d7bc7cb7d0666df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef PlotMap::iterator <a class="el" href="_x_y_plot_d_l_l_8cpp.html#a288420bcdb0a9e934d7bc7cb7d0666df">PlotMapIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a class="anchor" id="a1c387a7d272cc612d5c3a4fc9b78fbd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> AddLevel </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTitle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>clr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>lLevelID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Level functions. </p>
+
+</div>
+</div>
+<a class="anchor" id="aae6371cb3ad1476586379384da073bc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> AddProfile </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linetype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>line_template</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bVisible</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMarked</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bottom_axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>left_axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>lProfileID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3b9ea1c34fa04298e2fc74482d007c27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> AddRegion </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>AxisX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>AxisY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xFrom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>yFrom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>yTo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTitle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>lRegionID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Region functions. </p>
+<p>Regions Functions. </p>
+
+</div>
+</div>
+<a class="anchor" id="adbba5ea299a4015da9cd81e2b8d20b1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> AppendData </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lProfileID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7cde02e098c04b10e7f2cd107799bdbe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> BindProfile </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lGroupID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lProfileID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5222b4443e50c3c651f5a0b21501951a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dnp__checkout_8h.html#a977b5d8da270dd0e5276014103770e5c">BEGIN_CHECKOUT_MAP</a> CHECKOUT_FUNCT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#aae6371cb3ad1476586379384da073bc9">AddProfile</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac795f865af02ef622cd5e545d7be6f48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> CopyToClipboard </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dpi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a20604deebe56066b9b411296b019dd9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> CreateGroup </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>pGroupID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a650de28816a313cb7882fdf45a01e0ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HANDLE DDBToDIB </td>
+          <td>(</td>
+          <td class="paramtype">HBITMAP&#160;</td>
+          <td class="paramname"><em>bitmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwCompression</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HPALETTE&#160;</td>
+          <td class="paramname"><em>hPal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dpi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a155cdba05f3c9d0271f0961dc8ecf89a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> DeleteGroup </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>pGroupID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adab95d3ceb77ca4ef980739b8532fc11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> DeleteLevel </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lLevelID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a46238f8b969ccfe871c153ea699be94e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> DeleteProfile </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lProfileID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8eb9534706a7d1ebff9ef6bf27ceaf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> DeleteRegion </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lRegionID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1d0624ec51d372d99293e7950dc314b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL WINAPI DllMain </td>
+          <td>(</td>
+          <td class="paramtype">HINSTANCE&#160;</td>
+          <td class="paramname"><em>hInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>Reserved</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a969c4b5530d0dceae9aa9b0c7df7c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> DrawToBitmap </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HBITMAP&#160;</td>
+          <td class="paramname"><em>hBmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bDrawWindowBG</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bDrawClientBG</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab03f1bf5072ee2877d988add515bd863"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> EnableItem </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enabled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2e37c42d767a6ad4f7e219b0eec78850"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> Finalize </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaccc1042f580e1f5f4f148317c94f1e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> GetColor </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF *&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e9aa38efb059fb10224260274d354b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> GetData </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lProfileID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned *&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a23debca1298fdad515a0a521ba73e55d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> GetDouble </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c8d66d83578bb794feff7d3318fe4a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> GetLong </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad5375f3f7a122ccf2bbba4bf8a64e5aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> GetProfileList </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>lSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>lProfileIDs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad66e96f59730de6a9a79dd95ef306f1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> GetSelection </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>ID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9f7a6714e09e867218073b0283732fc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> GetString </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>buf_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a81b7f2768075626f595a96cae2147960"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> Initialize </td>
+          <td>(</td>
+          <td class="paramtype">HWND&#160;</td>
+          <td class="paramname"><em>hwndMain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>lPlotID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adaf02df353a201f8907a0ca5495aba12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> IsEnabled </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL *&#160;</td>
+          <td class="paramname"><em>enabled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad061d4fa2e95c9b0096bf284857f0f2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> LoadProperties </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a706f1cabd2adf05de177fe6e687bbac8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> RegLoadSettings </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>keyString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3137e2e7c681155064400ee1f1fc5f88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> RegRestoreDefaults </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6f8229c073f225d1249ad1ea93ac60e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> RegSaveSettings </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>keyString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab4e3099efae69f74f551b9b70439af2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> RunDialog </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad105a85da70d7f994ce91cf49ee651a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> SaveProperties </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1018225c802c6676822db9ea7b91827"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> Select </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>ID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a139cf75a1f80f90a626e77fdb57557d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> SetColor </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0cc6b8c571b6516a70896b8b1e3c7b4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> SetData </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lProfileID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>py</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9c89ff00ea3bf265847cdfff06ff9e3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> SetDouble </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1b3a536866d6624c5fa3431bde8a2f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> SetFlashSpeed </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>speed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4f219945e470f047464d1866a2b216ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> SetFont </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LOGFONT *&#160;</td>
+          <td class="paramname"><em>plf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6e30fb5b34e16eb56743a27c2cc3ccf2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> SetLevel </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lLevelID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0aa4f45200ac0065713e3a166718124b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> SetLong </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a74db87febb8f14f2899086381bf1f061"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> SetRedraw </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bRedraw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a84df15f1b9a46adb6236ae5d0001297f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> SetRegion </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lRegionID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa83764ab4fa9eda268d89809392f225d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long <a class="el" href="xyplot_8h.html#a0034cb557bb9b89a64ca8c0dd1b6b158">CALLCONV</a> SetString </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>lPlotID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>subitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a class="anchor" id="a6d6a3e60247dde90c44c75c8de1c03bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRITICAL_SECTION g_cs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a89b3982ecc4e318c3b3c9865ce1c8558"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HMODULE g_hmod</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aed942eb7c77016622c07ca186b83be77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_x_y_plot_d_l_l_8cpp.html#a34c6acc43ed098b0709912b9eccf5844">PlotMap</a> g_plotmap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a34c6acc43ed098b0709912b9eccf5844"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dnp__checkout_8h.html#a977b5d8da270dd0e5276014103770e5c">BEGIN_CHECKOUT_MAP</a> <a class="el" href="class_x_y_plot.html">XYPlot</a>* PlotMap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,224 @@
+\hypertarget{group__gr_output}{\section{Функции для работы с профилями и группами.}
+\label{group__gr_output}\index{Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}}
+}
+
+
+Данный набор функций обеспечивает создание, удаление профилей и групп профилей.  
+
+
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \hyperlink{group__gr_output_ga0b66f2af6d72e28697ea2404362bcd08}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Create\-Profile} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, const char $\ast$name, C\-O\-L\-O\-R\-R\-E\-F color, int width, int line\-Type=\hyperlink{namespacexyplot_a3d67107a3da8dc1ef0114ab0352e01eda50f3326c8ff8eb69d629156dfe2e268a}{xyplot\-::\-P\-L\-S\-\_\-\-S\-O\-L\-I\-D}, const char $\ast$sz\-Line\-Template=0, B\-O\-O\-L visible=T\-R\-U\-E, B\-O\-O\-L showmarks=F\-A\-L\-S\-E, const long x\-Parent\-Axis=\hyperlink{namespacexyplot_aab624afb50724c293bffe01fff26c9c2ae9a92ae30b1ebc969b6a7256f1511924}{xyplot\-::\-P\-I\-\_\-\-A\-X\-I\-S\-\_\-\-B\-O\-T\-T\-O\-M}, const long y\-Parent\-Axis=\hyperlink{namespacexyplot_aab624afb50724c293bffe01fff26c9c2a5cab3df16a4e44f280dec6a0108dc09d}{xyplot\-::\-P\-I\-\_\-\-A\-X\-I\-S\-\_\-\-L\-E\-F\-T})
+\begin{DoxyCompactList}\small\item\em Создания экземпляра профиля \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_gaa5a7b664a3f8dbc02402bd1a8926b4c6}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Delete\-Profile} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile)
+\begin{DoxyCompactList}\small\item\em Удаление экземпляра профиля \end{DoxyCompactList}\item 
+\hyperlink{classxyplot_1_1_h_g_r_o_u_p}{H\-G\-R\-O\-U\-P} \hyperlink{group__gr_output_gaa9973935dcf6968295717ca9e8e832c0}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Create\-Group} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot)
+\begin{DoxyCompactList}\small\item\em Создание группы профилей \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_gae089459d5fab87f702abe1ac196906dc}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Delete\-Group} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_g_r_o_u_p}{H\-G\-R\-O\-U\-P} \&h\-Group)
+\begin{DoxyCompactList}\small\item\em Удаление группы профилей \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_ga8e52043c4085813433a831d07687ebc9}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Bind\-Profile\-To\-Group} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_g_r_o_u_p}{H\-G\-R\-O\-U\-P} \&h\-Group, \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} \&h\-Profile)
+\begin{DoxyCompactList}\small\item\em Добавление профиля к группе \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_output_gab01278bbb9ea9612d30f3cbe4c7805df}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Get\-Profile\-List} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, std\-::vector$<$ \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{H\-P\-R\-O\-F\-I\-L\-E} $>$ \&h\-Profiles)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Данный набор функций обеспечивает создание, удаление профилей и групп профилей. 
+
+\subsection{Функции}
+\hypertarget{group__gr_output_ga8e52043c4085813433a831d07687ebc9}{\index{Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}!Bind\-Profile\-To\-Group@{Bind\-Profile\-To\-Group}}
+\index{Bind\-Profile\-To\-Group@{Bind\-Profile\-To\-Group}!Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}}
+\subsubsection[{Bind\-Profile\-To\-Group}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Bind\-Profile\-To\-Group (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-G\-R\-O\-U\-P} \&}]{h\-Group, }
+\item[{{\bf H\-P\-R\-O\-F\-I\-L\-E} \&}]{h\-Profile}
+\end{DoxyParamCaption}
+)}}\label{group__gr_output_ga8e52043c4085813433a831d07687ebc9}
+
+
+Добавление профиля к группе 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика содержащий группу профилей \\
+\hline
+\mbox{\tt in}  & {\em h\-Profile} & дескриптор профиля \\
+\hline
+ & {\em h\-Group} & дескриптор группы \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если группа профилей удалена 
+
+false если группа профилей не удалена 
+\end{DoxyReturn}
+\hypertarget{group__gr_output_gaa9973935dcf6968295717ca9e8e832c0}{\index{Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}!Create\-Group@{Create\-Group}}
+\index{Create\-Group@{Create\-Group}!Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}}
+\subsubsection[{Create\-Group}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\-G\-R\-O\-U\-P} X\-Y\-Plot\-Manager\-::\-Create\-Group (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot}
+\end{DoxyParamCaption}
+)}}\label{group__gr_output_gaa9973935dcf6968295717ca9e8e832c0}
+
+
+Создание группы профилей 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика содержащий группу профилей \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+дескриптор группы
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{См. также}
+\hyperlink{group__gr_output_ga0b66f2af6d72e28697ea2404362bcd08}{Create\-Profile()} 
+
+\hyperlink{group__gr_output_ga8e52043c4085813433a831d07687ebc9}{Bind\-Profile\-To\-Group()} 
+\end{DoxySeeAlso}
+\hypertarget{group__gr_output_ga0b66f2af6d72e28697ea2404362bcd08}{\index{Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}!Create\-Profile@{Create\-Profile}}
+\index{Create\-Profile@{Create\-Profile}!Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}}
+\subsubsection[{Create\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\-P\-R\-O\-F\-I\-L\-E} X\-Y\-Plot\-Manager\-::\-Create\-Profile (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{const char $\ast$}]{name, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{color, }
+\item[{int}]{width, }
+\item[{int}]{line\-Type = {\ttfamily {\bf xyplot\-::\-P\-L\-S\-\_\-\-S\-O\-L\-I\-D}}, }
+\item[{const char $\ast$}]{sz\-Line\-Template = {\ttfamily 0}, }
+\item[{B\-O\-O\-L}]{visible = {\ttfamily TRUE}, }
+\item[{B\-O\-O\-L}]{showmarks = {\ttfamily FALSE}, }
+\item[{const {\bf long}}]{x\-Parent\-Axis = {\ttfamily {\bf xyplot\-::\-P\-I\-\_\-\-A\-X\-I\-S\-\_\-\-B\-O\-T\-T\-O\-M}}, }
+\item[{const {\bf long}}]{y\-Parent\-Axis = {\ttfamily {\bf xyplot\-::\-P\-I\-\_\-\-A\-X\-I\-S\-\_\-\-L\-E\-F\-T}}}
+\end{DoxyParamCaption}
+)}}\label{group__gr_output_ga0b66f2af6d72e28697ea2404362bcd08}
+
+
+Создания экземпляра профиля 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика для которого создается профиль \\
+\hline
+ & {\em name} & имя профиля (отображается в легенде) \\
+\hline
+ & {\em color} & цвет профиля \\
+\hline
+ & {\em width} & толщина линии профиля в пикселях \\
+\hline
+ & {\em line\-Type} & тип линии профиля \begin{DoxyItemize}
+\item P\-L\-S\-\_\-\-I\-N\-V\-I\-S\-I\-B\-L\-E -\/ невидимая \item P\-L\-S\-\_\-\-S\-O\-L\-I\-D -\/ сплошная \item P\-L\-S\-\_\-\-D\-A\-S\-H -\/ штриховая \item P\-L\-S\-\_\-\-D\-O\-T -\/ точечная \item P\-L\-S\-\_\-\-D\-A\-S\-H\-D\-O\-T -\/ осевая \item P\-L\-S\-\_\-\-D\-A\-S\-H\-D\-O\-T\-D\-O\-T -\/ штрих-\/точка-\/точка \item P\-L\-S\-\_\-\-C\-U\-S\-T\-O\-M -\/ пользовательсякая \end{DoxyItemize}
+\\
+\hline
+ & {\em sz\-Line\-Template} & пользовательский шаблон линии. Данный аргумент используется только в случае если выбран пользовательский тип линии. Шаблон представляет собой последовательность целочисленных значений для задания интервалов заполнения и промежутков в пикселях. Например значение шаблона \char`\"{}5 2\char`\"{} означает, что 5px отрисовываются сплошной линией затем следует промежуток 2px. \\
+\hline
+ & {\em visible} & будет ли отображаться линия данного профиля \\
+\hline
+ & {\em showmarks} & отображать ли метки данных профиля \\
+\hline
+ & {\em x\-Parent\-Axis} & ось X, к которой прикрепляется профиль \\
+\hline
+ & {\em y\-Parent\-Axis} & ось Y, к которой прикрепляется профиль \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+дескриптор экземпляра профиля
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}
+\textcolor{comment}{//in header file}
+\textcolor{keyword}{class }CPlotView : \textcolor{keyword}{public} CView
+\{
+    \textcolor{comment}{//class definitions}
+
+    \textcolor{keyword}{protected}:
+        HPLOT m\_hPlot;
+        HPROFILE m\_hProf1;
+
+    \textcolor{comment}{//other class difinitions}
+\};
+
+\textcolor{comment}{//in cpp file}
+\textcolor{keywordtype}{void} CPlotView::OnInitialUpdate()
+\{
+    CView::OnInitialUpdate();
+
+    \hyperlink{group__gr_construct_gafc0df2010690907aa3a1503ebb90345c}{XYPlotManager}& pm = \hyperlink{classxyplot_1_1_x_y_plot_manager_abfde221555f11c692969986174781780}{XYPlotManager::Instance}();
+
+    m\_hPlot = pm.CreatePlot(m\_hWnd);    \textcolor{comment}{//create plot for CPlotView}
+
+    m\_hProf1 = pm.CreateProfile(m\_hPlot, \textcolor{stringliteral}{"Profile 0"}, 0x00ff00, 1); \textcolor{comment}{//Create profile for plot}
+
+    \textcolor{comment}{//Other functions}
+\}
+\end{DoxyCodeInclude}
+ \hypertarget{group__gr_output_gae089459d5fab87f702abe1ac196906dc}{\index{Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}!Delete\-Group@{Delete\-Group}}
+\index{Delete\-Group@{Delete\-Group}!Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}}
+\subsubsection[{Delete\-Group}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Delete\-Group (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-G\-R\-O\-U\-P} \&}]{h\-Group}
+\end{DoxyParamCaption}
+)}}\label{group__gr_output_gae089459d5fab87f702abe1ac196906dc}
+
+
+Удаление группы профилей 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика содержащий группу профилей \\
+\hline
+ & {\em h\-Group} & дескриптор группы \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если группа профилей удалена 
+
+false если группа профилей не удалена 
+\end{DoxyReturn}
+\hypertarget{group__gr_output_gaa5a7b664a3f8dbc02402bd1a8926b4c6}{\index{Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}!Delete\-Profile@{Delete\-Profile}}
+\index{Delete\-Profile@{Delete\-Profile}!Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}}
+\subsubsection[{Delete\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Delete\-Profile (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-P\-R\-O\-F\-I\-L\-E} \&}]{h\-Profile}
+\end{DoxyParamCaption}
+)}}\label{group__gr_output_gaa5a7b664a3f8dbc02402bd1a8926b4c6}
+
+
+Удаление экземпляра профиля 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика содержащий профиль \\
+\hline
+\mbox{\tt in}  & {\em h\-Profile} & дескриптор профиля \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если профиль удален 
+
+false если профиль не удален. 
+\end{DoxyReturn}
+\hypertarget{group__gr_output_gab01278bbb9ea9612d30f3cbe4c7805df}{\index{Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}!Get\-Profile\-List@{Get\-Profile\-List}}
+\index{Get\-Profile\-List@{Get\-Profile\-List}!Функции для работы с профилями и группами.@{Функции для работы с профилями и группами.}}
+\subsubsection[{Get\-Profile\-List}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Get\-Profile\-List (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{std\-::vector$<$ {\bf H\-P\-R\-O\-F\-I\-L\-E} $>$ \&}]{h\-Profiles}
+\end{DoxyParamCaption}
+)}}\label{group__gr_output_gab01278bbb9ea9612d30f3cbe4c7805df}
+Получение списка профилей экземпляра 2\-D графика 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика содержащий группу профилей \\
+\hline
+\mbox{\tt in}  & {\em h\-Profiles} & контейнер содержащий список всех профилей \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если удалось получить список профилей 
+
+false если не удалось получить список профилей 
+\end{DoxyReturn}

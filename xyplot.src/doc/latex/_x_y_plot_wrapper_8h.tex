@@ -1,0 +1,169 @@
+\hypertarget{_x_y_plot_wrapper_8h}{\section{Файл src/\-X\-Y\-Plot\-Wrapper.h}
+\label{_x_y_plot_wrapper_8h}\index{src/\-X\-Y\-Plot\-Wrapper.\-h@{src/\-X\-Y\-Plot\-Wrapper.\-h}}
+}
+{\ttfamily \#include $<$windef.\-h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include \char`\"{}xyplotconst.\-h\char`\"{}}\\*
+Граф включаемых заголовочных файлов для X\-Y\-Plot\-Wrapper.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_x_y_plot_wrapper_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{_x_y_plot_wrapper_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classxyplot_1_1_x_y_plot_manager}{xyplot\-::\-X\-Y\-Plot\-Manager}
+\begin{DoxyCompactList}\small\item\em Класс-\/обертка для работы с 2\-D графикой \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_plot_handle}{xyplot\-::\-Plot\-Handle}
+\begin{DoxyCompactList}\small\item\em Базовый класс дескрипторов 2\-D графики \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_h_p_l_o_t}{xyplot\-::\-H\-P\-L\-O\-T}
+\begin{DoxyCompactList}\small\item\em Класс дескриптора 2\-D графики \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_a_l_l___p_l_o_t_s__}{xyplot\-::\-A\-L\-L\-\_\-\-P\-L\-O\-T\-S\-\_\-}
+\begin{DoxyCompactList}\small\item\em Класс дескриптор для всех экземпляров 2\-D графики \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_h_p_r_o_f_i_l_e}{xyplot\-::\-H\-P\-R\-O\-F\-I\-L\-E}
+\begin{DoxyCompactList}\small\item\em Класс дескриптора профиля \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_a_l_l___p_r_o_f_i_l_e_s}{xyplot\-::\-A\-L\-L\-\_\-\-P\-R\-O\-F\-I\-L\-E\-S}
+\begin{DoxyCompactList}\small\item\em Класс дескриптор для всех профилей 2\-D графики \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_i_n_v_a_l_i_d___p_r_o_f_i_l_e}{xyplot\-::\-I\-N\-V\-A\-L\-I\-D\-\_\-\-P\-R\-O\-F\-I\-L\-E}
+\begin{DoxyCompactList}\small\item\em Класс дескриптор пустого профиля 2\-D графики \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_h_g_r_o_u_p}{xyplot\-::\-H\-G\-R\-O\-U\-P}
+\begin{DoxyCompactList}\small\item\em Класс дескриптора группы профилей \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_i_n_v_a_l_i_d___g_r_o_u_p}{xyplot\-::\-I\-N\-V\-A\-L\-I\-D\-\_\-\-G\-R\-O\-U\-P}
+\begin{DoxyCompactList}\small\item\em Класс дескриптор пустой группы профилей 2\-D графики \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n}{xyplot\-::\-H\-P\-L\-O\-T\-R\-E\-G\-I\-O\-N}
+\begin{DoxyCompactList}\small\item\em Класс дескриптора региона \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_a_l_l___r_e_g_i_o_n_s__}{xyplot\-::\-A\-L\-L\-\_\-\-R\-E\-G\-I\-O\-N\-S\-\_\-}
+\begin{DoxyCompactList}\small\item\em Класс дескриптор всех регионов \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_h_l_e_v_e_l}{xyplot\-::\-H\-L\-E\-V\-E\-L}
+\begin{DoxyCompactList}\small\item\em Класс дескриптор линий уровня \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_x_y_plot_error}{xyplot\-::\-X\-Y\-Plot\-Error}
+\begin{DoxyCompactList}\small\item\em Класс ошибки времени исполнения для графика \end{DoxyCompactList}\item 
+class \hyperlink{classxyplot_1_1_x_y_plot_request_failure}{xyplot\-::\-X\-Y\-Plot\-Request\-Failure}
+\begin{DoxyCompactList}\small\item\em Класс ошибки завершения запроса для графика \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Пространства имен}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacexyplot}{xyplot}
+\end{DoxyCompactItemize}
+\subsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N}~\-\_\-\-\_\-stdcall
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8h_a967d661c7915a0c61e4d7281d85b91d6}{A\-L\-L\-\_\-\-P\-L\-O\-T\-S}~A\-L\-L\-\_\-\-P\-L\-O\-T\-S\-\_\-()
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8h_a1676db91cb9f8f3197d8c49203f0264a}{A\-L\-L\-\_\-\-R\-E\-G\-I\-O\-N\-S}~A\-L\-L\-\_\-\-R\-E\-G\-I\-O\-N\-S\-\_\-()
+\end{DoxyCompactItemize}
+\subsection*{Определения типов}
+\begin{DoxyCompactItemize}
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a8c5635641ba2648c95a8b29c01393f78}{xyplot\-::\-L\-P\-F\-N\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E} )(H\-W\-N\-D hwnd\-Main, long $\ast$l\-Plot\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a0c97b982a01a1c43f6900a274d295b11}{xyplot\-::\-L\-P\-F\-N\-F\-I\-N\-A\-L\-I\-Z\-E} )(long l\-Plot\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_ab78664aa6b50a88a556408cdcb0fedde}{xyplot\-::\-L\-P\-F\-N\-A\-D\-D\-P\-R\-O\-F\-I\-L\-E} )(long l\-Plot\-I\-D, const char $\ast$name, C\-O\-L\-O\-R\-R\-E\-F color, int width, int linetype, const char $\ast$psz\-Template, B\-O\-O\-L b\-Visible, B\-O\-O\-L b\-Data\-Marks, long X\-Axis, long Y\-Axis, long $\ast$l\-Profile\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_af6412b804e2c4c568501d1a6e84358cd}{xyplot\-::\-L\-P\-F\-N\-D\-E\-L\-E\-T\-E\-P\-R\-O\-F\-I\-L\-E} )(long l\-Plot\-I\-D, long l\-Profile\-I\-D)
+\item 
+typedef long \hyperlink{namespacexyplot_a37f2e7672aa877ee74f4ab91e6a97a88}{xyplot\-::l\-Profile\-I\-D}
+\item 
+typedef long const double $\ast$ \hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{xyplot\-::px}
+\item 
+typedef long const double \\*
+const double $\ast$ \hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{xyplot\-::py}
+\item 
+typedef long const double \\*
+const double unsigned \hyperlink{namespacexyplot_a0e8516aaf446c174c28a4327a27dd9ce}{xyplot\-::size}
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a159121ca25d59ecb75770f0fbeea2515}{xyplot\-::\-L\-P\-F\-N\-A\-P\-P\-E\-N\-D\-D\-A\-T\-A} )(long l\-Plot\-I\-D, long l\-Profile\-I\-D, const double $\ast$px, const double $\ast$py, unsigned size)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a9bb3deed6ff9723181f09eb590fdf7dd}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-S\-T\-R\-I\-N\-G} )(long l\-Plot\-I\-D, long item, long subitem, const char $\ast$psz\-String)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_ae11ea8cd7e895887b754555f31b0adf3}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-S\-T\-R\-I\-N\-G} )(long l\-Plot\-I\-D, long item, long subitem, long $\ast$buflen, char $\ast$psz\-Buffer)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_ac41175dc795758950c58e18d1660faa5}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-C\-O\-L\-O\-R} )(long l\-Plot\-I\-D, long item, long subitem, C\-O\-L\-O\-R\-R\-E\-F color)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a0f7f51503a885f8e1b24c25973b1fc1d}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-C\-O\-L\-O\-R} )(long l\-Plot\-I\-D, long item, long subitem, C\-O\-L\-O\-R\-R\-E\-F $\ast$p\-Color)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a6baf918a5bfe565a879b9d4fe5ef1124}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-L\-O\-N\-G} )(long l\-Plot\-I\-D, long item, long subitem, long value)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a7fdb8fd61356e30fc76cd5a02266dbf7}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-L\-O\-N\-G} )(long l\-Plot\-I\-D, long item, long subitem, long $\ast$value)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_acc2b15a223e822003ec2f51071dd16b2}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-D\-O\-U\-B\-L\-E} )(long l\-Plot\-I\-D, long item, long subitem, double value)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_ada339f0f5dd59a8edbeb5462b404b412}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-D\-O\-U\-B\-L\-E} )(long l\-Plot\-I\-D, long item, long subitem, double $\ast$value)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a28e8fe476dccb830b8c9557e0f802263}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-F\-O\-N\-T} )(long l\-Plot\-I\-D, long item, long subitem, const L\-O\-G\-F\-O\-N\-T $\ast$plf)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a2b24ec8edd78c631d7576e9e0804bd3b}{xyplot\-::\-L\-P\-F\-N\-I\-S\-E\-N\-A\-B\-L\-E\-D} )(long l\-Plot\-I\-D, long item, long subitem, B\-O\-O\-L $\ast$enabled)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_adc713064c472b328718bae52d4a28eb5}{xyplot\-::\-L\-P\-F\-N\-E\-N\-A\-B\-L\-E\-I\-T\-E\-M} )(long l\-Plot\-I\-D, long item, long subitem, B\-O\-O\-L enable)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a8a0a6d08dd052f79805399d35f400536}{xyplot\-::\-L\-P\-F\-N\-S\-E\-L\-E\-C\-T} )(long l\-Plot\-I\-D, long l\-Profile\-I\-D, long index)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_accdc65e18386127090607d48d4d6ef55}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-S\-E\-L\-E\-C\-T\-I\-O\-N} )(long l\-Plot\-I\-D, long $\ast$p\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a097f19903e90904e363a37bd0418d16b}{xyplot\-::\-L\-P\-F\-N\-S\-A\-V\-E\-P\-R\-O\-P\-E\-R\-T\-I\-E\-S} )(long l\-Plot\-I\-D, const char $\ast$psz\-File\-Name)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a5fcef3c2ef35e0f543cb6e0489566a41}{xyplot\-::\-L\-P\-F\-N\-L\-O\-A\-D\-P\-R\-O\-P\-E\-R\-T\-I\-E\-S} )(long l\-Plot\-I\-D, const char $\ast$psz\-File\-Name)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a64a77ea08258ed9ffc0bf7ffda3da7a4}{xyplot\-::\-L\-P\-F\-N\-C\-O\-P\-Y\-T\-O\-C\-L\-I\-P\-B\-O\-A\-R\-D} )(long l\-Plot\-I\-D, unsigned width, unsigned height, unsigned dpi)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_abe5bcbe4527096dba3cee83119449785}{xyplot\-::\-L\-P\-F\-N\-D\-R\-A\-W\-T\-O\-B\-I\-T\-M\-A\-P} )(long l\-Plot\-I\-D, H\-B\-I\-T\-M\-A\-P \&h\-Bitmap, bool b\-Draw\-Window\-B\-G, bool b\-Draw\-Client\-B\-G)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_ab1a3054ba818e5b40da27a562af9714c}{xyplot\-::\-L\-P\-F\-N\-C\-R\-E\-A\-T\-E\-G\-R\-O\-U\-P} )(long l\-Plot\-I\-D, long $\ast$pl\-Group\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a17ee39c2695e1c7c78048d0672744524}{xyplot\-::\-L\-P\-F\-N\-D\-E\-L\-E\-T\-E\-G\-R\-O\-U\-P} )(long l\-Plot\-I\-D, long l\-Group\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_ae721ca071f1b5292073d3e831c8b1150}{xyplot\-::\-L\-P\-F\-N\-B\-I\-N\-D\-P\-R\-O\-F\-I\-L\-E} )(long l\-Plot\-I\-D, long l\-Group\-I\-D, long l\-Profile\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a6dfacb1414fefdad54092cb9264eb4b1}{xyplot\-::\-L\-P\-F\-N\-G\-E\-T\-P\-R\-O\-F\-L\-I\-S\-T} )(long l\-Plot\-I\-D, long $\ast$l\-Size, long $\ast$l\-Profile\-I\-Ds)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a4b16720b36f41b782b9c112b406d9698}{xyplot\-::\-L\-P\-F\-N\-R\-E\-G\-R\-E\-S\-T\-O\-R\-E\-D\-E\-F\-A\-U\-L\-T\-S} )(long l\-Plot\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a2f14b7c1bf6f824f039dd8cafcd19f20}{xyplot\-::\-L\-P\-F\-N\-R\-E\-G\-L\-O\-A\-D\-S\-E\-T\-T\-I\-N\-G\-S} )(long l\-Plot\-I\-D, const char $\ast$psz\-Key\-Name, const char $\ast$psz\-Value)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a852637cd21abfcac7de9635bbd175db7}{xyplot\-::\-L\-P\-F\-N\-R\-E\-G\-S\-A\-V\-E\-S\-E\-T\-T\-I\-N\-G\-S} )(long l\-Plot\-I\-D, const char $\ast$psz\-Key\-Name, const char $\ast$psz\-Value)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a63fcd576a6d31af2655357ffa3ea7b74}{xyplot\-::\-L\-P\-F\-N\-R\-U\-N\-D\-I\-A\-L\-O\-G} )(long l\-Plot\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a0aaffe16c53538a1e712cdc6caef070f}{xyplot\-::\-L\-P\-F\-N\-A\-D\-D\-R\-E\-G\-I\-O\-N} )(long l\-Plot\-I\-D, long Axis\-X, long Axis\-Y, double x\-From, double x\-To, double y\-From, double y\-To, const char $\ast$psz\-Title, long $\ast$l\-Region\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_ad184f4d62ca85e471cef796c79dd0b4c}{xyplot\-::\-L\-P\-F\-N\-D\-E\-L\-E\-T\-E\-R\-E\-G\-I\-O\-N} )(long l\-Plot\-I\-D, long l\-Region\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a048931557c2d0bfaa041629319bb118d}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-R\-E\-G\-I\-O\-N} )(long l\-Plot\-I\-D, long l\-Region\-I\-D, double x1, double x2, double y1, double y2)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_acfe1c4a6bf88e4c101cae03f31602993}{xyplot\-::\-L\-P\-F\-N\-A\-D\-D\-L\-E\-V\-E\-L} )(long l\-Plot\-I\-D, long axis, double value, const char $\ast$psz\-Title, C\-O\-L\-O\-R\-R\-E\-F clr, int width, long $\ast$l\-Level\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_a96f2d0955d7feb162b2730e65398ed64}{xyplot\-::\-L\-P\-F\-N\-D\-E\-L\-E\-T\-E\-L\-E\-V\-E\-L} )(long l\-Plot\-I\-D, long l\-Level\-I\-D)
+\item 
+typedef long(\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$ \hyperlink{namespacexyplot_ae4a8b61fef16cdd55e9491d30f602509}{xyplot\-::\-L\-P\-F\-N\-S\-E\-T\-L\-E\-V\-E\-L} )(long l\-Plot\-I\-D, long l\-Level\-I\-D, double value)
+\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{namespacexyplot_a27bc71b0bdfac09495e7e531d8a918c5}{xyplot\-::long} (\hyperlink{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{X\-Y\-P\-L\-O\-T\-F\-N} $\ast$L\-P\-F\-N\-S\-E\-T\-D\-A\-T\-A)(long l\-Plot\-I\-D
+\end{DoxyCompactItemize}
+
+
+\subsection{Макросы}
+\hypertarget{_x_y_plot_wrapper_8h_a967d661c7915a0c61e4d7281d85b91d6}{\index{X\-Y\-Plot\-Wrapper.\-h@{X\-Y\-Plot\-Wrapper.\-h}!A\-L\-L\-\_\-\-P\-L\-O\-T\-S@{A\-L\-L\-\_\-\-P\-L\-O\-T\-S}}
+\index{A\-L\-L\-\_\-\-P\-L\-O\-T\-S@{A\-L\-L\-\_\-\-P\-L\-O\-T\-S}!XYPlotWrapper.h@{X\-Y\-Plot\-Wrapper.\-h}}
+\subsubsection[{A\-L\-L\-\_\-\-P\-L\-O\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-L\-L\-\_\-\-P\-L\-O\-T\-S~A\-L\-L\-\_\-\-P\-L\-O\-T\-S\-\_\-()}}\label{_x_y_plot_wrapper_8h_a967d661c7915a0c61e4d7281d85b91d6}
+\hypertarget{_x_y_plot_wrapper_8h_a1676db91cb9f8f3197d8c49203f0264a}{\index{X\-Y\-Plot\-Wrapper.\-h@{X\-Y\-Plot\-Wrapper.\-h}!A\-L\-L\-\_\-\-R\-E\-G\-I\-O\-N\-S@{A\-L\-L\-\_\-\-R\-E\-G\-I\-O\-N\-S}}
+\index{A\-L\-L\-\_\-\-R\-E\-G\-I\-O\-N\-S@{A\-L\-L\-\_\-\-R\-E\-G\-I\-O\-N\-S}!XYPlotWrapper.h@{X\-Y\-Plot\-Wrapper.\-h}}
+\subsubsection[{A\-L\-L\-\_\-\-R\-E\-G\-I\-O\-N\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-L\-L\-\_\-\-R\-E\-G\-I\-O\-N\-S~A\-L\-L\-\_\-\-R\-E\-G\-I\-O\-N\-S\-\_\-()}}\label{_x_y_plot_wrapper_8h_a1676db91cb9f8f3197d8c49203f0264a}
+\hypertarget{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}{\index{X\-Y\-Plot\-Wrapper.\-h@{X\-Y\-Plot\-Wrapper.\-h}!X\-Y\-P\-L\-O\-T\-F\-N@{X\-Y\-P\-L\-O\-T\-F\-N}}
+\index{X\-Y\-P\-L\-O\-T\-F\-N@{X\-Y\-P\-L\-O\-T\-F\-N}!XYPlotWrapper.h@{X\-Y\-Plot\-Wrapper.\-h}}
+\subsubsection[{X\-Y\-P\-L\-O\-T\-F\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-P\-L\-O\-T\-F\-N~\-\_\-\-\_\-stdcall}}\label{_x_y_plot_wrapper_8h_aba6cc8b3b62f2540637745c385e17016}

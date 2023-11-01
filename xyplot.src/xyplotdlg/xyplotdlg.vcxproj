@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FFFB3863-1D4B-42AC-A9B3-7AB560FCC638}</ProjectGuid>
+    <RootNamespace>xyplotdlg</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>D:\lib\Prof-UIS 2.91\Bin_1000;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\lib\Prof-UIS 2.91\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\lib\Prof-UIS 2.91\Bin_1000;$(LibraryPath)</LibraryPath>
+    <SourcePath>D:\lib\Prof-UIS 2.91\Src;$(SourcePath)</SourcePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>D:\lib\Prof-UIS 2.91\Bin_1000;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\lib\Prof-UIS 2.91\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\lib\Prof-UIS 2.91\Bin_1000;$(LibraryPath)</LibraryPath>
+    <SourcePath>D:\lib\Prof-UIS 2.91\Src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\xyplotdlg.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\xyplotdlg.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\axis_bottom.ico" />
+    <None Include="res\axis_left.ico" />
+    <None Include="res\axis_right.ico" />
+    <None Include="res\axis_top.ico" />
+    <None Include="res\gears.ico" />
+    <None Include="res\levels.ico" />
+    <None Include="res\profiles.ico" />
+    <None Include="res\regions.ico" />
+    <None Include="res\xyplotdlg.rc2" />
+    <None Include="xyplotdlg.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\FormattedTextDraw.cpp" />
+    <ClCompile Include="..\src\rtfstring.cpp" />
+    <ClCompile Include="..\src\XYPlotWrapper.cpp" />
+    <ClCompile Include="dlgs\AxisPropertyDlg.cpp" />
+    <ClCompile Include="dlgs\GeneralPropDlg.cpp" />
+    <ClCompile Include="dlgs\IconListBox.cpp" />
+    <ClCompile Include="dlgs\LevelsPropDlg.cpp" />
+    <ClCompile Include="dlgs\LineProperiesDlg.cpp" />
+    <ClCompile Include="dlgs\PlotDlgPage.cpp" />
+    <ClCompile Include="dlgs\ProfilesPropDlg.cpp" />
+    <ClCompile Include="PlotDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="xyplotdlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\formattedtextdraw.h" />
+    <ClInclude Include="..\src\rtfstring.h" />
+    <ClInclude Include="..\src\xyplotconst.h" />
+    <ClInclude Include="..\src\XYPlotWrapper.h" />
+    <ClInclude Include="dlgs\AxisPropertyDlg.h" />
+    <ClInclude Include="dlgs\GeneralPropDlg.h" />
+    <ClInclude Include="dlgs\IconListBox.h" />
+    <ClInclude Include="dlgs\LevelsPropDlg.h" />
+    <ClInclude Include="dlgs\LineProperiesDlg.h" />
+    <ClInclude Include="dlgs\PlotDlgPage.h" />
+    <ClInclude Include="dlgs\ProfilesPropDlg.h" />
+    <ClInclude Include="PlotDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="xyplotdlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xyplotdlg.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="xyplotdlg.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,214 @@
+\hypertarget{class_level_line}{\section{Класс Level\-Line}
+\label{class_level_line}\index{Level\-Line@{Level\-Line}}
+}
+
+
+{\ttfamily \#include $<$Level\-Line.\-h$>$}
+
+
+
+Граф связей класса Level\-Line\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_level_line__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_level_line_a834a35f51e6cee24e31aa04c122430e9}{Level\-Line} (\hyperlink{class_x_y_plot}{X\-Y\-Plot} $\ast$parent, \hyperlink{class_axis}{Axis} $\ast$\hyperlink{class_level_line_abcbf6e0a95632519d52b3c0828c926f4}{parent\-Axis}, std\-::string label\-Text, C\-O\-L\-O\-R\-R\-E\-F color=0\-L, int Width=2, int Line\-Type=xyplot\-::\-P\-L\-S\-\_\-\-S\-O\-L\-I\-D, double value=0.\-0)
+\item 
+virtual \hyperlink{class_level_line_ad94c0efb69c76cb12213f658286222c1}{$\sim$\-Level\-Line} ()
+\item 
+\hyperlink{class_line_data}{Line\-Data} \& \hyperlink{class_level_line_a45589864d3115fbba529533c90c38175}{Get\-Line} ()
+\item 
+void \hyperlink{class_level_line_a1520645cbe9e84f0904f89eea6e32202}{Set\-Line} (const \hyperlink{class_line_data}{Line\-Data} \&\hyperlink{class_level_line_a98488406c76533a2e70d83197df2614b}{line})
+\item 
+void \hyperlink{class_level_line_a24695922b2d4ae08dddec50be83800be}{On\-Draw} (H\-D\-C hdc)
+\item 
+void \hyperlink{class_level_line_a85b3494c4eee0fce6168212dcf903b46}{Set\-Value} (double \hyperlink{class_level_line_ad006f9359dd288a3b189ab964bca9484}{value})
+\item 
+double \hyperlink{class_level_line_a7c505c12eb4b752f90e52ce77742154a}{Get\-Value} () const 
+\item 
+const std\-::string \& \hyperlink{class_level_line_a2a9e250359d220d62e1f41b1588201aa}{Get\-Label} () const 
+\item 
+void \hyperlink{class_level_line_a204f658355806691bc422270f054a6fd}{Set\-Label} (std\-::string)
+\item 
+void \hyperlink{class_level_line_a089e5b90314f945e221763e1906b031a}{Set\-Label\-Position} (unsigned long \hyperlink{class_level_line_ae4d3c142f618f987e6d7fc35e98e71d0}{pos})
+\item 
+long \hyperlink{class_level_line_af399e288f9d586a07a6a25250d65470a}{Get\-Label\-Position} ()
+\item 
+void \hyperlink{class_level_line_a6e10be13208d116ee6d7577b1a68a53e}{Enable\-Label} (B\-O\-O\-L enable=T\-R\-U\-E)
+\item 
+B\-O\-O\-L \hyperlink{class_level_line_a6c6a0f3b6bc892c63ab0b9d986c9d288}{Is\-Label\-Enabled} ()
+\item 
+void \hyperlink{class_level_line_a5722ff488016e9a23bb2f17d83d003ca}{Enable} (B\-O\-O\-L enable=T\-R\-U\-E)
+\item 
+long \hyperlink{class_level_line_a9c4fee2e8c939468ff52fd2204d6fd47}{Get\-Axis\-To\-Attach} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_axis}{Axis} $\ast$ \hyperlink{class_level_line_abcbf6e0a95632519d52b3c0828c926f4}{parent\-Axis}
+\item 
+double \hyperlink{class_level_line_ad006f9359dd288a3b189ab964bca9484}{value}
+\item 
+\hyperlink{class_line_data}{Line\-Data} $\ast$ \hyperlink{class_level_line_a98488406c76533a2e70d83197df2614b}{line}
+\item 
+\hyperlink{class_r_t_f_string}{R\-T\-F\-String} $\ast$ \hyperlink{class_level_line_a8900efadd241d325ed1333a4d4a930d6}{label}
+\item 
+unsigned long \hyperlink{class_level_line_ae4d3c142f618f987e6d7fc35e98e71d0}{pos}
+\item 
+B\-O\-O\-L \hyperlink{class_level_line_a76a0fa5a858439419e2cdd49faea7f64}{enabled\-Label}
+\item 
+B\-O\-O\-L \hyperlink{class_level_line_a887491a0111c8d710fdc491945f80ebb}{enabled}
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_level_line_a834a35f51e6cee24e31aa04c122430e9}{\index{Level\-Line@{Level\-Line}!Level\-Line@{Level\-Line}}
+\index{Level\-Line@{Level\-Line}!LevelLine@{Level\-Line}}
+\subsubsection[{Level\-Line}]{\setlength{\rightskip}{0pt plus 5cm}Level\-Line\-::\-Level\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-Y\-Plot} $\ast$}]{parent, }
+\item[{{\bf Axis} $\ast$}]{parent\-Axis, }
+\item[{std\-::string}]{label\-Text, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{color = {\ttfamily 0L}, }
+\item[{int}]{Width = {\ttfamily 2}, }
+\item[{int}]{Line\-Type = {\ttfamily {\bf xyplot\-::\-P\-L\-S\-\_\-\-S\-O\-L\-I\-D}}, }
+\item[{double}]{value = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}}\label{class_level_line_a834a35f51e6cee24e31aa04c122430e9}
+\hypertarget{class_level_line_ad94c0efb69c76cb12213f658286222c1}{\index{Level\-Line@{Level\-Line}!$\sim$\-Level\-Line@{$\sim$\-Level\-Line}}
+\index{$\sim$\-Level\-Line@{$\sim$\-Level\-Line}!LevelLine@{Level\-Line}}
+\subsubsection[{$\sim$\-Level\-Line}]{\setlength{\rightskip}{0pt plus 5cm}Level\-Line\-::$\sim$\-Level\-Line (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_level_line_ad94c0efb69c76cb12213f658286222c1}
+
+
+\subsection{Методы}
+\hypertarget{class_level_line_a5722ff488016e9a23bb2f17d83d003ca}{\index{Level\-Line@{Level\-Line}!Enable@{Enable}}
+\index{Enable@{Enable}!LevelLine@{Level\-Line}}
+\subsubsection[{Enable}]{\setlength{\rightskip}{0pt plus 5cm}void Level\-Line\-::\-Enable (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_level_line_a5722ff488016e9a23bb2f17d83d003ca}
+\hypertarget{class_level_line_a6e10be13208d116ee6d7577b1a68a53e}{\index{Level\-Line@{Level\-Line}!Enable\-Label@{Enable\-Label}}
+\index{Enable\-Label@{Enable\-Label}!LevelLine@{Level\-Line}}
+\subsubsection[{Enable\-Label}]{\setlength{\rightskip}{0pt plus 5cm}void Level\-Line\-::\-Enable\-Label (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_level_line_a6e10be13208d116ee6d7577b1a68a53e}
+\hypertarget{class_level_line_a9c4fee2e8c939468ff52fd2204d6fd47}{\index{Level\-Line@{Level\-Line}!Get\-Axis\-To\-Attach@{Get\-Axis\-To\-Attach}}
+\index{Get\-Axis\-To\-Attach@{Get\-Axis\-To\-Attach}!LevelLine@{Level\-Line}}
+\subsubsection[{Get\-Axis\-To\-Attach}]{\setlength{\rightskip}{0pt plus 5cm}long Level\-Line\-::\-Get\-Axis\-To\-Attach (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_level_line_a9c4fee2e8c939468ff52fd2204d6fd47}
+\hypertarget{class_level_line_a2a9e250359d220d62e1f41b1588201aa}{\index{Level\-Line@{Level\-Line}!Get\-Label@{Get\-Label}}
+\index{Get\-Label@{Get\-Label}!LevelLine@{Level\-Line}}
+\subsubsection[{Get\-Label}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string \& Level\-Line\-::\-Get\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_level_line_a2a9e250359d220d62e1f41b1588201aa}
+\hypertarget{class_level_line_af399e288f9d586a07a6a25250d65470a}{\index{Level\-Line@{Level\-Line}!Get\-Label\-Position@{Get\-Label\-Position}}
+\index{Get\-Label\-Position@{Get\-Label\-Position}!LevelLine@{Level\-Line}}
+\subsubsection[{Get\-Label\-Position}]{\setlength{\rightskip}{0pt plus 5cm}long Level\-Line\-::\-Get\-Label\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_level_line_af399e288f9d586a07a6a25250d65470a}
+\hypertarget{class_level_line_a45589864d3115fbba529533c90c38175}{\index{Level\-Line@{Level\-Line}!Get\-Line@{Get\-Line}}
+\index{Get\-Line@{Get\-Line}!LevelLine@{Level\-Line}}
+\subsubsection[{Get\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data}\& Level\-Line\-::\-Get\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_level_line_a45589864d3115fbba529533c90c38175}
+\hypertarget{class_level_line_a7c505c12eb4b752f90e52ce77742154a}{\index{Level\-Line@{Level\-Line}!Get\-Value@{Get\-Value}}
+\index{Get\-Value@{Get\-Value}!LevelLine@{Level\-Line}}
+\subsubsection[{Get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double Level\-Line\-::\-Get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_level_line_a7c505c12eb4b752f90e52ce77742154a}
+\hypertarget{class_level_line_a6c6a0f3b6bc892c63ab0b9d986c9d288}{\index{Level\-Line@{Level\-Line}!Is\-Label\-Enabled@{Is\-Label\-Enabled}}
+\index{Is\-Label\-Enabled@{Is\-Label\-Enabled}!LevelLine@{Level\-Line}}
+\subsubsection[{Is\-Label\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Level\-Line\-::\-Is\-Label\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_level_line_a6c6a0f3b6bc892c63ab0b9d986c9d288}
+\hypertarget{class_level_line_a24695922b2d4ae08dddec50be83800be}{\index{Level\-Line@{Level\-Line}!On\-Draw@{On\-Draw}}
+\index{On\-Draw@{On\-Draw}!LevelLine@{Level\-Line}}
+\subsubsection[{On\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Level\-Line\-::\-On\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc}
+\end{DoxyParamCaption}
+)}}\label{class_level_line_a24695922b2d4ae08dddec50be83800be}
+\hypertarget{class_level_line_a204f658355806691bc422270f054a6fd}{\index{Level\-Line@{Level\-Line}!Set\-Label@{Set\-Label}}
+\index{Set\-Label@{Set\-Label}!LevelLine@{Level\-Line}}
+\subsubsection[{Set\-Label}]{\setlength{\rightskip}{0pt plus 5cm}void Level\-Line\-::\-Set\-Label (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_level_line_a204f658355806691bc422270f054a6fd}
+\hypertarget{class_level_line_a089e5b90314f945e221763e1906b031a}{\index{Level\-Line@{Level\-Line}!Set\-Label\-Position@{Set\-Label\-Position}}
+\index{Set\-Label\-Position@{Set\-Label\-Position}!LevelLine@{Level\-Line}}
+\subsubsection[{Set\-Label\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Level\-Line\-::\-Set\-Label\-Position (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_level_line_a089e5b90314f945e221763e1906b031a}
+\hypertarget{class_level_line_a1520645cbe9e84f0904f89eea6e32202}{\index{Level\-Line@{Level\-Line}!Set\-Line@{Set\-Line}}
+\index{Set\-Line@{Set\-Line}!LevelLine@{Level\-Line}}
+\subsubsection[{Set\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Level\-Line\-::\-Set\-Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf Line\-Data} \&}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_level_line_a1520645cbe9e84f0904f89eea6e32202}
+\hypertarget{class_level_line_a85b3494c4eee0fce6168212dcf903b46}{\index{Level\-Line@{Level\-Line}!Set\-Value@{Set\-Value}}
+\index{Set\-Value@{Set\-Value}!LevelLine@{Level\-Line}}
+\subsubsection[{Set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Level\-Line\-::\-Set\-Value (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_level_line_a85b3494c4eee0fce6168212dcf903b46}
+
+
+\subsection{Данные класса}
+\hypertarget{class_level_line_a887491a0111c8d710fdc491945f80ebb}{\index{Level\-Line@{Level\-Line}!enabled@{enabled}}
+\index{enabled@{enabled}!LevelLine@{Level\-Line}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Level\-Line\-::enabled\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_level_line_a887491a0111c8d710fdc491945f80ebb}
+\hypertarget{class_level_line_a76a0fa5a858439419e2cdd49faea7f64}{\index{Level\-Line@{Level\-Line}!enabled\-Label@{enabled\-Label}}
+\index{enabled\-Label@{enabled\-Label}!LevelLine@{Level\-Line}}
+\subsubsection[{enabled\-Label}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Level\-Line\-::enabled\-Label\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_level_line_a76a0fa5a858439419e2cdd49faea7f64}
+\hypertarget{class_level_line_a8900efadd241d325ed1333a4d4a930d6}{\index{Level\-Line@{Level\-Line}!label@{label}}
+\index{label@{label}!LevelLine@{Level\-Line}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-T\-F\-String}$\ast$ Level\-Line\-::label\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_level_line_a8900efadd241d325ed1333a4d4a930d6}
+\hypertarget{class_level_line_a98488406c76533a2e70d83197df2614b}{\index{Level\-Line@{Level\-Line}!line@{line}}
+\index{line@{line}!LevelLine@{Level\-Line}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data}$\ast$ Level\-Line\-::line\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_level_line_a98488406c76533a2e70d83197df2614b}
+\hypertarget{class_level_line_abcbf6e0a95632519d52b3c0828c926f4}{\index{Level\-Line@{Level\-Line}!parent\-Axis@{parent\-Axis}}
+\index{parent\-Axis@{parent\-Axis}!LevelLine@{Level\-Line}}
+\subsubsection[{parent\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}$\ast$ Level\-Line\-::parent\-Axis\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_level_line_abcbf6e0a95632519d52b3c0828c926f4}
+\hypertarget{class_level_line_ae4d3c142f618f987e6d7fc35e98e71d0}{\index{Level\-Line@{Level\-Line}!pos@{pos}}
+\index{pos@{pos}!LevelLine@{Level\-Line}}
+\subsubsection[{pos}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Level\-Line\-::pos\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_level_line_ae4d3c142f618f987e6d7fc35e98e71d0}
+\hypertarget{class_level_line_ad006f9359dd288a3b189ab964bca9484}{\index{Level\-Line@{Level\-Line}!value@{value}}
+\index{value@{value}!LevelLine@{Level\-Line}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}double Level\-Line\-::value\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_level_line_ad006f9359dd288a3b189ab964bca9484}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_level_line_8h}{Level\-Line.\-h}\item 
+src/\hyperlink{_level_line_8cpp}{Level\-Line.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\hypertarget{class_font_manager}{\section{Класс Font\-Manager}
+\label{class_font_manager}\index{Font\-Manager@{Font\-Manager}}
+}
+
+
+{\ttfamily \#include $<$fontmanager.\-h$>$}
+
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_font_manager_1_1lf__less}{lf\-\_\-less}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{class_font_manager_a51482f94502a104c3082d8c117fafb1f}{Register\-Font} (const L\-O\-G\-F\-O\-N\-T \&lf)
+\item 
+H\-F\-O\-N\-T \hyperlink{class_font_manager_a9cbab3da5aed9d27472d67bc3568d278}{Get\-Font} (unsigned index)
+\item 
+unsigned \hyperlink{class_font_manager_a83c76cdbcc38cd3e27b85642c7ef133d}{Size} () const 
+\item 
+\hyperlink{class_font_manager_aa190bb023b4cf2ad28e24c69ef57f380}{$\sim$\-Font\-Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_font_manager}{Font\-Manager} \& \hyperlink{class_font_manager_a2e6285874d17832e06eb4c66479ec6bf}{Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные типы}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::map$<$ const \\*
+L\-O\-G\-F\-O\-N\-T, int, \hyperlink{struct_font_manager_1_1lf__less}{lf\-\_\-less} $>$ \hyperlink{class_font_manager_a053e5dac54d91800c691c093e191d17c}{Logfont\-Map}
+\item 
+typedef std\-::pair$<$ H\-F\-O\-N\-T, \\*
+const L\-O\-G\-F\-O\-N\-T $\ast$const  $>$ \hyperlink{class_font_manager_ae5b94ccffd33a60792fc6a2731e48e5f}{Hfont\-Logfont\-Pair}
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_font_manager_a2f89acd28b5bd24e747aacd3208131ef}{Font\-Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_font_manager_a053e5dac54d91800c691c093e191d17c}{Logfont\-Map} \hyperlink{class_font_manager_a8834f43163db4be815db7a2cb236a36e}{logfont\-Map}
+\item 
+std\-::vector$<$ \hyperlink{class_font_manager_ae5b94ccffd33a60792fc6a2731e48e5f}{Hfont\-Logfont\-Pair} $>$ \hyperlink{class_font_manager_aa50d6f013a9f72cc63a33370a5ee87d7}{font\-Pair\-Vector}
+\item 
+C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N \hyperlink{class_font_manager_ae59f42d519931bb99c3a1caaf7d560c0}{m\-\_\-cs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Определения типов}
+\hypertarget{class_font_manager_ae5b94ccffd33a60792fc6a2731e48e5f}{\index{Font\-Manager@{Font\-Manager}!Hfont\-Logfont\-Pair@{Hfont\-Logfont\-Pair}}
+\index{Hfont\-Logfont\-Pair@{Hfont\-Logfont\-Pair}!FontManager@{Font\-Manager}}
+\subsubsection[{Hfont\-Logfont\-Pair}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::pair$<$ H\-F\-O\-N\-T, const L\-O\-G\-F\-O\-N\-T$\ast$ const $>$ {\bf Font\-Manager\-::\-Hfont\-Logfont\-Pair}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_font_manager_ae5b94ccffd33a60792fc6a2731e48e5f}
+\hypertarget{class_font_manager_a053e5dac54d91800c691c093e191d17c}{\index{Font\-Manager@{Font\-Manager}!Logfont\-Map@{Logfont\-Map}}
+\index{Logfont\-Map@{Logfont\-Map}!FontManager@{Font\-Manager}}
+\subsubsection[{Logfont\-Map}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::map$<$ const L\-O\-G\-F\-O\-N\-T, int, {\bf lf\-\_\-less} $>$ {\bf Font\-Manager\-::\-Logfont\-Map}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_font_manager_a053e5dac54d91800c691c093e191d17c}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_font_manager_aa190bb023b4cf2ad28e24c69ef57f380}{\index{Font\-Manager@{Font\-Manager}!$\sim$\-Font\-Manager@{$\sim$\-Font\-Manager}}
+\index{$\sim$\-Font\-Manager@{$\sim$\-Font\-Manager}!FontManager@{Font\-Manager}}
+\subsubsection[{$\sim$\-Font\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Font\-Manager\-::$\sim$\-Font\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_font_manager_aa190bb023b4cf2ad28e24c69ef57f380}
+\hypertarget{class_font_manager_a2f89acd28b5bd24e747aacd3208131ef}{\index{Font\-Manager@{Font\-Manager}!Font\-Manager@{Font\-Manager}}
+\index{Font\-Manager@{Font\-Manager}!FontManager@{Font\-Manager}}
+\subsubsection[{Font\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Font\-Manager\-::\-Font\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_font_manager_a2f89acd28b5bd24e747aacd3208131ef}
+
+
+\subsection{Методы}
+\hypertarget{class_font_manager_a9cbab3da5aed9d27472d67bc3568d278}{\index{Font\-Manager@{Font\-Manager}!Get\-Font@{Get\-Font}}
+\index{Get\-Font@{Get\-Font}!FontManager@{Font\-Manager}}
+\subsubsection[{Get\-Font}]{\setlength{\rightskip}{0pt plus 5cm}H\-F\-O\-N\-T Font\-Manager\-::\-Get\-Font (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_font_manager_a9cbab3da5aed9d27472d67bc3568d278}
+\hypertarget{class_font_manager_a2e6285874d17832e06eb4c66479ec6bf}{\index{Font\-Manager@{Font\-Manager}!Instance@{Instance}}
+\index{Instance@{Instance}!FontManager@{Font\-Manager}}
+\subsubsection[{Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Font\-Manager}\& Font\-Manager\-::\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_font_manager_a2e6285874d17832e06eb4c66479ec6bf}
+\hypertarget{class_font_manager_a51482f94502a104c3082d8c117fafb1f}{\index{Font\-Manager@{Font\-Manager}!Register\-Font@{Register\-Font}}
+\index{Register\-Font@{Register\-Font}!FontManager@{Font\-Manager}}
+\subsubsection[{Register\-Font}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Font\-Manager\-::\-Register\-Font (
+\begin{DoxyParamCaption}
+\item[{const L\-O\-G\-F\-O\-N\-T \&}]{lf}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_font_manager_a51482f94502a104c3082d8c117fafb1f}
+\hypertarget{class_font_manager_a83c76cdbcc38cd3e27b85642c7ef133d}{\index{Font\-Manager@{Font\-Manager}!Size@{Size}}
+\index{Size@{Size}!FontManager@{Font\-Manager}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Font\-Manager\-::\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_font_manager_a83c76cdbcc38cd3e27b85642c7ef133d}
+
+
+\subsection{Данные класса}
+\hypertarget{class_font_manager_aa50d6f013a9f72cc63a33370a5ee87d7}{\index{Font\-Manager@{Font\-Manager}!font\-Pair\-Vector@{font\-Pair\-Vector}}
+\index{font\-Pair\-Vector@{font\-Pair\-Vector}!FontManager@{Font\-Manager}}
+\subsubsection[{font\-Pair\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ {\bf Hfont\-Logfont\-Pair} $>$ Font\-Manager\-::font\-Pair\-Vector\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_font_manager_aa50d6f013a9f72cc63a33370a5ee87d7}
+\hypertarget{class_font_manager_a8834f43163db4be815db7a2cb236a36e}{\index{Font\-Manager@{Font\-Manager}!logfont\-Map@{logfont\-Map}}
+\index{logfont\-Map@{logfont\-Map}!FontManager@{Font\-Manager}}
+\subsubsection[{logfont\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Logfont\-Map} Font\-Manager\-::logfont\-Map\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_font_manager_a8834f43163db4be815db7a2cb236a36e}
+\hypertarget{class_font_manager_ae59f42d519931bb99c3a1caaf7d560c0}{\index{Font\-Manager@{Font\-Manager}!m\-\_\-cs@{m\-\_\-cs}}
+\index{m\-\_\-cs@{m\-\_\-cs}!FontManager@{Font\-Manager}}
+\subsubsection[{m\-\_\-cs}]{\setlength{\rightskip}{0pt plus 5cm}C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N Font\-Manager\-::m\-\_\-cs\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_font_manager_ae59f42d519931bb99c3a1caaf7d560c0}
+
+
+Объявления и описания членов класса находятся в файле\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{fontmanager_8h}{fontmanager.\-h}\end{DoxyCompactItemize}

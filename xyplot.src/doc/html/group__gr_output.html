@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Функции для работы с профилями и группами.</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Функции для работы с профилями и группами.</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Данный набор функций обеспечивает создание, удаление профилей и групп профилей.  
+<a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga0b66f2af6d72e28697ea2404362bcd08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#ga0b66f2af6d72e28697ea2404362bcd08">xyplot::XYPlotManager::CreateProfile</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, const char *name, COLORREF color, int width, int lineType=<a class="el" href="namespacexyplot.html#a3d67107a3da8dc1ef0114ab0352e01eda50f3326c8ff8eb69d629156dfe2e268a">xyplot::PLS_SOLID</a>, const char *szLineTemplate=0, BOOL visible=TRUE, BOOL showmarks=FALSE, const long xParentAxis=<a class="el" href="namespacexyplot.html#aab624afb50724c293bffe01fff26c9c2ae9a92ae30b1ebc969b6a7256f1511924">xyplot::PI_AXIS_BOTTOM</a>, const long yParentAxis=<a class="el" href="namespacexyplot.html#aab624afb50724c293bffe01fff26c9c2a5cab3df16a4e44f280dec6a0108dc09d">xyplot::PI_AXIS_LEFT</a>)</td></tr>
+<tr class="memdesc:ga0b66f2af6d72e28697ea2404362bcd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создания экземпляра профиля  <a href="#ga0b66f2af6d72e28697ea2404362bcd08">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga0b66f2af6d72e28697ea2404362bcd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5a7b664a3f8dbc02402bd1a8926b4c6"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#gaa5a7b664a3f8dbc02402bd1a8926b4c6">xyplot::XYPlotManager::DeleteProfile</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;hProfile)</td></tr>
+<tr class="memdesc:gaa5a7b664a3f8dbc02402bd1a8926b4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление экземпляра профиля  <a href="#gaa5a7b664a3f8dbc02402bd1a8926b4c6">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaa5a7b664a3f8dbc02402bd1a8926b4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9973935dcf6968295717ca9e8e832c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classxyplot_1_1_h_g_r_o_u_p.html">HGROUP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#gaa9973935dcf6968295717ca9e8e832c0">xyplot::XYPlotManager::CreateGroup</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot)</td></tr>
+<tr class="memdesc:gaa9973935dcf6968295717ca9e8e832c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание группы профилей  <a href="#gaa9973935dcf6968295717ca9e8e832c0">Подробнее...</a><br/></td></tr>
+<tr class="separator:gaa9973935dcf6968295717ca9e8e832c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae089459d5fab87f702abe1ac196906dc"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#gae089459d5fab87f702abe1ac196906dc">xyplot::XYPlotManager::DeleteGroup</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_g_r_o_u_p.html">HGROUP</a> &amp;hGroup)</td></tr>
+<tr class="memdesc:gae089459d5fab87f702abe1ac196906dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаление группы профилей  <a href="#gae089459d5fab87f702abe1ac196906dc">Подробнее...</a><br/></td></tr>
+<tr class="separator:gae089459d5fab87f702abe1ac196906dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e52043c4085813433a831d07687ebc9"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#ga8e52043c4085813433a831d07687ebc9">xyplot::XYPlotManager::BindProfileToGroup</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, <a class="el" href="classxyplot_1_1_h_g_r_o_u_p.html">HGROUP</a> &amp;hGroup, <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;hProfile)</td></tr>
+<tr class="memdesc:ga8e52043c4085813433a831d07687ebc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавление профиля к группе  <a href="#ga8e52043c4085813433a831d07687ebc9">Подробнее...</a><br/></td></tr>
+<tr class="separator:ga8e52043c4085813433a831d07687ebc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab01278bbb9ea9612d30f3cbe4c7805df"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gr_output.html#gab01278bbb9ea9612d30f3cbe4c7805df">xyplot::XYPlotManager::GetProfileList</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;hPlot, std::vector&lt; <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &gt; &amp;hProfiles)</td></tr>
+<tr class="separator:gab01278bbb9ea9612d30f3cbe4c7805df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<p>Данный набор функций обеспечивает создание, удаление профилей и групп профилей. </p>
+<h2 class="groupheader">Функции</h2>
+<a class="anchor" id="ga8e52043c4085813433a831d07687ebc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::BindProfileToGroup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_g_r_o_u_p.html">HGROUP</a> &amp;&#160;</td>
+          <td class="paramname"><em>hGroup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;&#160;</td>
+          <td class="paramname"><em>hProfile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавление профиля к группе </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>дескриптор экземпляра 2D графика содержащий группу профилей </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hProfile</td><td>дескриптор профиля </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">hGroup</td><td>дескриптор группы </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если группа профилей удалена </dd>
+<dd>
+false если группа профилей не удалена </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa9973935dcf6968295717ca9e8e832c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classxyplot_1_1_h_g_r_o_u_p.html">HGROUP</a> XYPlotManager::CreateGroup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создание группы профилей </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>дескриптор экземпляра 2D графика содержащий группу профилей </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>дескриптор группы</dd></dl>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="group__gr_output.html#ga0b66f2af6d72e28697ea2404362bcd08" title="Создания экземпляра профиля ">CreateProfile()</a> </dd>
+<dd>
+<a class="el" href="group__gr_output.html#ga8e52043c4085813433a831d07687ebc9" title="Добавление профиля к группе ">BindProfileToGroup()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0b66f2af6d72e28697ea2404362bcd08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> XYPlotManager::CreateProfile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lineType</em> = <code><a class="el" href="namespacexyplot.html#a3d67107a3da8dc1ef0114ab0352e01eda50f3326c8ff8eb69d629156dfe2e268a">xyplot::PLS_SOLID</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szLineTemplate</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>visible</em> = <code>TRUE</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>showmarks</em> = <code>FALSE</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>xParentAxis</em> = <code><a class="el" href="namespacexyplot.html#aab624afb50724c293bffe01fff26c9c2ae9a92ae30b1ebc969b6a7256f1511924">xyplot::PI_AXIS_BOTTOM</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>yParentAxis</em> = <code><a class="el" href="namespacexyplot.html#aab624afb50724c293bffe01fff26c9c2a5cab3df16a4e44f280dec6a0108dc09d">xyplot::PI_AXIS_LEFT</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создания экземпляра профиля </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>дескриптор экземпляра 2D графика для которого создается профиль </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">name</td><td>имя профиля (отображается в легенде) </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">color</td><td>цвет профиля </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">width</td><td>толщина линии профиля в пикселях </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">lineType</td><td>тип линии профиля <ul>
+<li>PLS_INVISIBLE - невидимая </li>
+<li>PLS_SOLID - сплошная </li>
+<li>PLS_DASH - штриховая </li>
+<li>PLS_DOT - точечная </li>
+<li>PLS_DASHDOT - осевая </li>
+<li>PLS_DASHDOTDOT - штрих-точка-точка </li>
+<li>PLS_CUSTOM - пользовательсякая </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">szLineTemplate</td><td>пользовательский шаблон линии. Данный аргумент используется только в случае если выбран пользовательский тип линии. Шаблон представляет собой последовательность целочисленных значений для задания интервалов заполнения и промежутков в пикселях. Например значение шаблона "5 2" означает, что 5px отрисовываются сплошной линией затем следует промежуток 2px. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">visible</td><td>будет ли отображаться линия данного профиля </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">showmarks</td><td>отображать ли метки данных профиля </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">xParentAxis</td><td>ось X, к которой прикрепляется профиль </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">yParentAxis</td><td>ось Y, к которой прикрепляется профиль </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>дескриптор экземпляра профиля</dd></dl>
+<div class="fragment"><div class="line"><span class="comment">//in header file</span></div>
+<div class="line"><span class="keyword">class </span>CPlotView : <span class="keyword">public</span> CView</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">//class definitions</span></div>
+<div class="line"></div>
+<div class="line">    <span class="keyword">protected</span>:</div>
+<div class="line">        HPLOT m_hPlot;</div>
+<div class="line">        HPROFILE m_hProf1;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">//other class difinitions</span></div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"><span class="comment">//in cpp file</span></div>
+<div class="line"><span class="keywordtype">void</span> CPlotView::OnInitialUpdate()</div>
+<div class="line">{</div>
+<div class="line">    CView::OnInitialUpdate();</div>
+<div class="line"></div>
+<div class="line">    <a class="code" href="group__gr_construct.html#gafc0df2010690907aa3a1503ebb90345c">XYPlotManager</a>&amp; pm = <a class="code" href="classxyplot_1_1_x_y_plot_manager.html#abfde221555f11c692969986174781780">XYPlotManager::Instance</a>();</div>
+<div class="line"></div>
+<div class="line">    m_hPlot = pm.CreatePlot(m_hWnd);    <span class="comment">//create plot for CPlotView</span></div>
+<div class="line"></div>
+<div class="line">    m_hProf1 = pm.CreateProfile(m_hPlot, <span class="stringliteral">&quot;Profile 0&quot;</span>, 0x00ff00, 1); <span class="comment">//Create profile for plot</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">//Other functions</span></div>
+<div class="line">}</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="gae089459d5fab87f702abe1ac196906dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::DeleteGroup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_g_r_o_u_p.html">HGROUP</a> &amp;&#160;</td>
+          <td class="paramname"><em>hGroup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаление группы профилей </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>дескриптор экземпляра 2D графика содержащий группу профилей </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">hGroup</td><td>дескриптор группы </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если группа профилей удалена </dd>
+<dd>
+false если группа профилей не удалена </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa5a7b664a3f8dbc02402bd1a8926b4c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::DeleteProfile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &amp;&#160;</td>
+          <td class="paramname"><em>hProfile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удаление экземпляра профиля </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>дескриптор экземпляра 2D графика содержащий профиль </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hProfile</td><td>дескриптор профиля </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если профиль удален </dd>
+<dd>
+false если профиль не удален. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab01278bbb9ea9612d30f3cbe4c7805df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL XYPlotManager::GetProfileList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname"><em>hPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classxyplot_1_1_h_p_r_o_f_i_l_e.html">HPROFILE</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>hProfiles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Получение списка профилей экземпляра 2D графика </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hPlot</td><td>дескриптор экземпляра 2D графика содержащий группу профилей </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hProfiles</td><td>контейнер содержащий список всех профилей </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если удалось получить список профилей </dd>
+<dd>
+false если не удалось получить список профилей </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

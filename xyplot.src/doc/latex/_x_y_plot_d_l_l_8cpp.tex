@@ -1,0 +1,616 @@
+\hypertarget{_x_y_plot_d_l_l_8cpp}{\section{Файл src/\-X\-Y\-Plot\-D\-L\-L.cpp}
+\label{_x_y_plot_d_l_l_8cpp}\index{src/\-X\-Y\-Plot\-D\-L\-L.\-cpp@{src/\-X\-Y\-Plot\-D\-L\-L.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}stdafx.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Main.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Global.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}xyplot.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}.\textbackslash{}dnp\-\_\-checkout.\-h\char`\"{}}\\*
+Граф включаемых заголовочных файлов для X\-Y\-Plot\-D\-L\-L.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_x_y_plot_d_l_l_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_x_y_plot_d_l_l_8cpp_a4ff0d5358fc517bc449fc02f8666a84a}{\-\_\-\-D\-L\-L\-\_\-\-M\-A\-S\-T\-E\-R\-\_\-}
+\item 
+\#define \hyperlink{_x_y_plot_d_l_l_8cpp_ab9328b764d96ee4e5a0041f7c331e672}{D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-N\-A\-M\-E}~\char`\"{}xyplot\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_d_l_l_8cpp_a54ff0f29db7a177e29a36aba258a366f}{D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-C\-R\-C}~0x00
+\item 
+\#define \hyperlink{_x_y_plot_d_l_l_8cpp_ad6e12b3ce98bdd2c54fdcc1469a2848f}{D\-E\-C\-L\-A\-R\-E\-\_\-\-P\-L\-O\-T\-\_\-\-P\-T\-R}(p\-\_\-p, id)
+\item 
+\#define \hyperlink{_x_y_plot_d_l_l_8cpp_af77f4259ec84c59f8939b216f052f1c7}{E\-X\-T\-F\-U\-N\-N\-A\-M\-E}~\char`\"{}\-\_\-\-Run@8\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Определения типов}
+\begin{DoxyCompactItemize}
+\item 
+typedef Plot\-Map\-::iterator \hyperlink{_x_y_plot_d_l_l_8cpp_a288420bcdb0a9e934d7bc7cb7d0666df}{Plot\-Map\-Iterator}
+\item 
+typedef long(\-\_\-\-\_\-stdcall $\ast$ \hyperlink{_x_y_plot_d_l_l_8cpp_a01398b6372c2359f69445b81a934df6c}{L\-P\-F\-N\-D\-I\-A\-L\-O\-G} )(H\-W\-N\-D hwnd\-Main, long I\-D)
+\begin{DoxyCompactList}\small\item\em Properties dialog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dnp__checkout_8h_a977b5d8da270dd0e5276014103770e5c}{B\-E\-G\-I\-N\-\_\-\-C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-M\-A\-P} \hyperlink{_x_y_plot_d_l_l_8cpp_a5222b4443e50c3c651f5a0b21501951a}{C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T} (\hyperlink{_x_y_plot_d_l_l_8cpp_aae6371cb3ad1476586379384da073bc9}{Add\-Profile}) C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T(\hyperlink{_x_y_plot_d_l_l_8cpp_a0cc6b8c571b6516a70896b8b1e3c7b4e}{Set\-Data}) C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T(\hyperlink{_x_y_plot_d_l_l_8cpp_adbba5ea299a4015da9cd81e2b8d20b1c}{Append\-Data}) C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T(\hyperlink{_x_y_plot_d_l_l_8cpp_aa83764ab4fa9eda268d89809392f225d}{Set\-String}) C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T(\hyperlink{_x_y_plot_d_l_l_8cpp_a81b7f2768075626f595a96cae2147960}{Initialize}) C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T(\hyperlink{_x_y_plot_d_l_l_8cpp_aad105a85da70d7f994ce91cf49ee651a}{Save\-Properties}) C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T(\hyperlink{_x_y_plot_d_l_l_8cpp_ad061d4fa2e95c9b0096bf284857f0f2b}{Load\-Properties}) C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T(\hyperlink{_x_y_plot_d_l_l_8cpp_a706f1cabd2adf05de177fe6e687bbac8}{Reg\-Load\-Settings}) C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T(\hyperlink{_x_y_plot_d_l_l_8cpp_a6f8229c073f225d1249ad1ea93ac60e6}{Reg\-Save\-Settings}) \hyperlink{dnp__checkout_8h_a6910f518b4a13168b2b8e68dd0fc3775}{E\-N\-D\-\_\-\-C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-M\-A\-P} typedef map$<$ long
+\item 
+B\-O\-O\-L W\-I\-N\-A\-P\-I \hyperlink{_x_y_plot_d_l_l_8cpp_aa1d0624ec51d372d99293e7950dc314b}{Dll\-Main} (H\-I\-N\-S\-T\-A\-N\-C\-E h\-Instance, D\-W\-O\-R\-D reason, L\-P\-V\-O\-I\-D Reserved)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a81b7f2768075626f595a96cae2147960}{Initialize} (H\-W\-N\-D hwnd\-Main, long $\ast$l\-Plot\-I\-D)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a2e37c42d767a6ad4f7e219b0eec78850}{Finalize} (long l\-Plot\-I\-D)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_aae6371cb3ad1476586379384da073bc9}{Add\-Profile} (long l\-Plot\-I\-D, const char $\ast$name, C\-O\-L\-O\-R\-R\-E\-F color, int width, int linetype, const char $\ast$line\-\_\-template, B\-O\-O\-L b\-Visible, B\-O\-O\-L b\-Marked, B\-O\-O\-L bottom\-\_\-axis, B\-O\-O\-L left\-\_\-axis, long $\ast$\hyperlink{namespacexyplot_a37f2e7672aa877ee74f4ab91e6a97a88}{l\-Profile\-I\-D})
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a46238f8b969ccfe871c153ea699be94e}{Delete\-Profile} (long l\-Plot\-I\-D, long \hyperlink{namespacexyplot_a37f2e7672aa877ee74f4ab91e6a97a88}{l\-Profile\-I\-D})
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a0cc6b8c571b6516a70896b8b1e3c7b4e}{Set\-Data} (long l\-Plot\-I\-D, long \hyperlink{namespacexyplot_a37f2e7672aa877ee74f4ab91e6a97a88}{l\-Profile\-I\-D}, const double $\ast$\hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{px}, const double $\ast$\hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{py}, unsigned \hyperlink{namespacexyplot_a0e8516aaf446c174c28a4327a27dd9ce}{size})
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_adbba5ea299a4015da9cd81e2b8d20b1c}{Append\-Data} (long l\-Plot\-I\-D, long \hyperlink{namespacexyplot_a37f2e7672aa877ee74f4ab91e6a97a88}{l\-Profile\-I\-D}, const double $\ast$\hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{px}, const double $\ast$\hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{py}, int \hyperlink{namespacexyplot_a0e8516aaf446c174c28a4327a27dd9ce}{size})
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a9e9aa38efb059fb10224260274d354b4}{Get\-Data} (long l\-Plot\-I\-D, long \hyperlink{namespacexyplot_a37f2e7672aa877ee74f4ab91e6a97a88}{l\-Profile\-I\-D}, double $\ast$\hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{px}, double $\ast$\hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{py}, unsigned $\ast$\hyperlink{namespacexyplot_a0e8516aaf446c174c28a4327a27dd9ce}{size})
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_aa83764ab4fa9eda268d89809392f225d}{Set\-String} (long l\-Plot\-I\-D, long item, long subitem, const char $\ast$psz\-String)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a9f7a6714e09e867218073b0283732fc9}{Get\-String} (long l\-Plot\-I\-D, long item, long subitem, int $\ast$buf\-\_\-size, char $\ast$buf)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a4f219945e470f047464d1866a2b216ad}{Set\-Font} (long l\-Plot\-I\-D, long item, long subitem, const L\-O\-G\-F\-O\-N\-T $\ast$plf)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a139cf75a1f80f90a626e77fdb57557d2}{Set\-Color} (long l\-Plot\-I\-D, long item, long subitem, C\-O\-L\-O\-R\-R\-E\-F color)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_aaccc1042f580e1f5f4f148317c94f1e1}{Get\-Color} (long l\-Plot\-I\-D, long item, long subitem, C\-O\-L\-O\-R\-R\-E\-F $\ast$color)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a0aa4f45200ac0065713e3a166718124b}{Set\-Long} (long l\-Plot\-I\-D, long item, long subitem, int value)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a5c8d66d83578bb794feff7d3318fe4a3}{Get\-Long} (long l\-Plot\-I\-D, long item, long subitem, int $\ast$value)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a9c89ff00ea3bf265847cdfff06ff9e3b}{Set\-Double} (long l\-Plot\-I\-D, long item, long subitem, double value)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a23debca1298fdad515a0a521ba73e55d}{Get\-Double} (long l\-Plot\-I\-D, long item, long subitem, double $\ast$value)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_ab03f1bf5072ee2877d988add515bd863}{Enable\-Item} (long l\-Plot\-I\-D, long item, long subitem, B\-O\-O\-L enabled)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_adaf02df353a201f8907a0ca5495aba12}{Is\-Enabled} (long l\-Plot\-I\-D, long item, long subitem, B\-O\-O\-L $\ast$enabled)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_aad105a85da70d7f994ce91cf49ee651a}{Save\-Properties} (long l\-Plot\-I\-D, const char $\ast$file\-Name)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_ad061d4fa2e95c9b0096bf284857f0f2b}{Load\-Properties} (long l\-Plot\-I\-D, const char $\ast$file\-Name)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a74db87febb8f14f2899086381bf1f061}{Set\-Redraw} (long l\-Plot\-I\-D, B\-O\-O\-L b\-Redraw)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a3137e2e7c681155064400ee1f1fc5f88}{Reg\-Restore\-Defaults} (long l\-Plot\-I\-D)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a706f1cabd2adf05de177fe6e687bbac8}{Reg\-Load\-Settings} (long l\-Plot\-I\-D, const char $\ast$key\-String, const char $\ast$psz\-Value)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a6f8229c073f225d1249ad1ea93ac60e6}{Reg\-Save\-Settings} (long l\-Plot\-I\-D, const char $\ast$key\-String, const char $\ast$psz\-Value)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_ab4e3099efae69f74f551b9b70439af2a}{Run\-Dialog} (long l\-Plot\-I\-D)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a3b9ea1c34fa04298e2fc74482d007c27}{Add\-Region} (long l\-Plot\-I\-D, long Axis\-X, long Axis\-Y, double x\-From, double x\-To, double y\-From, double y\-To, const char $\ast$psz\-Title, long $\ast$l\-Region\-I\-D)
+\begin{DoxyCompactList}\small\item\em Region functions. \end{DoxyCompactList}\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_ac8eb9534706a7d1ebff9ef6bf27ceaf8}{Delete\-Region} (long l\-Plot\-I\-D, long l\-Region\-I\-D)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a84df15f1b9a46adb6236ae5d0001297f}{Set\-Region} (long l\-Plot\-I\-D, long l\-Region\-I\-D, double x1, double x2, double y1, double y2)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a1c387a7d272cc612d5c3a4fc9b78fbd3}{Add\-Level} (long l\-Plot\-I\-D, long axis, double value, const char $\ast$psz\-Title, C\-O\-L\-O\-R\-R\-E\-F clr, int width, long $\ast$l\-Level\-I\-D)
+\begin{DoxyCompactList}\small\item\em Level functions. \end{DoxyCompactList}\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_adab95d3ceb77ca4ef980739b8532fc11}{Delete\-Level} (long l\-Plot\-I\-D, long l\-Level\-I\-D)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a6e30fb5b34e16eb56743a27c2cc3ccf2}{Set\-Level} (long l\-Plot\-I\-D, long l\-Level\-I\-D, double value)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a20604deebe56066b9b411296b019dd9b}{Create\-Group} (long l\-Plot\-I\-D, long $\ast$p\-Group\-I\-D)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a155cdba05f3c9d0271f0961dc8ecf89a}{Delete\-Group} (long l\-Plot\-I\-D, long p\-Group\-I\-D)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a7cde02e098c04b10e7f2cd107799bdbe}{Bind\-Profile} (long l\-Plot\-I\-D, long l\-Group\-I\-D, long \hyperlink{namespacexyplot_a37f2e7672aa877ee74f4ab91e6a97a88}{l\-Profile\-I\-D})
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_ad5375f3f7a122ccf2bbba4bf8a64e5aa}{Get\-Profile\-List} (long l\-Plot\-I\-D, long $\ast$l\-Size, long $\ast$l\-Profile\-I\-Ds)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_aa1018225c802c6676822db9ea7b91827}{Select} (long l\-Plot\-I\-D, long I\-D, long index)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_ad66e96f59730de6a9a79dd95ef306f1d}{Get\-Selection} (long l\-Plot\-I\-D, long $\ast$I\-D)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_aa1b3a536866d6624c5fa3431bde8a2f3}{Set\-Flash\-Speed} (long l\-Plot\-I\-D, int speed)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_a0a969c4b5530d0dceae9aa9b0c7df7c0}{Draw\-To\-Bitmap} (long l\-Plot\-I\-D, H\-B\-I\-T\-M\-A\-P h\-Bmp, bool b\-Draw\-Window\-B\-G, bool b\-Draw\-Client\-B\-G)
+\item 
+H\-A\-N\-D\-L\-E \hyperlink{_x_y_plot_d_l_l_8cpp_a650de28816a313cb7882fdf45a01e0ac}{D\-D\-B\-To\-D\-I\-B} (H\-B\-I\-T\-M\-A\-P bitmap, D\-W\-O\-R\-D dw\-Compression, H\-P\-A\-L\-E\-T\-T\-E h\-Pal, int dpi)
+\item 
+long \hyperlink{xyplot_8h_a0034cb557bb9b89a64ca8c0dd1b6b158}{C\-A\-L\-L\-C\-O\-N\-V} \hyperlink{_x_y_plot_d_l_l_8cpp_ac795f865af02ef622cd5e545d7be6f48}{Copy\-To\-Clipboard} (long l\-Plot\-I\-D, int width, int height, int dpi)
+\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dnp__checkout_8h_a977b5d8da270dd0e5276014103770e5c}{B\-E\-G\-I\-N\-\_\-\-C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-M\-A\-P} \hyperlink{class_x_y_plot}{X\-Y\-Plot} $\ast$ \hyperlink{_x_y_plot_d_l_l_8cpp_a34c6acc43ed098b0709912b9eccf5844}{Plot\-Map}
+\item 
+\hyperlink{_x_y_plot_d_l_l_8cpp_a34c6acc43ed098b0709912b9eccf5844}{Plot\-Map} \hyperlink{_x_y_plot_d_l_l_8cpp_aed942eb7c77016622c07ca186b83be77}{g\-\_\-plotmap}
+\item 
+C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N \hyperlink{_x_y_plot_d_l_l_8cpp_a6d6a3e60247dde90c44c75c8de1c03bd}{g\-\_\-cs}
+\item 
+H\-M\-O\-D\-U\-L\-E \hyperlink{_x_y_plot_d_l_l_8cpp_a89b3982ecc4e318c3b3c9865ce1c8558}{g\-\_\-hmod}
+\end{DoxyCompactItemize}
+
+
+\subsection{Макросы}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a4ff0d5358fc517bc449fc02f8666a84a}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!\-\_\-\-D\-L\-L\-\_\-\-M\-A\-S\-T\-E\-R\-\_\-@{\-\_\-\-D\-L\-L\-\_\-\-M\-A\-S\-T\-E\-R\-\_\-}}
+\index{\-\_\-\-D\-L\-L\-\_\-\-M\-A\-S\-T\-E\-R\-\_\-@{\-\_\-\-D\-L\-L\-\_\-\-M\-A\-S\-T\-E\-R\-\_\-}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{\-\_\-\-D\-L\-L\-\_\-\-M\-A\-S\-T\-E\-R\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-\-D\-L\-L\-\_\-\-M\-A\-S\-T\-E\-R\-\_\-}}\label{_x_y_plot_d_l_l_8cpp_a4ff0d5358fc517bc449fc02f8666a84a}
+\hypertarget{_x_y_plot_d_l_l_8cpp_ad6e12b3ce98bdd2c54fdcc1469a2848f}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!D\-E\-C\-L\-A\-R\-E\-\_\-\-P\-L\-O\-T\-\_\-\-P\-T\-R@{D\-E\-C\-L\-A\-R\-E\-\_\-\-P\-L\-O\-T\-\_\-\-P\-T\-R}}
+\index{D\-E\-C\-L\-A\-R\-E\-\_\-\-P\-L\-O\-T\-\_\-\-P\-T\-R@{D\-E\-C\-L\-A\-R\-E\-\_\-\-P\-L\-O\-T\-\_\-\-P\-T\-R}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{D\-E\-C\-L\-A\-R\-E\-\_\-\-P\-L\-O\-T\-\_\-\-P\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-C\-L\-A\-R\-E\-\_\-\-P\-L\-O\-T\-\_\-\-P\-T\-R(
+\begin{DoxyParamCaption}
+\item[{}]{p\-\_\-p, }
+\item[{}]{id}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_ad6e12b3ce98bdd2c54fdcc1469a2848f}
+{\bfseries Макроопределение\-:}
+\begin{DoxyCode}
+EnterCriticalSection(&\hyperlink{_x_y_plot_d_l_l_8cpp_a6d6a3e60247dde90c44c75c8de1c03bd}{g\_cs}); \hyperlink{_x_y_plot_d_l_l_8cpp_a288420bcdb0a9e934d7bc7cb7d0666df}{\(\backslash\)}
+\hyperlink{_x_y_plot_d_l_l_8cpp_a288420bcdb0a9e934d7bc7cb7d0666df}{    PlotMapIterator} piter\_ = \hyperlink{_x_y_plot_d_l_l_8cpp_aed942eb7c77016622c07ca186b83be77}{g\_plotmap}.find(\textcolor{keywordtype}{id}); \(\backslash\)
+    if (piter\_ == \hyperlink{_x_y_plot_d_l_l_8cpp_aed942eb7c77016622c07ca186b83be77}{g\_plotmap}.end()) \{ LeaveCriticalSection(&\hyperlink{_x_y_plot_d_l_l_8cpp_a6d6a3e60247dde90c44c75c8de1c03bd}{g\_cs}); \textcolor{keywordflow}{return} 
+      \hyperlink{namespacexyplot_a34a620a8620b0cc4adb1c825ebfb6fe6a4c454c87b7993c8273c376caca29ad7e}{PE\_INVALID\_PLOT}; \} \(\backslash\)
+    XYPlot* p\_p = piter\_->second; LeaveCriticalSection(&\hyperlink{_x_y_plot_d_l_l_8cpp_a6d6a3e60247dde90c44c75c8de1c03bd}{g\_cs});
+\end{DoxyCode}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a54ff0f29db7a177e29a36aba258a366f}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-C\-R\-C@{D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-C\-R\-C}}
+\index{D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-C\-R\-C@{D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-C\-R\-C}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-C\-R\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-C\-R\-C~0x00}}\label{_x_y_plot_d_l_l_8cpp_a54ff0f29db7a177e29a36aba258a366f}
+\hypertarget{_x_y_plot_d_l_l_8cpp_ab9328b764d96ee4e5a0041f7c331e672}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-N\-A\-M\-E@{D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-N\-A\-M\-E}}
+\index{D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-N\-A\-M\-E@{D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-N\-A\-M\-E}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-N\-P\-\_\-\-S\-O\-F\-T\-W\-A\-R\-E\-\_\-\-N\-A\-M\-E~\char`\"{}xyplot\char`\"{}}}\label{_x_y_plot_d_l_l_8cpp_ab9328b764d96ee4e5a0041f7c331e672}
+\hypertarget{_x_y_plot_d_l_l_8cpp_af77f4259ec84c59f8939b216f052f1c7}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!E\-X\-T\-F\-U\-N\-N\-A\-M\-E@{E\-X\-T\-F\-U\-N\-N\-A\-M\-E}}
+\index{E\-X\-T\-F\-U\-N\-N\-A\-M\-E@{E\-X\-T\-F\-U\-N\-N\-A\-M\-E}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{E\-X\-T\-F\-U\-N\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-X\-T\-F\-U\-N\-N\-A\-M\-E~\char`\"{}\-\_\-\-Run@8\char`\"{}}}\label{_x_y_plot_d_l_l_8cpp_af77f4259ec84c59f8939b216f052f1c7}
+
+
+\subsection{Типы}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a01398b6372c2359f69445b81a934df6c}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!L\-P\-F\-N\-D\-I\-A\-L\-O\-G@{L\-P\-F\-N\-D\-I\-A\-L\-O\-G}}
+\index{L\-P\-F\-N\-D\-I\-A\-L\-O\-G@{L\-P\-F\-N\-D\-I\-A\-L\-O\-G}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{L\-P\-F\-N\-D\-I\-A\-L\-O\-G}]{\setlength{\rightskip}{0pt plus 5cm}typedef long(\-\_\-\-\_\-stdcall $\ast$ L\-P\-F\-N\-D\-I\-A\-L\-O\-G)(H\-W\-N\-D hwnd\-Main, long I\-D)}}\label{_x_y_plot_d_l_l_8cpp_a01398b6372c2359f69445b81a934df6c}
+
+
+Properties dialog. 
+
+\hypertarget{_x_y_plot_d_l_l_8cpp_a288420bcdb0a9e934d7bc7cb7d0666df}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Plot\-Map\-Iterator@{Plot\-Map\-Iterator}}
+\index{Plot\-Map\-Iterator@{Plot\-Map\-Iterator}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Plot\-Map\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef Plot\-Map\-::iterator {\bf Plot\-Map\-Iterator}}}\label{_x_y_plot_d_l_l_8cpp_a288420bcdb0a9e934d7bc7cb7d0666df}
+
+
+\subsection{Функции}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a1c387a7d272cc612d5c3a4fc9b78fbd3}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Add\-Level@{Add\-Level}}
+\index{Add\-Level@{Add\-Level}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Add\-Level}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Add\-Level (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{axis, }
+\item[{double}]{value, }
+\item[{const char $\ast$}]{psz\-Title, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr, }
+\item[{int}]{width, }
+\item[{long $\ast$}]{l\-Level\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a1c387a7d272cc612d5c3a4fc9b78fbd3}
+
+
+Level functions. 
+
+\hypertarget{_x_y_plot_d_l_l_8cpp_aae6371cb3ad1476586379384da073bc9}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Add\-Profile@{Add\-Profile}}
+\index{Add\-Profile@{Add\-Profile}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Add\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Add\-Profile (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{const char $\ast$}]{name, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{color, }
+\item[{int}]{width, }
+\item[{int}]{linetype, }
+\item[{const char $\ast$}]{line\-\_\-template, }
+\item[{B\-O\-O\-L}]{b\-Visible, }
+\item[{B\-O\-O\-L}]{b\-Marked, }
+\item[{B\-O\-O\-L}]{bottom\-\_\-axis, }
+\item[{B\-O\-O\-L}]{left\-\_\-axis, }
+\item[{long $\ast$}]{l\-Profile\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_aae6371cb3ad1476586379384da073bc9}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a3b9ea1c34fa04298e2fc74482d007c27}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Add\-Region@{Add\-Region}}
+\index{Add\-Region@{Add\-Region}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Add\-Region}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Add\-Region (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{Axis\-X, }
+\item[{long}]{Axis\-Y, }
+\item[{double}]{x\-From, }
+\item[{double}]{x\-To, }
+\item[{double}]{y\-From, }
+\item[{double}]{y\-To, }
+\item[{const char $\ast$}]{psz\-Title, }
+\item[{long $\ast$}]{l\-Region\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a3b9ea1c34fa04298e2fc74482d007c27}
+
+
+Region functions. 
+
+Regions Functions. \hypertarget{_x_y_plot_d_l_l_8cpp_adbba5ea299a4015da9cd81e2b8d20b1c}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Append\-Data@{Append\-Data}}
+\index{Append\-Data@{Append\-Data}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Append\-Data}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Append\-Data (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{l\-Profile\-I\-D, }
+\item[{const double $\ast$}]{px, }
+\item[{const double $\ast$}]{py, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_adbba5ea299a4015da9cd81e2b8d20b1c}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a7cde02e098c04b10e7f2cd107799bdbe}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Bind\-Profile@{Bind\-Profile}}
+\index{Bind\-Profile@{Bind\-Profile}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Bind\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Bind\-Profile (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{l\-Group\-I\-D, }
+\item[{long}]{l\-Profile\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a7cde02e098c04b10e7f2cd107799bdbe}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a5222b4443e50c3c651f5a0b21501951a}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T@{C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T}}
+\index{C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T@{C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\-E\-G\-I\-N\-\_\-\-C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-M\-A\-P} C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-F\-U\-N\-C\-T (
+\begin{DoxyParamCaption}
+\item[{{\bf Add\-Profile}}]{}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a5222b4443e50c3c651f5a0b21501951a}
+\hypertarget{_x_y_plot_d_l_l_8cpp_ac795f865af02ef622cd5e545d7be6f48}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Copy\-To\-Clipboard@{Copy\-To\-Clipboard}}
+\index{Copy\-To\-Clipboard@{Copy\-To\-Clipboard}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Copy\-To\-Clipboard}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Copy\-To\-Clipboard (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int}]{dpi}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_ac795f865af02ef622cd5e545d7be6f48}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a20604deebe56066b9b411296b019dd9b}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Create\-Group@{Create\-Group}}
+\index{Create\-Group@{Create\-Group}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Create\-Group}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Create\-Group (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long $\ast$}]{p\-Group\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a20604deebe56066b9b411296b019dd9b}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a650de28816a313cb7882fdf45a01e0ac}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!D\-D\-B\-To\-D\-I\-B@{D\-D\-B\-To\-D\-I\-B}}
+\index{D\-D\-B\-To\-D\-I\-B@{D\-D\-B\-To\-D\-I\-B}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{D\-D\-B\-To\-D\-I\-B}]{\setlength{\rightskip}{0pt plus 5cm}H\-A\-N\-D\-L\-E D\-D\-B\-To\-D\-I\-B (
+\begin{DoxyParamCaption}
+\item[{H\-B\-I\-T\-M\-A\-P}]{bitmap, }
+\item[{D\-W\-O\-R\-D}]{dw\-Compression, }
+\item[{H\-P\-A\-L\-E\-T\-T\-E}]{h\-Pal, }
+\item[{int}]{dpi}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a650de28816a313cb7882fdf45a01e0ac}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a155cdba05f3c9d0271f0961dc8ecf89a}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Delete\-Group@{Delete\-Group}}
+\index{Delete\-Group@{Delete\-Group}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Delete\-Group}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Delete\-Group (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{p\-Group\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a155cdba05f3c9d0271f0961dc8ecf89a}
+\hypertarget{_x_y_plot_d_l_l_8cpp_adab95d3ceb77ca4ef980739b8532fc11}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Delete\-Level@{Delete\-Level}}
+\index{Delete\-Level@{Delete\-Level}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Delete\-Level}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Delete\-Level (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{l\-Level\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_adab95d3ceb77ca4ef980739b8532fc11}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a46238f8b969ccfe871c153ea699be94e}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Delete\-Profile@{Delete\-Profile}}
+\index{Delete\-Profile@{Delete\-Profile}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Delete\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Delete\-Profile (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{l\-Profile\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a46238f8b969ccfe871c153ea699be94e}
+\hypertarget{_x_y_plot_d_l_l_8cpp_ac8eb9534706a7d1ebff9ef6bf27ceaf8}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Delete\-Region@{Delete\-Region}}
+\index{Delete\-Region@{Delete\-Region}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Delete\-Region}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Delete\-Region (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{l\-Region\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_ac8eb9534706a7d1ebff9ef6bf27ceaf8}
+\hypertarget{_x_y_plot_d_l_l_8cpp_aa1d0624ec51d372d99293e7950dc314b}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Dll\-Main@{Dll\-Main}}
+\index{Dll\-Main@{Dll\-Main}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Dll\-Main}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L W\-I\-N\-A\-P\-I Dll\-Main (
+\begin{DoxyParamCaption}
+\item[{H\-I\-N\-S\-T\-A\-N\-C\-E}]{h\-Instance, }
+\item[{D\-W\-O\-R\-D}]{reason, }
+\item[{L\-P\-V\-O\-I\-D}]{Reserved}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_aa1d0624ec51d372d99293e7950dc314b}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a0a969c4b5530d0dceae9aa9b0c7df7c0}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Draw\-To\-Bitmap@{Draw\-To\-Bitmap}}
+\index{Draw\-To\-Bitmap@{Draw\-To\-Bitmap}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Draw\-To\-Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Draw\-To\-Bitmap (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{H\-B\-I\-T\-M\-A\-P}]{h\-Bmp, }
+\item[{bool}]{b\-Draw\-Window\-B\-G, }
+\item[{bool}]{b\-Draw\-Client\-B\-G}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a0a969c4b5530d0dceae9aa9b0c7df7c0}
+\hypertarget{_x_y_plot_d_l_l_8cpp_ab03f1bf5072ee2877d988add515bd863}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Enable\-Item@{Enable\-Item}}
+\index{Enable\-Item@{Enable\-Item}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Enable\-Item}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Enable\-Item (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{item, }
+\item[{long}]{subitem, }
+\item[{B\-O\-O\-L}]{enabled}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_ab03f1bf5072ee2877d988add515bd863}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a2e37c42d767a6ad4f7e219b0eec78850}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Finalize@{Finalize}}
+\index{Finalize@{Finalize}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Finalize}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Finalize (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a2e37c42d767a6ad4f7e219b0eec78850}
+\hypertarget{_x_y_plot_d_l_l_8cpp_aaccc1042f580e1f5f4f148317c94f1e1}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Get\-Color@{Get\-Color}}
+\index{Get\-Color@{Get\-Color}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Get\-Color (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{item, }
+\item[{long}]{subitem, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F $\ast$}]{color}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_aaccc1042f580e1f5f4f148317c94f1e1}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a9e9aa38efb059fb10224260274d354b4}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Get\-Data@{Get\-Data}}
+\index{Get\-Data@{Get\-Data}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Get\-Data (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{l\-Profile\-I\-D, }
+\item[{double $\ast$}]{px, }
+\item[{double $\ast$}]{py, }
+\item[{unsigned $\ast$}]{size}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a9e9aa38efb059fb10224260274d354b4}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a23debca1298fdad515a0a521ba73e55d}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Get\-Double@{Get\-Double}}
+\index{Get\-Double@{Get\-Double}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Get\-Double}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Get\-Double (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{item, }
+\item[{long}]{subitem, }
+\item[{double $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a23debca1298fdad515a0a521ba73e55d}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a5c8d66d83578bb794feff7d3318fe4a3}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Get\-Long@{Get\-Long}}
+\index{Get\-Long@{Get\-Long}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Get\-Long}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Get\-Long (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{item, }
+\item[{long}]{subitem, }
+\item[{int $\ast$}]{value}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a5c8d66d83578bb794feff7d3318fe4a3}
+\hypertarget{_x_y_plot_d_l_l_8cpp_ad5375f3f7a122ccf2bbba4bf8a64e5aa}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Get\-Profile\-List@{Get\-Profile\-List}}
+\index{Get\-Profile\-List@{Get\-Profile\-List}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Get\-Profile\-List}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Get\-Profile\-List (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long $\ast$}]{l\-Size, }
+\item[{long $\ast$}]{l\-Profile\-I\-Ds}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_ad5375f3f7a122ccf2bbba4bf8a64e5aa}
+\hypertarget{_x_y_plot_d_l_l_8cpp_ad66e96f59730de6a9a79dd95ef306f1d}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Get\-Selection@{Get\-Selection}}
+\index{Get\-Selection@{Get\-Selection}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Get\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Get\-Selection (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long $\ast$}]{I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_ad66e96f59730de6a9a79dd95ef306f1d}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a9f7a6714e09e867218073b0283732fc9}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Get\-String@{Get\-String}}
+\index{Get\-String@{Get\-String}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Get\-String}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Get\-String (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{item, }
+\item[{long}]{subitem, }
+\item[{int $\ast$}]{buf\-\_\-size, }
+\item[{char $\ast$}]{buf}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a9f7a6714e09e867218073b0283732fc9}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a81b7f2768075626f595a96cae2147960}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Initialize (
+\begin{DoxyParamCaption}
+\item[{H\-W\-N\-D}]{hwnd\-Main, }
+\item[{long $\ast$}]{l\-Plot\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a81b7f2768075626f595a96cae2147960}
+\hypertarget{_x_y_plot_d_l_l_8cpp_adaf02df353a201f8907a0ca5495aba12}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Is\-Enabled@{Is\-Enabled}}
+\index{Is\-Enabled@{Is\-Enabled}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Is\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Is\-Enabled (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{item, }
+\item[{long}]{subitem, }
+\item[{B\-O\-O\-L $\ast$}]{enabled}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_adaf02df353a201f8907a0ca5495aba12}
+\hypertarget{_x_y_plot_d_l_l_8cpp_ad061d4fa2e95c9b0096bf284857f0f2b}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Load\-Properties@{Load\-Properties}}
+\index{Load\-Properties@{Load\-Properties}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Load\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Load\-Properties (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{const char $\ast$}]{file\-Name}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_ad061d4fa2e95c9b0096bf284857f0f2b}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a706f1cabd2adf05de177fe6e687bbac8}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Reg\-Load\-Settings@{Reg\-Load\-Settings}}
+\index{Reg\-Load\-Settings@{Reg\-Load\-Settings}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Reg\-Load\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Reg\-Load\-Settings (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{const char $\ast$}]{key\-String, }
+\item[{const char $\ast$}]{psz\-Value}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a706f1cabd2adf05de177fe6e687bbac8}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a3137e2e7c681155064400ee1f1fc5f88}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Reg\-Restore\-Defaults@{Reg\-Restore\-Defaults}}
+\index{Reg\-Restore\-Defaults@{Reg\-Restore\-Defaults}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Reg\-Restore\-Defaults}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Reg\-Restore\-Defaults (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a3137e2e7c681155064400ee1f1fc5f88}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a6f8229c073f225d1249ad1ea93ac60e6}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Reg\-Save\-Settings@{Reg\-Save\-Settings}}
+\index{Reg\-Save\-Settings@{Reg\-Save\-Settings}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Reg\-Save\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Reg\-Save\-Settings (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{const char $\ast$}]{key\-String, }
+\item[{const char $\ast$}]{psz\-Value}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a6f8229c073f225d1249ad1ea93ac60e6}
+\hypertarget{_x_y_plot_d_l_l_8cpp_ab4e3099efae69f74f551b9b70439af2a}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Run\-Dialog@{Run\-Dialog}}
+\index{Run\-Dialog@{Run\-Dialog}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Run\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Run\-Dialog (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_ab4e3099efae69f74f551b9b70439af2a}
+\hypertarget{_x_y_plot_d_l_l_8cpp_aad105a85da70d7f994ce91cf49ee651a}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Save\-Properties@{Save\-Properties}}
+\index{Save\-Properties@{Save\-Properties}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Save\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Save\-Properties (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{const char $\ast$}]{file\-Name}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_aad105a85da70d7f994ce91cf49ee651a}
+\hypertarget{_x_y_plot_d_l_l_8cpp_aa1018225c802c6676822db9ea7b91827}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Select@{Select}}
+\index{Select@{Select}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Select}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Select (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{I\-D, }
+\item[{long}]{index}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_aa1018225c802c6676822db9ea7b91827}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a139cf75a1f80f90a626e77fdb57557d2}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Set\-Color@{Set\-Color}}
+\index{Set\-Color@{Set\-Color}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Set\-Color (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{item, }
+\item[{long}]{subitem, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{color}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a139cf75a1f80f90a626e77fdb57557d2}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a0cc6b8c571b6516a70896b8b1e3c7b4e}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Set\-Data@{Set\-Data}}
+\index{Set\-Data@{Set\-Data}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Set\-Data}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Set\-Data (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{l\-Profile\-I\-D, }
+\item[{const double $\ast$}]{px, }
+\item[{const double $\ast$}]{py, }
+\item[{unsigned}]{size}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a0cc6b8c571b6516a70896b8b1e3c7b4e}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a9c89ff00ea3bf265847cdfff06ff9e3b}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Set\-Double@{Set\-Double}}
+\index{Set\-Double@{Set\-Double}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Set\-Double}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Set\-Double (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{item, }
+\item[{long}]{subitem, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a9c89ff00ea3bf265847cdfff06ff9e3b}
+\hypertarget{_x_y_plot_d_l_l_8cpp_aa1b3a536866d6624c5fa3431bde8a2f3}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Set\-Flash\-Speed@{Set\-Flash\-Speed}}
+\index{Set\-Flash\-Speed@{Set\-Flash\-Speed}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Set\-Flash\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Set\-Flash\-Speed (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{int}]{speed}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_aa1b3a536866d6624c5fa3431bde8a2f3}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a4f219945e470f047464d1866a2b216ad}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Set\-Font@{Set\-Font}}
+\index{Set\-Font@{Set\-Font}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Set\-Font}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Set\-Font (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{item, }
+\item[{long}]{subitem, }
+\item[{const L\-O\-G\-F\-O\-N\-T $\ast$}]{plf}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a4f219945e470f047464d1866a2b216ad}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a6e30fb5b34e16eb56743a27c2cc3ccf2}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Set\-Level@{Set\-Level}}
+\index{Set\-Level@{Set\-Level}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Set\-Level}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Set\-Level (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{l\-Level\-I\-D, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a6e30fb5b34e16eb56743a27c2cc3ccf2}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a0aa4f45200ac0065713e3a166718124b}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Set\-Long@{Set\-Long}}
+\index{Set\-Long@{Set\-Long}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Set\-Long}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Set\-Long (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{item, }
+\item[{long}]{subitem, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a0aa4f45200ac0065713e3a166718124b}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a74db87febb8f14f2899086381bf1f061}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Set\-Redraw@{Set\-Redraw}}
+\index{Set\-Redraw@{Set\-Redraw}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Set\-Redraw}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Set\-Redraw (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{B\-O\-O\-L}]{b\-Redraw}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a74db87febb8f14f2899086381bf1f061}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a84df15f1b9a46adb6236ae5d0001297f}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Set\-Region@{Set\-Region}}
+\index{Set\-Region@{Set\-Region}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Set\-Region}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Set\-Region (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{l\-Region\-I\-D, }
+\item[{double}]{x1, }
+\item[{double}]{x2, }
+\item[{double}]{y1, }
+\item[{double}]{y2}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_a84df15f1b9a46adb6236ae5d0001297f}
+\hypertarget{_x_y_plot_d_l_l_8cpp_aa83764ab4fa9eda268d89809392f225d}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Set\-String@{Set\-String}}
+\index{Set\-String@{Set\-String}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Set\-String}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf C\-A\-L\-L\-C\-O\-N\-V} Set\-String (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Plot\-I\-D, }
+\item[{long}]{item, }
+\item[{long}]{subitem, }
+\item[{const char $\ast$}]{psz\-String}
+\end{DoxyParamCaption}
+)}}\label{_x_y_plot_d_l_l_8cpp_aa83764ab4fa9eda268d89809392f225d}
+
+
+\subsection{Переменные}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a6d6a3e60247dde90c44c75c8de1c03bd}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!g\-\_\-cs@{g\-\_\-cs}}
+\index{g\-\_\-cs@{g\-\_\-cs}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{g\-\_\-cs}]{\setlength{\rightskip}{0pt plus 5cm}C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N g\-\_\-cs}}\label{_x_y_plot_d_l_l_8cpp_a6d6a3e60247dde90c44c75c8de1c03bd}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a89b3982ecc4e318c3b3c9865ce1c8558}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!g\-\_\-hmod@{g\-\_\-hmod}}
+\index{g\-\_\-hmod@{g\-\_\-hmod}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{g\-\_\-hmod}]{\setlength{\rightskip}{0pt plus 5cm}H\-M\-O\-D\-U\-L\-E g\-\_\-hmod}}\label{_x_y_plot_d_l_l_8cpp_a89b3982ecc4e318c3b3c9865ce1c8558}
+\hypertarget{_x_y_plot_d_l_l_8cpp_aed942eb7c77016622c07ca186b83be77}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!g\-\_\-plotmap@{g\-\_\-plotmap}}
+\index{g\-\_\-plotmap@{g\-\_\-plotmap}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{g\-\_\-plotmap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plot\-Map} g\-\_\-plotmap}}\label{_x_y_plot_d_l_l_8cpp_aed942eb7c77016622c07ca186b83be77}
+\hypertarget{_x_y_plot_d_l_l_8cpp_a34c6acc43ed098b0709912b9eccf5844}{\index{X\-Y\-Plot\-D\-L\-L.\-cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}!Plot\-Map@{Plot\-Map}}
+\index{Plot\-Map@{Plot\-Map}!XYPlotDLL.cpp@{X\-Y\-Plot\-D\-L\-L.\-cpp}}
+\subsubsection[{Plot\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\-E\-G\-I\-N\-\_\-\-C\-H\-E\-C\-K\-O\-U\-T\-\_\-\-M\-A\-P} {\bf X\-Y\-Plot}$\ast$ Plot\-Map}}\label{_x_y_plot_d_l_l_8cpp_a34c6acc43ed098b0709912b9eccf5844}

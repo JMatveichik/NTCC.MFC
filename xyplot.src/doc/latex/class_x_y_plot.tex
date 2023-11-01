@@ -1,0 +1,866 @@
+\hypertarget{class_x_y_plot}{\section{Класс X\-Y\-Plot}
+\label{class_x_y_plot}\index{X\-Y\-Plot@{X\-Y\-Plot}}
+}
+
+
+Класс для работы с базой данных  
+
+
+
+
+{\ttfamily \#include $<$main.\-h$>$}
+
+
+
+Граф связей класса X\-Y\-Plot\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_x_y_plot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_x_y_plot_a2d0d8e66781c3f0a5ad5d9100596cda4}{X\-Y\-Plot} (H\-M\-O\-D\-U\-L\-E \hyperlink{class_x_y_plot_ab15afb29a18084d99ed04dc3a7485326}{hmod})
+\item 
+\hyperlink{class_x_y_plot_a9ce0f0c94d8a3e63fec0182eca1c188e}{$\sim$\-X\-Y\-Plot} ()
+\item 
+\hyperlink{class_title}{Title} $\ast$ \hyperlink{class_x_y_plot_a03e53585fb5afcb93247dccd1b19b56b}{Get\-Title} ()
+\item 
+\hyperlink{class_border}{Border} $\ast$ \hyperlink{class_x_y_plot_ade2176696dd10597cd6f2212c18eceb6}{Get\-Border} ()
+\item 
+\hyperlink{class_legend}{Legend} $\ast$ \hyperlink{class_x_y_plot_ae000f33613c3b3a35f6321a9c896b977}{Get\-Legend} ()
+\item 
+\hyperlink{class_selection}{Selection} $\ast$ \hyperlink{class_x_y_plot_a7ff273d7ad3b6f42a91210b80b565b3a}{Get\-Selection} ()
+\item 
+\hyperlink{class_back_ground}{Back\-Ground} $\ast$ \hyperlink{class_x_y_plot_a16f6b1b55d13ccd2b0ab131a34c1af96}{Get\-Plot\-B\-G} ()
+\item 
+\hyperlink{class_back_ground}{Back\-Ground} $\ast$ \hyperlink{class_x_y_plot_a2713f1deb1b4307c3a8b879a9fd8af17}{Get\-Client\-B\-G} ()
+\item 
+long \hyperlink{class_x_y_plot_a1766811e5ee992a9de2047d82cc1e64a}{Create} (H\-W\-N\-D \hyperlink{class_x_y_plot_a8421da7d70fcc3b4a6844cf9cdbeeff6}{hwnd\-Parent})
+\item 
+void \hyperlink{class_x_y_plot_a3003d92dc845da459b6a714b747c51ae}{Destroy} ()
+\item 
+H\-W\-N\-D \hyperlink{class_x_y_plot_abdbb5fbe242d1be3ae522cc8f1b77a8a}{Get\-Parent} ()
+\item 
+\hyperlink{class_line_data}{Line\-Data} \& \hyperlink{class_x_y_plot_ae0ed64b7cb3068e727054ca432f528cb}{Get\-Border\-Line} ()
+\item 
+void \hyperlink{class_x_y_plot_a94d0b78106b7377d9b93c3e95e541db2}{Set\-Border\-Line} (\hyperlink{class_line_data}{Line\-Data} \&line)
+\item 
+R\-E\-C\-T \& \hyperlink{class_x_y_plot_a43621e70ff7f53dfb56c36886ac170b0}{Total\-Rect} ()
+\item 
+R\-E\-C\-T \& \hyperlink{class_x_y_plot_ad22253ae6ea84e6a6c6671f3226831d1}{Client\-Edge} ()
+\item 
+long \hyperlink{class_x_y_plot_ab06e0f991606941364a009a3770bfbb4}{Set\-Axis\-Range} (long axis, double xmin, double xmax)
+\item 
+long \hyperlink{class_x_y_plot_a310603b5188a53ced932739e42fe8326}{Get\-Axis\-Range} (long axis, double \&dmin, double \&dmax) const 
+\item 
+void \hyperlink{class_x_y_plot_a35766a90bd83cb09da155c4298f0bde0}{Get\-Client\-Bk\-Colors} (C\-O\-L\-O\-R\-R\-E\-F \&clr1, C\-O\-L\-O\-R\-R\-E\-F \&clr2) const 
+\item 
+void \hyperlink{class_x_y_plot_a913bed0cc365f11dd2b9a3a3eed83e3b}{Get\-Plot\-Bk\-Colors} (C\-O\-L\-O\-R\-R\-E\-F \&clr1, C\-O\-L\-O\-R\-R\-E\-F \&clr2) const 
+\item 
+void \hyperlink{class_x_y_plot_ae7eb57cbc3b2364e6dc24318f01e06ed}{Set\-Client\-Bk\-Colors} (C\-O\-L\-O\-R\-R\-E\-F clr1, C\-O\-L\-O\-R\-R\-E\-F clr2)
+\item 
+void \hyperlink{class_x_y_plot_aa993a27506127bba579dcc04ebc2b806}{Set\-Plot\-Bk\-Colors} (C\-O\-L\-O\-R\-R\-E\-F clr1, C\-O\-L\-O\-R\-R\-E\-F clr2)
+\item 
+void \hyperlink{class_x_y_plot_a4f346829b2127ef73fb635098b82254d}{Save\-Properties} (const char $\ast$lpsz\-File\-Name)
+\item 
+void \hyperlink{class_x_y_plot_a4ac4ace528dd0b35cf464e4dd81d86e4}{Load\-Properties} (const char $\ast$lpsz\-File\-Name)
+\item 
+void \hyperlink{class_x_y_plot_ac1bd598d006342d3c13cc6967f909c6b}{Reg\-Set\-Defaults} ()
+\item 
+B\-O\-O\-L \hyperlink{class_x_y_plot_a87638a8dc1049113eaa0662d4faa5656}{Reg\-Save\-Settings} (const char $\ast$key\-String, const char $\ast$psz\-Value)
+\item 
+B\-O\-O\-L \hyperlink{class_x_y_plot_a3212ec1373f6fb8d8cf0a1a75cae043a}{Reg\-Load\-Settings} (const char $\ast$key\-String, const char $\ast$psz\-Value)
+\item 
+void \hyperlink{class_x_y_plot_a946d7193c76729f7972cfd434c6df5ed}{Set\-Redraw} (B\-O\-O\-L \hyperlink{class_x_y_plot_ad73c4a652c950f36a9544c6682a0c35e}{redraw})
+\item 
+long \hyperlink{class_x_y_plot_aded18e10ec4f201e8cc172540fd5ff8e}{Add\-Profile} (const char $\ast$name, C\-O\-L\-O\-R\-R\-E\-F color, int width, int linetype, const char $\ast$line\-\_\-template, B\-O\-O\-L b\-Visible, B\-O\-O\-L b\-Marked, B\-O\-O\-L bottom\-\_\-axis, B\-O\-O\-L left\-\_\-axis, long $\ast$\hyperlink{namespacexyplot_a37f2e7672aa877ee74f4ab91e6a97a88}{l\-Profile\-I\-D})
+\item 
+long \hyperlink{class_x_y_plot_a82c143a9a555f8f5ce21ae053761d435}{Set\-Data} (\hyperlink{profile_8h_ab564cd67657a739c9e5a6caa0ce0dafa}{P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y} key, const double $\ast$\hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{px}, const double $\ast$\hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{py}, int count)
+\item 
+long \hyperlink{class_x_y_plot_af9f511708fb6fe4240545fa8bee7219e}{Append\-Data} (\hyperlink{profile_8h_ab564cd67657a739c9e5a6caa0ce0dafa}{P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y} key, const double $\ast$\hyperlink{namespacexyplot_aa88522a2f4371e38891cac7b5bc3e4aa}{px}, const double $\ast$\hyperlink{namespacexyplot_adc56454d6bac520db8907c6a206d3040}{py}, int count)
+\item 
+long \hyperlink{class_x_y_plot_a754ac9a97d3e66f69a83e6a971e8242e}{Append\-Data} (\hyperlink{profile_8h_ab564cd67657a739c9e5a6caa0ce0dafa}{P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y} key, double fx, double fy)
+\item 
+long \hyperlink{class_x_y_plot_a24a44164201dfc5184f349806430498c}{Delete\-Profile} (\hyperlink{profile_8h_ab564cd67657a739c9e5a6caa0ce0dafa}{P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y} key)
+\item 
+\hyperlink{class_profile}{Profile} $\ast$ \hyperlink{class_x_y_plot_a6bb23b5bc86447514974062ad7837397}{Find\-Profile} (\hyperlink{profile_8h_ab564cd67657a739c9e5a6caa0ce0dafa}{P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y} key)
+\item 
+\hyperlink{profile_8h_ab564cd67657a739c9e5a6caa0ce0dafa}{P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y} \hyperlink{class_x_y_plot_a88b66247e3eb82862bee86382a08c4d4}{Find\-Profile} (const \hyperlink{class_profile}{Profile} $\ast$profile) const 
+\item 
+const \hyperlink{profile_8h_a19285e49c540d09517740fab4252f854}{Profile\-Map} \& \hyperlink{class_x_y_plot_a863a2c3f0cee88348d4df1cb5a703073}{Get\-Profile\-Map} () const 
+\item 
+long \hyperlink{class_x_y_plot_af7405f7798a2c5b25a0265e3603de426}{Add\-Level\-Line} (std\-::string name, C\-O\-L\-O\-R\-R\-E\-F color, long $\ast$l\-Level\-I\-D, int width=1, L\-O\-N\-G axis=\hyperlink{namespacexyplot_aab624afb50724c293bffe01fff26c9c2a5cab3df16a4e44f280dec6a0108dc09d}{xyplot\-::\-P\-I\-\_\-\-A\-X\-I\-S\-\_\-\-L\-E\-F\-T}, double value=0.\-0)
+\item 
+long \hyperlink{class_x_y_plot_acd6083749072d99ac5f9f2fdd6a7db15}{Delete\-Level\-Line} (long key)
+\item 
+\hyperlink{class_level_line}{Level\-Line} $\ast$ \hyperlink{class_x_y_plot_ad32ba41db0be82793ed40bf1841a1c58}{Find\-Level\-Line} (long key)
+\item 
+const \hyperlink{_level_line_8h_a3cdadb601712f2009c6ebd422232d17e}{Levels\-Map} \& \hyperlink{class_x_y_plot_a42a6bca54acc89a25eeae83e97fdcb28}{Get\-Levels\-Map} () const 
+\item 
+long \hyperlink{class_x_y_plot_af49b0904ab14c28aff05b5d25d89a084}{Set\-Level\-Value} (long key, double value)
+\item 
+long \hyperlink{class_x_y_plot_a541360f615950e2185796e943ed18c39}{Add\-Region} (long x\-Axis\-I\-D, long y\-Axis\-I\-D, long $\ast$l\-Region\-I\-D, double x1, double x2, double y1, double y2, const char $\ast$psz\-Name)
+\item 
+long \hyperlink{class_x_y_plot_a41ea6c678936e9a840e50666d1bce349}{Delete\-Region} (long l\-Region\-I\-D)
+\item 
+\hyperlink{class_plot_region}{Plot\-Region} $\ast$ \hyperlink{class_x_y_plot_a9d51a4bf4fddc2855271660238df3135}{Find\-Region} (long l\-Region\-I\-D)
+\item 
+long \hyperlink{class_x_y_plot_abcf82bb19c5bc4ab6f87b9406d7e4855}{Set\-Region\-Limits} (long l\-Region\-I\-D, double x1, double x2, double y1, double y2)
+\item 
+long \hyperlink{class_x_y_plot_ad57e75d825c882944d5765835dd07e23}{Set\-Region\-Title} (long l\-Region\-I\-D, const char $\ast$psz\-Name)
+\item 
+const \hyperlink{_regions_8h_a75ca559f3ba2ddf617b9c211afcdd941}{Regions\-Map} \& \hyperlink{class_x_y_plot_aa8ed3c9f80774993b1cdc80170c0963f}{Get\-Regions\-Map} () const 
+\item 
+void \hyperlink{class_x_y_plot_a7b926c9c2e2b37546082ab9959af6107}{Update} (R\-E\-C\-T $\ast$p\-Update\-Rect=N\-U\-L\-L)
+\item 
+void \hyperlink{class_x_y_plot_ac7aa886bd9d07f0905e518f647cdce1a}{Push\-Clipboard} (H\-D\-C hdc\-Clip)
+\item 
+void \hyperlink{class_x_y_plot_acff15932fbb85dd496ff314f67432bb3}{Draw\-To\-Bitmap} (H\-B\-I\-T\-M\-A\-P h\-Bmp, bool b\-Draw\-Window\-B\-G, bool b\-Draw\-Client\-B\-G)
+\item 
+\hyperlink{class_axis}{Axis} $\ast$ \hyperlink{class_x_y_plot_a68cf37a9f84f72c24e99c734ef3bffab}{Get\-Axis} (long axis\-Pos)
+\end{DoxyCompactItemize}
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+H\-M\-O\-D\-U\-L\-E \hyperlink{class_x_y_plot_ab15afb29a18084d99ed04dc3a7485326}{hmod}
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_x_y_plot_afbd5f2e97a28bb92f48ddc0093ffad31}{Hook\-Chain} ()
+\item 
+void \hyperlink{class_x_y_plot_ad2bbc6a467d11665ce59dc58ebaaadf8}{Unhook\-Chain} ()
+\item 
+\hyperlink{selection_8h_af0233194949269aa7eea2965cb34f30e}{P\-L\-O\-T\-H\-I\-T\-T\-E\-S\-T\-R\-E\-S\-U\-L\-T} \hyperlink{class_x_y_plot_af918a93570a36062b65ae0c9b4418a49}{Hit\-Test} (const P\-O\-I\-N\-T ppt\-Hit, L\-O\-N\-G flags)
+\item 
+void \hyperlink{class_x_y_plot_a7c4b733fea11143df033381c3ef1d75f}{Normal\-Rect} (P\-O\-I\-N\-T p1, P\-O\-I\-N\-T p2)
+\item 
+void \hyperlink{class_x_y_plot_ab76d33bf085e2d9fb3ca4d3e18839af3}{Draw\-Selecting\-Rect} (H\-D\-C hdc)
+\item 
+void \hyperlink{class_x_y_plot_aa96929d34d5226d1a313f5ef72166f8d}{Deflate\-Visible} (R\-E\-C\-T \&visible)
+\item 
+void \hyperlink{class_x_y_plot_a5f076922f20334df30e95e5df5242e6c}{Pre\-Draw} (H\-D\-C hdc, L\-P\-R\-E\-C\-T lp\-Rect=N\-U\-L\-L)
+\item 
+void \hyperlink{class_x_y_plot_afb0a757c5aaebd82ab5f69e3c7b648d7}{Trace\-Message} (H\-D\-C hdc)
+\item 
+void \hyperlink{class_x_y_plot_ac05cdbc99d5f25f01dd68a15ddea62f3}{On\-Draw} (H\-D\-C hdc, L\-P\-R\-E\-C\-T lp\-Rect=N\-U\-L\-L, bool b\-Draw\-Window\-B\-G=true, bool b\-Draw\-Client\-B\-G=true)
+\item 
+void \hyperlink{class_x_y_plot_a83e178fc20acf51c5200855884f0ff0a}{Visual\-Exception} (H\-D\-C hdc, std\-::string str\-Message, std\-::string str\-Title)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static L\-R\-E\-S\-U\-L\-T \-\_\-\-\_\-stdcall \hyperlink{class_x_y_plot_a674eddf4ad2ceda165e2a769e3a0f8a9}{fn\-X\-Y\-Plot\-Handler\-Proc} (H\-W\-N\-D hwnd, U\-I\-N\-T msg, W\-P\-A\-R\-A\-M w\-Param, L\-P\-A\-R\-A\-M l\-Param)
+\item 
+static void \hyperlink{class_x_y_plot_a44a6aa0993b5091fdfc207a5ef3e5201}{Write\-Properties} (\hyperlink{class_x_y_plot}{X\-Y\-Plot} $\ast$\hyperlink{class_x_y_plot}{X\-Y\-Plot}, const char $\ast$filename, std\-::pair$<$ void $\ast$, long $>$ \&)
+\item 
+static void \hyperlink{class_x_y_plot_aa6f841e3aa5771c6d431ebab4719c2f9}{Read\-Properties} (\hyperlink{class_x_y_plot}{X\-Y\-Plot} $\ast$\hyperlink{class_x_y_plot}{X\-Y\-Plot}, const char $\ast$file\-Name, std\-::pair$<$ void $\ast$, long $>$ in\-Pair)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_axis}{Axis} $\ast$ \hyperlink{class_x_y_plot_a2ab7607dd67094563d56ace4fd2048f5}{x\-Axis\-Bottom}
+\item 
+\hyperlink{class_axis}{Axis} $\ast$ \hyperlink{class_x_y_plot_ac1ea69a1108f0f7a257bad3f8699f23d}{x\-Axis\-Top}
+\item 
+\hyperlink{class_axis}{Axis} $\ast$ \hyperlink{class_x_y_plot_a84d59c9f1ba75f0e02e70ad283c447d6}{y\-Axis\-Left}
+\item 
+\hyperlink{class_axis}{Axis} $\ast$ \hyperlink{class_x_y_plot_ac2273b77f7ff75d44b84da348ccbc9db}{y\-Axis\-Right}
+\item 
+B\-O\-O\-L \hyperlink{class_x_y_plot_ab839ff226353ebe8be5836f362996769}{recalc\-Axis\-Size}
+\item 
+\hyperlink{class_border}{Border} \hyperlink{class_x_y_plot_a0d15dd8faf7aac3b2f0f02e6a45ebbdf}{border}
+\item 
+\hyperlink{class_legend}{Legend} \hyperlink{class_x_y_plot_ab86c3fe630fa3957ac53d42a5b4006fd}{legend}
+\item 
+\hyperlink{class_title}{Title} \hyperlink{class_x_y_plot_ae9f6dcfa882433683585a55edbc2d6fb}{title}
+\item 
+\hyperlink{class_selection}{Selection} \hyperlink{class_x_y_plot_a35a92ce3e3edab77299ddc6814cae835}{selection}
+\item 
+\hyperlink{class_back_ground}{Back\-Ground} \hyperlink{class_x_y_plot_a66e7aeb6818a5fcf8fa2b51c95462a96}{bk\-Total}
+\item 
+\hyperlink{class_back_ground}{Back\-Ground} \hyperlink{class_x_y_plot_a0324b90dc9b73455e1346e6dde3b2db0}{bk\-Client}
+\item 
+\hyperlink{profile_8h_a19285e49c540d09517740fab4252f854}{Profile\-Map} \hyperlink{class_x_y_plot_aa8e990063268b42ae21efb5596183235}{profile\-Map}
+\item 
+\hyperlink{_level_line_8h_a3cdadb601712f2009c6ebd422232d17e}{Levels\-Map} \hyperlink{class_x_y_plot_aa5ef2fe78df60b9b25f37c078d77c797}{levels\-Map}
+\item 
+\hyperlink{_regions_8h_a75ca559f3ba2ddf617b9c211afcdd941}{Regions\-Map} \hyperlink{class_x_y_plot_acd2662c65214f871c75b14fe796052b5}{regions\-Map}
+\item 
+W\-N\-D\-P\-R\-O\-C \hyperlink{class_x_y_plot_a2a0a2644e069cc2fb2df6c6463f804aa}{lpfn\-Original\-Wnd\-Proc}
+\item 
+H\-W\-N\-D \hyperlink{class_x_y_plot_a8421da7d70fcc3b4a6844cf9cdbeeff6}{hwnd\-Parent}
+\item 
+R\-E\-C\-T \hyperlink{class_x_y_plot_a1dcef0bb2b4cd2dc20bedbf4d1304e80}{total\-Rect}
+\item 
+R\-E\-C\-T \hyperlink{class_x_y_plot_aa0eac633d6785d570c35905d004e371f}{client\-Edge}
+\item 
+C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N \hyperlink{class_x_y_plot_aba2d84ca838032f1076d19d5c5570ad2}{main\-Critical}
+\item 
+C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N \hyperlink{class_x_y_plot_a8fd6c272f57a472a9c21a6d19ed21f7f}{tracer\-Critical}
+\item 
+C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N \hyperlink{class_x_y_plot_ae2f69590c458b38c6f022fd10ca93f35}{streamer\-Critical}
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_x_y_plot_a42d59fb72c1aeadb3111f70f41a7557f}{bk\-Color}
+\item 
+bool \hyperlink{class_x_y_plot_a0ab2cd0d431b276da5c4f89a0804d4b1}{enable\-Quick\-Scale\-Mode}
+\item 
+bool \hyperlink{class_x_y_plot_a9bd2edaa45a2559c1b95e7416d4c88b8}{selection\-Start}
+\item 
+P\-O\-I\-N\-T \hyperlink{class_x_y_plot_a5b1fe941b4ec59db138b4b07dca1eb9f}{from\-Pt}
+\item 
+P\-O\-I\-N\-T \hyperlink{class_x_y_plot_a8d036a0039ee0ef215f0861a90203898}{to\-Pt}
+\item 
+R\-E\-C\-T \hyperlink{class_x_y_plot_a56f8019682bc1459751683077f758071}{sel}
+\item 
+double \hyperlink{class_x_y_plot_a57c26b34917c75f6af03efa78a408482}{m\-\_\-d\-Growth\-Factor\-X}
+\item 
+double \hyperlink{class_x_y_plot_afe964a24164cef9e95856d91e0dac8e8}{m\-\_\-d\-Growth\-Factor\-Y}
+\item 
+int \hyperlink{class_x_y_plot_a8dbfcf8d7e52d2180682f3accf711047}{append\-Mode}
+\item 
+B\-O\-O\-L \hyperlink{class_x_y_plot_ad73c4a652c950f36a9544c6682a0c35e}{redraw}
+\item 
+double \hyperlink{class_x_y_plot_a13ec1f572335e06c52ebe3f0d9e2e49e}{xpixel}
+\item 
+double \hyperlink{class_x_y_plot_a51fc0a1063b00947128c0b899f4bb9be}{ypixel}
+\item 
+B\-O\-O\-L \hyperlink{class_x_y_plot_ae56b7b0eb794ffd0ba288822bcd440f3}{disabled}
+\item 
+H\-B\-I\-T\-M\-A\-P \hyperlink{class_x_y_plot_a16e9fda87443ee3a531c739a12f8cdab}{bitmap}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс для работы с базой данных 
+
+Осуществляет подключение к базе при создании и закрывает соединение при уничтожении 
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_x_y_plot_a2d0d8e66781c3f0a5ad5d9100596cda4}{\index{X\-Y\-Plot@{X\-Y\-Plot}!X\-Y\-Plot@{X\-Y\-Plot}}
+\index{X\-Y\-Plot@{X\-Y\-Plot}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{X\-Y\-Plot}]{\setlength{\rightskip}{0pt plus 5cm}X\-Y\-Plot\-::\-X\-Y\-Plot (
+\begin{DoxyParamCaption}
+\item[{H\-M\-O\-D\-U\-L\-E}]{hmod}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a2d0d8e66781c3f0a5ad5d9100596cda4}
+Стили осей \hypertarget{class_x_y_plot_a9ce0f0c94d8a3e63fec0182eca1c188e}{\index{X\-Y\-Plot@{X\-Y\-Plot}!$\sim$\-X\-Y\-Plot@{$\sim$\-X\-Y\-Plot}}
+\index{$\sim$\-X\-Y\-Plot@{$\sim$\-X\-Y\-Plot}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{$\sim$\-X\-Y\-Plot}]{\setlength{\rightskip}{0pt plus 5cm}X\-Y\-Plot\-::$\sim$\-X\-Y\-Plot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a9ce0f0c94d8a3e63fec0182eca1c188e}
+
+
+\subsection{Методы}
+\hypertarget{class_x_y_plot_af7405f7798a2c5b25a0265e3603de426}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Add\-Level\-Line@{Add\-Level\-Line}}
+\index{Add\-Level\-Line@{Add\-Level\-Line}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Add\-Level\-Line}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Add\-Level\-Line (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{color, }
+\item[{long $\ast$}]{l\-Level\-I\-D, }
+\item[{int}]{width = {\ttfamily 1}, }
+\item[{L\-O\-N\-G}]{axis = {\ttfamily {\bf xyplot\-::\-P\-I\-\_\-\-A\-X\-I\-S\-\_\-\-L\-E\-F\-T}}, }
+\item[{double}]{value = {\ttfamily 0.0}}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_af7405f7798a2c5b25a0265e3603de426}
+\hypertarget{class_x_y_plot_aded18e10ec4f201e8cc172540fd5ff8e}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Add\-Profile@{Add\-Profile}}
+\index{Add\-Profile@{Add\-Profile}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Add\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Add\-Profile (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{color, }
+\item[{int}]{width, }
+\item[{int}]{linetype, }
+\item[{const char $\ast$}]{line\-\_\-template, }
+\item[{B\-O\-O\-L}]{b\-Visible, }
+\item[{B\-O\-O\-L}]{b\-Marked, }
+\item[{B\-O\-O\-L}]{bottom\-\_\-axis, }
+\item[{B\-O\-O\-L}]{left\-\_\-axis, }
+\item[{long $\ast$}]{l\-Profile\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_aded18e10ec4f201e8cc172540fd5ff8e}
+\hypertarget{class_x_y_plot_a541360f615950e2185796e943ed18c39}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Add\-Region@{Add\-Region}}
+\index{Add\-Region@{Add\-Region}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Add\-Region}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Add\-Region (
+\begin{DoxyParamCaption}
+\item[{long}]{x\-Axis\-I\-D, }
+\item[{long}]{y\-Axis\-I\-D, }
+\item[{long $\ast$}]{l\-Region\-I\-D, }
+\item[{double}]{x1, }
+\item[{double}]{x2, }
+\item[{double}]{y1, }
+\item[{double}]{y2, }
+\item[{const char $\ast$}]{psz\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a541360f615950e2185796e943ed18c39}
+\hypertarget{class_x_y_plot_af9f511708fb6fe4240545fa8bee7219e}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Append\-Data@{Append\-Data}}
+\index{Append\-Data@{Append\-Data}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Append\-Data}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Append\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y}}]{key, }
+\item[{const double $\ast$}]{px, }
+\item[{const double $\ast$}]{py, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_af9f511708fb6fe4240545fa8bee7219e}
+\hypertarget{class_x_y_plot_a754ac9a97d3e66f69a83e6a971e8242e}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Append\-Data@{Append\-Data}}
+\index{Append\-Data@{Append\-Data}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Append\-Data}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Append\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y}}]{key, }
+\item[{double}]{fx, }
+\item[{double}]{fy}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a754ac9a97d3e66f69a83e6a971e8242e}
+\hypertarget{class_x_y_plot_ad22253ae6ea84e6a6c6671f3226831d1}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Client\-Edge@{Client\-Edge}}
+\index{Client\-Edge@{Client\-Edge}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Client\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T\& X\-Y\-Plot\-::\-Client\-Edge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_ad22253ae6ea84e6a6c6671f3226831d1}
+\hypertarget{class_x_y_plot_a1766811e5ee992a9de2047d82cc1e64a}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Create@{Create}}
+\index{Create@{Create}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Create (
+\begin{DoxyParamCaption}
+\item[{H\-W\-N\-D}]{hwnd\-Parent}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a1766811e5ee992a9de2047d82cc1e64a}
+\hypertarget{class_x_y_plot_aa96929d34d5226d1a313f5ef72166f8d}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Deflate\-Visible@{Deflate\-Visible}}
+\index{Deflate\-Visible@{Deflate\-Visible}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Deflate\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Deflate\-Visible (
+\begin{DoxyParamCaption}
+\item[{R\-E\-C\-T \&}]{visible}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_aa96929d34d5226d1a313f5ef72166f8d}
+\hypertarget{class_x_y_plot_acd6083749072d99ac5f9f2fdd6a7db15}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Delete\-Level\-Line@{Delete\-Level\-Line}}
+\index{Delete\-Level\-Line@{Delete\-Level\-Line}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Delete\-Level\-Line}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Delete\-Level\-Line (
+\begin{DoxyParamCaption}
+\item[{long}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_acd6083749072d99ac5f9f2fdd6a7db15}
+\hypertarget{class_x_y_plot_a24a44164201dfc5184f349806430498c}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Delete\-Profile@{Delete\-Profile}}
+\index{Delete\-Profile@{Delete\-Profile}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Delete\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Delete\-Profile (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y}}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a24a44164201dfc5184f349806430498c}
+\hypertarget{class_x_y_plot_a41ea6c678936e9a840e50666d1bce349}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Delete\-Region@{Delete\-Region}}
+\index{Delete\-Region@{Delete\-Region}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Delete\-Region}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Delete\-Region (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Region\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a41ea6c678936e9a840e50666d1bce349}
+\hypertarget{class_x_y_plot_a3003d92dc845da459b6a714b747c51ae}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Destroy}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a3003d92dc845da459b6a714b747c51ae}
+\hypertarget{class_x_y_plot_ab76d33bf085e2d9fb3ca4d3e18839af3}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Draw\-Selecting\-Rect@{Draw\-Selecting\-Rect}}
+\index{Draw\-Selecting\-Rect@{Draw\-Selecting\-Rect}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Draw\-Selecting\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Draw\-Selecting\-Rect (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_ab76d33bf085e2d9fb3ca4d3e18839af3}
+\hypertarget{class_x_y_plot_acff15932fbb85dd496ff314f67432bb3}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Draw\-To\-Bitmap@{Draw\-To\-Bitmap}}
+\index{Draw\-To\-Bitmap@{Draw\-To\-Bitmap}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Draw\-To\-Bitmap}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Draw\-To\-Bitmap (
+\begin{DoxyParamCaption}
+\item[{H\-B\-I\-T\-M\-A\-P}]{h\-Bmp, }
+\item[{bool}]{b\-Draw\-Window\-B\-G, }
+\item[{bool}]{b\-Draw\-Client\-B\-G}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_acff15932fbb85dd496ff314f67432bb3}
+\hypertarget{class_x_y_plot_ad32ba41db0be82793ed40bf1841a1c58}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Find\-Level\-Line@{Find\-Level\-Line}}
+\index{Find\-Level\-Line@{Find\-Level\-Line}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Find\-Level\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Level\-Line} $\ast$ X\-Y\-Plot\-::\-Find\-Level\-Line (
+\begin{DoxyParamCaption}
+\item[{long}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_ad32ba41db0be82793ed40bf1841a1c58}
+\hypertarget{class_x_y_plot_a6bb23b5bc86447514974062ad7837397}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Find\-Profile@{Find\-Profile}}
+\index{Find\-Profile@{Find\-Profile}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Find\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Profile} $\ast$ X\-Y\-Plot\-::\-Find\-Profile (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y}}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a6bb23b5bc86447514974062ad7837397}
+\hypertarget{class_x_y_plot_a88b66247e3eb82862bee86382a08c4d4}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Find\-Profile@{Find\-Profile}}
+\index{Find\-Profile@{Find\-Profile}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Find\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y} X\-Y\-Plot\-::\-Find\-Profile (
+\begin{DoxyParamCaption}
+\item[{const {\bf Profile} $\ast$}]{profile}
+\end{DoxyParamCaption}
+) const}}\label{class_x_y_plot_a88b66247e3eb82862bee86382a08c4d4}
+\hypertarget{class_x_y_plot_a9d51a4bf4fddc2855271660238df3135}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Find\-Region@{Find\-Region}}
+\index{Find\-Region@{Find\-Region}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Find\-Region}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plot\-Region} $\ast$ X\-Y\-Plot\-::\-Find\-Region (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Region\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a9d51a4bf4fddc2855271660238df3135}
+\hypertarget{class_x_y_plot_a674eddf4ad2ceda165e2a769e3a0f8a9}{\index{X\-Y\-Plot@{X\-Y\-Plot}!fn\-X\-Y\-Plot\-Handler\-Proc@{fn\-X\-Y\-Plot\-Handler\-Proc}}
+\index{fn\-X\-Y\-Plot\-Handler\-Proc@{fn\-X\-Y\-Plot\-Handler\-Proc}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{fn\-X\-Y\-Plot\-Handler\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}L\-R\-E\-S\-U\-L\-T C\-A\-L\-L\-B\-A\-C\-K X\-Y\-Plot\-::fn\-X\-Y\-Plot\-Handler\-Proc (
+\begin{DoxyParamCaption}
+\item[{H\-W\-N\-D}]{hwnd, }
+\item[{U\-I\-N\-T}]{msg, }
+\item[{W\-P\-A\-R\-A\-M}]{w\-Param, }
+\item[{L\-P\-A\-R\-A\-M}]{l\-Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_x_y_plot_a674eddf4ad2ceda165e2a769e3a0f8a9}
+\hypertarget{class_x_y_plot_a68cf37a9f84f72c24e99c734ef3bffab}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Axis@{Get\-Axis}}
+\index{Get\-Axis@{Get\-Axis}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis} $\ast$ X\-Y\-Plot\-::\-Get\-Axis (
+\begin{DoxyParamCaption}
+\item[{long}]{axis\-Pos}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a68cf37a9f84f72c24e99c734ef3bffab}
+\hypertarget{class_x_y_plot_a310603b5188a53ced932739e42fe8326}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Axis\-Range@{Get\-Axis\-Range}}
+\index{Get\-Axis\-Range@{Get\-Axis\-Range}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Axis\-Range}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Get\-Axis\-Range (
+\begin{DoxyParamCaption}
+\item[{long}]{axis, }
+\item[{double \&}]{dmin, }
+\item[{double \&}]{dmax}
+\end{DoxyParamCaption}
+) const}}\label{class_x_y_plot_a310603b5188a53ced932739e42fe8326}
+\hypertarget{class_x_y_plot_ade2176696dd10597cd6f2212c18eceb6}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Border@{Get\-Border}}
+\index{Get\-Border@{Get\-Border}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Border}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Border}$\ast$ X\-Y\-Plot\-::\-Get\-Border (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_ade2176696dd10597cd6f2212c18eceb6}
+\hypertarget{class_x_y_plot_ae0ed64b7cb3068e727054ca432f528cb}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Border\-Line@{Get\-Border\-Line}}
+\index{Get\-Border\-Line@{Get\-Border\-Line}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Border\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data}\& X\-Y\-Plot\-::\-Get\-Border\-Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_ae0ed64b7cb3068e727054ca432f528cb}
+\hypertarget{class_x_y_plot_a2713f1deb1b4307c3a8b879a9fd8af17}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Client\-B\-G@{Get\-Client\-B\-G}}
+\index{Get\-Client\-B\-G@{Get\-Client\-B\-G}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Client\-B\-G}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Back\-Ground}$\ast$ X\-Y\-Plot\-::\-Get\-Client\-B\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_a2713f1deb1b4307c3a8b879a9fd8af17}
+\hypertarget{class_x_y_plot_a35766a90bd83cb09da155c4298f0bde0}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Client\-Bk\-Colors@{Get\-Client\-Bk\-Colors}}
+\index{Get\-Client\-Bk\-Colors@{Get\-Client\-Bk\-Colors}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Client\-Bk\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Get\-Client\-Bk\-Colors (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F \&}]{clr1, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F \&}]{clr2}
+\end{DoxyParamCaption}
+) const}}\label{class_x_y_plot_a35766a90bd83cb09da155c4298f0bde0}
+\hypertarget{class_x_y_plot_ae000f33613c3b3a35f6321a9c896b977}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Legend@{Get\-Legend}}
+\index{Get\-Legend@{Get\-Legend}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Legend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Legend}$\ast$ X\-Y\-Plot\-::\-Get\-Legend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_ae000f33613c3b3a35f6321a9c896b977}
+\hypertarget{class_x_y_plot_a42a6bca54acc89a25eeae83e97fdcb28}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Levels\-Map@{Get\-Levels\-Map}}
+\index{Get\-Levels\-Map@{Get\-Levels\-Map}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Levels\-Map}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Levels\-Map}\& X\-Y\-Plot\-::\-Get\-Levels\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_a42a6bca54acc89a25eeae83e97fdcb28}
+\hypertarget{class_x_y_plot_abdbb5fbe242d1be3ae522cc8f1b77a8a}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Parent@{Get\-Parent}}
+\index{Get\-Parent@{Get\-Parent}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}H\-W\-N\-D X\-Y\-Plot\-::\-Get\-Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_abdbb5fbe242d1be3ae522cc8f1b77a8a}
+\hypertarget{class_x_y_plot_a16f6b1b55d13ccd2b0ab131a34c1af96}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Plot\-B\-G@{Get\-Plot\-B\-G}}
+\index{Get\-Plot\-B\-G@{Get\-Plot\-B\-G}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Plot\-B\-G}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Back\-Ground}$\ast$ X\-Y\-Plot\-::\-Get\-Plot\-B\-G (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_a16f6b1b55d13ccd2b0ab131a34c1af96}
+\hypertarget{class_x_y_plot_a913bed0cc365f11dd2b9a3a3eed83e3b}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Plot\-Bk\-Colors@{Get\-Plot\-Bk\-Colors}}
+\index{Get\-Plot\-Bk\-Colors@{Get\-Plot\-Bk\-Colors}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Plot\-Bk\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Get\-Plot\-Bk\-Colors (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F \&}]{clr1, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F \&}]{clr2}
+\end{DoxyParamCaption}
+) const}}\label{class_x_y_plot_a913bed0cc365f11dd2b9a3a3eed83e3b}
+\hypertarget{class_x_y_plot_a863a2c3f0cee88348d4df1cb5a703073}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Profile\-Map@{Get\-Profile\-Map}}
+\index{Get\-Profile\-Map@{Get\-Profile\-Map}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Profile\-Map}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Profile\-Map}\& X\-Y\-Plot\-::\-Get\-Profile\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_a863a2c3f0cee88348d4df1cb5a703073}
+\hypertarget{class_x_y_plot_aa8ed3c9f80774993b1cdc80170c0963f}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Regions\-Map@{Get\-Regions\-Map}}
+\index{Get\-Regions\-Map@{Get\-Regions\-Map}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Regions\-Map}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Regions\-Map}\& X\-Y\-Plot\-::\-Get\-Regions\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_aa8ed3c9f80774993b1cdc80170c0963f}
+\hypertarget{class_x_y_plot_a7ff273d7ad3b6f42a91210b80b565b3a}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Selection@{Get\-Selection}}
+\index{Get\-Selection@{Get\-Selection}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection}$\ast$ X\-Y\-Plot\-::\-Get\-Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_a7ff273d7ad3b6f42a91210b80b565b3a}
+\hypertarget{class_x_y_plot_a03e53585fb5afcb93247dccd1b19b56b}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Get\-Title@{Get\-Title}}
+\index{Get\-Title@{Get\-Title}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Get\-Title}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Title}$\ast$ X\-Y\-Plot\-::\-Get\-Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_a03e53585fb5afcb93247dccd1b19b56b}
+\hypertarget{class_x_y_plot_af918a93570a36062b65ae0c9b4418a49}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Hit\-Test@{Hit\-Test}}
+\index{Hit\-Test@{Hit\-Test}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Hit\-Test}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\-L\-O\-T\-H\-I\-T\-T\-E\-S\-T\-R\-E\-S\-U\-L\-T} X\-Y\-Plot\-::\-Hit\-Test (
+\begin{DoxyParamCaption}
+\item[{const P\-O\-I\-N\-T}]{ppt\-Hit, }
+\item[{L\-O\-N\-G}]{flags}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_af918a93570a36062b65ae0c9b4418a49}
+\hypertarget{class_x_y_plot_afbd5f2e97a28bb92f48ddc0093ffad31}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Hook\-Chain@{Hook\-Chain}}
+\index{Hook\-Chain@{Hook\-Chain}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Hook\-Chain}]{\setlength{\rightskip}{0pt plus 5cm}bool X\-Y\-Plot\-::\-Hook\-Chain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_afbd5f2e97a28bb92f48ddc0093ffad31}
+\hypertarget{class_x_y_plot_a4ac4ace528dd0b35cf464e4dd81d86e4}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Load\-Properties@{Load\-Properties}}
+\index{Load\-Properties@{Load\-Properties}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Load\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Load\-Properties (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{lpsz\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a4ac4ace528dd0b35cf464e4dd81d86e4}
+\hypertarget{class_x_y_plot_a7c4b733fea11143df033381c3ef1d75f}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Normal\-Rect@{Normal\-Rect}}
+\index{Normal\-Rect@{Normal\-Rect}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Normal\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Normal\-Rect (
+\begin{DoxyParamCaption}
+\item[{P\-O\-I\-N\-T}]{p1, }
+\item[{P\-O\-I\-N\-T}]{p2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a7c4b733fea11143df033381c3ef1d75f}
+\hypertarget{class_x_y_plot_ac05cdbc99d5f25f01dd68a15ddea62f3}{\index{X\-Y\-Plot@{X\-Y\-Plot}!On\-Draw@{On\-Draw}}
+\index{On\-Draw@{On\-Draw}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{On\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-On\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc, }
+\item[{L\-P\-R\-E\-C\-T}]{lp\-Rect = {\ttfamily NULL}, }
+\item[{bool}]{b\-Draw\-Window\-B\-G = {\ttfamily true}, }
+\item[{bool}]{b\-Draw\-Client\-B\-G = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_ac05cdbc99d5f25f01dd68a15ddea62f3}
+\hypertarget{class_x_y_plot_a5f076922f20334df30e95e5df5242e6c}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Pre\-Draw@{Pre\-Draw}}
+\index{Pre\-Draw@{Pre\-Draw}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Pre\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Pre\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc, }
+\item[{L\-P\-R\-E\-C\-T}]{lp\-Rect = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a5f076922f20334df30e95e5df5242e6c}
+\hypertarget{class_x_y_plot_ac7aa886bd9d07f0905e518f647cdce1a}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Push\-Clipboard@{Push\-Clipboard}}
+\index{Push\-Clipboard@{Push\-Clipboard}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Push\-Clipboard}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Push\-Clipboard (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc\-Clip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_ac7aa886bd9d07f0905e518f647cdce1a}
+\hypertarget{class_x_y_plot_aa6f841e3aa5771c6d431ebab4719c2f9}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Read\-Properties@{Read\-Properties}}
+\index{Read\-Properties@{Read\-Properties}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Read\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Read\-Properties (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-Y\-Plot} $\ast$}]{X\-Y\-Plot, }
+\item[{const char $\ast$}]{file\-Name, }
+\item[{std\-::pair$<$ void $\ast$, long $>$}]{in\-Pair}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_x_y_plot_aa6f841e3aa5771c6d431ebab4719c2f9}
+\hypertarget{class_x_y_plot_a3212ec1373f6fb8d8cf0a1a75cae043a}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Reg\-Load\-Settings@{Reg\-Load\-Settings}}
+\index{Reg\-Load\-Settings@{Reg\-Load\-Settings}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Reg\-Load\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-::\-Reg\-Load\-Settings (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{key\-String, }
+\item[{const char $\ast$}]{psz\-Value}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a3212ec1373f6fb8d8cf0a1a75cae043a}
+\hypertarget{class_x_y_plot_a87638a8dc1049113eaa0662d4faa5656}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Reg\-Save\-Settings@{Reg\-Save\-Settings}}
+\index{Reg\-Save\-Settings@{Reg\-Save\-Settings}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Reg\-Save\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-::\-Reg\-Save\-Settings (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{key\-String, }
+\item[{const char $\ast$}]{psz\-Value}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a87638a8dc1049113eaa0662d4faa5656}
+\hypertarget{class_x_y_plot_ac1bd598d006342d3c13cc6967f909c6b}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Reg\-Set\-Defaults@{Reg\-Set\-Defaults}}
+\index{Reg\-Set\-Defaults@{Reg\-Set\-Defaults}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Reg\-Set\-Defaults}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Reg\-Set\-Defaults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_ac1bd598d006342d3c13cc6967f909c6b}
+\hypertarget{class_x_y_plot_a4f346829b2127ef73fb635098b82254d}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Save\-Properties@{Save\-Properties}}
+\index{Save\-Properties@{Save\-Properties}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Save\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Save\-Properties (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{lpsz\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a4f346829b2127ef73fb635098b82254d}
+\hypertarget{class_x_y_plot_ab06e0f991606941364a009a3770bfbb4}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Set\-Axis\-Range@{Set\-Axis\-Range}}
+\index{Set\-Axis\-Range@{Set\-Axis\-Range}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Set\-Axis\-Range}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Set\-Axis\-Range (
+\begin{DoxyParamCaption}
+\item[{long}]{axis, }
+\item[{double}]{xmin, }
+\item[{double}]{xmax}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_ab06e0f991606941364a009a3770bfbb4}
+\hypertarget{class_x_y_plot_a94d0b78106b7377d9b93c3e95e541db2}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Set\-Border\-Line@{Set\-Border\-Line}}
+\index{Set\-Border\-Line@{Set\-Border\-Line}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Set\-Border\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Set\-Border\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf Line\-Data} \&}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_a94d0b78106b7377d9b93c3e95e541db2}
+\hypertarget{class_x_y_plot_ae7eb57cbc3b2364e6dc24318f01e06ed}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Set\-Client\-Bk\-Colors@{Set\-Client\-Bk\-Colors}}
+\index{Set\-Client\-Bk\-Colors@{Set\-Client\-Bk\-Colors}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Set\-Client\-Bk\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Set\-Client\-Bk\-Colors (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr1, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr2}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_ae7eb57cbc3b2364e6dc24318f01e06ed}
+\hypertarget{class_x_y_plot_a82c143a9a555f8f5ce21ae053761d435}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Set\-Data@{Set\-Data}}
+\index{Set\-Data@{Set\-Data}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Set\-Data}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Set\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-O\-F\-I\-L\-E\-\_\-\-K\-E\-Y}}]{key, }
+\item[{const double $\ast$}]{px, }
+\item[{const double $\ast$}]{py, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a82c143a9a555f8f5ce21ae053761d435}
+\hypertarget{class_x_y_plot_af49b0904ab14c28aff05b5d25d89a084}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Set\-Level\-Value@{Set\-Level\-Value}}
+\index{Set\-Level\-Value@{Set\-Level\-Value}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Set\-Level\-Value}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Set\-Level\-Value (
+\begin{DoxyParamCaption}
+\item[{long}]{key, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_af49b0904ab14c28aff05b5d25d89a084}
+\hypertarget{class_x_y_plot_aa993a27506127bba579dcc04ebc2b806}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Set\-Plot\-Bk\-Colors@{Set\-Plot\-Bk\-Colors}}
+\index{Set\-Plot\-Bk\-Colors@{Set\-Plot\-Bk\-Colors}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Set\-Plot\-Bk\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Set\-Plot\-Bk\-Colors (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr1, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr2}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_aa993a27506127bba579dcc04ebc2b806}
+\hypertarget{class_x_y_plot_a946d7193c76729f7972cfd434c6df5ed}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Set\-Redraw@{Set\-Redraw}}
+\index{Set\-Redraw@{Set\-Redraw}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Set\-Redraw}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Set\-Redraw (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{redraw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_a946d7193c76729f7972cfd434c6df5ed}
+\hypertarget{class_x_y_plot_abcf82bb19c5bc4ab6f87b9406d7e4855}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Set\-Region\-Limits@{Set\-Region\-Limits}}
+\index{Set\-Region\-Limits@{Set\-Region\-Limits}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Set\-Region\-Limits}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Set\-Region\-Limits (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Region\-I\-D, }
+\item[{double}]{x1, }
+\item[{double}]{x2, }
+\item[{double}]{y1, }
+\item[{double}]{y2}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_abcf82bb19c5bc4ab6f87b9406d7e4855}
+\hypertarget{class_x_y_plot_ad57e75d825c882944d5765835dd07e23}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Set\-Region\-Title@{Set\-Region\-Title}}
+\index{Set\-Region\-Title@{Set\-Region\-Title}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Set\-Region\-Title}]{\setlength{\rightskip}{0pt plus 5cm}long X\-Y\-Plot\-::\-Set\-Region\-Title (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Region\-I\-D, }
+\item[{const char $\ast$}]{psz\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_ad57e75d825c882944d5765835dd07e23}
+\hypertarget{class_x_y_plot_a43621e70ff7f53dfb56c36886ac170b0}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Total\-Rect@{Total\-Rect}}
+\index{Total\-Rect@{Total\-Rect}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Total\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T\& X\-Y\-Plot\-::\-Total\-Rect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_x_y_plot_a43621e70ff7f53dfb56c36886ac170b0}
+\hypertarget{class_x_y_plot_afb0a757c5aaebd82ab5f69e3c7b648d7}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Trace\-Message@{Trace\-Message}}
+\index{Trace\-Message@{Trace\-Message}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Trace\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Trace\-Message (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_afb0a757c5aaebd82ab5f69e3c7b648d7}
+\hypertarget{class_x_y_plot_ad2bbc6a467d11665ce59dc58ebaaadf8}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Unhook\-Chain@{Unhook\-Chain}}
+\index{Unhook\-Chain@{Unhook\-Chain}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Unhook\-Chain}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Unhook\-Chain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_ad2bbc6a467d11665ce59dc58ebaaadf8}
+\hypertarget{class_x_y_plot_a7b926c9c2e2b37546082ab9959af6107}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Update@{Update}}
+\index{Update@{Update}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{R\-E\-C\-T $\ast$}]{p\-Update\-Rect = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{class_x_y_plot_a7b926c9c2e2b37546082ab9959af6107}
+\hypertarget{class_x_y_plot_a83e178fc20acf51c5200855884f0ff0a}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Visual\-Exception@{Visual\-Exception}}
+\index{Visual\-Exception@{Visual\-Exception}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Visual\-Exception}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Visual\-Exception (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc, }
+\item[{std\-::string}]{str\-Message, }
+\item[{std\-::string}]{str\-Title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a83e178fc20acf51c5200855884f0ff0a}
+\hypertarget{class_x_y_plot_a44a6aa0993b5091fdfc207a5ef3e5201}{\index{X\-Y\-Plot@{X\-Y\-Plot}!Write\-Properties@{Write\-Properties}}
+\index{Write\-Properties@{Write\-Properties}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{Write\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}void X\-Y\-Plot\-::\-Write\-Properties (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-Y\-Plot} $\ast$}]{X\-Y\-Plot, }
+\item[{const char $\ast$}]{filename, }
+\item[{std\-::pair$<$ void $\ast$, long $>$ \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_x_y_plot_a44a6aa0993b5091fdfc207a5ef3e5201}
+
+
+\subsection{Данные класса}
+\hypertarget{class_x_y_plot_a8dbfcf8d7e52d2180682f3accf711047}{\index{X\-Y\-Plot@{X\-Y\-Plot}!append\-Mode@{append\-Mode}}
+\index{append\-Mode@{append\-Mode}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{append\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}int X\-Y\-Plot\-::append\-Mode\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a8dbfcf8d7e52d2180682f3accf711047}
+\hypertarget{class_x_y_plot_a16e9fda87443ee3a531c739a12f8cdab}{\index{X\-Y\-Plot@{X\-Y\-Plot}!bitmap@{bitmap}}
+\index{bitmap@{bitmap}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{bitmap}]{\setlength{\rightskip}{0pt plus 5cm}H\-B\-I\-T\-M\-A\-P X\-Y\-Plot\-::bitmap\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a16e9fda87443ee3a531c739a12f8cdab}
+\hypertarget{class_x_y_plot_a0324b90dc9b73455e1346e6dde3b2db0}{\index{X\-Y\-Plot@{X\-Y\-Plot}!bk\-Client@{bk\-Client}}
+\index{bk\-Client@{bk\-Client}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{bk\-Client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Back\-Ground} X\-Y\-Plot\-::bk\-Client\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a0324b90dc9b73455e1346e6dde3b2db0}
+\hypertarget{class_x_y_plot_a42d59fb72c1aeadb3111f70f41a7557f}{\index{X\-Y\-Plot@{X\-Y\-Plot}!bk\-Color@{bk\-Color}}
+\index{bk\-Color@{bk\-Color}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{bk\-Color}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F X\-Y\-Plot\-::bk\-Color\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a42d59fb72c1aeadb3111f70f41a7557f}
+\hypertarget{class_x_y_plot_a66e7aeb6818a5fcf8fa2b51c95462a96}{\index{X\-Y\-Plot@{X\-Y\-Plot}!bk\-Total@{bk\-Total}}
+\index{bk\-Total@{bk\-Total}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{bk\-Total}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Back\-Ground} X\-Y\-Plot\-::bk\-Total\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a66e7aeb6818a5fcf8fa2b51c95462a96}
+\hypertarget{class_x_y_plot_a0d15dd8faf7aac3b2f0f02e6a45ebbdf}{\index{X\-Y\-Plot@{X\-Y\-Plot}!border@{border}}
+\index{border@{border}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{border}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Border} X\-Y\-Plot\-::border\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a0d15dd8faf7aac3b2f0f02e6a45ebbdf}
+\hypertarget{class_x_y_plot_aa0eac633d6785d570c35905d004e371f}{\index{X\-Y\-Plot@{X\-Y\-Plot}!client\-Edge@{client\-Edge}}
+\index{client\-Edge@{client\-Edge}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{client\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T X\-Y\-Plot\-::client\-Edge\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_aa0eac633d6785d570c35905d004e371f}
+\hypertarget{class_x_y_plot_ae56b7b0eb794ffd0ba288822bcd440f3}{\index{X\-Y\-Plot@{X\-Y\-Plot}!disabled@{disabled}}
+\index{disabled@{disabled}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{disabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-::disabled\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_ae56b7b0eb794ffd0ba288822bcd440f3}
+\hypertarget{class_x_y_plot_a0ab2cd0d431b276da5c4f89a0804d4b1}{\index{X\-Y\-Plot@{X\-Y\-Plot}!enable\-Quick\-Scale\-Mode@{enable\-Quick\-Scale\-Mode}}
+\index{enable\-Quick\-Scale\-Mode@{enable\-Quick\-Scale\-Mode}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{enable\-Quick\-Scale\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool X\-Y\-Plot\-::enable\-Quick\-Scale\-Mode\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a0ab2cd0d431b276da5c4f89a0804d4b1}
+\hypertarget{class_x_y_plot_a5b1fe941b4ec59db138b4b07dca1eb9f}{\index{X\-Y\-Plot@{X\-Y\-Plot}!from\-Pt@{from\-Pt}}
+\index{from\-Pt@{from\-Pt}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{from\-Pt}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-I\-N\-T X\-Y\-Plot\-::from\-Pt\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a5b1fe941b4ec59db138b4b07dca1eb9f}
+\hypertarget{class_x_y_plot_ab15afb29a18084d99ed04dc3a7485326}{\index{X\-Y\-Plot@{X\-Y\-Plot}!hmod@{hmod}}
+\index{hmod@{hmod}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{hmod}]{\setlength{\rightskip}{0pt plus 5cm}H\-M\-O\-D\-U\-L\-E X\-Y\-Plot\-::hmod}}\label{class_x_y_plot_ab15afb29a18084d99ed04dc3a7485326}
+\hypertarget{class_x_y_plot_a8421da7d70fcc3b4a6844cf9cdbeeff6}{\index{X\-Y\-Plot@{X\-Y\-Plot}!hwnd\-Parent@{hwnd\-Parent}}
+\index{hwnd\-Parent@{hwnd\-Parent}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{hwnd\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}H\-W\-N\-D X\-Y\-Plot\-::hwnd\-Parent\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a8421da7d70fcc3b4a6844cf9cdbeeff6}
+\hypertarget{class_x_y_plot_ab86c3fe630fa3957ac53d42a5b4006fd}{\index{X\-Y\-Plot@{X\-Y\-Plot}!legend@{legend}}
+\index{legend@{legend}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{legend}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Legend} X\-Y\-Plot\-::legend\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_ab86c3fe630fa3957ac53d42a5b4006fd}
+\hypertarget{class_x_y_plot_aa5ef2fe78df60b9b25f37c078d77c797}{\index{X\-Y\-Plot@{X\-Y\-Plot}!levels\-Map@{levels\-Map}}
+\index{levels\-Map@{levels\-Map}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{levels\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Levels\-Map} X\-Y\-Plot\-::levels\-Map\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_aa5ef2fe78df60b9b25f37c078d77c797}
+\hypertarget{class_x_y_plot_a2a0a2644e069cc2fb2df6c6463f804aa}{\index{X\-Y\-Plot@{X\-Y\-Plot}!lpfn\-Original\-Wnd\-Proc@{lpfn\-Original\-Wnd\-Proc}}
+\index{lpfn\-Original\-Wnd\-Proc@{lpfn\-Original\-Wnd\-Proc}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{lpfn\-Original\-Wnd\-Proc}]{\setlength{\rightskip}{0pt plus 5cm}W\-N\-D\-P\-R\-O\-C X\-Y\-Plot\-::lpfn\-Original\-Wnd\-Proc\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a2a0a2644e069cc2fb2df6c6463f804aa}
+\hypertarget{class_x_y_plot_a57c26b34917c75f6af03efa78a408482}{\index{X\-Y\-Plot@{X\-Y\-Plot}!m\-\_\-d\-Growth\-Factor\-X@{m\-\_\-d\-Growth\-Factor\-X}}
+\index{m\-\_\-d\-Growth\-Factor\-X@{m\-\_\-d\-Growth\-Factor\-X}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{m\-\_\-d\-Growth\-Factor\-X}]{\setlength{\rightskip}{0pt plus 5cm}double X\-Y\-Plot\-::m\-\_\-d\-Growth\-Factor\-X\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a57c26b34917c75f6af03efa78a408482}
+\hypertarget{class_x_y_plot_afe964a24164cef9e95856d91e0dac8e8}{\index{X\-Y\-Plot@{X\-Y\-Plot}!m\-\_\-d\-Growth\-Factor\-Y@{m\-\_\-d\-Growth\-Factor\-Y}}
+\index{m\-\_\-d\-Growth\-Factor\-Y@{m\-\_\-d\-Growth\-Factor\-Y}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{m\-\_\-d\-Growth\-Factor\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double X\-Y\-Plot\-::m\-\_\-d\-Growth\-Factor\-Y\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_afe964a24164cef9e95856d91e0dac8e8}
+\hypertarget{class_x_y_plot_aba2d84ca838032f1076d19d5c5570ad2}{\index{X\-Y\-Plot@{X\-Y\-Plot}!main\-Critical@{main\-Critical}}
+\index{main\-Critical@{main\-Critical}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{main\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N X\-Y\-Plot\-::main\-Critical\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_aba2d84ca838032f1076d19d5c5570ad2}
+\hypertarget{class_x_y_plot_aa8e990063268b42ae21efb5596183235}{\index{X\-Y\-Plot@{X\-Y\-Plot}!profile\-Map@{profile\-Map}}
+\index{profile\-Map@{profile\-Map}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{profile\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Profile\-Map} X\-Y\-Plot\-::profile\-Map\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_aa8e990063268b42ae21efb5596183235}
+\hypertarget{class_x_y_plot_ab839ff226353ebe8be5836f362996769}{\index{X\-Y\-Plot@{X\-Y\-Plot}!recalc\-Axis\-Size@{recalc\-Axis\-Size}}
+\index{recalc\-Axis\-Size@{recalc\-Axis\-Size}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{recalc\-Axis\-Size}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-::recalc\-Axis\-Size\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_ab839ff226353ebe8be5836f362996769}
+\hypertarget{class_x_y_plot_ad73c4a652c950f36a9544c6682a0c35e}{\index{X\-Y\-Plot@{X\-Y\-Plot}!redraw@{redraw}}
+\index{redraw@{redraw}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{redraw}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-::redraw\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_ad73c4a652c950f36a9544c6682a0c35e}
+\hypertarget{class_x_y_plot_acd2662c65214f871c75b14fe796052b5}{\index{X\-Y\-Plot@{X\-Y\-Plot}!regions\-Map@{regions\-Map}}
+\index{regions\-Map@{regions\-Map}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{regions\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Regions\-Map} X\-Y\-Plot\-::regions\-Map\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_acd2662c65214f871c75b14fe796052b5}
+\hypertarget{class_x_y_plot_a56f8019682bc1459751683077f758071}{\index{X\-Y\-Plot@{X\-Y\-Plot}!sel@{sel}}
+\index{sel@{sel}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{sel}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T X\-Y\-Plot\-::sel\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a56f8019682bc1459751683077f758071}
+\hypertarget{class_x_y_plot_a35a92ce3e3edab77299ddc6814cae835}{\index{X\-Y\-Plot@{X\-Y\-Plot}!selection@{selection}}
+\index{selection@{selection}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{selection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Selection} X\-Y\-Plot\-::selection\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a35a92ce3e3edab77299ddc6814cae835}
+\hypertarget{class_x_y_plot_a9bd2edaa45a2559c1b95e7416d4c88b8}{\index{X\-Y\-Plot@{X\-Y\-Plot}!selection\-Start@{selection\-Start}}
+\index{selection\-Start@{selection\-Start}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{selection\-Start}]{\setlength{\rightskip}{0pt plus 5cm}bool X\-Y\-Plot\-::selection\-Start\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a9bd2edaa45a2559c1b95e7416d4c88b8}
+\hypertarget{class_x_y_plot_ae2f69590c458b38c6f022fd10ca93f35}{\index{X\-Y\-Plot@{X\-Y\-Plot}!streamer\-Critical@{streamer\-Critical}}
+\index{streamer\-Critical@{streamer\-Critical}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{streamer\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N X\-Y\-Plot\-::streamer\-Critical\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_ae2f69590c458b38c6f022fd10ca93f35}
+\hypertarget{class_x_y_plot_ae9f6dcfa882433683585a55edbc2d6fb}{\index{X\-Y\-Plot@{X\-Y\-Plot}!title@{title}}
+\index{title@{title}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Title} X\-Y\-Plot\-::title\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_ae9f6dcfa882433683585a55edbc2d6fb}
+\hypertarget{class_x_y_plot_a8d036a0039ee0ef215f0861a90203898}{\index{X\-Y\-Plot@{X\-Y\-Plot}!to\-Pt@{to\-Pt}}
+\index{to\-Pt@{to\-Pt}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{to\-Pt}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-I\-N\-T X\-Y\-Plot\-::to\-Pt\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a8d036a0039ee0ef215f0861a90203898}
+\hypertarget{class_x_y_plot_a1dcef0bb2b4cd2dc20bedbf4d1304e80}{\index{X\-Y\-Plot@{X\-Y\-Plot}!total\-Rect@{total\-Rect}}
+\index{total\-Rect@{total\-Rect}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{total\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T X\-Y\-Plot\-::total\-Rect\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a1dcef0bb2b4cd2dc20bedbf4d1304e80}
+\hypertarget{class_x_y_plot_a8fd6c272f57a472a9c21a6d19ed21f7f}{\index{X\-Y\-Plot@{X\-Y\-Plot}!tracer\-Critical@{tracer\-Critical}}
+\index{tracer\-Critical@{tracer\-Critical}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{tracer\-Critical}]{\setlength{\rightskip}{0pt plus 5cm}C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N X\-Y\-Plot\-::tracer\-Critical\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a8fd6c272f57a472a9c21a6d19ed21f7f}
+\hypertarget{class_x_y_plot_a2ab7607dd67094563d56ace4fd2048f5}{\index{X\-Y\-Plot@{X\-Y\-Plot}!x\-Axis\-Bottom@{x\-Axis\-Bottom}}
+\index{x\-Axis\-Bottom@{x\-Axis\-Bottom}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{x\-Axis\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}$\ast$ X\-Y\-Plot\-::x\-Axis\-Bottom\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a2ab7607dd67094563d56ace4fd2048f5}
+\hypertarget{class_x_y_plot_ac1ea69a1108f0f7a257bad3f8699f23d}{\index{X\-Y\-Plot@{X\-Y\-Plot}!x\-Axis\-Top@{x\-Axis\-Top}}
+\index{x\-Axis\-Top@{x\-Axis\-Top}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{x\-Axis\-Top}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}$\ast$ X\-Y\-Plot\-::x\-Axis\-Top\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_ac1ea69a1108f0f7a257bad3f8699f23d}
+\hypertarget{class_x_y_plot_a13ec1f572335e06c52ebe3f0d9e2e49e}{\index{X\-Y\-Plot@{X\-Y\-Plot}!xpixel@{xpixel}}
+\index{xpixel@{xpixel}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{xpixel}]{\setlength{\rightskip}{0pt plus 5cm}double X\-Y\-Plot\-::xpixel\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a13ec1f572335e06c52ebe3f0d9e2e49e}
+\hypertarget{class_x_y_plot_a84d59c9f1ba75f0e02e70ad283c447d6}{\index{X\-Y\-Plot@{X\-Y\-Plot}!y\-Axis\-Left@{y\-Axis\-Left}}
+\index{y\-Axis\-Left@{y\-Axis\-Left}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{y\-Axis\-Left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}$\ast$ X\-Y\-Plot\-::y\-Axis\-Left\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a84d59c9f1ba75f0e02e70ad283c447d6}
+\hypertarget{class_x_y_plot_ac2273b77f7ff75d44b84da348ccbc9db}{\index{X\-Y\-Plot@{X\-Y\-Plot}!y\-Axis\-Right@{y\-Axis\-Right}}
+\index{y\-Axis\-Right@{y\-Axis\-Right}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{y\-Axis\-Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}$\ast$ X\-Y\-Plot\-::y\-Axis\-Right\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_ac2273b77f7ff75d44b84da348ccbc9db}
+\hypertarget{class_x_y_plot_a51fc0a1063b00947128c0b899f4bb9be}{\index{X\-Y\-Plot@{X\-Y\-Plot}!ypixel@{ypixel}}
+\index{ypixel@{ypixel}!XYPlot@{X\-Y\-Plot}}
+\subsubsection[{ypixel}]{\setlength{\rightskip}{0pt plus 5cm}double X\-Y\-Plot\-::ypixel\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_x_y_plot_a51fc0a1063b00947128c0b899f4bb9be}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{main_8h}{main.\-h}\item 
+src/\hyperlink{main_8cpp}{main.\-cpp}\end{DoxyCompactItemize}

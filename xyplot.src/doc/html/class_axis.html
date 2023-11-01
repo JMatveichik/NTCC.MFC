@@ -1,0 +1,2288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Класс Axis</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_axis-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Axis</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_axis_8h_source.html">Axis.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:Axis:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis__inherit__graph.png" border="0" usemap="#_axis_inherit__map" alt="Inheritance graph"/></div>
+<map name="_axis_inherit__map" id="_axis_inherit__map">
+<area shape="rect" id="node2" href="class_savable_item.html" title="SavableItem" alt="" coords="5,5,97,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса Axis:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_axis__coll__graph.png" border="0" usemap="#_axis_coll__map" alt="Collaboration graph"/></div>
+<map name="_axis_coll__map" id="_axis_coll__map">
+<area shape="rect" id="node3" href="class_x_y_plot.html" title="Класс для работы с базой данных " alt="" coords="1008,499,1069,525"/><area shape="rect" id="node14" href="class_selection.html" title="Selection" alt="" coords="686,588,762,615"/><area shape="rect" id="node16" href="class_ticks.html" title="Ticks" alt="" coords="200,499,253,525"/><area shape="rect" id="node17" href="class_digits.html" title="Digits" alt="" coords="714,499,769,525"/><area shape="rect" id="node18" href="class_grid_lines.html" title="GridLines" alt="" coords="373,499,451,525"/><area shape="rect" id="node2" href="class_savable_item.html" title="SavableItem" alt="" coords="875,184,967,211"/><area shape="rect" id="node4" href="class_title.html" title="Title" alt="" coords="1151,273,1198,300"/><area shape="rect" id="node10" href="class_back_ground.html" title="BackGround" alt="" coords="1241,364,1335,391"/><area shape="rect" id="node11" href="class_border.html" title="Border" alt="" coords="1043,364,1103,391"/><area shape="rect" id="node13" href="class_legend.html" title="Legend" alt="" coords="1177,588,1241,615"/><area shape="rect" id="node19" href="class_label.html" title="Label" alt="" coords="855,273,908,300"/><area shape="rect" id="node5" href="class_r_t_f_string.html" title="RTFString" alt="" coords="1240,184,1320,211"/><area shape="rect" id="node6" href="class_c_formatted_text_draw.html" title="CFormattedTextDraw" alt="" coords="1208,95,1352,121"/><area shape="rect" id="node9" href="structtag_c_o_o_k_i_e.html" title="tagCOOKIE" alt="" coords="1373,5,1464,32"/><area shape="rect" id="node12" href="class_line_data.html" title="LineData" alt="" coords="242,273,315,300"/><area shape="rect" id="node15" href="class_profile_group_map.html" title="ProfileGroupMap" alt="" coords="571,499,690,525"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:abd42f819acb0ecb2875d7c5c0f6a90a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#abd42f819acb0ecb2875d7c5c0f6a90a2">Axis</a> (<a class="el" href="class_x_y_plot.html">XYPlot</a> *parent)</td></tr>
+<tr class="separator:abd42f819acb0ecb2875d7c5c0f6a90a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675ffe75a5e61a9e4f60bb79749d5e0c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a675ffe75a5e61a9e4f60bb79749d5e0c">~Axis</a> ()</td></tr>
+<tr class="separator:a675ffe75a5e61a9e4f60bb79749d5e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad51bb24a3f0aa2a15b3d7255a4ad925d"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ad51bb24a3f0aa2a15b3d7255a4ad925d">Create</a> (<a class="el" href="class_x_y_plot.html">XYPlot</a> *<a class="el" href="class_axis.html#a5bb30599723134e0d1250d6028a62575">parentPlot</a>, int <a class="el" href="class_axis.html#a12acb583f5bf5f386dc0ea78fa4461aa">id</a>, unsigned long lStyles, const char *strTitle=NULL, double dMin=0.0, double dMax=1.0)</td></tr>
+<tr class="separator:ad51bb24a3f0aa2a15b3d7255a4ad925d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895ec09817b379201fe2db2cd1e715aa"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a895ec09817b379201fe2db2cd1e715aa">Write</a> (HANDLE hFile) const </td></tr>
+<tr class="separator:a895ec09817b379201fe2db2cd1e715aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af403dc4181f1681d321f190bd74268ff"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#af403dc4181f1681d321f190bd74268ff">Read</a> (HANDLE hFile)</td></tr>
+<tr class="separator:af403dc4181f1681d321f190bd74268ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2b061f2d01872e9cda6e6be0c82f56"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a5c2b061f2d01872e9cda6e6be0c82f56">AttachProfile</a> (<a class="el" href="class_profile.html">Profile</a> *prof)</td></tr>
+<tr class="separator:a5c2b061f2d01872e9cda6e6be0c82f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06230b1705046a15a4dddd3252a72691"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a06230b1705046a15a4dddd3252a72691">DetachProfile</a> (<a class="el" href="class_profile.html">Profile</a> *prof)</td></tr>
+<tr class="separator:a06230b1705046a15a4dddd3252a72691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab169f9ad45fa8f790e24ee52f7a03996"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ab169f9ad45fa8f790e24ee52f7a03996">GetID</a> () const </td></tr>
+<tr class="separator:ab169f9ad45fa8f790e24ee52f7a03996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac35b067fa0786b741627059741e53d3"><td class="memItemLeft" align="right" valign="top">SIZE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#aac35b067fa0786b741627059741e53d3">GetSize</a> () const </td></tr>
+<tr class="separator:aac35b067fa0786b741627059741e53d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a3fedb305053a9cccde8cd34f73637"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a62a3fedb305053a9cccde8cd34f73637">Length</a> () const </td></tr>
+<tr class="separator:a62a3fedb305053a9cccde8cd34f73637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3b29ba4d46db3ad1725566e4995e90"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a3d3b29ba4d46db3ad1725566e4995e90">IsTimeHistory</a> () const </td></tr>
+<tr class="separator:a3d3b29ba4d46db3ad1725566e4995e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea4e6174866d246a5edc2a7b18cf72a4"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#aea4e6174866d246a5edc2a7b18cf72a4">PointInRect</a> (const POINT &amp;pt)</td></tr>
+<tr class="separator:aea4e6174866d246a5edc2a7b18cf72a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d47434eb57a24e0bee36ac4314edfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a37d47434eb57a24e0bee36ac4314edfc">GetLine</a> ()</td></tr>
+<tr class="separator:a37d47434eb57a24e0bee36ac4314edfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ddf34c5b437423f1f85c51a54d5239"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#aa0ddf34c5b437423f1f85c51a54d5239">SetLine</a> (const <a class="el" href="class_line_data.html">LineData</a> &amp;<a class="el" href="class_axis.html#a68817bcf5ea38ff2d81698175ae9c6ee">line</a>)</td></tr>
+<tr class="separator:aa0ddf34c5b437423f1f85c51a54d5239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8500f77c11f6ebef7af8d41050c4f2c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a8500f77c11f6ebef7af8d41050c4f2c1">GetGridLine</a> (BOOL bMajor=TRUE)</td></tr>
+<tr class="separator:a8500f77c11f6ebef7af8d41050c4f2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba8f8d055ffcc6f3a3660d4adb57374"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#abba8f8d055ffcc6f3a3660d4adb57374">SetGridLine</a> (const <a class="el" href="class_line_data.html">LineData</a> &amp;<a class="el" href="class_axis.html#a68817bcf5ea38ff2d81698175ae9c6ee">line</a>, BOOL bMajor=TRUE)</td></tr>
+<tr class="separator:abba8f8d055ffcc6f3a3660d4adb57374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f12d8e5e59f15a716ef1c2e89b1ff8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a0f12d8e5e59f15a716ef1c2e89b1ff8c">GetTicksLine</a> (BOOL bMajor=TRUE)</td></tr>
+<tr class="separator:a0f12d8e5e59f15a716ef1c2e89b1ff8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94241668c2515bf0750cafd53bcb1a42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a94241668c2515bf0750cafd53bcb1a42">SetTicksLine</a> (const <a class="el" href="class_line_data.html">LineData</a> &amp;<a class="el" href="class_axis.html#a68817bcf5ea38ff2d81698175ae9c6ee">line</a>, BOOL bMajor=TRUE)</td></tr>
+<tr class="separator:a94241668c2515bf0750cafd53bcb1a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b3b93b1d47ab3ca2ec8b906fee6834b"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a1b3b93b1d47ab3ca2ec8b906fee6834b">SetStyle</a> (DWORD <a class="el" href="class_axis.html#a9b318f5e15215edb80d3a2bdabc11d44">dwStyle</a>, BOOL bUpdate=TRUE)</td></tr>
+<tr class="separator:a1b3b93b1d47ab3ca2ec8b906fee6834b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4dc48e8a0ac1cdb24a24f5d45639951"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ac4dc48e8a0ac1cdb24a24f5d45639951">ModifyStyle</a> (DWORD <a class="el" href="class_axis.html#a9b318f5e15215edb80d3a2bdabc11d44">dwStyle</a>, BOOL bAdd=TRUE, BOOL bUpdate=TRUE)</td></tr>
+<tr class="separator:ac4dc48e8a0ac1cdb24a24f5d45639951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6b201a4cce9a6beb8c7055864041ef"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a6d6b201a4cce9a6beb8c7055864041ef">GetStyle</a> () const </td></tr>
+<tr class="separator:a6d6b201a4cce9a6beb8c7055864041ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7ef6cc19a70108d2d86f563b8e822b"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#aaf7ef6cc19a70108d2d86f563b8e822b">IsAutoScaled</a> () const </td></tr>
+<tr class="separator:aaf7ef6cc19a70108d2d86f563b8e822b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53dc750e1923bf84666d5b7f6c47609e"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a53dc750e1923bf84666d5b7f6c47609e">IsLogarithmic</a> () const </td></tr>
+<tr class="separator:a53dc750e1923bf84666d5b7f6c47609e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f64f1eb719f41512b4ac5cf049a7d2"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; POINT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a66f64f1eb719f41512b4ac5cf049a7d2">GetMajorTicksPos</a> () const </td></tr>
+<tr class="separator:a66f64f1eb719f41512b4ac5cf049a7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed3bd789234570a2dfe659dcf0767b0"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; POINT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a4ed3bd789234570a2dfe659dcf0767b0">GetMinorTicksPos</a> () const </td></tr>
+<tr class="separator:a4ed3bd789234570a2dfe659dcf0767b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe9d0e77dbe887d715d51f88941867f"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a2fe9d0e77dbe887d715d51f88941867f">GetMajorTicksValues</a> () const </td></tr>
+<tr class="separator:a2fe9d0e77dbe887d715d51f88941867f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae278ff239a05ef1d7b76bb37e752dccf"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ae278ff239a05ef1d7b76bb37e752dccf">GetMinorTicksValues</a> () const </td></tr>
+<tr class="separator:ae278ff239a05ef1d7b76bb37e752dccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51a2bb9da1f6c7e66134f39a22230bf"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#af51a2bb9da1f6c7e66134f39a22230bf">GetNearestTick</a> (double &amp;val, POINT &amp;pt) const </td></tr>
+<tr class="separator:af51a2bb9da1f6c7e66134f39a22230bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1b9b35e0561aeb36160c9ac1a2cdd9"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#afa1b9b35e0561aeb36160c9ac1a2cdd9">GetTicksOffset</a> () const </td></tr>
+<tr class="separator:afa1b9b35e0561aeb36160c9ac1a2cdd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9430cb1b9468318b6c05a1c525d74fee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a9430cb1b9468318b6c05a1c525d74fee">SetRect</a> (HDC hDC, RECT rect)</td></tr>
+<tr class="separator:a9430cb1b9468318b6c05a1c525d74fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381310504b09d64757c6575ac7cc2568"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a381310504b09d64757c6575ac7cc2568">SetLabel</a> (std::string text)</td></tr>
+<tr class="separator:a381310504b09d64757c6575ac7cc2568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50eb89d6c720ecaac77d169454b12ed3"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a50eb89d6c720ecaac77d169454b12ed3">GetLabel</a> () const </td></tr>
+<tr class="separator:a50eb89d6c720ecaac77d169454b12ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99167d49da06387caa9ce3f53a41b83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#aa99167d49da06387caa9ce3f53a41b83">SetLabelFont</a> (const LOGFONT *const plf)</td></tr>
+<tr class="separator:aa99167d49da06387caa9ce3f53a41b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc942ad32c71008b7f489f235a7a045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#adcc942ad32c71008b7f489f235a7a045">SetLabelColor</a> (COLORREF clr)</td></tr>
+<tr class="separator:adcc942ad32c71008b7f489f235a7a045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6845dc4a3ab9bc86d8a26e195dad3bb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a6845dc4a3ab9bc86d8a26e195dad3bb6">EnableLabel</a> (BOOL enable)</td></tr>
+<tr class="separator:a6845dc4a3ab9bc86d8a26e195dad3bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b2e2157e201529baeab644300e4086"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a62b2e2157e201529baeab644300e4086">IsLabelEnabled</a> () const </td></tr>
+<tr class="separator:a62b2e2157e201529baeab644300e4086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac82ca2f6125fd9842fc966472b30451b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ac82ca2f6125fd9842fc966472b30451b">SetMajorTicksLength</a> (int length)</td></tr>
+<tr class="separator:ac82ca2f6125fd9842fc966472b30451b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bdab5744cb822411a9d7b98bea2ebd9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a2bdab5744cb822411a9d7b98bea2ebd9">GetMajorTicksLength</a> () const </td></tr>
+<tr class="separator:a2bdab5744cb822411a9d7b98bea2ebd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7612d81af3d140aef6d2c1560f308a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#af7612d81af3d140aef6d2c1560f308a7">SetMinorTicksLength</a> (int length)</td></tr>
+<tr class="separator:af7612d81af3d140aef6d2c1560f308a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b383e7848e4d9284f0b37fcc55c1a5d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a2b383e7848e4d9284f0b37fcc55c1a5d">GetMinorTicksLength</a> () const </td></tr>
+<tr class="separator:a2b383e7848e4d9284f0b37fcc55c1a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d9701163a36d83d19bd8723ced15c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a59d9701163a36d83d19bd8723ced15c0">SetMajorTicksCount</a> (int count)</td></tr>
+<tr class="separator:a59d9701163a36d83d19bd8723ced15c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b56804af56f19924afb2fdaa5002a5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a5b56804af56f19924afb2fdaa5002a5e">GetMajorTicksCount</a> () const </td></tr>
+<tr class="separator:a5b56804af56f19924afb2fdaa5002a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff875d18713ea68dea6375852814a34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#aaff875d18713ea68dea6375852814a34">SetMinorTicksCount</a> (int count)</td></tr>
+<tr class="separator:aaff875d18713ea68dea6375852814a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4b13b1a23c57eb38e195460ecefafc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a8b4b13b1a23c57eb38e195460ecefafc">GetMinorTicksCount</a> () const </td></tr>
+<tr class="separator:a8b4b13b1a23c57eb38e195460ecefafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a6d9bb7ea73f134a7bcdc7839f2fea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a7a6d9bb7ea73f134a7bcdc7839f2fea9">EnableMajorTicks</a> (BOOL enable)</td></tr>
+<tr class="separator:a7a6d9bb7ea73f134a7bcdc7839f2fea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f99f12afbbe0c3d1feaced4a7ebcc2"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a49f99f12afbbe0c3d1feaced4a7ebcc2">IsMajorTicksEnabled</a> () const </td></tr>
+<tr class="separator:a49f99f12afbbe0c3d1feaced4a7ebcc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e4e998fdafb039b153824494ec1a64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a51e4e998fdafb039b153824494ec1a64">EnableMinorTicks</a> (BOOL enable)</td></tr>
+<tr class="separator:a51e4e998fdafb039b153824494ec1a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb61ef0cfad74adcec76c0c3291fc98f"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#acb61ef0cfad74adcec76c0c3291fc98f">IsMinorTicksEnabled</a> () const </td></tr>
+<tr class="separator:acb61ef0cfad74adcec76c0c3291fc98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b08c86575f337d4d09a0b563c76288"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a87b08c86575f337d4d09a0b563c76288">GetTicksStyle</a> () const </td></tr>
+<tr class="separator:a87b08c86575f337d4d09a0b563c76288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbabc70a25f14345308300c67d50e177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#abbabc70a25f14345308300c67d50e177">SetTicksStyle</a> (unsigned long style)</td></tr>
+<tr class="separator:abbabc70a25f14345308300c67d50e177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23b8dbd121a233ebdabe77122a9c583"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ab23b8dbd121a233ebdabe77122a9c583">EnableMajorGridLines</a> (BOOL enable)</td></tr>
+<tr class="separator:ab23b8dbd121a233ebdabe77122a9c583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f037d316ea2e575f8f29fca4beea8ea"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a6f037d316ea2e575f8f29fca4beea8ea">IsMajorGridLinesEnabled</a> () const </td></tr>
+<tr class="separator:a6f037d316ea2e575f8f29fca4beea8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d36b6a9039e776fa5e91856fd58eb1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a9d36b6a9039e776fa5e91856fd58eb1b">EnableMinorGridLines</a> (BOOL enable)</td></tr>
+<tr class="separator:a9d36b6a9039e776fa5e91856fd58eb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46bb27f688cf602a183d0e35e60d3aa8"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a46bb27f688cf602a183d0e35e60d3aa8">IsMinorGridLinesEnabled</a> () const </td></tr>
+<tr class="separator:a46bb27f688cf602a183d0e35e60d3aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44245d3776209f0010cf91990b171699"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a44245d3776209f0010cf91990b171699">SetDigitsColor</a> (COLORREF color, BOOL bMajor)</td></tr>
+<tr class="separator:a44245d3776209f0010cf91990b171699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6391e8f6e81eca01de870c0bbaeeb78f"><td class="memItemLeft" align="right" valign="top">COLORREF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a6391e8f6e81eca01de870c0bbaeeb78f">GetDigitsColor</a> (BOOL bMajor) const </td></tr>
+<tr class="separator:a6391e8f6e81eca01de870c0bbaeeb78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5baf897c0a1d088ccc673dceba5bb66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#aa5baf897c0a1d088ccc673dceba5bb66">SetDigitsFormat</a> (std::string strTemplate, BOOL bMajor=TRUE)</td></tr>
+<tr class="separator:aa5baf897c0a1d088ccc673dceba5bb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5126fa60e11694e569e382c27d53741"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ad5126fa60e11694e569e382c27d53741">GetDigitsFormat</a> (BOOL bMajor=TRUE) const </td></tr>
+<tr class="separator:ad5126fa60e11694e569e382c27d53741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710bfe0545ca9ff2053115ca71618a2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a710bfe0545ca9ff2053115ca71618a2d">SetDigitsFont</a> (const LOGFONT &amp;lf, BOOL bMajor=TRUE)</td></tr>
+<tr class="separator:a710bfe0545ca9ff2053115ca71618a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3381bac80fdd67426366275d1e611877"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a3381bac80fdd67426366275d1e611877">GetDigitsFont</a> (LOGFONT &amp;lf, BOOL bMajor=TRUE) const </td></tr>
+<tr class="separator:a3381bac80fdd67426366275d1e611877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87d5b9b022bd8c885be4dc460c74a4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ae87d5b9b022bd8c885be4dc460c74a4a">EnableMajorDigits</a> (BOOL enable)</td></tr>
+<tr class="separator:ae87d5b9b022bd8c885be4dc460c74a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6fc5e053579e7b6d5df8ffcb30a173f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ab6fc5e053579e7b6d5df8ffcb30a173f">EnableMinorDigits</a> (BOOL enable)</td></tr>
+<tr class="separator:ab6fc5e053579e7b6d5df8ffcb30a173f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ad10e78c202f3d2f2e4c230a3c1fb3"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ac3ad10e78c202f3d2f2e4c230a3c1fb3">IsMajorDigitsEnabled</a> () const </td></tr>
+<tr class="separator:ac3ad10e78c202f3d2f2e4c230a3c1fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69ae039859200fce16725ea180fb829"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ab69ae039859200fce16725ea180fb829">IsMinorDigitsEnabled</a> () const </td></tr>
+<tr class="separator:ab69ae039859200fce16725ea180fb829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ec122237943357fc410f7e65541642"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a41ec122237943357fc410f7e65541642">SetRange</a> (double dMin, double dMax)</td></tr>
+<tr class="separator:a41ec122237943357fc410f7e65541642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac64b96cb7b9a98cc4987caf370e1092c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ac64b96cb7b9a98cc4987caf370e1092c">GetRange</a> (double &amp;dMin, double &amp;dMax) const </td></tr>
+<tr class="separator:ac64b96cb7b9a98cc4987caf370e1092c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070bb4d5171d26d50a13f195f035476d"><td class="memItemLeft" align="right" valign="top">RECT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a070bb4d5171d26d50a13f195f035476d">PreDraw</a> (HDC hDC, RECT rect)</td></tr>
+<tr class="separator:a070bb4d5171d26d50a13f195f035476d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5120d60156ed20854085115bcfcab765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a5120d60156ed20854085115bcfcab765">OnDraw</a> (HDC hDC)</td></tr>
+<tr class="separator:a5120d60156ed20854085115bcfcab765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff2ec412daaec9d055f0129e0a9117f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#adff2ec412daaec9d055f0129e0a9117f">GetClientRect</a> (RECT &amp;rect) const </td></tr>
+<tr class="separator:adff2ec412daaec9d055f0129e0a9117f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b571ff70bfca89a515496c0ded3138"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a54b571ff70bfca89a515496c0ded3138">GetLimits</a> (<a class="el" href="_coord_converter_8h.html#aabd54ff6676737c3cae490e3a2363bc4">LPAXISLIMITS</a> lpal) const </td></tr>
+<tr class="separator:a54b571ff70bfca89a515496c0ded3138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_savable_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_savable_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_savable_item.html">SavableItem</a></td></tr>
+<tr class="memitem:ab046904bea3b84bd453764fe164fcbd5 inherit pub_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#ab046904bea3b84bd453764fe164fcbd5">SavableItem</a> ()</td></tr>
+<tr class="separator:ab046904bea3b84bd453764fe164fcbd5 inherit pub_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e2cdaa3e35d16f31337d02e794117e inherit pub_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#a01e2cdaa3e35d16f31337d02e794117e">~SavableItem</a> ()</td></tr>
+<tr class="separator:a01e2cdaa3e35d16f31337d02e794117e inherit pub_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a5bb30599723134e0d1250d6028a62575"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_x_y_plot.html">XYPlot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a5bb30599723134e0d1250d6028a62575">parentPlot</a></td></tr>
+<tr class="separator:a5bb30599723134e0d1250d6028a62575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a12acb583f5bf5f386dc0ea78fa4461aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a12acb583f5bf5f386dc0ea78fa4461aa">id</a></td></tr>
+<tr class="separator:a12acb583f5bf5f386dc0ea78fa4461aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f164cd1a8b77ee7431ade1ee39bc61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_label.html">Label</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a28f164cd1a8b77ee7431ade1ee39bc61">pLabel</a></td></tr>
+<tr class="separator:a28f164cd1a8b77ee7431ade1ee39bc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68817bcf5ea38ff2d81698175ae9c6ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_line_data.html">LineData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a68817bcf5ea38ff2d81698175ae9c6ee">line</a></td></tr>
+<tr class="separator:a68817bcf5ea38ff2d81698175ae9c6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee9b22eca2aa3d9be3c7a2f9e71039b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ticks.html">Ticks</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#adee9b22eca2aa3d9be3c7a2f9e71039b">pTicks</a></td></tr>
+<tr class="separator:adee9b22eca2aa3d9be3c7a2f9e71039b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bc678ecaf1bda4a3a94c4dab678ac9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_digits.html">Digits</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a33bc678ecaf1bda4a3a94c4dab678ac9">pDigits</a></td></tr>
+<tr class="separator:a33bc678ecaf1bda4a3a94c4dab678ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a2fcc5091fd6eca3cd6b80764616bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_grid_lines.html">GridLines</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a56a2fcc5091fd6eca3cd6b80764616bb">pGridLines</a></td></tr>
+<tr class="separator:a56a2fcc5091fd6eca3cd6b80764616bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0e6da2c0521df03e3e7d820d73af82"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#adb0e6da2c0521df03e3e7d820d73af82">rangeMin</a></td></tr>
+<tr class="separator:adb0e6da2c0521df03e3e7d820d73af82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02853da582831baaa9ebc1289d86ad35"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a02853da582831baaa9ebc1289d86ad35">rangeMax</a></td></tr>
+<tr class="separator:a02853da582831baaa9ebc1289d86ad35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7205720d8bede3b74fab7dd54968d56"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#ae7205720d8bede3b74fab7dd54968d56">autoScale</a></td></tr>
+<tr class="separator:ae7205720d8bede3b74fab7dd54968d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50bf5f208bbca7d528ca52e62b7928e9"><td class="memItemLeft" align="right" valign="top">RECT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a50bf5f208bbca7d528ca52e62b7928e9">rcSelf</a></td></tr>
+<tr class="separator:a50bf5f208bbca7d528ca52e62b7928e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b318f5e15215edb80d3a2bdabc11d44"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a9b318f5e15215edb80d3a2bdabc11d44">dwStyle</a></td></tr>
+<tr class="separator:a9b318f5e15215edb80d3a2bdabc11d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce6ac30f1b60e366e6a608b30750d9c"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="class_profile.html">Profile</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_axis.html#a4ce6ac30f1b60e366e6a608b30750d9c">attachedProfiles</a></td></tr>
+<tr class="separator:a4ce6ac30f1b60e366e6a608b30750d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_static_methods_class_savable_item"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_savable_item')"><img src="closed.png" alt="-"/>&#160;Защищенные статические члены унаследованные от <a class="el" href="class_savable_item.html">SavableItem</a></td></tr>
+<tr class="memitem:ab7fdbc1d0002d102e957104c130678d6 inherit pro_static_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#ab7fdbc1d0002d102e957104c130678d6">ReadString</a> (HANDLE hFile)</td></tr>
+<tr class="separator:ab7fdbc1d0002d102e957104c130678d6 inherit pro_static_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491b89267b8402aeb64bfeda5cef0af1 inherit pro_static_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">static BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#a491b89267b8402aeb64bfeda5cef0af1">WriteString</a> (HANDLE hFile, std::string theString)</td></tr>
+<tr class="separator:a491b89267b8402aeb64bfeda5cef0af1 inherit pro_static_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="abd42f819acb0ecb2875d7c5c0f6a90a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Axis::Axis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_x_y_plot.html">XYPlot</a> *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a675ffe75a5e61a9e4f60bb79749d5e0c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Axis::~Axis </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a5c2b061f2d01872e9cda6e6be0c82f56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::AttachProfile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_profile.html">Profile</a> *&#160;</td>
+          <td class="paramname"><em>prof</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad51bb24a3f0aa2a15b3d7255a4ad925d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_x_y_plot.html">XYPlot</a> *&#160;</td>
+          <td class="paramname"><em>parentPlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>lStyles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>strTitle</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dMin</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dMax</em> = <code>1.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a06230b1705046a15a4dddd3252a72691"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::DetachProfile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_profile.html">Profile</a> *&#160;</td>
+          <td class="paramname"><em>prof</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6845dc4a3ab9bc86d8a26e195dad3bb6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::EnableLabel </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae87d5b9b022bd8c885be4dc460c74a4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::EnableMajorDigits </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab23b8dbd121a233ebdabe77122a9c583"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::EnableMajorGridLines </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7a6d9bb7ea73f134a7bcdc7839f2fea9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::EnableMajorTicks </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6fc5e053579e7b6d5df8ffcb30a173f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::EnableMinorDigits </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9d36b6a9039e776fa5e91856fd58eb1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::EnableMinorGridLines </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a51e4e998fdafb039b153824494ec1a64"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::EnableMinorTicks </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adff2ec412daaec9d055f0129e0a9117f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::GetClientRect </td>
+          <td>(</td>
+          <td class="paramtype">RECT &amp;&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6391e8f6e81eca01de870c0bbaeeb78f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">COLORREF Axis::GetDigitsColor </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3381bac80fdd67426366275d1e611877"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::GetDigitsFont </td>
+          <td>(</td>
+          <td class="paramtype">LOGFONT &amp;&#160;</td>
+          <td class="paramname"><em>lf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad5126fa60e11694e569e382c27d53741"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; Axis::GetDigitsFormat </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em> = <code>TRUE</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8500f77c11f6ebef7af8d41050c4f2c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_line_data.html">LineData</a>&amp; Axis::GetGridLine </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em> = <code>TRUE</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab169f9ad45fa8f790e24ee52f7a03996"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Axis::GetID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a50eb89d6c720ecaac77d169454b12ed3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; Axis::GetLabel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a54b571ff70bfca89a515496c0ded3138"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::GetLimits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_coord_converter_8h.html#aabd54ff6676737c3cae490e3a2363bc4">LPAXISLIMITS</a>&#160;</td>
+          <td class="paramname"><em>lpal</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a37d47434eb57a24e0bee36ac4314edfc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_line_data.html">LineData</a>&amp; Axis::GetLine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b56804af56f19924afb2fdaa5002a5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Axis::GetMajorTicksCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2bdab5744cb822411a9d7b98bea2ebd9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Axis::GetMajorTicksLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a66f64f1eb719f41512b4ac5cf049a7d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;POINT&gt;&amp; Axis::GetMajorTicksPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2fe9d0e77dbe887d715d51f88941867f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;double&gt;&amp; Axis::GetMajorTicksValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b4b13b1a23c57eb38e195460ecefafc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Axis::GetMinorTicksCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2b383e7848e4d9284f0b37fcc55c1a5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Axis::GetMinorTicksLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ed3bd789234570a2dfe659dcf0767b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;POINT&gt;&amp; Axis::GetMinorTicksPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae278ff239a05ef1d7b76bb37e752dccf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;double&gt;&amp; Axis::GetMinorTicksValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af51a2bb9da1f6c7e66134f39a22230bf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::GetNearestTick </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">POINT &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac64b96cb7b9a98cc4987caf370e1092c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::GetRange </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>dMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>dMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac35b067fa0786b741627059741e53d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIZE Axis::GetSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6d6b201a4cce9a6beb8c7055864041ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD Axis::GetStyle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f12d8e5e59f15a716ef1c2e89b1ff8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_line_data.html">LineData</a>&amp; Axis::GetTicksLine </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em> = <code>TRUE</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa1b9b35e0561aeb36160c9ac1a2cdd9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Axis::GetTicksOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87b08c86575f337d4d09a0b563c76288"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long Axis::GetTicksStyle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaf7ef6cc19a70108d2d86f563b8e822b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::IsAutoScaled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62b2e2157e201529baeab644300e4086"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::IsLabelEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a53dc750e1923bf84666d5b7f6c47609e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::IsLogarithmic </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac3ad10e78c202f3d2f2e4c230a3c1fb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::IsMajorDigitsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6f037d316ea2e575f8f29fca4beea8ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::IsMajorGridLinesEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a49f99f12afbbe0c3d1feaced4a7ebcc2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::IsMajorTicksEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab69ae039859200fce16725ea180fb829"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::IsMinorDigitsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a46bb27f688cf602a183d0e35e60d3aa8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::IsMinorGridLinesEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb61ef0cfad74adcec76c0c3291fc98f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::IsMinorTicksEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d3b29ba4d46db3ad1725566e4995e90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::IsTimeHistory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62a3fedb305053a9cccde8cd34f73637"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Axis::Length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac4dc48e8a0ac1cdb24a24f5d45639951"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD Axis::ModifyStyle </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwStyle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bAdd</em> = <code>TRUE</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bUpdate</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5120d60156ed20854085115bcfcab765"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::OnDraw </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hDC</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea4e6174866d246a5edc2a7b18cf72a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::PointInRect </td>
+          <td>(</td>
+          <td class="paramtype">const POINT &amp;&#160;</td>
+          <td class="paramname"><em>pt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a070bb4d5171d26d50a13f195f035476d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RECT Axis::PreDraw </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hDC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RECT&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af403dc4181f1681d321f190bd74268ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::Read </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_savable_item.html#a7eadd16b2cb0652091cc15f596a00fb2">SavableItem</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44245d3776209f0010cf91990b171699"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetDigitsColor </td>
+          <td>(</td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a710bfe0545ca9ff2053115ca71618a2d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetDigitsFont </td>
+          <td>(</td>
+          <td class="paramtype">const LOGFONT &amp;&#160;</td>
+          <td class="paramname"><em>lf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5baf897c0a1d088ccc673dceba5bb66"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetDigitsFormat </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>strTemplate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abba8f8d055ffcc6f3a3660d4adb57374"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetGridLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a381310504b09d64757c6575ac7cc2568"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetLabel </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adcc942ad32c71008b7f489f235a7a045"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetLabelColor </td>
+          <td>(</td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>clr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa99167d49da06387caa9ce3f53a41b83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetLabelFont </td>
+          <td>(</td>
+          <td class="paramtype">const LOGFONT *const&#160;</td>
+          <td class="paramname"><em>plf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa0ddf34c5b437423f1f85c51a54d5239"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td>
+          <td class="paramname"><em>line</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a59d9701163a36d83d19bd8723ced15c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetMajorTicksCount </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac82ca2f6125fd9842fc966472b30451b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetMajorTicksLength </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaff875d18713ea68dea6375852814a34"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetMinorTicksCount </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af7612d81af3d140aef6d2c1560f308a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetMinorTicksLength </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a41ec122237943357fc410f7e65541642"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetRange </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9430cb1b9468318b6c05a1c525d74fee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetRect </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hDC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RECT&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1b3b93b1d47ab3ca2ec8b906fee6834b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD Axis::SetStyle </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwStyle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bUpdate</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94241668c2515bf0750cafd53bcb1a42"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetTicksLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em> = <code>TRUE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abbabc70a25f14345308300c67d50e177"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Axis::SetTicksStyle </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>style</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a895ec09817b379201fe2db2cd1e715aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::Write </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_savable_item.html#a0da511a4854f515096f8f9b498f64158">SavableItem</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a4ce6ac30f1b60e366e6a608b30750d9c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt; <a class="el" href="class_profile.html">Profile</a>* &gt; Axis::attachedProfiles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae7205720d8bede3b74fab7dd54968d56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Axis::autoScale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b318f5e15215edb80d3a2bdabc11d44"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD Axis::dwStyle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a12acb583f5bf5f386dc0ea78fa4461aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Axis::id</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68817bcf5ea38ff2d81698175ae9c6ee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_line_data.html">LineData</a> Axis::line</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5bb30599723134e0d1250d6028a62575"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_x_y_plot.html">XYPlot</a>* Axis::parentPlot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a33bc678ecaf1bda4a3a94c4dab678ac9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_digits.html">Digits</a>* Axis::pDigits</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a56a2fcc5091fd6eca3cd6b80764616bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_grid_lines.html">GridLines</a>* Axis::pGridLines</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a28f164cd1a8b77ee7431ade1ee39bc61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_label.html">Label</a>* Axis::pLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adee9b22eca2aa3d9be3c7a2f9e71039b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ticks.html">Ticks</a>* Axis::pTicks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a02853da582831baaa9ebc1289d86ad35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Axis::rangeMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb0e6da2c0521df03e3e7d820d73af82"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Axis::rangeMin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a50bf5f208bbca7d528ca52e62b7928e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RECT Axis::rcSelf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="_axis_8h_source.html">Axis.h</a></li>
+<li>src/<a class="el" href="_axis_8cpp.html">Axis.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

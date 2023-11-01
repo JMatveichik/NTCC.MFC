@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pages">
+      <UniqueIdentifier>{8eabe3ff-4e59-482b-bf85-e593b8271643}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="xyplotdlg.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\xyplotdlg.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="res\gears.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\axis_bottom.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\axis_left.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\axis_right.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\axis_top.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\levels.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\profiles.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\regions.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="xyplotdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlotDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgs\AxisPropertyDlg.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgs\GeneralPropDlg.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgs\LevelsPropDlg.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgs\LineProperiesDlg.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgs\ProfilesPropDlg.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgs\PlotDlgPage.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\XYPlotWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgs\IconListBox.cpp">
+      <Filter>Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FormattedTextDraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtfstring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="xyplotdlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlotDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgs\AxisPropertyDlg.h">
+      <Filter>Pages</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgs\GeneralPropDlg.h">
+      <Filter>Pages</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgs\LevelsPropDlg.h">
+      <Filter>Pages</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgs\LineProperiesDlg.h">
+      <Filter>Pages</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgs\ProfilesPropDlg.h">
+      <Filter>Pages</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgs\PlotDlgPage.h">
+      <Filter>Pages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xyplotconst.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\XYPlotWrapper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgs\IconListBox.h">
+      <Filter>Pages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\formattedtextdraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rtfstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xyplotdlg.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

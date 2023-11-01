@@ -1,0 +1,18 @@
+<map id="Axis" name="Axis">
+<area shape="rect" id="node3" href="$class_x_y_plot.html" title="Класс для работы с базой данных " alt="" coords="1008,499,1069,525"/>
+<area shape="rect" id="node14" href="$class_selection.html" title="Selection" alt="" coords="686,588,762,615"/>
+<area shape="rect" id="node16" href="$class_ticks.html" title="Ticks" alt="" coords="200,499,253,525"/>
+<area shape="rect" id="node17" href="$class_digits.html" title="Digits" alt="" coords="714,499,769,525"/>
+<area shape="rect" id="node18" href="$class_grid_lines.html" title="GridLines" alt="" coords="373,499,451,525"/>
+<area shape="rect" id="node2" href="$class_savable_item.html" title="SavableItem" alt="" coords="875,184,967,211"/>
+<area shape="rect" id="node4" href="$class_title.html" title="Title" alt="" coords="1151,273,1198,300"/>
+<area shape="rect" id="node10" href="$class_back_ground.html" title="BackGround" alt="" coords="1241,364,1335,391"/>
+<area shape="rect" id="node11" href="$class_border.html" title="Border" alt="" coords="1043,364,1103,391"/>
+<area shape="rect" id="node13" href="$class_legend.html" title="Legend" alt="" coords="1177,588,1241,615"/>
+<area shape="rect" id="node19" href="$class_label.html" title="Label" alt="" coords="855,273,908,300"/>
+<area shape="rect" id="node5" href="$class_r_t_f_string.html" title="RTFString" alt="" coords="1240,184,1320,211"/>
+<area shape="rect" id="node6" href="$class_c_formatted_text_draw.html" title="CFormattedTextDraw" alt="" coords="1208,95,1352,121"/>
+<area shape="rect" id="node9" href="$structtag_c_o_o_k_i_e.html" title="tagCOOKIE" alt="" coords="1373,5,1464,32"/>
+<area shape="rect" id="node12" href="$class_line_data.html" title="LineData" alt="" coords="242,273,315,300"/>
+<area shape="rect" id="node15" href="$class_profile_group_map.html" title="ProfileGroupMap" alt="" coords="571,499,690,525"/>
+</map>

@@ -1,0 +1,34 @@
+\hypertarget{ex_002_8cpp-example}{\section{ex\-\_\-002.\-cpp}
+}
+Пример создания профиля.
+
+
+\begin{DoxyCodeInclude}
+\textcolor{comment}{//in header file}
+\textcolor{keyword}{class }CPlotView : \textcolor{keyword}{public} CView
+\{
+    \textcolor{comment}{//class definitions}
+
+    \textcolor{keyword}{protected}:
+        HPLOT m\_hPlot;
+        HPROFILE m\_hProf1;
+
+    \textcolor{comment}{//other class difinitions}
+\};
+
+\textcolor{comment}{//in cpp file}
+\textcolor{keywordtype}{void} CPlotView::OnInitialUpdate()
+\{
+    CView::OnInitialUpdate();
+
+    XYPlotManager& pm = XYPlotManager::Instance();
+
+    m\_hPlot = pm.CreatePlot(m\_hWnd);    \textcolor{comment}{//create plot for CPlotView}
+
+    m\_hProf1 = pm.CreateProfile(m\_hPlot, \textcolor{stringliteral}{"Profile 0"}, 0x00ff00, 1); \textcolor{comment}{//Create profile for plot}
+
+    pm.SetData(m\_hPlot, m\_hProf1, pdx, pdy, 100);
+    \textcolor{comment}{//Other functions}
+\}
+\end{DoxyCodeInclude}
+ 

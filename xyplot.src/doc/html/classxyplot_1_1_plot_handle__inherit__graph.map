@@ -1,0 +1,12 @@
+<map id="xyplot::PlotHandle" name="xyplot::PlotHandle">
+<area shape="rect" id="node2" href="$classxyplot_1_1_h_g_r_o_u_p.html" title="Класс дескриптора группы профилей " alt="" coords="199,5,321,32"/>
+<area shape="rect" id="node4" href="$classxyplot_1_1_h_l_e_v_e_l.html" title="Класс дескриптор линий уровня " alt="" coords="203,56,317,83"/>
+<area shape="rect" id="node5" href="$classxyplot_1_1_h_p_l_o_t.html" title="Класс дескриптора 2D графики " alt="" coords="207,107,313,133"/>
+<area shape="rect" id="node7" href="$classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n.html" title="Класс дескриптора региона " alt="" coords="181,157,339,184"/>
+<area shape="rect" id="node9" href="$classxyplot_1_1_h_p_r_o_f_i_l_e.html" title="Класс дескриптора профиля " alt="" coords="195,208,325,235"/>
+<area shape="rect" id="node3" href="$classxyplot_1_1_i_n_v_a_l_i_d___g_r_o_u_p.html" title="Класс дескриптор пустой группы профилей 2D графики " alt="" coords="391,5,559,32"/>
+<area shape="rect" id="node6" href="$classxyplot_1_1_a_l_l___p_l_o_t_s__.html" title="Класс дескриптор для всех экземпляров 2D графики " alt="" coords="403,107,547,133"/>
+<area shape="rect" id="node8" href="$classxyplot_1_1_a_l_l___r_e_g_i_o_n_s__.html" title="Класс дескриптор всех регионов " alt="" coords="394,157,555,184"/>
+<area shape="rect" id="node10" href="$classxyplot_1_1_a_l_l___p_r_o_f_i_l_e_s.html" title="Класс дескриптор для всех профилей 2D графики " alt="" coords="395,208,554,235"/>
+<area shape="rect" id="node11" href="$classxyplot_1_1_i_n_v_a_l_i_d___p_r_o_f_i_l_e.html" title="Класс дескриптор пустого профиля 2D графики " alt="" coords="387,259,563,285"/>
+</map>

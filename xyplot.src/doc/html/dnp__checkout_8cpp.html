@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Файл src/dnp_checkout.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл dnp_checkout.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;windows.h&gt;</code><br/>
+<code>#include &lt;winioctl.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="port32_8h_source.html">port32.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="winio_8h_source.html">winio.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для dnp_checkout.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="dnp__checkout_8cpp__incl.png" border="0" usemap="#src_2dnp__checkout_8cpp" alt=""/></div>
+<map name="src_2dnp__checkout_8cpp" id="src_2dnp__checkout_8cpp">
+<area shape="rect" id="node6" href="port32_8h.html" title="port32.h" alt="" coords="387,80,456,107"/><area shape="rect" id="node7" href="winio_8h.html" title="winio.h" alt="" coords="481,80,543,107"/></map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___g_e_t_v_e_r_s_i_o_n_o_u_t_p_a_r_a_m_s.html">dnp_checkout::_GETVERSIONOUTPARAMS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_e_r_e_g_s.html">dnp_checkout::_IDEREGS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___s_e_n_d_c_m_d_i_n_p_a_r_a_m_s.html">dnp_checkout::_SENDCMDINPARAMS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___d_r_i_v_e_r_s_t_a_t_u_s.html">dnp_checkout::_DRIVERSTATUS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___s_e_n_d_c_m_d_o_u_t_p_a_r_a_m_s.html">dnp_checkout::_SENDCMDOUTPARAMS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html">dnp_checkout::_IDSECTOR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1___s_r_b___i_o___c_o_n_t_r_o_l.html">dnp_checkout::_SRB_IO_CONTROL</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1_g_d_t___d_e_s_c_r_i_p_t_o_r.html">dnp_checkout::GDT_DESCRIPTOR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1_c_a_l_l_g_a_t_e___d_e_s_c_r_i_p_t_o_r.html">dnp_checkout::CALLGATE_DESCRIPTOR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1_g_d_t_r.html">dnp_checkout::GDTR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1tag_phys32_struct.html">dnp_checkout::tagPhys32Struct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdnp__checkout_1_1tag_port32_struct.html">dnp_checkout::tagPort32Struct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacednp__checkout"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html">dnp_checkout</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a6214062427e9bb30c6c5e1f8ff4219b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a6214062427e9bb30c6c5e1f8ff4219b8">MAX_IDE_DRIVES</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a6214062427e9bb30c6c5e1f8ff4219b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f481ebdc31f93b165d2bacaba2ad0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a86f481ebdc31f93b165d2bacaba2ad0c">IDENTIFY_BUFFER_SIZE</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:a86f481ebdc31f93b165d2bacaba2ad0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8205956fb8a5ba25f4529eba73d17c90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a8205956fb8a5ba25f4529eba73d17c90">DFP_GET_VERSION</a>&#160;&#160;&#160;0x00074080</td></tr>
+<tr class="separator:a8205956fb8a5ba25f4529eba73d17c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685393d868f037ce273cd36fc8bf7740"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a685393d868f037ce273cd36fc8bf7740">DFP_SEND_DRIVE_COMMAND</a>&#160;&#160;&#160;0x0007c084</td></tr>
+<tr class="separator:a685393d868f037ce273cd36fc8bf7740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6119691d40bd0e33a07a39ef856aba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a0d6119691d40bd0e33a07a39ef856aba">DFP_RECEIVE_DRIVE_DATA</a>&#160;&#160;&#160;0x0007c088</td></tr>
+<tr class="separator:a0d6119691d40bd0e33a07a39ef856aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61032131738caf6d5ace0587cda346c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a61032131738caf6d5ace0587cda346c2">FILE_DEVICE_SCSI</a>&#160;&#160;&#160;0x0000001b</td></tr>
+<tr class="separator:a61032131738caf6d5ace0587cda346c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92231e64fd3e497ac371f13cb0aac9ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a92231e64fd3e497ac371f13cb0aac9ef">IOCTL_SCSI_MINIPORT_IDENTIFY</a>&#160;&#160;&#160;((<a class="el" href="dnp__checkout_8cpp.html#a61032131738caf6d5ace0587cda346c2">FILE_DEVICE_SCSI</a> &lt;&lt; 16) + 0x0501)</td></tr>
+<tr class="separator:a92231e64fd3e497ac371f13cb0aac9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c8af35f105e85b09ae7886e90c64d87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a5c8af35f105e85b09ae7886e90c64d87">IOCTL_SCSI_MINIPORT</a>&#160;&#160;&#160;0x0004D008</td></tr>
+<tr class="separator:a5c8af35f105e85b09ae7886e90c64d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01e4b6a5d1fa788abe87f8299e69d2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#ac01e4b6a5d1fa788abe87f8299e69d2d">CAP_IDE_ID_FUNCTION</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ac01e4b6a5d1fa788abe87f8299e69d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ab057189ed51b5d527705c926600cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a63ab057189ed51b5d527705c926600cd">CAP_IDE_ATAPI_ID</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a63ab057189ed51b5d527705c926600cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a0cb3aa7a20201912a1cd909e3c9de9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a5a0cb3aa7a20201912a1cd909e3c9de9">CAP_IDE_EXECUTE_SMART_FUNCTION</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a5a0cb3aa7a20201912a1cd909e3c9de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bda91f319e7cd919c58ef86fa394cdb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a8bda91f319e7cd919c58ef86fa394cdb">IDE_ATAPI_IDENTIFY</a>&#160;&#160;&#160;0xA1</td></tr>
+<tr class="separator:a8bda91f319e7cd919c58ef86fa394cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9053b41717b462f5e030b6d3fd4de9ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a9053b41717b462f5e030b6d3fd4de9ac">IDE_ATA_IDENTIFY</a>&#160;&#160;&#160;0xEC</td></tr>
+<tr class="separator:a9053b41717b462f5e030b6d3fd4de9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87168a12b0d199bedb3cbd9f3a09c461"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dnp__checkout_8cpp.html#a87168a12b0d199bedb3cbd9f3a09c461">SENDIDLENGTH</a>&#160;&#160;&#160;sizeof (SENDCMDOUTPARAMS) + <a class="el" href="dnp__checkout_8cpp.html#a86f481ebdc31f93b165d2bacaba2ad0c">IDENTIFY_BUFFER_SIZE</a></td></tr>
+<tr class="separator:a87168a12b0d199bedb3cbd9f3a09c461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a97d39a4b0d5b567ee5c8862d0e712d46"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___g_e_t_v_e_r_s_i_o_n_o_u_t_p_a_r_a_m_s.html">dnp_checkout::_GETVERSIONOUTPARAMS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a97d39a4b0d5b567ee5c8862d0e712d46">dnp_checkout::GETVERSIONOUTPARAMS</a></td></tr>
+<tr class="separator:a97d39a4b0d5b567ee5c8862d0e712d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa2ed3cd8d18d067b90ee4e6aa20fa4"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___g_e_t_v_e_r_s_i_o_n_o_u_t_p_a_r_a_m_s.html">dnp_checkout::_GETVERSIONOUTPARAMS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a9aa2ed3cd8d18d067b90ee4e6aa20fa4">dnp_checkout::PGETVERSIONOUTPARAMS</a></td></tr>
+<tr class="separator:a9aa2ed3cd8d18d067b90ee4e6aa20fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55bbba8cc150436c602208613d048725"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___g_e_t_v_e_r_s_i_o_n_o_u_t_p_a_r_a_m_s.html">dnp_checkout::_GETVERSIONOUTPARAMS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a55bbba8cc150436c602208613d048725">dnp_checkout::LPGETVERSIONOUTPARAMS</a></td></tr>
+<tr class="separator:a55bbba8cc150436c602208613d048725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ca05b19c9b8b1d79306987d943d841"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___i_d_e_r_e_g_s.html">dnp_checkout::_IDEREGS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#ad6ca05b19c9b8b1d79306987d943d841">dnp_checkout::IDEREGS</a></td></tr>
+<tr class="separator:ad6ca05b19c9b8b1d79306987d943d841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2672b75481f48c72696764070792cd"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___i_d_e_r_e_g_s.html">dnp_checkout::_IDEREGS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a0b2672b75481f48c72696764070792cd">dnp_checkout::PIDEREGS</a></td></tr>
+<tr class="separator:a0b2672b75481f48c72696764070792cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cfac54c5445e572ff55fc4dbaa560de"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___i_d_e_r_e_g_s.html">dnp_checkout::_IDEREGS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a0cfac54c5445e572ff55fc4dbaa560de">dnp_checkout::LPIDEREGS</a></td></tr>
+<tr class="separator:a0cfac54c5445e572ff55fc4dbaa560de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af07e571714114e47687aff12e8a16581"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___s_e_n_d_c_m_d_i_n_p_a_r_a_m_s.html">dnp_checkout::_SENDCMDINPARAMS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#af07e571714114e47687aff12e8a16581">dnp_checkout::SENDCMDINPARAMS</a></td></tr>
+<tr class="separator:af07e571714114e47687aff12e8a16581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a258707ab31e1440dc4dda9384d454e"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___s_e_n_d_c_m_d_i_n_p_a_r_a_m_s.html">dnp_checkout::_SENDCMDINPARAMS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a9a258707ab31e1440dc4dda9384d454e">dnp_checkout::PSENDCMDINPARAMS</a></td></tr>
+<tr class="separator:a9a258707ab31e1440dc4dda9384d454e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966f16fea4c05f8f375e994016df8fd1"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___s_e_n_d_c_m_d_i_n_p_a_r_a_m_s.html">dnp_checkout::_SENDCMDINPARAMS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a966f16fea4c05f8f375e994016df8fd1">dnp_checkout::LPSENDCMDINPARAMS</a></td></tr>
+<tr class="separator:a966f16fea4c05f8f375e994016df8fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8d9b7c57ae5e7d0d88f7a5be282c57"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___d_r_i_v_e_r_s_t_a_t_u_s.html">dnp_checkout::_DRIVERSTATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a4a8d9b7c57ae5e7d0d88f7a5be282c57">dnp_checkout::DRIVERSTATUS</a></td></tr>
+<tr class="separator:a4a8d9b7c57ae5e7d0d88f7a5be282c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2703dda8b11ae6e8a1bae11614c55447"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___d_r_i_v_e_r_s_t_a_t_u_s.html">dnp_checkout::_DRIVERSTATUS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a2703dda8b11ae6e8a1bae11614c55447">dnp_checkout::PDRIVERSTATUS</a></td></tr>
+<tr class="separator:a2703dda8b11ae6e8a1bae11614c55447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a036c4c0b955f12056ccd47706cba9f"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___d_r_i_v_e_r_s_t_a_t_u_s.html">dnp_checkout::_DRIVERSTATUS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a3a036c4c0b955f12056ccd47706cba9f">dnp_checkout::LPDRIVERSTATUS</a></td></tr>
+<tr class="separator:a3a036c4c0b955f12056ccd47706cba9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1bf5b2b11ccf68342f0e163c7d46b5"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___s_e_n_d_c_m_d_o_u_t_p_a_r_a_m_s.html">dnp_checkout::_SENDCMDOUTPARAMS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a2a1bf5b2b11ccf68342f0e163c7d46b5">dnp_checkout::SENDCMDOUTPARAMS</a></td></tr>
+<tr class="separator:a2a1bf5b2b11ccf68342f0e163c7d46b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea691d4d3e0a27a9a60cf36e2767942"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___s_e_n_d_c_m_d_o_u_t_p_a_r_a_m_s.html">dnp_checkout::_SENDCMDOUTPARAMS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#acea691d4d3e0a27a9a60cf36e2767942">dnp_checkout::PSENDCMDOUTPARAMS</a></td></tr>
+<tr class="separator:acea691d4d3e0a27a9a60cf36e2767942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1599a2a7c423c931ae18286e45a03cdb"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___s_e_n_d_c_m_d_o_u_t_p_a_r_a_m_s.html">dnp_checkout::_SENDCMDOUTPARAMS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a1599a2a7c423c931ae18286e45a03cdb">dnp_checkout::LPSENDCMDOUTPARAMS</a></td></tr>
+<tr class="separator:a1599a2a7c423c931ae18286e45a03cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778f09eed45cfcd63f3039c57a7112f4"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html">dnp_checkout::_IDSECTOR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a778f09eed45cfcd63f3039c57a7112f4">dnp_checkout::IDSECTOR</a></td></tr>
+<tr class="separator:a778f09eed45cfcd63f3039c57a7112f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6285f85f01ec201545b921c24a977b6e"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___i_d_s_e_c_t_o_r.html">dnp_checkout::_IDSECTOR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a6285f85f01ec201545b921c24a977b6e">dnp_checkout::PIDSECTOR</a></td></tr>
+<tr class="separator:a6285f85f01ec201545b921c24a977b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74494cad5b370a2f9a0d169e95a6f00d"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___s_r_b___i_o___c_o_n_t_r_o_l.html">dnp_checkout::_SRB_IO_CONTROL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a74494cad5b370a2f9a0d169e95a6f00d">dnp_checkout::SRB_IO_CONTROL</a></td></tr>
+<tr class="separator:a74494cad5b370a2f9a0d169e95a6f00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad15bc16156c925f8f86efd5740cefe"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structdnp__checkout_1_1___s_r_b___i_o___c_o_n_t_r_o_l.html">dnp_checkout::_SRB_IO_CONTROL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a7ad15bc16156c925f8f86efd5740cefe">dnp_checkout::PSRB_IO_CONTROL</a></td></tr>
+<tr class="separator:a7ad15bc16156c925f8f86efd5740cefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a9a2a91cefbe3ab9d3e6eb4742cae5a81"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a9a2a91cefbe3ab9d3e6eb4742cae5a81">dnp_checkout::ConvertToString</a> (DWORD diskdata[256], int firstIndex, int lastIndex)</td></tr>
+<tr class="separator:a9a2a91cefbe3ab9d3e6eb4742cae5a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24dde3a6c09af4a3efdbfaebc1bc16d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#ac24dde3a6c09af4a3efdbfaebc1bc16d">dnp_checkout::PrintIdeInfo</a> (int drive, DWORD diskdata[256])</td></tr>
+<tr class="separator:ac24dde3a6c09af4a3efdbfaebc1bc16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68fe2bb282688f66c6c600f617657d3d"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a68fe2bb282688f66c6c600f617657d3d">dnp_checkout::DoIDENTIFY</a> (HANDLE, PSENDCMDINPARAMS, PSENDCMDOUTPARAMS, BYTE, BYTE, PDWORD)</td></tr>
+<tr class="separator:a68fe2bb282688f66c6c600f617657d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e90af706ccac491114dc870efbbded"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a99e90af706ccac491114dc870efbbded">dnp_checkout::ReadPhysicalDriveInNT</a> (void)</td></tr>
+<tr class="separator:a99e90af706ccac491114dc870efbbded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78762067149b06ccf8840970caf2e7ac"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a78762067149b06ccf8840970caf2e7ac">dnp_checkout::LoadDeviceDriver</a> (const TCHAR *Name, const TCHAR *Path, HANDLE *lphDevice)</td></tr>
+<tr class="separator:a78762067149b06ccf8840970caf2e7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5f6cc36b7ebc7d3a62ec8ab9a51c96"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a2d5f6cc36b7ebc7d3a62ec8ab9a51c96">dnp_checkout::UnloadDeviceDriver</a> (const TCHAR *Name)</td></tr>
+<tr class="separator:a2d5f6cc36b7ebc7d3a62ec8ab9a51c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f513cc9ab0f701ffc5ee9022e7ef854"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a4f513cc9ab0f701ffc5ee9022e7ef854">dnp_checkout::IsWinNT</a> ()</td></tr>
+<tr class="separator:a4f513cc9ab0f701ffc5ee9022e7ef854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf441fa91dc5ee3101abc898e8feeed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#aacf441fa91dc5ee3101abc898e8feeed">dnp_checkout::InitializeWinIo</a> ()</td></tr>
+<tr class="separator:aacf441fa91dc5ee3101abc898e8feeed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b733da53de993806dcaf0cf8926d203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a3b733da53de993806dcaf0cf8926d203">dnp_checkout::ShutdownWinIo</a> ()</td></tr>
+<tr class="separator:a3b733da53de993806dcaf0cf8926d203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1790725dae4857814b68bad6b19ed96b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a1790725dae4857814b68bad6b19ed96b">dnp_checkout::__declspec</a> (naked) void Ring0GetPortVal()</td></tr>
+<tr class="separator:a1790725dae4857814b68bad6b19ed96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e04118334eb66a710e076231f7967b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a0e04118334eb66a710e076231f7967b1">dnp_checkout::CallRing0</a> (PVOID pvRing0FuncAddr, WORD wPortAddr, PDWORD pdwPortVal, BYTE bSize)</td></tr>
+<tr class="separator:a0e04118334eb66a710e076231f7967b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad580272b4637f4df05e2e4382e562e10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#ad580272b4637f4df05e2e4382e562e10">dnp_checkout::GetPortVal</a> (WORD wPortAddr, PDWORD pdwPortVal, BYTE bSize)</td></tr>
+<tr class="separator:ad580272b4637f4df05e2e4382e562e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b9cc8d29cc954c77458680f18249a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a38b9cc8d29cc954c77458680f18249a8">dnp_checkout::SetPortVal</a> (WORD wPortAddr, DWORD dwPortVal, BYTE bSize)</td></tr>
+<tr class="separator:a38b9cc8d29cc954c77458680f18249a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad1734d1744a251b1fec674038c6de1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#aaad1734d1744a251b1fec674038c6de1">dnp_checkout::ReadDrivePortsInWin9X</a> (void)</td></tr>
+<tr class="separator:aaad1734d1744a251b1fec674038c6de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5867c6c464b6cd6a8cb721892c19e861"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a5867c6c464b6cd6a8cb721892c19e861">dnp_checkout::ReadIdeDriveAsScsiDriveInNT</a> (void)</td></tr>
+<tr class="separator:a5867c6c464b6cd6a8cb721892c19e861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf018aa55fcd0bb9c9a923053ad74ab2"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#aaf018aa55fcd0bb9c9a923053ad74ab2">dnp_checkout::getHardDriveComputerID</a> ()</td></tr>
+<tr class="separator:aaf018aa55fcd0bb9c9a923053ad74ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a8428f746cd3f413947a46bf6d56c6c54"><td class="memItemLeft" align="right" valign="top">BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a8428f746cd3f413947a46bf6d56c6c54">dnp_checkout::IdOutCmd</a> [sizeof(SENDCMDOUTPARAMS)+<a class="el" href="dnp__checkout_8cpp.html#a86f481ebdc31f93b165d2bacaba2ad0c">IDENTIFY_BUFFER_SIZE</a>-1]</td></tr>
+<tr class="separator:a8428f746cd3f413947a46bf6d56c6c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16349302476ed84d1abb7b6c59aa2349"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a16349302476ed84d1abb7b6c59aa2349">dnp_checkout::hDriver</a></td></tr>
+<tr class="separator:a16349302476ed84d1abb7b6c59aa2349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bec63c64e9ed57aad73b0eea04a24a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a9bec63c64e9ed57aad73b0eea04a24a0">dnp_checkout::IsNT</a></td></tr>
+<tr class="separator:a9bec63c64e9ed57aad73b0eea04a24a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9192e25893a4263d4706e0316709e1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#ae9192e25893a4263d4706e0316709e1a">dnp_checkout::IsWinIoInitialized</a> = false</td></tr>
+<tr class="separator:ae9192e25893a4263d4706e0316709e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32332a58c128f0c299a4f0ba16ebfa61"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structtag_phys32_struct.html">tagPhys32Struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a32332a58c128f0c299a4f0ba16ebfa61">dnp_checkout::Phys32Struct</a></td></tr>
+<tr class="separator:a32332a58c128f0c299a4f0ba16ebfa61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b99c64d69a6a61b8dd94e835829c78d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structtag_port32_struct.html">tagPort32Struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#a3b99c64d69a6a61b8dd94e835829c78d">dnp_checkout::Port32Struct</a></td></tr>
+<tr class="separator:a3b99c64d69a6a61b8dd94e835829c78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab825c7a3e95a09939ffbb11a2176661d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacednp__checkout.html#ab825c7a3e95a09939ffbb11a2176661d">dnp_checkout::HardDriveSerialNumber</a> [1024]</td></tr>
+<tr class="separator:ab825c7a3e95a09939ffbb11a2176661d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a class="anchor" id="a63ab057189ed51b5d527705c926600cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAP_IDE_ATAPI_ID&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5a0cb3aa7a20201912a1cd909e3c9de9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAP_IDE_EXECUTE_SMART_FUNCTION&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac01e4b6a5d1fa788abe87f8299e69d2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAP_IDE_ID_FUNCTION&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8205956fb8a5ba25f4529eba73d17c90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFP_GET_VERSION&#160;&#160;&#160;0x00074080</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d6119691d40bd0e33a07a39ef856aba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFP_RECEIVE_DRIVE_DATA&#160;&#160;&#160;0x0007c088</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a685393d868f037ce273cd36fc8bf7740"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DFP_SEND_DRIVE_COMMAND&#160;&#160;&#160;0x0007c084</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a61032131738caf6d5ace0587cda346c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILE_DEVICE_SCSI&#160;&#160;&#160;0x0000001b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9053b41717b462f5e030b6d3fd4de9ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IDE_ATA_IDENTIFY&#160;&#160;&#160;0xEC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8bda91f319e7cd919c58ef86fa394cdb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IDE_ATAPI_IDENTIFY&#160;&#160;&#160;0xA1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86f481ebdc31f93b165d2bacaba2ad0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IDENTIFY_BUFFER_SIZE&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c8af35f105e85b09ae7886e90c64d87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_SCSI_MINIPORT&#160;&#160;&#160;0x0004D008</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a92231e64fd3e497ac371f13cb0aac9ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_SCSI_MINIPORT_IDENTIFY&#160;&#160;&#160;((<a class="el" href="dnp__checkout_8cpp.html#a61032131738caf6d5ace0587cda346c2">FILE_DEVICE_SCSI</a> &lt;&lt; 16) + 0x0501)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6214062427e9bb30c6c5e1f8ff4219b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_IDE_DRIVES&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87168a12b0d199bedb3cbd9f3a09c461"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SENDIDLENGTH&#160;&#160;&#160;sizeof (SENDCMDOUTPARAMS) + <a class="el" href="dnp__checkout_8cpp.html#a86f481ebdc31f93b165d2bacaba2ad0c">IDENTIFY_BUFFER_SIZE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<map id="src/digits.cpp" name="src/digits.cpp">
+<area shape="rect" id="node2" href="$stdafx_8h.html" title="stdafx.h" alt="" coords="1132,155,1200,181"/>
+<area shape="rect" id="node16" href="$digits_8h.html" title="digits.h" alt="" coords="207,155,271,181"/>
+<area shape="rect" id="node19" href="$exceptions_8h.html" title="exceptions.h" alt="" coords="46,80,142,107"/>
+<area shape="rect" id="node20" href="$fontmanager_8h.html" title="fontmanager.h" alt="" coords="791,155,895,181"/>
+<area shape="rect" id="node23" href="$global_8h.html" title="global.h" alt="" coords="1222,80,1289,107"/>
+<area shape="rect" id="node26" href="$_axis_8h.html" title="axis.h" alt="" coords="433,80,491,107"/>
+<area shape="rect" id="node17" href="$_savable_item_8h.html" title="SavableItem.h" alt="" coords="452,229,555,256"/>
+<area shape="rect" id="node27" href="$linedata_8h.html" title="LineData.h" alt="" coords="48,155,132,181"/>
+<area shape="rect" id="node29" href="$ticks_8h.html" title="Ticks.h" alt="" coords="594,155,658,181"/>
+<area shape="rect" id="node30" href="$label_8h.html" title="Label.h" alt="" coords="506,155,570,181"/>
+<area shape="rect" id="node31" href="$_gridlines_8h.html" title="Gridlines.h" alt="" coords="683,155,767,181"/>
+<area shape="rect" id="node32" href="$_coord_converter_8h.html" title="CoordConverter.h" alt="" coords="296,155,417,181"/>
+<area shape="rect" id="node28" href="$xyplotconst_8h.html" title="Содержит константы и перечисляемые типы . " alt="" coords="40,229,148,256"/>
+</map>

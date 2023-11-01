@@ -1,0 +1,439 @@
+\hypertarget{class_ticks}{\section{Класс Ticks}
+\label{class_ticks}\index{Ticks@{Ticks}}
+}
+
+
+{\ttfamily \#include $<$ticks.\-h$>$}
+
+
+
+Граф наследования\-:Ticks\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_ticks__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Ticks\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ticks__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ticks_a48820608dd7a0bd504527deb457fc111}{Ticks} (\hyperlink{class_axis}{Axis} $\ast$\hyperlink{class_ticks_a1651670c18ed9ab64dc36f1a0f97f6c6}{parent\-Axis})
+\item 
+virtual \hyperlink{class_ticks_ab3a97a6266de2e1d089fbd85cbe5f5dd}{$\sim$\-Ticks} ()
+\item 
+void \hyperlink{class_ticks_a2fb7a8c3fe17f9a768014f9b7a6ab2e4}{Set\-Minor\-Length} (int length)
+\item 
+int \hyperlink{class_ticks_ad6394a3241855a227cfd869a8d676374}{Get\-Minor\-Length} () const 
+\item 
+void \hyperlink{class_ticks_acf24cc03f24d121992d8972e4dc703f9}{Set\-Major\-Length} (int length)
+\item 
+int \hyperlink{class_ticks_a1d03d0c25f828870ebfabfc536e9becb}{Get\-Major\-Length} () const 
+\item 
+int \hyperlink{class_ticks_ae0d548cd2a8dcc2feed13bb17800a038}{Get\-Max\-Length} () const 
+\item 
+void \hyperlink{class_ticks_a483d4d8347a6753c12960c95729821dc}{Set\-Minor\-Count} (int count)
+\item 
+void \hyperlink{class_ticks_ad79d9186b5b9f2dbc3c5ea8809d9a6c1}{Set\-Major\-Count} (int count)
+\item 
+int \hyperlink{class_ticks_aa63bc56cc72e854b3e1dcbd167f26cd5}{Get\-Minor\-Count} () const 
+\item 
+int \hyperlink{class_ticks_a2102769dbff638d61e068e0e60ddfc00}{Get\-Major\-Count} () const 
+\item 
+void \hyperlink{class_ticks_a1a00c0f9c5b36aed57838ebbc1d28b02}{Enable\-Major} (B\-O\-O\-L enable=T\-R\-U\-E)
+\item 
+B\-O\-O\-L \hyperlink{class_ticks_ada1063e3a34efd195c731c320268ee61}{Is\-Major\-Enabled} () const 
+\item 
+void \hyperlink{class_ticks_a45b4d99c8d61eea54c2d2a47c254c593}{Enable\-Minor} (B\-O\-O\-L enable)
+\item 
+B\-O\-O\-L \hyperlink{class_ticks_ab5f18bff2c5ca59338bae41f2eca8705}{Is\-Minor\-Enabled} () const 
+\item 
+void \hyperlink{class_ticks_a59a5f97b56ba8a5e66c7dd3537aa5372}{Set\-Origin} (P\-O\-I\-N\-T \hyperlink{class_ticks_a316c176b6108e99b7327efa4e62c9276}{origin})
+\item 
+void \hyperlink{class_ticks_acbb53bbd73e15aeb237e39c1035dd2e8}{Set\-Style} (unsigned long l\-Style=\hyperlink{ticks_8h_ae003d2b10c7be824e212a85e70d2b4b3}{T\-I\-C\-K\-S\-\_\-\-B\-O\-T\-H})
+\item 
+unsigned long \hyperlink{class_ticks_a111424e58796d2b3d923042b10b6b47a}{Get\-Style} ()
+\item 
+\hyperlink{class_line_data}{Line\-Data} \& \hyperlink{class_ticks_a92632374842f45c97f4eef37a027bc61}{Get\-Line} (B\-O\-O\-L b\-Major=T\-R\-U\-E)
+\item 
+void \hyperlink{class_ticks_a027e9507c82a5021644a0e0a3352b89b}{Set\-Line} (const \hyperlink{class_line_data}{Line\-Data} \&line, B\-O\-O\-L b\-Major)
+\item 
+void \hyperlink{class_ticks_aacbff2048aede4d95c9ca066603f4d5c}{Pre\-Draw} ()
+\item 
+void \hyperlink{class_ticks_a351eb67db476ecca6e8f0da001afa948}{Calc\-Ticks\-Pos} ()
+\item 
+void \hyperlink{class_ticks_a0bab06ae4f43f7f5e39f1e2e31f04045}{On\-Draw} (H\-D\-C hdc)
+\item 
+virtual B\-O\-O\-L \hyperlink{class_ticks_a49b690623984a9ecc3e2090dac5f0f62}{Write} (H\-A\-N\-D\-L\-E h\-File) const 
+\item 
+virtual B\-O\-O\-L \hyperlink{class_ticks_a6059d8bd2489336d9e77fe7c701e1d20}{Read} (H\-A\-N\-D\-L\-E h\-File)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ticks_a8e904547e1b2b57501f7a6d0dab584ac}{Draw\-Tick} (H\-D\-C hdc, int x, int y, int len)
+\item 
+void \hyperlink{class_ticks_a2ba3d3e17fb82993527758779ed02a49}{Clear} ()
+\item 
+const std\-::vector$<$ P\-O\-I\-N\-T $>$ \& \hyperlink{class_ticks_a757ebce87067b43aa91f11ae1d89bae7}{Get\-Major\-Ticks\-Pos} () const 
+\item 
+const std\-::vector$<$ P\-O\-I\-N\-T $>$ \& \hyperlink{class_ticks_a91076e5006090839901a73e9d0e8f50c}{Get\-Minor\-Ticks\-Pos} () const 
+\item 
+const std\-::vector$<$ double $>$ \& \hyperlink{class_ticks_a1bd2a0b01946d395070c38156dbc6453}{Get\-Major\-Ticks\-Values} () const 
+\item 
+const std\-::vector$<$ double $>$ \& \hyperlink{class_ticks_a78ee30a2532f6dd9232f68744b8fe799}{Get\-Minor\-Ticks\-Values} () const 
+\item 
+B\-O\-O\-L \hyperlink{class_ticks_af2f8d53ed1e949c2731b4bdc8c407549}{Get\-Nearest\-Tick} (double \&val, P\-O\-I\-N\-T \&pt)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_axis}{Axis} $\ast$ \hyperlink{class_ticks_a1651670c18ed9ab64dc36f1a0f97f6c6}{parent\-Axis}
+\item 
+int \hyperlink{class_ticks_a8d5c6ae0f3a8795b19fb11b02a067965}{minor\-Length}
+\item 
+int \hyperlink{class_ticks_a1426fb6d7b814408f11f7e42c69cb043}{major\-Length}
+\item 
+int \hyperlink{class_ticks_a65f30db72cdc88055678f89403bac8ab}{major\-Count}
+\item 
+int \hyperlink{class_ticks_a2a253b2cc8b48bd9183cddfd10b52c17}{minor\-Count}
+\item 
+\hyperlink{class_line_data}{Line\-Data} $\ast$ \hyperlink{class_ticks_a124e38f88330158c049125e5beddf12b}{line\-Major}
+\item 
+\hyperlink{class_line_data}{Line\-Data} $\ast$ \hyperlink{class_ticks_a38664cd2dd23fc7f5cbe119119af8f69}{line\-Minor}
+\item 
+P\-O\-I\-N\-T \hyperlink{class_ticks_a316c176b6108e99b7327efa4e62c9276}{origin}
+\item 
+unsigned long \hyperlink{class_ticks_a26f1426254b2dbb52faf65e367c842d7}{style}
+\item 
+B\-O\-O\-L \hyperlink{class_ticks_a8dff4c03c15737ce84808492b0773dcd}{enabled\-Major}
+\item 
+B\-O\-O\-L \hyperlink{class_ticks_aa830dfc5ddac0215f342f134263033fe}{enabled\-Minor}
+\item 
+std\-::vector$<$ P\-O\-I\-N\-T $>$ \hyperlink{class_ticks_ae6233030c8eb29fb309d2d55c6d97f94}{major\-Points}
+\item 
+std\-::vector$<$ P\-O\-I\-N\-T $>$ \hyperlink{class_ticks_aad15b47014c3660f4e9299be607ef78c}{minor\-Points}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{class_ticks_acb5d19b05c96d1d9bbc406ba1c366369}{major\-Values}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{class_ticks_a2cc0e38cace3edc53a31e329781ba2de}{minor\-Values}
+\end{DoxyCompactItemize}
+\subsection*{Друзья}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_ticks_a9c05b17b809103942e6d7089d28f6db9}{Axis}
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_ticks_a48820608dd7a0bd504527deb457fc111}{\index{Ticks@{Ticks}!Ticks@{Ticks}}
+\index{Ticks@{Ticks}!Ticks@{Ticks}}
+\subsubsection[{Ticks}]{\setlength{\rightskip}{0pt plus 5cm}Ticks\-::\-Ticks (
+\begin{DoxyParamCaption}
+\item[{{\bf Axis} $\ast$}]{parent\-Axis}
+\end{DoxyParamCaption}
+)}}\label{class_ticks_a48820608dd7a0bd504527deb457fc111}
+\hypertarget{class_ticks_ab3a97a6266de2e1d089fbd85cbe5f5dd}{\index{Ticks@{Ticks}!$\sim$\-Ticks@{$\sim$\-Ticks}}
+\index{$\sim$\-Ticks@{$\sim$\-Ticks}!Ticks@{Ticks}}
+\subsubsection[{$\sim$\-Ticks}]{\setlength{\rightskip}{0pt plus 5cm}Ticks\-::$\sim$\-Ticks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_ticks_ab3a97a6266de2e1d089fbd85cbe5f5dd}
+
+
+\subsection{Методы}
+\hypertarget{class_ticks_a351eb67db476ecca6e8f0da001afa948}{\index{Ticks@{Ticks}!Calc\-Ticks\-Pos@{Calc\-Ticks\-Pos}}
+\index{Calc\-Ticks\-Pos@{Calc\-Ticks\-Pos}!Ticks@{Ticks}}
+\subsubsection[{Calc\-Ticks\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Calc\-Ticks\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ticks_a351eb67db476ecca6e8f0da001afa948}
+\hypertarget{class_ticks_a2ba3d3e17fb82993527758779ed02a49}{\index{Ticks@{Ticks}!Clear@{Clear}}
+\index{Clear@{Clear}!Ticks@{Ticks}}
+\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a2ba3d3e17fb82993527758779ed02a49}
+\hypertarget{class_ticks_a8e904547e1b2b57501f7a6d0dab584ac}{\index{Ticks@{Ticks}!Draw\-Tick@{Draw\-Tick}}
+\index{Draw\-Tick@{Draw\-Tick}!Ticks@{Ticks}}
+\subsubsection[{Draw\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Draw\-Tick (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a8e904547e1b2b57501f7a6d0dab584ac}
+\hypertarget{class_ticks_a1a00c0f9c5b36aed57838ebbc1d28b02}{\index{Ticks@{Ticks}!Enable\-Major@{Enable\-Major}}
+\index{Enable\-Major@{Enable\-Major}!Ticks@{Ticks}}
+\subsubsection[{Enable\-Major}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Enable\-Major (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_a1a00c0f9c5b36aed57838ebbc1d28b02}
+\hypertarget{class_ticks_a45b4d99c8d61eea54c2d2a47c254c593}{\index{Ticks@{Ticks}!Enable\-Minor@{Enable\-Minor}}
+\index{Enable\-Minor@{Enable\-Minor}!Ticks@{Ticks}}
+\subsubsection[{Enable\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Enable\-Minor (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_a45b4d99c8d61eea54c2d2a47c254c593}
+\hypertarget{class_ticks_a92632374842f45c97f4eef37a027bc61}{\index{Ticks@{Ticks}!Get\-Line@{Get\-Line}}
+\index{Get\-Line@{Get\-Line}!Ticks@{Ticks}}
+\subsubsection[{Get\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data} \& Ticks\-::\-Get\-Line (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{b\-Major = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{class_ticks_a92632374842f45c97f4eef37a027bc61}
+\hypertarget{class_ticks_a2102769dbff638d61e068e0e60ddfc00}{\index{Ticks@{Ticks}!Get\-Major\-Count@{Get\-Major\-Count}}
+\index{Get\-Major\-Count@{Get\-Major\-Count}!Ticks@{Ticks}}
+\subsubsection[{Get\-Major\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Ticks\-::\-Get\-Major\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_a2102769dbff638d61e068e0e60ddfc00}
+\hypertarget{class_ticks_a1d03d0c25f828870ebfabfc536e9becb}{\index{Ticks@{Ticks}!Get\-Major\-Length@{Get\-Major\-Length}}
+\index{Get\-Major\-Length@{Get\-Major\-Length}!Ticks@{Ticks}}
+\subsubsection[{Get\-Major\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int Ticks\-::\-Get\-Major\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_a1d03d0c25f828870ebfabfc536e9becb}
+\hypertarget{class_ticks_a757ebce87067b43aa91f11ae1d89bae7}{\index{Ticks@{Ticks}!Get\-Major\-Ticks\-Pos@{Get\-Major\-Ticks\-Pos}}
+\index{Get\-Major\-Ticks\-Pos@{Get\-Major\-Ticks\-Pos}!Ticks@{Ticks}}
+\subsubsection[{Get\-Major\-Ticks\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<$P\-O\-I\-N\-T$>$\& Ticks\-::\-Get\-Major\-Ticks\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_ticks_a757ebce87067b43aa91f11ae1d89bae7}
+\hypertarget{class_ticks_a1bd2a0b01946d395070c38156dbc6453}{\index{Ticks@{Ticks}!Get\-Major\-Ticks\-Values@{Get\-Major\-Ticks\-Values}}
+\index{Get\-Major\-Ticks\-Values@{Get\-Major\-Ticks\-Values}!Ticks@{Ticks}}
+\subsubsection[{Get\-Major\-Ticks\-Values}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<$double$>$\& Ticks\-::\-Get\-Major\-Ticks\-Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_ticks_a1bd2a0b01946d395070c38156dbc6453}
+\hypertarget{class_ticks_ae0d548cd2a8dcc2feed13bb17800a038}{\index{Ticks@{Ticks}!Get\-Max\-Length@{Get\-Max\-Length}}
+\index{Get\-Max\-Length@{Get\-Max\-Length}!Ticks@{Ticks}}
+\subsubsection[{Get\-Max\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int Ticks\-::\-Get\-Max\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_ticks_ae0d548cd2a8dcc2feed13bb17800a038}
+\hypertarget{class_ticks_aa63bc56cc72e854b3e1dcbd167f26cd5}{\index{Ticks@{Ticks}!Get\-Minor\-Count@{Get\-Minor\-Count}}
+\index{Get\-Minor\-Count@{Get\-Minor\-Count}!Ticks@{Ticks}}
+\subsubsection[{Get\-Minor\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Ticks\-::\-Get\-Minor\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_aa63bc56cc72e854b3e1dcbd167f26cd5}
+\hypertarget{class_ticks_ad6394a3241855a227cfd869a8d676374}{\index{Ticks@{Ticks}!Get\-Minor\-Length@{Get\-Minor\-Length}}
+\index{Get\-Minor\-Length@{Get\-Minor\-Length}!Ticks@{Ticks}}
+\subsubsection[{Get\-Minor\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int Ticks\-::\-Get\-Minor\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_ad6394a3241855a227cfd869a8d676374}
+\hypertarget{class_ticks_a91076e5006090839901a73e9d0e8f50c}{\index{Ticks@{Ticks}!Get\-Minor\-Ticks\-Pos@{Get\-Minor\-Ticks\-Pos}}
+\index{Get\-Minor\-Ticks\-Pos@{Get\-Minor\-Ticks\-Pos}!Ticks@{Ticks}}
+\subsubsection[{Get\-Minor\-Ticks\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<$P\-O\-I\-N\-T$>$\& Ticks\-::\-Get\-Minor\-Ticks\-Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_ticks_a91076e5006090839901a73e9d0e8f50c}
+\hypertarget{class_ticks_a78ee30a2532f6dd9232f68744b8fe799}{\index{Ticks@{Ticks}!Get\-Minor\-Ticks\-Values@{Get\-Minor\-Ticks\-Values}}
+\index{Get\-Minor\-Ticks\-Values@{Get\-Minor\-Ticks\-Values}!Ticks@{Ticks}}
+\subsubsection[{Get\-Minor\-Ticks\-Values}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::vector$<$double$>$\& Ticks\-::\-Get\-Minor\-Ticks\-Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_ticks_a78ee30a2532f6dd9232f68744b8fe799}
+\hypertarget{class_ticks_af2f8d53ed1e949c2731b4bdc8c407549}{\index{Ticks@{Ticks}!Get\-Nearest\-Tick@{Get\-Nearest\-Tick}}
+\index{Get\-Nearest\-Tick@{Get\-Nearest\-Tick}!Ticks@{Ticks}}
+\subsubsection[{Get\-Nearest\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Ticks\-::\-Get\-Nearest\-Tick (
+\begin{DoxyParamCaption}
+\item[{double \&}]{val, }
+\item[{P\-O\-I\-N\-T \&}]{pt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_af2f8d53ed1e949c2731b4bdc8c407549}
+\hypertarget{class_ticks_a111424e58796d2b3d923042b10b6b47a}{\index{Ticks@{Ticks}!Get\-Style@{Get\-Style}}
+\index{Get\-Style@{Get\-Style}!Ticks@{Ticks}}
+\subsubsection[{Get\-Style}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Ticks\-::\-Get\-Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_a111424e58796d2b3d923042b10b6b47a}
+\hypertarget{class_ticks_ada1063e3a34efd195c731c320268ee61}{\index{Ticks@{Ticks}!Is\-Major\-Enabled@{Is\-Major\-Enabled}}
+\index{Is\-Major\-Enabled@{Is\-Major\-Enabled}!Ticks@{Ticks}}
+\subsubsection[{Is\-Major\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Ticks\-::\-Is\-Major\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_ada1063e3a34efd195c731c320268ee61}
+\hypertarget{class_ticks_ab5f18bff2c5ca59338bae41f2eca8705}{\index{Ticks@{Ticks}!Is\-Minor\-Enabled@{Is\-Minor\-Enabled}}
+\index{Is\-Minor\-Enabled@{Is\-Minor\-Enabled}!Ticks@{Ticks}}
+\subsubsection[{Is\-Minor\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Ticks\-::\-Is\-Minor\-Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_ab5f18bff2c5ca59338bae41f2eca8705}
+\hypertarget{class_ticks_a0bab06ae4f43f7f5e39f1e2e31f04045}{\index{Ticks@{Ticks}!On\-Draw@{On\-Draw}}
+\index{On\-Draw@{On\-Draw}!Ticks@{Ticks}}
+\subsubsection[{On\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-On\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc}
+\end{DoxyParamCaption}
+)}}\label{class_ticks_a0bab06ae4f43f7f5e39f1e2e31f04045}
+\hypertarget{class_ticks_aacbff2048aede4d95c9ca066603f4d5c}{\index{Ticks@{Ticks}!Pre\-Draw@{Pre\-Draw}}
+\index{Pre\-Draw@{Pre\-Draw}!Ticks@{Ticks}}
+\subsubsection[{Pre\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Pre\-Draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_ticks_aacbff2048aede4d95c9ca066603f4d5c}
+\hypertarget{class_ticks_a6059d8bd2489336d9e77fe7c701e1d20}{\index{Ticks@{Ticks}!Read@{Read}}
+\index{Read@{Read}!Ticks@{Ticks}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Ticks\-::\-Read (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_ticks_a6059d8bd2489336d9e77fe7c701e1d20}
+
+
+Замещает \hyperlink{class_savable_item_a7eadd16b2cb0652091cc15f596a00fb2}{Savable\-Item}.
+
+\hypertarget{class_ticks_a027e9507c82a5021644a0e0a3352b89b}{\index{Ticks@{Ticks}!Set\-Line@{Set\-Line}}
+\index{Set\-Line@{Set\-Line}!Ticks@{Ticks}}
+\subsubsection[{Set\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Set\-Line (
+\begin{DoxyParamCaption}
+\item[{const {\bf Line\-Data} \&}]{line, }
+\item[{B\-O\-O\-L}]{b\-Major}
+\end{DoxyParamCaption}
+)}}\label{class_ticks_a027e9507c82a5021644a0e0a3352b89b}
+\hypertarget{class_ticks_ad79d9186b5b9f2dbc3c5ea8809d9a6c1}{\index{Ticks@{Ticks}!Set\-Major\-Count@{Set\-Major\-Count}}
+\index{Set\-Major\-Count@{Set\-Major\-Count}!Ticks@{Ticks}}
+\subsubsection[{Set\-Major\-Count}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Set\-Major\-Count (
+\begin{DoxyParamCaption}
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_ad79d9186b5b9f2dbc3c5ea8809d9a6c1}
+\hypertarget{class_ticks_acf24cc03f24d121992d8972e4dc703f9}{\index{Ticks@{Ticks}!Set\-Major\-Length@{Set\-Major\-Length}}
+\index{Set\-Major\-Length@{Set\-Major\-Length}!Ticks@{Ticks}}
+\subsubsection[{Set\-Major\-Length}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Set\-Major\-Length (
+\begin{DoxyParamCaption}
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_acf24cc03f24d121992d8972e4dc703f9}
+\hypertarget{class_ticks_a483d4d8347a6753c12960c95729821dc}{\index{Ticks@{Ticks}!Set\-Minor\-Count@{Set\-Minor\-Count}}
+\index{Set\-Minor\-Count@{Set\-Minor\-Count}!Ticks@{Ticks}}
+\subsubsection[{Set\-Minor\-Count}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Set\-Minor\-Count (
+\begin{DoxyParamCaption}
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_a483d4d8347a6753c12960c95729821dc}
+\hypertarget{class_ticks_a2fb7a8c3fe17f9a768014f9b7a6ab2e4}{\index{Ticks@{Ticks}!Set\-Minor\-Length@{Set\-Minor\-Length}}
+\index{Set\-Minor\-Length@{Set\-Minor\-Length}!Ticks@{Ticks}}
+\subsubsection[{Set\-Minor\-Length}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Set\-Minor\-Length (
+\begin{DoxyParamCaption}
+\item[{int}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_a2fb7a8c3fe17f9a768014f9b7a6ab2e4}
+\hypertarget{class_ticks_a59a5f97b56ba8a5e66c7dd3537aa5372}{\index{Ticks@{Ticks}!Set\-Origin@{Set\-Origin}}
+\index{Set\-Origin@{Set\-Origin}!Ticks@{Ticks}}
+\subsubsection[{Set\-Origin}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Set\-Origin (
+\begin{DoxyParamCaption}
+\item[{P\-O\-I\-N\-T}]{origin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_a59a5f97b56ba8a5e66c7dd3537aa5372}
+\hypertarget{class_ticks_acbb53bbd73e15aeb237e39c1035dd2e8}{\index{Ticks@{Ticks}!Set\-Style@{Set\-Style}}
+\index{Set\-Style@{Set\-Style}!Ticks@{Ticks}}
+\subsubsection[{Set\-Style}]{\setlength{\rightskip}{0pt plus 5cm}void Ticks\-::\-Set\-Style (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{l\-Style = {\ttfamily {\bf T\-I\-C\-K\-S\-\_\-\-B\-O\-T\-H}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_ticks_acbb53bbd73e15aeb237e39c1035dd2e8}
+\hypertarget{class_ticks_a49b690623984a9ecc3e2090dac5f0f62}{\index{Ticks@{Ticks}!Write@{Write}}
+\index{Write@{Write}!Ticks@{Ticks}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Ticks\-::\-Write (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_ticks_a49b690623984a9ecc3e2090dac5f0f62}
+
+
+Замещает \hyperlink{class_savable_item_a0da511a4854f515096f8f9b498f64158}{Savable\-Item}.
+
+
+
+\subsection{Документация по друзьям класса и функциям, отноносящимся к классу}
+\hypertarget{class_ticks_a9c05b17b809103942e6d7089d28f6db9}{\index{Ticks@{Ticks}!Axis@{Axis}}
+\index{Axis@{Axis}!Ticks@{Ticks}}
+\subsubsection[{Axis}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Axis}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_ticks_a9c05b17b809103942e6d7089d28f6db9}
+
+
+\subsection{Данные класса}
+\hypertarget{class_ticks_a8dff4c03c15737ce84808492b0773dcd}{\index{Ticks@{Ticks}!enabled\-Major@{enabled\-Major}}
+\index{enabled\-Major@{enabled\-Major}!Ticks@{Ticks}}
+\subsubsection[{enabled\-Major}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Ticks\-::enabled\-Major\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a8dff4c03c15737ce84808492b0773dcd}
+\hypertarget{class_ticks_aa830dfc5ddac0215f342f134263033fe}{\index{Ticks@{Ticks}!enabled\-Minor@{enabled\-Minor}}
+\index{enabled\-Minor@{enabled\-Minor}!Ticks@{Ticks}}
+\subsubsection[{enabled\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Ticks\-::enabled\-Minor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_aa830dfc5ddac0215f342f134263033fe}
+\hypertarget{class_ticks_a124e38f88330158c049125e5beddf12b}{\index{Ticks@{Ticks}!line\-Major@{line\-Major}}
+\index{line\-Major@{line\-Major}!Ticks@{Ticks}}
+\subsubsection[{line\-Major}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data}$\ast$ Ticks\-::line\-Major\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a124e38f88330158c049125e5beddf12b}
+\hypertarget{class_ticks_a38664cd2dd23fc7f5cbe119119af8f69}{\index{Ticks@{Ticks}!line\-Minor@{line\-Minor}}
+\index{line\-Minor@{line\-Minor}!Ticks@{Ticks}}
+\subsubsection[{line\-Minor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data}$\ast$ Ticks\-::line\-Minor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a38664cd2dd23fc7f5cbe119119af8f69}
+\hypertarget{class_ticks_a65f30db72cdc88055678f89403bac8ab}{\index{Ticks@{Ticks}!major\-Count@{major\-Count}}
+\index{major\-Count@{major\-Count}!Ticks@{Ticks}}
+\subsubsection[{major\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Ticks\-::major\-Count\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a65f30db72cdc88055678f89403bac8ab}
+\hypertarget{class_ticks_a1426fb6d7b814408f11f7e42c69cb043}{\index{Ticks@{Ticks}!major\-Length@{major\-Length}}
+\index{major\-Length@{major\-Length}!Ticks@{Ticks}}
+\subsubsection[{major\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int Ticks\-::major\-Length\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a1426fb6d7b814408f11f7e42c69cb043}
+\hypertarget{class_ticks_ae6233030c8eb29fb309d2d55c6d97f94}{\index{Ticks@{Ticks}!major\-Points@{major\-Points}}
+\index{major\-Points@{major\-Points}!Ticks@{Ticks}}
+\subsubsection[{major\-Points}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$P\-O\-I\-N\-T$>$ Ticks\-::major\-Points\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_ae6233030c8eb29fb309d2d55c6d97f94}
+\hypertarget{class_ticks_acb5d19b05c96d1d9bbc406ba1c366369}{\index{Ticks@{Ticks}!major\-Values@{major\-Values}}
+\index{major\-Values@{major\-Values}!Ticks@{Ticks}}
+\subsubsection[{major\-Values}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ Ticks\-::major\-Values\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_acb5d19b05c96d1d9bbc406ba1c366369}
+\hypertarget{class_ticks_a2a253b2cc8b48bd9183cddfd10b52c17}{\index{Ticks@{Ticks}!minor\-Count@{minor\-Count}}
+\index{minor\-Count@{minor\-Count}!Ticks@{Ticks}}
+\subsubsection[{minor\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Ticks\-::minor\-Count\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a2a253b2cc8b48bd9183cddfd10b52c17}
+\hypertarget{class_ticks_a8d5c6ae0f3a8795b19fb11b02a067965}{\index{Ticks@{Ticks}!minor\-Length@{minor\-Length}}
+\index{minor\-Length@{minor\-Length}!Ticks@{Ticks}}
+\subsubsection[{minor\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int Ticks\-::minor\-Length\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a8d5c6ae0f3a8795b19fb11b02a067965}
+\hypertarget{class_ticks_aad15b47014c3660f4e9299be607ef78c}{\index{Ticks@{Ticks}!minor\-Points@{minor\-Points}}
+\index{minor\-Points@{minor\-Points}!Ticks@{Ticks}}
+\subsubsection[{minor\-Points}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$P\-O\-I\-N\-T$>$ Ticks\-::minor\-Points\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_aad15b47014c3660f4e9299be607ef78c}
+\hypertarget{class_ticks_a2cc0e38cace3edc53a31e329781ba2de}{\index{Ticks@{Ticks}!minor\-Values@{minor\-Values}}
+\index{minor\-Values@{minor\-Values}!Ticks@{Ticks}}
+\subsubsection[{minor\-Values}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ Ticks\-::minor\-Values\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a2cc0e38cace3edc53a31e329781ba2de}
+\hypertarget{class_ticks_a316c176b6108e99b7327efa4e62c9276}{\index{Ticks@{Ticks}!origin@{origin}}
+\index{origin@{origin}!Ticks@{Ticks}}
+\subsubsection[{origin}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-I\-N\-T Ticks\-::origin\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a316c176b6108e99b7327efa4e62c9276}
+\hypertarget{class_ticks_a1651670c18ed9ab64dc36f1a0f97f6c6}{\index{Ticks@{Ticks}!parent\-Axis@{parent\-Axis}}
+\index{parent\-Axis@{parent\-Axis}!Ticks@{Ticks}}
+\subsubsection[{parent\-Axis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}$\ast$ Ticks\-::parent\-Axis\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a1651670c18ed9ab64dc36f1a0f97f6c6}
+\hypertarget{class_ticks_a26f1426254b2dbb52faf65e367c842d7}{\index{Ticks@{Ticks}!style@{style}}
+\index{style@{style}!Ticks@{Ticks}}
+\subsubsection[{style}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Ticks\-::style\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_ticks_a26f1426254b2dbb52faf65e367c842d7}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{ticks_8h}{ticks.\-h}\item 
+src/\hyperlink{ticks_8cpp}{ticks.\-cpp}\end{DoxyCompactItemize}

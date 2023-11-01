@@ -1,0 +1,240 @@
+\hypertarget{class_plot_region}{\section{Класс Plot\-Region}
+\label{class_plot_region}\index{Plot\-Region@{Plot\-Region}}
+}
+
+
+{\ttfamily \#include $<$Regions.\-h$>$}
+
+
+
+Граф связей класса Plot\-Region\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plot_region__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_plot_region_aa20c4158814429875632d6d873a41aeb}{Plot\-Region} (\hyperlink{class_x_y_plot}{X\-Y\-Plot} $\ast$parent, \hyperlink{class_axis}{Axis} $\ast$axis\-X, \hyperlink{class_axis}{Axis} $\ast$axis\-Y, double pt\-From\-X, double pt\-From\-Y, double pt\-To\-X, double pt\-To\-Y, std\-::string label\-Text=\char`\"{}\char`\"{}, C\-O\-L\-O\-R\-R\-E\-F color=R\-G\-B(128, 80, 80), double opaque=100, C\-O\-L\-O\-R\-R\-E\-F Border\-Color=R\-G\-B(0, 0, 0), int Border\-Width=1, int Border\-Line=\hyperlink{namespacexyplot_a3d67107a3da8dc1ef0114ab0352e01eda50f3326c8ff8eb69d629156dfe2e268a}{xyplot\-::\-P\-L\-S\-\_\-\-S\-O\-L\-I\-D})
+\item 
+\hyperlink{class_plot_region_a30f37de224be906ff032def46b311d3c}{$\sim$\-Plot\-Region} (void)
+\item 
+B\-O\-O\-L \hyperlink{class_plot_region_a6a71fbeed8f2de90fe6e069a9b2e22c0}{Pre\-Draw} ()
+\item 
+void \hyperlink{class_plot_region_a508939830f7e43969b099c2836db5c4e}{On\-Draw} (H\-D\-C hdc)
+\item 
+void \hyperlink{class_plot_region_a8e8d84c8bca2c5badf833ec55e4ac089}{Set\-X\-Range} (double x1, double x2)
+\item 
+void \hyperlink{class_plot_region_a906d6cdb0f52224b37dc93fe5e3a2a98}{Set\-Y\-Range} (double y1, double y2)
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_plot_region_a8c9115a80a42634d87a6ee1e95dd62d1}{Get\-Line\-Color} () const 
+\item 
+void \hyperlink{class_plot_region_aea5ce8db7c4e5ad0383b5bca8ceeceba}{Set\-Line\-Color} (C\-O\-L\-O\-R\-R\-E\-F color)
+\item 
+void \hyperlink{class_plot_region_aa627b45cacdbc50c3f6ae4cfbb66b75b}{Get\-Fill\-Colors} (C\-O\-L\-O\-R\-R\-E\-F \&clr\-Start, C\-O\-L\-O\-R\-R\-E\-F \&clr\-Finish) const 
+\item 
+void \hyperlink{class_plot_region_a7cb18f693dc5ca91e5220d753dcd710a}{Set\-Fill\-Colors} (C\-O\-L\-O\-R\-R\-E\-F clr\-Start, C\-O\-L\-O\-R\-R\-E\-F clr\-Finish)
+\item 
+void \hyperlink{class_plot_region_a973f741072a09ad701f31fd8cf8c7178}{Set\-Gradient\-Direction} (B\-O\-O\-L vertical)
+\item 
+B\-O\-O\-L \hyperlink{class_plot_region_a1a8c4048030e64ec3d29361363f6b3f3}{Get\-Gradient\-Direction} () const 
+\item 
+long \hyperlink{class_plot_region_a47b86ae228fae33d9448f8ac3c2a7c05}{Get\-Hatch\-Style} () const 
+\item 
+void \hyperlink{class_plot_region_afef080fb216a51c6a90f4b4ac8050ee2}{Set\-Hatch\-Style} (long hstyle)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_axis}{Axis} \& \hyperlink{class_plot_region_aec00a997e0e41c233d8542a9ec4d602f}{parent\-Axis\-X}
+\item 
+const \hyperlink{class_axis}{Axis} \& \hyperlink{class_plot_region_ae817987187aded3ddb6074f1462f9b5c}{parent\-Axis\-Y}
+\item 
+\hyperlink{class_border}{Border} \hyperlink{class_plot_region_a66a8e6a2f04b30da9b84a618aeef17a2}{border}
+\item 
+\hyperlink{class_back_ground}{Back\-Ground} \hyperlink{class_plot_region_a73dfa8e41749b8f277264bd716f3621e}{bk}
+\item 
+R\-E\-C\-T \hyperlink{class_plot_region_ac277b90fffff8f74744646361e3c0887}{rgn\-Rect}
+\item 
+double \hyperlink{class_plot_region_a17c3a91a03edc979ef6fdd2fa317fc79}{x\-From}
+\item 
+double \hyperlink{class_plot_region_a8f988d5b4e0ae0995b4fe457b806064e}{x\-To}
+\item 
+double \hyperlink{class_plot_region_acf10bb3e21dc8efeadbc2ccd128a6772}{y\-From}
+\item 
+double \hyperlink{class_plot_region_ad97dd7a58a12907c939ad3d764ad0a7d}{y\-To}
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_plot_region_a12dc144f3d93052dc1b2afd355b4372e}{hatch\-Color}
+\item 
+long \hyperlink{class_plot_region_a0a6bac6e99e972970b90e19aa1463fe6}{hatch\-Style}
+\item 
+\hyperlink{class_r_t_f_string}{R\-T\-F\-String} $\ast$ \hyperlink{class_plot_region_a76d55541c5f544224d99b3f44ee3c5ea}{region\-Text}
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_plot_region_aa20c4158814429875632d6d873a41aeb}{\index{Plot\-Region@{Plot\-Region}!Plot\-Region@{Plot\-Region}}
+\index{Plot\-Region@{Plot\-Region}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Plot\-Region}]{\setlength{\rightskip}{0pt plus 5cm}Plot\-Region\-::\-Plot\-Region (
+\begin{DoxyParamCaption}
+\item[{{\bf X\-Y\-Plot} $\ast$}]{parent, }
+\item[{{\bf Axis} $\ast$}]{axis\-X, }
+\item[{{\bf Axis} $\ast$}]{axis\-Y, }
+\item[{double}]{pt\-From\-X, }
+\item[{double}]{pt\-From\-Y, }
+\item[{double}]{pt\-To\-X, }
+\item[{double}]{pt\-To\-Y, }
+\item[{std\-::string}]{label\-Text = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{color = {\ttfamily RGB(128,80,80)}, }
+\item[{double}]{opaque = {\ttfamily 100}, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{Border\-Color = {\ttfamily RGB(0,0,0)}, }
+\item[{int}]{Border\-Width = {\ttfamily 1}, }
+\item[{int}]{Border\-Line = {\ttfamily {\bf xyplot\-::\-P\-L\-S\-\_\-\-S\-O\-L\-I\-D}}}
+\end{DoxyParamCaption}
+)}}\label{class_plot_region_aa20c4158814429875632d6d873a41aeb}
+\hypertarget{class_plot_region_a30f37de224be906ff032def46b311d3c}{\index{Plot\-Region@{Plot\-Region}!$\sim$\-Plot\-Region@{$\sim$\-Plot\-Region}}
+\index{$\sim$\-Plot\-Region@{$\sim$\-Plot\-Region}!PlotRegion@{Plot\-Region}}
+\subsubsection[{$\sim$\-Plot\-Region}]{\setlength{\rightskip}{0pt plus 5cm}Plot\-Region\-::$\sim$\-Plot\-Region (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_plot_region_a30f37de224be906ff032def46b311d3c}
+
+
+\subsection{Методы}
+\hypertarget{class_plot_region_aa627b45cacdbc50c3f6ae4cfbb66b75b}{\index{Plot\-Region@{Plot\-Region}!Get\-Fill\-Colors@{Get\-Fill\-Colors}}
+\index{Get\-Fill\-Colors@{Get\-Fill\-Colors}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Get\-Fill\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}void Plot\-Region\-::\-Get\-Fill\-Colors (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F \&}]{clr\-Start, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F \&}]{clr\-Finish}
+\end{DoxyParamCaption}
+) const}}\label{class_plot_region_aa627b45cacdbc50c3f6ae4cfbb66b75b}
+\hypertarget{class_plot_region_a1a8c4048030e64ec3d29361363f6b3f3}{\index{Plot\-Region@{Plot\-Region}!Get\-Gradient\-Direction@{Get\-Gradient\-Direction}}
+\index{Get\-Gradient\-Direction@{Get\-Gradient\-Direction}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Get\-Gradient\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Plot\-Region\-::\-Get\-Gradient\-Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_plot_region_a1a8c4048030e64ec3d29361363f6b3f3}
+\hypertarget{class_plot_region_a47b86ae228fae33d9448f8ac3c2a7c05}{\index{Plot\-Region@{Plot\-Region}!Get\-Hatch\-Style@{Get\-Hatch\-Style}}
+\index{Get\-Hatch\-Style@{Get\-Hatch\-Style}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Get\-Hatch\-Style}]{\setlength{\rightskip}{0pt plus 5cm}long Plot\-Region\-::\-Get\-Hatch\-Style (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_plot_region_a47b86ae228fae33d9448f8ac3c2a7c05}
+\hypertarget{class_plot_region_a8c9115a80a42634d87a6ee1e95dd62d1}{\index{Plot\-Region@{Plot\-Region}!Get\-Line\-Color@{Get\-Line\-Color}}
+\index{Get\-Line\-Color@{Get\-Line\-Color}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Get\-Line\-Color}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F Plot\-Region\-::\-Get\-Line\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_plot_region_a8c9115a80a42634d87a6ee1e95dd62d1}
+\hypertarget{class_plot_region_a508939830f7e43969b099c2836db5c4e}{\index{Plot\-Region@{Plot\-Region}!On\-Draw@{On\-Draw}}
+\index{On\-Draw@{On\-Draw}!PlotRegion@{Plot\-Region}}
+\subsubsection[{On\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Plot\-Region\-::\-On\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc}
+\end{DoxyParamCaption}
+)}}\label{class_plot_region_a508939830f7e43969b099c2836db5c4e}
+\hypertarget{class_plot_region_a6a71fbeed8f2de90fe6e069a9b2e22c0}{\index{Plot\-Region@{Plot\-Region}!Pre\-Draw@{Pre\-Draw}}
+\index{Pre\-Draw@{Pre\-Draw}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Pre\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Plot\-Region\-::\-Pre\-Draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_plot_region_a6a71fbeed8f2de90fe6e069a9b2e22c0}
+\hypertarget{class_plot_region_a7cb18f693dc5ca91e5220d753dcd710a}{\index{Plot\-Region@{Plot\-Region}!Set\-Fill\-Colors@{Set\-Fill\-Colors}}
+\index{Set\-Fill\-Colors@{Set\-Fill\-Colors}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Set\-Fill\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}void Plot\-Region\-::\-Set\-Fill\-Colors (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr\-Start, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr\-Finish}
+\end{DoxyParamCaption}
+)}}\label{class_plot_region_a7cb18f693dc5ca91e5220d753dcd710a}
+\hypertarget{class_plot_region_a973f741072a09ad701f31fd8cf8c7178}{\index{Plot\-Region@{Plot\-Region}!Set\-Gradient\-Direction@{Set\-Gradient\-Direction}}
+\index{Set\-Gradient\-Direction@{Set\-Gradient\-Direction}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Set\-Gradient\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}void Plot\-Region\-::\-Set\-Gradient\-Direction (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{vertical}
+\end{DoxyParamCaption}
+)}}\label{class_plot_region_a973f741072a09ad701f31fd8cf8c7178}
+\hypertarget{class_plot_region_afef080fb216a51c6a90f4b4ac8050ee2}{\index{Plot\-Region@{Plot\-Region}!Set\-Hatch\-Style@{Set\-Hatch\-Style}}
+\index{Set\-Hatch\-Style@{Set\-Hatch\-Style}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Set\-Hatch\-Style}]{\setlength{\rightskip}{0pt plus 5cm}void Plot\-Region\-::\-Set\-Hatch\-Style (
+\begin{DoxyParamCaption}
+\item[{long}]{hstyle}
+\end{DoxyParamCaption}
+)}}\label{class_plot_region_afef080fb216a51c6a90f4b4ac8050ee2}
+\hypertarget{class_plot_region_aea5ce8db7c4e5ad0383b5bca8ceeceba}{\index{Plot\-Region@{Plot\-Region}!Set\-Line\-Color@{Set\-Line\-Color}}
+\index{Set\-Line\-Color@{Set\-Line\-Color}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Set\-Line\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Plot\-Region\-::\-Set\-Line\-Color (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{color}
+\end{DoxyParamCaption}
+)}}\label{class_plot_region_aea5ce8db7c4e5ad0383b5bca8ceeceba}
+\hypertarget{class_plot_region_a8e8d84c8bca2c5badf833ec55e4ac089}{\index{Plot\-Region@{Plot\-Region}!Set\-X\-Range@{Set\-X\-Range}}
+\index{Set\-X\-Range@{Set\-X\-Range}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Set\-X\-Range}]{\setlength{\rightskip}{0pt plus 5cm}void Plot\-Region\-::\-Set\-X\-Range (
+\begin{DoxyParamCaption}
+\item[{double}]{x1, }
+\item[{double}]{x2}
+\end{DoxyParamCaption}
+)}}\label{class_plot_region_a8e8d84c8bca2c5badf833ec55e4ac089}
+\hypertarget{class_plot_region_a906d6cdb0f52224b37dc93fe5e3a2a98}{\index{Plot\-Region@{Plot\-Region}!Set\-Y\-Range@{Set\-Y\-Range}}
+\index{Set\-Y\-Range@{Set\-Y\-Range}!PlotRegion@{Plot\-Region}}
+\subsubsection[{Set\-Y\-Range}]{\setlength{\rightskip}{0pt plus 5cm}void Plot\-Region\-::\-Set\-Y\-Range (
+\begin{DoxyParamCaption}
+\item[{double}]{y1, }
+\item[{double}]{y2}
+\end{DoxyParamCaption}
+)}}\label{class_plot_region_a906d6cdb0f52224b37dc93fe5e3a2a98}
+
+
+\subsection{Данные класса}
+\hypertarget{class_plot_region_a73dfa8e41749b8f277264bd716f3621e}{\index{Plot\-Region@{Plot\-Region}!bk@{bk}}
+\index{bk@{bk}!PlotRegion@{Plot\-Region}}
+\subsubsection[{bk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Back\-Ground} Plot\-Region\-::bk\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_a73dfa8e41749b8f277264bd716f3621e}
+\hypertarget{class_plot_region_a66a8e6a2f04b30da9b84a618aeef17a2}{\index{Plot\-Region@{Plot\-Region}!border@{border}}
+\index{border@{border}!PlotRegion@{Plot\-Region}}
+\subsubsection[{border}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Border} Plot\-Region\-::border\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_a66a8e6a2f04b30da9b84a618aeef17a2}
+\hypertarget{class_plot_region_a12dc144f3d93052dc1b2afd355b4372e}{\index{Plot\-Region@{Plot\-Region}!hatch\-Color@{hatch\-Color}}
+\index{hatch\-Color@{hatch\-Color}!PlotRegion@{Plot\-Region}}
+\subsubsection[{hatch\-Color}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F Plot\-Region\-::hatch\-Color\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_a12dc144f3d93052dc1b2afd355b4372e}
+\hypertarget{class_plot_region_a0a6bac6e99e972970b90e19aa1463fe6}{\index{Plot\-Region@{Plot\-Region}!hatch\-Style@{hatch\-Style}}
+\index{hatch\-Style@{hatch\-Style}!PlotRegion@{Plot\-Region}}
+\subsubsection[{hatch\-Style}]{\setlength{\rightskip}{0pt plus 5cm}long Plot\-Region\-::hatch\-Style\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_a0a6bac6e99e972970b90e19aa1463fe6}
+\hypertarget{class_plot_region_aec00a997e0e41c233d8542a9ec4d602f}{\index{Plot\-Region@{Plot\-Region}!parent\-Axis\-X@{parent\-Axis\-X}}
+\index{parent\-Axis\-X@{parent\-Axis\-X}!PlotRegion@{Plot\-Region}}
+\subsubsection[{parent\-Axis\-X}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Axis}\& Plot\-Region\-::parent\-Axis\-X\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_aec00a997e0e41c233d8542a9ec4d602f}
+\hypertarget{class_plot_region_ae817987187aded3ddb6074f1462f9b5c}{\index{Plot\-Region@{Plot\-Region}!parent\-Axis\-Y@{parent\-Axis\-Y}}
+\index{parent\-Axis\-Y@{parent\-Axis\-Y}!PlotRegion@{Plot\-Region}}
+\subsubsection[{parent\-Axis\-Y}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Axis}\& Plot\-Region\-::parent\-Axis\-Y\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_ae817987187aded3ddb6074f1462f9b5c}
+\hypertarget{class_plot_region_a76d55541c5f544224d99b3f44ee3c5ea}{\index{Plot\-Region@{Plot\-Region}!region\-Text@{region\-Text}}
+\index{region\-Text@{region\-Text}!PlotRegion@{Plot\-Region}}
+\subsubsection[{region\-Text}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-T\-F\-String}$\ast$ Plot\-Region\-::region\-Text\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_a76d55541c5f544224d99b3f44ee3c5ea}
+\hypertarget{class_plot_region_ac277b90fffff8f74744646361e3c0887}{\index{Plot\-Region@{Plot\-Region}!rgn\-Rect@{rgn\-Rect}}
+\index{rgn\-Rect@{rgn\-Rect}!PlotRegion@{Plot\-Region}}
+\subsubsection[{rgn\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T Plot\-Region\-::rgn\-Rect\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_ac277b90fffff8f74744646361e3c0887}
+\hypertarget{class_plot_region_a17c3a91a03edc979ef6fdd2fa317fc79}{\index{Plot\-Region@{Plot\-Region}!x\-From@{x\-From}}
+\index{x\-From@{x\-From}!PlotRegion@{Plot\-Region}}
+\subsubsection[{x\-From}]{\setlength{\rightskip}{0pt plus 5cm}double Plot\-Region\-::x\-From\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_a17c3a91a03edc979ef6fdd2fa317fc79}
+\hypertarget{class_plot_region_a8f988d5b4e0ae0995b4fe457b806064e}{\index{Plot\-Region@{Plot\-Region}!x\-To@{x\-To}}
+\index{x\-To@{x\-To}!PlotRegion@{Plot\-Region}}
+\subsubsection[{x\-To}]{\setlength{\rightskip}{0pt plus 5cm}double Plot\-Region\-::x\-To\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_a8f988d5b4e0ae0995b4fe457b806064e}
+\hypertarget{class_plot_region_acf10bb3e21dc8efeadbc2ccd128a6772}{\index{Plot\-Region@{Plot\-Region}!y\-From@{y\-From}}
+\index{y\-From@{y\-From}!PlotRegion@{Plot\-Region}}
+\subsubsection[{y\-From}]{\setlength{\rightskip}{0pt plus 5cm}double Plot\-Region\-::y\-From\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_acf10bb3e21dc8efeadbc2ccd128a6772}
+\hypertarget{class_plot_region_ad97dd7a58a12907c939ad3d764ad0a7d}{\index{Plot\-Region@{Plot\-Region}!y\-To@{y\-To}}
+\index{y\-To@{y\-To}!PlotRegion@{Plot\-Region}}
+\subsubsection[{y\-To}]{\setlength{\rightskip}{0pt plus 5cm}double Plot\-Region\-::y\-To\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_plot_region_ad97dd7a58a12907c939ad3d764ad0a7d}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_regions_8h}{Regions.\-h}\item 
+src/\hyperlink{_regions_8cpp}{Regions.\-cpp}\end{DoxyCompactItemize}

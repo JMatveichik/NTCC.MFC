@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Исходный файл src/Gridlines.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Gridlines.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_gridlines_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __GRIDLINES_H_INCLUDED__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __GRIDLINES_H_INCLUDED__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_savable_item_8h.html">SavableItem.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_line_data.html">LineData</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_axis.html">Axis</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/*Класс деления шкалы оси*/</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_grid_lines.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_grid_lines.html">GridLines</a> : <span class="keyword">public</span> <a class="code" href="class_savable_item.html">SavableItem</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>: </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_grid_lines.html#a8b75ba08cc39e81740ccc456875f15f7">GridLines</a>(<a class="code" href="class_axis.html">Axis</a>* <a class="code" href="class_grid_lines.html#a1e3ebb07403f525c882731bb1662b234">parentAxis</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_grid_lines.html#afc1d1925713bf15c1f031d41a901016b">~GridLines</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">/**************/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">/* МЕТОДЫ     */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">/**************/</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">/*Включить/выключить отображение основных делений оси*/</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_grid_lines.html#acefec88256cbb7dc4982e65666add9bb">   22</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_grid_lines.html#acefec88256cbb7dc4982e65666add9bb">EnableMajor</a>(BOOL enable = TRUE) { <a class="code" href="class_grid_lines.html#ad32092e3573f3fd24c3b1190f35034aa">enabledMajor</a> = enable; }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">/*Проверить включено ли отображение основных делений оси*/</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_grid_lines.html#a1208cfa5117f703ed785eba8c7ecae00">   25</a></span>&#160;    BOOL <a class="code" href="class_grid_lines.html#a1208cfa5117f703ed785eba8c7ecae00">IsMajorEnabled</a>()<span class="keyword"> const   </span>{ <span class="keywordflow">return</span> <a class="code" href="class_grid_lines.html#ad32092e3573f3fd24c3b1190f35034aa">enabledMajor</a>; }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">/*Включить/выключить отображение дополнительных делений оси*/</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_grid_lines.html#ab72907a0dcdb11acfeb473fb4c573939">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_grid_lines.html#ab72907a0dcdb11acfeb473fb4c573939">EnableMinor</a>(BOOL enable) { <a class="code" href="class_grid_lines.html#ae7f5d84d6a6b353e22fd251a20ac33f5">enabledMinor</a> = enable; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">/*Проверить включено ли отображение дополнительных делений оси*/</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_grid_lines.html#af6a52af538900e6ec6cd6eb53ffa6d29">   31</a></span>&#160;    BOOL <a class="code" href="class_grid_lines.html#af6a52af538900e6ec6cd6eb53ffa6d29">IsMinorEnabled</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_grid_lines.html#ae7f5d84d6a6b353e22fd251a20ac33f5">enabledMinor</a>; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">/*Получить параметры линии для отображения сетки оси (для основных или дополнительных)*/</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_line_data.html">LineData</a>&amp; <a class="code" href="class_grid_lines.html#a996a81d74b11f797745a3913b7c12293">GetLine</a>(BOOL bMajor = TRUE);  </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">/*Установить параметры линии для отображения сетки оси (для основных или дополнительных)*/</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_grid_lines.html#a420d336ed2892850bf5aab748d0fe406">SetLine</a>(<span class="keyword">const</span> <a class="code" href="class_line_data.html">LineData</a>&amp; line, BOOL bMajor = TRUE); </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">/*Процедура отисовки сетки*/</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_grid_lines.html#a839784fc12725e0705c751f8c9f466aa">OnDraw</a>(HDC hdc);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">/*Запись прарметров сетки в файл*/</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> BOOL <a class="code" href="class_grid_lines.html#af41e725b2af5e093e5307e2096c2c4c7">Write</a>(HANDLE hFile) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">/*Чтение праметров сетки из файла*/</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> BOOL <a class="code" href="class_grid_lines.html#aecc543959e2bfa9c45345257433a3110">Read</a>(HANDLE hFile);    </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:  </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">/**************/</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">/* АТРИБУТЫ   */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">/**************/</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_grid_lines.html#a1e3ebb07403f525c882731bb1662b234">   54</a></span>&#160;    <a class="code" href="class_axis.html">Axis</a>* <a class="code" href="class_grid_lines.html#a1e3ebb07403f525c882731bb1662b234">parentAxis</a>;   <span class="comment">//Ось которой принадлежат деления       </span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_grid_lines.html#a3e368e27515f01143f5470b65c9f2a52">   56</a></span>&#160;    <a class="code" href="class_line_data.html">LineData</a>* <a class="code" href="class_grid_lines.html#a3e368e27515f01143f5470b65c9f2a52">lineMajor</a>;   <span class="comment">//линия для отображения основных линий сетки</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_grid_lines.html#a72d2d255547ee192ff15609a254994fe">   57</a></span>&#160;    <a class="code" href="class_line_data.html">LineData</a>* <a class="code" href="class_grid_lines.html#a72d2d255547ee192ff15609a254994fe">lineMinor</a>;   <span class="comment">//линия для отображения дополнителных линий сетки</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_grid_lines.html#ad32092e3573f3fd24c3b1190f35034aa">   59</a></span>&#160;    BOOL <a class="code" href="class_grid_lines.html#ad32092e3573f3fd24c3b1190f35034aa">enabledMajor</a>;   <span class="comment">//Флаг отображения основных линий сетки</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_grid_lines.html#ae7f5d84d6a6b353e22fd251a20ac33f5">   60</a></span>&#160;    BOOL <a class="code" href="class_grid_lines.html#ae7f5d84d6a6b353e22fd251a20ac33f5">enabledMinor</a>;   <span class="comment">//Флаг отображения дополнительных линий сетки</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_grid_lines_html_acefec88256cbb7dc4982e65666add9bb"><div class="ttname"><a href="class_grid_lines.html#acefec88256cbb7dc4982e65666add9bb">GridLines::EnableMajor</a></div><div class="ttdeci">void EnableMajor(BOOL enable=TRUE)</div><div class="ttdef"><b>Definition:</b> Gridlines.h:22</div></div>
+<div class="ttc" id="class_grid_lines_html_af6a52af538900e6ec6cd6eb53ffa6d29"><div class="ttname"><a href="class_grid_lines.html#af6a52af538900e6ec6cd6eb53ffa6d29">GridLines::IsMinorEnabled</a></div><div class="ttdeci">BOOL IsMinorEnabled() const </div><div class="ttdef"><b>Definition:</b> Gridlines.h:31</div></div>
+<div class="ttc" id="class_grid_lines_html_ad32092e3573f3fd24c3b1190f35034aa"><div class="ttname"><a href="class_grid_lines.html#ad32092e3573f3fd24c3b1190f35034aa">GridLines::enabledMajor</a></div><div class="ttdeci">BOOL enabledMajor</div><div class="ttdef"><b>Definition:</b> Gridlines.h:59</div></div>
+<div class="ttc" id="class_grid_lines_html_a72d2d255547ee192ff15609a254994fe"><div class="ttname"><a href="class_grid_lines.html#a72d2d255547ee192ff15609a254994fe">GridLines::lineMinor</a></div><div class="ttdeci">LineData * lineMinor</div><div class="ttdef"><b>Definition:</b> Gridlines.h:57</div></div>
+<div class="ttc" id="class_grid_lines_html_aecc543959e2bfa9c45345257433a3110"><div class="ttname"><a href="class_grid_lines.html#aecc543959e2bfa9c45345257433a3110">GridLines::Read</a></div><div class="ttdeci">virtual BOOL Read(HANDLE hFile)</div><div class="ttdef"><b>Definition:</b> Gridlines.cpp:151</div></div>
+<div class="ttc" id="class_grid_lines_html_ae7f5d84d6a6b353e22fd251a20ac33f5"><div class="ttname"><a href="class_grid_lines.html#ae7f5d84d6a6b353e22fd251a20ac33f5">GridLines::enabledMinor</a></div><div class="ttdeci">BOOL enabledMinor</div><div class="ttdef"><b>Definition:</b> Gridlines.h:60</div></div>
+<div class="ttc" id="class_line_data_html"><div class="ttname"><a href="class_line_data.html">LineData</a></div><div class="ttdef"><b>Definition:</b> linedata.h:7</div></div>
+<div class="ttc" id="class_grid_lines_html_a3e368e27515f01143f5470b65c9f2a52"><div class="ttname"><a href="class_grid_lines.html#a3e368e27515f01143f5470b65c9f2a52">GridLines::lineMajor</a></div><div class="ttdeci">LineData * lineMajor</div><div class="ttdef"><b>Definition:</b> Gridlines.h:56</div></div>
+<div class="ttc" id="_savable_item_8h_html"><div class="ttname"><a href="_savable_item_8h.html">SavableItem.h</a></div></div>
+<div class="ttc" id="class_grid_lines_html_ab72907a0dcdb11acfeb473fb4c573939"><div class="ttname"><a href="class_grid_lines.html#ab72907a0dcdb11acfeb473fb4c573939">GridLines::EnableMinor</a></div><div class="ttdeci">void EnableMinor(BOOL enable)</div><div class="ttdef"><b>Definition:</b> Gridlines.h:28</div></div>
+<div class="ttc" id="class_savable_item_html"><div class="ttname"><a href="class_savable_item.html">SavableItem</a></div><div class="ttdef"><b>Definition:</b> SavableItem.h:5</div></div>
+<div class="ttc" id="class_axis_html"><div class="ttname"><a href="class_axis.html">Axis</a></div><div class="ttdef"><b>Definition:</b> Axis.h:31</div></div>
+<div class="ttc" id="class_grid_lines_html"><div class="ttname"><a href="class_grid_lines.html">GridLines</a></div><div class="ttdef"><b>Definition:</b> Gridlines.h:11</div></div>
+<div class="ttc" id="class_grid_lines_html_a420d336ed2892850bf5aab748d0fe406"><div class="ttname"><a href="class_grid_lines.html#a420d336ed2892850bf5aab748d0fe406">GridLines::SetLine</a></div><div class="ttdeci">void SetLine(const LineData &amp;line, BOOL bMajor=TRUE)</div><div class="ttdef"><b>Definition:</b> Gridlines.cpp:33</div></div>
+<div class="ttc" id="class_grid_lines_html_a839784fc12725e0705c751f8c9f466aa"><div class="ttname"><a href="class_grid_lines.html#a839784fc12725e0705c751f8c9f466aa">GridLines::OnDraw</a></div><div class="ttdeci">void OnDraw(HDC hdc)</div><div class="ttdef"><b>Definition:</b> Gridlines.cpp:42</div></div>
+<div class="ttc" id="class_grid_lines_html_a1208cfa5117f703ed785eba8c7ecae00"><div class="ttname"><a href="class_grid_lines.html#a1208cfa5117f703ed785eba8c7ecae00">GridLines::IsMajorEnabled</a></div><div class="ttdeci">BOOL IsMajorEnabled() const </div><div class="ttdef"><b>Definition:</b> Gridlines.h:25</div></div>
+<div class="ttc" id="class_grid_lines_html_a1e3ebb07403f525c882731bb1662b234"><div class="ttname"><a href="class_grid_lines.html#a1e3ebb07403f525c882731bb1662b234">GridLines::parentAxis</a></div><div class="ttdeci">Axis * parentAxis</div><div class="ttdef"><b>Definition:</b> Gridlines.h:54</div></div>
+<div class="ttc" id="class_grid_lines_html_a996a81d74b11f797745a3913b7c12293"><div class="ttname"><a href="class_grid_lines.html#a996a81d74b11f797745a3913b7c12293">GridLines::GetLine</a></div><div class="ttdeci">LineData &amp; GetLine(BOOL bMajor=TRUE)</div><div class="ttdef"><b>Definition:</b> Gridlines.cpp:26</div></div>
+<div class="ttc" id="class_grid_lines_html_af41e725b2af5e093e5307e2096c2c4c7"><div class="ttname"><a href="class_grid_lines.html#af41e725b2af5e093e5307e2096c2c4c7">GridLines::Write</a></div><div class="ttdeci">virtual BOOL Write(HANDLE hFile) const </div><div class="ttdef"><b>Definition:</b> Gridlines.cpp:126</div></div>
+<div class="ttc" id="class_grid_lines_html_a8b75ba08cc39e81740ccc456875f15f7"><div class="ttname"><a href="class_grid_lines.html#a8b75ba08cc39e81740ccc456875f15f7">GridLines::GridLines</a></div><div class="ttdeci">GridLines(Axis *parentAxis)</div><div class="ttdef"><b>Definition:</b> Gridlines.cpp:10</div></div>
+<div class="ttc" id="class_grid_lines_html_afc1d1925713bf15c1f031d41a901016b"><div class="ttname"><a href="class_grid_lines.html#afc1d1925713bf15c1f031d41a901016b">GridLines::~GridLines</a></div><div class="ttdeci">virtual ~GridLines()</div><div class="ttdef"><b>Definition:</b> Gridlines.cpp:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

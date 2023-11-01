@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Исходный файл src/winio.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">winio.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="winio_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WINIO_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WINIO_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Define the various device type values.  Note that values used by Microsoft</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Corporation are in the range 0-32767, and 32768-65535 are reserved for use</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// by customers.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="winio_8h.html#ab9d4ef916ac5deac0e011755c2473ac8">    8</a></span>&#160;<span class="preprocessor">#define FILE_DEVICE_WINIO 0x00008010</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// Macro definition for defining IOCTL and FSCTL function control codes.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Note that function codes 0-2047 are reserved for Microsoft Corporation,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// and 2048-4095 are reserved for customers.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="winio_8h.html#a4d7fe7ab62fb9702c7cc84b5c547300e">   14</a></span>&#160;<span class="preprocessor">#define WINIO_IOCTL_INDEX 0x810</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Define our own private IOCTL</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="winio_8h.html#a292fec23ce40c401f164ad293a6ea1a3">   18</a></span>&#160;<span class="preprocessor">#define IOCTL_WINIO_MAPPHYSTOLIN  CTL_CODE(FILE_DEVICE_WINIO,  \</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">                                  WINIO_IOCTL_INDEX,      \</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">                                  METHOD_BUFFERED,        \</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">                                  FILE_ANY_ACCESS)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="winio_8h.html#aa032074f56fd050573203641a3819ea7">   23</a></span>&#160;<span class="preprocessor">#define IOCTL_WINIO_UNMAPPHYSADDR CTL_CODE(FILE_DEVICE_WINIO,  \</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">                                  WINIO_IOCTL_INDEX + 1,  \</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">                                  METHOD_BUFFERED,        \</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">                                  FILE_ANY_ACCESS)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="winio_8h.html#af83d09887ff9eebc25d3a8296a31ac9a">   28</a></span>&#160;<span class="preprocessor">#define IOCTL_WINIO_WRITEPORT     CTL_CODE(FILE_DEVICE_WINIO,  \</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">                                  WINIO_IOCTL_INDEX + 2,   \</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">                                  METHOD_BUFFERED,         \</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">                                  FILE_ANY_ACCESS)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="winio_8h.html#a99bccd69f36e0f4565bb3a723ec3dee2">   33</a></span>&#160;<span class="preprocessor">#define IOCTL_WINIO_READPORT      CTL_CODE(FILE_DEVICE_WINIO,  \</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">                                  WINIO_IOCTL_INDEX + 3,   \</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">                                  METHOD_BUFFERED,         \</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">                                  FILE_ANY_ACCESS)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structtag_phys32_struct.html">   38</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structtag_phys32_struct.html">tagPhys32Struct</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structtag_phys32_struct.html#a62728941351cae475f59a61518eed9d5">   40</a></span>&#160;  HANDLE <a class="code" href="structtag_phys32_struct.html#a62728941351cae475f59a61518eed9d5">PhysicalMemoryHandle</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structtag_phys32_struct.html#adcb5fe8ed2f92bd1ee900a28a8926478">   41</a></span>&#160;  ULONG <a class="code" href="structtag_phys32_struct.html#adcb5fe8ed2f92bd1ee900a28a8926478">dwPhysMemSizeInBytes</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structtag_phys32_struct.html#aa7eb113c10d6a15445809774a7138452">   42</a></span>&#160;  PVOID <a class="code" href="structtag_phys32_struct.html#aa7eb113c10d6a15445809774a7138452">pvPhysAddress</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structtag_phys32_struct.html#a6bdc8d696ccee449b9ba07ce0955e49b">   43</a></span>&#160;  PVOID <a class="code" href="structtag_phys32_struct.html#a6bdc8d696ccee449b9ba07ce0955e49b">pvPhysMemLin</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structtag_phys32_struct.html">tagPhys32Struct</a> <a class="code" href="winio_8h.html#abe9b904cd194e411f2fc719a1530abe7">Phys32Struct</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structtag_port32_struct.html">   48</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structtag_port32_struct.html">tagPort32Struct</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structtag_port32_struct.html#addb73b4335431a2d9c4e2901306e5201">   50</a></span>&#160;  USHORT <a class="code" href="structtag_port32_struct.html#addb73b4335431a2d9c4e2901306e5201">wPortAddr</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structtag_port32_struct.html#a5de18d48b5fac0c2926ab0967ac4d05c">   51</a></span>&#160;  ULONG <a class="code" href="structtag_port32_struct.html#a5de18d48b5fac0c2926ab0967ac4d05c">dwPortVal</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structtag_port32_struct.html#a07f16a83ec991068c4d7aebe0386435a">   52</a></span>&#160;  UCHAR <a class="code" href="structtag_port32_struct.html#a07f16a83ec991068c4d7aebe0386435a">bSize</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structtag_port32_struct.html">tagPort32Struct</a> <a class="code" href="winio_8h.html#ae76f800e761cfbbfedd3498c265b2557">Port32Struct</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="structtag_port32_struct_html_addb73b4335431a2d9c4e2901306e5201"><div class="ttname"><a href="structtag_port32_struct.html#addb73b4335431a2d9c4e2901306e5201">tagPort32Struct::wPortAddr</a></div><div class="ttdeci">USHORT wPortAddr</div><div class="ttdef"><b>Definition:</b> winio.h:50</div></div>
+<div class="ttc" id="structtag_port32_struct_html"><div class="ttname"><a href="structtag_port32_struct.html">tagPort32Struct</a></div><div class="ttdef"><b>Definition:</b> winio.h:48</div></div>
+<div class="ttc" id="structtag_port32_struct_html_a07f16a83ec991068c4d7aebe0386435a"><div class="ttname"><a href="structtag_port32_struct.html#a07f16a83ec991068c4d7aebe0386435a">tagPort32Struct::bSize</a></div><div class="ttdeci">UCHAR bSize</div><div class="ttdef"><b>Definition:</b> winio.h:52</div></div>
+<div class="ttc" id="structtag_port32_struct_html_a5de18d48b5fac0c2926ab0967ac4d05c"><div class="ttname"><a href="structtag_port32_struct.html#a5de18d48b5fac0c2926ab0967ac4d05c">tagPort32Struct::dwPortVal</a></div><div class="ttdeci">ULONG dwPortVal</div><div class="ttdef"><b>Definition:</b> winio.h:51</div></div>
+<div class="ttc" id="winio_8h_html_abe9b904cd194e411f2fc719a1530abe7"><div class="ttname"><a href="winio_8h.html#abe9b904cd194e411f2fc719a1530abe7">Phys32Struct</a></div><div class="ttdeci">struct tagPhys32Struct Phys32Struct</div></div>
+<div class="ttc" id="winio_8h_html_ae76f800e761cfbbfedd3498c265b2557"><div class="ttname"><a href="winio_8h.html#ae76f800e761cfbbfedd3498c265b2557">Port32Struct</a></div><div class="ttdeci">struct tagPort32Struct Port32Struct</div></div>
+<div class="ttc" id="structtag_phys32_struct_html"><div class="ttname"><a href="structtag_phys32_struct.html">tagPhys32Struct</a></div><div class="ttdef"><b>Definition:</b> winio.h:38</div></div>
+<div class="ttc" id="structtag_phys32_struct_html_a62728941351cae475f59a61518eed9d5"><div class="ttname"><a href="structtag_phys32_struct.html#a62728941351cae475f59a61518eed9d5">tagPhys32Struct::PhysicalMemoryHandle</a></div><div class="ttdeci">HANDLE PhysicalMemoryHandle</div><div class="ttdef"><b>Definition:</b> winio.h:40</div></div>
+<div class="ttc" id="structtag_phys32_struct_html_a6bdc8d696ccee449b9ba07ce0955e49b"><div class="ttname"><a href="structtag_phys32_struct.html#a6bdc8d696ccee449b9ba07ce0955e49b">tagPhys32Struct::pvPhysMemLin</a></div><div class="ttdeci">PVOID pvPhysMemLin</div><div class="ttdef"><b>Definition:</b> winio.h:43</div></div>
+<div class="ttc" id="structtag_phys32_struct_html_adcb5fe8ed2f92bd1ee900a28a8926478"><div class="ttname"><a href="structtag_phys32_struct.html#adcb5fe8ed2f92bd1ee900a28a8926478">tagPhys32Struct::dwPhysMemSizeInBytes</a></div><div class="ttdeci">ULONG dwPhysMemSizeInBytes</div><div class="ttdef"><b>Definition:</b> winio.h:41</div></div>
+<div class="ttc" id="structtag_phys32_struct_html_aa7eb113c10d6a15445809774a7138452"><div class="ttname"><a href="structtag_phys32_struct.html#aa7eb113c10d6a15445809774a7138452">tagPhys32Struct::pvPhysAddress</a></div><div class="ttdeci">PVOID pvPhysAddress</div><div class="ttdef"><b>Definition:</b> winio.h:42</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

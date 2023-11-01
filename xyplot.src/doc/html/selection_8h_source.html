@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Исходный файл src/selection.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">selection.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="selection_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __SELECTION_H_INCLUDED__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __SELECTION_H_INCLUDED__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="group_8h.html">group.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="profile_8h.html">profile.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="xyplotconst_8h.html">xyplotconst.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_savable_item_8h.html">SavableItem.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_line_data.html">LineData</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html">   10</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html">tagPLOTHITTESTRESULT</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#a7caeb19fd57f871ca7d3ed12edb2bae5">   12</a></span>&#160;    POINT <a class="code" href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#a7caeb19fd57f871ca7d3ed12edb2bae5">ptHit</a>;            <span class="comment">// the point itself</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#a6ae087b7d34fe801a7936f5be255b685">   13</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#a6ae087b7d34fe801a7936f5be255b685">itemID</a>;            <span class="comment">// ID of plot item or profile key</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#ad040773163e8d0aa592a19ba32c000f2">   14</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#ad040773163e8d0aa592a19ba32c000f2">pointIndex</a>;    <span class="comment">// profile nearst point if applicable</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#a83edd31f3d1609dffea8659fe57b3815">   15</a></span>&#160;    BOOL <a class="code" href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#a83edd31f3d1609dffea8659fe57b3815">keyControl</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} <a class="code" href="selection_8h.html#af0233194949269aa7eea2965cb34f30e">PLOTHITTESTRESULT</a>, *<a class="code" href="selection_8h.html#adeea1a4ab82509fdc1235948c4efeef6">LPPLOTHITTESTRESULT</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_selection.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_selection.html">Selection</a> : <span class="keyword">public</span> <a class="code" href="class_savable_item.html">SavableItem</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_selection.html#a1185435bed19519a7b69ef70c679ce70">Selection</a>( <a class="code" href="class_x_y_plot.html">XYPlot</a>*  pPlot );</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_selection.html#a1860ec524d11c03de8c10a9354319839">~Selection</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    BOOL <a class="code" href="class_selection.html#afe20319deb65c06229a512f4be84ccd3">Select</a>(<span class="keywordtype">long</span> ID, <span class="keywordtype">long</span> index);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> BOOL <a class="code" href="class_selection.html#a1212e14a73f62170020d426c1a3ee5e9">Write</a>(HANDLE hFile) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> BOOL <a class="code" href="class_selection.html#a4cf1ce6c3fb26f950075a17c25341110">Read</a>(HANDLE hFile);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_selection.html#a87021f153bfecc0479530578a3f39f00">GetSelection</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_selection.html#a0cf4568ea7c9860937d931146e8b99ae">   31</a></span>&#160;    DWORD <a class="code" href="class_selection.html#a0cf4568ea7c9860937d931146e8b99ae">GetMode</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_selection.html#abcefb6532a3336dbdb704524ca603f09">dwSelectionType</a>; }; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_selection.html#ab0583b6c9cca3ccfee73e3ce587419da">   33</a></span>&#160;    DWORD <a class="code" href="class_selection.html#ab0583b6c9cca3ccfee73e3ce587419da">SetMode</a>(DWORD dwType) </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_selection.html#a7a04270c06607b5fae8a182d39bdf301">StopFlashRoutine</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        DWORD oldType = <a class="code" href="class_selection.html#abcefb6532a3336dbdb704524ca603f09">dwSelectionType</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_selection.html#abcefb6532a3336dbdb704524ca603f09">dwSelectionType</a> = dwType;   </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> oldType; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_selection.html#a75530f8982bd489083764cbfff9eefb3">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_selection.html#a75530f8982bd489083764cbfff9eefb3">SetNotifyMessageID</a>(<span class="keywordtype">long</span> lNotifyMsg) </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_selection.html#ae2e8fd632fbdf5ad8222271d861dee3e">lNotifyMessage</a> = lNotifyMsg;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_selection.html#a9e371db3bdd7a9330f83c427a4bcbf0e">SetFlashSpeed</a>( <a class="code" href="namespacexyplot.html#aef2fa49b82f49b1152511044149c60bb">xyplot::FLASH_SPEED</a> fs );</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="namespacexyplot.html#aef2fa49b82f49b1152511044149c60bb">xyplot::FLASH_SPEED</a> <a class="code" href="class_selection.html#acc2eec1158e3379e211994a5b3cb0dba">GetFlashSpeed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_selection.html#abb12cb9336545b1aa4ec1361e08ab5dc">ResolvePlotHitTest</a>(<span class="keyword">const</span> LPPLOTHITTESTRESULT  lpht);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_selection.html#a6af1ac7d7f4a22596146c2942d83f15f">ResolveKeyPress</a>( <span class="keywordtype">long</span> code );</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_selection.html#ae15010a7dc9450f394a0823cd7a8053f">OnDraw</a>(HDC hdc, <span class="keyword">const</span> RECT rc);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_selection.html#a1961c6f204a1bece5bf33e380c8653bf">   54</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_selection.html#a1961c6f204a1bece5bf33e380c8653bf">CreateGroup</a>() { <span class="keywordflow">return</span> <a class="code" href="class_selection.html#a9969ae2dd3dfc1de2ff22851f23ca701">profileGroupMap</a>.<a class="code" href="class_profile_group_map.html#a308962453d061080709b15c123ea315b">CreateGroup</a>(); };</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_selection.html#a3d3d974a0ecc9336522ddee10271a1f5">   55</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_selection.html#a3d3d974a0ecc9336522ddee10271a1f5">DeleteGroup</a>(<span class="keywordtype">long</span> group) { <span class="keywordflow">return</span> <a class="code" href="class_selection.html#a9969ae2dd3dfc1de2ff22851f23ca701">profileGroupMap</a>.<a class="code" href="class_profile_group_map.html#a1e98a9cbf25c483b34643a09b1b5d223">DeleteGroup</a>(group); };</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_selection.html#a29137faa8c9270396be41051cef15d69">   56</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_selection.html#a29137faa8c9270396be41051cef15d69">FindGroup</a>(<span class="keywordtype">long</span> profile) { <span class="keywordflow">return</span> <a class="code" href="class_selection.html#a9969ae2dd3dfc1de2ff22851f23ca701">profileGroupMap</a>.<a class="code" href="class_profile_group_map.html#a52340323d2019383463a5e680824e5b4">FindGroup</a>(profile); };</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_selection.html#a5446aca339af493b9853e1d8791747ee">   57</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_selection.html#a6048c9afc7c6f5f20af089dd1ca9bb29">AddProfile</a>(<span class="keywordtype">long</span> group, <span class="keywordtype">long</span> profile) { <span class="keywordflow">return</span> <a class="code" href="class_selection.html#a9969ae2dd3dfc1de2ff22851f23ca701">profileGroupMap</a>.<a class="code" href="class_profile_group_map.html#afe8dd6d5fa977157ab1409e34c6e74b7">AddProfile</a>(group, profile); };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_x_y_plot.html">XYPlot</a>&amp;  <a class="code" href="class_selection.html#a5446aca339af493b9853e1d8791747ee">plot</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_selection.html#a9969ae2dd3dfc1de2ff22851f23ca701">   62</a></span>&#160;    <a class="code" href="class_profile_group_map.html">ProfileGroupMap</a> <a class="code" href="class_selection.html#a9969ae2dd3dfc1de2ff22851f23ca701">profileGroupMap</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//BOOL bGroupSelected;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_selection.html#aad8ed405574d4eaa7c71ea6ab74f921f">   65</a></span>&#160;    <a class="code" href="profile_8h.html#ab564cd67657a739c9e5a6caa0ce0dafa">PROFILE_KEY</a> <a class="code" href="class_selection.html#aad8ed405574d4eaa7c71ea6ab74f921f">activeProfile</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_selection.html#a3f157e54d3bf571bb58f0ab278311d1f">   66</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_selection.html#a3f157e54d3bf571bb58f0ab278311d1f">activeGroup</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_selection.html#ae2e8fd632fbdf5ad8222271d861dee3e">   67</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_selection.html#ae2e8fd632fbdf5ad8222271d861dee3e">lNotifyMessage</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_selection.html#aae0adc2fbecf906fe191f37db02865d9">   68</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_selection.html#aae0adc2fbecf906fe191f37db02865d9">selectedPointInd</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_selection.html#a0e9d894fc2d3922fa13b9bab29c0868b">   69</a></span>&#160;    <a class="code" href="class_axis.html">Axis</a>*    <a class="code" href="class_selection.html#a0e9d894fc2d3922fa13b9bab29c0868b">activeAxis</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_selection.html#ae8158cf33f08749711665081d33a5eee">   70</a></span>&#160;    <a class="code" href="namespacexyplot.html#aef2fa49b82f49b1152511044149c60bb">xyplot::FLASH_SPEED</a> <a class="code" href="class_selection.html#ae8158cf33f08749711665081d33a5eee">m_fs</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_selection.html#a931c1dc1ae09a247eddb870ae860258e">   72</a></span>&#160;    <a class="code" href="class_line_data.html">LineData</a> <a class="code" href="class_selection.html#a931c1dc1ae09a247eddb870ae860258e">markerLine</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_selection.html#abcefb6532a3336dbdb704524ca603f09">   73</a></span>&#160;    DWORD    <a class="code" href="class_selection.html#abcefb6532a3336dbdb704524ca603f09">dwSelectionType</a>;    </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_selection.html#a2ba4d3b1be1be25852a81ae8d8b85464">   74</a></span>&#160;    POINT    <a class="code" href="class_selection.html#a2ba4d3b1be1be25852a81ae8d8b85464">ptSel</a>; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_selection.html#a55bbd4862d833205e258d2a51256e161">   75</a></span>&#160;    <span class="keywordtype">double</span>   <a class="code" href="class_selection.html#a55bbd4862d833205e258d2a51256e161">physSelPointX</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_selection.html#ae34c8ddfe73abfaaeec3b99bb649f802">   76</a></span>&#160;    <span class="keywordtype">double</span>   <a class="code" href="class_selection.html#ae34c8ddfe73abfaaeec3b99bb649f802">physSelPointY</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_selection.html#afe67da14987a0c10aa1f401b4a8210f6">   77</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_selection.html#afe67da14987a0c10aa1f401b4a8210f6">ellipseRadius</a>; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_selection.html#aed45afe1b41abebe3f7d22d8b5574ad3">   81</a></span>&#160;    HANDLE <a class="code" href="class_selection.html#aed45afe1b41abebe3f7d22d8b5574ad3">flashThread</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_selection.html#a996d255f46e4aa8d039d17db81026e4e">   82</a></span>&#160;    HANDLE <a class="code" href="class_selection.html#a996d255f46e4aa8d039d17db81026e4e">evRunFlash</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_selection.html#a6453d01aeabe2bd18582b71566e84dcc">   83</a></span>&#160;    HANDLE <a class="code" href="class_selection.html#a6453d01aeabe2bd18582b71566e84dcc">evQuitFlash</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_selection.html#a54afa22854b7ac434dd571dc3d7c4274">   85</a></span>&#160;    <span class="keyword">mutable</span> CRITICAL_SECTION <a class="code" href="class_selection.html#a54afa22854b7ac434dd571dc3d7c4274">cs</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_selection.html#a2720b0396cc2819b3740be7eac6b11db">   87</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_selection.html#a2720b0396cc2819b3740be7eac6b11db">durationHide</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_selection.html#a283a7ada8e395e08faeb745a9f9104bf">   88</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_selection.html#a283a7ada8e395e08faeb745a9f9104bf">durationShow</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> __stdcall <a class="code" href="class_selection.html#a768b30225e90c1973f3cd895a6ca9709">fnFlashProc</a>( LPVOID lpParam );</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_selection.html#a240bf3226d6ab1de5e9a958c8940cad7">SetFlashState</a>( BOOL visible );</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_selection.html#a90033e720a75b54bf8623df01dc16241">RunFlashRoutine</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_selection.html#a7a04270c06607b5fae8a182d39bdf301">StopFlashRoutine</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">// class Selection : public SavableItem</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">// {</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">// public:</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">//  static enum { MaxShowTime = 1000, MaxHideTime = 1000 };</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">//  static enum { Outside, This, New }; // int state;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">//  static enum { None = SM_NONE, Flash = SM_FLASH, VerticalTrace = SM_VTRACE, HorizontalTrace = SM_HTRACE };</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">//  static enum { Line, Cross }; // int traceHitState</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//  inline LineData&amp; GetLineData() { return *line; }</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">//  int GetMode();</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">//  void SetMode( int mode );</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">//  void SetFlashTimes( unsigned show, unsigned hide );</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">//  void GetFlashTimes( unsigned &amp;show, unsigned &amp;hide ) const { show = showDuration; hide = hideDuration; }</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">//  void SelectProfileKey( long key );</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">//  long GetSelectedKey();</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">//  void SelectProfileGroupKey( long key );</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">//  long GetSelectedGroupKey();</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">//  //inline int&amp; State() { return state; }</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">//  //int&amp; TraceHitState() { return traceHitState; }</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">//  //BOOL&amp; IsGroupSelected() { return groupSelected; }</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">//  //BOOL&amp; IsPointFound() { return pointFound; }</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">//  //double&amp; XScale() { return xScale; }</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">//  //double&amp; YScale() { return yScale; }</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">//  //int&amp; RealIndex() { return realIndex; }</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">//  //POINT&amp; PointLastHit() { return pointLastHit; }</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">//  //D3dPoint&amp; D3dPointLastHit() { return d3dPointLastHit; }</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">//  //int&amp; EllipseRadius() { return ellipseRadius; }</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">//  </span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">//  //BOOL WaitOne( BOOL run, unsigned long time );</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">//  //void ResetTraceSelection();</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">//  void HandleKeydown( long code );</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">//  //void ShiftLeft();</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">//  //void ShiftRight();</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">//  //void ShiftBegin();</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">//  //void ShiftEnd();</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">//  virtual BOOL Write(HANDLE hFile) const;</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">//  virtual BOOL Read(HANDLE hFile);</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">//  void ResolveHit( long key );</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">// private:</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">//  static unsigned long __stdcall fnFlashProc( LPVOID lpParam );</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">//  unsigned long FlashProc();</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">//  void SetFlashState( BOOL visible );</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">//  LineData* line; // selection linedata when in trace mode</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">//  HANDLE flashThread;</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">//  HANDLE runFlashThread;</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">//  HANDLE stopFlashThread;</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">//  HANDLE quitFlashThread;</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">//  HPROFILE</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">//  CRITICAL_SECTION cs;</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">//  unsigned showDuration; // show time duration</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">//  unsigned hideDuration; // hide time duration</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">//  long key;       // profile key if selected</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">//  long groupKey;  // profile group key if group selected</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">//  long traceMode; // selection mode (Flash|VerticalTrace|HorizontalTrace)</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">//  long HitState;  // indicates whether to show cross (profile has been hit) or single line</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">//  unsigned ellipseRadius; // radius of cross in trace mode</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">//  /*</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">//  POINT pointLastHit;</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">//  D3dPoint d3dPointLastHit;</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">//  double xScale;</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">//  double yScale;</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">//  int realIndex;</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">//  BOOL isFlashing; // indicates whether flash routine is in progress</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">//  int state; // indicates selection state after last hit-test</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">//  BOOL pointFound; </span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">//  BOOL groupSelected; // indicates whether profile group is selected</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">//  int HitState; // indicates whether to show cross (profile has been hit) or single line</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">//  int showLength; // show time duration</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">//  int hideLength; // hide time duration</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">// */</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">// };</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif //__SELECTION_H_INCLUDED__</span></div>
+<div class="ttc" id="class_selection_html_a1961c6f204a1bece5bf33e380c8653bf"><div class="ttname"><a href="class_selection.html#a1961c6f204a1bece5bf33e380c8653bf">Selection::CreateGroup</a></div><div class="ttdeci">long CreateGroup()</div><div class="ttdef"><b>Definition:</b> selection.h:54</div></div>
+<div class="ttc" id="class_selection_html_a2720b0396cc2819b3740be7eac6b11db"><div class="ttname"><a href="class_selection.html#a2720b0396cc2819b3740be7eac6b11db">Selection::durationHide</a></div><div class="ttdeci">unsigned durationHide</div><div class="ttdef"><b>Definition:</b> selection.h:87</div></div>
+<div class="ttc" id="class_selection_html_a54afa22854b7ac434dd571dc3d7c4274"><div class="ttname"><a href="class_selection.html#a54afa22854b7ac434dd571dc3d7c4274">Selection::cs</a></div><div class="ttdeci">CRITICAL_SECTION cs</div><div class="ttdef"><b>Definition:</b> selection.h:85</div></div>
+<div class="ttc" id="class_selection_html_abcefb6532a3336dbdb704524ca603f09"><div class="ttname"><a href="class_selection.html#abcefb6532a3336dbdb704524ca603f09">Selection::dwSelectionType</a></div><div class="ttdeci">DWORD dwSelectionType</div><div class="ttdef"><b>Definition:</b> selection.h:73</div></div>
+<div class="ttc" id="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t_html_a6ae087b7d34fe801a7936f5be255b685"><div class="ttname"><a href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#a6ae087b7d34fe801a7936f5be255b685">tagPLOTHITTESTRESULT::itemID</a></div><div class="ttdeci">long itemID</div><div class="ttdef"><b>Definition:</b> selection.h:13</div></div>
+<div class="ttc" id="class_selection_html_a6048c9afc7c6f5f20af089dd1ca9bb29"><div class="ttname"><a href="class_selection.html#a6048c9afc7c6f5f20af089dd1ca9bb29">Selection::AddProfile</a></div><div class="ttdeci">long AddProfile(long group, long profile)</div><div class="ttdef"><b>Definition:</b> selection.h:57</div></div>
+<div class="ttc" id="group_8h_html"><div class="ttname"><a href="group_8h.html">group.h</a></div></div>
+<div class="ttc" id="class_selection_html_aad8ed405574d4eaa7c71ea6ab74f921f"><div class="ttname"><a href="class_selection.html#aad8ed405574d4eaa7c71ea6ab74f921f">Selection::activeProfile</a></div><div class="ttdeci">PROFILE_KEY activeProfile</div><div class="ttdef"><b>Definition:</b> selection.h:65</div></div>
+<div class="ttc" id="class_selection_html_a240bf3226d6ab1de5e9a958c8940cad7"><div class="ttname"><a href="class_selection.html#a240bf3226d6ab1de5e9a958c8940cad7">Selection::SetFlashState</a></div><div class="ttdeci">void SetFlashState(BOOL visible)</div><div class="ttdef"><b>Definition:</b> selection.cpp:298</div></div>
+<div class="ttc" id="class_profile_group_map_html_a308962453d061080709b15c123ea315b"><div class="ttname"><a href="class_profile_group_map.html#a308962453d061080709b15c123ea315b">ProfileGroupMap::CreateGroup</a></div><div class="ttdeci">long CreateGroup()</div><div class="ttdef"><b>Definition:</b> group.cpp:13</div></div>
+<div class="ttc" id="class_profile_group_map_html_a52340323d2019383463a5e680824e5b4"><div class="ttname"><a href="class_profile_group_map.html#a52340323d2019383463a5e680824e5b4">ProfileGroupMap::FindGroup</a></div><div class="ttdeci">long FindGroup(long profile)</div><div class="ttdef"><b>Definition:</b> group.cpp:36</div></div>
+<div class="ttc" id="profile_8h_html_ab564cd67657a739c9e5a6caa0ce0dafa"><div class="ttname"><a href="profile_8h.html#ab564cd67657a739c9e5a6caa0ce0dafa">PROFILE_KEY</a></div><div class="ttdeci">LONG_PTR PROFILE_KEY</div><div class="ttdef"><b>Definition:</b> profile.h:10</div></div>
+<div class="ttc" id="class_selection_html_a0e9d894fc2d3922fa13b9bab29c0868b"><div class="ttname"><a href="class_selection.html#a0e9d894fc2d3922fa13b9bab29c0868b">Selection::activeAxis</a></div><div class="ttdeci">Axis * activeAxis</div><div class="ttdef"><b>Definition:</b> selection.h:69</div></div>
+<div class="ttc" id="class_selection_html_abb12cb9336545b1aa4ec1361e08ab5dc"><div class="ttname"><a href="class_selection.html#abb12cb9336545b1aa4ec1361e08ab5dc">Selection::ResolvePlotHitTest</a></div><div class="ttdeci">void ResolvePlotHitTest(const LPPLOTHITTESTRESULT lpht)</div><div class="ttdef"><b>Definition:</b> selection.cpp:109</div></div>
+<div class="ttc" id="class_selection_html_a931c1dc1ae09a247eddb870ae860258e"><div class="ttname"><a href="class_selection.html#a931c1dc1ae09a247eddb870ae860258e">Selection::markerLine</a></div><div class="ttdeci">LineData markerLine</div><div class="ttdef"><b>Definition:</b> selection.h:72</div></div>
+<div class="ttc" id="class_selection_html_a5446aca339af493b9853e1d8791747ee"><div class="ttname"><a href="class_selection.html#a5446aca339af493b9853e1d8791747ee">Selection::plot</a></div><div class="ttdeci">XYPlot &amp; plot</div><div class="ttdef"><b>Definition:</b> selection.h:57</div></div>
+<div class="ttc" id="class_selection_html_a4cf1ce6c3fb26f950075a17c25341110"><div class="ttname"><a href="class_selection.html#a4cf1ce6c3fb26f950075a17c25341110">Selection::Read</a></div><div class="ttdeci">virtual BOOL Read(HANDLE hFile)</div><div class="ttdef"><b>Definition:</b> selection.cpp:510</div></div>
+<div class="ttc" id="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t_html"><div class="ttname"><a href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html">tagPLOTHITTESTRESULT</a></div><div class="ttdef"><b>Definition:</b> selection.h:10</div></div>
+<div class="ttc" id="class_selection_html_afe67da14987a0c10aa1f401b4a8210f6"><div class="ttname"><a href="class_selection.html#afe67da14987a0c10aa1f401b4a8210f6">Selection::ellipseRadius</a></div><div class="ttdeci">unsigned ellipseRadius</div><div class="ttdef"><b>Definition:</b> selection.h:77</div></div>
+<div class="ttc" id="class_selection_html_a1185435bed19519a7b69ef70c679ce70"><div class="ttname"><a href="class_selection.html#a1185435bed19519a7b69ef70c679ce70">Selection::Selection</a></div><div class="ttdeci">Selection(XYPlot *pPlot)</div><div class="ttdef"><b>Definition:</b> selection.cpp:14</div></div>
+<div class="ttc" id="class_selection_html_a3f157e54d3bf571bb58f0ab278311d1f"><div class="ttname"><a href="class_selection.html#a3f157e54d3bf571bb58f0ab278311d1f">Selection::activeGroup</a></div><div class="ttdeci">long activeGroup</div><div class="ttdef"><b>Definition:</b> selection.h:66</div></div>
+<div class="ttc" id="class_line_data_html"><div class="ttname"><a href="class_line_data.html">LineData</a></div><div class="ttdef"><b>Definition:</b> linedata.h:7</div></div>
+<div class="ttc" id="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t_html_ad040773163e8d0aa592a19ba32c000f2"><div class="ttname"><a href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#ad040773163e8d0aa592a19ba32c000f2">tagPLOTHITTESTRESULT::pointIndex</a></div><div class="ttdeci">unsigned pointIndex</div><div class="ttdef"><b>Definition:</b> selection.h:14</div></div>
+<div class="ttc" id="class_selection_html_a768b30225e90c1973f3cd895a6ca9709"><div class="ttname"><a href="class_selection.html#a768b30225e90c1973f3cd895a6ca9709">Selection::fnFlashProc</a></div><div class="ttdeci">static unsigned long __stdcall fnFlashProc(LPVOID lpParam)</div><div class="ttdef"><b>Definition:</b> selection.cpp:244</div></div>
+<div class="ttc" id="class_profile_group_map_html"><div class="ttname"><a href="class_profile_group_map.html">ProfileGroupMap</a></div><div class="ttdef"><b>Definition:</b> group.h:11</div></div>
+<div class="ttc" id="class_selection_html_acc2eec1158e3379e211994a5b3cb0dba"><div class="ttname"><a href="class_selection.html#acc2eec1158e3379e211994a5b3cb0dba">Selection::GetFlashSpeed</a></div><div class="ttdeci">xyplot::FLASH_SPEED GetFlashSpeed() const </div><div class="ttdef"><b>Definition:</b> selection.cpp:278</div></div>
+<div class="ttc" id="selection_8h_html_af0233194949269aa7eea2965cb34f30e"><div class="ttname"><a href="selection_8h.html#af0233194949269aa7eea2965cb34f30e">PLOTHITTESTRESULT</a></div><div class="ttdeci">struct tagPLOTHITTESTRESULT PLOTHITTESTRESULT</div></div>
+<div class="ttc" id="class_selection_html_afe20319deb65c06229a512f4be84ccd3"><div class="ttname"><a href="class_selection.html#afe20319deb65c06229a512f4be84ccd3">Selection::Select</a></div><div class="ttdeci">BOOL Select(long ID, long index)</div><div class="ttdef"><b>Definition:</b> selection.cpp:323</div></div>
+<div class="ttc" id="_savable_item_8h_html"><div class="ttname"><a href="_savable_item_8h.html">SavableItem.h</a></div></div>
+<div class="ttc" id="class_selection_html_a29137faa8c9270396be41051cef15d69"><div class="ttname"><a href="class_selection.html#a29137faa8c9270396be41051cef15d69">Selection::FindGroup</a></div><div class="ttdeci">long FindGroup(long profile)</div><div class="ttdef"><b>Definition:</b> selection.h:56</div></div>
+<div class="ttc" id="class_selection_html_a996d255f46e4aa8d039d17db81026e4e"><div class="ttname"><a href="class_selection.html#a996d255f46e4aa8d039d17db81026e4e">Selection::evRunFlash</a></div><div class="ttdeci">HANDLE evRunFlash</div><div class="ttdef"><b>Definition:</b> selection.h:82</div></div>
+<div class="ttc" id="class_selection_html_a6af1ac7d7f4a22596146c2942d83f15f"><div class="ttname"><a href="class_selection.html#a6af1ac7d7f4a22596146c2942d83f15f">Selection::ResolveKeyPress</a></div><div class="ttdeci">void ResolveKeyPress(long code)</div><div class="ttdef"><b>Definition:</b> selection.cpp:394</div></div>
+<div class="ttc" id="class_savable_item_html"><div class="ttname"><a href="class_savable_item.html">SavableItem</a></div><div class="ttdef"><b>Definition:</b> SavableItem.h:5</div></div>
+<div class="ttc" id="class_axis_html"><div class="ttname"><a href="class_axis.html">Axis</a></div><div class="ttdef"><b>Definition:</b> Axis.h:31</div></div>
+<div class="ttc" id="class_selection_html_a1212e14a73f62170020d426c1a3ee5e9"><div class="ttname"><a href="class_selection.html#a1212e14a73f62170020d426c1a3ee5e9">Selection::Write</a></div><div class="ttdeci">virtual BOOL Write(HANDLE hFile) const </div><div class="ttdef"><b>Definition:</b> selection.cpp:483</div></div>
+<div class="ttc" id="class_selection_html_a3d3d974a0ecc9336522ddee10271a1f5"><div class="ttname"><a href="class_selection.html#a3d3d974a0ecc9336522ddee10271a1f5">Selection::DeleteGroup</a></div><div class="ttdeci">long DeleteGroup(long group)</div><div class="ttdef"><b>Definition:</b> selection.h:55</div></div>
+<div class="ttc" id="class_selection_html_ae8158cf33f08749711665081d33a5eee"><div class="ttname"><a href="class_selection.html#ae8158cf33f08749711665081d33a5eee">Selection::m_fs</a></div><div class="ttdeci">xyplot::FLASH_SPEED m_fs</div><div class="ttdef"><b>Definition:</b> selection.h:70</div></div>
+<div class="ttc" id="class_selection_html_aae0adc2fbecf906fe191f37db02865d9"><div class="ttname"><a href="class_selection.html#aae0adc2fbecf906fe191f37db02865d9">Selection::selectedPointInd</a></div><div class="ttdeci">unsigned selectedPointInd</div><div class="ttdef"><b>Definition:</b> selection.h:68</div></div>
+<div class="ttc" id="class_selection_html_ae34c8ddfe73abfaaeec3b99bb649f802"><div class="ttname"><a href="class_selection.html#ae34c8ddfe73abfaaeec3b99bb649f802">Selection::physSelPointY</a></div><div class="ttdeci">double physSelPointY</div><div class="ttdef"><b>Definition:</b> selection.h:76</div></div>
+<div class="ttc" id="class_selection_html_a283a7ada8e395e08faeb745a9f9104bf"><div class="ttname"><a href="class_selection.html#a283a7ada8e395e08faeb745a9f9104bf">Selection::durationShow</a></div><div class="ttdeci">unsigned durationShow</div><div class="ttdef"><b>Definition:</b> selection.h:88</div></div>
+<div class="ttc" id="class_profile_group_map_html_a1e98a9cbf25c483b34643a09b1b5d223"><div class="ttname"><a href="class_profile_group_map.html#a1e98a9cbf25c483b34643a09b1b5d223">ProfileGroupMap::DeleteGroup</a></div><div class="ttdeci">long DeleteGroup(long group)</div><div class="ttdef"><b>Definition:</b> group.h:19</div></div>
+<div class="ttc" id="class_selection_html_a6453d01aeabe2bd18582b71566e84dcc"><div class="ttname"><a href="class_selection.html#a6453d01aeabe2bd18582b71566e84dcc">Selection::evQuitFlash</a></div><div class="ttdeci">HANDLE evQuitFlash</div><div class="ttdef"><b>Definition:</b> selection.h:83</div></div>
+<div class="ttc" id="class_selection_html_a1860ec524d11c03de8c10a9354319839"><div class="ttname"><a href="class_selection.html#a1860ec524d11c03de8c10a9354319839">Selection::~Selection</a></div><div class="ttdeci">virtual ~Selection()</div><div class="ttdef"><b>Definition:</b> selection.cpp:42</div></div>
+<div class="ttc" id="class_selection_html_a2ba4d3b1be1be25852a81ae8d8b85464"><div class="ttname"><a href="class_selection.html#a2ba4d3b1be1be25852a81ae8d8b85464">Selection::ptSel</a></div><div class="ttdeci">POINT ptSel</div><div class="ttdef"><b>Definition:</b> selection.h:74</div></div>
+<div class="ttc" id="class_selection_html_a90033e720a75b54bf8623df01dc16241"><div class="ttname"><a href="class_selection.html#a90033e720a75b54bf8623df01dc16241">Selection::RunFlashRoutine</a></div><div class="ttdeci">void RunFlashRoutine()</div><div class="ttdef"><b>Definition:</b> selection.cpp:219</div></div>
+<div class="ttc" id="class_selection_html_a87021f153bfecc0479530578a3f39f00"><div class="ttname"><a href="class_selection.html#a87021f153bfecc0479530578a3f39f00">Selection::GetSelection</a></div><div class="ttdeci">long GetSelection() const </div><div class="ttdef"><b>Definition:</b> selection.cpp:211</div></div>
+<div class="ttc" id="class_selection_html_aed45afe1b41abebe3f7d22d8b5574ad3"><div class="ttname"><a href="class_selection.html#aed45afe1b41abebe3f7d22d8b5574ad3">Selection::flashThread</a></div><div class="ttdeci">HANDLE flashThread</div><div class="ttdef"><b>Definition:</b> selection.h:81</div></div>
+<div class="ttc" id="class_selection_html_ae15010a7dc9450f394a0823cd7a8053f"><div class="ttname"><a href="class_selection.html#ae15010a7dc9450f394a0823cd7a8053f">Selection::OnDraw</a></div><div class="ttdeci">void OnDraw(HDC hdc, const RECT rc)</div><div class="ttdef"><b>Definition:</b> selection.cpp:63</div></div>
+<div class="ttc" id="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t_html_a7caeb19fd57f871ca7d3ed12edb2bae5"><div class="ttname"><a href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#a7caeb19fd57f871ca7d3ed12edb2bae5">tagPLOTHITTESTRESULT::ptHit</a></div><div class="ttdeci">POINT ptHit</div><div class="ttdef"><b>Definition:</b> selection.h:12</div></div>
+<div class="ttc" id="namespacexyplot_html_aef2fa49b82f49b1152511044149c60bb"><div class="ttname"><a href="namespacexyplot.html#aef2fa49b82f49b1152511044149c60bb">xyplot::FLASH_SPEED</a></div><div class="ttdeci">int FLASH_SPEED</div><div class="ttdef"><b>Definition:</b> xyplotconst.h:182</div></div>
+<div class="ttc" id="class_selection_html_a7a04270c06607b5fae8a182d39bdf301"><div class="ttname"><a href="class_selection.html#a7a04270c06607b5fae8a182d39bdf301">Selection::StopFlashRoutine</a></div><div class="ttdeci">void StopFlashRoutine()</div><div class="ttdef"><b>Definition:</b> selection.cpp:225</div></div>
+<div class="ttc" id="xyplotconst_8h_html"><div class="ttname"><a href="xyplotconst_8h.html">xyplotconst.h</a></div><div class="ttdoc">Содержит константы и перечисляемые типы . </div></div>
+<div class="ttc" id="profile_8h_html"><div class="ttname"><a href="profile_8h.html">profile.h</a></div></div>
+<div class="ttc" id="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t_html_a83edd31f3d1609dffea8659fe57b3815"><div class="ttname"><a href="structtag_p_l_o_t_h_i_t_t_e_s_t_r_e_s_u_l_t.html#a83edd31f3d1609dffea8659fe57b3815">tagPLOTHITTESTRESULT::keyControl</a></div><div class="ttdeci">BOOL keyControl</div><div class="ttdef"><b>Definition:</b> selection.h:15</div></div>
+<div class="ttc" id="class_profile_group_map_html_afe8dd6d5fa977157ab1409e34c6e74b7"><div class="ttname"><a href="class_profile_group_map.html#afe8dd6d5fa977157ab1409e34c6e74b7">ProfileGroupMap::AddProfile</a></div><div class="ttdeci">long AddProfile(long group, long profile)</div><div class="ttdef"><b>Definition:</b> group.cpp:20</div></div>
+<div class="ttc" id="class_selection_html_a0cf4568ea7c9860937d931146e8b99ae"><div class="ttname"><a href="class_selection.html#a0cf4568ea7c9860937d931146e8b99ae">Selection::GetMode</a></div><div class="ttdeci">DWORD GetMode() const </div><div class="ttdef"><b>Definition:</b> selection.h:31</div></div>
+<div class="ttc" id="class_selection_html_a75530f8982bd489083764cbfff9eefb3"><div class="ttname"><a href="class_selection.html#a75530f8982bd489083764cbfff9eefb3">Selection::SetNotifyMessageID</a></div><div class="ttdeci">void SetNotifyMessageID(long lNotifyMsg)</div><div class="ttdef"><b>Definition:</b> selection.h:41</div></div>
+<div class="ttc" id="class_x_y_plot_html"><div class="ttname"><a href="class_x_y_plot.html">XYPlot</a></div><div class="ttdoc">Класс для работы с базой данных </div><div class="ttdef"><b>Definition:</b> main.h:25</div></div>
+<div class="ttc" id="class_selection_html_ae2e8fd632fbdf5ad8222271d861dee3e"><div class="ttname"><a href="class_selection.html#ae2e8fd632fbdf5ad8222271d861dee3e">Selection::lNotifyMessage</a></div><div class="ttdeci">long lNotifyMessage</div><div class="ttdef"><b>Definition:</b> selection.h:67</div></div>
+<div class="ttc" id="class_selection_html_a55bbd4862d833205e258d2a51256e161"><div class="ttname"><a href="class_selection.html#a55bbd4862d833205e258d2a51256e161">Selection::physSelPointX</a></div><div class="ttdeci">double physSelPointX</div><div class="ttdef"><b>Definition:</b> selection.h:75</div></div>
+<div class="ttc" id="class_selection_html_a9e371db3bdd7a9330f83c427a4bcbf0e"><div class="ttname"><a href="class_selection.html#a9e371db3bdd7a9330f83c427a4bcbf0e">Selection::SetFlashSpeed</a></div><div class="ttdeci">void SetFlashSpeed(xyplot::FLASH_SPEED fs)</div><div class="ttdef"><b>Definition:</b> selection.cpp:286</div></div>
+<div class="ttc" id="class_selection_html_ab0583b6c9cca3ccfee73e3ce587419da"><div class="ttname"><a href="class_selection.html#ab0583b6c9cca3ccfee73e3ce587419da">Selection::SetMode</a></div><div class="ttdeci">DWORD SetMode(DWORD dwType)</div><div class="ttdef"><b>Definition:</b> selection.h:33</div></div>
+<div class="ttc" id="selection_8h_html_adeea1a4ab82509fdc1235948c4efeef6"><div class="ttname"><a href="selection_8h.html#adeea1a4ab82509fdc1235948c4efeef6">LPPLOTHITTESTRESULT</a></div><div class="ttdeci">struct tagPLOTHITTESTRESULT * LPPLOTHITTESTRESULT</div></div>
+<div class="ttc" id="class_selection_html_a9969ae2dd3dfc1de2ff22851f23ca701"><div class="ttname"><a href="class_selection.html#a9969ae2dd3dfc1de2ff22851f23ca701">Selection::profileGroupMap</a></div><div class="ttdeci">ProfileGroupMap profileGroupMap</div><div class="ttdef"><b>Definition:</b> selection.h:62</div></div>
+<div class="ttc" id="class_selection_html"><div class="ttname"><a href="class_selection.html">Selection</a></div><div class="ttdef"><b>Definition:</b> selection.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

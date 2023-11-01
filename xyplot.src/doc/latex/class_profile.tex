@@ -1,0 +1,452 @@
+\hypertarget{class_profile}{\section{Класс Profile}
+\label{class_profile}\index{Profile@{Profile}}
+}
+
+
+{\ttfamily \#include $<$profile.\-h$>$}
+
+
+
+Граф связей класса Profile\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_profile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_profile_a0af304ee61478092d010df5dc146bd06}{Profile} (std\-::string \hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name}, long color, int width, B\-O\-O\-L \hyperlink{class_profile_a7e12899117a7229fd74e727d4c7508aa}{show\-Line}, B\-O\-O\-L \hyperlink{class_profile_a07364e07ee0c925c0b2a7631c666056b}{show\-Marks}, const \hyperlink{class_axis}{Axis} \&\hyperlink{class_profile_a9ab5958c5e36ddb1c8dc96773bfbaeb6}{axis\-X}, const \hyperlink{class_axis}{Axis} \&\hyperlink{class_profile_af934163fd90437181ce2125860214cd0}{axis\-Y})
+\item 
+\hyperlink{class_profile_a58fa758a59bc4ee3c1a9980e360e4e98}{$\sim$\-Profile} ()
+\item 
+void \hyperlink{class_profile_af982d6eea235d68ebd74f102ef29d12a}{Set\-Name} (std\-::string \hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name})
+\item 
+const std\-::string \& \hyperlink{class_profile_aa6baeea130f07d7027117d1663619251}{Get\-Name} () const 
+\item 
+void \hyperlink{class_profile_a6ae3bac4830d7b81cfc5daefeb406445}{Set\-Visible} (B\-O\-O\-L visible=T\-R\-U\-E)
+\item 
+B\-O\-O\-L \hyperlink{class_profile_a381fe66a6e251a351c0157587d609ad7}{Is\-Visible} () const 
+\item 
+void \hyperlink{class_profile_a839300e94f6e588988c5b25e167de9dd}{Use\-Symblos} (B\-O\-O\-L symblols)
+\item 
+B\-O\-O\-L \hyperlink{class_profile_a431d9a16e08188d7ad014c0d20696237}{Is\-Use\-Symblos} () const 
+\item 
+void \hyperlink{class_profile_a2f9a7420f40b1cc4974a2fe6b1a2aca8}{Show} (B\-O\-O\-L b\-Show)
+\item 
+long \hyperlink{class_profile_aacee6e0f579d0dbcc6f8452778907473}{Get\-Unit} (unsigned index, double \&x, double \&y) const 
+\item 
+long \hyperlink{class_profile_a844b59dcfb67d36f70f322425b7f98ee}{Get\-Data} (unsigned $\ast$count, double $\ast$pfx, double $\ast$pfy) const 
+\item 
+void \hyperlink{class_profile_aa272424c24ba0eacdd3aa725c6e44e98}{Set\-Data} (const double $\ast$pfx, const double $\ast$pfy, int count)
+\item 
+B\-O\-O\-L \hyperlink{class_profile_abf535c50bda946ff73128a5d686d0d36}{Empty} () const 
+\item 
+void \hyperlink{class_profile_a5c65fe41c9872b365adec25e5dc0376d}{Append} (double fx, double fy)
+\item 
+void \hyperlink{class_profile_a8aede9dc40d7161d8e4f5e8e49a1894f}{Append} (const double $\ast$pfx, const double $\ast$pfy, unsigned count)
+\item 
+unsigned \hyperlink{class_profile_ac99b05caf969d1100a096872896decff}{Data\-Size} () const 
+\item 
+void \hyperlink{class_profile_a71927cb9bcbbe8a02947ffc25afdadd9}{Set\-Line\-Data} (const \hyperlink{class_line_data}{Line\-Data} \&src\-Line)
+\item 
+\hyperlink{class_line_data}{Line\-Data} \& \hyperlink{class_profile_a476640b07ed944d59dc55efe64fe15c7}{Get\-Line\-Data} ()
+\item 
+void \hyperlink{class_profile_a2bdae58cd0a58abcd2a7e51368a693b1}{Range} (double \&xmin, double \&xmax, double \&ymin, double \&ymax) const 
+\item 
+void \hyperlink{class_profile_ac0d79d6f6b2355fe6e13262319968368}{Range\-X} (double \&xmin, double \&xmax) const 
+\item 
+void \hyperlink{class_profile_af838a64a6376e9f083a621edd4604777}{Range\-Y} (double \&xmin, double \&xmax) const 
+\item 
+void \hyperlink{class_profile_a2d8f93d7a343455f9b8168220d1880d2}{Render} (H\-D\-C h\-D\-C, const R\-E\-C\-T rect)
+\item 
+const P\-O\-I\-N\-T $\ast$ \hyperlink{class_profile_af82006b877d02e4f5f725118f95fa59e}{Get\-Render\-Point\-Array} (unsigned \&count) const 
+\item 
+const P\-O\-I\-N\-T \hyperlink{class_profile_a83e9c9f23f67511b0bbd3aec4c256821}{Get\-Render\-Point} (int index, double \&phys\-X, double \&phys\-Y) const 
+\item 
+\hyperlink{class_profile_marks}{Profile\-Marks} \& \hyperlink{class_profile_ad11605c10819b4d259474ddc0a888334}{Get\-Marks} ()
+\item 
+\hyperlink{class_axis}{Axis} \& \hyperlink{class_profile_a0faa93dd60b346e486b2c1a084c05836}{Axis\-X} ()
+\item 
+\hyperlink{class_axis}{Axis} \& \hyperlink{class_profile_af891a7ad2f1f7508822c41e542e0edf2}{Axis\-Y} ()
+\item 
+B\-O\-O\-L \hyperlink{class_profile_a48a263ac82a825c8c0208bbb2532e5d9}{Is\-Show\-In\-Legend} () const 
+\item 
+void \hyperlink{class_profile_a69bc4295a958de5f72aa67ab70b3d036}{Show\-In\-Legend} (B\-O\-O\-L show)
+\item 
+void \hyperlink{class_profile_ac8069bd46802baa2c0fa53419425b159}{Get\-Visible\-Range} (unsigned \&first\-Index, unsigned \&last\-Index) const 
+\end{DoxyCompactItemize}
+\subsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_profile_adc5551c9cef4089bd32d5358c2d27ec5}{D\-E\-F\-A\-U\-L\-T\-W\-I\-D\-T\-H} = 2
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_profile_a3cd865158aed8a6335c132acec3b734f}{Reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name}
+\item 
+B\-O\-O\-L \hyperlink{class_profile_a07364e07ee0c925c0b2a7631c666056b}{show\-Marks}
+\item 
+B\-O\-O\-L \hyperlink{class_profile_a7e12899117a7229fd74e727d4c7508aa}{show\-Line}
+\item 
+\hyperlink{class_line_data}{Line\-Data} \hyperlink{class_profile_a63eba30a8236070b9ed979e1ebdd8709}{line}
+\item 
+\hyperlink{class_axis}{Axis} \& \hyperlink{class_profile_a9ab5958c5e36ddb1c8dc96773bfbaeb6}{axis\-X}
+\item 
+\hyperlink{class_axis}{Axis} \& \hyperlink{class_profile_af934163fd90437181ce2125860214cd0}{axis\-Y}
+\item 
+B\-O\-O\-L \hyperlink{class_profile_a2a37b4d72a0c1dcefcf65aa6474d8ca3}{new\-Data}
+\item 
+R\-E\-C\-T \hyperlink{class_profile_a21fbb7028f71f681ad6becd412f34e07}{last\-Rendered\-Rect}
+\item 
+double \hyperlink{class_profile_a7ec1de15af31223a7cba55fb711ce2c5}{min\-X}
+\item 
+double \hyperlink{class_profile_a3d4ffb95639a391469dc7f5b97fba63b}{max\-X}
+\item 
+double \hyperlink{class_profile_ab65307e12c8d002effb1de3598d47e00}{min\-Y}
+\item 
+double \hyperlink{class_profile_ac16836105d7961c71046014887d3cb71}{max\-Y}
+\item 
+\hyperlink{class_profile_marks}{Profile\-Marks} \hyperlink{class_profile_afb294101d0593f41db3f20fb1e678906}{marks}
+\item 
+std\-::vector$<$ P\-O\-I\-N\-T $>$ \hyperlink{class_profile_a7143abb96dc0d5ef1b152d1ce0ee8dac}{data\-Device}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{class_profile_a9b8d3156a467dc594b39ee8224b659c3}{data\-Phys\-X}
+\item 
+std\-::vector$<$ double $>$ \hyperlink{class_profile_acb59691aee18d478753d4aedfafc8787}{data\-Phys\-Y}
+\item 
+B\-O\-O\-L \hyperlink{class_profile_a09c7baa3c0a3b1762f8c0eed5223868f}{show\-In\-Legend}
+\item 
+unsigned \hyperlink{class_profile_a877766d4f4ee2eb4f63220ebbbcf2e69}{first\-Visible}
+\item 
+unsigned \hyperlink{class_profile_ad48970e92143859da4f950c1c8fee217}{last\-Visible}
+\item 
+C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N \hyperlink{class_profile_a11aa9c768f5ff249dda920c04b886cd9}{cs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_profile_a0af304ee61478092d010df5dc146bd06}{\index{Profile@{Profile}!Profile@{Profile}}
+\index{Profile@{Profile}!Profile@{Profile}}
+\subsubsection[{Profile}]{\setlength{\rightskip}{0pt plus 5cm}Profile\-::\-Profile (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name, }
+\item[{long}]{color, }
+\item[{int}]{width, }
+\item[{B\-O\-O\-L}]{show\-Line, }
+\item[{B\-O\-O\-L}]{show\-Marks, }
+\item[{const {\bf Axis} \&}]{axis\-X, }
+\item[{const {\bf Axis} \&}]{axis\-Y}
+\end{DoxyParamCaption}
+)}}\label{class_profile_a0af304ee61478092d010df5dc146bd06}
+\hypertarget{class_profile_a58fa758a59bc4ee3c1a9980e360e4e98}{\index{Profile@{Profile}!$\sim$\-Profile@{$\sim$\-Profile}}
+\index{$\sim$\-Profile@{$\sim$\-Profile}!Profile@{Profile}}
+\subsubsection[{$\sim$\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}Profile\-::$\sim$\-Profile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_profile_a58fa758a59bc4ee3c1a9980e360e4e98}
+
+
+\subsection{Методы}
+\hypertarget{class_profile_a5c65fe41c9872b365adec25e5dc0376d}{\index{Profile@{Profile}!Append@{Append}}
+\index{Append@{Append}!Profile@{Profile}}
+\subsubsection[{Append}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Append (
+\begin{DoxyParamCaption}
+\item[{double}]{fx, }
+\item[{double}]{fy}
+\end{DoxyParamCaption}
+)}}\label{class_profile_a5c65fe41c9872b365adec25e5dc0376d}
+\hypertarget{class_profile_a8aede9dc40d7161d8e4f5e8e49a1894f}{\index{Profile@{Profile}!Append@{Append}}
+\index{Append@{Append}!Profile@{Profile}}
+\subsubsection[{Append}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Append (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{pfx, }
+\item[{const double $\ast$}]{pfy, }
+\item[{unsigned}]{count}
+\end{DoxyParamCaption}
+)}}\label{class_profile_a8aede9dc40d7161d8e4f5e8e49a1894f}
+\hypertarget{class_profile_a0faa93dd60b346e486b2c1a084c05836}{\index{Profile@{Profile}!Axis\-X@{Axis\-X}}
+\index{Axis\-X@{Axis\-X}!Profile@{Profile}}
+\subsubsection[{Axis\-X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}\& Profile\-::\-Axis\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_a0faa93dd60b346e486b2c1a084c05836}
+\hypertarget{class_profile_af891a7ad2f1f7508822c41e542e0edf2}{\index{Profile@{Profile}!Axis\-Y@{Axis\-Y}}
+\index{Axis\-Y@{Axis\-Y}!Profile@{Profile}}
+\subsubsection[{Axis\-Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}\& Profile\-::\-Axis\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_af891a7ad2f1f7508822c41e542e0edf2}
+\hypertarget{class_profile_ac99b05caf969d1100a096872896decff}{\index{Profile@{Profile}!Data\-Size@{Data\-Size}}
+\index{Data\-Size@{Data\-Size}!Profile@{Profile}}
+\subsubsection[{Data\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Profile\-::\-Data\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_ac99b05caf969d1100a096872896decff}
+\hypertarget{class_profile_abf535c50bda946ff73128a5d686d0d36}{\index{Profile@{Profile}!Empty@{Empty}}
+\index{Empty@{Empty}!Profile@{Profile}}
+\subsubsection[{Empty}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Profile\-::\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_abf535c50bda946ff73128a5d686d0d36}
+\hypertarget{class_profile_a844b59dcfb67d36f70f322425b7f98ee}{\index{Profile@{Profile}!Get\-Data@{Get\-Data}}
+\index{Get\-Data@{Get\-Data}!Profile@{Profile}}
+\subsubsection[{Get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}long Profile\-::\-Get\-Data (
+\begin{DoxyParamCaption}
+\item[{unsigned $\ast$}]{count, }
+\item[{double $\ast$}]{pfx, }
+\item[{double $\ast$}]{pfy}
+\end{DoxyParamCaption}
+) const}}\label{class_profile_a844b59dcfb67d36f70f322425b7f98ee}
+\hypertarget{class_profile_a476640b07ed944d59dc55efe64fe15c7}{\index{Profile@{Profile}!Get\-Line\-Data@{Get\-Line\-Data}}
+\index{Get\-Line\-Data@{Get\-Line\-Data}!Profile@{Profile}}
+\subsubsection[{Get\-Line\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data}\& Profile\-::\-Get\-Line\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_a476640b07ed944d59dc55efe64fe15c7}
+\hypertarget{class_profile_ad11605c10819b4d259474ddc0a888334}{\index{Profile@{Profile}!Get\-Marks@{Get\-Marks}}
+\index{Get\-Marks@{Get\-Marks}!Profile@{Profile}}
+\subsubsection[{Get\-Marks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Profile\-Marks}\& Profile\-::\-Get\-Marks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_ad11605c10819b4d259474ddc0a888334}
+\hypertarget{class_profile_aa6baeea130f07d7027117d1663619251}{\index{Profile@{Profile}!Get\-Name@{Get\-Name}}
+\index{Get\-Name@{Get\-Name}!Profile@{Profile}}
+\subsubsection[{Get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string\& Profile\-::\-Get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_aa6baeea130f07d7027117d1663619251}
+\hypertarget{class_profile_a83e9c9f23f67511b0bbd3aec4c256821}{\index{Profile@{Profile}!Get\-Render\-Point@{Get\-Render\-Point}}
+\index{Get\-Render\-Point@{Get\-Render\-Point}!Profile@{Profile}}
+\subsubsection[{Get\-Render\-Point}]{\setlength{\rightskip}{0pt plus 5cm}const P\-O\-I\-N\-T Profile\-::\-Get\-Render\-Point (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{double \&}]{phys\-X, }
+\item[{double \&}]{phys\-Y}
+\end{DoxyParamCaption}
+) const}}\label{class_profile_a83e9c9f23f67511b0bbd3aec4c256821}
+\hypertarget{class_profile_af82006b877d02e4f5f725118f95fa59e}{\index{Profile@{Profile}!Get\-Render\-Point\-Array@{Get\-Render\-Point\-Array}}
+\index{Get\-Render\-Point\-Array@{Get\-Render\-Point\-Array}!Profile@{Profile}}
+\subsubsection[{Get\-Render\-Point\-Array}]{\setlength{\rightskip}{0pt plus 5cm}const P\-O\-I\-N\-T $\ast$ Profile\-::\-Get\-Render\-Point\-Array (
+\begin{DoxyParamCaption}
+\item[{unsigned \&}]{count}
+\end{DoxyParamCaption}
+) const}}\label{class_profile_af82006b877d02e4f5f725118f95fa59e}
+\hypertarget{class_profile_aacee6e0f579d0dbcc6f8452778907473}{\index{Profile@{Profile}!Get\-Unit@{Get\-Unit}}
+\index{Get\-Unit@{Get\-Unit}!Profile@{Profile}}
+\subsubsection[{Get\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}long Profile\-::\-Get\-Unit (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{index, }
+\item[{double \&}]{x, }
+\item[{double \&}]{y}
+\end{DoxyParamCaption}
+) const}}\label{class_profile_aacee6e0f579d0dbcc6f8452778907473}
+\hypertarget{class_profile_ac8069bd46802baa2c0fa53419425b159}{\index{Profile@{Profile}!Get\-Visible\-Range@{Get\-Visible\-Range}}
+\index{Get\-Visible\-Range@{Get\-Visible\-Range}!Profile@{Profile}}
+\subsubsection[{Get\-Visible\-Range}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Get\-Visible\-Range (
+\begin{DoxyParamCaption}
+\item[{unsigned \&}]{first\-Index, }
+\item[{unsigned \&}]{last\-Index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_ac8069bd46802baa2c0fa53419425b159}
+\hypertarget{class_profile_a48a263ac82a825c8c0208bbb2532e5d9}{\index{Profile@{Profile}!Is\-Show\-In\-Legend@{Is\-Show\-In\-Legend}}
+\index{Is\-Show\-In\-Legend@{Is\-Show\-In\-Legend}!Profile@{Profile}}
+\subsubsection[{Is\-Show\-In\-Legend}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Profile\-::\-Is\-Show\-In\-Legend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_a48a263ac82a825c8c0208bbb2532e5d9}
+\hypertarget{class_profile_a431d9a16e08188d7ad014c0d20696237}{\index{Profile@{Profile}!Is\-Use\-Symblos@{Is\-Use\-Symblos}}
+\index{Is\-Use\-Symblos@{Is\-Use\-Symblos}!Profile@{Profile}}
+\subsubsection[{Is\-Use\-Symblos}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Profile\-::\-Is\-Use\-Symblos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_a431d9a16e08188d7ad014c0d20696237}
+\hypertarget{class_profile_a381fe66a6e251a351c0157587d609ad7}{\index{Profile@{Profile}!Is\-Visible@{Is\-Visible}}
+\index{Is\-Visible@{Is\-Visible}!Profile@{Profile}}
+\subsubsection[{Is\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Profile\-::\-Is\-Visible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_a381fe66a6e251a351c0157587d609ad7}
+\hypertarget{class_profile_a2bdae58cd0a58abcd2a7e51368a693b1}{\index{Profile@{Profile}!Range@{Range}}
+\index{Range@{Range}!Profile@{Profile}}
+\subsubsection[{Range}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Range (
+\begin{DoxyParamCaption}
+\item[{double \&}]{xmin, }
+\item[{double \&}]{xmax, }
+\item[{double \&}]{ymin, }
+\item[{double \&}]{ymax}
+\end{DoxyParamCaption}
+) const}}\label{class_profile_a2bdae58cd0a58abcd2a7e51368a693b1}
+\hypertarget{class_profile_ac0d79d6f6b2355fe6e13262319968368}{\index{Profile@{Profile}!Range\-X@{Range\-X}}
+\index{Range\-X@{Range\-X}!Profile@{Profile}}
+\subsubsection[{Range\-X}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Range\-X (
+\begin{DoxyParamCaption}
+\item[{double \&}]{xmin, }
+\item[{double \&}]{xmax}
+\end{DoxyParamCaption}
+) const}}\label{class_profile_ac0d79d6f6b2355fe6e13262319968368}
+\hypertarget{class_profile_af838a64a6376e9f083a621edd4604777}{\index{Profile@{Profile}!Range\-Y@{Range\-Y}}
+\index{Range\-Y@{Range\-Y}!Profile@{Profile}}
+\subsubsection[{Range\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Range\-Y (
+\begin{DoxyParamCaption}
+\item[{double \&}]{xmin, }
+\item[{double \&}]{xmax}
+\end{DoxyParamCaption}
+) const}}\label{class_profile_af838a64a6376e9f083a621edd4604777}
+\hypertarget{class_profile_a2d8f93d7a343455f9b8168220d1880d2}{\index{Profile@{Profile}!Render@{Render}}
+\index{Render@{Render}!Profile@{Profile}}
+\subsubsection[{Render}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Render (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{h\-D\-C, }
+\item[{const R\-E\-C\-T}]{rect}
+\end{DoxyParamCaption}
+)}}\label{class_profile_a2d8f93d7a343455f9b8168220d1880d2}
+\hypertarget{class_profile_a3cd865158aed8a6335c132acec3b734f}{\index{Profile@{Profile}!Reset@{Reset}}
+\index{Reset@{Reset}!Profile@{Profile}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_a3cd865158aed8a6335c132acec3b734f}
+\hypertarget{class_profile_aa272424c24ba0eacdd3aa725c6e44e98}{\index{Profile@{Profile}!Set\-Data@{Set\-Data}}
+\index{Set\-Data@{Set\-Data}!Profile@{Profile}}
+\subsubsection[{Set\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Set\-Data (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{pfx, }
+\item[{const double $\ast$}]{pfy, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)}}\label{class_profile_aa272424c24ba0eacdd3aa725c6e44e98}
+\hypertarget{class_profile_a71927cb9bcbbe8a02947ffc25afdadd9}{\index{Profile@{Profile}!Set\-Line\-Data@{Set\-Line\-Data}}
+\index{Set\-Line\-Data@{Set\-Line\-Data}!Profile@{Profile}}
+\subsubsection[{Set\-Line\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Set\-Line\-Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf Line\-Data} \&}]{src\-Line}
+\end{DoxyParamCaption}
+)}}\label{class_profile_a71927cb9bcbbe8a02947ffc25afdadd9}
+\hypertarget{class_profile_af982d6eea235d68ebd74f102ef29d12a}{\index{Profile@{Profile}!Set\-Name@{Set\-Name}}
+\index{Set\-Name@{Set\-Name}!Profile@{Profile}}
+\subsubsection[{Set\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Set\-Name (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_profile_af982d6eea235d68ebd74f102ef29d12a}
+\hypertarget{class_profile_a6ae3bac4830d7b81cfc5daefeb406445}{\index{Profile@{Profile}!Set\-Visible@{Set\-Visible}}
+\index{Set\-Visible@{Set\-Visible}!Profile@{Profile}}
+\subsubsection[{Set\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Set\-Visible (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{visible = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_a6ae3bac4830d7b81cfc5daefeb406445}
+\hypertarget{class_profile_a2f9a7420f40b1cc4974a2fe6b1a2aca8}{\index{Profile@{Profile}!Show@{Show}}
+\index{Show@{Show}!Profile@{Profile}}
+\subsubsection[{Show}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Show (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{b\-Show}
+\end{DoxyParamCaption}
+)}}\label{class_profile_a2f9a7420f40b1cc4974a2fe6b1a2aca8}
+\hypertarget{class_profile_a69bc4295a958de5f72aa67ab70b3d036}{\index{Profile@{Profile}!Show\-In\-Legend@{Show\-In\-Legend}}
+\index{Show\-In\-Legend@{Show\-In\-Legend}!Profile@{Profile}}
+\subsubsection[{Show\-In\-Legend}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Show\-In\-Legend (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{show}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_a69bc4295a958de5f72aa67ab70b3d036}
+\hypertarget{class_profile_a839300e94f6e588988c5b25e167de9dd}{\index{Profile@{Profile}!Use\-Symblos@{Use\-Symblos}}
+\index{Use\-Symblos@{Use\-Symblos}!Profile@{Profile}}
+\subsubsection[{Use\-Symblos}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\-::\-Use\-Symblos (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{symblols}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_profile_a839300e94f6e588988c5b25e167de9dd}
+
+
+\subsection{Данные класса}
+\hypertarget{class_profile_a9ab5958c5e36ddb1c8dc96773bfbaeb6}{\index{Profile@{Profile}!axis\-X@{axis\-X}}
+\index{axis\-X@{axis\-X}!Profile@{Profile}}
+\subsubsection[{axis\-X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}\& Profile\-::axis\-X\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_a9ab5958c5e36ddb1c8dc96773bfbaeb6}
+\hypertarget{class_profile_af934163fd90437181ce2125860214cd0}{\index{Profile@{Profile}!axis\-Y@{axis\-Y}}
+\index{axis\-Y@{axis\-Y}!Profile@{Profile}}
+\subsubsection[{axis\-Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Axis}\& Profile\-::axis\-Y\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_af934163fd90437181ce2125860214cd0}
+\hypertarget{class_profile_a11aa9c768f5ff249dda920c04b886cd9}{\index{Profile@{Profile}!cs@{cs}}
+\index{cs@{cs}!Profile@{Profile}}
+\subsubsection[{cs}]{\setlength{\rightskip}{0pt plus 5cm}C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-S\-E\-C\-T\-I\-O\-N Profile\-::cs\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}}\label{class_profile_a11aa9c768f5ff249dda920c04b886cd9}
+\hypertarget{class_profile_a7143abb96dc0d5ef1b152d1ce0ee8dac}{\index{Profile@{Profile}!data\-Device@{data\-Device}}
+\index{data\-Device@{data\-Device}!Profile@{Profile}}
+\subsubsection[{data\-Device}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$P\-O\-I\-N\-T$>$ Profile\-::data\-Device\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_a7143abb96dc0d5ef1b152d1ce0ee8dac}
+\hypertarget{class_profile_a9b8d3156a467dc594b39ee8224b659c3}{\index{Profile@{Profile}!data\-Phys\-X@{data\-Phys\-X}}
+\index{data\-Phys\-X@{data\-Phys\-X}!Profile@{Profile}}
+\subsubsection[{data\-Phys\-X}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ Profile\-::data\-Phys\-X\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_a9b8d3156a467dc594b39ee8224b659c3}
+\hypertarget{class_profile_acb59691aee18d478753d4aedfafc8787}{\index{Profile@{Profile}!data\-Phys\-Y@{data\-Phys\-Y}}
+\index{data\-Phys\-Y@{data\-Phys\-Y}!Profile@{Profile}}
+\subsubsection[{data\-Phys\-Y}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$double$>$ Profile\-::data\-Phys\-Y\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_acb59691aee18d478753d4aedfafc8787}
+\hypertarget{class_profile_adc5551c9cef4089bd32d5358c2d27ec5}{\index{Profile@{Profile}!D\-E\-F\-A\-U\-L\-T\-W\-I\-D\-T\-H@{D\-E\-F\-A\-U\-L\-T\-W\-I\-D\-T\-H}}
+\index{D\-E\-F\-A\-U\-L\-T\-W\-I\-D\-T\-H@{D\-E\-F\-A\-U\-L\-T\-W\-I\-D\-T\-H}!Profile@{Profile}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-W\-I\-D\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}const int Profile\-::\-D\-E\-F\-A\-U\-L\-T\-W\-I\-D\-T\-H = 2\hspace{0.3cm}{\ttfamily [static]}}}\label{class_profile_adc5551c9cef4089bd32d5358c2d27ec5}
+\hypertarget{class_profile_a877766d4f4ee2eb4f63220ebbbcf2e69}{\index{Profile@{Profile}!first\-Visible@{first\-Visible}}
+\index{first\-Visible@{first\-Visible}!Profile@{Profile}}
+\subsubsection[{first\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Profile\-::first\-Visible\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_a877766d4f4ee2eb4f63220ebbbcf2e69}
+\hypertarget{class_profile_a21fbb7028f71f681ad6becd412f34e07}{\index{Profile@{Profile}!last\-Rendered\-Rect@{last\-Rendered\-Rect}}
+\index{last\-Rendered\-Rect@{last\-Rendered\-Rect}!Profile@{Profile}}
+\subsubsection[{last\-Rendered\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T Profile\-::last\-Rendered\-Rect\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_a21fbb7028f71f681ad6becd412f34e07}
+\hypertarget{class_profile_ad48970e92143859da4f950c1c8fee217}{\index{Profile@{Profile}!last\-Visible@{last\-Visible}}
+\index{last\-Visible@{last\-Visible}!Profile@{Profile}}
+\subsubsection[{last\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Profile\-::last\-Visible\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_ad48970e92143859da4f950c1c8fee217}
+\hypertarget{class_profile_a63eba30a8236070b9ed979e1ebdd8709}{\index{Profile@{Profile}!line@{line}}
+\index{line@{line}!Profile@{Profile}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Line\-Data} Profile\-::line\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_a63eba30a8236070b9ed979e1ebdd8709}
+\hypertarget{class_profile_afb294101d0593f41db3f20fb1e678906}{\index{Profile@{Profile}!marks@{marks}}
+\index{marks@{marks}!Profile@{Profile}}
+\subsubsection[{marks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Profile\-Marks} Profile\-::marks\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_afb294101d0593f41db3f20fb1e678906}
+\hypertarget{class_profile_a3d4ffb95639a391469dc7f5b97fba63b}{\index{Profile@{Profile}!max\-X@{max\-X}}
+\index{max\-X@{max\-X}!Profile@{Profile}}
+\subsubsection[{max\-X}]{\setlength{\rightskip}{0pt plus 5cm}double Profile\-::max\-X\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}}\label{class_profile_a3d4ffb95639a391469dc7f5b97fba63b}
+\hypertarget{class_profile_ac16836105d7961c71046014887d3cb71}{\index{Profile@{Profile}!max\-Y@{max\-Y}}
+\index{max\-Y@{max\-Y}!Profile@{Profile}}
+\subsubsection[{max\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double Profile\-::max\-Y\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}}\label{class_profile_ac16836105d7961c71046014887d3cb71}
+\hypertarget{class_profile_a7ec1de15af31223a7cba55fb711ce2c5}{\index{Profile@{Profile}!min\-X@{min\-X}}
+\index{min\-X@{min\-X}!Profile@{Profile}}
+\subsubsection[{min\-X}]{\setlength{\rightskip}{0pt plus 5cm}double Profile\-::min\-X\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}}\label{class_profile_a7ec1de15af31223a7cba55fb711ce2c5}
+\hypertarget{class_profile_ab65307e12c8d002effb1de3598d47e00}{\index{Profile@{Profile}!min\-Y@{min\-Y}}
+\index{min\-Y@{min\-Y}!Profile@{Profile}}
+\subsubsection[{min\-Y}]{\setlength{\rightskip}{0pt plus 5cm}double Profile\-::min\-Y\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}}\label{class_profile_ab65307e12c8d002effb1de3598d47e00}
+\hypertarget{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{\index{Profile@{Profile}!name@{name}}
+\index{name@{name}!Profile@{Profile}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Profile\-::name\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_ac8a75db2da9448616fb180edcc25bf8c}
+\hypertarget{class_profile_a2a37b4d72a0c1dcefcf65aa6474d8ca3}{\index{Profile@{Profile}!new\-Data@{new\-Data}}
+\index{new\-Data@{new\-Data}!Profile@{Profile}}
+\subsubsection[{new\-Data}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Profile\-::new\-Data\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_a2a37b4d72a0c1dcefcf65aa6474d8ca3}
+\hypertarget{class_profile_a09c7baa3c0a3b1762f8c0eed5223868f}{\index{Profile@{Profile}!show\-In\-Legend@{show\-In\-Legend}}
+\index{show\-In\-Legend@{show\-In\-Legend}!Profile@{Profile}}
+\subsubsection[{show\-In\-Legend}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Profile\-::show\-In\-Legend\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_a09c7baa3c0a3b1762f8c0eed5223868f}
+\hypertarget{class_profile_a7e12899117a7229fd74e727d4c7508aa}{\index{Profile@{Profile}!show\-Line@{show\-Line}}
+\index{show\-Line@{show\-Line}!Profile@{Profile}}
+\subsubsection[{show\-Line}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Profile\-::show\-Line\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_a7e12899117a7229fd74e727d4c7508aa}
+\hypertarget{class_profile_a07364e07ee0c925c0b2a7631c666056b}{\index{Profile@{Profile}!show\-Marks@{show\-Marks}}
+\index{show\-Marks@{show\-Marks}!Profile@{Profile}}
+\subsubsection[{show\-Marks}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Profile\-::show\-Marks\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_profile_a07364e07ee0c925c0b2a7631c666056b}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{profile_8h}{profile.\-h}\item 
+src/\hyperlink{profile_8cpp}{profile.\-cpp}\end{DoxyCompactItemize}

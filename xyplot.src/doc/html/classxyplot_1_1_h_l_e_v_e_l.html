@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Класс xyplot::HLEVEL</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacexyplot.html">xyplot</a></li><li class="navelem"><a class="el" href="classxyplot_1_1_h_l_e_v_e_l.html">HLEVEL</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="classxyplot_1_1_h_l_e_v_e_l-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс xyplot::HLEVEL</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс дескриптор линий уровня  
+ <a href="classxyplot_1_1_h_l_e_v_e_l.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_x_y_plot_wrapper_8h_source.html">XYPlotWrapper.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:xyplot::HLEVEL:</div>
+<div class="dyncontent">
+<div class="center"><img src="classxyplot_1_1_h_l_e_v_e_l__inherit__graph.png" border="0" usemap="#xyplot_1_1_h_l_e_v_e_l_inherit__map" alt="Inheritance graph"/></div>
+<map name="xyplot_1_1_h_l_e_v_e_l_inherit__map" id="xyplot_1_1_h_l_e_v_e_l_inherit__map">
+<area shape="rect" id="node2" href="classxyplot_1_1_plot_handle.html" title="Базовый класс дескрипторов 2D графики " alt="" coords="5,5,133,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса xyplot::HLEVEL:</div>
+<div class="dyncontent">
+<div class="center"><img src="classxyplot_1_1_h_l_e_v_e_l__coll__graph.png" border="0" usemap="#xyplot_1_1_h_l_e_v_e_l_coll__map" alt="Collaboration graph"/></div>
+<map name="xyplot_1_1_h_l_e_v_e_l_coll__map" id="xyplot_1_1_h_l_e_v_e_l_coll__map">
+<area shape="rect" id="node2" href="classxyplot_1_1_plot_handle.html" title="Базовый класс дескрипторов 2D графики " alt="" coords="5,5,133,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:adb83b057b07112c56e4ce303232c2b86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_h_l_e_v_e_l.html#adb83b057b07112c56e4ce303232c2b86">HLEVEL</a> ()</td></tr>
+<tr class="separator:adb83b057b07112c56e4ce303232c2b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxyplot_1_1_plot_handle"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classxyplot_1_1_plot_handle')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="classxyplot_1_1_plot_handle.html">xyplot::PlotHandle</a></td></tr>
+<tr class="memitem:a1aa470b07c0cf1712f15bafdb5fb8a48 inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_plot_handle.html#a1aa470b07c0cf1712f15bafdb5fb8a48">~PlotHandle</a> ()</td></tr>
+<tr class="separator:a1aa470b07c0cf1712f15bafdb5fb8a48 inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1fd6b3147239c1485a345dc2baadc05 inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classxyplot_1_1_plot_handle.html">PlotHandle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_plot_handle.html#ab1fd6b3147239c1485a345dc2baadc05">operator=</a> (const <a class="el" href="classxyplot_1_1_plot_handle.html">PlotHandle</a> &amp;rhs)</td></tr>
+<tr class="separator:ab1fd6b3147239c1485a345dc2baadc05 inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd66331f425ea57e0562dfb74a81177b inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_plot_handle.html#afd66331f425ea57e0562dfb74a81177b">operator!</a> () const </td></tr>
+<tr class="separator:afd66331f425ea57e0562dfb74a81177b inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7e238ea63f7ab13f24a377aab21282 inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_plot_handle.html#afa7e238ea63f7ab13f24a377aab21282">operator!=</a> (const <a class="el" href="classxyplot_1_1_plot_handle.html">PlotHandle</a> &amp;rhs) const </td></tr>
+<tr class="separator:afa7e238ea63f7ab13f24a377aab21282 inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa0bcf721b1b346f7d96230098da3fe inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_plot_handle.html#a1fa0bcf721b1b346f7d96230098da3fe">operator long</a> () const </td></tr>
+<tr class="separator:a1fa0bcf721b1b346f7d96230098da3fe inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5372007842b00fea6760f0324ed3220e inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_plot_handle.html#a5372007842b00fea6760f0324ed3220e">operator&amp;</a> ()</td></tr>
+<tr class="separator:a5372007842b00fea6760f0324ed3220e inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2004cbf4e4400de4e4413b9b75c281c inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_plot_handle.html#ab2004cbf4e4400de4e4413b9b75c281c">PlotHandle</a> (<a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> n)</td></tr>
+<tr class="separator:ab2004cbf4e4400de4e4413b9b75c281c inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5226ba05ba9568584b2ef81fbf76e152 inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_plot_handle.html#a5226ba05ba9568584b2ef81fbf76e152">PlotHandle</a> (const <a class="el" href="classxyplot_1_1_plot_handle.html">PlotHandle</a> &amp;rhs)</td></tr>
+<tr class="separator:a5226ba05ba9568584b2ef81fbf76e152 inherit pub_methods_classxyplot_1_1_plot_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a575be341f182a5ace579b6ee079ae3fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_h_l_e_v_e_l.html#a575be341f182a5ace579b6ee079ae3fd">HLEVEL</a> (<a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a> n)</td></tr>
+<tr class="separator:a575be341f182a5ace579b6ee079ae3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classxyplot_1_1_plot_handle"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classxyplot_1_1_plot_handle')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="classxyplot_1_1_plot_handle.html">xyplot::PlotHandle</a></td></tr>
+<tr class="memitem:afddd74546013d446df5478d72c87eef4 inherit pro_methods_classxyplot_1_1_plot_handle"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_plot_handle.html#afddd74546013d446df5478d72c87eef4">PlotHandle</a> ()</td></tr>
+<tr class="separator:afddd74546013d446df5478d72c87eef4 inherit pro_methods_classxyplot_1_1_plot_handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:af7f77d4596fc57ef8f51f4dba0fd1c97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classxyplot_1_1_h_l_e_v_e_l.html">HLEVEL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxyplot_1_1_h_l_e_v_e_l.html#af7f77d4596fc57ef8f51f4dba0fd1c97">XYPlotManager::CreateLevel</a> (<a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;, <a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>, double, const char *, COLORREF, int)</td></tr>
+<tr class="separator:af7f77d4596fc57ef8f51f4dba0fd1c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс дескриптор линий уровня </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="adb83b057b07112c56e4ce303232c2b86"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xyplot::HLEVEL::HLEVEL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a575be341f182a5ace579b6ee079ae3fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xyplot::HLEVEL::HLEVEL </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, отноносящимся к классу</h2>
+<a class="anchor" id="af7f77d4596fc57ef8f51f4dba0fd1c97"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classxyplot_1_1_h_l_e_v_e_l.html">HLEVEL</a> <a class="el" href="group__gr_lvl_ex.html#gaf2ee73286c657c5cf07963143e74246d">XYPlotManager::CreateLevel</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classxyplot_1_1_h_p_l_o_t.html">HPLOT</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacexyplot.html#a27bc71b0bdfac09495e7e531d8a918c5">long</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>src/<a class="el" href="_x_y_plot_wrapper_8h_source.html">XYPlotWrapper.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:38. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

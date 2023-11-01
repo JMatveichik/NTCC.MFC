@@ -1,0 +1,96 @@
+\hypertarget{group__group1}{\section{Инциализации и освобождение}
+\label{group__group1}\index{Инциализации и освобождение@{Инциализации и освобождение}}
+}
+
+
+Функции инциализации и освобождения 2\-D графики  
+
+
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L \hyperlink{group__group1_ga894a76ee9162ccae431581ed25c5029f}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Initialize} (const char $\ast$psz\-Dll\-Path, H\-W\-N\-D hwnd\-Parent=N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em Данная функция инициализирует класса-\/обертку. \end{DoxyCompactList}\item 
+\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \hyperlink{group__group1_ga056dc5f3c798c3c3f38d2ac9d4051ecb}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Create\-Plot} (H\-W\-N\-D hwnd\-Parent)
+\begin{DoxyCompactList}\small\item\em Функция создания экземпляра 2\-D графики. В случае если неудалось создать экземпляр функция генерирует исключение \hyperlink{classxyplot_1_1_x_y_plot_request_failure}{X\-Y\-Plot\-Request\-Failure}. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__group1_gaa1d4729bae2ddfd134d72fcab62930d5}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Destroy\-Plot} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot)
+\begin{DoxyCompactList}\small\item\em Функция удаления экземпляра 2\-D графики. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Функции инциализации и освобождения 2\-D графики Данный набор функций позволяет инициализировать класс-\/обертку для манипуляции всеми экземплярами 2\-D графики, а также создавать новые и уничтожать существующие экземпляры. 
+
+\subsection{Функции}
+\hypertarget{group__group1_ga056dc5f3c798c3c3f38d2ac9d4051ecb}{\index{Инциализации и освобождение@{Инциализации и освобождение}!Create\-Plot@{Create\-Plot}}
+\index{Create\-Plot@{Create\-Plot}!Инциализации и освобождение@{Инциализации и освобождение}}
+\subsubsection[{Create\-Plot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\-P\-L\-O\-T} X\-Y\-Plot\-Manager\-::\-Create\-Plot (
+\begin{DoxyParamCaption}
+\item[{H\-W\-N\-D}]{hwnd\-Parent}
+\end{DoxyParamCaption}
+)}}\label{group__group1_ga056dc5f3c798c3c3f38d2ac9d4051ecb}
+
+
+Функция создания экземпляра 2\-D графики. В случае если неудалось создать экземпляр функция генерирует исключение \hyperlink{classxyplot_1_1_x_y_plot_request_failure}{X\-Y\-Plot\-Request\-Failure}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em hwnd\-Parent} & -\/ дескриптор окна в котором будет отображаться графика \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Описатель экземпляра 2\-D графики 
+\begin{DoxyCode}
+\hyperlink{group__gr_construct_gafc0df2010690907aa3a1503ebb90345c}{XYPlotManager}& pm = \hyperlink{classxyplot_1_1_x_y_plot_manager_abfde221555f11c692969986174781780}{XYPlotManager::Instance}();
+\textcolor{keywordflow}{if} ( !pm.Initialize(\textcolor{stringliteral}{"xyplot.dll"}, ::AfxGetMainWnd()->m\_hWnd))
+    \textcolor{keywordflow}{return} FALSE;
+HPLOT plot;
+CChildView* pView = ...;\textcolor{comment}{//получить дескриптор окна в котором будет отображаться графика }
+\textcolor{keywordflow}{try} \{
+        plot = pm.CreatePlot(pView->m\_hWnd)
+    \}
+ \textcolor{keywordflow}{catch} (XYPlotRequestFailure& e)
+ \{
+        \textcolor{keywordflow}{return} FALSE;
+ \}
+\end{DoxyCode}
+ 
+\end{DoxyReturn}
+\hypertarget{group__group1_gaa1d4729bae2ddfd134d72fcab62930d5}{\index{Инциализации и освобождение@{Инциализации и освобождение}!Destroy\-Plot@{Destroy\-Plot}}
+\index{Destroy\-Plot@{Destroy\-Plot}!Инциализации и освобождение@{Инциализации и освобождение}}
+\subsubsection[{Destroy\-Plot}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Destroy\-Plot (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot}
+\end{DoxyParamCaption}
+)}}\label{group__group1_gaa1d4729bae2ddfd134d72fcab62930d5}
+
+
+Функция удаления экземпляра 2\-D графики. 
+
+Функция удаляет экземпляра 2\-D графики. Данную функцию необходимо вызвать перед уничтожением окна, указанного при создании экземпляра в функции Create\-Plot \begin{DoxyReturn}{Возвращает}
+true -\/ в случае если освобождение экземпляра графики прошло успешно; 
+
+false -\/ в случае если не удалось освободить экземпляр. 
+\end{DoxyReturn}
+\hypertarget{group__group1_ga894a76ee9162ccae431581ed25c5029f}{\index{Инциализации и освобождение@{Инциализации и освобождение}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Инциализации и освобождение@{Инциализации и освобождение}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Initialize (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{psz\-Dll\-Path, }
+\item[{H\-W\-N\-D}]{hwnd\-Parent = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{group__group1_ga894a76ee9162ccae431581ed25c5029f}
+
+
+Данная функция инициализирует класса-\/обертку. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em psz\-Dll\-Path} & -\/ путь к динамически подключаемой библеотеке xyplot.\-dll \\
+\hline
+{\em hwnd\-Parent} & -\/ опциональный параметр, дескриптор окна которому будут присылаться сообщения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если инициализация прошла успешно;\par
+false -\/ в случае если инициализация не удалась. 
+\end{DoxyReturn}

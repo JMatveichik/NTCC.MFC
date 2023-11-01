@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Исходный файл src/profile.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">profile.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="profile_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __PROFILE_H__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __PROFILE_H__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_profile_marks_8h.html">ProfileMarks.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_axis_8h.html">Axis.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="profile_8h.html#ab564cd67657a739c9e5a6caa0ce0dafa">   10</a></span>&#160;<span class="keyword">typedef</span> LONG_PTR <a class="code" href="profile_8h.html#ab564cd67657a739c9e5a6caa0ce0dafa">PROFILE_KEY</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="profile_8h.html#a19285e49c540d09517740fab4252f854">   12</a></span>&#160;<span class="keyword">typedef</span> std::map&lt;PROFILE_KEY, Profile*&gt; <a class="code" href="profile_8h.html#a19285e49c540d09517740fab4252f854">ProfileMap</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="profile_8h.html#a399287448c55e197b19688ac6ff1e1a0">   13</a></span>&#160;<span class="keyword">typedef</span> ProfileMap::iterator <a class="code" href="profile_8h.html#a399287448c55e197b19688ac6ff1e1a0">ProfileMapIterator</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="profile_8h.html#ae4da9cece4e631d21f340168073939f5">   14</a></span>&#160;<span class="keyword">typedef</span> ProfileMap::const_iterator <a class="code" href="profile_8h.html#ae4da9cece4e631d21f340168073939f5">ProfileMapConstIterator</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_line_data.html">LineData</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_profile.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_profile.html">Profile</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_profile.html#adc5551c9cef4089bd32d5358c2d27ec5">   22</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_profile.html#adc5551c9cef4089bd32d5358c2d27ec5">DEFAULTWIDTH</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">/*Конструктор по умолчанию*/</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//Profile();</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">/*Конструктор с параметрами*/</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_profile.html#a0af304ee61478092d010df5dc146bd06">Profile</a>( std::string <a class="code" href="class_profile.html#ac8a75db2da9448616fb180edcc25bf8c">name</a>, <span class="keywordtype">long</span> color, <span class="keywordtype">int</span> width,  BOOL <a class="code" href="class_profile.html#a7e12899117a7229fd74e727d4c7508aa">showLine</a>, BOOL <a class="code" href="class_profile.html#a07364e07ee0c925c0b2a7631c666056b">showMarks</a>, <span class="keyword">const</span> <a class="code" href="class_axis.html">Axis</a>&amp; <a class="code" href="class_profile.html#a9ab5958c5e36ddb1c8dc96773bfbaeb6">axisX</a>, <span class="keyword">const</span> <a class="code" href="class_axis.html">Axis</a>&amp; <a class="code" href="class_profile.html#af934163fd90437181ce2125860214cd0">axisY</a> );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_profile.html#a58fa758a59bc4ee3c1a9980e360e4e98">~Profile</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">/*Назначить имя кривой*/</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#af982d6eea235d68ebd74f102ef29d12a">SetName</a>(std::string <a class="code" href="class_profile.html#ac8a75db2da9448616fb180edcc25bf8c">name</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">/*Получить имя кривой*/</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_profile.html#aa6baeea130f07d7027117d1663619251">   36</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> std::string&amp; <a class="code" href="class_profile.html#aa6baeea130f07d7027117d1663619251">GetName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_profile.html#ac8a75db2da9448616fb180edcc25bf8c">name</a>; }  </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">/*Скрыть/показать кривую */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_profile.html#a6ae3bac4830d7b81cfc5daefeb406445">   39</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_profile.html#a6ae3bac4830d7b81cfc5daefeb406445">SetVisible</a>(BOOL visible = TRUE ) { <a class="code" href="class_profile.html#a7e12899117a7229fd74e727d4c7508aa">showLine</a> = visible; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">/*Отображается ли кривая*/</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_profile.html#a381fe66a6e251a351c0157587d609ad7">   42</a></span>&#160;    <span class="keyword">inline</span> BOOL <a class="code" href="class_profile.html#a381fe66a6e251a351c0157587d609ad7">IsVisible</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_profile.html#a7e12899117a7229fd74e727d4c7508aa">showLine</a>; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">/*Включить/выключить отображение символов*/</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_profile.html#a839300e94f6e588988c5b25e167de9dd">   45</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_profile.html#a839300e94f6e588988c5b25e167de9dd">UseSymblos</a>(BOOL symblols) { <a class="code" href="class_profile.html#a07364e07ee0c925c0b2a7631c666056b">showMarks</a> = symblols; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/*Отображются ли символы */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_profile.html#a431d9a16e08188d7ad014c0d20696237">   48</a></span>&#160;    <span class="keyword">inline</span> BOOL <a class="code" href="class_profile.html#a431d9a16e08188d7ad014c0d20696237">IsUseSymblos</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_profile.html#a07364e07ee0c925c0b2a7631c666056b">showMarks</a>; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#a2f9a7420f40b1cc4974a2fe6b1a2aca8">Show</a> (BOOL bShow); </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_profile.html#aacee6e0f579d0dbcc6f8452778907473">GetUnit</a>(<span class="keywordtype">unsigned</span> index, <span class="keywordtype">double</span> &amp;x, <span class="keywordtype">double</span> &amp;y) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_profile.html#a844b59dcfb67d36f70f322425b7f98ee">GetData</a>(<span class="keywordtype">unsigned</span>* count, <span class="keywordtype">double</span> *pfx, <span class="keywordtype">double</span>* pfy) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">/*Установить новые данные для отображения кривой*/</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#aa272424c24ba0eacdd3aa725c6e44e98">SetData</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> *pfx, <span class="keyword">const</span> <span class="keywordtype">double</span>* pfy, <span class="keywordtype">int</span> count );</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_profile.html#abf535c50bda946ff73128a5d686d0d36">   58</a></span>&#160;    BOOL <a class="code" href="class_profile.html#abf535c50bda946ff73128a5d686d0d36">Empty</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_profile.html#a9b8d3156a467dc594b39ee8224b659c3">dataPhysX</a>.empty(); }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">/*Добавить точку к данным для отображения кривой*/</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#a5c65fe41c9872b365adec25e5dc0376d">Append</a>(<span class="keywordtype">double</span> fx, <span class="keywordtype">double</span> fy);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">/*Добавить несколько точек к данным для отображения кривой*/</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#a5c65fe41c9872b365adec25e5dc0376d">Append</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> *pfx, <span class="keyword">const</span> <span class="keywordtype">double</span> *pfy, <span class="keywordtype">unsigned</span> count);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">/*Количество точек для отображения кривой*/</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_profile.html#ac99b05caf969d1100a096872896decff">   67</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_profile.html#ac99b05caf969d1100a096872896decff">DataSize</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> unsigned(<a class="code" href="class_profile.html#a9b8d3156a467dc594b39ee8224b659c3">dataPhysX</a>.size()); }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">/*Установить тип линии для отображения кривой*/</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#a71927cb9bcbbe8a02947ffc25afdadd9">SetLineData</a>(<span class="keyword">const</span> <a class="code" href="class_line_data.html">LineData</a>&amp; srcLine);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">/*Получить текщий тип линии*/</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_profile.html#a476640b07ed944d59dc55efe64fe15c7">   73</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_line_data.html">LineData</a>&amp; <a class="code" href="class_profile.html#a476640b07ed944d59dc55efe64fe15c7">GetLineData</a>() { <span class="keywordflow">return</span> <a class="code" href="class_profile.html#a63eba30a8236070b9ed979e1ebdd8709">line</a>; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">/*Получить физические пределы кривой по обеим осям*/</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#a2bdae58cd0a58abcd2a7e51368a693b1">Range</a>(<span class="keywordtype">double</span> &amp;xmin, <span class="keywordtype">double</span> &amp;xmax, <span class="keywordtype">double</span> &amp;ymin, <span class="keywordtype">double</span> &amp;ymax) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">/*Получить физические пределы кривой по оси X*/</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#ac0d79d6f6b2355fe6e13262319968368">RangeX</a>(<span class="keywordtype">double</span> &amp;xmin, <span class="keywordtype">double</span> &amp;xmax) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">/*Получить физические пределы кривой по оси Y*/</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#af838a64a6376e9f083a621edd4604777">RangeY</a>(<span class="keywordtype">double</span> &amp;xmin, <span class="keywordtype">double</span> &amp;xmax) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">/*Отрисовать кривую*/</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#a2d8f93d7a343455f9b8168220d1880d2">Render</a>(HDC hDC, <span class="keyword">const</span> RECT rect);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">/*Получить массив точек в координатах устройства*/</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">const</span> POINT* <a class="code" href="class_profile.html#af82006b877d02e4f5f725118f95fa59e">GetRenderPointArray</a>(<span class="keywordtype">unsigned</span>&amp; count) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> POINT <a class="code" href="class_profile.html#a83e9c9f23f67511b0bbd3aec4c256821">GetRenderPoint</a>(<span class="keywordtype">int</span> index, <span class="keywordtype">double</span>&amp; physX, <span class="keywordtype">double</span>&amp; physY) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">/*Получить объект меток*/</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_profile.html#ad11605c10819b4d259474ddc0a888334">   94</a></span>&#160;    <a class="code" href="class_profile_marks.html">ProfileMarks</a>&amp; <a class="code" href="class_profile.html#ad11605c10819b4d259474ddc0a888334">GetMarks</a>() { <span class="keywordflow">return</span> <a class="code" href="class_profile.html#afb294101d0593f41db3f20fb1e678906">marks</a>; };</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">/*Получить ось X к которой прикреплена кривая */</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_profile.html#a0faa93dd60b346e486b2c1a084c05836">   97</a></span>&#160;    <a class="code" href="class_axis.html">Axis</a>&amp; <a class="code" href="class_profile.html#a0faa93dd60b346e486b2c1a084c05836">AxisX</a>() { <span class="keywordflow">return</span> <a class="code" href="class_profile.html#a9ab5958c5e36ddb1c8dc96773bfbaeb6">axisX</a>; }; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">/*Получить ось Y к которой прикреплена кривая */</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_profile.html#af891a7ad2f1f7508822c41e542e0edf2">  100</a></span>&#160;    <a class="code" href="class_axis.html">Axis</a>&amp; <a class="code" href="class_profile.html#af891a7ad2f1f7508822c41e542e0edf2">AxisY</a>() { <span class="keywordflow">return</span> <a class="code" href="class_profile.html#af934163fd90437181ce2125860214cd0">axisY</a>; }; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_profile.html#a48a263ac82a825c8c0208bbb2532e5d9">  102</a></span>&#160;    BOOL <a class="code" href="class_profile.html#a48a263ac82a825c8c0208bbb2532e5d9">IsShowInLegend</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_profile.html#a09c7baa3c0a3b1762f8c0eed5223868f">showInLegend</a>; };</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_profile.html#a69bc4295a958de5f72aa67ab70b3d036">  104</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#a69bc4295a958de5f72aa67ab70b3d036">ShowInLegend</a>(BOOL show) { <a class="code" href="class_profile.html#a09c7baa3c0a3b1762f8c0eed5223868f">showInLegend</a> = show; };</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_profile.html#ac8069bd46802baa2c0fa53419425b159">  106</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#ac8069bd46802baa2c0fa53419425b159">GetVisibleRange</a>(<span class="keywordtype">unsigned</span>&amp; firstIndex, <span class="keywordtype">unsigned</span>&amp; lastIndex)<span class="keyword"> const </span>{ firstIndex = <a class="code" href="class_profile.html#a877766d4f4ee2eb4f63220ebbbcf2e69">firstVisible</a>; lastIndex = <a class="code" href="class_profile.html#ad48970e92143859da4f950c1c8fee217">lastVisible</a>; }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">/*Очистка данных для отображения кривой*/</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile.html#a3cd865158aed8a6335c132acec3b734f">Reset</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_profile.html#ac8a75db2da9448616fb180edcc25bf8c">  113</a></span>&#160;    std::string <a class="code" href="class_profile.html#ac8a75db2da9448616fb180edcc25bf8c">name</a>;   <span class="comment">// Имя кривой для отображения в легенде</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_profile.html#a07364e07ee0c925c0b2a7631c666056b">  114</a></span>&#160;    BOOL <a class="code" href="class_profile.html#a07364e07ee0c925c0b2a7631c666056b">showMarks</a>;     <span class="comment">// Отображать или нет метки на кривой</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_profile.html#a7e12899117a7229fd74e727d4c7508aa">  115</a></span>&#160;    BOOL <a class="code" href="class_profile.html#a7e12899117a7229fd74e727d4c7508aa">showLine</a>;      <span class="comment">// Отображать или нет линию кривой  </span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_profile.html#a63eba30a8236070b9ed979e1ebdd8709">  117</a></span>&#160;    <a class="code" href="class_line_data.html">LineData</a> <a class="code" href="class_profile.html#a63eba30a8236070b9ed979e1ebdd8709">line</a>;      <span class="comment">// линия кривой</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_profile.html#a9ab5958c5e36ddb1c8dc96773bfbaeb6">  119</a></span>&#160;    <a class="code" href="class_axis.html">Axis</a>&amp; <a class="code" href="class_profile.html#a9ab5958c5e36ddb1c8dc96773bfbaeb6">axisX</a>;        <span class="comment">// ось X к которой привязан профиль</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="class_profile.html#af934163fd90437181ce2125860214cd0">  120</a></span>&#160;    <a class="code" href="class_axis.html">Axis</a>&amp; <a class="code" href="class_profile.html#af934163fd90437181ce2125860214cd0">axisY</a>;        <span class="comment">// ось Y к которой привязан профиль</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_profile.html#a2a37b4d72a0c1dcefcf65aa6474d8ca3">  122</a></span>&#160;    BOOL <a class="code" href="class_profile.html#a2a37b4d72a0c1dcefcf65aa6474d8ca3">newData</a>;           <span class="comment">// флаг обновления данных </span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_profile.html#a21fbb7028f71f681ad6becd412f34e07">  123</a></span>&#160;    RECT <a class="code" href="class_profile.html#a21fbb7028f71f681ad6becd412f34e07">lastRenderedRect</a>;  <span class="comment">// последний прямоугольник отрисовки</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_profile.html#a7ec1de15af31223a7cba55fb711ce2c5">  125</a></span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">double</span> <a class="code" href="class_profile.html#a7ec1de15af31223a7cba55fb711ce2c5">minX</a>;    <span class="comment">// минимальное значение физической координаты X</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_profile.html#a3d4ffb95639a391469dc7f5b97fba63b">  126</a></span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">double</span> <a class="code" href="class_profile.html#a3d4ffb95639a391469dc7f5b97fba63b">maxX</a>;    <span class="comment">// максимальное значение физической координаты X</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_profile.html#ab65307e12c8d002effb1de3598d47e00">  127</a></span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">double</span> <a class="code" href="class_profile.html#ab65307e12c8d002effb1de3598d47e00">minY</a>;    <span class="comment">// минимальное значение физической координаты Y</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_profile.html#ac16836105d7961c71046014887d3cb71">  128</a></span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">double</span> <a class="code" href="class_profile.html#ac16836105d7961c71046014887d3cb71">maxY</a>;    <span class="comment">// максимальное значение физической координаты Y</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="class_profile.html#afb294101d0593f41db3f20fb1e678906">  130</a></span>&#160;    <a class="code" href="class_profile_marks.html">ProfileMarks</a> <a class="code" href="class_profile.html#afb294101d0593f41db3f20fb1e678906">marks</a>;     <span class="comment">// метки кривой</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="class_profile.html#a7143abb96dc0d5ef1b152d1ce0ee8dac">  132</a></span>&#160;    std::vector&lt;POINT&gt;  <a class="code" href="class_profile.html#a7143abb96dc0d5ef1b152d1ce0ee8dac">dataDevice</a>; <span class="comment">//Массив точек в координатах устройства</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="class_profile.html#a9b8d3156a467dc594b39ee8224b659c3">  133</a></span>&#160;    std::vector&lt;double&gt; <a class="code" href="class_profile.html#a9b8d3156a467dc594b39ee8224b659c3">dataPhysX</a>;  <span class="comment">//Массив точек в физических координатах</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="class_profile.html#acb59691aee18d478753d4aedfafc8787">  134</a></span>&#160;    std::vector&lt;double&gt; <a class="code" href="class_profile.html#acb59691aee18d478753d4aedfafc8787">dataPhysY</a>;  <span class="comment">//Массив точек в физических координатах</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="class_profile.html#a09c7baa3c0a3b1762f8c0eed5223868f">  136</a></span>&#160;    BOOL <a class="code" href="class_profile.html#a09c7baa3c0a3b1762f8c0eed5223868f">showInLegend</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="class_profile.html#a877766d4f4ee2eb4f63220ebbbcf2e69">  138</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_profile.html#a877766d4f4ee2eb4f63220ebbbcf2e69">firstVisible</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="class_profile.html#ad48970e92143859da4f950c1c8fee217">  139</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_profile.html#ad48970e92143859da4f950c1c8fee217">lastVisible</a>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="class_profile.html#a11aa9c768f5ff249dda920c04b886cd9">  141</a></span>&#160;    <span class="keyword">mutable</span> CRITICAL_SECTION <a class="code" href="class_profile.html#a11aa9c768f5ff249dda920c04b886cd9">cs</a>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;};</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_profile_html_aacee6e0f579d0dbcc6f8452778907473"><div class="ttname"><a href="class_profile.html#aacee6e0f579d0dbcc6f8452778907473">Profile::GetUnit</a></div><div class="ttdeci">long GetUnit(unsigned index, double &amp;x, double &amp;y) const </div><div class="ttdef"><b>Definition:</b> profile.cpp:92</div></div>
+<div class="ttc" id="class_profile_html_af82006b877d02e4f5f725118f95fa59e"><div class="ttname"><a href="class_profile.html#af82006b877d02e4f5f725118f95fa59e">Profile::GetRenderPointArray</a></div><div class="ttdeci">const POINT * GetRenderPointArray(unsigned &amp;count) const </div><div class="ttdef"><b>Definition:</b> profile.cpp:86</div></div>
+<div class="ttc" id="class_profile_html_ac99b05caf969d1100a096872896decff"><div class="ttname"><a href="class_profile.html#ac99b05caf969d1100a096872896decff">Profile::DataSize</a></div><div class="ttdeci">unsigned DataSize() const </div><div class="ttdef"><b>Definition:</b> profile.h:67</div></div>
+<div class="ttc" id="class_profile_html_a21fbb7028f71f681ad6becd412f34e07"><div class="ttname"><a href="class_profile.html#a21fbb7028f71f681ad6becd412f34e07">Profile::lastRenderedRect</a></div><div class="ttdeci">RECT lastRenderedRect</div><div class="ttdef"><b>Definition:</b> profile.h:123</div></div>
+<div class="ttc" id="class_profile_html_a83e9c9f23f67511b0bbd3aec4c256821"><div class="ttname"><a href="class_profile.html#a83e9c9f23f67511b0bbd3aec4c256821">Profile::GetRenderPoint</a></div><div class="ttdeci">const POINT GetRenderPoint(int index, double &amp;physX, double &amp;physY) const </div><div class="ttdef"><b>Definition:</b> profile.cpp:338</div></div>
+<div class="ttc" id="class_profile_html_a7143abb96dc0d5ef1b152d1ce0ee8dac"><div class="ttname"><a href="class_profile.html#a7143abb96dc0d5ef1b152d1ce0ee8dac">Profile::dataDevice</a></div><div class="ttdeci">std::vector&lt; POINT &gt; dataDevice</div><div class="ttdef"><b>Definition:</b> profile.h:132</div></div>
+<div class="ttc" id="class_profile_html_a58fa758a59bc4ee3c1a9980e360e4e98"><div class="ttname"><a href="class_profile.html#a58fa758a59bc4ee3c1a9980e360e4e98">Profile::~Profile</a></div><div class="ttdeci">~Profile()</div><div class="ttdef"><b>Definition:</b> profile.cpp:64</div></div>
+<div class="ttc" id="profile_8h_html_a399287448c55e197b19688ac6ff1e1a0"><div class="ttname"><a href="profile_8h.html#a399287448c55e197b19688ac6ff1e1a0">ProfileMapIterator</a></div><div class="ttdeci">ProfileMap::iterator ProfileMapIterator</div><div class="ttdef"><b>Definition:</b> profile.h:13</div></div>
+<div class="ttc" id="class_profile_html_af838a64a6376e9f083a621edd4604777"><div class="ttname"><a href="class_profile.html#af838a64a6376e9f083a621edd4604777">Profile::RangeY</a></div><div class="ttdeci">void RangeY(double &amp;xmin, double &amp;xmax) const </div><div class="ttdef"><b>Definition:</b> profile.cpp:255</div></div>
+<div class="ttc" id="class_profile_html"><div class="ttname"><a href="class_profile.html">Profile</a></div><div class="ttdef"><b>Definition:</b> profile.h:18</div></div>
+<div class="ttc" id="profile_8h_html_ab564cd67657a739c9e5a6caa0ce0dafa"><div class="ttname"><a href="profile_8h.html#ab564cd67657a739c9e5a6caa0ce0dafa">PROFILE_KEY</a></div><div class="ttdeci">LONG_PTR PROFILE_KEY</div><div class="ttdef"><b>Definition:</b> profile.h:10</div></div>
+<div class="ttc" id="class_profile_html_a0af304ee61478092d010df5dc146bd06"><div class="ttname"><a href="class_profile.html#a0af304ee61478092d010df5dc146bd06">Profile::Profile</a></div><div class="ttdeci">Profile(std::string name, long color, int width, BOOL showLine, BOOL showMarks, const Axis &amp;axisX, const Axis &amp;axisY)</div><div class="ttdef"><b>Definition:</b> profile.cpp:34</div></div>
+<div class="ttc" id="class_profile_html_a71927cb9bcbbe8a02947ffc25afdadd9"><div class="ttname"><a href="class_profile.html#a71927cb9bcbbe8a02947ffc25afdadd9">Profile::SetLineData</a></div><div class="ttdeci">void SetLineData(const LineData &amp;srcLine)</div><div class="ttdef"><b>Definition:</b> profile.cpp:176</div></div>
+<div class="ttc" id="class_profile_html_a431d9a16e08188d7ad014c0d20696237"><div class="ttname"><a href="class_profile.html#a431d9a16e08188d7ad014c0d20696237">Profile::IsUseSymblos</a></div><div class="ttdeci">BOOL IsUseSymblos() const </div><div class="ttdef"><b>Definition:</b> profile.h:48</div></div>
+<div class="ttc" id="class_profile_html_a48a263ac82a825c8c0208bbb2532e5d9"><div class="ttname"><a href="class_profile.html#a48a263ac82a825c8c0208bbb2532e5d9">Profile::IsShowInLegend</a></div><div class="ttdeci">BOOL IsShowInLegend() const </div><div class="ttdef"><b>Definition:</b> profile.h:102</div></div>
+<div class="ttc" id="class_profile_html_a6ae3bac4830d7b81cfc5daefeb406445"><div class="ttname"><a href="class_profile.html#a6ae3bac4830d7b81cfc5daefeb406445">Profile::SetVisible</a></div><div class="ttdeci">void SetVisible(BOOL visible=TRUE)</div><div class="ttdef"><b>Definition:</b> profile.h:39</div></div>
+<div class="ttc" id="class_profile_html_a7e12899117a7229fd74e727d4c7508aa"><div class="ttname"><a href="class_profile.html#a7e12899117a7229fd74e727d4c7508aa">Profile::showLine</a></div><div class="ttdeci">BOOL showLine</div><div class="ttdef"><b>Definition:</b> profile.h:115</div></div>
+<div class="ttc" id="class_profile_html_af982d6eea235d68ebd74f102ef29d12a"><div class="ttname"><a href="class_profile.html#af982d6eea235d68ebd74f102ef29d12a">Profile::SetName</a></div><div class="ttdeci">void SetName(std::string name)</div><div class="ttdef"><b>Definition:</b> profile.cpp:79</div></div>
+<div class="ttc" id="class_line_data_html"><div class="ttname"><a href="class_line_data.html">LineData</a></div><div class="ttdef"><b>Definition:</b> linedata.h:7</div></div>
+<div class="ttc" id="class_profile_html_a381fe66a6e251a351c0157587d609ad7"><div class="ttname"><a href="class_profile.html#a381fe66a6e251a351c0157587d609ad7">Profile::IsVisible</a></div><div class="ttdeci">BOOL IsVisible() const </div><div class="ttdef"><b>Definition:</b> profile.h:42</div></div>
+<div class="ttc" id="class_profile_html_ad11605c10819b4d259474ddc0a888334"><div class="ttname"><a href="class_profile.html#ad11605c10819b4d259474ddc0a888334">Profile::GetMarks</a></div><div class="ttdeci">ProfileMarks &amp; GetMarks()</div><div class="ttdef"><b>Definition:</b> profile.h:94</div></div>
+<div class="ttc" id="class_profile_html_a9ab5958c5e36ddb1c8dc96773bfbaeb6"><div class="ttname"><a href="class_profile.html#a9ab5958c5e36ddb1c8dc96773bfbaeb6">Profile::axisX</a></div><div class="ttdeci">Axis &amp; axisX</div><div class="ttdef"><b>Definition:</b> profile.h:119</div></div>
+<div class="ttc" id="profile_8h_html_a19285e49c540d09517740fab4252f854"><div class="ttname"><a href="profile_8h.html#a19285e49c540d09517740fab4252f854">ProfileMap</a></div><div class="ttdeci">std::map&lt; PROFILE_KEY, Profile * &gt; ProfileMap</div><div class="ttdef"><b>Definition:</b> profile.h:12</div></div>
+<div class="ttc" id="_axis_8h_html"><div class="ttname"><a href="_axis_8h.html">Axis.h</a></div></div>
+<div class="ttc" id="class_profile_html_ac8a75db2da9448616fb180edcc25bf8c"><div class="ttname"><a href="class_profile.html#ac8a75db2da9448616fb180edcc25bf8c">Profile::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> profile.h:113</div></div>
+<div class="ttc" id="class_axis_html"><div class="ttname"><a href="class_axis.html">Axis</a></div><div class="ttdef"><b>Definition:</b> Axis.h:31</div></div>
+<div class="ttc" id="class_profile_html_a839300e94f6e588988c5b25e167de9dd"><div class="ttname"><a href="class_profile.html#a839300e94f6e588988c5b25e167de9dd">Profile::UseSymblos</a></div><div class="ttdeci">void UseSymblos(BOOL symblols)</div><div class="ttdef"><b>Definition:</b> profile.h:45</div></div>
+<div class="ttc" id="class_profile_html_af934163fd90437181ce2125860214cd0"><div class="ttname"><a href="class_profile.html#af934163fd90437181ce2125860214cd0">Profile::axisY</a></div><div class="ttdeci">Axis &amp; axisY</div><div class="ttdef"><b>Definition:</b> profile.h:120</div></div>
+<div class="ttc" id="class_profile_html_a63eba30a8236070b9ed979e1ebdd8709"><div class="ttname"><a href="class_profile.html#a63eba30a8236070b9ed979e1ebdd8709">Profile::line</a></div><div class="ttdeci">LineData line</div><div class="ttdef"><b>Definition:</b> profile.h:117</div></div>
+<div class="ttc" id="class_profile_html_ac8069bd46802baa2c0fa53419425b159"><div class="ttname"><a href="class_profile.html#ac8069bd46802baa2c0fa53419425b159">Profile::GetVisibleRange</a></div><div class="ttdeci">void GetVisibleRange(unsigned &amp;firstIndex, unsigned &amp;lastIndex) const </div><div class="ttdef"><b>Definition:</b> profile.h:106</div></div>
+<div class="ttc" id="class_profile_html_a877766d4f4ee2eb4f63220ebbbcf2e69"><div class="ttname"><a href="class_profile.html#a877766d4f4ee2eb4f63220ebbbcf2e69">Profile::firstVisible</a></div><div class="ttdeci">unsigned firstVisible</div><div class="ttdef"><b>Definition:</b> profile.h:138</div></div>
+<div class="ttc" id="_profile_marks_8h_html"><div class="ttname"><a href="_profile_marks_8h.html">ProfileMarks.h</a></div></div>
+<div class="ttc" id="class_profile_html_ac16836105d7961c71046014887d3cb71"><div class="ttname"><a href="class_profile.html#ac16836105d7961c71046014887d3cb71">Profile::maxY</a></div><div class="ttdeci">double maxY</div><div class="ttdef"><b>Definition:</b> profile.h:128</div></div>
+<div class="ttc" id="class_profile_html_a2f9a7420f40b1cc4974a2fe6b1a2aca8"><div class="ttname"><a href="class_profile.html#a2f9a7420f40b1cc4974a2fe6b1a2aca8">Profile::Show</a></div><div class="ttdeci">void Show(BOOL bShow)</div><div class="ttdef"><b>Definition:</b> profile.cpp:69</div></div>
+<div class="ttc" id="class_profile_html_a3cd865158aed8a6335c132acec3b734f"><div class="ttname"><a href="class_profile.html#a3cd865158aed8a6335c132acec3b734f">Profile::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>Definition:</b> profile.cpp:121</div></div>
+<div class="ttc" id="class_profile_html_a5c65fe41c9872b365adec25e5dc0376d"><div class="ttname"><a href="class_profile.html#a5c65fe41c9872b365adec25e5dc0376d">Profile::Append</a></div><div class="ttdeci">void Append(double fx, double fy)</div><div class="ttdef"><b>Definition:</b> profile.cpp:149</div></div>
+<div class="ttc" id="class_profile_html_a9b8d3156a467dc594b39ee8224b659c3"><div class="ttname"><a href="class_profile.html#a9b8d3156a467dc594b39ee8224b659c3">Profile::dataPhysX</a></div><div class="ttdeci">std::vector&lt; double &gt; dataPhysX</div><div class="ttdef"><b>Definition:</b> profile.h:133</div></div>
+<div class="ttc" id="class_profile_html_a2d8f93d7a343455f9b8168220d1880d2"><div class="ttname"><a href="class_profile.html#a2d8f93d7a343455f9b8168220d1880d2">Profile::Render</a></div><div class="ttdeci">void Render(HDC hDC, const RECT rect)</div><div class="ttdef"><b>Definition:</b> profile.cpp:287</div></div>
+<div class="ttc" id="class_profile_html_aa6baeea130f07d7027117d1663619251"><div class="ttname"><a href="class_profile.html#aa6baeea130f07d7027117d1663619251">Profile::GetName</a></div><div class="ttdeci">const std::string &amp; GetName() const </div><div class="ttdef"><b>Definition:</b> profile.h:36</div></div>
+<div class="ttc" id="class_profile_html_adc5551c9cef4089bd32d5358c2d27ec5"><div class="ttname"><a href="class_profile.html#adc5551c9cef4089bd32d5358c2d27ec5">Profile::DEFAULTWIDTH</a></div><div class="ttdeci">static const int DEFAULTWIDTH</div><div class="ttdef"><b>Definition:</b> profile.h:22</div></div>
+<div class="ttc" id="class_profile_html_afb294101d0593f41db3f20fb1e678906"><div class="ttname"><a href="class_profile.html#afb294101d0593f41db3f20fb1e678906">Profile::marks</a></div><div class="ttdeci">ProfileMarks marks</div><div class="ttdef"><b>Definition:</b> profile.h:130</div></div>
+<div class="ttc" id="class_profile_html_a0faa93dd60b346e486b2c1a084c05836"><div class="ttname"><a href="class_profile.html#a0faa93dd60b346e486b2c1a084c05836">Profile::AxisX</a></div><div class="ttdeci">Axis &amp; AxisX()</div><div class="ttdef"><b>Definition:</b> profile.h:97</div></div>
+<div class="ttc" id="class_profile_html_ab65307e12c8d002effb1de3598d47e00"><div class="ttname"><a href="class_profile.html#ab65307e12c8d002effb1de3598d47e00">Profile::minY</a></div><div class="ttdeci">double minY</div><div class="ttdef"><b>Definition:</b> profile.h:127</div></div>
+<div class="ttc" id="class_profile_html_af891a7ad2f1f7508822c41e542e0edf2"><div class="ttname"><a href="class_profile.html#af891a7ad2f1f7508822c41e542e0edf2">Profile::AxisY</a></div><div class="ttdeci">Axis &amp; AxisY()</div><div class="ttdef"><b>Definition:</b> profile.h:100</div></div>
+<div class="ttc" id="class_profile_html_ad48970e92143859da4f950c1c8fee217"><div class="ttname"><a href="class_profile.html#ad48970e92143859da4f950c1c8fee217">Profile::lastVisible</a></div><div class="ttdeci">unsigned lastVisible</div><div class="ttdef"><b>Definition:</b> profile.h:139</div></div>
+<div class="ttc" id="class_profile_html_a2a37b4d72a0c1dcefcf65aa6474d8ca3"><div class="ttname"><a href="class_profile.html#a2a37b4d72a0c1dcefcf65aa6474d8ca3">Profile::newData</a></div><div class="ttdeci">BOOL newData</div><div class="ttdef"><b>Definition:</b> profile.h:122</div></div>
+<div class="ttc" id="class_profile_html_a844b59dcfb67d36f70f322425b7f98ee"><div class="ttname"><a href="class_profile.html#a844b59dcfb67d36f70f322425b7f98ee">Profile::GetData</a></div><div class="ttdeci">long GetData(unsigned *count, double *pfx, double *pfy) const </div><div class="ttdef"><b>Definition:</b> profile.cpp:103</div></div>
+<div class="ttc" id="class_profile_html_a09c7baa3c0a3b1762f8c0eed5223868f"><div class="ttname"><a href="class_profile.html#a09c7baa3c0a3b1762f8c0eed5223868f">Profile::showInLegend</a></div><div class="ttdeci">BOOL showInLegend</div><div class="ttdef"><b>Definition:</b> profile.h:136</div></div>
+<div class="ttc" id="class_profile_marks_html"><div class="ttname"><a href="class_profile_marks.html">ProfileMarks</a></div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:4</div></div>
+<div class="ttc" id="class_profile_html_a476640b07ed944d59dc55efe64fe15c7"><div class="ttname"><a href="class_profile.html#a476640b07ed944d59dc55efe64fe15c7">Profile::GetLineData</a></div><div class="ttdeci">LineData &amp; GetLineData()</div><div class="ttdef"><b>Definition:</b> profile.h:73</div></div>
+<div class="ttc" id="class_profile_html_aa272424c24ba0eacdd3aa725c6e44e98"><div class="ttname"><a href="class_profile.html#aa272424c24ba0eacdd3aa725c6e44e98">Profile::SetData</a></div><div class="ttdeci">void SetData(const double *pfx, const double *pfy, int count)</div><div class="ttdef"><b>Definition:</b> profile.cpp:130</div></div>
+<div class="ttc" id="class_profile_html_a7ec1de15af31223a7cba55fb711ce2c5"><div class="ttname"><a href="class_profile.html#a7ec1de15af31223a7cba55fb711ce2c5">Profile::minX</a></div><div class="ttdeci">double minX</div><div class="ttdef"><b>Definition:</b> profile.h:125</div></div>
+<div class="ttc" id="class_profile_html_a11aa9c768f5ff249dda920c04b886cd9"><div class="ttname"><a href="class_profile.html#a11aa9c768f5ff249dda920c04b886cd9">Profile::cs</a></div><div class="ttdeci">CRITICAL_SECTION cs</div><div class="ttdef"><b>Definition:</b> profile.h:141</div></div>
+<div class="ttc" id="class_profile_html_acb59691aee18d478753d4aedfafc8787"><div class="ttname"><a href="class_profile.html#acb59691aee18d478753d4aedfafc8787">Profile::dataPhysY</a></div><div class="ttdeci">std::vector&lt; double &gt; dataPhysY</div><div class="ttdef"><b>Definition:</b> profile.h:134</div></div>
+<div class="ttc" id="profile_8h_html_ae4da9cece4e631d21f340168073939f5"><div class="ttname"><a href="profile_8h.html#ae4da9cece4e631d21f340168073939f5">ProfileMapConstIterator</a></div><div class="ttdeci">ProfileMap::const_iterator ProfileMapConstIterator</div><div class="ttdef"><b>Definition:</b> profile.h:14</div></div>
+<div class="ttc" id="class_profile_html_abf535c50bda946ff73128a5d686d0d36"><div class="ttname"><a href="class_profile.html#abf535c50bda946ff73128a5d686d0d36">Profile::Empty</a></div><div class="ttdeci">BOOL Empty() const </div><div class="ttdef"><b>Definition:</b> profile.h:58</div></div>
+<div class="ttc" id="class_profile_html_a69bc4295a958de5f72aa67ab70b3d036"><div class="ttname"><a href="class_profile.html#a69bc4295a958de5f72aa67ab70b3d036">Profile::ShowInLegend</a></div><div class="ttdeci">void ShowInLegend(BOOL show)</div><div class="ttdef"><b>Definition:</b> profile.h:104</div></div>
+<div class="ttc" id="class_profile_html_a07364e07ee0c925c0b2a7631c666056b"><div class="ttname"><a href="class_profile.html#a07364e07ee0c925c0b2a7631c666056b">Profile::showMarks</a></div><div class="ttdeci">BOOL showMarks</div><div class="ttdef"><b>Definition:</b> profile.h:114</div></div>
+<div class="ttc" id="class_profile_html_ac0d79d6f6b2355fe6e13262319968368"><div class="ttname"><a href="class_profile.html#ac0d79d6f6b2355fe6e13262319968368">Profile::RangeX</a></div><div class="ttdeci">void RangeX(double &amp;xmin, double &amp;xmax) const </div><div class="ttdef"><b>Definition:</b> profile.cpp:225</div></div>
+<div class="ttc" id="class_profile_html_a3d4ffb95639a391469dc7f5b97fba63b"><div class="ttname"><a href="class_profile.html#a3d4ffb95639a391469dc7f5b97fba63b">Profile::maxX</a></div><div class="ttdeci">double maxX</div><div class="ttdef"><b>Definition:</b> profile.h:126</div></div>
+<div class="ttc" id="class_profile_html_a2bdae58cd0a58abcd2a7e51368a693b1"><div class="ttname"><a href="class_profile.html#a2bdae58cd0a58abcd2a7e51368a693b1">Profile::Range</a></div><div class="ttdeci">void Range(double &amp;xmin, double &amp;xmax, double &amp;ymin, double &amp;ymax) const </div><div class="ttdef"><b>Definition:</b> profile.cpp:183</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

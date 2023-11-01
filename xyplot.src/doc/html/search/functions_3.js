@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['calcrect',['CalcRect',['../class_digits.html#a7641a9787d3b78bac0425e5597a3e5de',1,'Digits::CalcRect()'],['../class_title.html#aeb566c4bd88a475d34e5c8ac0213a06d',1,'Title::CalcRect()']]],
+  ['calctickspos',['CalcTicksPos',['../class_ticks.html#a351eb67db476ecca6e8f0da001afa948',1,'Ticks']]],
+  ['callring0',['CallRing0',['../namespacednp__checkout.html#a0e04118334eb66a710e076231f7967b1',1,'dnp_checkout']]],
+  ['cformattedtextdraw',['CFormattedTextDraw',['../class_c_formatted_text_draw.html#aeedb5def68e1033d3759b142f48cfb8f',1,'CFormattedTextDraw']]],
+  ['charformatfromhfont',['CharFormatFromHFONT',['../class_c_formatted_text_draw.html#a55723aacd9eea72087f4a8c1716c44e8',1,'CFormattedTextDraw']]],
+  ['checkout_5ffunct',['CHECKOUT_FUNCT',['../_x_y_plot_d_l_l_8cpp.html#a5222b4443e50c3c651f5a0b21501951a',1,'XYPlotDLL.cpp']]],
+  ['clear',['Clear',['../class_digits.html#ae401969abc8fd75f520a00512716a581',1,'Digits::Clear()'],['../class_legend.html#ae74cfd587be862b4e655bdee5ea08810',1,'Legend::Clear()'],['../class_ticks.html#a2ba3d3e17fb82993527758779ed02a49',1,'Ticks::Clear()']]],
+  ['clientedge',['ClientEdge',['../class_x_y_plot.html#ad22253ae6ea84e6a6c6671f3226831d1',1,'XYPlot']]],
+  ['converttodevice',['ConvertToDevice',['../class_coord_converter.html#ad6c51c359e012fc60dd8a928d47436c8',1,'CoordConverter::ConvertToDevice(const Axis &amp;axisX, const Axis &amp;axisY, double x, double y, POINT &amp;pt)'],['../class_coord_converter.html#ad179316c879be1f1206ce49ccf318cde',1,'CoordConverter::ConvertToDevice(const GRAPHLIMITS &amp;grLimits, double x, double y, POINT &amp;pt, BOOL xLogMode=FALSE, BOOL yLogMode=FALSE, BOOL calcX=TRUE, BOOL calcY=TRUE)'],['../class_coord_converter.html#a3902abc71247c1451eab533cfb707109',1,'CoordConverter::ConvertToDevice(const Axis &amp;axis, double val, LONG &amp;res)'],['../class_coord_converter.html#ab62e9acc5be83e6d699e37cb11834347',1,'CoordConverter::ConvertToDevice(int minDevice, int maxDevice, double minPhys, double maxPhys, double val, int &amp;res, BOOL rev, BOOL logMode)']]],
+  ['converttophysic',['ConvertToPhysic',['../class_coord_converter.html#a9fe141f15f40063151f823489f12dbe7',1,'CoordConverter::ConvertToPhysic(const AXISLIMITS &amp;axisLimits, int val, double &amp;res, BOOL logMode=FALSE)'],['../class_coord_converter.html#ae72252145264f673ec79d846ca1b1f3d',1,'CoordConverter::ConvertToPhysic(const Axis &amp;axis, int val, double &amp;res)']]],
+  ['converttostring',['ConvertToString',['../namespacednp__checkout.html#a9a2a91cefbe3ab9d3e6eb4742cae5a81',1,'dnp_checkout']]],
+  ['coordconverter',['CoordConverter',['../class_coord_converter.html#ae0c290c486210e4da7c1ac5f58501b16',1,'CoordConverter']]],
+  ['copytoclipboard',['CopyToClipboard',['../classxyplot_1_1_x_y_plot_manager.html#a3e8a430da4df94af8575d388064f21df',1,'xyplot::XYPlotManager::CopyToClipboard()'],['../xyplot_8h.html#a3b24317861319c6e0c862ff78e0fc8d9',1,'CopyToClipboard(long lPlotID, int width, int height, int dpi):&#160;XYPlotDLL.cpp'],['../_x_y_plot_d_l_l_8cpp.html#ac795f865af02ef622cd5e545d7be6f48',1,'CopyToClipboard(long lPlotID, int width, int height, int dpi):&#160;XYPlotDLL.cpp']]],
+  ['create',['Create',['../class_axis.html#ad51bb24a3f0aa2a15b3d7255a4ad925d',1,'Axis::Create()'],['../class_c_formatted_text_draw.html#aeda21fe76e87d85c6e6ae97f6d98c82c',1,'CFormattedTextDraw::Create()'],['../class_x_y_plot.html#a1766811e5ee992a9de2047d82cc1e64a',1,'XYPlot::Create()'],['../formattedtextdraw_8h.html#a15a4f3caefbbf5a76738a14b1827981a',1,'Create():&#160;formattedtextdraw.h']]],
+  ['creategroup',['CreateGroup',['../class_profile_group_map.html#a308962453d061080709b15c123ea315b',1,'ProfileGroupMap::CreateGroup()'],['../class_selection.html#a1961c6f204a1bece5bf33e380c8653bf',1,'Selection::CreateGroup()'],['../group__gr_output.html#gaa9973935dcf6968295717ca9e8e832c0',1,'xyplot::XYPlotManager::CreateGroup()'],['../xyplot_8h.html#a6b0f7e5811e25c7e3de65a30e307b0a2',1,'CreateGroup(long lPlotID, long *lGroupID):&#160;XYPlotDLL.cpp'],['../_x_y_plot_d_l_l_8cpp.html#a20604deebe56066b9b411296b019dd9b',1,'CreateGroup(long lPlotID, long *pGroupID):&#160;XYPlotDLL.cpp']]],
+  ['createlevel',['CreateLevel',['../group__gr_lvl_ex.html#gaf2ee73286c657c5cf07963143e74246d',1,'xyplot::XYPlotManager']]],
+  ['createpen',['CreatePen',['../class_line_data.html#aeb4bfdd0dc43e28b44efe5726b3b7621',1,'LineData']]],
+  ['createplot',['CreatePlot',['../group__group1.html#ga056dc5f3c798c3c3f38d2ac9d4051ecb',1,'xyplot::XYPlotManager']]],
+  ['createprofile',['CreateProfile',['../group__gr_output.html#ga0b66f2af6d72e28697ea2404362bcd08',1,'xyplot::XYPlotManager']]],
+  ['createregion',['CreateRegion',['../group__gr_rgn_ex.html#ga7505d9ffcaedba6a7b8861b537e3eb23',1,'xyplot::XYPlotManager']]],
+  ['createtextservicesobject',['CreateTextServicesObject',['../class_c_formatted_text_draw.html#aacdbc394944e8ca679c5de2e824496d5',1,'CFormattedTextDraw']]]
+];

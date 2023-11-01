@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Исходный файл src/CoordConverter.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CoordConverter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_coord_converter_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">class </span><a class="code" href="class_axis.html">Axis</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structtag_axis_limits.html">    5</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structtag_axis_limits.html">tagAxisLimits</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="structtag_axis_limits.html#a0acfd629578c8b0b25f0744599f794c1">    7</a></span>&#160;    <a class="code" href="structtag_axis_limits.html#a0acfd629578c8b0b25f0744599f794c1">tagAxisLimits</a>() :  <a class="code" href="structtag_axis_limits.html#adb6a574ead738985f922f6b5ad0a18d9">minPos</a>(0), <a class="code" href="structtag_axis_limits.html#a278c6398cff218e2b0d361a27cc48d52">maxPos</a>(0), </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <a class="code" href="structtag_axis_limits.html#a2ff24b523fb98cbe0a00bde3e0210f7c">minVal</a>(0.0), <a class="code" href="structtag_axis_limits.html#ae550302cf4abe7ca5cb3ff6bc311a305">maxVal</a>(0.0)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    }</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structtag_axis_limits.html#a7cc7e0d3078ac0323b72508bbc625ba7">   12</a></span>&#160;    <a class="code" href="structtag_axis_limits.html#a7cc7e0d3078ac0323b72508bbc625ba7">tagAxisLimits</a>(<span class="keywordtype">int</span> minP, <span class="keywordtype">int</span> maxP, <span class="keywordtype">double</span> minV, <span class="keywordtype">double</span> maxV ) :</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="structtag_axis_limits.html#adb6a574ead738985f922f6b5ad0a18d9">minPos</a>(minP), <a class="code" href="structtag_axis_limits.html#a278c6398cff218e2b0d361a27cc48d52">maxPos</a>(maxP), <a class="code" href="structtag_axis_limits.html#a2ff24b523fb98cbe0a00bde3e0210f7c">minVal</a>(minV), <a class="code" href="structtag_axis_limits.html#ae550302cf4abe7ca5cb3ff6bc311a305">maxVal</a>(maxV)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structtag_axis_limits.html#adb6a574ead738985f922f6b5ad0a18d9">   17</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtag_axis_limits.html#adb6a574ead738985f922f6b5ad0a18d9">minPos</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structtag_axis_limits.html#a278c6398cff218e2b0d361a27cc48d52">   18</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtag_axis_limits.html#a278c6398cff218e2b0d361a27cc48d52">maxPos</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structtag_axis_limits.html#a2ff24b523fb98cbe0a00bde3e0210f7c">   19</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structtag_axis_limits.html#a2ff24b523fb98cbe0a00bde3e0210f7c">minVal</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structtag_axis_limits.html#ae550302cf4abe7ca5cb3ff6bc311a305">   20</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structtag_axis_limits.html#ae550302cf4abe7ca5cb3ff6bc311a305">maxVal</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}<a class="code" href="_coord_converter_8h.html#ada9330aea588ec13117cd51d2031f93c">AXISLIMITS</a>, *<a class="code" href="_coord_converter_8h.html#aabd54ff6676737c3cae490e3a2363bc4">LPAXISLIMITS</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structtag_graph_limits.html">tagGraphLimits</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#ae97c154e1d290844d5d1dee15b954373">   26</a></span>&#160;    <a class="code" href="structtag_graph_limits.html#ae97c154e1d290844d5d1dee15b954373">tagGraphLimits</a>() :  <a class="code" href="structtag_graph_limits.html#a412cdcb28cd23a1ec7d9e82947d1ffb2">left</a>(0), <a class="code" href="structtag_graph_limits.html#a097f924c4f3ca60ce02f39dd4883283a">bottom</a>(0), <a class="code" href="structtag_graph_limits.html#a3f92367e0c4ce69812032fa4d1af337d">right</a>(1), <a class="code" href="structtag_graph_limits.html#a058d1d93e0e9949f79da494cb0f20c46">top</a>(1),</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        <a class="code" href="structtag_graph_limits.html#a066cde124b9855d3ebde544f671885ed">xMin</a>(0.0), <a class="code" href="structtag_graph_limits.html#a7e29c3537c44a32d136d9876d53aa494">yMin</a>(0.0), <a class="code" href="structtag_graph_limits.html#ab9285cb4e4471d050bd8e644721f7dc0">xMax</a>(1.0), <a class="code" href="structtag_graph_limits.html#a55e1c7ce08e09341369609becb48ecae">yMax</a>(1.0)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#a0b38a407c282fba757714cfdd34e6f58">   31</a></span>&#160;    <a class="code" href="structtag_graph_limits.html#a0b38a407c282fba757714cfdd34e6f58">tagGraphLimits</a>(<span class="keyword">const</span> RECT&amp; rcClient, <span class="keywordtype">double</span> xmin, <span class="keywordtype">double</span> xmax, <span class="keywordtype">double</span> ymin, <span class="keywordtype">double</span> ymax ) :</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="structtag_graph_limits.html#a412cdcb28cd23a1ec7d9e82947d1ffb2">left</a>(rcClient.<a class="code" href="structtag_graph_limits.html#a412cdcb28cd23a1ec7d9e82947d1ffb2">left</a>), <a class="code" href="structtag_graph_limits.html#a097f924c4f3ca60ce02f39dd4883283a">bottom</a>(rcClient.<a class="code" href="structtag_graph_limits.html#a097f924c4f3ca60ce02f39dd4883283a">bottom</a>), <a class="code" href="structtag_graph_limits.html#a3f92367e0c4ce69812032fa4d1af337d">right</a>(rcClient.<a class="code" href="structtag_graph_limits.html#a3f92367e0c4ce69812032fa4d1af337d">right</a>), <a class="code" href="structtag_graph_limits.html#a058d1d93e0e9949f79da494cb0f20c46">top</a>(rcClient.<a class="code" href="structtag_graph_limits.html#a058d1d93e0e9949f79da494cb0f20c46">top</a>),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="structtag_graph_limits.html#a066cde124b9855d3ebde544f671885ed">xMin</a>(xmin), <a class="code" href="structtag_graph_limits.html#a7e29c3537c44a32d136d9876d53aa494">yMin</a>(ymin), <a class="code" href="structtag_graph_limits.html#ab9285cb4e4471d050bd8e644721f7dc0">xMax</a>(xmax), <a class="code" href="structtag_graph_limits.html#a55e1c7ce08e09341369609becb48ecae">yMax</a>(ymax)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#a1c7dc2a0ff3494b77468982dd9720a57">   37</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structtag_graph_limits.html#a1c7dc2a0ff3494b77468982dd9720a57">SetRect</a>(<span class="keyword">const</span> RECT&amp; rc)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="structtag_graph_limits.html#a412cdcb28cd23a1ec7d9e82947d1ffb2">left</a>    = rc.left;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="structtag_graph_limits.html#a097f924c4f3ca60ce02f39dd4883283a">bottom</a>  = rc.bottom;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="structtag_graph_limits.html#a3f92367e0c4ce69812032fa4d1af337d">right</a>   = rc.right;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="structtag_graph_limits.html#a058d1d93e0e9949f79da494cb0f20c46">top</a>     = rc.top;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#a85d12ef619e2a5e2fbdb135cc5f655f0">   45</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structtag_graph_limits.html#a85d12ef619e2a5e2fbdb135cc5f655f0">SetPhisicalLimits</a>(<span class="keywordtype">double</span> xmin, <span class="keywordtype">double</span> xmax, <span class="keywordtype">double</span> ymin, <span class="keywordtype">double</span> ymax)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="structtag_graph_limits.html#a066cde124b9855d3ebde544f671885ed">xMin</a> = xmin;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="structtag_graph_limits.html#a7e29c3537c44a32d136d9876d53aa494">yMin</a> = ymin;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="structtag_graph_limits.html#ab9285cb4e4471d050bd8e644721f7dc0">xMax</a> = xmax; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="structtag_graph_limits.html#a55e1c7ce08e09341369609becb48ecae">yMax</a> = ymax;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#a412cdcb28cd23a1ec7d9e82947d1ffb2">   53</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtag_graph_limits.html#a412cdcb28cd23a1ec7d9e82947d1ffb2">left</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#a097f924c4f3ca60ce02f39dd4883283a">   54</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtag_graph_limits.html#a097f924c4f3ca60ce02f39dd4883283a">bottom</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#a3f92367e0c4ce69812032fa4d1af337d">   55</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtag_graph_limits.html#a3f92367e0c4ce69812032fa4d1af337d">right</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#a058d1d93e0e9949f79da494cb0f20c46">   56</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structtag_graph_limits.html#a058d1d93e0e9949f79da494cb0f20c46">top</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#a066cde124b9855d3ebde544f671885ed">   58</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structtag_graph_limits.html#a066cde124b9855d3ebde544f671885ed">xMin</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#a7e29c3537c44a32d136d9876d53aa494">   59</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structtag_graph_limits.html#a7e29c3537c44a32d136d9876d53aa494">yMin</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#ab9285cb4e4471d050bd8e644721f7dc0">   60</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structtag_graph_limits.html#ab9285cb4e4471d050bd8e644721f7dc0">xMax</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structtag_graph_limits.html#a55e1c7ce08e09341369609becb48ecae">   61</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structtag_graph_limits.html#a55e1c7ce08e09341369609becb48ecae">yMax</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}<a class="code" href="_coord_converter_8h.html#aef9df27fe0ea7eeb39599de1dfc8e6e1">GRAPHLIMITS</a>, *<a class="code" href="_coord_converter_8h.html#a2ec94dcc73eb83596a402c8cbefc860e">LPGRAPHLIMITS</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_coord_converter.html">   65</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_coord_converter.html">CoordConverter</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="class_coord_converter.html#ae0c290c486210e4da7c1ac5f58501b16">CoordConverter</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_coord_converter.html#a3390c6c195f9164b274592e111898dd3">~CoordConverter</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> BOOL   <a class="code" href="class_coord_converter.html#ad6c51c359e012fc60dd8a928d47436c8">ConvertToDevice</a>(<span class="keyword">const</span> <a class="code" href="class_axis.html">Axis</a>&amp; axisX, <span class="keyword">const</span> <a class="code" href="class_axis.html">Axis</a>&amp; axisY, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, POINT&amp; pt);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> BOOL   <a class="code" href="class_coord_converter.html#ad6c51c359e012fc60dd8a928d47436c8">ConvertToDevice</a>(<span class="keyword">const</span> <a class="code" href="structtag_graph_limits.html">GRAPHLIMITS</a>&amp; grLimits, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, POINT&amp; pt, BOOL xLogMode = FALSE, BOOL yLogMode = FALSE, BOOL calcX = TRUE, BOOL calcY = TRUE );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//static BOOL     ConvertToDevice(const AXISLIMITS&amp; axisLimits, double val, int&amp; res, BOOL logMode = FALSE);</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> BOOL <a class="code" href="class_coord_converter.html#ad6c51c359e012fc60dd8a928d47436c8">ConvertToDevice</a>(<span class="keyword">const</span> <a class="code" href="class_axis.html">Axis</a>&amp; axis, <span class="keywordtype">double</span> val, LONG&amp; res);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> BOOL <a class="code" href="class_coord_converter.html#a9fe141f15f40063151f823489f12dbe7">ConvertToPhysic</a>(<span class="keyword">const</span> <a class="code" href="structtag_axis_limits.html">AXISLIMITS</a>&amp; axisLimits, <span class="keywordtype">int</span> val, <span class="keywordtype">double</span>&amp; res, BOOL logMode = FALSE);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> BOOL <a class="code" href="class_coord_converter.html#a9fe141f15f40063151f823489f12dbe7">ConvertToPhysic</a>(<span class="keyword">const</span> <a class="code" href="class_axis.html">Axis</a>&amp; axis, <span class="keywordtype">int</span> val, <span class="keywordtype">double</span>&amp; res);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">static</span> BOOL <a class="code" href="class_coord_converter.html#ad6c51c359e012fc60dd8a928d47436c8">CoordConverter::ConvertToDevice</a>(<span class="keywordtype">int</span> minDevice, </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">int</span> maxDevice, </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">double</span> minPhys, </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">double</span> maxPhys, </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">double</span> val, </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">int</span>&amp; res, </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        BOOL rev<span class="comment">/* = FALSE*/</span>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        BOOL logMode<span class="comment">/* = FALSE*/</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">//static BOOL   ConvertToPhysics(Axis&amp; axisX, Axis&amp; axisY, POINT pt);</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="ttc" id="class_coord_converter_html_ad6c51c359e012fc60dd8a928d47436c8"><div class="ttname"><a href="class_coord_converter.html#ad6c51c359e012fc60dd8a928d47436c8">CoordConverter::ConvertToDevice</a></div><div class="ttdeci">static BOOL ConvertToDevice(const Axis &amp;axisX, const Axis &amp;axisY, double x, double y, POINT &amp;pt)</div><div class="ttdef"><b>Definition:</b> CoordConverter.cpp:15</div></div>
+<div class="ttc" id="structtag_axis_limits_html_a278c6398cff218e2b0d361a27cc48d52"><div class="ttname"><a href="structtag_axis_limits.html#a278c6398cff218e2b0d361a27cc48d52">tagAxisLimits::maxPos</a></div><div class="ttdeci">int maxPos</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:18</div></div>
+<div class="ttc" id="_coord_converter_8h_html_a2ec94dcc73eb83596a402c8cbefc860e"><div class="ttname"><a href="_coord_converter_8h.html#a2ec94dcc73eb83596a402c8cbefc860e">LPGRAPHLIMITS</a></div><div class="ttdeci">struct tagGraphLimits * LPGRAPHLIMITS</div></div>
+<div class="ttc" id="structtag_graph_limits_html_a412cdcb28cd23a1ec7d9e82947d1ffb2"><div class="ttname"><a href="structtag_graph_limits.html#a412cdcb28cd23a1ec7d9e82947d1ffb2">tagGraphLimits::left</a></div><div class="ttdeci">int left</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:53</div></div>
+<div class="ttc" id="structtag_graph_limits_html_a058d1d93e0e9949f79da494cb0f20c46"><div class="ttname"><a href="structtag_graph_limits.html#a058d1d93e0e9949f79da494cb0f20c46">tagGraphLimits::top</a></div><div class="ttdeci">int top</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:56</div></div>
+<div class="ttc" id="structtag_graph_limits_html_a7e29c3537c44a32d136d9876d53aa494"><div class="ttname"><a href="structtag_graph_limits.html#a7e29c3537c44a32d136d9876d53aa494">tagGraphLimits::yMin</a></div><div class="ttdeci">double yMin</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:59</div></div>
+<div class="ttc" id="class_coord_converter_html"><div class="ttname"><a href="class_coord_converter.html">CoordConverter</a></div><div class="ttdef"><b>Definition:</b> CoordConverter.h:65</div></div>
+<div class="ttc" id="structtag_axis_limits_html_a2ff24b523fb98cbe0a00bde3e0210f7c"><div class="ttname"><a href="structtag_axis_limits.html#a2ff24b523fb98cbe0a00bde3e0210f7c">tagAxisLimits::minVal</a></div><div class="ttdeci">double minVal</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:19</div></div>
+<div class="ttc" id="structtag_axis_limits_html_a7cc7e0d3078ac0323b72508bbc625ba7"><div class="ttname"><a href="structtag_axis_limits.html#a7cc7e0d3078ac0323b72508bbc625ba7">tagAxisLimits::tagAxisLimits</a></div><div class="ttdeci">tagAxisLimits(int minP, int maxP, double minV, double maxV)</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:12</div></div>
+<div class="ttc" id="structtag_graph_limits_html_ae97c154e1d290844d5d1dee15b954373"><div class="ttname"><a href="structtag_graph_limits.html#ae97c154e1d290844d5d1dee15b954373">tagGraphLimits::tagGraphLimits</a></div><div class="ttdeci">tagGraphLimits()</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:26</div></div>
+<div class="ttc" id="structtag_graph_limits_html_a1c7dc2a0ff3494b77468982dd9720a57"><div class="ttname"><a href="structtag_graph_limits.html#a1c7dc2a0ff3494b77468982dd9720a57">tagGraphLimits::SetRect</a></div><div class="ttdeci">void SetRect(const RECT &amp;rc)</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:37</div></div>
+<div class="ttc" id="structtag_graph_limits_html_ab9285cb4e4471d050bd8e644721f7dc0"><div class="ttname"><a href="structtag_graph_limits.html#ab9285cb4e4471d050bd8e644721f7dc0">tagGraphLimits::xMax</a></div><div class="ttdeci">double xMax</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:60</div></div>
+<div class="ttc" id="structtag_graph_limits_html_a0b38a407c282fba757714cfdd34e6f58"><div class="ttname"><a href="structtag_graph_limits.html#a0b38a407c282fba757714cfdd34e6f58">tagGraphLimits::tagGraphLimits</a></div><div class="ttdeci">tagGraphLimits(const RECT &amp;rcClient, double xmin, double xmax, double ymin, double ymax)</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:31</div></div>
+<div class="ttc" id="class_axis_html"><div class="ttname"><a href="class_axis.html">Axis</a></div><div class="ttdef"><b>Definition:</b> Axis.h:31</div></div>
+<div class="ttc" id="structtag_axis_limits_html_adb6a574ead738985f922f6b5ad0a18d9"><div class="ttname"><a href="structtag_axis_limits.html#adb6a574ead738985f922f6b5ad0a18d9">tagAxisLimits::minPos</a></div><div class="ttdeci">int minPos</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:17</div></div>
+<div class="ttc" id="class_coord_converter_html_a9fe141f15f40063151f823489f12dbe7"><div class="ttname"><a href="class_coord_converter.html#a9fe141f15f40063151f823489f12dbe7">CoordConverter::ConvertToPhysic</a></div><div class="ttdeci">static BOOL ConvertToPhysic(const AXISLIMITS &amp;axisLimits, int val, double &amp;res, BOOL logMode=FALSE)</div><div class="ttdef"><b>Definition:</b> CoordConverter.cpp:214</div></div>
+<div class="ttc" id="_coord_converter_8h_html_aef9df27fe0ea7eeb39599de1dfc8e6e1"><div class="ttname"><a href="_coord_converter_8h.html#aef9df27fe0ea7eeb39599de1dfc8e6e1">GRAPHLIMITS</a></div><div class="ttdeci">struct tagGraphLimits GRAPHLIMITS</div></div>
+<div class="ttc" id="structtag_axis_limits_html"><div class="ttname"><a href="structtag_axis_limits.html">tagAxisLimits</a></div><div class="ttdef"><b>Definition:</b> CoordConverter.h:5</div></div>
+<div class="ttc" id="structtag_graph_limits_html_a066cde124b9855d3ebde544f671885ed"><div class="ttname"><a href="structtag_graph_limits.html#a066cde124b9855d3ebde544f671885ed">tagGraphLimits::xMin</a></div><div class="ttdeci">double xMin</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:58</div></div>
+<div class="ttc" id="class_coord_converter_html_ae0c290c486210e4da7c1ac5f58501b16"><div class="ttname"><a href="class_coord_converter.html#ae0c290c486210e4da7c1ac5f58501b16">CoordConverter::CoordConverter</a></div><div class="ttdeci">CoordConverter(void)</div><div class="ttdef"><b>Definition:</b> CoordConverter.cpp:7</div></div>
+<div class="ttc" id="structtag_axis_limits_html_a0acfd629578c8b0b25f0744599f794c1"><div class="ttname"><a href="structtag_axis_limits.html#a0acfd629578c8b0b25f0744599f794c1">tagAxisLimits::tagAxisLimits</a></div><div class="ttdeci">tagAxisLimits()</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:7</div></div>
+<div class="ttc" id="_coord_converter_8h_html_ada9330aea588ec13117cd51d2031f93c"><div class="ttname"><a href="_coord_converter_8h.html#ada9330aea588ec13117cd51d2031f93c">AXISLIMITS</a></div><div class="ttdeci">struct tagAxisLimits AXISLIMITS</div></div>
+<div class="ttc" id="structtag_graph_limits_html_a097f924c4f3ca60ce02f39dd4883283a"><div class="ttname"><a href="structtag_graph_limits.html#a097f924c4f3ca60ce02f39dd4883283a">tagGraphLimits::bottom</a></div><div class="ttdeci">int bottom</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:54</div></div>
+<div class="ttc" id="class_coord_converter_html_a3390c6c195f9164b274592e111898dd3"><div class="ttname"><a href="class_coord_converter.html#a3390c6c195f9164b274592e111898dd3">CoordConverter::~CoordConverter</a></div><div class="ttdeci">~CoordConverter(void)</div><div class="ttdef"><b>Definition:</b> CoordConverter.cpp:11</div></div>
+<div class="ttc" id="structtag_graph_limits_html"><div class="ttname"><a href="structtag_graph_limits.html">tagGraphLimits</a></div><div class="ttdef"><b>Definition:</b> CoordConverter.h:24</div></div>
+<div class="ttc" id="structtag_graph_limits_html_a55e1c7ce08e09341369609becb48ecae"><div class="ttname"><a href="structtag_graph_limits.html#a55e1c7ce08e09341369609becb48ecae">tagGraphLimits::yMax</a></div><div class="ttdeci">double yMax</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:61</div></div>
+<div class="ttc" id="structtag_axis_limits_html_ae550302cf4abe7ca5cb3ff6bc311a305"><div class="ttname"><a href="structtag_axis_limits.html#ae550302cf4abe7ca5cb3ff6bc311a305">tagAxisLimits::maxVal</a></div><div class="ttdeci">double maxVal</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:20</div></div>
+<div class="ttc" id="structtag_graph_limits_html_a85d12ef619e2a5e2fbdb135cc5f655f0"><div class="ttname"><a href="structtag_graph_limits.html#a85d12ef619e2a5e2fbdb135cc5f655f0">tagGraphLimits::SetPhisicalLimits</a></div><div class="ttdeci">void SetPhisicalLimits(double xmin, double xmax, double ymin, double ymax)</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:45</div></div>
+<div class="ttc" id="structtag_graph_limits_html_a3f92367e0c4ce69812032fa4d1af337d"><div class="ttname"><a href="structtag_graph_limits.html#a3f92367e0c4ce69812032fa4d1af337d">tagGraphLimits::right</a></div><div class="ttdeci">int right</div><div class="ttdef"><b>Definition:</b> CoordConverter.h:55</div></div>
+<div class="ttc" id="_coord_converter_8h_html_aabd54ff6676737c3cae490e3a2363bc4"><div class="ttname"><a href="_coord_converter_8h.html#aabd54ff6676737c3cae490e3a2363bc4">LPAXISLIMITS</a></div><div class="ttdeci">struct tagAxisLimits * LPAXISLIMITS</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Класс PlotRegion</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_plot_region-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс PlotRegion</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_regions_8h_source.html">Regions.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса PlotRegion:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_plot_region__coll__graph.png" border="0" usemap="#_plot_region_coll__map" alt="Collaboration graph"/></div>
+<map name="_plot_region_coll__map" id="_plot_region_coll__map">
+<area shape="rect" id="node2" href="class_r_t_f_string.html" title="RTFString" alt="" coords="136,184,216,211"/><area shape="rect" id="node13" href="class_title.html" title="Title" alt="" coords="455,273,502,300"/><area shape="rect" id="node14" href="class_legend.html" title="Legend" alt="" coords="768,513,832,540"/><area shape="rect" id="node20" href="class_label.html" title="Label" alt="" coords="233,273,287,300"/><area shape="rect" id="node3" href="class_c_formatted_text_draw.html" title="CFormattedTextDraw" alt="" coords="104,95,248,121"/><area shape="rect" id="node6" href="structtag_c_o_o_k_i_e.html" title="tagCOOKIE" alt="" coords="269,5,360,32"/><area shape="rect" id="node7" href="class_back_ground.html" title="BackGround" alt="" coords="597,273,691,300"/><area shape="rect" id="node12" href="class_x_y_plot.html" title="Класс для работы с базой данных " alt="" coords="604,379,665,405"/><area shape="rect" id="node8" href="class_savable_item.html" title="SavableItem" alt="" coords="678,184,770,211"/><area shape="rect" id="node9" href="class_border.html" title="Border" alt="" coords="745,273,805,300"/><area shape="rect" id="node11" href="class_axis.html" title="Axis" alt="" coords="507,513,555,540"/><area shape="rect" id="node15" href="class_selection.html" title="Selection" alt="" coords="1241,617,1317,644"/><area shape="rect" id="node17" href="class_ticks.html" title="Ticks" alt="" coords="991,617,1044,644"/><area shape="rect" id="node18" href="class_digits.html" title="Digits" alt="" coords="427,617,482,644"/><area shape="rect" id="node19" href="class_grid_lines.html" title="GridLines" alt="" coords="813,617,891,644"/><area shape="rect" id="node10" href="class_line_data.html" title="LineData" alt="" coords="1091,184,1165,211"/><area shape="rect" id="node16" href="class_profile_group_map.html" title="ProfileGroupMap" alt="" coords="1263,513,1382,540"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa20c4158814429875632d6d873a41aeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#aa20c4158814429875632d6d873a41aeb">PlotRegion</a> (<a class="el" href="class_x_y_plot.html">XYPlot</a> *parent, <a class="el" href="class_axis.html">Axis</a> *axisX, <a class="el" href="class_axis.html">Axis</a> *axisY, double ptFromX, double ptFromY, double ptToX, double ptToY, std::string labelText=&quot;&quot;, COLORREF color=RGB(128, 80, 80), double opaque=100, COLORREF BorderColor=RGB(0, 0, 0), int BorderWidth=1, int BorderLine=<a class="el" href="namespacexyplot.html#a3d67107a3da8dc1ef0114ab0352e01eda50f3326c8ff8eb69d629156dfe2e268a">xyplot::PLS_SOLID</a>)</td></tr>
+<tr class="separator:aa20c4158814429875632d6d873a41aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f37de224be906ff032def46b311d3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a30f37de224be906ff032def46b311d3c">~PlotRegion</a> (void)</td></tr>
+<tr class="separator:a30f37de224be906ff032def46b311d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a71fbeed8f2de90fe6e069a9b2e22c0"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a6a71fbeed8f2de90fe6e069a9b2e22c0">PreDraw</a> ()</td></tr>
+<tr class="separator:a6a71fbeed8f2de90fe6e069a9b2e22c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508939830f7e43969b099c2836db5c4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a508939830f7e43969b099c2836db5c4e">OnDraw</a> (HDC hdc)</td></tr>
+<tr class="separator:a508939830f7e43969b099c2836db5c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8d84c8bca2c5badf833ec55e4ac089"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a8e8d84c8bca2c5badf833ec55e4ac089">SetXRange</a> (double x1, double x2)</td></tr>
+<tr class="separator:a8e8d84c8bca2c5badf833ec55e4ac089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906d6cdb0f52224b37dc93fe5e3a2a98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a906d6cdb0f52224b37dc93fe5e3a2a98">SetYRange</a> (double y1, double y2)</td></tr>
+<tr class="separator:a906d6cdb0f52224b37dc93fe5e3a2a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c9115a80a42634d87a6ee1e95dd62d1"><td class="memItemLeft" align="right" valign="top">COLORREF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a8c9115a80a42634d87a6ee1e95dd62d1">GetLineColor</a> () const </td></tr>
+<tr class="separator:a8c9115a80a42634d87a6ee1e95dd62d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea5ce8db7c4e5ad0383b5bca8ceeceba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#aea5ce8db7c4e5ad0383b5bca8ceeceba">SetLineColor</a> (COLORREF color)</td></tr>
+<tr class="separator:aea5ce8db7c4e5ad0383b5bca8ceeceba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa627b45cacdbc50c3f6ae4cfbb66b75b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#aa627b45cacdbc50c3f6ae4cfbb66b75b">GetFillColors</a> (COLORREF &amp;clrStart, COLORREF &amp;clrFinish) const </td></tr>
+<tr class="separator:aa627b45cacdbc50c3f6ae4cfbb66b75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb18f693dc5ca91e5220d753dcd710a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a7cb18f693dc5ca91e5220d753dcd710a">SetFillColors</a> (COLORREF clrStart, COLORREF clrFinish)</td></tr>
+<tr class="separator:a7cb18f693dc5ca91e5220d753dcd710a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973f741072a09ad701f31fd8cf8c7178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a973f741072a09ad701f31fd8cf8c7178">SetGradientDirection</a> (BOOL vertical)</td></tr>
+<tr class="separator:a973f741072a09ad701f31fd8cf8c7178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a8c4048030e64ec3d29361363f6b3f3"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a1a8c4048030e64ec3d29361363f6b3f3">GetGradientDirection</a> () const </td></tr>
+<tr class="separator:a1a8c4048030e64ec3d29361363f6b3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b86ae228fae33d9448f8ac3c2a7c05"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a47b86ae228fae33d9448f8ac3c2a7c05">GetHatchStyle</a> () const </td></tr>
+<tr class="separator:a47b86ae228fae33d9448f8ac3c2a7c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef080fb216a51c6a90f4b4ac8050ee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#afef080fb216a51c6a90f4b4ac8050ee2">SetHatchStyle</a> (long hstyle)</td></tr>
+<tr class="separator:afef080fb216a51c6a90f4b4ac8050ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:aec00a997e0e41c233d8542a9ec4d602f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_axis.html">Axis</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#aec00a997e0e41c233d8542a9ec4d602f">parentAxisX</a></td></tr>
+<tr class="separator:aec00a997e0e41c233d8542a9ec4d602f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae817987187aded3ddb6074f1462f9b5c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_axis.html">Axis</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#ae817987187aded3ddb6074f1462f9b5c">parentAxisY</a></td></tr>
+<tr class="separator:ae817987187aded3ddb6074f1462f9b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a8e6a2f04b30da9b84a618aeef17a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_border.html">Border</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a66a8e6a2f04b30da9b84a618aeef17a2">border</a></td></tr>
+<tr class="separator:a66a8e6a2f04b30da9b84a618aeef17a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73dfa8e41749b8f277264bd716f3621e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_back_ground.html">BackGround</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a73dfa8e41749b8f277264bd716f3621e">bk</a></td></tr>
+<tr class="separator:a73dfa8e41749b8f277264bd716f3621e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac277b90fffff8f74744646361e3c0887"><td class="memItemLeft" align="right" valign="top">RECT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#ac277b90fffff8f74744646361e3c0887">rgnRect</a></td></tr>
+<tr class="separator:ac277b90fffff8f74744646361e3c0887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c3a91a03edc979ef6fdd2fa317fc79"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a17c3a91a03edc979ef6fdd2fa317fc79">xFrom</a></td></tr>
+<tr class="separator:a17c3a91a03edc979ef6fdd2fa317fc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f988d5b4e0ae0995b4fe457b806064e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a8f988d5b4e0ae0995b4fe457b806064e">xTo</a></td></tr>
+<tr class="separator:a8f988d5b4e0ae0995b4fe457b806064e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf10bb3e21dc8efeadbc2ccd128a6772"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#acf10bb3e21dc8efeadbc2ccd128a6772">yFrom</a></td></tr>
+<tr class="separator:acf10bb3e21dc8efeadbc2ccd128a6772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97dd7a58a12907c939ad3d764ad0a7d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#ad97dd7a58a12907c939ad3d764ad0a7d">yTo</a></td></tr>
+<tr class="separator:ad97dd7a58a12907c939ad3d764ad0a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12dc144f3d93052dc1b2afd355b4372e"><td class="memItemLeft" align="right" valign="top">COLORREF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a12dc144f3d93052dc1b2afd355b4372e">hatchColor</a></td></tr>
+<tr class="separator:a12dc144f3d93052dc1b2afd355b4372e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6bac6e99e972970b90e19aa1463fe6"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a0a6bac6e99e972970b90e19aa1463fe6">hatchStyle</a></td></tr>
+<tr class="separator:a0a6bac6e99e972970b90e19aa1463fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d55541c5f544224d99b3f44ee3c5ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_r_t_f_string.html">RTFString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html#a76d55541c5f544224d99b3f44ee3c5ea">regionText</a></td></tr>
+<tr class="separator:a76d55541c5f544224d99b3f44ee3c5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="aa20c4158814429875632d6d873a41aeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlotRegion::PlotRegion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_x_y_plot.html">XYPlot</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_axis.html">Axis</a> *&#160;</td>
+          <td class="paramname"><em>axisX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_axis.html">Axis</a> *&#160;</td>
+          <td class="paramname"><em>axisY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ptFromX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ptFromY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ptToX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ptToY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>labelText</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>color</em> = <code>RGB(128,80,80)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>opaque</em> = <code>100</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>BorderColor</em> = <code>RGB(0,0,0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>BorderWidth</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>BorderLine</em> = <code><a class="el" href="namespacexyplot.html#a3d67107a3da8dc1ef0114ab0352e01eda50f3326c8ff8eb69d629156dfe2e268a">xyplot::PLS_SOLID</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a30f37de224be906ff032def46b311d3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlotRegion::~PlotRegion </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="aa627b45cacdbc50c3f6ae4cfbb66b75b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlotRegion::GetFillColors </td>
+          <td>(</td>
+          <td class="paramtype">COLORREF &amp;&#160;</td>
+          <td class="paramname"><em>clrStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF &amp;&#160;</td>
+          <td class="paramname"><em>clrFinish</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a8c4048030e64ec3d29361363f6b3f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL PlotRegion::GetGradientDirection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a47b86ae228fae33d9448f8ac3c2a7c05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long PlotRegion::GetHatchStyle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c9115a80a42634d87a6ee1e95dd62d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">COLORREF PlotRegion::GetLineColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a508939830f7e43969b099c2836db5c4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlotRegion::OnDraw </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hdc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a71fbeed8f2de90fe6e069a9b2e22c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL PlotRegion::PreDraw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7cb18f693dc5ca91e5220d753dcd710a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlotRegion::SetFillColors </td>
+          <td>(</td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>clrStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>clrFinish</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a973f741072a09ad701f31fd8cf8c7178"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlotRegion::SetGradientDirection </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>vertical</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afef080fb216a51c6a90f4b4ac8050ee2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlotRegion::SetHatchStyle </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>hstyle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea5ce8db7c4e5ad0383b5bca8ceeceba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlotRegion::SetLineColor </td>
+          <td>(</td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e8d84c8bca2c5badf833ec55e4ac089"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlotRegion::SetXRange </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a906d6cdb0f52224b37dc93fe5e3a2a98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlotRegion::SetYRange </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a73dfa8e41749b8f277264bd716f3621e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_back_ground.html">BackGround</a> PlotRegion::bk</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a66a8e6a2f04b30da9b84a618aeef17a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_border.html">Border</a> PlotRegion::border</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a12dc144f3d93052dc1b2afd355b4372e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">COLORREF PlotRegion::hatchColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a6bac6e99e972970b90e19aa1463fe6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long PlotRegion::hatchStyle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aec00a997e0e41c233d8542a9ec4d602f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_axis.html">Axis</a>&amp; PlotRegion::parentAxisX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae817987187aded3ddb6074f1462f9b5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_axis.html">Axis</a>&amp; PlotRegion::parentAxisY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a76d55541c5f544224d99b3f44ee3c5ea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_r_t_f_string.html">RTFString</a>* PlotRegion::regionText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac277b90fffff8f74744646361e3c0887"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RECT PlotRegion::rgnRect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a17c3a91a03edc979ef6fdd2fa317fc79"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double PlotRegion::xFrom</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f988d5b4e0ae0995b4fe457b806064e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double PlotRegion::xTo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf10bb3e21dc8efeadbc2ccd128a6772"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double PlotRegion::yFrom</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad97dd7a58a12907c939ad3d764ad0a7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double PlotRegion::yTo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="_regions_8h_source.html">Regions.h</a></li>
+<li>src/<a class="el" href="_regions_8cpp.html">Regions.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

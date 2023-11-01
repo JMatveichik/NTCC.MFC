@@ -1,0 +1,300 @@
+\hypertarget{class_line_data}{\section{Класс Line\-Data}
+\label{class_line_data}\index{Line\-Data@{Line\-Data}}
+}
+
+
+{\ttfamily \#include $<$linedata.\-h$>$}
+
+\subsection*{Открытые типы}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{class_line_data_af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3}{R\-O\-U\-N\-D}, 
+\hyperlink{class_line_data_af2e2ee6851256e24a12203eda9402beaa396289cd387c745e869339a2c24aedb3}{F\-L\-A\-T}, 
+\hyperlink{class_line_data_af2e2ee6851256e24a12203eda9402beaa24fd149f57d8f62d24ffb01013324720}{S\-Q\-U\-A\-R\-E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_line_data_af4d6ef9378681b4dd72ccac52c8f4e47}{Line\-Data} ()
+\item 
+\hyperlink{class_line_data_ac9b85808f69d4f6cfe3741bbfcd65da6}{Line\-Data} (C\-O\-L\-O\-R\-R\-E\-F clr, int n\-Width, int n\-Type, int n\-End\-Caps=\hyperlink{class_line_data_af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3}{R\-O\-U\-N\-D}, std\-::string str\-Template=\char`\"{}\char`\"{})
+\item 
+\hyperlink{class_line_data_a4125b467a9d8d880027c36f8a04ec188}{Line\-Data} (const \hyperlink{class_line_data}{Line\-Data} \&rhs)
+\item 
+\hyperlink{class_line_data_a8cb45a237eeea2c7c49a8344286e8ab4}{$\sim$\-Line\-Data} ()
+\item 
+const \hyperlink{class_line_data}{Line\-Data} \& \hyperlink{class_line_data_abb21b7f48aa99ace40cfdff6965fb9df}{operator=} (const \hyperlink{class_line_data}{Line\-Data} \&rhs)
+\item 
+void \hyperlink{class_line_data_a4590c5b7fb46b8f9194e34ba67642b09}{Set\-Color} (C\-O\-L\-O\-R\-R\-E\-F color)
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_line_data_a207269015f81f59b4dbc32bd402f5d2c}{Get\-Color} () const 
+\item 
+void \hyperlink{class_line_data_ad60bf3e430a63d31c086c393178c01c5}{Set\-Width} (int n\-Width)
+\item 
+int \hyperlink{class_line_data_a3fcb7592c8bca72b953fda51b0432d75}{Get\-Width} () const 
+\item 
+int \hyperlink{class_line_data_af1c04fa13836884d9cb64e8fc3387370}{Set\-Type} (int n\-Type)
+\item 
+int \hyperlink{class_line_data_af15a08103fa48085eb4ad0ab4888988f}{Get\-Type} () const 
+\item 
+void \hyperlink{class_line_data_a992ddca82ec4472929a7cf7c613a3619}{Set\-End\-Caps} (int n\-End\-Caps)
+\item 
+int \hyperlink{class_line_data_ae6cfbcfa7fd82a8a4d4df981cef33f01}{Get\-End\-Caps} () const 
+\item 
+void \hyperlink{class_line_data_a8ecfe5b4b82f1d4b0d67c1e773b60246}{Set\-Template} (std\-::string str\-Template)
+\item 
+std\-::string \& \hyperlink{class_line_data_abee244a667b9543d42eb1170fff9682d}{Get\-Template} ()
+\item 
+\hyperlink{class_line_data_aaaddb4cdac3046ec53caa1e01e91369c}{operator H\-P\-E\-N} ()
+\item 
+H\-P\-E\-N \hyperlink{class_line_data_a29bc4b864d24ccd29f2edd397f546670}{Get\-Pen} ()
+\item 
+B\-O\-O\-L \hyperlink{class_line_data_a849c0984d5faba99bb2fa351d6a30801}{Write} (H\-A\-N\-D\-L\-E h\-File) const 
+\item 
+B\-O\-O\-L \hyperlink{class_line_data_a06d80ee01d05207cf4470dc37662a733}{Read} (H\-A\-N\-D\-L\-E h\-File)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_line_data_a95fa94b2614d7058386f82e7c3a2a96d}{Update\-Line\-Template} ()
+\item 
+void \hyperlink{class_line_data_aeb4bfdd0dc43e28b44efe5726b3b7621}{Create\-Pen} ()
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_line_data_a67b36139f7b94ec45cbb434cf597ec09}{m\-\_\-type}
+\item 
+int \hyperlink{class_line_data_a2f510fa43948464d6764fc3e117b5006}{m\-\_\-width}
+\item 
+int \hyperlink{class_line_data_a671e8aa8a421242fd1a16bf7759220fa}{m\-\_\-end\-Caps}
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_line_data_a641038e14c82d7641df6b1f2e1fd7590}{m\-\_\-color}
+\item 
+std\-::string \hyperlink{class_line_data_ab1383399938d3d85c3f3b1caa488f322}{m\-\_\-template}
+\item 
+H\-P\-E\-N \hyperlink{class_line_data_a2774a276fe32645f8d0b44a3032fbf48}{m\-\_\-pen}
+\end{DoxyCompactItemize}
+\subsection*{Статические защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+static std\-::string \hyperlink{class_line_data_a19e0f6bc94691eee641daf9a12e37cb0}{D\-A\-S\-H\-T\-E\-M\-P\-L\-A\-T\-E} = \char`\"{}35 20\char`\"{}
+\item 
+static std\-::string \hyperlink{class_line_data_aabe10496e27e0f52cf6487551c4cb134}{D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E} = \char`\"{}2 2\char`\"{}
+\item 
+static std\-::string \hyperlink{class_line_data_aa8a68011b56ff20d76323e1d38929699}{D\-A\-S\-H\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E} = \char`\"{}35 20 7 20\char`\"{}
+\item 
+static std\-::string \hyperlink{class_line_data_ada248a7a1094de4b553f165ebafb8e9f}{D\-A\-S\-H\-D\-O\-T\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E} = \char`\"{}35 20 7 15 7 20\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Перечисления}
+\hypertarget{class_line_data_af2e2ee6851256e24a12203eda9402bea}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{class_line_data_af2e2ee6851256e24a12203eda9402bea}
+\begin{Desc}
+\item[Элементы перечислений]\par
+\begin{description}
+\index{R\-O\-U\-N\-D@{R\-O\-U\-N\-D}!Line\-Data@{Line\-Data}}\index{Line\-Data@{Line\-Data}!R\-O\-U\-N\-D@{R\-O\-U\-N\-D}}\item[{\em 
+\hypertarget{class_line_data_af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3}{R\-O\-U\-N\-D}\label{class_line_data_af2e2ee6851256e24a12203eda9402beaaab3bff3f6a4c9347d819e65d05f5fec3}
+}]\index{F\-L\-A\-T@{F\-L\-A\-T}!Line\-Data@{Line\-Data}}\index{Line\-Data@{Line\-Data}!F\-L\-A\-T@{F\-L\-A\-T}}\item[{\em 
+\hypertarget{class_line_data_af2e2ee6851256e24a12203eda9402beaa396289cd387c745e869339a2c24aedb3}{F\-L\-A\-T}\label{class_line_data_af2e2ee6851256e24a12203eda9402beaa396289cd387c745e869339a2c24aedb3}
+}]\index{S\-Q\-U\-A\-R\-E@{S\-Q\-U\-A\-R\-E}!Line\-Data@{Line\-Data}}\index{Line\-Data@{Line\-Data}!S\-Q\-U\-A\-R\-E@{S\-Q\-U\-A\-R\-E}}\item[{\em 
+\hypertarget{class_line_data_af2e2ee6851256e24a12203eda9402beaa24fd149f57d8f62d24ffb01013324720}{S\-Q\-U\-A\-R\-E}\label{class_line_data_af2e2ee6851256e24a12203eda9402beaa24fd149f57d8f62d24ffb01013324720}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_line_data_af4d6ef9378681b4dd72ccac52c8f4e47}{\index{Line\-Data@{Line\-Data}!Line\-Data@{Line\-Data}}
+\index{Line\-Data@{Line\-Data}!LineData@{Line\-Data}}
+\subsubsection[{Line\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Line\-Data\-::\-Line\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_line_data_af4d6ef9378681b4dd72ccac52c8f4e47}
+\hypertarget{class_line_data_ac9b85808f69d4f6cfe3741bbfcd65da6}{\index{Line\-Data@{Line\-Data}!Line\-Data@{Line\-Data}}
+\index{Line\-Data@{Line\-Data}!LineData@{Line\-Data}}
+\subsubsection[{Line\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Line\-Data\-::\-Line\-Data (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr, }
+\item[{int}]{n\-Width, }
+\item[{int}]{n\-Type, }
+\item[{int}]{n\-End\-Caps = {\ttfamily {\bf R\-O\-U\-N\-D}}, }
+\item[{std\-::string}]{str\-Template = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_line_data_ac9b85808f69d4f6cfe3741bbfcd65da6}
+\hypertarget{class_line_data_a4125b467a9d8d880027c36f8a04ec188}{\index{Line\-Data@{Line\-Data}!Line\-Data@{Line\-Data}}
+\index{Line\-Data@{Line\-Data}!LineData@{Line\-Data}}
+\subsubsection[{Line\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Line\-Data\-::\-Line\-Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf Line\-Data} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_line_data_a4125b467a9d8d880027c36f8a04ec188}
+\hypertarget{class_line_data_a8cb45a237eeea2c7c49a8344286e8ab4}{\index{Line\-Data@{Line\-Data}!$\sim$\-Line\-Data@{$\sim$\-Line\-Data}}
+\index{$\sim$\-Line\-Data@{$\sim$\-Line\-Data}!LineData@{Line\-Data}}
+\subsubsection[{$\sim$\-Line\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Line\-Data\-::$\sim$\-Line\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_line_data_a8cb45a237eeea2c7c49a8344286e8ab4}
+
+
+\subsection{Методы}
+\hypertarget{class_line_data_aeb4bfdd0dc43e28b44efe5726b3b7621}{\index{Line\-Data@{Line\-Data}!Create\-Pen@{Create\-Pen}}
+\index{Create\-Pen@{Create\-Pen}!LineData@{Line\-Data}}
+\subsubsection[{Create\-Pen}]{\setlength{\rightskip}{0pt plus 5cm}void Line\-Data\-::\-Create\-Pen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_line_data_aeb4bfdd0dc43e28b44efe5726b3b7621}
+\hypertarget{class_line_data_a207269015f81f59b4dbc32bd402f5d2c}{\index{Line\-Data@{Line\-Data}!Get\-Color@{Get\-Color}}
+\index{Get\-Color@{Get\-Color}!LineData@{Line\-Data}}
+\subsubsection[{Get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F Line\-Data\-::\-Get\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_line_data_a207269015f81f59b4dbc32bd402f5d2c}
+\hypertarget{class_line_data_ae6cfbcfa7fd82a8a4d4df981cef33f01}{\index{Line\-Data@{Line\-Data}!Get\-End\-Caps@{Get\-End\-Caps}}
+\index{Get\-End\-Caps@{Get\-End\-Caps}!LineData@{Line\-Data}}
+\subsubsection[{Get\-End\-Caps}]{\setlength{\rightskip}{0pt plus 5cm}int Line\-Data\-::\-Get\-End\-Caps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_line_data_ae6cfbcfa7fd82a8a4d4df981cef33f01}
+\hypertarget{class_line_data_a29bc4b864d24ccd29f2edd397f546670}{\index{Line\-Data@{Line\-Data}!Get\-Pen@{Get\-Pen}}
+\index{Get\-Pen@{Get\-Pen}!LineData@{Line\-Data}}
+\subsubsection[{Get\-Pen}]{\setlength{\rightskip}{0pt plus 5cm}H\-P\-E\-N Line\-Data\-::\-Get\-Pen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_line_data_a29bc4b864d24ccd29f2edd397f546670}
+\hypertarget{class_line_data_abee244a667b9543d42eb1170fff9682d}{\index{Line\-Data@{Line\-Data}!Get\-Template@{Get\-Template}}
+\index{Get\-Template@{Get\-Template}!LineData@{Line\-Data}}
+\subsubsection[{Get\-Template}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string\& Line\-Data\-::\-Get\-Template (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_line_data_abee244a667b9543d42eb1170fff9682d}
+\hypertarget{class_line_data_af15a08103fa48085eb4ad0ab4888988f}{\index{Line\-Data@{Line\-Data}!Get\-Type@{Get\-Type}}
+\index{Get\-Type@{Get\-Type}!LineData@{Line\-Data}}
+\subsubsection[{Get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Line\-Data\-::\-Get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_line_data_af15a08103fa48085eb4ad0ab4888988f}
+\hypertarget{class_line_data_a3fcb7592c8bca72b953fda51b0432d75}{\index{Line\-Data@{Line\-Data}!Get\-Width@{Get\-Width}}
+\index{Get\-Width@{Get\-Width}!LineData@{Line\-Data}}
+\subsubsection[{Get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int Line\-Data\-::\-Get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_line_data_a3fcb7592c8bca72b953fda51b0432d75}
+\hypertarget{class_line_data_aaaddb4cdac3046ec53caa1e01e91369c}{\index{Line\-Data@{Line\-Data}!operator H\-P\-E\-N@{operator H\-P\-E\-N}}
+\index{operator H\-P\-E\-N@{operator H\-P\-E\-N}!LineData@{Line\-Data}}
+\subsubsection[{operator H\-P\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}Line\-Data\-::operator H\-P\-E\-N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_line_data_aaaddb4cdac3046ec53caa1e01e91369c}
+\hypertarget{class_line_data_abb21b7f48aa99ace40cfdff6965fb9df}{\index{Line\-Data@{Line\-Data}!operator=@{operator=}}
+\index{operator=@{operator=}!LineData@{Line\-Data}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Line\-Data} \& Line\-Data\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Line\-Data} \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{class_line_data_abb21b7f48aa99ace40cfdff6965fb9df}
+\hypertarget{class_line_data_a06d80ee01d05207cf4470dc37662a733}{\index{Line\-Data@{Line\-Data}!Read@{Read}}
+\index{Read@{Read}!LineData@{Line\-Data}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Line\-Data\-::\-Read (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+)}}\label{class_line_data_a06d80ee01d05207cf4470dc37662a733}
+\hypertarget{class_line_data_a4590c5b7fb46b8f9194e34ba67642b09}{\index{Line\-Data@{Line\-Data}!Set\-Color@{Set\-Color}}
+\index{Set\-Color@{Set\-Color}!LineData@{Line\-Data}}
+\subsubsection[{Set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Line\-Data\-::\-Set\-Color (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{color}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_line_data_a4590c5b7fb46b8f9194e34ba67642b09}
+\hypertarget{class_line_data_a992ddca82ec4472929a7cf7c613a3619}{\index{Line\-Data@{Line\-Data}!Set\-End\-Caps@{Set\-End\-Caps}}
+\index{Set\-End\-Caps@{Set\-End\-Caps}!LineData@{Line\-Data}}
+\subsubsection[{Set\-End\-Caps}]{\setlength{\rightskip}{0pt plus 5cm}void Line\-Data\-::\-Set\-End\-Caps (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-End\-Caps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_line_data_a992ddca82ec4472929a7cf7c613a3619}
+\hypertarget{class_line_data_a8ecfe5b4b82f1d4b0d67c1e773b60246}{\index{Line\-Data@{Line\-Data}!Set\-Template@{Set\-Template}}
+\index{Set\-Template@{Set\-Template}!LineData@{Line\-Data}}
+\subsubsection[{Set\-Template}]{\setlength{\rightskip}{0pt plus 5cm}void Line\-Data\-::\-Set\-Template (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{str\-Template}
+\end{DoxyParamCaption}
+)}}\label{class_line_data_a8ecfe5b4b82f1d4b0d67c1e773b60246}
+\hypertarget{class_line_data_af1c04fa13836884d9cb64e8fc3387370}{\index{Line\-Data@{Line\-Data}!Set\-Type@{Set\-Type}}
+\index{Set\-Type@{Set\-Type}!LineData@{Line\-Data}}
+\subsubsection[{Set\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Line\-Data\-::\-Set\-Type (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Type}
+\end{DoxyParamCaption}
+)}}\label{class_line_data_af1c04fa13836884d9cb64e8fc3387370}
+\hypertarget{class_line_data_ad60bf3e430a63d31c086c393178c01c5}{\index{Line\-Data@{Line\-Data}!Set\-Width@{Set\-Width}}
+\index{Set\-Width@{Set\-Width}!LineData@{Line\-Data}}
+\subsubsection[{Set\-Width}]{\setlength{\rightskip}{0pt plus 5cm}void Line\-Data\-::\-Set\-Width (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Width}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_line_data_ad60bf3e430a63d31c086c393178c01c5}
+\hypertarget{class_line_data_a95fa94b2614d7058386f82e7c3a2a96d}{\index{Line\-Data@{Line\-Data}!Update\-Line\-Template@{Update\-Line\-Template}}
+\index{Update\-Line\-Template@{Update\-Line\-Template}!LineData@{Line\-Data}}
+\subsubsection[{Update\-Line\-Template}]{\setlength{\rightskip}{0pt plus 5cm}void Line\-Data\-::\-Update\-Line\-Template (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_line_data_a95fa94b2614d7058386f82e7c3a2a96d}
+\hypertarget{class_line_data_a849c0984d5faba99bb2fa351d6a30801}{\index{Line\-Data@{Line\-Data}!Write@{Write}}
+\index{Write@{Write}!LineData@{Line\-Data}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Line\-Data\-::\-Write (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+) const}}\label{class_line_data_a849c0984d5faba99bb2fa351d6a30801}
+
+
+\subsection{Данные класса}
+\hypertarget{class_line_data_ada248a7a1094de4b553f165ebafb8e9f}{\index{Line\-Data@{Line\-Data}!D\-A\-S\-H\-D\-O\-T\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E@{D\-A\-S\-H\-D\-O\-T\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E}}
+\index{D\-A\-S\-H\-D\-O\-T\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E@{D\-A\-S\-H\-D\-O\-T\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E}!LineData@{Line\-Data}}
+\subsubsection[{D\-A\-S\-H\-D\-O\-T\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Line\-Data\-::\-D\-A\-S\-H\-D\-O\-T\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E = \char`\"{}35 20 7 15 7 20\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_line_data_ada248a7a1094de4b553f165ebafb8e9f}
+\hypertarget{class_line_data_aa8a68011b56ff20d76323e1d38929699}{\index{Line\-Data@{Line\-Data}!D\-A\-S\-H\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E@{D\-A\-S\-H\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E}}
+\index{D\-A\-S\-H\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E@{D\-A\-S\-H\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E}!LineData@{Line\-Data}}
+\subsubsection[{D\-A\-S\-H\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Line\-Data\-::\-D\-A\-S\-H\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E = \char`\"{}35 20 7 20\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_line_data_aa8a68011b56ff20d76323e1d38929699}
+\hypertarget{class_line_data_a19e0f6bc94691eee641daf9a12e37cb0}{\index{Line\-Data@{Line\-Data}!D\-A\-S\-H\-T\-E\-M\-P\-L\-A\-T\-E@{D\-A\-S\-H\-T\-E\-M\-P\-L\-A\-T\-E}}
+\index{D\-A\-S\-H\-T\-E\-M\-P\-L\-A\-T\-E@{D\-A\-S\-H\-T\-E\-M\-P\-L\-A\-T\-E}!LineData@{Line\-Data}}
+\subsubsection[{D\-A\-S\-H\-T\-E\-M\-P\-L\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Line\-Data\-::\-D\-A\-S\-H\-T\-E\-M\-P\-L\-A\-T\-E = \char`\"{}35 20\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_line_data_a19e0f6bc94691eee641daf9a12e37cb0}
+\hypertarget{class_line_data_aabe10496e27e0f52cf6487551c4cb134}{\index{Line\-Data@{Line\-Data}!D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E@{D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E}}
+\index{D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E@{D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E}!LineData@{Line\-Data}}
+\subsubsection[{D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Line\-Data\-::\-D\-O\-T\-T\-E\-M\-P\-L\-A\-T\-E = \char`\"{}2 2\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_line_data_aabe10496e27e0f52cf6487551c4cb134}
+\hypertarget{class_line_data_a641038e14c82d7641df6b1f2e1fd7590}{\index{Line\-Data@{Line\-Data}!m\-\_\-color@{m\-\_\-color}}
+\index{m\-\_\-color@{m\-\_\-color}!LineData@{Line\-Data}}
+\subsubsection[{m\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F Line\-Data\-::m\-\_\-color\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_line_data_a641038e14c82d7641df6b1f2e1fd7590}
+\hypertarget{class_line_data_a671e8aa8a421242fd1a16bf7759220fa}{\index{Line\-Data@{Line\-Data}!m\-\_\-end\-Caps@{m\-\_\-end\-Caps}}
+\index{m\-\_\-end\-Caps@{m\-\_\-end\-Caps}!LineData@{Line\-Data}}
+\subsubsection[{m\-\_\-end\-Caps}]{\setlength{\rightskip}{0pt plus 5cm}int Line\-Data\-::m\-\_\-end\-Caps\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_line_data_a671e8aa8a421242fd1a16bf7759220fa}
+\hypertarget{class_line_data_a2774a276fe32645f8d0b44a3032fbf48}{\index{Line\-Data@{Line\-Data}!m\-\_\-pen@{m\-\_\-pen}}
+\index{m\-\_\-pen@{m\-\_\-pen}!LineData@{Line\-Data}}
+\subsubsection[{m\-\_\-pen}]{\setlength{\rightskip}{0pt plus 5cm}H\-P\-E\-N Line\-Data\-::m\-\_\-pen\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_line_data_a2774a276fe32645f8d0b44a3032fbf48}
+\hypertarget{class_line_data_ab1383399938d3d85c3f3b1caa488f322}{\index{Line\-Data@{Line\-Data}!m\-\_\-template@{m\-\_\-template}}
+\index{m\-\_\-template@{m\-\_\-template}!LineData@{Line\-Data}}
+\subsubsection[{m\-\_\-template}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Line\-Data\-::m\-\_\-template\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_line_data_ab1383399938d3d85c3f3b1caa488f322}
+\hypertarget{class_line_data_a67b36139f7b94ec45cbb434cf597ec09}{\index{Line\-Data@{Line\-Data}!m\-\_\-type@{m\-\_\-type}}
+\index{m\-\_\-type@{m\-\_\-type}!LineData@{Line\-Data}}
+\subsubsection[{m\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int Line\-Data\-::m\-\_\-type\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_line_data_a67b36139f7b94ec45cbb434cf597ec09}
+\hypertarget{class_line_data_a2f510fa43948464d6764fc3e117b5006}{\index{Line\-Data@{Line\-Data}!m\-\_\-width@{m\-\_\-width}}
+\index{m\-\_\-width@{m\-\_\-width}!LineData@{Line\-Data}}
+\subsubsection[{m\-\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}int Line\-Data\-::m\-\_\-width\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_line_data_a2f510fa43948464d6764fc3e117b5006}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{linedata_8h}{linedata.\-h}\item 
+src/\hyperlink{linedata_8cpp}{linedata.\-cpp}\end{DoxyCompactItemize}

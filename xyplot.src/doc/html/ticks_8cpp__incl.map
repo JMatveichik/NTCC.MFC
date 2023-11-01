@@ -1,0 +1,12 @@
+<map id="src/ticks.cpp" name="src/ticks.cpp">
+<area shape="rect" id="node2" href="$stdafx_8h.html" title="stdafx.h" alt="" coords="622,155,690,181"/>
+<area shape="rect" id="node16" href="$ticks_8h.html" title="ticks.h" alt="" coords="749,155,811,181"/>
+<area shape="rect" id="node19" href="$_axis_8h.html" title="axis.h" alt="" coords="1059,80,1117,107"/>
+<area shape="rect" id="node20" href="$linedata_8h.html" title="LineData.h" alt="" coords="1385,155,1469,181"/>
+<area shape="rect" id="node17" href="$_savable_item_8h.html" title="SavableItem.h" alt="" coords="1105,229,1207,256"/>
+<area shape="rect" id="node22" href="$digits_8h.html" title="Digits.h" alt="" coords="1155,155,1221,181"/>
+<area shape="rect" id="node23" href="$label_8h.html" title="Label.h" alt="" coords="1245,155,1309,181"/>
+<area shape="rect" id="node24" href="$_gridlines_8h.html" title="Gridlines.h" alt="" coords="1046,155,1130,181"/>
+<area shape="rect" id="node25" href="$_coord_converter_8h.html" title="CoordConverter.h" alt="" coords="835,155,957,181"/>
+<area shape="rect" id="node21" href="$xyplotconst_8h.html" title="Содержит константы и перечисляемые типы . " alt="" coords="1435,229,1543,256"/>
+</map>

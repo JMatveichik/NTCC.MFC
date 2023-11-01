@@ -1,0 +1,123 @@
+\hypertarget{group__gr_rgn_ex}{\section{Регионы.}
+\label{group__gr_rgn_ex}\index{Регионы.@{Регионы.}}
+}
+
+
+Функции для работы регионами.  
+
+
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n}{H\-P\-L\-O\-T\-R\-E\-G\-I\-O\-N} \hyperlink{group__gr_rgn_ex_ga7505d9ffcaedba6a7b8861b537e3eb23}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Create\-Region} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, long axis\-X, long axis\-Y, double x\-From, double x\-To, double y\-From, double y\-To, const char $\ast$psz\-Title)
+\begin{DoxyCompactList}\small\item\em Создания экземпляра региона \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_rgn_ex_ga752b100470bc7e465f283a957c67a24d}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Delete\-Region} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n}{H\-P\-L\-O\-T\-R\-E\-G\-I\-O\-N} \&h\-Region)
+\begin{DoxyCompactList}\small\item\em Удаление региона \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_rgn_ex_ga8e9c9b0cf069c241d4b3349ef7eec32b}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Set\-Region} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, \hyperlink{classxyplot_1_1_h_p_l_o_t_r_e_g_i_o_n}{H\-P\-L\-O\-T\-R\-E\-G\-I\-O\-N} \&h\-Region, double x\-From, double x\-To, double y\-From, double y\-To)
+\begin{DoxyCompactList}\small\item\em Задание новых границ региона \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Функции для работы регионами. 
+
+\subsection{Функции}
+\hypertarget{group__gr_rgn_ex_ga7505d9ffcaedba6a7b8861b537e3eb23}{\index{Регионы.@{Регионы.}!Create\-Region@{Create\-Region}}
+\index{Create\-Region@{Create\-Region}!Регионы.@{Регионы.}}
+\subsubsection[{Create\-Region}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\-P\-L\-O\-T\-R\-E\-G\-I\-O\-N} X\-Y\-Plot\-Manager\-::\-Create\-Region (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf long}}]{axis\-X, }
+\item[{{\bf long}}]{axis\-Y, }
+\item[{double}]{x\-From, }
+\item[{double}]{x\-To, }
+\item[{double}]{y\-From, }
+\item[{double}]{y\-To, }
+\item[{const char $\ast$}]{psz\-Title}
+\end{DoxyParamCaption}
+)}}\label{group__gr_rgn_ex_ga7505d9ffcaedba6a7b8861b537e3eb23}
+
+
+Создания экземпляра региона 
+
+Создания прямоугольной области графика ограниченного линиями с координатами \mbox{[}x\-From, y\-From\mbox{]} и \mbox{[}x\-To, y\-To\mbox{]}. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика для которого создается регион \\
+\hline
+ & {\em axis\-X} & ось X, для которой создается регион \\
+\hline
+ & {\em axis\-Y} & ось Y, для которой создается регион \\
+\hline
+ & {\em x\-From} & начальное значение региона физических единицах по оси X \\
+\hline
+ & {\em x\-To} & конечное значение региона физических единицах по оси X \\
+\hline
+ & {\em y\-From} & начальное значение региона физических единицах по оси Y \\
+\hline
+ & {\em y\-To} & конечное значение региона физических единицах по оси Y \\
+\hline
+ & {\em psz\-Title} & подпись региона \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+дескриптор экземпляра региона 
+\end{DoxyReturn}
+\hypertarget{group__gr_rgn_ex_ga752b100470bc7e465f283a957c67a24d}{\index{Регионы.@{Регионы.}!Delete\-Region@{Delete\-Region}}
+\index{Delete\-Region@{Delete\-Region}!Регионы.@{Регионы.}}
+\subsubsection[{Delete\-Region}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Delete\-Region (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-P\-L\-O\-T\-R\-E\-G\-I\-O\-N} \&}]{h\-Region}
+\end{DoxyParamCaption}
+)}}\label{group__gr_rgn_ex_ga752b100470bc7e465f283a957c67a24d}
+
+
+Удаление региона 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика содержащий регион \\
+\hline
+ & {\em h\-Region} & дескриптор региона \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если регион удален 
+
+false если регион не удален 
+\end{DoxyReturn}
+\hypertarget{group__gr_rgn_ex_ga8e9c9b0cf069c241d4b3349ef7eec32b}{\index{Регионы.@{Регионы.}!Set\-Region@{Set\-Region}}
+\index{Set\-Region@{Set\-Region}!Регионы.@{Регионы.}}
+\subsubsection[{Set\-Region}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Set\-Region (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{{\bf H\-P\-L\-O\-T\-R\-E\-G\-I\-O\-N} \&}]{h\-Region, }
+\item[{double}]{x\-From, }
+\item[{double}]{x\-To, }
+\item[{double}]{y\-From, }
+\item[{double}]{y\-To}
+\end{DoxyParamCaption}
+)}}\label{group__gr_rgn_ex_ga8e9c9b0cf069c241d4b3349ef7eec32b}
+
+
+Задание новых границ региона 
+
+Границы региона прямоугольной области графика перемещаются в новое положение x\-From, y\-From, x\-To, y\-To. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & дескриптор экземпляра 2\-D графика для региона \\
+\hline
+ & {\em h\-Region} & дескриптор региона \\
+\hline
+ & {\em x\-From} & новое начальное значение региона в физических единицах по оси X \\
+\hline
+ & {\em x\-To} & новое конечное значение региона в физических единицах по оси X \\
+\hline
+ & {\em y\-From} & новое начальное значение региона в физических единицах по оси Y \\
+\hline
+ & {\em y\-To} & новое конечное значение региона в физических единицах по оси Y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true если удалось поменять значение границ региона 
+
+false если не удалось поменять значение границ региона 
+\end{DoxyReturn}

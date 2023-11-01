@@ -1,0 +1,231 @@
+\hypertarget{class_back_ground}{\section{Класс Back\-Ground}
+\label{class_back_ground}\index{Back\-Ground@{Back\-Ground}}
+}
+
+
+{\ttfamily \#include $<$Back\-Ground\-Fill.\-h$>$}
+
+
+
+Граф наследования\-:Back\-Ground\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_back_ground__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Back\-Ground\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{class_back_ground__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_back_ground_a6a3fe7aa2ec8d57d372d336cd2d64337}{Back\-Ground} ()
+\item 
+virtual \hyperlink{class_back_ground_a6b14298ad37f17f054babadb2450f737}{$\sim$\-Back\-Ground} ()
+\item 
+void \hyperlink{class_back_ground_a3e779771d8962541787f3b9c1f265bd3}{Enable} (B\-O\-O\-L enable=T\-R\-U\-E)
+\item 
+void \hyperlink{class_back_ground_aa37dd21e916dcee3eee285103316b39e}{Get\-Colors} (C\-O\-L\-O\-R\-R\-E\-F \&\hyperlink{class_back_ground_ace5c696580cb70d04c43326e313d5086}{clr\-Start}, C\-O\-L\-O\-R\-R\-E\-F \&\hyperlink{class_back_ground_a76b44a73628e8503a1e56bc5253a5b1a}{clr\-Finish}) const 
+\item 
+void \hyperlink{class_back_ground_aa1000b4ae87a005caf92cbb10f948042}{Set\-Colors} (C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_back_ground_ace5c696580cb70d04c43326e313d5086}{clr\-Start}, C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_back_ground_a76b44a73628e8503a1e56bc5253a5b1a}{clr\-Finish})
+\item 
+void \hyperlink{class_back_ground_a65c9d4832f32f76967db4985b774f272}{Get\-Alpha\-Blend} (B\-Y\-T\-E \&\hyperlink{class_back_ground_ad3d27841bc53e26e464ed774aeaaad8d}{alpha\-Start}, B\-Y\-T\-E \&\hyperlink{class_back_ground_ae275790b73848c8919b63541ae948b0e}{alpha\-Finish}) const 
+\item 
+void \hyperlink{class_back_ground_a02d0cb2d464f0e90ca8cc430ffdc4553}{Set\-Alpha\-Blend} (B\-Y\-T\-E \hyperlink{class_back_ground_ad3d27841bc53e26e464ed774aeaaad8d}{alpha\-Start}, B\-Y\-T\-E \hyperlink{class_back_ground_ae275790b73848c8919b63541ae948b0e}{alpha\-Finish})
+\item 
+void \hyperlink{class_back_ground_a1e9833fea7630aa126314ede719a7776}{Set\-Gradient\-Direction} (B\-O\-O\-L \hyperlink{class_back_ground_a60e91e14cfea358477466c03bc918514}{vertical})
+\item 
+B\-O\-O\-L \hyperlink{class_back_ground_a1a10af7b8980d1268def9527f7e6cbce}{Get\-Gradient\-Direction} () const 
+\item 
+void \hyperlink{class_back_ground_a4e308cb320d9b028518c4fcdd3819ee6}{Set\-Rect} (const R\-E\-C\-T \&rc)
+\item 
+void \hyperlink{class_back_ground_afe1f339143f5c35bce336c130debf60e}{On\-Draw} (H\-D\-C hdc) const 
+\item 
+virtual B\-O\-O\-L \hyperlink{class_back_ground_ab21bb3686aac638ef0da5fb9a72c3925}{Write} (H\-A\-N\-D\-L\-E h\-File) const 
+\item 
+virtual B\-O\-O\-L \hyperlink{class_back_ground_aba05f03ff7484a1afad33c9400baf644}{Read} (H\-A\-N\-D\-L\-E h\-File)
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_back_ground_a3561380bde27c92d3f8457dcc3c7e91d}{Fill\-Rect\-With\-Gradient} (H\-D\-C hdc, const R\-E\-C\-T \&rc, C\-O\-L\-O\-R\-R\-E\-F clr1, C\-O\-L\-O\-R\-R\-E\-F clr2, B\-Y\-T\-E alpha1, B\-Y\-T\-E alpha2, B\-O\-O\-L b\-Vertical)
+\end{DoxyCompactItemize}
+\subsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L \hyperlink{class_back_ground_a7f8e544399813801ce7dc06509a4c062}{enabled}
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_back_ground_ace5c696580cb70d04c43326e313d5086}{clr\-Start}
+\item 
+C\-O\-L\-O\-R\-R\-E\-F \hyperlink{class_back_ground_a76b44a73628e8503a1e56bc5253a5b1a}{clr\-Finish}
+\item 
+B\-Y\-T\-E \hyperlink{class_back_ground_ad3d27841bc53e26e464ed774aeaaad8d}{alpha\-Start}
+\item 
+B\-Y\-T\-E \hyperlink{class_back_ground_ae275790b73848c8919b63541ae948b0e}{alpha\-Finish}
+\item 
+B\-O\-O\-L \hyperlink{class_back_ground_a60e91e14cfea358477466c03bc918514}{vertical}
+\item 
+R\-E\-C\-T \hyperlink{class_back_ground_ab617902b70204abeba1512a5a85c3114}{rc\-Fill}
+\end{DoxyCompactItemize}
+\subsection*{Дополнительные унаследованные члены}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_back_ground_a6a3fe7aa2ec8d57d372d336cd2d64337}{\index{Back\-Ground@{Back\-Ground}!Back\-Ground@{Back\-Ground}}
+\index{Back\-Ground@{Back\-Ground}!BackGround@{Back\-Ground}}
+\subsubsection[{Back\-Ground}]{\setlength{\rightskip}{0pt plus 5cm}Back\-Ground\-::\-Back\-Ground (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_back_ground_a6a3fe7aa2ec8d57d372d336cd2d64337}
+\hypertarget{class_back_ground_a6b14298ad37f17f054babadb2450f737}{\index{Back\-Ground@{Back\-Ground}!$\sim$\-Back\-Ground@{$\sim$\-Back\-Ground}}
+\index{$\sim$\-Back\-Ground@{$\sim$\-Back\-Ground}!BackGround@{Back\-Ground}}
+\subsubsection[{$\sim$\-Back\-Ground}]{\setlength{\rightskip}{0pt plus 5cm}virtual Back\-Ground\-::$\sim$\-Back\-Ground (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_back_ground_a6b14298ad37f17f054babadb2450f737}
+
+
+\subsection{Методы}
+\hypertarget{class_back_ground_a3e779771d8962541787f3b9c1f265bd3}{\index{Back\-Ground@{Back\-Ground}!Enable@{Enable}}
+\index{Enable@{Enable}!BackGround@{Back\-Ground}}
+\subsubsection[{Enable}]{\setlength{\rightskip}{0pt plus 5cm}void Back\-Ground\-::\-Enable (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{enable = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_back_ground_a3e779771d8962541787f3b9c1f265bd3}
+\hypertarget{class_back_ground_a3561380bde27c92d3f8457dcc3c7e91d}{\index{Back\-Ground@{Back\-Ground}!Fill\-Rect\-With\-Gradient@{Fill\-Rect\-With\-Gradient}}
+\index{Fill\-Rect\-With\-Gradient@{Fill\-Rect\-With\-Gradient}!BackGround@{Back\-Ground}}
+\subsubsection[{Fill\-Rect\-With\-Gradient}]{\setlength{\rightskip}{0pt plus 5cm}void Back\-Ground\-::\-Fill\-Rect\-With\-Gradient (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc, }
+\item[{const R\-E\-C\-T \&}]{rc, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr1, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr2, }
+\item[{B\-Y\-T\-E}]{alpha1, }
+\item[{B\-Y\-T\-E}]{alpha2, }
+\item[{B\-O\-O\-L}]{b\-Vertical}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_back_ground_a3561380bde27c92d3f8457dcc3c7e91d}
+\hypertarget{class_back_ground_a65c9d4832f32f76967db4985b774f272}{\index{Back\-Ground@{Back\-Ground}!Get\-Alpha\-Blend@{Get\-Alpha\-Blend}}
+\index{Get\-Alpha\-Blend@{Get\-Alpha\-Blend}!BackGround@{Back\-Ground}}
+\subsubsection[{Get\-Alpha\-Blend}]{\setlength{\rightskip}{0pt plus 5cm}void Back\-Ground\-::\-Get\-Alpha\-Blend (
+\begin{DoxyParamCaption}
+\item[{B\-Y\-T\-E \&}]{alpha\-Start, }
+\item[{B\-Y\-T\-E \&}]{alpha\-Finish}
+\end{DoxyParamCaption}
+) const}}\label{class_back_ground_a65c9d4832f32f76967db4985b774f272}
+\hypertarget{class_back_ground_aa37dd21e916dcee3eee285103316b39e}{\index{Back\-Ground@{Back\-Ground}!Get\-Colors@{Get\-Colors}}
+\index{Get\-Colors@{Get\-Colors}!BackGround@{Back\-Ground}}
+\subsubsection[{Get\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}void Back\-Ground\-::\-Get\-Colors (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F \&}]{clr\-Start, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F \&}]{clr\-Finish}
+\end{DoxyParamCaption}
+) const}}\label{class_back_ground_aa37dd21e916dcee3eee285103316b39e}
+\hypertarget{class_back_ground_a1a10af7b8980d1268def9527f7e6cbce}{\index{Back\-Ground@{Back\-Ground}!Get\-Gradient\-Direction@{Get\-Gradient\-Direction}}
+\index{Get\-Gradient\-Direction@{Get\-Gradient\-Direction}!BackGround@{Back\-Ground}}
+\subsubsection[{Get\-Gradient\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Back\-Ground\-::\-Get\-Gradient\-Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_back_ground_a1a10af7b8980d1268def9527f7e6cbce}
+\hypertarget{class_back_ground_afe1f339143f5c35bce336c130debf60e}{\index{Back\-Ground@{Back\-Ground}!On\-Draw@{On\-Draw}}
+\index{On\-Draw@{On\-Draw}!BackGround@{Back\-Ground}}
+\subsubsection[{On\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Back\-Ground\-::\-On\-Draw (
+\begin{DoxyParamCaption}
+\item[{H\-D\-C}]{hdc}
+\end{DoxyParamCaption}
+) const}}\label{class_back_ground_afe1f339143f5c35bce336c130debf60e}
+\hypertarget{class_back_ground_aba05f03ff7484a1afad33c9400baf644}{\index{Back\-Ground@{Back\-Ground}!Read@{Read}}
+\index{Read@{Read}!BackGround@{Back\-Ground}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Back\-Ground\-::\-Read (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_back_ground_aba05f03ff7484a1afad33c9400baf644}
+
+
+Замещает \hyperlink{class_savable_item_a7eadd16b2cb0652091cc15f596a00fb2}{Savable\-Item}.
+
+\hypertarget{class_back_ground_a02d0cb2d464f0e90ca8cc430ffdc4553}{\index{Back\-Ground@{Back\-Ground}!Set\-Alpha\-Blend@{Set\-Alpha\-Blend}}
+\index{Set\-Alpha\-Blend@{Set\-Alpha\-Blend}!BackGround@{Back\-Ground}}
+\subsubsection[{Set\-Alpha\-Blend}]{\setlength{\rightskip}{0pt plus 5cm}void Back\-Ground\-::\-Set\-Alpha\-Blend (
+\begin{DoxyParamCaption}
+\item[{B\-Y\-T\-E}]{alpha\-Start, }
+\item[{B\-Y\-T\-E}]{alpha\-Finish}
+\end{DoxyParamCaption}
+)}}\label{class_back_ground_a02d0cb2d464f0e90ca8cc430ffdc4553}
+\hypertarget{class_back_ground_aa1000b4ae87a005caf92cbb10f948042}{\index{Back\-Ground@{Back\-Ground}!Set\-Colors@{Set\-Colors}}
+\index{Set\-Colors@{Set\-Colors}!BackGround@{Back\-Ground}}
+\subsubsection[{Set\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}void Back\-Ground\-::\-Set\-Colors (
+\begin{DoxyParamCaption}
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr\-Start, }
+\item[{C\-O\-L\-O\-R\-R\-E\-F}]{clr\-Finish}
+\end{DoxyParamCaption}
+)}}\label{class_back_ground_aa1000b4ae87a005caf92cbb10f948042}
+\hypertarget{class_back_ground_a1e9833fea7630aa126314ede719a7776}{\index{Back\-Ground@{Back\-Ground}!Set\-Gradient\-Direction@{Set\-Gradient\-Direction}}
+\index{Set\-Gradient\-Direction@{Set\-Gradient\-Direction}!BackGround@{Back\-Ground}}
+\subsubsection[{Set\-Gradient\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}void Back\-Ground\-::\-Set\-Gradient\-Direction (
+\begin{DoxyParamCaption}
+\item[{B\-O\-O\-L}]{vertical}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_back_ground_a1e9833fea7630aa126314ede719a7776}
+\hypertarget{class_back_ground_a4e308cb320d9b028518c4fcdd3819ee6}{\index{Back\-Ground@{Back\-Ground}!Set\-Rect@{Set\-Rect}}
+\index{Set\-Rect@{Set\-Rect}!BackGround@{Back\-Ground}}
+\subsubsection[{Set\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void Back\-Ground\-::\-Set\-Rect (
+\begin{DoxyParamCaption}
+\item[{const R\-E\-C\-T \&}]{rc}
+\end{DoxyParamCaption}
+)}}\label{class_back_ground_a4e308cb320d9b028518c4fcdd3819ee6}
+\hypertarget{class_back_ground_ab21bb3686aac638ef0da5fb9a72c3925}{\index{Back\-Ground@{Back\-Ground}!Write@{Write}}
+\index{Write@{Write}!BackGround@{Back\-Ground}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Back\-Ground\-::\-Write (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-File}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_back_ground_ab21bb3686aac638ef0da5fb9a72c3925}
+
+
+Замещает \hyperlink{class_savable_item_a0da511a4854f515096f8f9b498f64158}{Savable\-Item}.
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_back_ground_ae275790b73848c8919b63541ae948b0e}{\index{Back\-Ground@{Back\-Ground}!alpha\-Finish@{alpha\-Finish}}
+\index{alpha\-Finish@{alpha\-Finish}!BackGround@{Back\-Ground}}
+\subsubsection[{alpha\-Finish}]{\setlength{\rightskip}{0pt plus 5cm}B\-Y\-T\-E Back\-Ground\-::alpha\-Finish\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_back_ground_ae275790b73848c8919b63541ae948b0e}
+\hypertarget{class_back_ground_ad3d27841bc53e26e464ed774aeaaad8d}{\index{Back\-Ground@{Back\-Ground}!alpha\-Start@{alpha\-Start}}
+\index{alpha\-Start@{alpha\-Start}!BackGround@{Back\-Ground}}
+\subsubsection[{alpha\-Start}]{\setlength{\rightskip}{0pt plus 5cm}B\-Y\-T\-E Back\-Ground\-::alpha\-Start\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_back_ground_ad3d27841bc53e26e464ed774aeaaad8d}
+\hypertarget{class_back_ground_a76b44a73628e8503a1e56bc5253a5b1a}{\index{Back\-Ground@{Back\-Ground}!clr\-Finish@{clr\-Finish}}
+\index{clr\-Finish@{clr\-Finish}!BackGround@{Back\-Ground}}
+\subsubsection[{clr\-Finish}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F Back\-Ground\-::clr\-Finish\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_back_ground_a76b44a73628e8503a1e56bc5253a5b1a}
+\hypertarget{class_back_ground_ace5c696580cb70d04c43326e313d5086}{\index{Back\-Ground@{Back\-Ground}!clr\-Start@{clr\-Start}}
+\index{clr\-Start@{clr\-Start}!BackGround@{Back\-Ground}}
+\subsubsection[{clr\-Start}]{\setlength{\rightskip}{0pt plus 5cm}C\-O\-L\-O\-R\-R\-E\-F Back\-Ground\-::clr\-Start\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_back_ground_ace5c696580cb70d04c43326e313d5086}
+\hypertarget{class_back_ground_a7f8e544399813801ce7dc06509a4c062}{\index{Back\-Ground@{Back\-Ground}!enabled@{enabled}}
+\index{enabled@{enabled}!BackGround@{Back\-Ground}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Back\-Ground\-::enabled\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_back_ground_a7f8e544399813801ce7dc06509a4c062}
+\hypertarget{class_back_ground_ab617902b70204abeba1512a5a85c3114}{\index{Back\-Ground@{Back\-Ground}!rc\-Fill@{rc\-Fill}}
+\index{rc\-Fill@{rc\-Fill}!BackGround@{Back\-Ground}}
+\subsubsection[{rc\-Fill}]{\setlength{\rightskip}{0pt plus 5cm}R\-E\-C\-T Back\-Ground\-::rc\-Fill\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_back_ground_ab617902b70204abeba1512a5a85c3114}
+\hypertarget{class_back_ground_a60e91e14cfea358477466c03bc918514}{\index{Back\-Ground@{Back\-Ground}!vertical@{vertical}}
+\index{vertical@{vertical}!BackGround@{Back\-Ground}}
+\subsubsection[{vertical}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Back\-Ground\-::vertical\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_back_ground_a60e91e14cfea358477466c03bc918514}
+
+
+Объявления и описания членов классов находятся в файлах\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_back_ground_fill_8h}{Back\-Ground\-Fill.\-h}\item 
+src/\hyperlink{_back_ground_fill_8cpp}{Back\-Ground\-Fill.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,19 @@
+<map id="PlotRegion" name="PlotRegion">
+<area shape="rect" id="node2" href="$class_r_t_f_string.html" title="RTFString" alt="" coords="136,184,216,211"/>
+<area shape="rect" id="node13" href="$class_title.html" title="Title" alt="" coords="455,273,502,300"/>
+<area shape="rect" id="node14" href="$class_legend.html" title="Legend" alt="" coords="768,513,832,540"/>
+<area shape="rect" id="node20" href="$class_label.html" title="Label" alt="" coords="233,273,287,300"/>
+<area shape="rect" id="node3" href="$class_c_formatted_text_draw.html" title="CFormattedTextDraw" alt="" coords="104,95,248,121"/>
+<area shape="rect" id="node6" href="$structtag_c_o_o_k_i_e.html" title="tagCOOKIE" alt="" coords="269,5,360,32"/>
+<area shape="rect" id="node7" href="$class_back_ground.html" title="BackGround" alt="" coords="597,273,691,300"/>
+<area shape="rect" id="node12" href="$class_x_y_plot.html" title="Класс для работы с базой данных " alt="" coords="604,379,665,405"/>
+<area shape="rect" id="node8" href="$class_savable_item.html" title="SavableItem" alt="" coords="678,184,770,211"/>
+<area shape="rect" id="node9" href="$class_border.html" title="Border" alt="" coords="745,273,805,300"/>
+<area shape="rect" id="node11" href="$class_axis.html" title="Axis" alt="" coords="507,513,555,540"/>
+<area shape="rect" id="node15" href="$class_selection.html" title="Selection" alt="" coords="1241,617,1317,644"/>
+<area shape="rect" id="node17" href="$class_ticks.html" title="Ticks" alt="" coords="991,617,1044,644"/>
+<area shape="rect" id="node18" href="$class_digits.html" title="Digits" alt="" coords="427,617,482,644"/>
+<area shape="rect" id="node19" href="$class_grid_lines.html" title="GridLines" alt="" coords="813,617,891,644"/>
+<area shape="rect" id="node10" href="$class_line_data.html" title="LineData" alt="" coords="1091,184,1165,211"/>
+<area shape="rect" id="node16" href="$class_profile_group_map.html" title="ProfileGroupMap" alt="" coords="1263,513,1382,540"/>
+</map>

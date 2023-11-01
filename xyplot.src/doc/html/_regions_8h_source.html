@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Исходный файл src/Regions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Regions.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_regions_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __WARNIINGREGIONS_H_INCLUDED__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __WARNIINGREGIONS_H_INCLUDED__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="border_8h.html">border.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_back_ground_fill_8h.html">BackGroundFill.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_axis.html">Axis</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_plot_region.html">PlotRegion</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_r_t_f_string.html">RTFString</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="_regions_8h.html#a75ca559f3ba2ddf617b9c211afcdd941">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_x_y_plot.html">XYPlot</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">typedef</span> std::map&lt;long, PlotRegion*&gt; <a class="code" href="_regions_8h.html#a75ca559f3ba2ddf617b9c211afcdd941">RegionsMap</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_regions_8h.html#a4cab289bbb17206edfc5f9e061c63e02">   14</a></span>&#160;<span class="keyword">typedef</span> RegionsMap::iterator <a class="code" href="_regions_8h.html#a4cab289bbb17206edfc5f9e061c63e02">RegionsMapIterator</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_regions_8h.html#a0fcee7e48de9e14aeb44795bfce2478a">   15</a></span>&#160;<span class="keyword">typedef</span> RegionsMap::const_iterator <a class="code" href="_regions_8h.html#a0fcee7e48de9e14aeb44795bfce2478a">RegionsMapConstIterator</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_plot_region.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_plot_region.html">PlotRegion</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_plot_region.html#aa20c4158814429875632d6d873a41aeb">PlotRegion</a>(<a class="code" href="class_x_y_plot.html">XYPlot</a>* parent,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                  <a class="code" href="class_axis.html">Axis</a>* axisX, </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                  <a class="code" href="class_axis.html">Axis</a>* axisY, </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                  <span class="keywordtype">double</span> ptFromX, <span class="keywordtype">double</span> ptFromY,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                  <span class="keywordtype">double</span> ptToX, <span class="keywordtype">double</span> ptToY,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                  std::string labelText = <span class="stringliteral">&quot;&quot;</span>, </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                  COLORREF color = RGB(128,80,80),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                  <span class="keywordtype">double</span> opaque = 100,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                  COLORREF BorderColor = RGB(0,0,0),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                  <span class="keywordtype">int</span> BorderWidth = 1, </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                  <span class="keywordtype">int</span> BorderLine  = <a class="code" href="namespacexyplot.html#a3d67107a3da8dc1ef0114ab0352e01eda50f3326c8ff8eb69d629156dfe2e268a">xyplot::PLS_SOLID</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_plot_region.html#a30f37de224be906ff032def46b311d3c">~PlotRegion</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    BOOL <a class="code" href="class_plot_region.html#a6a71fbeed8f2de90fe6e069a9b2e22c0">PreDraw</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">/*Процедура отисовки региона */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plot_region.html#a508939830f7e43969b099c2836db5c4e">OnDraw</a>(HDC hdc);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plot_region.html#a8e8d84c8bca2c5badf833ec55e4ac089">SetXRange</a>(<span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> x2); </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plot_region.html#a906d6cdb0f52224b37dc93fe5e3a2a98">SetYRange</a>(<span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> y2);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//Get region border color</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    COLORREF <a class="code" href="class_plot_region.html#a8c9115a80a42634d87a6ee1e95dd62d1">GetLineColor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//Set region border color</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="class_plot_region.html#aea5ce8db7c4e5ad0383b5bca8ceeceba">SetLineColor</a>(COLORREF color);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">/*Получить  цвета заполнения*/</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// clrStart  - начальный цвет   градиента</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// clrFinish - конечный  цвет   градиента</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// если clrStart = clrFinish одноцветная заливка </span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plot_region.html#aa627b45cacdbc50c3f6ae4cfbb66b75b">GetFillColors</a>(COLORREF&amp; clrStart, COLORREF&amp; clrFinish) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">/*Установить цвета заполнения*/</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// clrStart  - начальный цвет   градиента</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// clrFinish - конечный  цвет   градиента</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// если clrStart = clrFinish одноцветная заливка </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plot_region.html#a7cb18f693dc5ca91e5220d753dcd710a">SetFillColors</a>(COLORREF clrStart, COLORREF clrFinish);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">/*Установить направление заливки*/</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//vertical = TRUE  - заливка с верху вниз  </span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//vertical = FALSE - заливка с права на лево</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plot_region.html#a973f741072a09ad701f31fd8cf8c7178">SetGradientDirection</a>(BOOL vertical);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//получить направление заливки</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    BOOL <a class="code" href="class_plot_region.html#a1a8c4048030e64ec3d29361363f6b3f3">GetGradientDirection</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//HS_HORIZONTAL       0       /* ----- */</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//HS_VERTICAL         1       /* ||||| */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//HS_FDIAGONAL        2       /* \\\\\ */</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//HS_BDIAGONAL        3       /* ///// */</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//HS_CROSS            4       /* +++++ */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//HS_DIAGCROSS        5       /* xxxxx */</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">/* Return Hatch Styles */</span>   </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_plot_region.html#a47b86ae228fae33d9448f8ac3c2a7c05">GetHatchStyle</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">/* Set Hatch Styles */</span>  </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plot_region.html#afef080fb216a51c6a90f4b4ac8050ee2">SetHatchStyle</a>(<span class="keywordtype">long</span> hstyle);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_plot_region.html#aec00a997e0e41c233d8542a9ec4d602f">   86</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_axis.html">Axis</a>&amp; <a class="code" href="class_plot_region.html#aec00a997e0e41c233d8542a9ec4d602f">parentAxisX</a>;        <span class="comment">//Ось X которой принадлежит регион </span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_plot_region.html#ae817987187aded3ddb6074f1462f9b5c">   87</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="class_axis.html">Axis</a>&amp; <a class="code" href="class_plot_region.html#ae817987187aded3ddb6074f1462f9b5c">parentAxisY</a>;        <span class="comment">//Ось Y которой принадлежит регион</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_plot_region.html#a66a8e6a2f04b30da9b84a618aeef17a2">   89</a></span>&#160;    <a class="code" href="class_border.html">Border</a> <a class="code" href="class_plot_region.html#a66a8e6a2f04b30da9b84a618aeef17a2">border</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_plot_region.html#a73dfa8e41749b8f277264bd716f3621e">   90</a></span>&#160;    <a class="code" href="class_back_ground.html">BackGround</a> <a class="code" href="class_plot_region.html#a73dfa8e41749b8f277264bd716f3621e">bk</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_plot_region.html#ac277b90fffff8f74744646361e3c0887">   92</a></span>&#160;    RECT <a class="code" href="class_plot_region.html#ac277b90fffff8f74744646361e3c0887">rgnRect</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_plot_region.html#a8f988d5b4e0ae0995b4fe457b806064e">   94</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_plot_region.html#a17c3a91a03edc979ef6fdd2fa317fc79">xFrom</a>, <a class="code" href="class_plot_region.html#a8f988d5b4e0ae0995b4fe457b806064e">xTo</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_plot_region.html#ad97dd7a58a12907c939ad3d764ad0a7d">   95</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_plot_region.html#acf10bb3e21dc8efeadbc2ccd128a6772">yFrom</a>, <a class="code" href="class_plot_region.html#ad97dd7a58a12907c939ad3d764ad0a7d">yTo</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_plot_region.html#a12dc144f3d93052dc1b2afd355b4372e">   97</a></span>&#160;    COLORREF <a class="code" href="class_plot_region.html#a12dc144f3d93052dc1b2afd355b4372e">hatchColor</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_plot_region.html#a0a6bac6e99e972970b90e19aa1463fe6">   98</a></span>&#160;    <span class="keywordtype">long</span> <a class="code" href="class_plot_region.html#a0a6bac6e99e972970b90e19aa1463fe6">hatchStyle</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_plot_region.html#a76d55541c5f544224d99b3f44ee3c5ea">  100</a></span>&#160;    <a class="code" href="class_r_t_f_string.html">RTFString</a>* <a class="code" href="class_plot_region.html#a76d55541c5f544224d99b3f44ee3c5ea">regionText</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif //__WARNIINGREGIONS_H_INCLUDED__</span></div>
+<div class="ttc" id="class_r_t_f_string_html"><div class="ttname"><a href="class_r_t_f_string.html">RTFString</a></div><div class="ttdef"><b>Definition:</b> rtfstring.h:7</div></div>
+<div class="ttc" id="class_plot_region_html_acf10bb3e21dc8efeadbc2ccd128a6772"><div class="ttname"><a href="class_plot_region.html#acf10bb3e21dc8efeadbc2ccd128a6772">PlotRegion::yFrom</a></div><div class="ttdeci">double yFrom</div><div class="ttdef"><b>Definition:</b> Regions.h:95</div></div>
+<div class="ttc" id="class_plot_region_html_a47b86ae228fae33d9448f8ac3c2a7c05"><div class="ttname"><a href="class_plot_region.html#a47b86ae228fae33d9448f8ac3c2a7c05">PlotRegion::GetHatchStyle</a></div><div class="ttdeci">long GetHatchStyle() const </div><div class="ttdef"><b>Definition:</b> Regions.cpp:193</div></div>
+<div class="ttc" id="class_plot_region_html_a8e8d84c8bca2c5badf833ec55e4ac089"><div class="ttname"><a href="class_plot_region.html#a8e8d84c8bca2c5badf833ec55e4ac089">PlotRegion::SetXRange</a></div><div class="ttdeci">void SetXRange(double x1, double x2)</div><div class="ttdef"><b>Definition:</b> Regions.cpp:45</div></div>
+<div class="ttc" id="class_plot_region_html_a973f741072a09ad701f31fd8cf8c7178"><div class="ttname"><a href="class_plot_region.html#a973f741072a09ad701f31fd8cf8c7178">PlotRegion::SetGradientDirection</a></div><div class="ttdeci">void SetGradientDirection(BOOL vertical)</div><div class="ttdef"><b>Definition:</b> Regions.cpp:174</div></div>
+<div class="ttc" id="namespacexyplot_html_a3d67107a3da8dc1ef0114ab0352e01eda50f3326c8ff8eb69d629156dfe2e268a"><div class="ttname"><a href="namespacexyplot.html#a3d67107a3da8dc1ef0114ab0352e01eda50f3326c8ff8eb69d629156dfe2e268a">xyplot::PLS_SOLID</a></div><div class="ttdoc">Сплошная </div><div class="ttdef"><b>Definition:</b> xyplotconst.h:139</div></div>
+<div class="ttc" id="class_back_ground_html"><div class="ttname"><a href="class_back_ground.html">BackGround</a></div><div class="ttdef"><b>Definition:</b> BackGroundFill.h:5</div></div>
+<div class="ttc" id="class_plot_region_html_a73dfa8e41749b8f277264bd716f3621e"><div class="ttname"><a href="class_plot_region.html#a73dfa8e41749b8f277264bd716f3621e">PlotRegion::bk</a></div><div class="ttdeci">BackGround bk</div><div class="ttdef"><b>Definition:</b> Regions.h:90</div></div>
+<div class="ttc" id="class_plot_region_html"><div class="ttname"><a href="class_plot_region.html">PlotRegion</a></div><div class="ttdef"><b>Definition:</b> Regions.h:18</div></div>
+<div class="ttc" id="_regions_8h_html_a4cab289bbb17206edfc5f9e061c63e02"><div class="ttname"><a href="_regions_8h.html#a4cab289bbb17206edfc5f9e061c63e02">RegionsMapIterator</a></div><div class="ttdeci">RegionsMap::iterator RegionsMapIterator</div><div class="ttdef"><b>Definition:</b> Regions.h:14</div></div>
+<div class="ttc" id="_regions_8h_html_a0fcee7e48de9e14aeb44795bfce2478a"><div class="ttname"><a href="_regions_8h.html#a0fcee7e48de9e14aeb44795bfce2478a">RegionsMapConstIterator</a></div><div class="ttdeci">RegionsMap::const_iterator RegionsMapConstIterator</div><div class="ttdef"><b>Definition:</b> Regions.h:15</div></div>
+<div class="ttc" id="class_plot_region_html_ad97dd7a58a12907c939ad3d764ad0a7d"><div class="ttname"><a href="class_plot_region.html#ad97dd7a58a12907c939ad3d764ad0a7d">PlotRegion::yTo</a></div><div class="ttdeci">double yTo</div><div class="ttdef"><b>Definition:</b> Regions.h:95</div></div>
+<div class="ttc" id="class_plot_region_html_aec00a997e0e41c233d8542a9ec4d602f"><div class="ttname"><a href="class_plot_region.html#aec00a997e0e41c233d8542a9ec4d602f">PlotRegion::parentAxisX</a></div><div class="ttdeci">const Axis &amp; parentAxisX</div><div class="ttdef"><b>Definition:</b> Regions.h:86</div></div>
+<div class="ttc" id="class_plot_region_html_a66a8e6a2f04b30da9b84a618aeef17a2"><div class="ttname"><a href="class_plot_region.html#a66a8e6a2f04b30da9b84a618aeef17a2">PlotRegion::border</a></div><div class="ttdeci">Border border</div><div class="ttdef"><b>Definition:</b> Regions.h:89</div></div>
+<div class="ttc" id="_back_ground_fill_8h_html"><div class="ttname"><a href="_back_ground_fill_8h.html">BackGroundFill.h</a></div></div>
+<div class="ttc" id="class_plot_region_html_ac277b90fffff8f74744646361e3c0887"><div class="ttname"><a href="class_plot_region.html#ac277b90fffff8f74744646361e3c0887">PlotRegion::rgnRect</a></div><div class="ttdeci">RECT rgnRect</div><div class="ttdef"><b>Definition:</b> Regions.h:92</div></div>
+<div class="ttc" id="class_plot_region_html_ae817987187aded3ddb6074f1462f9b5c"><div class="ttname"><a href="class_plot_region.html#ae817987187aded3ddb6074f1462f9b5c">PlotRegion::parentAxisY</a></div><div class="ttdeci">const Axis &amp; parentAxisY</div><div class="ttdef"><b>Definition:</b> Regions.h:87</div></div>
+<div class="ttc" id="class_axis_html"><div class="ttname"><a href="class_axis.html">Axis</a></div><div class="ttdef"><b>Definition:</b> Axis.h:31</div></div>
+<div class="ttc" id="_regions_8h_html_a75ca559f3ba2ddf617b9c211afcdd941"><div class="ttname"><a href="_regions_8h.html#a75ca559f3ba2ddf617b9c211afcdd941">RegionsMap</a></div><div class="ttdeci">std::map&lt; long, PlotRegion * &gt; RegionsMap</div><div class="ttdef"><b>Definition:</b> Regions.h:11</div></div>
+<div class="ttc" id="class_plot_region_html_a8f988d5b4e0ae0995b4fe457b806064e"><div class="ttname"><a href="class_plot_region.html#a8f988d5b4e0ae0995b4fe457b806064e">PlotRegion::xTo</a></div><div class="ttdeci">double xTo</div><div class="ttdef"><b>Definition:</b> Regions.h:94</div></div>
+<div class="ttc" id="class_plot_region_html_afef080fb216a51c6a90f4b4ac8050ee2"><div class="ttname"><a href="class_plot_region.html#afef080fb216a51c6a90f4b4ac8050ee2">PlotRegion::SetHatchStyle</a></div><div class="ttdeci">void SetHatchStyle(long hstyle)</div><div class="ttdef"><b>Definition:</b> Regions.cpp:199</div></div>
+<div class="ttc" id="class_plot_region_html_aea5ce8db7c4e5ad0383b5bca8ceeceba"><div class="ttname"><a href="class_plot_region.html#aea5ce8db7c4e5ad0383b5bca8ceeceba">PlotRegion::SetLineColor</a></div><div class="ttdeci">void SetLineColor(COLORREF color)</div><div class="ttdef"><b>Definition:</b> Regions.cpp:148</div></div>
+<div class="ttc" id="class_plot_region_html_aa627b45cacdbc50c3f6ae4cfbb66b75b"><div class="ttname"><a href="class_plot_region.html#aa627b45cacdbc50c3f6ae4cfbb66b75b">PlotRegion::GetFillColors</a></div><div class="ttdeci">void GetFillColors(COLORREF &amp;clrStart, COLORREF &amp;clrFinish) const </div><div class="ttdef"><b>Definition:</b> Regions.cpp:157</div></div>
+<div class="ttc" id="class_plot_region_html_a6a71fbeed8f2de90fe6e069a9b2e22c0"><div class="ttname"><a href="class_plot_region.html#a6a71fbeed8f2de90fe6e069a9b2e22c0">PlotRegion::PreDraw</a></div><div class="ttdeci">BOOL PreDraw()</div><div class="ttdef"><b>Definition:</b> Regions.cpp:57</div></div>
+<div class="ttc" id="class_border_html"><div class="ttname"><a href="class_border.html">Border</a></div><div class="ttdef"><b>Definition:</b> border.h:7</div></div>
+<div class="ttc" id="class_plot_region_html_a0a6bac6e99e972970b90e19aa1463fe6"><div class="ttname"><a href="class_plot_region.html#a0a6bac6e99e972970b90e19aa1463fe6">PlotRegion::hatchStyle</a></div><div class="ttdeci">long hatchStyle</div><div class="ttdef"><b>Definition:</b> Regions.h:98</div></div>
+<div class="ttc" id="border_8h_html"><div class="ttname"><a href="border_8h.html">border.h</a></div></div>
+<div class="ttc" id="class_plot_region_html_a30f37de224be906ff032def46b311d3c"><div class="ttname"><a href="class_plot_region.html#a30f37de224be906ff032def46b311d3c">PlotRegion::~PlotRegion</a></div><div class="ttdeci">~PlotRegion(void)</div><div class="ttdef"><b>Definition:</b> Regions.cpp:40</div></div>
+<div class="ttc" id="class_plot_region_html_aa20c4158814429875632d6d873a41aeb"><div class="ttname"><a href="class_plot_region.html#aa20c4158814429875632d6d873a41aeb">PlotRegion::PlotRegion</a></div><div class="ttdeci">PlotRegion(XYPlot *parent, Axis *axisX, Axis *axisY, double ptFromX, double ptFromY, double ptToX, double ptToY, std::string labelText=&quot;&quot;, COLORREF color=RGB(128, 80, 80), double opaque=100, COLORREF BorderColor=RGB(0, 0, 0), int BorderWidth=1, int BorderLine=xyplot::PLS_SOLID)</div><div class="ttdef"><b>Definition:</b> Regions.cpp:9</div></div>
+<div class="ttc" id="class_x_y_plot_html"><div class="ttname"><a href="class_x_y_plot.html">XYPlot</a></div><div class="ttdoc">Класс для работы с базой данных </div><div class="ttdef"><b>Definition:</b> main.h:25</div></div>
+<div class="ttc" id="class_plot_region_html_a508939830f7e43969b099c2836db5c4e"><div class="ttname"><a href="class_plot_region.html#a508939830f7e43969b099c2836db5c4e">PlotRegion::OnDraw</a></div><div class="ttdeci">void OnDraw(HDC hdc)</div><div class="ttdef"><b>Definition:</b> Regions.cpp:105</div></div>
+<div class="ttc" id="class_plot_region_html_a17c3a91a03edc979ef6fdd2fa317fc79"><div class="ttname"><a href="class_plot_region.html#a17c3a91a03edc979ef6fdd2fa317fc79">PlotRegion::xFrom</a></div><div class="ttdeci">double xFrom</div><div class="ttdef"><b>Definition:</b> Regions.h:94</div></div>
+<div class="ttc" id="class_plot_region_html_a12dc144f3d93052dc1b2afd355b4372e"><div class="ttname"><a href="class_plot_region.html#a12dc144f3d93052dc1b2afd355b4372e">PlotRegion::hatchColor</a></div><div class="ttdeci">COLORREF hatchColor</div><div class="ttdef"><b>Definition:</b> Regions.h:97</div></div>
+<div class="ttc" id="class_plot_region_html_a906d6cdb0f52224b37dc93fe5e3a2a98"><div class="ttname"><a href="class_plot_region.html#a906d6cdb0f52224b37dc93fe5e3a2a98">PlotRegion::SetYRange</a></div><div class="ttdeci">void SetYRange(double y1, double y2)</div><div class="ttdef"><b>Definition:</b> Regions.cpp:51</div></div>
+<div class="ttc" id="class_plot_region_html_a76d55541c5f544224d99b3f44ee3c5ea"><div class="ttname"><a href="class_plot_region.html#a76d55541c5f544224d99b3f44ee3c5ea">PlotRegion::regionText</a></div><div class="ttdeci">RTFString * regionText</div><div class="ttdef"><b>Definition:</b> Regions.h:100</div></div>
+<div class="ttc" id="class_plot_region_html_a7cb18f693dc5ca91e5220d753dcd710a"><div class="ttname"><a href="class_plot_region.html#a7cb18f693dc5ca91e5220d753dcd710a">PlotRegion::SetFillColors</a></div><div class="ttdeci">void SetFillColors(COLORREF clrStart, COLORREF clrFinish)</div><div class="ttdef"><b>Definition:</b> Regions.cpp:166</div></div>
+<div class="ttc" id="class_plot_region_html_a8c9115a80a42634d87a6ee1e95dd62d1"><div class="ttname"><a href="class_plot_region.html#a8c9115a80a42634d87a6ee1e95dd62d1">PlotRegion::GetLineColor</a></div><div class="ttdeci">COLORREF GetLineColor() const </div><div class="ttdef"><b>Definition:</b> Regions.cpp:142</div></div>
+<div class="ttc" id="class_plot_region_html_a1a8c4048030e64ec3d29361363f6b3f3"><div class="ttname"><a href="class_plot_region.html#a1a8c4048030e64ec3d29361363f6b3f3">PlotRegion::GetGradientDirection</a></div><div class="ttdeci">BOOL GetGradientDirection() const </div><div class="ttdef"><b>Definition:</b> Regions.cpp:180</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

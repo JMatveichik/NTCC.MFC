@@ -1,0 +1,1589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Класс CFormattedTextDraw</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="class_c_formatted_text_draw-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс CFormattedTextDraw</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="formattedtextdraw_8h_source.html">formattedtextdraw.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:CFormattedTextDraw:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_formatted_text_draw__inherit__graph.png" border="0" usemap="#_c_formatted_text_draw_inherit__map" alt="Inheritance graph"/></div>
+<map name="_c_formatted_text_draw_inherit__map" id="_c_formatted_text_draw_inherit__map">
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса CFormattedTextDraw:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_formatted_text_draw__coll__graph.png" border="0" usemap="#_c_formatted_text_draw_coll__map" alt="Collaboration graph"/></div>
+<map name="_c_formatted_text_draw_coll__map" id="_c_formatted_text_draw_coll__map">
+<area shape="rect" id="node4" href="structtag_c_o_o_k_i_e.html" title="tagCOOKIE" alt="" coords="269,5,360,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aeedb5def68e1033d3759b142f48cfb8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#aeedb5def68e1033d3759b142f48cfb8f">CFormattedTextDraw</a> (HMODULE <a class="el" href="class_c_formatted_text_draw.html#addc46f2c8df18b9be24193ac2b7bd261">hmod</a>)</td></tr>
+<tr class="separator:aeedb5def68e1033d3759b142f48cfb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73cc74e417ded249eb7c8ba5026e74d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a73cc74e417ded249eb7c8ba5026e74d6">~CFormattedTextDraw</a> ()</td></tr>
+<tr class="separator:a73cc74e417ded249eb7c8ba5026e74d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94685a982152d40e47bbd38faf3d983d"><td class="memItemLeft" align="right" valign="top">HRESULT STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a94685a982152d40e47bbd38faf3d983d">QueryInterface</a> (REFIID riid, void __RPC_FAR *__RPC_FAR *ppvObject)</td></tr>
+<tr class="separator:a94685a982152d40e47bbd38faf3d983d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcdbb385f1b4e88c1bdd8f769cc2ea18"><td class="memItemLeft" align="right" valign="top">ULONG STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#adcdbb385f1b4e88c1bdd8f769cc2ea18">AddRef</a> (void)</td></tr>
+<tr class="separator:adcdbb385f1b4e88c1bdd8f769cc2ea18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0482c9982ab17a5b1bc16e42dae745"><td class="memItemLeft" align="right" valign="top">ULONG STDMETHODCALLTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a8c0482c9982ab17a5b1bc16e42dae745">Release</a> (void)</td></tr>
+<tr class="separator:a8c0482c9982ab17a5b1bc16e42dae745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9dc72357c06a06f294d2e07bca4a18"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a1b9dc72357c06a06f294d2e07bca4a18">get_NaturalHeight</a> (long Width, long *pVal)</td></tr>
+<tr class="separator:a1b9dc72357c06a06f294d2e07bca4a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69166f66353dec9dc28b1e2e6f4c495"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#aa69166f66353dec9dc28b1e2e6f4c495">get_NaturalWidth</a> (long Height, long *pVal)</td></tr>
+<tr class="separator:aa69166f66353dec9dc28b1e2e6f4c495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda21fe76e87d85c6e6ae97f6d98c82c"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#aeda21fe76e87d85c6e6ae97f6d98c82c">Create</a> ()</td></tr>
+<tr class="separator:aeda21fe76e87d85c6e6ae97f6d98c82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d8d11773fb62728bbee88d441edfcf"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#aa9d8d11773fb62728bbee88d441edfcf">Draw</a> (void *hdcDraw, RECT *prc)</td></tr>
+<tr class="separator:aa9d8d11773fb62728bbee88d441edfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae319a9932c1a75ad19619bea99acb2df"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ae319a9932c1a75ad19619bea99acb2df">get_RTFText</a> (BSTR *pVal)</td></tr>
+<tr class="separator:ae319a9932c1a75ad19619bea99acb2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f8860ff9c0d5e1dacee5023743256f"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#aa8f8860ff9c0d5e1dacee5023743256f">put_RTFText</a> (BSTR newVal)</td></tr>
+<tr class="separator:aa8f8860ff9c0d5e1dacee5023743256f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e2088a0416fc8a2d0039e97108ef6b"><td class="memItemLeft" align="right" valign="top">HDC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a82e2088a0416fc8a2d0039e97108ef6b">TxGetDC</a> ()</td></tr>
+<tr class="separator:a82e2088a0416fc8a2d0039e97108ef6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583a4401f0c1d5a3e5bf02c6a0cfedbd"><td class="memItemLeft" align="right" valign="top">INT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a583a4401f0c1d5a3e5bf02c6a0cfedbd">TxReleaseDC</a> (HDC hdc)</td></tr>
+<tr class="separator:a583a4401f0c1d5a3e5bf02c6a0cfedbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b31bc8979880017bac423fc7861e3c4"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a8b31bc8979880017bac423fc7861e3c4">TxShowScrollBar</a> (INT fnBar, BOOL fShow)</td></tr>
+<tr class="separator:a8b31bc8979880017bac423fc7861e3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af376f10597fba86173093d88ef231c72"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#af376f10597fba86173093d88ef231c72">TxEnableScrollBar</a> (INT fuSBFlags, INT fuArrowflags)</td></tr>
+<tr class="separator:af376f10597fba86173093d88ef231c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1539757775ca0235713e93f42274553"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#af1539757775ca0235713e93f42274553">TxSetScrollRange</a> (INT fnBar, LONG nMinPos, INT nMaxPos, BOOL fRedraw)</td></tr>
+<tr class="separator:af1539757775ca0235713e93f42274553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfad442af7f3e31dc59b6abc23c789a4"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#abfad442af7f3e31dc59b6abc23c789a4">TxSetScrollPos</a> (INT fnBar, INT nPos, BOOL fRedraw)</td></tr>
+<tr class="separator:abfad442af7f3e31dc59b6abc23c789a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe30ef4cb3f37c9875ca64a3484e8af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#afe30ef4cb3f37c9875ca64a3484e8af3">TxInvalidateRect</a> (LPCRECT prc, BOOL fMode)</td></tr>
+<tr class="separator:afe30ef4cb3f37c9875ca64a3484e8af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb3f55080c4bc55d7710059beb9e6d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#abdb3f55080c4bc55d7710059beb9e6d4">TxViewChange</a> (BOOL fUpdate)</td></tr>
+<tr class="separator:abdb3f55080c4bc55d7710059beb9e6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b064dc9ea9d0e12fb49355756339df"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a14b064dc9ea9d0e12fb49355756339df">TxCreateCaret</a> (HBITMAP hbmp, INT xWidth, INT yHeight)</td></tr>
+<tr class="separator:a14b064dc9ea9d0e12fb49355756339df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2559df2077f47c4483ba526727016e2"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ab2559df2077f47c4483ba526727016e2">TxShowCaret</a> (BOOL fShow)</td></tr>
+<tr class="separator:ab2559df2077f47c4483ba526727016e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de9d25f5f37cb97c45323f8ebaff5a1"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a0de9d25f5f37cb97c45323f8ebaff5a1">TxSetCaretPos</a> (INT x, INT y)</td></tr>
+<tr class="separator:a0de9d25f5f37cb97c45323f8ebaff5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cfee5142c0ccc914ab9e22be37021a1"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a2cfee5142c0ccc914ab9e22be37021a1">TxSetTimer</a> (UINT idTimer, UINT uTimeout)</td></tr>
+<tr class="separator:a2cfee5142c0ccc914ab9e22be37021a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea0cb499a41c7a3b8471ccae713d0a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#acea0cb499a41c7a3b8471ccae713d0a2">TxKillTimer</a> (UINT idTimer)</td></tr>
+<tr class="separator:acea0cb499a41c7a3b8471ccae713d0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86cfe0bd348ba7e6dca937139bf594b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ab86cfe0bd348ba7e6dca937139bf594b">TxScrollWindowEx</a> (INT dx, INT dy, LPCRECT lprcScroll, LPCRECT lprcClip, HRGN hrgnUpdate, LPRECT lprcUpdate, UINT fuScroll)</td></tr>
+<tr class="separator:ab86cfe0bd348ba7e6dca937139bf594b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ef4a7a47a5be7d277d4b04e7e12a27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a44ef4a7a47a5be7d277d4b04e7e12a27">TxSetCapture</a> (BOOL fCapture)</td></tr>
+<tr class="separator:a44ef4a7a47a5be7d277d4b04e7e12a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f80562f0bb57e63f88ca07184a7290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ae1f80562f0bb57e63f88ca07184a7290">TxSetFocus</a> ()</td></tr>
+<tr class="separator:ae1f80562f0bb57e63f88ca07184a7290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f8c8017864381e356371f36d7e6863"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ab1f8c8017864381e356371f36d7e6863">TxSetCursor</a> (HCURSOR hcur, BOOL fText)</td></tr>
+<tr class="separator:ab1f8c8017864381e356371f36d7e6863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbd1e639e6c48c33a6bfaa0d469e439"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a5bbd1e639e6c48c33a6bfaa0d469e439">TxScreenToClient</a> (LPPOINT lppt)</td></tr>
+<tr class="separator:a5bbd1e639e6c48c33a6bfaa0d469e439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb05d3c20125bb481a5256272d87b67f"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#abb05d3c20125bb481a5256272d87b67f">TxClientToScreen</a> (LPPOINT lppt)</td></tr>
+<tr class="separator:abb05d3c20125bb481a5256272d87b67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94abf3aa085118853e6fb343dc56dbd1"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a94abf3aa085118853e6fb343dc56dbd1">TxActivate</a> (LONG *plOldState)</td></tr>
+<tr class="separator:a94abf3aa085118853e6fb343dc56dbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f578fb1c8066bffccbe08661a58b3a9"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a4f578fb1c8066bffccbe08661a58b3a9">TxDeactivate</a> (LONG lNewState)</td></tr>
+<tr class="separator:a4f578fb1c8066bffccbe08661a58b3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d26debc0162611ce308b7472e816a0e"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a7d26debc0162611ce308b7472e816a0e">TxGetClientRect</a> (LPRECT prc)</td></tr>
+<tr class="separator:a7d26debc0162611ce308b7472e816a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356e5054a4a70bfddebfa5456a51c0f2"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a356e5054a4a70bfddebfa5456a51c0f2">TxGetViewInset</a> (LPRECT prc)</td></tr>
+<tr class="separator:a356e5054a4a70bfddebfa5456a51c0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6bf84a20ce406266dcd59e05579faa"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a1b6bf84a20ce406266dcd59e05579faa">TxGetCharFormat</a> (const CHARFORMATW **ppCF)</td></tr>
+<tr class="separator:a1b6bf84a20ce406266dcd59e05579faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fcc615f0abc3edd55a5bc6eb07245c0"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a9fcc615f0abc3edd55a5bc6eb07245c0">TxGetParaFormat</a> (const PARAFORMAT **ppPF)</td></tr>
+<tr class="separator:a9fcc615f0abc3edd55a5bc6eb07245c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87bf95137cb9c82cf3b5b184d7b499cd"><td class="memItemLeft" align="right" valign="top">COLORREF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a87bf95137cb9c82cf3b5b184d7b499cd">TxGetSysColor</a> (int nIndex)</td></tr>
+<tr class="separator:a87bf95137cb9c82cf3b5b184d7b499cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9e30620f85cd0855da77eefab5c542"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#aae9e30620f85cd0855da77eefab5c542">TxGetBackStyle</a> (TXTBACKSTYLE *pstyle)</td></tr>
+<tr class="separator:aae9e30620f85cd0855da77eefab5c542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac16e3287c2da3f1d4af57d268339b3b0"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ac16e3287c2da3f1d4af57d268339b3b0">TxGetMaxLength</a> (DWORD *plength)</td></tr>
+<tr class="separator:ac16e3287c2da3f1d4af57d268339b3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d11953e055809df98a3354a7b48eff7"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a0d11953e055809df98a3354a7b48eff7">TxGetScrollBars</a> (DWORD *pdwScrollBar)</td></tr>
+<tr class="separator:a0d11953e055809df98a3354a7b48eff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac64a3d02efa70493ee449dace1fea36c"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ac64a3d02efa70493ee449dace1fea36c">TxGetPasswordChar</a> (TCHAR *pch)</td></tr>
+<tr class="separator:ac64a3d02efa70493ee449dace1fea36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45973a797c196a9d7cf02127d12e7a54"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a45973a797c196a9d7cf02127d12e7a54">TxGetAcceleratorPos</a> (LONG *pcp)</td></tr>
+<tr class="separator:a45973a797c196a9d7cf02127d12e7a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9247dfc9e0cce9f1942c5b6c632ed78d"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a9247dfc9e0cce9f1942c5b6c632ed78d">TxGetExtent</a> (LPSIZEL lpExtent)</td></tr>
+<tr class="separator:a9247dfc9e0cce9f1942c5b6c632ed78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa12d7dee46f52f789b6b2109008948c3"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#aa12d7dee46f52f789b6b2109008948c3">OnTxCharFormatChange</a> (const CHARFORMATW *pcf)</td></tr>
+<tr class="separator:aa12d7dee46f52f789b6b2109008948c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01a2da9e321236594b6f3fe8bb0ac310"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a01a2da9e321236594b6f3fe8bb0ac310">OnTxParaFormatChange</a> (const PARAFORMAT *ppf)</td></tr>
+<tr class="separator:a01a2da9e321236594b6f3fe8bb0ac310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43579a9dbb4bd8031cdf7dd1c5a2d008"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a43579a9dbb4bd8031cdf7dd1c5a2d008">TxGetPropertyBits</a> (DWORD dwMask, DWORD *pdwBits)</td></tr>
+<tr class="separator:a43579a9dbb4bd8031cdf7dd1c5a2d008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d7aa1164fef848f8cc86084ff0d5947"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a7d7aa1164fef848f8cc86084ff0d5947">TxNotify</a> (DWORD iNotify, void *pv)</td></tr>
+<tr class="separator:a7d7aa1164fef848f8cc86084ff0d5947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca2dd3918ef62d7f7c030f1a2add1dd"><td class="memItemLeft" align="right" valign="top">HIMC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#aeca2dd3918ef62d7f7c030f1a2add1dd">TxImmGetContext</a> ()</td></tr>
+<tr class="separator:aeca2dd3918ef62d7f7c030f1a2add1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677a0528e12025ac1d834ebb3fe17f4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a677a0528e12025ac1d834ebb3fe17f4f">TxImmReleaseContext</a> (HIMC himc)</td></tr>
+<tr class="separator:a677a0528e12025ac1d834ebb3fe17f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d3e8e94e5ec00f2670737ad565bb50"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a26d3e8e94e5ec00f2670737ad565bb50">TxGetSelectionBarWidth</a> (LONG *lSelBarWidth)</td></tr>
+<tr class="separator:a26d3e8e94e5ec00f2670737ad565bb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce824728f92e00b317b59d8b935d86e"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a9ce824728f92e00b317b59d8b935d86e">SetTextColor</a> (COLORREF clr)</td></tr>
+<tr class="separator:a9ce824728f92e00b317b59d8b935d86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ff1149d0e0ac7da420bc71d1fc2be1"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ac3ff1149d0e0ac7da420bc71d1fc2be1">SetTextFont</a> (HFONT font)</td></tr>
+<tr class="separator:ac3ff1149d0e0ac7da420bc71d1fc2be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55723aacd9eea72087f4a8c1716c44e8"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a55723aacd9eea72087f4a8c1716c44e8">CharFormatFromHFONT</a> (CHARFORMAT2W *pCF, HFONT hFont)</td></tr>
+<tr class="separator:a55723aacd9eea72087f4a8c1716c44e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84688cc43aa013fc01eab25bcf687809"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a84688cc43aa013fc01eab25bcf687809">InitDefaultCharFormat</a> ()</td></tr>
+<tr class="separator:a84688cc43aa013fc01eab25bcf687809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8e13c8ba939b994d4235b588a52177"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#adf8e13c8ba939b994d4235b588a52177">InitDefaultParaFormat</a> ()</td></tr>
+<tr class="separator:adf8e13c8ba939b994d4235b588a52177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacdbc394944e8ca679c5de2e824496d5"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#aacdbc394944e8ca679c5de2e824496d5">CreateTextServicesObject</a> ()</td></tr>
+<tr class="separator:aacdbc394944e8ca679c5de2e824496d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:ac12889a14954434340548415c24cd61c"><td class="memItemLeft" align="right" valign="top">RECT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ac12889a14954434340548415c24cd61c">m_rcClient</a></td></tr>
+<tr class="separator:ac12889a14954434340548415c24cd61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55dfce4f5f6ceebc265f50d39a3e3b18"><td class="memItemLeft" align="right" valign="top">RECT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a55dfce4f5f6ceebc265f50d39a3e3b18">m_rcViewInset</a></td></tr>
+<tr class="separator:a55dfce4f5f6ceebc265f50d39a3e3b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a01811c4c6123bea7d639302b69a128"><td class="memItemLeft" align="right" valign="top">SIZEL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a7a01811c4c6123bea7d639302b69a128">m_sizelExtent</a></td></tr>
+<tr class="separator:a7a01811c4c6123bea7d639302b69a128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af07e4ff84b148e4c1614782ec37b9b54"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#af07e4ff84b148e4c1614782ec37b9b54">nPixelsPerInchX</a></td></tr>
+<tr class="separator:af07e4ff84b148e4c1614782ec37b9b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed39a1517760cfb53599780e231d481b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#aed39a1517760cfb53599780e231d481b">nPixelsPerInchY</a></td></tr>
+<tr class="separator:aed39a1517760cfb53599780e231d481b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7687bda35106a487299a6bd945e0fe"><td class="memItemLeft" align="right" valign="top">CHARFORMAT2W *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#add7687bda35106a487299a6bd945e0fe">m_pCF</a></td></tr>
+<tr class="separator:add7687bda35106a487299a6bd945e0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c1b692255587fff873eb3cae1e30a0"><td class="memItemLeft" align="right" valign="top">PARAFORMAT2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ae5c1b692255587fff873eb3cae1e30a0">m_PF</a></td></tr>
+<tr class="separator:ae5c1b692255587fff873eb3cae1e30a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae015d2a67f789b83b172077ca92fedba"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ae015d2a67f789b83b172077ca92fedba">m_dwScrollbar</a></td></tr>
+<tr class="separator:ae015d2a67f789b83b172077ca92fedba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4877370e9f9a97ca802f614601ca972c"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a4877370e9f9a97ca802f614601ca972c">m_dwPropertyBits</a></td></tr>
+<tr class="separator:a4877370e9f9a97ca802f614601ca972c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e778f91604bec6f68d7933550910aa"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a95e778f91604bec6f68d7933550910aa">m_dwMaxLength</a></td></tr>
+<tr class="separator:a95e778f91604bec6f68d7933550910aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b581340c521c7f372bcce0792e3059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="formattedtextdraw_8h.html#a38853a4ceee8d1a6fac128d822488cdc">COOKIE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ac3b581340c521c7f372bcce0792e3059">m_editCookie</a></td></tr>
+<tr class="separator:ac3b581340c521c7f372bcce0792e3059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a359702fb97b39932d0f4605f2324c1d3"><td class="memItemLeft" align="right" valign="top">ITextServices *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#a359702fb97b39932d0f4605f2324c1d3">m_spTextServices</a></td></tr>
+<tr class="separator:a359702fb97b39932d0f4605f2324c1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25f82f2e2222357070087b218fcc849"><td class="memItemLeft" align="right" valign="top">BSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#ae25f82f2e2222357070087b218fcc849">m_RTFText</a></td></tr>
+<tr class="separator:ae25f82f2e2222357070087b218fcc849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc46f2c8df18b9be24193ac2b7bd261"><td class="memItemLeft" align="right" valign="top">HMODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_formatted_text_draw.html#addc46f2c8df18b9be24193ac2b7bd261">hmod</a></td></tr>
+<tr class="separator:addc46f2c8df18b9be24193ac2b7bd261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="aeedb5def68e1033d3759b142f48cfb8f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CFormattedTextDraw::CFormattedTextDraw </td>
+          <td>(</td>
+          <td class="paramtype">HMODULE&#160;</td>
+          <td class="paramname"><em>hmod</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a73cc74e417ded249eb7c8ba5026e74d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CFormattedTextDraw::~CFormattedTextDraw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="adcdbb385f1b4e88c1bdd8f769cc2ea18"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ULONG STDMETHODCALLTYPE CFormattedTextDraw::AddRef </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a55723aacd9eea72087f4a8c1716c44e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::CharFormatFromHFONT </td>
+          <td>(</td>
+          <td class="paramtype">CHARFORMAT2W *&#160;</td>
+          <td class="paramname"><em>pCF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HFONT&#160;</td>
+          <td class="paramname"><em>hFont</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeda21fe76e87d85c6e6ae97f6d98c82c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::Create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aacdbc394944e8ca679c5de2e824496d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::CreateTextServicesObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa9d8d11773fb62728bbee88d441edfcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::Draw </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>hdcDraw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RECT *&#160;</td>
+          <td class="paramname"><em>prc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1b9dc72357c06a06f294d2e07bca4a18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::get_NaturalHeight </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>Width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>pVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa69166f66353dec9dc28b1e2e6f4c495"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::get_NaturalWidth </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>Height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long *&#160;</td>
+          <td class="paramname"><em>pVal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae319a9932c1a75ad19619bea99acb2df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::get_RTFText </td>
+          <td>(</td>
+          <td class="paramtype">BSTR *&#160;</td>
+          <td class="paramname"><em>pVal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a84688cc43aa013fc01eab25bcf687809"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::InitDefaultCharFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adf8e13c8ba939b994d4235b588a52177"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::InitDefaultParaFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa12d7dee46f52f789b6b2109008948c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::OnTxCharFormatChange </td>
+          <td>(</td>
+          <td class="paramtype">const CHARFORMATW *&#160;</td>
+          <td class="paramname"><em>pcf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a01a2da9e321236594b6f3fe8bb0ac310"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::OnTxParaFormatChange </td>
+          <td>(</td>
+          <td class="paramtype">const PARAFORMAT *&#160;</td>
+          <td class="paramname"><em>ppf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8f8860ff9c0d5e1dacee5023743256f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::put_RTFText </td>
+          <td>(</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>newVal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94685a982152d40e47bbd38faf3d983d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT STDMETHODCALLTYPE CFormattedTextDraw::QueryInterface </td>
+          <td>(</td>
+          <td class="paramtype">REFIID&#160;</td>
+          <td class="paramname"><em>riid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void __RPC_FAR *__RPC_FAR *&#160;</td>
+          <td class="paramname"><em>ppvObject</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c0482c9982ab17a5b1bc16e42dae745"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ULONG STDMETHODCALLTYPE CFormattedTextDraw::Release </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9ce824728f92e00b317b59d8b935d86e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::SetTextColor </td>
+          <td>(</td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>clr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac3ff1149d0e0ac7da420bc71d1fc2be1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::SetTextFont </td>
+          <td>(</td>
+          <td class="paramtype">HFONT&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a94abf3aa085118853e6fb343dc56dbd1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxActivate </td>
+          <td>(</td>
+          <td class="paramtype">LONG *&#160;</td>
+          <td class="paramname"><em>plOldState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abb05d3c20125bb481a5256272d87b67f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CFormattedTextDraw::TxClientToScreen </td>
+          <td>(</td>
+          <td class="paramtype">LPPOINT&#160;</td>
+          <td class="paramname"><em>lppt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a14b064dc9ea9d0e12fb49355756339df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CFormattedTextDraw::TxCreateCaret </td>
+          <td>(</td>
+          <td class="paramtype">HBITMAP&#160;</td>
+          <td class="paramname"><em>hbmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>xWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>yHeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4f578fb1c8066bffccbe08661a58b3a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxDeactivate </td>
+          <td>(</td>
+          <td class="paramtype">LONG&#160;</td>
+          <td class="paramname"><em>lNewState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af376f10597fba86173093d88ef231c72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CFormattedTextDraw::TxEnableScrollBar </td>
+          <td>(</td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>fuSBFlags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>fuArrowflags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a45973a797c196a9d7cf02127d12e7a54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetAcceleratorPos </td>
+          <td>(</td>
+          <td class="paramtype">LONG *&#160;</td>
+          <td class="paramname"><em>pcp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae9e30620f85cd0855da77eefab5c542"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetBackStyle </td>
+          <td>(</td>
+          <td class="paramtype">TXTBACKSTYLE *&#160;</td>
+          <td class="paramname"><em>pstyle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1b6bf84a20ce406266dcd59e05579faa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetCharFormat </td>
+          <td>(</td>
+          <td class="paramtype">const CHARFORMATW **&#160;</td>
+          <td class="paramname"><em>ppCF</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d26debc0162611ce308b7472e816a0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetClientRect </td>
+          <td>(</td>
+          <td class="paramtype">LPRECT&#160;</td>
+          <td class="paramname"><em>prc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a82e2088a0416fc8a2d0039e97108ef6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HDC CFormattedTextDraw::TxGetDC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9247dfc9e0cce9f1942c5b6c632ed78d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetExtent </td>
+          <td>(</td>
+          <td class="paramtype">LPSIZEL&#160;</td>
+          <td class="paramname"><em>lpExtent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac16e3287c2da3f1d4af57d268339b3b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetMaxLength </td>
+          <td>(</td>
+          <td class="paramtype">DWORD *&#160;</td>
+          <td class="paramname"><em>plength</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9fcc615f0abc3edd55a5bc6eb07245c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetParaFormat </td>
+          <td>(</td>
+          <td class="paramtype">const PARAFORMAT **&#160;</td>
+          <td class="paramname"><em>ppPF</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac64a3d02efa70493ee449dace1fea36c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetPasswordChar </td>
+          <td>(</td>
+          <td class="paramtype">TCHAR *&#160;</td>
+          <td class="paramname"><em>pch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a43579a9dbb4bd8031cdf7dd1c5a2d008"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetPropertyBits </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD *&#160;</td>
+          <td class="paramname"><em>pdwBits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d11953e055809df98a3354a7b48eff7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetScrollBars </td>
+          <td>(</td>
+          <td class="paramtype">DWORD *&#160;</td>
+          <td class="paramname"><em>pdwScrollBar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26d3e8e94e5ec00f2670737ad565bb50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetSelectionBarWidth </td>
+          <td>(</td>
+          <td class="paramtype">LONG *&#160;</td>
+          <td class="paramname"><em>lSelBarWidth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87bf95137cb9c82cf3b5b184d7b499cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">COLORREF CFormattedTextDraw::TxGetSysColor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a356e5054a4a70bfddebfa5456a51c0f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxGetViewInset </td>
+          <td>(</td>
+          <td class="paramtype">LPRECT&#160;</td>
+          <td class="paramname"><em>prc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeca2dd3918ef62d7f7c030f1a2add1dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HIMC CFormattedTextDraw::TxImmGetContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a677a0528e12025ac1d834ebb3fe17f4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFormattedTextDraw::TxImmReleaseContext </td>
+          <td>(</td>
+          <td class="paramtype">HIMC&#160;</td>
+          <td class="paramname"><em>himc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afe30ef4cb3f37c9875ca64a3484e8af3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFormattedTextDraw::TxInvalidateRect </td>
+          <td>(</td>
+          <td class="paramtype">LPCRECT&#160;</td>
+          <td class="paramname"><em>prc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>fMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acea0cb499a41c7a3b8471ccae713d0a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFormattedTextDraw::TxKillTimer </td>
+          <td>(</td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>idTimer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d7aa1164fef848f8cc86084ff0d5947"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CFormattedTextDraw::TxNotify </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>iNotify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a583a4401f0c1d5a3e5bf02c6a0cfedbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT CFormattedTextDraw::TxReleaseDC </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hdc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5bbd1e639e6c48c33a6bfaa0d469e439"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CFormattedTextDraw::TxScreenToClient </td>
+          <td>(</td>
+          <td class="paramtype">LPPOINT&#160;</td>
+          <td class="paramname"><em>lppt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab86cfe0bd348ba7e6dca937139bf594b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFormattedTextDraw::TxScrollWindowEx </td>
+          <td>(</td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>dx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>dy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPCRECT&#160;</td>
+          <td class="paramname"><em>lprcScroll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPCRECT&#160;</td>
+          <td class="paramname"><em>lprcClip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HRGN&#160;</td>
+          <td class="paramname"><em>hrgnUpdate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPRECT&#160;</td>
+          <td class="paramname"><em>lprcUpdate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>fuScroll</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a44ef4a7a47a5be7d277d4b04e7e12a27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFormattedTextDraw::TxSetCapture </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>fCapture</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0de9d25f5f37cb97c45323f8ebaff5a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CFormattedTextDraw::TxSetCaretPos </td>
+          <td>(</td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab1f8c8017864381e356371f36d7e6863"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFormattedTextDraw::TxSetCursor </td>
+          <td>(</td>
+          <td class="paramtype">HCURSOR&#160;</td>
+          <td class="paramname"><em>hcur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>fText</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae1f80562f0bb57e63f88ca07184a7290"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFormattedTextDraw::TxSetFocus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abfad442af7f3e31dc59b6abc23c789a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CFormattedTextDraw::TxSetScrollPos </td>
+          <td>(</td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>fnBar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>nPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>fRedraw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af1539757775ca0235713e93f42274553"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CFormattedTextDraw::TxSetScrollRange </td>
+          <td>(</td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>fnBar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LONG&#160;</td>
+          <td class="paramname"><em>nMinPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>nMaxPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>fRedraw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2cfee5142c0ccc914ab9e22be37021a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CFormattedTextDraw::TxSetTimer </td>
+          <td>(</td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>idTimer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UINT&#160;</td>
+          <td class="paramname"><em>uTimeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab2559df2077f47c4483ba526727016e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CFormattedTextDraw::TxShowCaret </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>fShow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b31bc8979880017bac423fc7861e3c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL CFormattedTextDraw::TxShowScrollBar </td>
+          <td>(</td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>fnBar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>fShow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abdb3f55080c4bc55d7710059beb9e6d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFormattedTextDraw::TxViewChange </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>fUpdate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="addc46f2c8df18b9be24193ac2b7bd261"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HMODULE CFormattedTextDraw::hmod</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a95e778f91604bec6f68d7933550910aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD CFormattedTextDraw::m_dwMaxLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4877370e9f9a97ca802f614601ca972c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD CFormattedTextDraw::m_dwPropertyBits</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae015d2a67f789b83b172077ca92fedba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD CFormattedTextDraw::m_dwScrollbar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac3b581340c521c7f372bcce0792e3059"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="formattedtextdraw_8h.html#a38853a4ceee8d1a6fac128d822488cdc">COOKIE</a> CFormattedTextDraw::m_editCookie</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="add7687bda35106a487299a6bd945e0fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CHARFORMAT2W* CFormattedTextDraw::m_pCF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae5c1b692255587fff873eb3cae1e30a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PARAFORMAT2 CFormattedTextDraw::m_PF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac12889a14954434340548415c24cd61c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RECT CFormattedTextDraw::m_rcClient</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a55dfce4f5f6ceebc265f50d39a3e3b18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RECT CFormattedTextDraw::m_rcViewInset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae25f82f2e2222357070087b218fcc849"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BSTR CFormattedTextDraw::m_RTFText</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7a01811c4c6123bea7d639302b69a128"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIZEL CFormattedTextDraw::m_sizelExtent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a359702fb97b39932d0f4605f2324c1d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ITextServices* CFormattedTextDraw::m_spTextServices</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af07e4ff84b148e4c1614782ec37b9b54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CFormattedTextDraw::nPixelsPerInchX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aed39a1517760cfb53599780e231d481b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CFormattedTextDraw::nPixelsPerInchY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="formattedtextdraw_8h_source.html">formattedtextdraw.h</a></li>
+<li>src/<a class="el" href="_formatted_text_draw_8cpp.html">FormattedTextDraw.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

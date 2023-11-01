@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Класс SavableItem</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-static-methods">Защищенные статические члены</a> &#124;
+<a href="class_savable_item-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс SavableItem<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_savable_item_8h_source.html">SavableItem.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:SavableItem:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_savable_item__inherit__graph.png" border="0" usemap="#_savable_item_inherit__map" alt="Inheritance graph"/></div>
+<map name="_savable_item_inherit__map" id="_savable_item_inherit__map">
+<area shape="rect" id="node2" href="class_axis.html" title="Axis" alt="" coords="5,80,53,107"/><area shape="rect" id="node3" href="class_back_ground.html" title="BackGround" alt="" coords="78,80,173,107"/><area shape="rect" id="node4" href="class_border.html" title="Border" alt="" coords="197,80,257,107"/><area shape="rect" id="node5" href="class_digits.html" title="Digits" alt="" coords="281,80,335,107"/><area shape="rect" id="node6" href="class_grid_lines.html" title="GridLines" alt="" coords="360,80,437,107"/><area shape="rect" id="node7" href="class_label.html" title="Label" alt="" coords="461,80,515,107"/><area shape="rect" id="node8" href="class_legend.html" title="Legend" alt="" coords="539,80,603,107"/><area shape="rect" id="node9" href="class_profile_marks.html" title="ProfileMarks" alt="" coords="627,80,722,107"/><area shape="rect" id="node10" href="class_selection.html" title="Selection" alt="" coords="746,80,822,107"/><area shape="rect" id="node11" href="class_ticks.html" title="Ticks" alt="" coords="847,80,900,107"/><area shape="rect" id="node12" href="class_title.html" title="Title" alt="" coords="925,80,971,107"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab046904bea3b84bd453764fe164fcbd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#ab046904bea3b84bd453764fe164fcbd5">SavableItem</a> ()</td></tr>
+<tr class="separator:ab046904bea3b84bd453764fe164fcbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e2cdaa3e35d16f31337d02e794117e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#a01e2cdaa3e35d16f31337d02e794117e">~SavableItem</a> ()</td></tr>
+<tr class="separator:a01e2cdaa3e35d16f31337d02e794117e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da511a4854f515096f8f9b498f64158"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#a0da511a4854f515096f8f9b498f64158">Write</a> (HANDLE hFile) const =0</td></tr>
+<tr class="separator:a0da511a4854f515096f8f9b498f64158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eadd16b2cb0652091cc15f596a00fb2"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#a7eadd16b2cb0652091cc15f596a00fb2">Read</a> (HANDLE hFile)=0</td></tr>
+<tr class="separator:a7eadd16b2cb0652091cc15f596a00fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Защищенные статические члены</h2></td></tr>
+<tr class="memitem:ab7fdbc1d0002d102e957104c130678d6"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#ab7fdbc1d0002d102e957104c130678d6">ReadString</a> (HANDLE hFile)</td></tr>
+<tr class="separator:ab7fdbc1d0002d102e957104c130678d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491b89267b8402aeb64bfeda5cef0af1"><td class="memItemLeft" align="right" valign="top">static BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#a491b89267b8402aeb64bfeda5cef0af1">WriteString</a> (HANDLE hFile, std::string theString)</td></tr>
+<tr class="separator:a491b89267b8402aeb64bfeda5cef0af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="ab046904bea3b84bd453764fe164fcbd5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SavableItem::SavableItem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a01e2cdaa3e35d16f31337d02e794117e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual SavableItem::~SavableItem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a7eadd16b2cb0652091cc15f596a00fb2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual BOOL SavableItem::Read </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_ticks.html#a6059d8bd2489336d9e77fe7c701e1d20">Ticks</a>, <a class="el" href="class_axis.html#af403dc4181f1681d321f190bd74268ff">Axis</a>, <a class="el" href="class_legend.html#a881509fdd919ed3a30ca822a5edb1114">Legend</a>, <a class="el" href="class_back_ground.html#aba05f03ff7484a1afad33c9400baf644">BackGround</a>, <a class="el" href="class_digits.html#a8e4038efd3b350b447a1d509eaa5040e">Digits</a>, <a class="el" href="class_grid_lines.html#aecc543959e2bfa9c45345257433a3110">GridLines</a>, <a class="el" href="class_label.html#a491dcc38695f69dd135fba56cfdeb3cf">Label</a>, <a class="el" href="class_profile_marks.html#af10107761b4341881739dc5d2f574b53">ProfileMarks</a>, <a class="el" href="class_title.html#ad1cfcfb17962c87f63cae0966d07998c">Title</a>, <a class="el" href="class_selection.html#a4cf1ce6c3fb26f950075a17c25341110">Selection</a> и <a class="el" href="class_border.html#a35655b3874c3230038e171f18e7286f2">Border</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7fdbc1d0002d102e957104c130678d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string SavableItem::ReadString </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0da511a4854f515096f8f9b498f64158"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual BOOL SavableItem::Write </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещается в <a class="el" href="class_ticks.html#a49b690623984a9ecc3e2090dac5f0f62">Ticks</a>, <a class="el" href="class_axis.html#a895ec09817b379201fe2db2cd1e715aa">Axis</a>, <a class="el" href="class_legend.html#a93f2a8366a6c5df1b99d4ba2805928b4">Legend</a>, <a class="el" href="class_back_ground.html#ab21bb3686aac638ef0da5fb9a72c3925">BackGround</a>, <a class="el" href="class_digits.html#ad516fc5b9c052a5b0b82469e645a5d0a">Digits</a>, <a class="el" href="class_grid_lines.html#af41e725b2af5e093e5307e2096c2c4c7">GridLines</a>, <a class="el" href="class_label.html#a244a940c2d9301bd6bd2abcb2ef9af05">Label</a>, <a class="el" href="class_profile_marks.html#a6f0d5141d95c02bc92ebb5ce9e96d559">ProfileMarks</a>, <a class="el" href="class_title.html#a3c42069773ac1c18a05ea891b39a3332">Title</a>, <a class="el" href="class_selection.html#a1212e14a73f62170020d426c1a3ee5e9">Selection</a> и <a class="el" href="class_border.html#a61f82208fd693839acd08d0a4e787b10">Border</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a491b89267b8402aeb64bfeda5cef0af1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL SavableItem::WriteString </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>theString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="_savable_item_8h_source.html">SavableItem.h</a></li>
+<li>src/<a class="el" href="_savable_item_8cpp.html">SavableItem.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

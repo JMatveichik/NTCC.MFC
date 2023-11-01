@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Файл src/Regions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл Regions.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="border_8h_source.html">border.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_back_ground_fill_8h_source.html">BackGroundFill.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для Regions.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="_regions_8h__incl.png" border="0" usemap="#src_2_regions_8h" alt=""/></div>
+<map name="src_2_regions_8h" id="src_2_regions_8h">
+<area shape="rect" id="node2" href="border_8h.html" title="border.h" alt="" coords="63,80,133,107"/><area shape="rect" id="node8" href="_back_ground_fill_8h.html" title="BackGroundFill.h" alt="" coords="157,80,279,107"/><area shape="rect" id="node3" href="linedata_8h.html" title="linedata.h" alt="" coords="59,155,137,181"/><area shape="rect" id="node6" href="_savable_item_8h.html" title="SavableItem.h" alt="" coords="164,155,267,181"/><area shape="rect" id="node5" href="xyplotconst_8h.html" title="Содержит константы и перечисляемые типы . " alt="" coords="5,229,113,256"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="_regions_8h__dep__incl.png" border="0" usemap="#src_2_regions_8hdep" alt=""/></div>
+<map name="src_2_regions_8hdep" id="src_2_regions_8hdep">
+<area shape="rect" id="node2" href="main_8h.html" title="src/main.h" alt="" coords="654,80,737,107"/><area shape="rect" id="node9" href="_regions_8cpp.html" title="src/Regions.cpp" alt="" coords="1187,155,1303,181"/><area shape="rect" id="node3" href="_axis_8cpp.html" title="src/Axis.cpp" alt="" coords="5,155,100,181"/><area shape="rect" id="node4" href="label_8cpp.html" title="src/label.cpp" alt="" coords="125,155,221,181"/><area shape="rect" id="node5" href="legend_8cpp.html" title="src/legend.cpp" alt="" coords="245,155,351,181"/><area shape="rect" id="node6" href="_level_line_8cpp.html" title="src/LevelLine.cpp" alt="" coords="375,155,498,181"/><area shape="rect" id="node7" href="main_8cpp.html" title="src/main.cpp" alt="" coords="523,155,620,181"/><area shape="rect" id="node8" href="profile_8cpp.html" title="src/profile.cpp" alt="" coords="644,155,747,181"/><area shape="rect" id="node10" href="selection_8cpp.html" title="src/selection.cpp" alt="" coords="771,155,892,181"/><area shape="rect" id="node11" href="title_8cpp.html" title="src/title.cpp" alt="" coords="917,155,1007,181"/><area shape="rect" id="node12" href="_x_y_plot_d_l_l_8cpp.html" title="src/XYPlotDLL.cpp" alt="" coords="1031,155,1162,181"/></map>
+</div>
+</div>
+<p><a href="_regions_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_region.html">PlotRegion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a75ca559f3ba2ddf617b9c211afcdd941"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; long, <br class="typebreak"/>
+<a class="el" href="class_plot_region.html">PlotRegion</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_regions_8h.html#a75ca559f3ba2ddf617b9c211afcdd941">RegionsMap</a></td></tr>
+<tr class="separator:a75ca559f3ba2ddf617b9c211afcdd941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cab289bbb17206edfc5f9e061c63e02"><td class="memItemLeft" align="right" valign="top">typedef RegionsMap::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_regions_8h.html#a4cab289bbb17206edfc5f9e061c63e02">RegionsMapIterator</a></td></tr>
+<tr class="separator:a4cab289bbb17206edfc5f9e061c63e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fcee7e48de9e14aeb44795bfce2478a"><td class="memItemLeft" align="right" valign="top">typedef RegionsMap::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_regions_8h.html#a0fcee7e48de9e14aeb44795bfce2478a">RegionsMapConstIterator</a></td></tr>
+<tr class="separator:a0fcee7e48de9e14aeb44795bfce2478a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Типы</h2>
+<a class="anchor" id="a75ca559f3ba2ddf617b9c211afcdd941"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;long, <a class="el" href="class_plot_region.html">PlotRegion</a>*&gt; <a class="el" href="_regions_8h.html#a75ca559f3ba2ddf617b9c211afcdd941">RegionsMap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0fcee7e48de9e14aeb44795bfce2478a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef RegionsMap::const_iterator <a class="el" href="_regions_8h.html#a0fcee7e48de9e14aeb44795bfce2478a">RegionsMapConstIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4cab289bbb17206edfc5f9e061c63e02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef RegionsMap::iterator <a class="el" href="_regions_8h.html#a4cab289bbb17206edfc5f9e061c63e02">RegionsMapIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

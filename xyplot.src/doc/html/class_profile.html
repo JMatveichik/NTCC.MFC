@@ -1,0 +1,1458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Класс Profile</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_profile-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Profile</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="profile_8h_source.html">profile.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса Profile:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_profile__coll__graph.png" border="0" usemap="#_profile_coll__map" alt="Collaboration graph"/></div>
+<map name="_profile_coll__map" id="_profile_coll__map">
+<area shape="rect" id="node2" href="class_line_data.html" title="LineData" alt="" coords="1091,273,1165,300"/><area shape="rect" id="node5" href="class_axis.html" title="Axis" alt="" coords="784,376,832,403"/><area shape="rect" id="node14" href="class_border.html" title="Border" alt="" coords="421,376,481,403"/><area shape="rect" id="node16" href="class_selection.html" title="Selection" alt="" coords="943,600,1019,627"/><area shape="rect" id="node18" href="class_ticks.html" title="Ticks" alt="" coords="768,511,821,537"/><area shape="rect" id="node20" href="class_grid_lines.html" title="GridLines" alt="" coords="1136,511,1213,537"/><area shape="rect" id="node3" href="class_profile_marks.html" title="ProfileMarks" alt="" coords="1517,324,1611,351"/><area shape="rect" id="node4" href="class_savable_item.html" title="SavableItem" alt="" coords="658,184,750,211"/><area shape="rect" id="node7" href="class_title.html" title="Title" alt="" coords="293,273,339,300"/><area shape="rect" id="node13" href="class_back_ground.html" title="BackGround" alt="" coords="158,376,253,403"/><area shape="rect" id="node15" href="class_legend.html" title="Legend" alt="" coords="221,600,285,627"/><area shape="rect" id="node19" href="class_digits.html" title="Digits" alt="" coords="930,511,985,537"/><area shape="rect" id="node21" href="class_label.html" title="Label" alt="" coords="677,273,731,300"/><area shape="rect" id="node6" href="class_x_y_plot.html" title="Класс для работы с базой данных " alt="" coords="412,511,473,537"/><area shape="rect" id="node8" href="class_r_t_f_string.html" title="RTFString" alt="" coords="149,184,229,211"/><area shape="rect" id="node9" href="class_c_formatted_text_draw.html" title="CFormattedTextDraw" alt="" coords="117,95,261,121"/><area shape="rect" id="node12" href="structtag_c_o_o_k_i_e.html" title="tagCOOKIE" alt="" coords="283,5,373,32"/><area shape="rect" id="node17" href="class_profile_group_map.html" title="ProfileGroupMap" alt="" coords="1238,511,1357,537"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a0af304ee61478092d010df5dc146bd06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a0af304ee61478092d010df5dc146bd06">Profile</a> (std::string <a class="el" href="class_profile.html#ac8a75db2da9448616fb180edcc25bf8c">name</a>, long color, int width, BOOL <a class="el" href="class_profile.html#a7e12899117a7229fd74e727d4c7508aa">showLine</a>, BOOL <a class="el" href="class_profile.html#a07364e07ee0c925c0b2a7631c666056b">showMarks</a>, const <a class="el" href="class_axis.html">Axis</a> &amp;<a class="el" href="class_profile.html#a9ab5958c5e36ddb1c8dc96773bfbaeb6">axisX</a>, const <a class="el" href="class_axis.html">Axis</a> &amp;<a class="el" href="class_profile.html#af934163fd90437181ce2125860214cd0">axisY</a>)</td></tr>
+<tr class="separator:a0af304ee61478092d010df5dc146bd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58fa758a59bc4ee3c1a9980e360e4e98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a58fa758a59bc4ee3c1a9980e360e4e98">~Profile</a> ()</td></tr>
+<tr class="separator:a58fa758a59bc4ee3c1a9980e360e4e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af982d6eea235d68ebd74f102ef29d12a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#af982d6eea235d68ebd74f102ef29d12a">SetName</a> (std::string <a class="el" href="class_profile.html#ac8a75db2da9448616fb180edcc25bf8c">name</a>)</td></tr>
+<tr class="separator:af982d6eea235d68ebd74f102ef29d12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6baeea130f07d7027117d1663619251"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#aa6baeea130f07d7027117d1663619251">GetName</a> () const </td></tr>
+<tr class="separator:aa6baeea130f07d7027117d1663619251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ae3bac4830d7b81cfc5daefeb406445"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a6ae3bac4830d7b81cfc5daefeb406445">SetVisible</a> (BOOL visible=TRUE)</td></tr>
+<tr class="separator:a6ae3bac4830d7b81cfc5daefeb406445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381fe66a6e251a351c0157587d609ad7"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a381fe66a6e251a351c0157587d609ad7">IsVisible</a> () const </td></tr>
+<tr class="separator:a381fe66a6e251a351c0157587d609ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839300e94f6e588988c5b25e167de9dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a839300e94f6e588988c5b25e167de9dd">UseSymblos</a> (BOOL symblols)</td></tr>
+<tr class="separator:a839300e94f6e588988c5b25e167de9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431d9a16e08188d7ad014c0d20696237"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a431d9a16e08188d7ad014c0d20696237">IsUseSymblos</a> () const </td></tr>
+<tr class="separator:a431d9a16e08188d7ad014c0d20696237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9a7420f40b1cc4974a2fe6b1a2aca8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a2f9a7420f40b1cc4974a2fe6b1a2aca8">Show</a> (BOOL bShow)</td></tr>
+<tr class="separator:a2f9a7420f40b1cc4974a2fe6b1a2aca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacee6e0f579d0dbcc6f8452778907473"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#aacee6e0f579d0dbcc6f8452778907473">GetUnit</a> (unsigned index, double &amp;x, double &amp;y) const </td></tr>
+<tr class="separator:aacee6e0f579d0dbcc6f8452778907473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844b59dcfb67d36f70f322425b7f98ee"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a844b59dcfb67d36f70f322425b7f98ee">GetData</a> (unsigned *count, double *pfx, double *pfy) const </td></tr>
+<tr class="separator:a844b59dcfb67d36f70f322425b7f98ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa272424c24ba0eacdd3aa725c6e44e98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#aa272424c24ba0eacdd3aa725c6e44e98">SetData</a> (const double *pfx, const double *pfy, int count)</td></tr>
+<tr class="separator:aa272424c24ba0eacdd3aa725c6e44e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf535c50bda946ff73128a5d686d0d36"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#abf535c50bda946ff73128a5d686d0d36">Empty</a> () const </td></tr>
+<tr class="separator:abf535c50bda946ff73128a5d686d0d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c65fe41c9872b365adec25e5dc0376d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a5c65fe41c9872b365adec25e5dc0376d">Append</a> (double fx, double fy)</td></tr>
+<tr class="separator:a5c65fe41c9872b365adec25e5dc0376d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aede9dc40d7161d8e4f5e8e49a1894f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a8aede9dc40d7161d8e4f5e8e49a1894f">Append</a> (const double *pfx, const double *pfy, unsigned count)</td></tr>
+<tr class="separator:a8aede9dc40d7161d8e4f5e8e49a1894f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99b05caf969d1100a096872896decff"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#ac99b05caf969d1100a096872896decff">DataSize</a> () const </td></tr>
+<tr class="separator:ac99b05caf969d1100a096872896decff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71927cb9bcbbe8a02947ffc25afdadd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a71927cb9bcbbe8a02947ffc25afdadd9">SetLineData</a> (const <a class="el" href="class_line_data.html">LineData</a> &amp;srcLine)</td></tr>
+<tr class="separator:a71927cb9bcbbe8a02947ffc25afdadd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a476640b07ed944d59dc55efe64fe15c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a476640b07ed944d59dc55efe64fe15c7">GetLineData</a> ()</td></tr>
+<tr class="separator:a476640b07ed944d59dc55efe64fe15c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bdae58cd0a58abcd2a7e51368a693b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a2bdae58cd0a58abcd2a7e51368a693b1">Range</a> (double &amp;xmin, double &amp;xmax, double &amp;ymin, double &amp;ymax) const </td></tr>
+<tr class="separator:a2bdae58cd0a58abcd2a7e51368a693b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d79d6f6b2355fe6e13262319968368"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#ac0d79d6f6b2355fe6e13262319968368">RangeX</a> (double &amp;xmin, double &amp;xmax) const </td></tr>
+<tr class="separator:ac0d79d6f6b2355fe6e13262319968368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af838a64a6376e9f083a621edd4604777"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#af838a64a6376e9f083a621edd4604777">RangeY</a> (double &amp;xmin, double &amp;xmax) const </td></tr>
+<tr class="separator:af838a64a6376e9f083a621edd4604777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8f93d7a343455f9b8168220d1880d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a2d8f93d7a343455f9b8168220d1880d2">Render</a> (HDC hDC, const RECT rect)</td></tr>
+<tr class="separator:a2d8f93d7a343455f9b8168220d1880d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82006b877d02e4f5f725118f95fa59e"><td class="memItemLeft" align="right" valign="top">const POINT *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#af82006b877d02e4f5f725118f95fa59e">GetRenderPointArray</a> (unsigned &amp;count) const </td></tr>
+<tr class="separator:af82006b877d02e4f5f725118f95fa59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e9c9f23f67511b0bbd3aec4c256821"><td class="memItemLeft" align="right" valign="top">const POINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a83e9c9f23f67511b0bbd3aec4c256821">GetRenderPoint</a> (int index, double &amp;physX, double &amp;physY) const </td></tr>
+<tr class="separator:a83e9c9f23f67511b0bbd3aec4c256821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad11605c10819b4d259474ddc0a888334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_profile_marks.html">ProfileMarks</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#ad11605c10819b4d259474ddc0a888334">GetMarks</a> ()</td></tr>
+<tr class="separator:ad11605c10819b4d259474ddc0a888334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0faa93dd60b346e486b2c1a084c05836"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_axis.html">Axis</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a0faa93dd60b346e486b2c1a084c05836">AxisX</a> ()</td></tr>
+<tr class="separator:a0faa93dd60b346e486b2c1a084c05836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af891a7ad2f1f7508822c41e542e0edf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_axis.html">Axis</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#af891a7ad2f1f7508822c41e542e0edf2">AxisY</a> ()</td></tr>
+<tr class="separator:af891a7ad2f1f7508822c41e542e0edf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a263ac82a825c8c0208bbb2532e5d9"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a48a263ac82a825c8c0208bbb2532e5d9">IsShowInLegend</a> () const </td></tr>
+<tr class="separator:a48a263ac82a825c8c0208bbb2532e5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69bc4295a958de5f72aa67ab70b3d036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a69bc4295a958de5f72aa67ab70b3d036">ShowInLegend</a> (BOOL show)</td></tr>
+<tr class="separator:a69bc4295a958de5f72aa67ab70b3d036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8069bd46802baa2c0fa53419425b159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#ac8069bd46802baa2c0fa53419425b159">GetVisibleRange</a> (unsigned &amp;firstIndex, unsigned &amp;lastIndex) const </td></tr>
+<tr class="separator:ac8069bd46802baa2c0fa53419425b159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:adc5551c9cef4089bd32d5358c2d27ec5"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#adc5551c9cef4089bd32d5358c2d27ec5">DEFAULTWIDTH</a> = 2</td></tr>
+<tr class="separator:adc5551c9cef4089bd32d5358c2d27ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a3cd865158aed8a6335c132acec3b734f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a3cd865158aed8a6335c132acec3b734f">Reset</a> ()</td></tr>
+<tr class="separator:a3cd865158aed8a6335c132acec3b734f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:ac8a75db2da9448616fb180edcc25bf8c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#ac8a75db2da9448616fb180edcc25bf8c">name</a></td></tr>
+<tr class="separator:ac8a75db2da9448616fb180edcc25bf8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07364e07ee0c925c0b2a7631c666056b"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a07364e07ee0c925c0b2a7631c666056b">showMarks</a></td></tr>
+<tr class="separator:a07364e07ee0c925c0b2a7631c666056b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e12899117a7229fd74e727d4c7508aa"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a7e12899117a7229fd74e727d4c7508aa">showLine</a></td></tr>
+<tr class="separator:a7e12899117a7229fd74e727d4c7508aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63eba30a8236070b9ed979e1ebdd8709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_line_data.html">LineData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a63eba30a8236070b9ed979e1ebdd8709">line</a></td></tr>
+<tr class="separator:a63eba30a8236070b9ed979e1ebdd8709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab5958c5e36ddb1c8dc96773bfbaeb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_axis.html">Axis</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a9ab5958c5e36ddb1c8dc96773bfbaeb6">axisX</a></td></tr>
+<tr class="separator:a9ab5958c5e36ddb1c8dc96773bfbaeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af934163fd90437181ce2125860214cd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_axis.html">Axis</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#af934163fd90437181ce2125860214cd0">axisY</a></td></tr>
+<tr class="separator:af934163fd90437181ce2125860214cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a37b4d72a0c1dcefcf65aa6474d8ca3"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a2a37b4d72a0c1dcefcf65aa6474d8ca3">newData</a></td></tr>
+<tr class="separator:a2a37b4d72a0c1dcefcf65aa6474d8ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21fbb7028f71f681ad6becd412f34e07"><td class="memItemLeft" align="right" valign="top">RECT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a21fbb7028f71f681ad6becd412f34e07">lastRenderedRect</a></td></tr>
+<tr class="separator:a21fbb7028f71f681ad6becd412f34e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec1de15af31223a7cba55fb711ce2c5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a7ec1de15af31223a7cba55fb711ce2c5">minX</a></td></tr>
+<tr class="separator:a7ec1de15af31223a7cba55fb711ce2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4ffb95639a391469dc7f5b97fba63b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a3d4ffb95639a391469dc7f5b97fba63b">maxX</a></td></tr>
+<tr class="separator:a3d4ffb95639a391469dc7f5b97fba63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65307e12c8d002effb1de3598d47e00"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#ab65307e12c8d002effb1de3598d47e00">minY</a></td></tr>
+<tr class="separator:ab65307e12c8d002effb1de3598d47e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac16836105d7961c71046014887d3cb71"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#ac16836105d7961c71046014887d3cb71">maxY</a></td></tr>
+<tr class="separator:ac16836105d7961c71046014887d3cb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb294101d0593f41db3f20fb1e678906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_profile_marks.html">ProfileMarks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#afb294101d0593f41db3f20fb1e678906">marks</a></td></tr>
+<tr class="separator:afb294101d0593f41db3f20fb1e678906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7143abb96dc0d5ef1b152d1ce0ee8dac"><td class="memItemLeft" align="right" valign="top">std::vector&lt; POINT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a7143abb96dc0d5ef1b152d1ce0ee8dac">dataDevice</a></td></tr>
+<tr class="separator:a7143abb96dc0d5ef1b152d1ce0ee8dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8d3156a467dc594b39ee8224b659c3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a9b8d3156a467dc594b39ee8224b659c3">dataPhysX</a></td></tr>
+<tr class="separator:a9b8d3156a467dc594b39ee8224b659c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb59691aee18d478753d4aedfafc8787"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#acb59691aee18d478753d4aedfafc8787">dataPhysY</a></td></tr>
+<tr class="separator:acb59691aee18d478753d4aedfafc8787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c7baa3c0a3b1762f8c0eed5223868f"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a09c7baa3c0a3b1762f8c0eed5223868f">showInLegend</a></td></tr>
+<tr class="separator:a09c7baa3c0a3b1762f8c0eed5223868f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877766d4f4ee2eb4f63220ebbbcf2e69"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a877766d4f4ee2eb4f63220ebbbcf2e69">firstVisible</a></td></tr>
+<tr class="separator:a877766d4f4ee2eb4f63220ebbbcf2e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48970e92143859da4f950c1c8fee217"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#ad48970e92143859da4f950c1c8fee217">lastVisible</a></td></tr>
+<tr class="separator:ad48970e92143859da4f950c1c8fee217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11aa9c768f5ff249dda920c04b886cd9"><td class="memItemLeft" align="right" valign="top">CRITICAL_SECTION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_profile.html#a11aa9c768f5ff249dda920c04b886cd9">cs</a></td></tr>
+<tr class="separator:a11aa9c768f5ff249dda920c04b886cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a0af304ee61478092d010df5dc146bd06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Profile::Profile </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>showLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>showMarks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_axis.html">Axis</a> &amp;&#160;</td>
+          <td class="paramname"><em>axisX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_axis.html">Axis</a> &amp;&#160;</td>
+          <td class="paramname"><em>axisY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a58fa758a59bc4ee3c1a9980e360e4e98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Profile::~Profile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a5c65fe41c9872b365adec25e5dc0376d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::Append </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8aede9dc40d7161d8e4f5e8e49a1894f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::Append </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>pfx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>pfy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0faa93dd60b346e486b2c1a084c05836"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_axis.html">Axis</a>&amp; Profile::AxisX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af891a7ad2f1f7508822c41e542e0edf2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_axis.html">Axis</a>&amp; Profile::AxisY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac99b05caf969d1100a096872896decff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Profile::DataSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf535c50bda946ff73128a5d686d0d36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Profile::Empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a844b59dcfb67d36f70f322425b7f98ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long Profile::GetData </td>
+          <td>(</td>
+          <td class="paramtype">unsigned *&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>pfx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>pfy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a476640b07ed944d59dc55efe64fe15c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_line_data.html">LineData</a>&amp; Profile::GetLineData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad11605c10819b4d259474ddc0a888334"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_profile_marks.html">ProfileMarks</a>&amp; Profile::GetMarks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa6baeea130f07d7027117d1663619251"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; Profile::GetName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a83e9c9f23f67511b0bbd3aec4c256821"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const POINT Profile::GetRenderPoint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>physX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>physY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af82006b877d02e4f5f725118f95fa59e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const POINT * Profile::GetRenderPointArray </td>
+          <td>(</td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aacee6e0f579d0dbcc6f8452778907473"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long Profile::GetUnit </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8069bd46802baa2c0fa53419425b159"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::GetVisibleRange </td>
+          <td>(</td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>firstIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned &amp;&#160;</td>
+          <td class="paramname"><em>lastIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a48a263ac82a825c8c0208bbb2532e5d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Profile::IsShowInLegend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a431d9a16e08188d7ad014c0d20696237"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Profile::IsUseSymblos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a381fe66a6e251a351c0157587d609ad7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Profile::IsVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2bdae58cd0a58abcd2a7e51368a693b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::Range </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>xmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>xmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>ymin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>ymax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac0d79d6f6b2355fe6e13262319968368"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::RangeX </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>xmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>xmax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af838a64a6376e9f083a621edd4604777"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::RangeY </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>xmin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>xmax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d8f93d7a343455f9b8168220d1880d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::Render </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hDC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RECT&#160;</td>
+          <td class="paramname"><em>rect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3cd865158aed8a6335c132acec3b734f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa272424c24ba0eacdd3aa725c6e44e98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::SetData </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>pfx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>pfy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a71927cb9bcbbe8a02947ffc25afdadd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::SetLineData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td>
+          <td class="paramname"><em>srcLine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af982d6eea235d68ebd74f102ef29d12a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::SetName </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6ae3bac4830d7b81cfc5daefeb406445"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::SetVisible </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>visible</em> = <code>TRUE</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2f9a7420f40b1cc4974a2fe6b1a2aca8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::Show </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bShow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69bc4295a958de5f72aa67ab70b3d036"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::ShowInLegend </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>show</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a839300e94f6e588988c5b25e167de9dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Profile::UseSymblos </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>symblols</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a9ab5958c5e36ddb1c8dc96773bfbaeb6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_axis.html">Axis</a>&amp; Profile::axisX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af934163fd90437181ce2125860214cd0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_axis.html">Axis</a>&amp; Profile::axisY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a11aa9c768f5ff249dda920c04b886cd9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRITICAL_SECTION Profile::cs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7143abb96dc0d5ef1b152d1ce0ee8dac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;POINT&gt; Profile::dataDevice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b8d3156a467dc594b39ee8224b659c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; Profile::dataPhysX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb59691aee18d478753d4aedfafc8787"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; Profile::dataPhysY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc5551c9cef4089bd32d5358c2d27ec5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Profile::DEFAULTWIDTH = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a877766d4f4ee2eb4f63220ebbbcf2e69"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Profile::firstVisible</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21fbb7028f71f681ad6becd412f34e07"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RECT Profile::lastRenderedRect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad48970e92143859da4f950c1c8fee217"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned Profile::lastVisible</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63eba30a8236070b9ed979e1ebdd8709"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_line_data.html">LineData</a> Profile::line</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afb294101d0593f41db3f20fb1e678906"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_profile_marks.html">ProfileMarks</a> Profile::marks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d4ffb95639a391469dc7f5b97fba63b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Profile::maxX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac16836105d7961c71046014887d3cb71"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Profile::maxY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ec1de15af31223a7cba55fb711ce2c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Profile::minX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab65307e12c8d002effb1de3598d47e00"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Profile::minY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8a75db2da9448616fb180edcc25bf8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Profile::name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a37b4d72a0c1dcefcf65aa6474d8ca3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Profile::newData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a09c7baa3c0a3b1762f8c0eed5223868f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Profile::showInLegend</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e12899117a7229fd74e727d4c7508aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Profile::showLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a07364e07ee0c925c0b2a7631c666056b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Profile::showMarks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="profile_8h_source.html">profile.h</a></li>
+<li>src/<a class="el" href="profile_8cpp.html">profile.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,149 @@
+\hypertarget{group__gr_properties}{\section{Функции сохранения и загрузки свойств}
+\label{group__gr_properties}\index{Функции сохранения и загрузки свойств@{Функции сохранения и загрузки свойств}}
+}
+
+
+Хранение параметров  
+
+
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+B\-O\-O\-L \hyperlink{group__gr_properties_ga86742bc6603db4141caaee586872e5df}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Reg\-Restore\-Defaults} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot)
+\begin{DoxyCompactList}\small\item\em Функция сбрасывает настройки экземпляра 2\-D графики в настройки по умолчанию. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_properties_ga24942314b181fa7f547629d15577589d}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Reg\-Load\-Settings} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, const char $\ast$psz\-Key, const char $\ast$psz\-Value)
+\begin{DoxyCompactList}\small\item\em Функция загружает настройки экземпляра 2\-D графики из реестра. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_properties_ga07f14ff8585116fcf19f7421a0c9e64f}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Reg\-Save\-Settings} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, const char $\ast$psz\-Key, const char $\ast$psz\-Value)
+\begin{DoxyCompactList}\small\item\em Функция сохраняет настройки экземпляра 2\-D графики в реестре. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_properties_gaa8c0d039a585af0356d553ba7a76f152}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Save\-Properties} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, const char $\ast$psz\-File\-Name)
+\begin{DoxyCompactList}\small\item\em Функция сохраняет настройки экземпляра 2\-D графики в файле. \end{DoxyCompactList}\item 
+B\-O\-O\-L \hyperlink{group__gr_properties_ga569a657dccc96f9087dde44794712848}{xyplot\-::\-X\-Y\-Plot\-Manager\-::\-Load\-Properties} (\hyperlink{classxyplot_1_1_h_p_l_o_t}{H\-P\-L\-O\-T} \&h\-Plot, const char $\ast$psz\-File\-Name)
+\begin{DoxyCompactList}\small\item\em Функция загружает настройки экземпляра 2\-D графики из файла. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Хранение параметров Данный набор функций позволяет сохранять и загружать свойства 2\-D графики из файла или реестра. 
+
+\subsection{Функции}
+\hypertarget{group__gr_properties_ga569a657dccc96f9087dde44794712848}{\index{Функции сохранения и загрузки свойств@{Функции сохранения и загрузки свойств}!Load\-Properties@{Load\-Properties}}
+\index{Load\-Properties@{Load\-Properties}!Функции сохранения и загрузки свойств@{Функции сохранения и загрузки свойств}}
+\subsubsection[{Load\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Load\-Properties (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{const char $\ast$}]{psz\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{group__gr_properties_ga569a657dccc96f9087dde44794712848}
+
+
+Функция загружает настройки экземпляра 2\-D графики из файла. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+ & {\em psz\-File\-Name} & -\/ путь к файлу \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если удалось загрузить настройки; 
+
+false -\/ в случае если не удалось загрузить настройки. 
+\end{DoxyReturn}
+\hypertarget{group__gr_properties_ga24942314b181fa7f547629d15577589d}{\index{Функции сохранения и загрузки свойств@{Функции сохранения и загрузки свойств}!Reg\-Load\-Settings@{Reg\-Load\-Settings}}
+\index{Reg\-Load\-Settings@{Reg\-Load\-Settings}!Функции сохранения и загрузки свойств@{Функции сохранения и загрузки свойств}}
+\subsubsection[{Reg\-Load\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Reg\-Load\-Settings (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{const char $\ast$}]{psz\-Key, }
+\item[{const char $\ast$}]{psz\-Value}
+\end{DoxyParamCaption}
+)}}\label{group__gr_properties_ga24942314b181fa7f547629d15577589d}
+
+
+Функция загружает настройки экземпляра 2\-D графики из реестра. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+ & {\em psz\-Key} & -\/ ключ реестра \\
+\hline
+ & {\em psz\-Value} & -\/ переменная ветки реестра \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если удалось загрузить настройки; 
+
+false -\/ в случае если не удалось загрузить настройки. 
+\end{DoxyReturn}
+\hypertarget{group__gr_properties_ga86742bc6603db4141caaee586872e5df}{\index{Функции сохранения и загрузки свойств@{Функции сохранения и загрузки свойств}!Reg\-Restore\-Defaults@{Reg\-Restore\-Defaults}}
+\index{Reg\-Restore\-Defaults@{Reg\-Restore\-Defaults}!Функции сохранения и загрузки свойств@{Функции сохранения и загрузки свойств}}
+\subsubsection[{Reg\-Restore\-Defaults}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Reg\-Restore\-Defaults (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot}
+\end{DoxyParamCaption}
+)}}\label{group__gr_properties_ga86742bc6603db4141caaee586872e5df}
+
+
+Функция сбрасывает настройки экземпляра 2\-D графики в настройки по умолчанию. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если удалось загрузить настройки;\par
+false -\/ в случае если не удалось загрузить настройки. 
+\end{DoxyReturn}
+\hypertarget{group__gr_properties_ga07f14ff8585116fcf19f7421a0c9e64f}{\index{Функции сохранения и загрузки свойств@{Функции сохранения и загрузки свойств}!Reg\-Save\-Settings@{Reg\-Save\-Settings}}
+\index{Reg\-Save\-Settings@{Reg\-Save\-Settings}!Функции сохранения и загрузки свойств@{Функции сохранения и загрузки свойств}}
+\subsubsection[{Reg\-Save\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Reg\-Save\-Settings (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{const char $\ast$}]{psz\-Key, }
+\item[{const char $\ast$}]{psz\-Value}
+\end{DoxyParamCaption}
+)}}\label{group__gr_properties_ga07f14ff8585116fcf19f7421a0c9e64f}
+
+
+Функция сохраняет настройки экземпляра 2\-D графики в реестре. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+ & {\em psz\-Key} & -\/ ключ реестра \\
+\hline
+ & {\em psz\-Value} & -\/ переменная ветки реестра \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если удалось сохранить настройки; 
+
+false -\/ в случае если не удалось сохранить настройки. 
+\end{DoxyReturn}
+\hypertarget{group__gr_properties_gaa8c0d039a585af0356d553ba7a76f152}{\index{Функции сохранения и загрузки свойств@{Функции сохранения и загрузки свойств}!Save\-Properties@{Save\-Properties}}
+\index{Save\-Properties@{Save\-Properties}!Функции сохранения и загрузки свойств@{Функции сохранения и загрузки свойств}}
+\subsubsection[{Save\-Properties}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L X\-Y\-Plot\-Manager\-::\-Save\-Properties (
+\begin{DoxyParamCaption}
+\item[{{\bf H\-P\-L\-O\-T} \&}]{h\-Plot, }
+\item[{const char $\ast$}]{psz\-File\-Name}
+\end{DoxyParamCaption}
+)}}\label{group__gr_properties_gaa8c0d039a585af0356d553ba7a76f152}
+
+
+Функция сохраняет настройки экземпляра 2\-D графики в файле. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em h\-Plot} & -\/ дескриптор экземпляра 2\-D графики \\
+\hline
+ & {\em psz\-File\-Name} & -\/ путь к файлу \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ в случае если удалось сохранить настройки; 
+
+false -\/ в случае если не удалось сохранить настройки. 
+\end{DoxyReturn}

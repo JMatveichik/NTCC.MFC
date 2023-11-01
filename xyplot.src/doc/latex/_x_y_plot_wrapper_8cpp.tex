@@ -1,0 +1,279 @@
+\hypertarget{_x_y_plot_wrapper_8cpp}{\section{Файл src/\-X\-Y\-Plot\-Wrapper.cpp}
+\label{_x_y_plot_wrapper_8cpp}\index{src/\-X\-Y\-Plot\-Wrapper.\-cpp@{src/\-X\-Y\-Plot\-Wrapper.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Std\-Afx.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$assert.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}xyplotwrapper.\-h\char`\"{}}\\*
+Граф включаемых заголовочных файлов для X\-Y\-Plot\-Wrapper.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_x_y_plot_wrapper_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a252528a143fd7aceafc47dbb1d7eb0bd}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E}~\char`\"{}\-\_\-\-Initialize@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a4abb0f0620719cf9f0887766ec620640}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-I\-N\-A\-L\-I\-Z\-E}~\char`\"{}\-\_\-\-Finalize@4\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a78ff2c82465ddf7221fb73a3cfd11435}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-P\-R\-O\-F\-I\-L\-E}~\char`\"{}\-\_\-\-Add\-Profile@44\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_adec6dda7346a117cc30b943f5ed276ff}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-P\-R\-O\-F\-I\-L\-E}~\char`\"{}\-\_\-\-Delete\-Profile@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_afea29e743b570056496cada2765ccf31}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-A\-T\-A}~\char`\"{}\-\_\-\-Set\-Data@20\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a0c3313d076da08fd2cb5d5178ea6c276}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-A\-T\-A}~\char`\"{}\-\_\-\-Get\-Data@20\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_acd5553e28381052a296408b775862494}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-P\-P\-E\-N\-D\-D\-A\-T\-A}~\char`\"{}\-\_\-\-Append\-Data@20\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_ac67f23d50603f18699f12474fee58540}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-C\-L\-R}~\char`\"{}\-\_\-\-Set\-Profile\-Color@12\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a5c60e44c97f3bd1072cf8e5fb404d257}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-C\-L\-R}~\char`\"{}\-\_\-\-Get\-Profile\-Color@12\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a61fb2f59a4c3f2125ec725c642644b28}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-S\-T\-L}~\char`\"{}\-\_\-\-Change\-Profile\-Style@24\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a52fc6f69c8228e99a7ddfc5b85a528f4}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-A\-B\-L\-E\-M\-A\-R\-K}~\char`\"{}\-\_\-\-Enable\-Points\-Marker@12\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a3af181d7cc4a62a02fb22b97a45711dd}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-T\-R\-I\-N\-G}~\char`\"{}\-\_\-\-Set\-String@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a066816b11dbf13937ab34f50ee29f088}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-T\-R\-I\-N\-G}~\char`\"{}\-\_\-\-Get\-String@20\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_af1c9b7af410a225f0b128641e1a832a6}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-C\-O\-L\-O\-R}~\char`\"{}\-\_\-\-Set\-Color@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a192d28ab1d275c7c39ca9dfebc72adae}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-C\-O\-L\-O\-R}~\char`\"{}\-\_\-\-Get\-Color@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a9c569dcba4bdacea35726582fa96e601}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-O\-N\-G}~\char`\"{}\-\_\-\-Set\-Long@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_ab6a9dd065d2388c9187f0a4ebfd145af}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-L\-O\-N\-G}~\char`\"{}\-\_\-\-Get\-Long@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_ab4ba686323c626e56c6d38b8f3f58f7d}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-O\-U\-B\-L\-E}~\char`\"{}\-\_\-\-Set\-Double@20\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a58ac4c16bf83b8fe5f62b88fe27ee2e1}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-O\-U\-B\-L\-E}~\char`\"{}\-\_\-\-Get\-Double@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a439d99d395124cd04edcd50361718d29}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-E\-L\-M\-O\-D\-E}~\char`\"{}\-\_\-\-Set\-Selection\-Mode@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_af76edfa54df7c0ae192b91c946bc644b}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-M\-O\-D\-E}~\char`\"{}\-\_\-\-Get\-Selection\-Mode@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a352920d229cc47499fac35e92832c687}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-S\-E\-N\-A\-B\-L\-E\-D}~\char`\"{}\-\_\-\-Is\-Enabled@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_acf4613840cef6eb4e363591b6f01111d}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-A\-X\-R\-A\-N\-G\-E}~\char`\"{}\-\_\-\-Set\-Axis\-Range@24\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a6203513c42a6e48129c89cc72b9869f1}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-A\-X\-R\-A\-N\-G\-E}~\char`\"{}\-\_\-\-Get\-Axis\-Range@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a7e3bf2c76643d850119abb5a966344ed}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-M\-A\-R\-K\-P\-O\-S}~\char`\"{}\-\_\-\-Get\-Marker\-Pos@12\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a15b77bfc1ca5f7c7d45c51171631b4f6}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-M\-A\-R\-K\-P\-O\-S}~\char`\"{}\-\_\-\-Set\-Marker\-Pos@20\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a71b853cbf3bcbf955b0d9ca32df6a7e3}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-P\-R\-O\-F}~\char`\"{}\-\_\-\-Get\-Selection@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a4474f2bb962162acc59a3614eeef1af3}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-L\-A\-S\-H}~\char`\"{}\-\_\-\-Set\-Flash\-Speed@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_ad775264d5de5ba0bbf7dc159ba164691}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-L\-I\-P\-C\-O\-P\-Y}~\char`\"{}\-\_\-\-Copy\-To\-Clipboard@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a07f23b70c02cf20079b020f57a6d25e7}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-D\-R\-A\-W}~\char`\"{}\-\_\-\-Set\-Redraw@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a25d2ff026e8b0c4251451ac1294f0553}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-R\-E\-A\-T\-E\-G\-R\-P}~\char`\"{}\-\_\-\-Create\-Group@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a064c9e7fc51029109ba633fbf730d89e}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-E\-T\-E\-G\-R\-P}~\char`\"{}\-\_\-\-Delete\-Group@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a077ff7262d42452c5bc002cd0deededd}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-B\-I\-N\-D\-P\-R\-O\-F}~\char`\"{}\-\_\-\-Bind\-Profile@12\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a61b607db381efa7b04ad58cee067f37e}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-L\-I\-S\-T}~\char`\"{}\-\_\-\-Get\-Profile\-List@12\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_adadbf9043dcfd385b0023aa091a1608d}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-A\-V\-E\-P\-R\-O\-P}~\char`\"{}\-\_\-\-Save\-Properties@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a22019629474a2d676ddec8c327ded1eb}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-L\-O\-A\-D\-P\-R\-O\-P}~\char`\"{}\-\_\-\-Load\-Properties@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_aa2fc9e3179cf7acf1eca8bfa7de209e5}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-R\-E\-S\-T\-O\-R\-E}~\char`\"{}\-\_\-\-Reg\-Restore\-Defaults@4\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a15c4983d9ba41c0f878730c25dfabb93}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-L\-O\-A\-D}~\char`\"{}\-\_\-\-Reg\-Load\-Settings@12\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_abee55614ebeaaca43aaa53e46dae9a58}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-S\-A\-V\-E}~\char`\"{}\-\_\-\-Reg\-Save\-Settings@12\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_aab0ef861d3f0a34458ba7d4db5b8e806}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-U\-N\-D\-I\-A\-L\-O\-G}~\char`\"{}\-\_\-\-Run\-Dialog@4\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a983383093d3cd2baeb49a4e937526b10}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-L\-E\-V\-E\-L}~\char`\"{}\-\_\-\-Add\-Level@32\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a5efcad0a50934838aa47b175a6402692}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-L\-E\-V\-E\-L}~\char`\"{}\-\_\-\-Delete\-Level@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a74aa83441f48a9c9d52ddba226894b14}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-E\-V\-E\-L}~\char`\"{}\-\_\-\-Set\-Level@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a589e0582fdf933d74f98aff31c731ebc}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-R\-E\-G\-I\-O\-N}~\char`\"{}\-\_\-\-Add\-Region@52\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a88705042c2fc0af99081ccd4d7c528e5}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-R\-E\-G\-I\-O\-N}~\char`\"{}\-\_\-\-Delete\-Region@8\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a8e4f8710da448fbac84b93f432619016}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-G\-I\-O\-N}~\char`\"{}\-\_\-\-Set\-Region@40\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a914fbfd63604bf2c7ce6c96e0aa00d67}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-O\-N\-T}~\char`\"{}\-\_\-\-Set\-Font@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a4b2fbdc940f95bef5703542833c681e2}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-I\-T\-E\-M}~\char`\"{}\-\_\-\-Enable\-Item@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_a6dfabc7fc2e5269fabc6e274c2ee1cb2}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-L\-A\-S\-H\-P\-R\-O\-F}~\char`\"{}\-\_\-\-Select@12\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_ade8075572da1f7f7812add277f44484e}{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-R\-A\-W\-T\-O\-B\-I\-T\-M\-A\-P}~\char`\"{}\-\_\-\-Draw\-To\-Bitmap@16\char`\"{}
+\item 
+\#define \hyperlink{_x_y_plot_wrapper_8cpp_abc8b23e1e2dcdc572bc03d73a6c543ab}{C\-H\-E\-C\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T\-E\-R}(a)~if (!(a)) return F\-A\-L\-S\-E;
+\end{DoxyCompactItemize}
+
+
+\subsection{Макросы}
+\hypertarget{_x_y_plot_wrapper_8cpp_abc8b23e1e2dcdc572bc03d73a6c543ab}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!C\-H\-E\-C\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T\-E\-R@{C\-H\-E\-C\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T\-E\-R}}
+\index{C\-H\-E\-C\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T\-E\-R@{C\-H\-E\-C\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T\-E\-R}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{C\-H\-E\-C\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-H\-E\-C\-K\-\_\-\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-P\-O\-I\-N\-T\-E\-R(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)~if (!(a)) return F\-A\-L\-S\-E;}}\label{_x_y_plot_wrapper_8cpp_abc8b23e1e2dcdc572bc03d73a6c543ab}
+\hypertarget{_x_y_plot_wrapper_8cpp_a983383093d3cd2baeb49a4e937526b10}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-L\-E\-V\-E\-L@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-L\-E\-V\-E\-L}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-L\-E\-V\-E\-L@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-L\-E\-V\-E\-L}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-L\-E\-V\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-L\-E\-V\-E\-L~\char`\"{}\-\_\-\-Add\-Level@32\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a983383093d3cd2baeb49a4e937526b10}
+\hypertarget{_x_y_plot_wrapper_8cpp_a78ff2c82465ddf7221fb73a3cfd11435}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-P\-R\-O\-F\-I\-L\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-P\-R\-O\-F\-I\-L\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-P\-R\-O\-F\-I\-L\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-P\-R\-O\-F\-I\-L\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-P\-R\-O\-F\-I\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-P\-R\-O\-F\-I\-L\-E~\char`\"{}\-\_\-\-Add\-Profile@44\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a78ff2c82465ddf7221fb73a3cfd11435}
+\hypertarget{_x_y_plot_wrapper_8cpp_a589e0582fdf933d74f98aff31c731ebc}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-R\-E\-G\-I\-O\-N@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-R\-E\-G\-I\-O\-N}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-R\-E\-G\-I\-O\-N@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-R\-E\-G\-I\-O\-N}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-R\-E\-G\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-D\-D\-R\-E\-G\-I\-O\-N~\char`\"{}\-\_\-\-Add\-Region@52\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a589e0582fdf933d74f98aff31c731ebc}
+\hypertarget{_x_y_plot_wrapper_8cpp_acd5553e28381052a296408b775862494}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-P\-P\-E\-N\-D\-D\-A\-T\-A@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-P\-P\-E\-N\-D\-D\-A\-T\-A}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-P\-P\-E\-N\-D\-D\-A\-T\-A@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-P\-P\-E\-N\-D\-D\-A\-T\-A}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-P\-P\-E\-N\-D\-D\-A\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-A\-P\-P\-E\-N\-D\-D\-A\-T\-A~\char`\"{}\-\_\-\-Append\-Data@20\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_acd5553e28381052a296408b775862494}
+\hypertarget{_x_y_plot_wrapper_8cpp_a077ff7262d42452c5bc002cd0deededd}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-B\-I\-N\-D\-P\-R\-O\-F@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-B\-I\-N\-D\-P\-R\-O\-F}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-B\-I\-N\-D\-P\-R\-O\-F@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-B\-I\-N\-D\-P\-R\-O\-F}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-B\-I\-N\-D\-P\-R\-O\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-B\-I\-N\-D\-P\-R\-O\-F~\char`\"{}\-\_\-\-Bind\-Profile@12\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a077ff7262d42452c5bc002cd0deededd}
+\hypertarget{_x_y_plot_wrapper_8cpp_ad775264d5de5ba0bbf7dc159ba164691}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-L\-I\-P\-C\-O\-P\-Y@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-L\-I\-P\-C\-O\-P\-Y}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-L\-I\-P\-C\-O\-P\-Y@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-L\-I\-P\-C\-O\-P\-Y}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-L\-I\-P\-C\-O\-P\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-L\-I\-P\-C\-O\-P\-Y~\char`\"{}\-\_\-\-Copy\-To\-Clipboard@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_ad775264d5de5ba0bbf7dc159ba164691}
+\hypertarget{_x_y_plot_wrapper_8cpp_a25d2ff026e8b0c4251451ac1294f0553}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-R\-E\-A\-T\-E\-G\-R\-P@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-R\-E\-A\-T\-E\-G\-R\-P}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-R\-E\-A\-T\-E\-G\-R\-P@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-R\-E\-A\-T\-E\-G\-R\-P}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-R\-E\-A\-T\-E\-G\-R\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-C\-R\-E\-A\-T\-E\-G\-R\-P~\char`\"{}\-\_\-\-Create\-Group@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a25d2ff026e8b0c4251451ac1294f0553}
+\hypertarget{_x_y_plot_wrapper_8cpp_a064c9e7fc51029109ba633fbf730d89e}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-E\-T\-E\-G\-R\-P@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-E\-T\-E\-G\-R\-P}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-E\-T\-E\-G\-R\-P@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-E\-T\-E\-G\-R\-P}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-E\-T\-E\-G\-R\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-E\-T\-E\-G\-R\-P~\char`\"{}\-\_\-\-Delete\-Group@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a064c9e7fc51029109ba633fbf730d89e}
+\hypertarget{_x_y_plot_wrapper_8cpp_a5efcad0a50934838aa47b175a6402692}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-L\-E\-V\-E\-L@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-L\-E\-V\-E\-L}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-L\-E\-V\-E\-L@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-L\-E\-V\-E\-L}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-L\-E\-V\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-L\-E\-V\-E\-L~\char`\"{}\-\_\-\-Delete\-Level@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a5efcad0a50934838aa47b175a6402692}
+\hypertarget{_x_y_plot_wrapper_8cpp_adec6dda7346a117cc30b943f5ed276ff}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-P\-R\-O\-F\-I\-L\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-P\-R\-O\-F\-I\-L\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-P\-R\-O\-F\-I\-L\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-P\-R\-O\-F\-I\-L\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-P\-R\-O\-F\-I\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-P\-R\-O\-F\-I\-L\-E~\char`\"{}\-\_\-\-Delete\-Profile@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_adec6dda7346a117cc30b943f5ed276ff}
+\hypertarget{_x_y_plot_wrapper_8cpp_a88705042c2fc0af99081ccd4d7c528e5}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-R\-E\-G\-I\-O\-N@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-R\-E\-G\-I\-O\-N}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-R\-E\-G\-I\-O\-N@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-R\-E\-G\-I\-O\-N}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-R\-E\-G\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-E\-L\-R\-E\-G\-I\-O\-N~\char`\"{}\-\_\-\-Delete\-Region@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a88705042c2fc0af99081ccd4d7c528e5}
+\hypertarget{_x_y_plot_wrapper_8cpp_ade8075572da1f7f7812add277f44484e}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-R\-A\-W\-T\-O\-B\-I\-T\-M\-A\-P@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-R\-A\-W\-T\-O\-B\-I\-T\-M\-A\-P}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-R\-A\-W\-T\-O\-B\-I\-T\-M\-A\-P@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-R\-A\-W\-T\-O\-B\-I\-T\-M\-A\-P}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-R\-A\-W\-T\-O\-B\-I\-T\-M\-A\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-D\-R\-A\-W\-T\-O\-B\-I\-T\-M\-A\-P~\char`\"{}\-\_\-\-Draw\-To\-Bitmap@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_ade8075572da1f7f7812add277f44484e}
+\hypertarget{_x_y_plot_wrapper_8cpp_a52fc6f69c8228e99a7ddfc5b85a528f4}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-A\-B\-L\-E\-M\-A\-R\-K@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-A\-B\-L\-E\-M\-A\-R\-K}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-A\-B\-L\-E\-M\-A\-R\-K@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-A\-B\-L\-E\-M\-A\-R\-K}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-A\-B\-L\-E\-M\-A\-R\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-A\-B\-L\-E\-M\-A\-R\-K~\char`\"{}\-\_\-\-Enable\-Points\-Marker@12\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a52fc6f69c8228e99a7ddfc5b85a528f4}
+\hypertarget{_x_y_plot_wrapper_8cpp_a4b2fbdc940f95bef5703542833c681e2}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-I\-T\-E\-M@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-I\-T\-E\-M}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-I\-T\-E\-M@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-I\-T\-E\-M}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-I\-T\-E\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-E\-N\-I\-T\-E\-M~\char`\"{}\-\_\-\-Enable\-Item@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a4b2fbdc940f95bef5703542833c681e2}
+\hypertarget{_x_y_plot_wrapper_8cpp_a4abb0f0620719cf9f0887766ec620640}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-I\-N\-A\-L\-I\-Z\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-I\-N\-A\-L\-I\-Z\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-I\-N\-A\-L\-I\-Z\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-I\-N\-A\-L\-I\-Z\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-I\-N\-A\-L\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-I\-N\-A\-L\-I\-Z\-E~\char`\"{}\-\_\-\-Finalize@4\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a4abb0f0620719cf9f0887766ec620640}
+\hypertarget{_x_y_plot_wrapper_8cpp_a6dfabc7fc2e5269fabc6e274c2ee1cb2}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-L\-A\-S\-H\-P\-R\-O\-F@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-L\-A\-S\-H\-P\-R\-O\-F}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-L\-A\-S\-H\-P\-R\-O\-F@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-L\-A\-S\-H\-P\-R\-O\-F}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-L\-A\-S\-H\-P\-R\-O\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-F\-L\-A\-S\-H\-P\-R\-O\-F~\char`\"{}\-\_\-\-Select@12\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a6dfabc7fc2e5269fabc6e274c2ee1cb2}
+\hypertarget{_x_y_plot_wrapper_8cpp_a6203513c42a6e48129c89cc72b9869f1}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-A\-X\-R\-A\-N\-G\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-A\-X\-R\-A\-N\-G\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-A\-X\-R\-A\-N\-G\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-A\-X\-R\-A\-N\-G\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-A\-X\-R\-A\-N\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-A\-X\-R\-A\-N\-G\-E~\char`\"{}\-\_\-\-Get\-Axis\-Range@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a6203513c42a6e48129c89cc72b9869f1}
+\hypertarget{_x_y_plot_wrapper_8cpp_a192d28ab1d275c7c39ca9dfebc72adae}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-C\-O\-L\-O\-R@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-C\-O\-L\-O\-R}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-C\-O\-L\-O\-R@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-C\-O\-L\-O\-R}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-C\-O\-L\-O\-R~\char`\"{}\-\_\-\-Get\-Color@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a192d28ab1d275c7c39ca9dfebc72adae}
+\hypertarget{_x_y_plot_wrapper_8cpp_a0c3313d076da08fd2cb5d5178ea6c276}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-A\-T\-A@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-A\-T\-A}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-A\-T\-A@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-A\-T\-A}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-A\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-A\-T\-A~\char`\"{}\-\_\-\-Get\-Data@20\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a0c3313d076da08fd2cb5d5178ea6c276}
+\hypertarget{_x_y_plot_wrapper_8cpp_a58ac4c16bf83b8fe5f62b88fe27ee2e1}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-O\-U\-B\-L\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-O\-U\-B\-L\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-O\-U\-B\-L\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-O\-U\-B\-L\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-O\-U\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-D\-O\-U\-B\-L\-E~\char`\"{}\-\_\-\-Get\-Double@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a58ac4c16bf83b8fe5f62b88fe27ee2e1}
+\hypertarget{_x_y_plot_wrapper_8cpp_ab6a9dd065d2388c9187f0a4ebfd145af}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-L\-O\-N\-G@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-L\-O\-N\-G}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-L\-O\-N\-G@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-L\-O\-N\-G}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-L\-O\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-L\-O\-N\-G~\char`\"{}\-\_\-\-Get\-Long@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_ab6a9dd065d2388c9187f0a4ebfd145af}
+\hypertarget{_x_y_plot_wrapper_8cpp_a7e3bf2c76643d850119abb5a966344ed}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-M\-A\-R\-K\-P\-O\-S@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-M\-A\-R\-K\-P\-O\-S}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-M\-A\-R\-K\-P\-O\-S@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-M\-A\-R\-K\-P\-O\-S}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-M\-A\-R\-K\-P\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-M\-A\-R\-K\-P\-O\-S~\char`\"{}\-\_\-\-Get\-Marker\-Pos@12\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a7e3bf2c76643d850119abb5a966344ed}
+\hypertarget{_x_y_plot_wrapper_8cpp_a5c60e44c97f3bd1072cf8e5fb404d257}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-C\-L\-R@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-C\-L\-R}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-C\-L\-R@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-C\-L\-R}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-C\-L\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-C\-L\-R~\char`\"{}\-\_\-\-Get\-Profile\-Color@12\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a5c60e44c97f3bd1072cf8e5fb404d257}
+\hypertarget{_x_y_plot_wrapper_8cpp_a61b607db381efa7b04ad58cee067f37e}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-L\-I\-S\-T@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-L\-I\-S\-T}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-L\-I\-S\-T@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-L\-I\-S\-T}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-L\-I\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-P\-R\-O\-F\-L\-I\-S\-T~\char`\"{}\-\_\-\-Get\-Profile\-List@12\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a61b607db381efa7b04ad58cee067f37e}
+\hypertarget{_x_y_plot_wrapper_8cpp_af76edfa54df7c0ae192b91c946bc644b}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-M\-O\-D\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-M\-O\-D\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-M\-O\-D\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-M\-O\-D\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-M\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-M\-O\-D\-E~\char`\"{}\-\_\-\-Get\-Selection\-Mode@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_af76edfa54df7c0ae192b91c946bc644b}
+\hypertarget{_x_y_plot_wrapper_8cpp_a71b853cbf3bcbf955b0d9ca32df6a7e3}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-P\-R\-O\-F@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-P\-R\-O\-F}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-P\-R\-O\-F@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-P\-R\-O\-F}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-P\-R\-O\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-E\-L\-P\-R\-O\-F~\char`\"{}\-\_\-\-Get\-Selection@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a71b853cbf3bcbf955b0d9ca32df6a7e3}
+\hypertarget{_x_y_plot_wrapper_8cpp_a066816b11dbf13937ab34f50ee29f088}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-T\-R\-I\-N\-G@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-T\-R\-I\-N\-G}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-T\-R\-I\-N\-G@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-T\-R\-I\-N\-G}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-T\-R\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-G\-E\-T\-S\-T\-R\-I\-N\-G~\char`\"{}\-\_\-\-Get\-String@20\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a066816b11dbf13937ab34f50ee29f088}
+\hypertarget{_x_y_plot_wrapper_8cpp_a252528a143fd7aceafc47dbb1d7eb0bd}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-N\-I\-T\-I\-A\-L\-I\-Z\-E~\char`\"{}\-\_\-\-Initialize@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a252528a143fd7aceafc47dbb1d7eb0bd}
+\hypertarget{_x_y_plot_wrapper_8cpp_a352920d229cc47499fac35e92832c687}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-S\-E\-N\-A\-B\-L\-E\-D@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-S\-E\-N\-A\-B\-L\-E\-D}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-S\-E\-N\-A\-B\-L\-E\-D@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-S\-E\-N\-A\-B\-L\-E\-D}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-S\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-I\-S\-E\-N\-A\-B\-L\-E\-D~\char`\"{}\-\_\-\-Is\-Enabled@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a352920d229cc47499fac35e92832c687}
+\hypertarget{_x_y_plot_wrapper_8cpp_a22019629474a2d676ddec8c327ded1eb}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-L\-O\-A\-D\-P\-R\-O\-P@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-L\-O\-A\-D\-P\-R\-O\-P}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-L\-O\-A\-D\-P\-R\-O\-P@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-L\-O\-A\-D\-P\-R\-O\-P}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-L\-O\-A\-D\-P\-R\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-L\-O\-A\-D\-P\-R\-O\-P~\char`\"{}\-\_\-\-Load\-Properties@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a22019629474a2d676ddec8c327ded1eb}
+\hypertarget{_x_y_plot_wrapper_8cpp_a15c4983d9ba41c0f878730c25dfabb93}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-L\-O\-A\-D@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-L\-O\-A\-D}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-L\-O\-A\-D@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-L\-O\-A\-D}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-L\-O\-A\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-L\-O\-A\-D~\char`\"{}\-\_\-\-Reg\-Load\-Settings@12\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a15c4983d9ba41c0f878730c25dfabb93}
+\hypertarget{_x_y_plot_wrapper_8cpp_aa2fc9e3179cf7acf1eca8bfa7de209e5}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-R\-E\-S\-T\-O\-R\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-R\-E\-S\-T\-O\-R\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-R\-E\-S\-T\-O\-R\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-R\-E\-S\-T\-O\-R\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-R\-E\-S\-T\-O\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-R\-E\-S\-T\-O\-R\-E~\char`\"{}\-\_\-\-Reg\-Restore\-Defaults@4\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_aa2fc9e3179cf7acf1eca8bfa7de209e5}
+\hypertarget{_x_y_plot_wrapper_8cpp_abee55614ebeaaca43aaa53e46dae9a58}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-S\-A\-V\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-S\-A\-V\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-S\-A\-V\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-S\-A\-V\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-S\-A\-V\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-E\-G\-S\-A\-V\-E~\char`\"{}\-\_\-\-Reg\-Save\-Settings@12\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_abee55614ebeaaca43aaa53e46dae9a58}
+\hypertarget{_x_y_plot_wrapper_8cpp_aab0ef861d3f0a34458ba7d4db5b8e806}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-U\-N\-D\-I\-A\-L\-O\-G@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-U\-N\-D\-I\-A\-L\-O\-G}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-U\-N\-D\-I\-A\-L\-O\-G@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-U\-N\-D\-I\-A\-L\-O\-G}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-U\-N\-D\-I\-A\-L\-O\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-R\-U\-N\-D\-I\-A\-L\-O\-G~\char`\"{}\-\_\-\-Run\-Dialog@4\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_aab0ef861d3f0a34458ba7d4db5b8e806}
+\hypertarget{_x_y_plot_wrapper_8cpp_adadbf9043dcfd385b0023aa091a1608d}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-A\-V\-E\-P\-R\-O\-P@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-A\-V\-E\-P\-R\-O\-P}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-A\-V\-E\-P\-R\-O\-P@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-A\-V\-E\-P\-R\-O\-P}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-A\-V\-E\-P\-R\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-A\-V\-E\-P\-R\-O\-P~\char`\"{}\-\_\-\-Save\-Properties@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_adadbf9043dcfd385b0023aa091a1608d}
+\hypertarget{_x_y_plot_wrapper_8cpp_acf4613840cef6eb4e363591b6f01111d}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-A\-X\-R\-A\-N\-G\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-A\-X\-R\-A\-N\-G\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-A\-X\-R\-A\-N\-G\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-A\-X\-R\-A\-N\-G\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-A\-X\-R\-A\-N\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-A\-X\-R\-A\-N\-G\-E~\char`\"{}\-\_\-\-Set\-Axis\-Range@24\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_acf4613840cef6eb4e363591b6f01111d}
+\hypertarget{_x_y_plot_wrapper_8cpp_af1c9b7af410a225f0b128641e1a832a6}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-C\-O\-L\-O\-R@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-C\-O\-L\-O\-R}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-C\-O\-L\-O\-R@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-C\-O\-L\-O\-R}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-C\-O\-L\-O\-R~\char`\"{}\-\_\-\-Set\-Color@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_af1c9b7af410a225f0b128641e1a832a6}
+\hypertarget{_x_y_plot_wrapper_8cpp_afea29e743b570056496cada2765ccf31}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-A\-T\-A@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-A\-T\-A}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-A\-T\-A@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-A\-T\-A}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-A\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-A\-T\-A~\char`\"{}\-\_\-\-Set\-Data@20\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_afea29e743b570056496cada2765ccf31}
+\hypertarget{_x_y_plot_wrapper_8cpp_ab4ba686323c626e56c6d38b8f3f58f7d}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-O\-U\-B\-L\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-O\-U\-B\-L\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-O\-U\-B\-L\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-O\-U\-B\-L\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-O\-U\-B\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-D\-O\-U\-B\-L\-E~\char`\"{}\-\_\-\-Set\-Double@20\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_ab4ba686323c626e56c6d38b8f3f58f7d}
+\hypertarget{_x_y_plot_wrapper_8cpp_a4474f2bb962162acc59a3614eeef1af3}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-L\-A\-S\-H@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-L\-A\-S\-H}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-L\-A\-S\-H@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-L\-A\-S\-H}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-L\-A\-S\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-L\-A\-S\-H~\char`\"{}\-\_\-\-Set\-Flash\-Speed@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a4474f2bb962162acc59a3614eeef1af3}
+\hypertarget{_x_y_plot_wrapper_8cpp_a914fbfd63604bf2c7ce6c96e0aa00d67}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-O\-N\-T@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-O\-N\-T}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-O\-N\-T@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-O\-N\-T}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-O\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-F\-O\-N\-T~\char`\"{}\-\_\-\-Set\-Font@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a914fbfd63604bf2c7ce6c96e0aa00d67}
+\hypertarget{_x_y_plot_wrapper_8cpp_a74aa83441f48a9c9d52ddba226894b14}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-E\-V\-E\-L@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-E\-V\-E\-L}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-E\-V\-E\-L@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-E\-V\-E\-L}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-E\-V\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-E\-V\-E\-L~\char`\"{}\-\_\-\-Set\-Level@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a74aa83441f48a9c9d52ddba226894b14}
+\hypertarget{_x_y_plot_wrapper_8cpp_a9c569dcba4bdacea35726582fa96e601}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-O\-N\-G@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-O\-N\-G}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-O\-N\-G@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-O\-N\-G}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-O\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-L\-O\-N\-G~\char`\"{}\-\_\-\-Set\-Long@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a9c569dcba4bdacea35726582fa96e601}
+\hypertarget{_x_y_plot_wrapper_8cpp_a15b77bfc1ca5f7c7d45c51171631b4f6}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-M\-A\-R\-K\-P\-O\-S@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-M\-A\-R\-K\-P\-O\-S}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-M\-A\-R\-K\-P\-O\-S@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-M\-A\-R\-K\-P\-O\-S}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-M\-A\-R\-K\-P\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-M\-A\-R\-K\-P\-O\-S~\char`\"{}\-\_\-\-Set\-Marker\-Pos@20\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a15b77bfc1ca5f7c7d45c51171631b4f6}
+\hypertarget{_x_y_plot_wrapper_8cpp_ac67f23d50603f18699f12474fee58540}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-C\-L\-R@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-C\-L\-R}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-C\-L\-R@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-C\-L\-R}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-C\-L\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-C\-L\-R~\char`\"{}\-\_\-\-Set\-Profile\-Color@12\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_ac67f23d50603f18699f12474fee58540}
+\hypertarget{_x_y_plot_wrapper_8cpp_a61fb2f59a4c3f2125ec725c642644b28}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-S\-T\-L@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-S\-T\-L}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-S\-T\-L@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-S\-T\-L}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-S\-T\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-P\-R\-O\-F\-S\-T\-L~\char`\"{}\-\_\-\-Change\-Profile\-Style@24\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a61fb2f59a4c3f2125ec725c642644b28}
+\hypertarget{_x_y_plot_wrapper_8cpp_a07f23b70c02cf20079b020f57a6d25e7}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-D\-R\-A\-W@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-D\-R\-A\-W}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-D\-R\-A\-W@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-D\-R\-A\-W}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-D\-R\-A\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-D\-R\-A\-W~\char`\"{}\-\_\-\-Set\-Redraw@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a07f23b70c02cf20079b020f57a6d25e7}
+\hypertarget{_x_y_plot_wrapper_8cpp_a8e4f8710da448fbac84b93f432619016}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-G\-I\-O\-N@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-G\-I\-O\-N}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-G\-I\-O\-N@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-G\-I\-O\-N}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-G\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-R\-E\-G\-I\-O\-N~\char`\"{}\-\_\-\-Set\-Region@40\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a8e4f8710da448fbac84b93f432619016}
+\hypertarget{_x_y_plot_wrapper_8cpp_a439d99d395124cd04edcd50361718d29}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-E\-L\-M\-O\-D\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-E\-L\-M\-O\-D\-E}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-E\-L\-M\-O\-D\-E@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-E\-L\-M\-O\-D\-E}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-E\-L\-M\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-E\-L\-M\-O\-D\-E~\char`\"{}\-\_\-\-Set\-Selection\-Mode@8\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a439d99d395124cd04edcd50361718d29}
+\hypertarget{_x_y_plot_wrapper_8cpp_a3af181d7cc4a62a02fb22b97a45711dd}{\index{X\-Y\-Plot\-Wrapper.\-cpp@{X\-Y\-Plot\-Wrapper.\-cpp}!X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-T\-R\-I\-N\-G@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-T\-R\-I\-N\-G}}
+\index{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-T\-R\-I\-N\-G@{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-T\-R\-I\-N\-G}!XYPlotWrapper.cpp@{X\-Y\-Plot\-Wrapper.\-cpp}}
+\subsubsection[{X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-T\-R\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define X\-Y\-F\-U\-N\-N\-A\-M\-E\-\_\-\-S\-E\-T\-S\-T\-R\-I\-N\-G~\char`\"{}\-\_\-\-Set\-String@16\char`\"{}}}\label{_x_y_plot_wrapper_8cpp_a3af181d7cc4a62a02fb22b97a45711dd}

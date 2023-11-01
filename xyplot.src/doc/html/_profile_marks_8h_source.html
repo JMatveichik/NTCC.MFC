@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Исходный файл src/ProfileMarks.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ProfileMarks.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_profile_marks_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="_savable_item_8h.html">SavableItem.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_profile_marks.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_profile_marks.html">ProfileMarks</a> : <span class="keyword">public</span> <a class="code" href="class_savable_item.html">SavableItem</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_profile_marks.html#ac1d9331398f1091f03000fb70b4cebd0">ProfileMarks</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="class_profile_marks.html#a74ad8199d7206269b733404f4b693573">~ProfileMarks</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile_marks.html#aa7966667f1baa875bc2bd8db7d909a37">OnDraw</a>(HDC hdc, <span class="keyword">const</span> POINT* pPoints, <span class="keywordtype">unsigned</span> nCount);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile_marks.html#ab243c85d1dc29170f18ae4c4a20ed789">PreDraw</a>(HDC hdc);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_profile_marks.html#a051a19747efe246de75f7fc85ffd70ef">   15</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_profile_marks.html#a051a19747efe246de75f7fc85ffd70ef">GetFrequency</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_nFrequency; };</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_profile_marks.html#a1413fe406c87a46c8967c90b2dcd8dbe">   16</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile_marks.html#a1413fe406c87a46c8967c90b2dcd8dbe">SetFrequency</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> nFreq) { m_nFrequency = nFreq; };</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_profile_marks.html#aa0d8285f49f82349a05303ce91e8aed5">   18</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_profile_marks.html#aa0d8285f49f82349a05303ce91e8aed5">GetSize</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_nSize; };</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_profile_marks.html#a53183bc811f6dba3002f5c1f1ced8d18">   19</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile_marks.html#a53183bc811f6dba3002f5c1f1ced8d18">SetSize</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> nSize)  { m_nSize = nSize; };</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_profile_marks.html#a412ce6c7398fe1e937d077c651bc6be9">   21</a></span>&#160;    COLORREF <a class="code" href="class_profile_marks.html#a412ce6c7398fe1e937d077c651bc6be9">GetLineColor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_clrLine; };</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_profile_marks.html#a77b56c9b9d21376533dae53cee0a6f26">   22</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile_marks.html#a77b56c9b9d21376533dae53cee0a6f26">SetLineColor</a>(<span class="keyword">const</span> COLORREF clrLine) { m_clrLine = clrLine; };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_profile_marks.html#a191e51521d74dd8210ae02260c1bf1b1">   24</a></span>&#160;    COLORREF <a class="code" href="class_profile_marks.html#a191e51521d74dd8210ae02260c1bf1b1">GetFillColor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_clrFill; };</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_profile_marks.html#aa6bcbcdbadf04e61e4b6c071f7541225">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile_marks.html#aa6bcbcdbadf04e61e4b6c071f7541225">SetFillColor</a>(<span class="keyword">const</span> COLORREF clrFill) { m_clrFill = clrFill; }; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_profile_marks.html#a178920b4ff1861824fcdc617ed872f55">   27</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile_marks.html#a178920b4ff1861824fcdc617ed872f55">SetMarkType</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> nType) { m_nType = nType; };</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_profile_marks.html#a6823d42202f99941e5c92008b9dbf4d1">   28</a></span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="class_profile_marks.html#a6823d42202f99941e5c92008b9dbf4d1">GetMarkType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_nType; };</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_profile_marks.html#af6f6413f5d507f714cc9c38f228da4ce">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_profile_marks.html#af6f6413f5d507f714cc9c38f228da4ce">Enable</a>(BOOL enable = TRUE) { m_bEnabled = enable; };</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_profile_marks.html#a5edbf30ca2bff84f8736aad24d231795">   31</a></span>&#160;    BOOL <a class="code" href="class_profile_marks.html#a5edbf30ca2bff84f8736aad24d231795">IsEnabled</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bEnabled; };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> BOOL <a class="code" href="class_profile_marks.html#a6f0d5141d95c02bc92ebb5ce9e96d559">Write</a>(HANDLE hFile) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> BOOL <a class="code" href="class_profile_marks.html#af10107761b4341881739dc5d2f574b53">Read</a>(HANDLE hFile);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    BOOL        m_bEnabled;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span>         m_nType;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span>         m_nFrequency;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span>         m_nSize;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    COLORREF    m_clrLine;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    COLORREF    m_clrFill;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="ttc" id="class_profile_marks_html_a1413fe406c87a46c8967c90b2dcd8dbe"><div class="ttname"><a href="class_profile_marks.html#a1413fe406c87a46c8967c90b2dcd8dbe">ProfileMarks::SetFrequency</a></div><div class="ttdeci">void SetFrequency(const int nFreq)</div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:16</div></div>
+<div class="ttc" id="class_profile_marks_html_a178920b4ff1861824fcdc617ed872f55"><div class="ttname"><a href="class_profile_marks.html#a178920b4ff1861824fcdc617ed872f55">ProfileMarks::SetMarkType</a></div><div class="ttdeci">void SetMarkType(const int nType)</div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:27</div></div>
+<div class="ttc" id="_savable_item_8h_html"><div class="ttname"><a href="_savable_item_8h.html">SavableItem.h</a></div></div>
+<div class="ttc" id="class_profile_marks_html_a6823d42202f99941e5c92008b9dbf4d1"><div class="ttname"><a href="class_profile_marks.html#a6823d42202f99941e5c92008b9dbf4d1">ProfileMarks::GetMarkType</a></div><div class="ttdeci">int GetMarkType() const </div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:28</div></div>
+<div class="ttc" id="class_profile_marks_html_af10107761b4341881739dc5d2f574b53"><div class="ttname"><a href="class_profile_marks.html#af10107761b4341881739dc5d2f574b53">ProfileMarks::Read</a></div><div class="ttdeci">virtual BOOL Read(HANDLE hFile)</div><div class="ttdef"><b>Definition:</b> ProfileMarks.cpp:173</div></div>
+<div class="ttc" id="class_savable_item_html"><div class="ttname"><a href="class_savable_item.html">SavableItem</a></div><div class="ttdef"><b>Definition:</b> SavableItem.h:5</div></div>
+<div class="ttc" id="class_profile_marks_html_ab243c85d1dc29170f18ae4c4a20ed789"><div class="ttname"><a href="class_profile_marks.html#ab243c85d1dc29170f18ae4c4a20ed789">ProfileMarks::PreDraw</a></div><div class="ttdeci">void PreDraw(HDC hdc)</div><div class="ttdef"><b>Definition:</b> ProfileMarks.cpp:142</div></div>
+<div class="ttc" id="class_profile_marks_html_a53183bc811f6dba3002f5c1f1ced8d18"><div class="ttname"><a href="class_profile_marks.html#a53183bc811f6dba3002f5c1f1ced8d18">ProfileMarks::SetSize</a></div><div class="ttdeci">void SetSize(const int nSize)</div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:19</div></div>
+<div class="ttc" id="class_profile_marks_html_a051a19747efe246de75f7fc85ffd70ef"><div class="ttname"><a href="class_profile_marks.html#a051a19747efe246de75f7fc85ffd70ef">ProfileMarks::GetFrequency</a></div><div class="ttdeci">int GetFrequency() const </div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:15</div></div>
+<div class="ttc" id="class_profile_marks_html_ac1d9331398f1091f03000fb70b4cebd0"><div class="ttname"><a href="class_profile_marks.html#ac1d9331398f1091f03000fb70b4cebd0">ProfileMarks::ProfileMarks</a></div><div class="ttdeci">ProfileMarks(void)</div><div class="ttdef"><b>Definition:</b> ProfileMarks.cpp:11</div></div>
+<div class="ttc" id="class_profile_marks_html_a191e51521d74dd8210ae02260c1bf1b1"><div class="ttname"><a href="class_profile_marks.html#a191e51521d74dd8210ae02260c1bf1b1">ProfileMarks::GetFillColor</a></div><div class="ttdeci">COLORREF GetFillColor() const </div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:24</div></div>
+<div class="ttc" id="class_profile_marks_html_a5edbf30ca2bff84f8736aad24d231795"><div class="ttname"><a href="class_profile_marks.html#a5edbf30ca2bff84f8736aad24d231795">ProfileMarks::IsEnabled</a></div><div class="ttdeci">BOOL IsEnabled() const </div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:31</div></div>
+<div class="ttc" id="class_profile_marks_html_a74ad8199d7206269b733404f4b693573"><div class="ttname"><a href="class_profile_marks.html#a74ad8199d7206269b733404f4b693573">ProfileMarks::~ProfileMarks</a></div><div class="ttdeci">~ProfileMarks(void)</div><div class="ttdef"><b>Definition:</b> ProfileMarks.cpp:21</div></div>
+<div class="ttc" id="class_profile_marks_html_aa7966667f1baa875bc2bd8db7d909a37"><div class="ttname"><a href="class_profile_marks.html#aa7966667f1baa875bc2bd8db7d909a37">ProfileMarks::OnDraw</a></div><div class="ttdeci">void OnDraw(HDC hdc, const POINT *pPoints, unsigned nCount)</div><div class="ttdef"><b>Definition:</b> ProfileMarks.cpp:25</div></div>
+<div class="ttc" id="class_profile_marks_html_a6f0d5141d95c02bc92ebb5ce9e96d559"><div class="ttname"><a href="class_profile_marks.html#a6f0d5141d95c02bc92ebb5ce9e96d559">ProfileMarks::Write</a></div><div class="ttdeci">virtual BOOL Write(HANDLE hFile) const </div><div class="ttdef"><b>Definition:</b> ProfileMarks.cpp:146</div></div>
+<div class="ttc" id="class_profile_marks_html_aa6bcbcdbadf04e61e4b6c071f7541225"><div class="ttname"><a href="class_profile_marks.html#aa6bcbcdbadf04e61e4b6c071f7541225">ProfileMarks::SetFillColor</a></div><div class="ttdeci">void SetFillColor(const COLORREF clrFill)</div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:25</div></div>
+<div class="ttc" id="class_profile_marks_html_aa0d8285f49f82349a05303ce91e8aed5"><div class="ttname"><a href="class_profile_marks.html#aa0d8285f49f82349a05303ce91e8aed5">ProfileMarks::GetSize</a></div><div class="ttdeci">int GetSize() const </div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:18</div></div>
+<div class="ttc" id="class_profile_marks_html_a412ce6c7398fe1e937d077c651bc6be9"><div class="ttname"><a href="class_profile_marks.html#a412ce6c7398fe1e937d077c651bc6be9">ProfileMarks::GetLineColor</a></div><div class="ttdeci">COLORREF GetLineColor() const </div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:21</div></div>
+<div class="ttc" id="class_profile_marks_html"><div class="ttname"><a href="class_profile_marks.html">ProfileMarks</a></div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:4</div></div>
+<div class="ttc" id="class_profile_marks_html_af6f6413f5d507f714cc9c38f228da4ce"><div class="ttname"><a href="class_profile_marks.html#af6f6413f5d507f714cc9c38f228da4ce">ProfileMarks::Enable</a></div><div class="ttdeci">void Enable(BOOL enable=TRUE)</div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:30</div></div>
+<div class="ttc" id="class_profile_marks_html_a77b56c9b9d21376533dae53cee0a6f26"><div class="ttname"><a href="class_profile_marks.html#a77b56c9b9d21376533dae53cee0a6f26">ProfileMarks::SetLineColor</a></div><div class="ttdeci">void SetLineColor(const COLORREF clrLine)</div><div class="ttdef"><b>Definition:</b> ProfileMarks.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:36. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

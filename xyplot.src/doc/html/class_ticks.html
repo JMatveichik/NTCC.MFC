@@ -1,0 +1,1317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Класс Ticks</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="class_ticks-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Ticks</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="ticks_8h_source.html">ticks.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:Ticks:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ticks__inherit__graph.png" border="0" usemap="#_ticks_inherit__map" alt="Inheritance graph"/></div>
+<map name="_ticks_inherit__map" id="_ticks_inherit__map">
+<area shape="rect" id="node2" href="class_savable_item.html" title="SavableItem" alt="" coords="5,5,97,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса Ticks:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_ticks__coll__graph.png" border="0" usemap="#_ticks_coll__map" alt="Collaboration graph"/></div>
+<map name="_ticks_coll__map" id="_ticks_coll__map">
+<area shape="rect" id="node4" href="class_axis.html" title="Axis" alt="" coords="883,392,931,419"/><area shape="rect" id="node2" href="class_savable_item.html" title="SavableItem" alt="" coords="605,184,697,211"/><area shape="rect" id="node6" href="class_title.html" title="Title" alt="" coords="399,288,446,315"/><area shape="rect" id="node12" href="class_back_ground.html" title="BackGround" alt="" coords="279,392,374,419"/><area shape="rect" id="node13" href="class_border.html" title="Border" alt="" coords="499,340,559,367"/><area shape="rect" id="node14" href="class_legend.html" title="Legend" alt="" coords="344,615,408,641"/><area shape="rect" id="node15" href="class_selection.html" title="Selection" alt="" coords="1073,615,1149,641"/><area shape="rect" id="node17" href="class_digits.html" title="Digits" alt="" coords="783,525,838,552"/><area shape="rect" id="node18" href="class_grid_lines.html" title="GridLines" alt="" coords="1095,525,1172,552"/><area shape="rect" id="node19" href="class_label.html" title="Label" alt="" coords="663,288,716,315"/><area shape="rect" id="node3" href="class_line_data.html" title="LineData" alt="" coords="1151,184,1225,211"/><area shape="rect" id="node5" href="class_x_y_plot.html" title="Класс для работы с базой данных " alt="" coords="507,525,568,552"/><area shape="rect" id="node7" href="class_r_t_f_string.html" title="RTFString" alt="" coords="136,184,216,211"/><area shape="rect" id="node8" href="class_c_formatted_text_draw.html" title="CFormattedTextDraw" alt="" coords="104,95,248,121"/><area shape="rect" id="node11" href="structtag_c_o_o_k_i_e.html" title="tagCOOKIE" alt="" coords="269,5,360,32"/><area shape="rect" id="node16" href="class_profile_group_map.html" title="ProfileGroupMap" alt="" coords="1286,525,1405,552"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a48820608dd7a0bd504527deb457fc111"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a48820608dd7a0bd504527deb457fc111">Ticks</a> (<a class="el" href="class_axis.html">Axis</a> *<a class="el" href="class_ticks.html#a1651670c18ed9ab64dc36f1a0f97f6c6">parentAxis</a>)</td></tr>
+<tr class="separator:a48820608dd7a0bd504527deb457fc111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a97a6266de2e1d089fbd85cbe5f5dd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#ab3a97a6266de2e1d089fbd85cbe5f5dd">~Ticks</a> ()</td></tr>
+<tr class="separator:ab3a97a6266de2e1d089fbd85cbe5f5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb7a8c3fe17f9a768014f9b7a6ab2e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a2fb7a8c3fe17f9a768014f9b7a6ab2e4">SetMinorLength</a> (int length)</td></tr>
+<tr class="separator:a2fb7a8c3fe17f9a768014f9b7a6ab2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6394a3241855a227cfd869a8d676374"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#ad6394a3241855a227cfd869a8d676374">GetMinorLength</a> () const </td></tr>
+<tr class="separator:ad6394a3241855a227cfd869a8d676374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf24cc03f24d121992d8972e4dc703f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#acf24cc03f24d121992d8972e4dc703f9">SetMajorLength</a> (int length)</td></tr>
+<tr class="separator:acf24cc03f24d121992d8972e4dc703f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d03d0c25f828870ebfabfc536e9becb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a1d03d0c25f828870ebfabfc536e9becb">GetMajorLength</a> () const </td></tr>
+<tr class="separator:a1d03d0c25f828870ebfabfc536e9becb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0d548cd2a8dcc2feed13bb17800a038"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#ae0d548cd2a8dcc2feed13bb17800a038">GetMaxLength</a> () const </td></tr>
+<tr class="separator:ae0d548cd2a8dcc2feed13bb17800a038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483d4d8347a6753c12960c95729821dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a483d4d8347a6753c12960c95729821dc">SetMinorCount</a> (int count)</td></tr>
+<tr class="separator:a483d4d8347a6753c12960c95729821dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad79d9186b5b9f2dbc3c5ea8809d9a6c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#ad79d9186b5b9f2dbc3c5ea8809d9a6c1">SetMajorCount</a> (int count)</td></tr>
+<tr class="separator:ad79d9186b5b9f2dbc3c5ea8809d9a6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63bc56cc72e854b3e1dcbd167f26cd5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#aa63bc56cc72e854b3e1dcbd167f26cd5">GetMinorCount</a> () const </td></tr>
+<tr class="separator:aa63bc56cc72e854b3e1dcbd167f26cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2102769dbff638d61e068e0e60ddfc00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a2102769dbff638d61e068e0e60ddfc00">GetMajorCount</a> () const </td></tr>
+<tr class="separator:a2102769dbff638d61e068e0e60ddfc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a00c0f9c5b36aed57838ebbc1d28b02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a1a00c0f9c5b36aed57838ebbc1d28b02">EnableMajor</a> (BOOL enable=TRUE)</td></tr>
+<tr class="separator:a1a00c0f9c5b36aed57838ebbc1d28b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada1063e3a34efd195c731c320268ee61"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#ada1063e3a34efd195c731c320268ee61">IsMajorEnabled</a> () const </td></tr>
+<tr class="separator:ada1063e3a34efd195c731c320268ee61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b4d99c8d61eea54c2d2a47c254c593"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a45b4d99c8d61eea54c2d2a47c254c593">EnableMinor</a> (BOOL enable)</td></tr>
+<tr class="separator:a45b4d99c8d61eea54c2d2a47c254c593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f18bff2c5ca59338bae41f2eca8705"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#ab5f18bff2c5ca59338bae41f2eca8705">IsMinorEnabled</a> () const </td></tr>
+<tr class="separator:ab5f18bff2c5ca59338bae41f2eca8705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a5f97b56ba8a5e66c7dd3537aa5372"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a59a5f97b56ba8a5e66c7dd3537aa5372">SetOrigin</a> (POINT <a class="el" href="class_ticks.html#a316c176b6108e99b7327efa4e62c9276">origin</a>)</td></tr>
+<tr class="separator:a59a5f97b56ba8a5e66c7dd3537aa5372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb53bbd73e15aeb237e39c1035dd2e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#acbb53bbd73e15aeb237e39c1035dd2e8">SetStyle</a> (unsigned long lStyle=<a class="el" href="ticks_8h.html#ae003d2b10c7be824e212a85e70d2b4b3">TICKS_BOTH</a>)</td></tr>
+<tr class="separator:acbb53bbd73e15aeb237e39c1035dd2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111424e58796d2b3d923042b10b6b47a"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a111424e58796d2b3d923042b10b6b47a">GetStyle</a> ()</td></tr>
+<tr class="separator:a111424e58796d2b3d923042b10b6b47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92632374842f45c97f4eef37a027bc61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a92632374842f45c97f4eef37a027bc61">GetLine</a> (BOOL bMajor=TRUE)</td></tr>
+<tr class="separator:a92632374842f45c97f4eef37a027bc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027e9507c82a5021644a0e0a3352b89b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a027e9507c82a5021644a0e0a3352b89b">SetLine</a> (const <a class="el" href="class_line_data.html">LineData</a> &amp;line, BOOL bMajor)</td></tr>
+<tr class="separator:a027e9507c82a5021644a0e0a3352b89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacbff2048aede4d95c9ca066603f4d5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#aacbff2048aede4d95c9ca066603f4d5c">PreDraw</a> ()</td></tr>
+<tr class="separator:aacbff2048aede4d95c9ca066603f4d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351eb67db476ecca6e8f0da001afa948"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a351eb67db476ecca6e8f0da001afa948">CalcTicksPos</a> ()</td></tr>
+<tr class="separator:a351eb67db476ecca6e8f0da001afa948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bab06ae4f43f7f5e39f1e2e31f04045"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a0bab06ae4f43f7f5e39f1e2e31f04045">OnDraw</a> (HDC hdc)</td></tr>
+<tr class="separator:a0bab06ae4f43f7f5e39f1e2e31f04045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b690623984a9ecc3e2090dac5f0f62"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a49b690623984a9ecc3e2090dac5f0f62">Write</a> (HANDLE hFile) const </td></tr>
+<tr class="separator:a49b690623984a9ecc3e2090dac5f0f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6059d8bd2489336d9e77fe7c701e1d20"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a6059d8bd2489336d9e77fe7c701e1d20">Read</a> (HANDLE hFile)</td></tr>
+<tr class="separator:a6059d8bd2489336d9e77fe7c701e1d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_savable_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_savable_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_savable_item.html">SavableItem</a></td></tr>
+<tr class="memitem:ab046904bea3b84bd453764fe164fcbd5 inherit pub_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#ab046904bea3b84bd453764fe164fcbd5">SavableItem</a> ()</td></tr>
+<tr class="separator:ab046904bea3b84bd453764fe164fcbd5 inherit pub_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e2cdaa3e35d16f31337d02e794117e inherit pub_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#a01e2cdaa3e35d16f31337d02e794117e">~SavableItem</a> ()</td></tr>
+<tr class="separator:a01e2cdaa3e35d16f31337d02e794117e inherit pub_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a8e904547e1b2b57501f7a6d0dab584ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a8e904547e1b2b57501f7a6d0dab584ac">DrawTick</a> (HDC hdc, int x, int y, int len)</td></tr>
+<tr class="separator:a8e904547e1b2b57501f7a6d0dab584ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba3d3e17fb82993527758779ed02a49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a2ba3d3e17fb82993527758779ed02a49">Clear</a> ()</td></tr>
+<tr class="separator:a2ba3d3e17fb82993527758779ed02a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757ebce87067b43aa91f11ae1d89bae7"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; POINT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a757ebce87067b43aa91f11ae1d89bae7">GetMajorTicksPos</a> () const </td></tr>
+<tr class="separator:a757ebce87067b43aa91f11ae1d89bae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91076e5006090839901a73e9d0e8f50c"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; POINT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a91076e5006090839901a73e9d0e8f50c">GetMinorTicksPos</a> () const </td></tr>
+<tr class="separator:a91076e5006090839901a73e9d0e8f50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd2a0b01946d395070c38156dbc6453"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a1bd2a0b01946d395070c38156dbc6453">GetMajorTicksValues</a> () const </td></tr>
+<tr class="separator:a1bd2a0b01946d395070c38156dbc6453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ee30a2532f6dd9232f68744b8fe799"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a78ee30a2532f6dd9232f68744b8fe799">GetMinorTicksValues</a> () const </td></tr>
+<tr class="separator:a78ee30a2532f6dd9232f68744b8fe799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f8d53ed1e949c2731b4bdc8c407549"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#af2f8d53ed1e949c2731b4bdc8c407549">GetNearestTick</a> (double &amp;val, POINT &amp;pt)</td></tr>
+<tr class="separator:af2f8d53ed1e949c2731b4bdc8c407549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a1651670c18ed9ab64dc36f1a0f97f6c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_axis.html">Axis</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a1651670c18ed9ab64dc36f1a0f97f6c6">parentAxis</a></td></tr>
+<tr class="separator:a1651670c18ed9ab64dc36f1a0f97f6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5c6ae0f3a8795b19fb11b02a067965"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a8d5c6ae0f3a8795b19fb11b02a067965">minorLength</a></td></tr>
+<tr class="separator:a8d5c6ae0f3a8795b19fb11b02a067965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1426fb6d7b814408f11f7e42c69cb043"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a1426fb6d7b814408f11f7e42c69cb043">majorLength</a></td></tr>
+<tr class="separator:a1426fb6d7b814408f11f7e42c69cb043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f30db72cdc88055678f89403bac8ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a65f30db72cdc88055678f89403bac8ab">majorCount</a></td></tr>
+<tr class="separator:a65f30db72cdc88055678f89403bac8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a253b2cc8b48bd9183cddfd10b52c17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a2a253b2cc8b48bd9183cddfd10b52c17">minorCount</a></td></tr>
+<tr class="separator:a2a253b2cc8b48bd9183cddfd10b52c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124e38f88330158c049125e5beddf12b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_line_data.html">LineData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a124e38f88330158c049125e5beddf12b">lineMajor</a></td></tr>
+<tr class="separator:a124e38f88330158c049125e5beddf12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38664cd2dd23fc7f5cbe119119af8f69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_line_data.html">LineData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a38664cd2dd23fc7f5cbe119119af8f69">lineMinor</a></td></tr>
+<tr class="separator:a38664cd2dd23fc7f5cbe119119af8f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316c176b6108e99b7327efa4e62c9276"><td class="memItemLeft" align="right" valign="top">POINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a316c176b6108e99b7327efa4e62c9276">origin</a></td></tr>
+<tr class="separator:a316c176b6108e99b7327efa4e62c9276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f1426254b2dbb52faf65e367c842d7"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a26f1426254b2dbb52faf65e367c842d7">style</a></td></tr>
+<tr class="separator:a26f1426254b2dbb52faf65e367c842d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dff4c03c15737ce84808492b0773dcd"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a8dff4c03c15737ce84808492b0773dcd">enabledMajor</a></td></tr>
+<tr class="separator:a8dff4c03c15737ce84808492b0773dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa830dfc5ddac0215f342f134263033fe"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#aa830dfc5ddac0215f342f134263033fe">enabledMinor</a></td></tr>
+<tr class="separator:aa830dfc5ddac0215f342f134263033fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6233030c8eb29fb309d2d55c6d97f94"><td class="memItemLeft" align="right" valign="top">std::vector&lt; POINT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#ae6233030c8eb29fb309d2d55c6d97f94">majorPoints</a></td></tr>
+<tr class="separator:ae6233030c8eb29fb309d2d55c6d97f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad15b47014c3660f4e9299be607ef78c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; POINT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#aad15b47014c3660f4e9299be607ef78c">minorPoints</a></td></tr>
+<tr class="separator:aad15b47014c3660f4e9299be607ef78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5d19b05c96d1d9bbc406ba1c366369"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#acb5d19b05c96d1d9bbc406ba1c366369">majorValues</a></td></tr>
+<tr class="separator:acb5d19b05c96d1d9bbc406ba1c366369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc0e38cace3edc53a31e329781ba2de"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a2cc0e38cace3edc53a31e329781ba2de">minorValues</a></td></tr>
+<tr class="separator:a2cc0e38cace3edc53a31e329781ba2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a9c05b17b809103942e6d7089d28f6db9"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ticks.html#a9c05b17b809103942e6d7089d28f6db9">Axis</a></td></tr>
+<tr class="separator:a9c05b17b809103942e6d7089d28f6db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_static_methods_class_savable_item"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_savable_item')"><img src="closed.png" alt="-"/>&#160;Защищенные статические члены унаследованные от <a class="el" href="class_savable_item.html">SavableItem</a></td></tr>
+<tr class="memitem:ab7fdbc1d0002d102e957104c130678d6 inherit pro_static_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#ab7fdbc1d0002d102e957104c130678d6">ReadString</a> (HANDLE hFile)</td></tr>
+<tr class="separator:ab7fdbc1d0002d102e957104c130678d6 inherit pro_static_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491b89267b8402aeb64bfeda5cef0af1 inherit pro_static_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">static BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#a491b89267b8402aeb64bfeda5cef0af1">WriteString</a> (HANDLE hFile, std::string theString)</td></tr>
+<tr class="separator:a491b89267b8402aeb64bfeda5cef0af1 inherit pro_static_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a48820608dd7a0bd504527deb457fc111"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ticks::Ticks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_axis.html">Axis</a> *&#160;</td>
+          <td class="paramname"><em>parentAxis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab3a97a6266de2e1d089fbd85cbe5f5dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ticks::~Ticks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a351eb67db476ecca6e8f0da001afa948"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::CalcTicksPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ba3d3e17fb82993527758779ed02a49"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e904547e1b2b57501f7a6d0dab584ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::DrawTick </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hdc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a00c0f9c5b36aed57838ebbc1d28b02"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::EnableMajor </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enable</em> = <code>TRUE</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a45b4d99c8d61eea54c2d2a47c254c593"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::EnableMinor </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a92632374842f45c97f4eef37a027bc61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_line_data.html">LineData</a> &amp; Ticks::GetLine </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em> = <code>TRUE</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2102769dbff638d61e068e0e60ddfc00"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ticks::GetMajorCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1d03d0c25f828870ebfabfc536e9becb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ticks::GetMajorLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a757ebce87067b43aa91f11ae1d89bae7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;POINT&gt;&amp; Ticks::GetMajorTicksPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1bd2a0b01946d395070c38156dbc6453"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;double&gt;&amp; Ticks::GetMajorTicksValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae0d548cd2a8dcc2feed13bb17800a038"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ticks::GetMaxLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa63bc56cc72e854b3e1dcbd167f26cd5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ticks::GetMinorCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad6394a3241855a227cfd869a8d676374"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ticks::GetMinorLength </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a91076e5006090839901a73e9d0e8f50c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;POINT&gt;&amp; Ticks::GetMinorTicksPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a78ee30a2532f6dd9232f68744b8fe799"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;double&gt;&amp; Ticks::GetMinorTicksValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af2f8d53ed1e949c2731b4bdc8c407549"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Ticks::GetNearestTick </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">POINT &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a111424e58796d2b3d923042b10b6b47a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long Ticks::GetStyle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ada1063e3a34efd195c731c320268ee61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Ticks::IsMajorEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab5f18bff2c5ca59338bae41f2eca8705"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Ticks::IsMinorEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0bab06ae4f43f7f5e39f1e2e31f04045"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::OnDraw </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hdc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aacbff2048aede4d95c9ca066603f4d5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::PreDraw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6059d8bd2489336d9e77fe7c701e1d20"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Ticks::Read </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_savable_item.html#a7eadd16b2cb0652091cc15f596a00fb2">SavableItem</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a027e9507c82a5021644a0e0a3352b89b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::SetLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_line_data.html">LineData</a> &amp;&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>bMajor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad79d9186b5b9f2dbc3c5ea8809d9a6c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::SetMajorCount </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf24cc03f24d121992d8972e4dc703f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::SetMajorLength </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a483d4d8347a6753c12960c95729821dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::SetMinorCount </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2fb7a8c3fe17f9a768014f9b7a6ab2e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::SetMinorLength </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a59a5f97b56ba8a5e66c7dd3537aa5372"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::SetOrigin </td>
+          <td>(</td>
+          <td class="paramtype">POINT&#160;</td>
+          <td class="paramname"><em>origin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acbb53bbd73e15aeb237e39c1035dd2e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ticks::SetStyle </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>lStyle</em> = <code><a class="el" href="ticks_8h.html#ae003d2b10c7be824e212a85e70d2b4b3">TICKS_BOTH</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a49b690623984a9ecc3e2090dac5f0f62"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Ticks::Write </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_savable_item.html#a0da511a4854f515096f8f9b498f64158">SavableItem</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, отноносящимся к классу</h2>
+<a class="anchor" id="a9c05b17b809103942e6d7089d28f6db9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_axis.html">Axis</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a8dff4c03c15737ce84808492b0773dcd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Ticks::enabledMajor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa830dfc5ddac0215f342f134263033fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Ticks::enabledMinor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a124e38f88330158c049125e5beddf12b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_line_data.html">LineData</a>* Ticks::lineMajor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a38664cd2dd23fc7f5cbe119119af8f69"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_line_data.html">LineData</a>* Ticks::lineMinor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a65f30db72cdc88055678f89403bac8ab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ticks::majorCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1426fb6d7b814408f11f7e42c69cb043"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ticks::majorLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae6233030c8eb29fb309d2d55c6d97f94"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;POINT&gt; Ticks::majorPoints</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acb5d19b05c96d1d9bbc406ba1c366369"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; Ticks::majorValues</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a253b2cc8b48bd9183cddfd10b52c17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ticks::minorCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d5c6ae0f3a8795b19fb11b02a067965"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ticks::minorLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad15b47014c3660f4e9299be607ef78c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;POINT&gt; Ticks::minorPoints</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2cc0e38cace3edc53a31e329781ba2de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; Ticks::minorValues</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a316c176b6108e99b7327efa4e62c9276"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">POINT Ticks::origin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1651670c18ed9ab64dc36f1a0f97f6c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_axis.html">Axis</a>* Ticks::parentAxis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26f1426254b2dbb52faf65e367c842d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long Ticks::style</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="ticks_8h_source.html">ticks.h</a></li>
+<li>src/<a class="el" href="ticks_8cpp.html">ticks.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

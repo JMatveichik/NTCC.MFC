@@ -1,0 +1,622 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>XY Plot: Класс Label</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">XY Plot
+   &#160;<span id="projectnumber">4.1.0.1</span>
+   </div>
+   <div id="projectbrief">2D graphic creator</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="examples.html"><span>Примеры</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Группы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(12)"><span class="SelectionMark">&#160;</span>Страницы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="class_label-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Label</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="label_8h_source.html">label.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:Label:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_label__inherit__graph.png" border="0" usemap="#_label_inherit__map" alt="Inheritance graph"/></div>
+<map name="_label_inherit__map" id="_label_inherit__map">
+<area shape="rect" id="node2" href="class_savable_item.html" title="SavableItem" alt="" coords="5,5,97,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div class="dynheader">
+Граф связей класса Label:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_label__coll__graph.png" border="0" usemap="#_label_coll__map" alt="Collaboration graph"/></div>
+<map name="_label_coll__map" id="_label_coll__map">
+<area shape="rect" id="node2" href="class_savable_item.html" title="SavableItem" alt="" coords="19,184,111,211"/><area shape="rect" id="node3" href="class_r_t_f_string.html" title="RTFString" alt="" coords="136,184,216,211"/><area shape="rect" id="node4" href="class_c_formatted_text_draw.html" title="CFormattedTextDraw" alt="" coords="104,95,248,121"/><area shape="rect" id="node7" href="structtag_c_o_o_k_i_e.html" title="tagCOOKIE" alt="" coords="269,5,360,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ac3c18467d3dbf6f94e94b47c78d4b3c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#ac3c18467d3dbf6f94e94b47c78d4b3c3">Label</a> (<a class="el" href="class_x_y_plot.html">XYPlot</a> *parent)</td></tr>
+<tr class="separator:ac3c18467d3dbf6f94e94b47c78d4b3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e1167a9b5827afd888780973d88894"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a39e1167a9b5827afd888780973d88894">~Label</a> ()</td></tr>
+<tr class="separator:a39e1167a9b5827afd888780973d88894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd24195d832566251e28855717a745be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#acd24195d832566251e28855717a745be">SetText</a> (std::string label)</td></tr>
+<tr class="separator:acd24195d832566251e28855717a745be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d783198414ad2c9a17b7fecfd19581"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#aa0d783198414ad2c9a17b7fecfd19581">GetText</a> () const </td></tr>
+<tr class="separator:aa0d783198414ad2c9a17b7fecfd19581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327e98e659b00c708cc41154e65c5f2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a327e98e659b00c708cc41154e65c5f2e">SetRect</a> (int left, int top, int right, int bottom)</td></tr>
+<tr class="separator:a327e98e659b00c708cc41154e65c5f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd76b7012e10269bb70ebae65c19c20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a7dd76b7012e10269bb70ebae65c19c20">SetRect</a> (RECT self)</td></tr>
+<tr class="separator:a7dd76b7012e10269bb70ebae65c19c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585867db26f2a3513cba06fea5fdccff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a585867db26f2a3513cba06fea5fdccff">GetRect</a> (RECT &amp;self) const </td></tr>
+<tr class="separator:a585867db26f2a3513cba06fea5fdccff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0c60f5aaffb61c7b69e22d3116a305"><td class="memItemLeft" align="right" valign="top">SIZE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a1c0c60f5aaffb61c7b69e22d3116a305">GetLabelSize</a> () const </td></tr>
+<tr class="separator:a1c0c60f5aaffb61c7b69e22d3116a305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d832e782c6821b020fa6a6c3f90b298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a3d832e782c6821b020fa6a6c3f90b298">SetStyle</a> (DWORD align)</td></tr>
+<tr class="separator:a3d832e782c6821b020fa6a6c3f90b298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d281ba0d879c5e80dd498b590fde116"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a2d281ba0d879c5e80dd498b590fde116">SetFont</a> (const LOGFONT *const plf)</td></tr>
+<tr class="separator:a2d281ba0d879c5e80dd498b590fde116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35a831ca6da894e091ec422531b819e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#ab35a831ca6da894e091ec422531b819e">SetColor</a> (COLORREF clr)</td></tr>
+<tr class="separator:ab35a831ca6da894e091ec422531b819e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89bd0391480b31547b1793da49cc9eb"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#af89bd0391480b31547b1793da49cc9eb">IsEnabled</a> () const </td></tr>
+<tr class="separator:af89bd0391480b31547b1793da49cc9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323ad67434f656e25a6e2aa521f9f65f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a323ad67434f656e25a6e2aa521f9f65f">Enable</a> (BOOL enable)</td></tr>
+<tr class="separator:a323ad67434f656e25a6e2aa521f9f65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a701c810b83e48ecc6be2ab4a66a19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a39a701c810b83e48ecc6be2ab4a66a19">PreDraw</a> (HDC hdc)</td></tr>
+<tr class="separator:a39a701c810b83e48ecc6be2ab4a66a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5bdf8574236283b0e0329c5c366cf2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#aa5bdf8574236283b0e0329c5c366cf2f">OnDraw</a> (HDC hdc)</td></tr>
+<tr class="separator:aa5bdf8574236283b0e0329c5c366cf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244a940c2d9301bd6bd2abcb2ef9af05"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a244a940c2d9301bd6bd2abcb2ef9af05">Write</a> (HANDLE hFile) const </td></tr>
+<tr class="separator:a244a940c2d9301bd6bd2abcb2ef9af05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491dcc38695f69dd135fba56cfdeb3cf"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a491dcc38695f69dd135fba56cfdeb3cf">Read</a> (HANDLE hFile)</td></tr>
+<tr class="separator:a491dcc38695f69dd135fba56cfdeb3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_savable_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_savable_item')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_savable_item.html">SavableItem</a></td></tr>
+<tr class="memitem:ab046904bea3b84bd453764fe164fcbd5 inherit pub_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#ab046904bea3b84bd453764fe164fcbd5">SavableItem</a> ()</td></tr>
+<tr class="separator:ab046904bea3b84bd453764fe164fcbd5 inherit pub_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e2cdaa3e35d16f31337d02e794117e inherit pub_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#a01e2cdaa3e35d16f31337d02e794117e">~SavableItem</a> ()</td></tr>
+<tr class="separator:a01e2cdaa3e35d16f31337d02e794117e inherit pub_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:ac7c8edd002ef599c40e67831169979f5"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#ac7c8edd002ef599c40e67831169979f5">m_align</a></td></tr>
+<tr class="separator:ac7c8edd002ef599c40e67831169979f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf07c83f98530b3f4094107836540fe7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_r_t_f_string.html">RTFString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#aaf07c83f98530b3f4094107836540fe7">m_label</a></td></tr>
+<tr class="separator:aaf07c83f98530b3f4094107836540fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8534cb903d21810c0944c0adaa34a5d"><td class="memItemLeft" align="right" valign="top">RECT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#ac8534cb903d21810c0944c0adaa34a5d">m_self</a></td></tr>
+<tr class="separator:ac8534cb903d21810c0944c0adaa34a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6befb7056ad81ff5790b6bd79361f5a1"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html#a6befb7056ad81ff5790b6bd79361f5a1">m_enabled</a></td></tr>
+<tr class="separator:a6befb7056ad81ff5790b6bd79361f5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_static_methods_class_savable_item"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_savable_item')"><img src="closed.png" alt="-"/>&#160;Защищенные статические члены унаследованные от <a class="el" href="class_savable_item.html">SavableItem</a></td></tr>
+<tr class="memitem:ab7fdbc1d0002d102e957104c130678d6 inherit pro_static_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#ab7fdbc1d0002d102e957104c130678d6">ReadString</a> (HANDLE hFile)</td></tr>
+<tr class="separator:ab7fdbc1d0002d102e957104c130678d6 inherit pro_static_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491b89267b8402aeb64bfeda5cef0af1 inherit pro_static_methods_class_savable_item"><td class="memItemLeft" align="right" valign="top">static BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_savable_item.html#a491b89267b8402aeb64bfeda5cef0af1">WriteString</a> (HANDLE hFile, std::string theString)</td></tr>
+<tr class="separator:a491b89267b8402aeb64bfeda5cef0af1 inherit pro_static_methods_class_savable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="ac3c18467d3dbf6f94e94b47c78d4b3c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Label::Label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_x_y_plot.html">XYPlot</a> *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39e1167a9b5827afd888780973d88894"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Label::~Label </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a323ad67434f656e25a6e2aa521f9f65f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Label::Enable </td>
+          <td>(</td>
+          <td class="paramtype">BOOL&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1c0c60f5aaffb61c7b69e22d3116a305"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SIZE Label::GetLabelSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a585867db26f2a3513cba06fea5fdccff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Label::GetRect </td>
+          <td>(</td>
+          <td class="paramtype">RECT &amp;&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa0d783198414ad2c9a17b7fecfd19581"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; Label::GetText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af89bd0391480b31547b1793da49cc9eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Label::IsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5bdf8574236283b0e0329c5c366cf2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Label::OnDraw </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hdc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39a701c810b83e48ecc6be2ab4a66a19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Label::PreDraw </td>
+          <td>(</td>
+          <td class="paramtype">HDC&#160;</td>
+          <td class="paramname"><em>hdc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a491dcc38695f69dd135fba56cfdeb3cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Label::Read </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_savable_item.html#a7eadd16b2cb0652091cc15f596a00fb2">SavableItem</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab35a831ca6da894e091ec422531b819e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Label::SetColor </td>
+          <td>(</td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>clr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d281ba0d879c5e80dd498b590fde116"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Label::SetFont </td>
+          <td>(</td>
+          <td class="paramtype">const LOGFONT *const&#160;</td>
+          <td class="paramname"><em>plf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a327e98e659b00c708cc41154e65c5f2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Label::SetRect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>top</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bottom</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7dd76b7012e10269bb70ebae65c19c20"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Label::SetRect </td>
+          <td>(</td>
+          <td class="paramtype">RECT&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d832e782c6821b020fa6a6c3f90b298"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Label::SetStyle </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>align</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd24195d832566251e28855717a745be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Label::SetText </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a244a940c2d9301bd6bd2abcb2ef9af05"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Label::Write </td>
+          <td>(</td>
+          <td class="paramtype">HANDLE&#160;</td>
+          <td class="paramname"><em>hFile</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Замещает <a class="el" href="class_savable_item.html#a0da511a4854f515096f8f9b498f64158">SavableItem</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="ac7c8edd002ef599c40e67831169979f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD Label::m_align</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6befb7056ad81ff5790b6bd79361f5a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL Label::m_enabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaf07c83f98530b3f4094107836540fe7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_r_t_f_string.html">RTFString</a>* Label::m_label</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8534cb903d21810c0944c0adaa34a5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RECT Label::m_self</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/<a class="el" href="label_8h_source.html">label.h</a></li>
+<li>src/<a class="el" href="label_8cpp.html">label.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по XY Plot. Последние изменения: Вт 29 Июл 2014 09:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

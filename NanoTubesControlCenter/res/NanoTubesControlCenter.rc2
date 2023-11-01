@@ -1,0 +1,55 @@
+//
+// NanoTubesControlCenter.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+#if ( !(defined _AFXDLL && !defined __STATPROFUIS_WITH_DLLMFC__) )
+	#include <Resources/Resource.rc>
+#endif
+
+#include "VersionNo.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION VERSION_FILE
+ PRODUCTVERSION VERSION_PRODUCT
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041994e4"
+        BEGIN
+            VALUE "CompanyName", "Advanced Research&&Technologies"
+            VALUE "FileDescription", "NanoTubes Control Center"
+            VALUE "FileVersion", VERSION_FILESTR
+            VALUE "InternalName", "ntcc.exe"
+            VALUE "LegalCopyright", "(c) Advanced Research&&Technologies.  All rights reserved."
+            VALUE "OriginalFilename", "NanoTubesControlCenter.exe"
+            VALUE "ProductName", "NanoTubes Control Center"
+            VALUE "ProductVersion", VERSION_PRODUCTSTR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 38116
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+
